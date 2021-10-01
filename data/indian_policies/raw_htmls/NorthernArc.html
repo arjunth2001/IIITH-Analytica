@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ======= titles ======= -->
+	<title>Northern Arc</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="Northern%20Arc_files/logo-black.png" type="image/x-icon">
+		<!-- ============Css============ -->
+	<link rel="stylesheet" href="Northern%20Arc_files/bootstrap.css">
+	<link rel="stylesheet" href="Northern%20Arc_files/font-awesome.css">
+	<link rel="stylesheet" href="Northern%20Arc_files/Northern.css">
+	<link rel="stylesheet" href="Northern%20Arc_files/menu.css">
+	<link rel="stylesheet" href="Northern%20Arc_files/responsive.css">
+	<link rel="stylesheet" href="Northern%20Arc_files/animate.css">
+	<script type="text/javascript" async="" src="Northern%20Arc_files/analytics.js"></script><script src="Northern%20Arc_files/jquery.js"></script>
+	<script src="Northern%20Arc_files/mapbox-gl.js"></script>
+	<link href="Northern%20Arc_files/mapbox-gl.css" rel="stylesheet">
+</head>
+<body data-new-gr-c-s-check-loaded="8.884.0" data-gr-ext-installed=""><div class="SideNav" style="display:none">
+	<div class="row"><div class="SiconClose"></div></div>
+    
+    <div class="SideMenuWrap">
+    <div class="row">
+        <div class="col-md-4 animated fadeIn" data-wow-duration="0.3" style="visibility: visible; animation-duration: 4s">
+            <div class="SN-Section">
+                <a href="https://www.northernarc.com/governance">
+					<h3>Corporate Governance <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/governance">POLICIES AND NOTICES</a></li>
+                    <li><a href="https://www.northernarc.com/governance">REGULATORY INFORMATION</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+            <div class="SN-Section">
+                <a href="https://www.northernarc.com/investor">
+					<h3>Investor Updates <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+					<li><a href="https://www.northernarc.com/investor">FINANCIALS</a></li>
+                    <li><a href="https://www.northernarc.com/investor">ANNUAL REPORTS</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+            <div class="SN-Section">
+                <a href="https://www.northernarc.com/partner-update">
+					<h3>Partner Update <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/partner-update">FBLR</a></li>
+                </ul>
+            </div>
+            
+            <div class="SN-Section">
+				<a href="https://www.northernarc.com/career-culture">
+					<h3>Careers <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/career-culture">OPEN POSITIONS</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+            
+        </div>
+        <div class="col-md-4 animated fadeIn" data-wow-duration="0.3" style="visibility: visible; animation-duration: 4s">
+            <div class="SN-Section">
+                <a href="https://www.northernarc.com/resource-center-news-and-media">
+					<h3>News and Media <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/resource-center-news-and-media">PRESS RELEASES</a></li>
+                    <li><a href="https://www.northernarc.com/resource-center-news-and-media">IN THE NEWS</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+            <div class="SN-Section">
+                <a href="https://www.northernarc.com/resource-center-case-study">
+					<h3>Resource Centre <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/resource-center-case-study">ARTICLES</a></li>
+                    <li><a href="https://www.northernarc.com/resource-center-case-study">BLOGS</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+            
+             <div class="SN-Section">
+                <a href="https://www.northernarc.com/resource-center-case-study">
+					<h3>Events <span class="icon hidden"></span></h3>
+				</a>
+                <ul>
+                    <li><a href="https://www.northernarc.com/events">RECENT EVENTS</a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+        </div>
+        <div class="col-md-4 animated fadeIn" data-wow-duration="0.3" style="visibility: visible; animation-duration: 4s">
+             <div class="SN-Section">
+                <h3>Other Companies</h3>
+                <ul>
+                    <li><a href="https://www.northernarc.com/fund-management">NORTHERN ARC INVESTMENTS <span class="icon hidden"></span></a></li>
+                    <li><a href="https://www.northernarc.com/northernarc-foundation">NORTHERN ARC FOUNDATION <span class="icon hidden"></span></a></li>
+                    <li><a href="https://www.northernarc.com/northernarc-investment-adviser">NORTHERN ARC INVESTMENT ADVISER <span class="icon hidden"></span></a></li>
+                </ul>
+            </div>
+            <!-- SN-Section -->
+        </div>
+    </div>
+    <!-- row  -->
+    </div><!--  SideMenuWrap -->
+</div>
+<style>
+.SN-Section span.icon{
+    background: url(assets/images/black_arrow.svg) no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+    width: 76px;
+    height: 15px;
+    transform: rotate(180deg);
+    background-size: 100%;
+    display: inline-block;
+    background-position: 0px 2px;
+}
+</style>
+
+    <!--- ======Start Header Section============= -->
+    <header>
+        <div class="GovernanceGrid">
+            <div class="container">
+                <div class="row inner-fix" style="visibility: visible;">
+                    <div class="col-lg-3 col-md-3 col-sm-2 col-xs-3">
+                        <div class="LogoSec LogoSmall"><a href="https://www.northernarc.com/"><img src="Northern%20Arc_files/logo.png"></a></div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="row ddmenu-row">
+                            <nav id="ddmenu" class="th-partner">
+                                <div class="navToggle">
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="menu-icon menu-icon-Wopen SetPos"></div>
+                                <ul class="MenuHe">
+	<li>
+		<a class="top-heading contain-sub top-first " href="javascript:void(0)">WHO WE ARE</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/northernarc-capital"> <span class=""></span> Northern Arc Capital</a></li>
+			<li><a href="https://www.northernarc.com/northernarc-journey"> <span class=""></span> The Journey</a></li>
+			<li><a href="https://www.northernarc.com/our-compass"> <span class=""></span> Our Compass</a></li>
+			<li><a href="https://www.northernarc.com/management-team"> <span class=""></span> Key Management</a></li>
+			<li><a href="https://www.northernarc.com/board-of-directors"> <span class=""></span> Board of Directors</a></li>
+			<li><a href="https://www.northernarc.com/sectors"> <span class=""></span> Sectors</a></li>
+			<li><a href="https://www.northernarc.com/impact"> <span class=""></span> Impact</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="top-heading contain-sub " href="javascript:void(0)">OUR APPROACH</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/our-approach/underwriting"> <span class=""></span> Underwriting</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/structured-finance"> <span class=""></span> Structured Finance </a></li>
+			<li><a href="https://www.northernarc.com/our-approach/market-and-investor-relations"> <span class=""></span> Market &amp; Investor Relations</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/risk-management"> <span class=""></span>Risk Management </a></li>
+			<li><a href="https://www.northernarc.com/our-approach/nimbus"> <span class=""></span>Nimbus</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/originator-partners-financial"> <span class=""></span>Segments</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="top-heading contain-sub " href="javascript:void(0)">INVEST WITH US</a> 
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/invest-with-us"> <span class=""></span> Overview</a></li>
+			<li><a href="https://www.northernarc.com/our-products"> <span class=""></span> Our Products</a></li>
+			<li><a href="https://www.northernarc.com/fund-management"> <span class=""></span> Fund Management</a></li>
+			<li><a href="https://investor.northernarc.com/"> <span class=""></span>Investor Portal</a></li>
+			<li><a href="https://altifi.ai/" target="_blank"> <span class=""></span>AltiFi</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="top-heading contain-sub " href="javascript:void(0)">PARTNERS</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/our-partners"> <span class=""></span> For Partners</a></li>
+			<li><a href="https://originator.northernarc.com/index.html"> <span class=""></span> Partner Portal</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg">
+		<a class="top-heading contain-sub active" href="javascript:void(0)">GOVERNANCE</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/governance"> <span class=""></span> Policies and Notices </a></li>
+			<li><a href="https://www.northernarc.com/governance"> <span class=""></span> Regulatory Information</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg">
+		<a class="top-heading contain-sub " href="javascript:void(0)">INVESTOR UPDATES</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/investor"> <span class=""></span> Financials </a></li>
+			<li><a href="https://www.northernarc.com/investor"> <span class=""></span> Annual Reports</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/partner-update">PARTNER UPDATES</a></li>
+    <li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/resource-center-case-study">RESOURCE CENTRE</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/resource-center-news-and-media">MEDIA CENTRE</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/events">EVENTS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/career-culture">CAREERS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/fund-management">NORTHERN ARC INVESTMENTS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/northernarc-foundation">NORTHERN ARC FOUNDATION </a></li>
+	<li><a class="top-heading" href="https://www.northernarc.com/reach-us">REACH US</a></li>
+</ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-sticky" style="box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; display: none;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-3">
+				<div class="LogoSec LogoSmall"><a href="https://www.northernarc.com/"><img src="Northern%20Arc_files/logo-black.png"></a></div>
+			</div>
+			<div class="col-md-9 col-sm-10 col-xs-12">
+				<div class="row ddmenu-row">
+					<nav id="ddmenu" class="th-inner">
+						<div class="navToggle">
+							<div class="icon"></div>
+						</div>
+						<div class="menu-icon menu-icon-Bopen"></div>
+						<ul class="MenuHe">
+	<li>
+		<a class="top-heading contain-sub top-first " href="javascript:void(0)">WHO WE ARE</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/northernarc-capital"> <span class=""></span> Northern Arc Capital</a></li>
+			<li><a href="https://www.northernarc.com/northernarc-journey"> <span class=""></span> The Journey</a></li>
+			<li><a href="https://www.northernarc.com/our-compass"> <span class=""></span> Our Compass</a></li>
+			<li><a href="https://www.northernarc.com/management-team"> <span class=""></span> Key Management</a></li>
+			<li><a href="https://www.northernarc.com/board-of-directors"> <span class=""></span> Board of Directors</a></li>
+			<li><a href="https://www.northernarc.com/sectors"> <span class=""></span> Sectors</a></li>
+			<li><a href="https://www.northernarc.com/impact"> <span class=""></span> Impact</a></li>
+		</ul>
+	</li>
+	<li class="">
+		<a class="top-heading contain-sub" href="javascript:void(0)">OUR APPROACH</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/our-approach/underwriting"> <span class=""></span> Underwriting</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/structured-finance"> <span class=""></span> Structured Finance </a></li>
+			<li><a href="https://www.northernarc.com/our-approach/market-and-investor-relations"> <span class=""></span> Market &amp; Investor Relations</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/risk-management"> <span class=""></span>Risk Management </a></li>
+			<li><a href="https://www.northernarc.com/our-approach/nimbus"> <span class=""></span>Nimbus</a></li>
+			<li><a href="https://www.northernarc.com/our-approach/originator-partners-financial"> <span class=""></span>Segments</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="top-heading contain-sub " href="javascript:void(0)">INVEST WITH US</a> 
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/invest-with-us"> <span class=""></span> Overview</a></li>
+			<li><a href="https://www.northernarc.com/our-products"> <span class=""></span> Our Products</a></li>
+			<li><a href="https://www.northernarc.com/fund-management"> <span class=""></span> Fund Management</a></li>
+			<li><a href="https://investor.northernarc.com/"> <span class=""></span>Investor Portal</a></li>
+			<li><a href="https://altifi.ai/" target="_blank"> <span class=""></span>AltiFi</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="top-heading contain-sub " href="javascript:void(0)">PARTNERS</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/our-partners"> <span class=""></span> For Partners</a></li>
+			<li><a href="https://originator.northernarc.com/index.html"> <span class=""></span> Partner Portal</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg">
+		<a class="top-heading contain-sub active" href="javascript:void(0)">GOVERNANCE</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/governance"> <span class=""></span> Policies and Notices </a></li>
+			<li><a href="https://www.northernarc.com/governance"> <span class=""></span> Regulatory Information</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg">
+		<a class="top-heading contain-sub " href="javascript:void(0)">INVESTOR UPDATES</a>
+		<ul class="dropdown">
+			<li><a href="https://www.northernarc.com/investor"> <span class=""></span> Financials </a></li>
+			<li><a href="https://www.northernarc.com/investor"> <span class=""></span> Annual Reports</a></li>
+		</ul>
+	</li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/partner-update">PARTNER UPDATES</a></li>
+    <li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/resource-center-case-study">RESOURCE CENTRE</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/resource-center-news-and-media">MEDIA CENTRE</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/events">EVENTS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/career-culture">CAREERS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/fund-management">NORTHERN ARC INVESTMENTS</a></li>
+	<li class="hidden-md hidden-lg"><a class="top-heading" href="https://www.northernarc.com/northernarc-foundation">NORTHERN ARC FOUNDATION </a></li>
+	<li><a class="top-heading" href="https://www.northernarc.com/reach-us">REACH US</a></li>
+</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--  row  -->
+	</div>
+	<!-- conhtainer  -->
+</div>
+
+<!--  TopHead -->
+                <!--  row  -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="TitleGrid">
+                            <h6><span class="icon"></span>Corporate Governance</h6>
+                            <h2>The right opportunities, unwavering on the right path</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- conhtainer  -->
+        </div>
+        <!--  HeadInfoPara -->
+        <div class="HeadInfoPara">
+            <div class="container">
+                <div class="row MarTop320">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="Info">
+							We believe in maintaining the highest standards of corporate 
+governance and transparency. It is one of the key criteria we use for 
+underwriting clients and is at the very core of our values and 
+philosophy. We believe it makes great business sense and is the only way
+ to build long-term credibility in the ﬁnancial sector.
+							Given our emphasis on innovation, all our in-house products and 
+structures get vetted in great depth from a legal, taxation and 
+regulatory perspective. 
+						</div>
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <div class="Info">
+							We track compliance and changes to the law on an ongoing basis 
+and very often ﬁnd ourselves proactively adhering to best practices 
+before they become the norm.
+							We ensure that along with us, our associates and those we engage 
+with, are compliant with the law. We take great pride in the fact that 
+we are widely recognised for adhering to and promoting high standards of
+ governance and business ethics in the space we operate in.
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="new-info">
+                            We have a zero-tolerance policy for 
+corruption or bribery in any form and are committed to acting with 
+integrity and in a professional manner in all our business dealings and 
+relationships, wherever we operate.  We also believe that financial 
+institutions play a crucial role in the prevention of money laundering 
+and financial crimes, and we regularly upgrade our policies and 
+processes to adopt international standards and best practices on 
+combating financial crime.
+                        </div>
+                    </div>
+                </div>
+                <!-- row  -->
+            </div>
+        </div>
+        <!--  PHeadInfo -->
+    </header>
+    <!--- ======End Header Section============= -->
+    <section class="PolicyDocuments">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 P-LR">
+                    <!--<div class="PD-Nav">
+                        <ul>
+                           	<li><a href="#!" class="active">Policies and Notices</a></li>
+                               <li><a href="#!">Regulatory Information</a></li>
+                           </ul>
+                        </div> PD-Nav  -->
+                    <div class="tab-wrap tab-wrap-h">
+                        <input type="radio" name="tabs" id="tab1" checked="checked">
+                        <div class="tab-label-content" id="tab1-content">
+                            <label for="tab1">Policies and Notices</label>
+                        </div>
+                        <input type="radio" name="tabs" id="tab2">
+                        <div class="tab-label-content" id="tab2-content">
+                            <label for="tab2">Regulatory Information</label>
+                        </div>
+                        <div class="slide"></div>
+                    </div>
+                    <div class="dropdown lg-hide">
+                        <button onclick="myFunction()" class="dropbtn">Policies and Notices<span class="ArrowIcon"></span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a data-id="1" href="javascript:void(0)" class="hidden">Policies and Notices</a>
+                            <a data-id="2" href="javascript:void(0)">Regulatory Information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row  -->
+            <div class="row tab1-content">
+                <div class="col-md-12">
+                    <h2>Policy documents</h2>
+                </div>
+            </div>
+            <!-- row  -->
+            <div class="row tab1-content">
+				                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Policy-for-Restructuring-of-Assets-1627119907.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Policy for Restructuring of Assets</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Policy-for-Determining-Material-Subsidiaries--1626947836.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Policy for Determining Material Subsidiaries</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Materiality-Thresholds-for-Related-Party-Transactions--1626947557.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Materiality Thresholds for Related Party Transactions</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Materiality-Thresholds-for-Determining-Events-or-Information--1626947334.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Materiality Thresholds for Determining Events or Information</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Familiarisation-Programme-for-Independent-Directors-1626947299.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Familiarisation Programme for Independent Directors</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Code-of-Conduct-for-Directors-and-Senior-Management--1626947860.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Code of Conduct for Directors and Senior Management</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Dividend-Distribution-Policy-1626947874.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Dividend Distribution Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Anti-Bribery-and-Anti-Corruption-Policy-1620722848.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Anti-Bribery and Anti-Corruption Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Handling-of-Personal-Information-1590564016.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Handling of Personal Information</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Nomination-and-Remuneration-Policy-1626518541.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Remuneration Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/EQUAL-OPPORTUNITY-POLICY-1628511796.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Equal Opportunity Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Terms-and-Conditions-for-Appointment-of-Independent-Directors-1591249891.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Terms and Conditions for Appointment of Independent Directors</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Vigil-Mechanism-and-Whistle-Blower-Policy-1626947237.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Vigil Mechanism and Whistle Blower Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/4-1571661893.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Fit &amp; Proper Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Code-of-Conduct-for-Fair-Disclosure-of-Unpublished-Price-Sensitive-Information-and-Trading-in-Listed-Securities-1626947212.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Code Of Conduct For Fair Disclosure Of UPSI And Trading In Listed Securities</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Code-of-Conduct-1593691676.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Code Of Conduct</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Corporate-Governance-Policy-1620723025.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Corporate Governance Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Corporate-Social-Responsibility-Policy-1626947261.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Corporate Social Responsibility Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Fair-Practices-Code-1614844847.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Fair Practices Code</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Know-Your-Customer-and-Anti-Money-Laundering-Policy-1626947277.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Know Your Customer and Anti-Money Laundering Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Related-Party-Policy-May-2021-1623703694.pdf" class="col-lg-3 col-md-4 col-sm-4 col-xs-6 xs-full-320">
+                    <div class="PD-Box">
+                        <div class="Heding">Related Party Policy</div>
+                        <div class="arrow">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <!-- PD-Box -->
+                </a>
+                            </div>
+            <!-- row  -->
+            <!-- Start Regulatory Information Details    -->
+            <div class="row RI-MarTop hidden tab2-content">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="RI-Info">
+                        In terms of Regulation 62 – SEBI (Listing 
+Obligations and Disclosure Requirements) Regulation, 2015, name and 
+contact information of the designated official of the Company who is 
+responsible for assisting and handling investor grievances is given 
+here:
+                    </p>
+                </div>
+            </div>
+            <!-- row  -->
+            <div class="row hidden tab2-content">
+                <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12">
+                    <div class="RI-ContactInfo">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="RI-PaddingBox">
+                                    <h2>Contact Information for Investor Grievance</h2>
+                                    <p>Srividhya. R</p>
+                                    <p>Company Secretary</p>
+                                    <p>Phone: 044-66687369</p>
+                                    <p>Email id: Srividhya.R@Northernarc.com</p>
+                                </div>
+                                <!--  RI-PaddingBox -->
+                            </div>
+                            <div class="col-md-3">
+                                <div class="GovernanceSectionBut"></div>
+                            </div>
+                        </div>
+                        <!--  row  -->
+                    </div>
+                    <!-- RI-ContactInfo -->
+                </div>
+            </div>
+            
+            <div class="row hidden tab2-content">
+                <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="BlackBoxGrid">
+								                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Authorised-Persons-for-determining-materiality-of-an-event-or-information-1627542919.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            “Authorised Persons” for 
+determining materiality                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Dues-to-Material-Creditors-1626677507.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            Dues to material creditors                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Statement-of-Unpaid-Dividend-on-Preference-Shares-1591269762.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            Statement of Unpaid Dividend
+ on Preference Shares                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/NPS-Lite-Website---updated-1588585845.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            NPS-Lite Swavalamban Scheme                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Valuation-Report-1571732112.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            Valuation Report                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                                <a target="_BLANK" href="https://www.northernarc.com/assets/uploads/pdf/Debenture-Trustees-Details-1571655666.pdf" class="RI-BlackBoxGrid-L">
+                                    <div class="RI-BlackBox">
+                                        <div class="ChooseInfo">
+                                            Debenture Trustees Details                                        </div>
+                                    </div>
+                                    <!-- RI-BlackBox -->
+                                </a>
+                                                            </div>
+                        </div>
+                    </div>
+                    <!-- row  -->    
+                </div>
+            </div>
+            <!-- row -->
+            <!-- End Regulatory Information Details    -->
+        </div>
+        <!-- container  -->
+    </section>
+    <!--  PolicyDocuments  -->
+    <section class="NoticesAnnexures tab1-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-7 xs-full-320">
+                    <h2>Notices and Annexures</h2>
+                </div>
+                
+            </div>
+            <!--  row  -->
+            <div class="row">
+                <div class="NABoxGrid">
+                    <div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/SECreditRatingIntimation-1633073957.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Revision in Credit Rating</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Public-disclosure-on-liquidity-risk-Jun-21-1628511953.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Public disclosure on liquidity risk - June 2021</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Intimation-of-Resignation-of-Director-1626247034.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Intimation of changes in the Board of Directors</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/20210712_EGM-Notice-1626246826.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">EGM Notice - 12th July 2021</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/2021-05-25_EGM-Notice_Final-1626246789.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">EGM Notice - 25th May 2021</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Public-disclosure-on-liquidity-risk-Mar-2021-1623153531.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Public disclosure on liquidity risk - March 2021</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Northern-Arc-Capital-Limited-MLD-Valuations-27-May-2021-1622177367.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Valuation Report dated 27.05.2021.</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Northern-Arc-Capital-Limited-MLD-Valuations-29-April-2021-1619768551.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">VALUATION REPORT DATED 29.04.2021</div>
+                            </div>
+                        </div>
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <div class="NA-Box" onclick="window.open('https://www.northernarc.com/assets/uploads/pdf/Northern-Arc-Capital-Limited-MLD-Valuations-18-March-2021-1616154052.pdf','_blank')">
+                                <div class="PDF-Icon">
+									<img src="Northern%20Arc_files/PDF.svg">	
+								</div>
+                                <div class="NA-Box-Text">Valuation Report dated 18.03.2021</div>
+                            </div>
+                        </div>
+											</div>
+					                    <div class="row">
+						<div class="col-md-12">
+							<div class="LoadMore governance" data-id="2" style="width:100%">
+								<a href="https://www.northernarc.com/archive/governance#notices-and-annexures">LOAD MORE</a>
+							</div>
+						</div>
+					</div>
+					                </div>
+                <!-- NABoxGrid -->
+            </div>
+            <!--  row  -->
+        </div>
+        <!-- container  -->
+    </section>
+    <!--  PolicyDocuments  -->
+    <div class="clearfix"></div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+         
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+<style>
+@media (max-width: 574px) {
+.PolicyDocuments .dropbtn {
+    background-color: #4fc6e0;
+    padding: 16px 16px;
+    border: none;
+    cursor: pointer;
+	font-family: Montserrat;
+	  font-size: 20px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 2;
+	  letter-spacing: 0.4px;
+	  text-align: left;
+	  color: #000000;
+	  border-bottom: 3px solid #fff;
+	  width:100%;
+	  margin-left:0%;
+	  margin-right:0%;
+}
+.PolicyDocuments .dropbtn:hover, .dropbtn:focus {
+    background-color: #4fc6e0;
+    outline: none;
+}
+.NoticesAnnexures .dropbtn:hover, .dropbtn:focus {
+	background-color: #4fc6e0 !important;
+	outline: none !important;
+}
+}
+</style>
+<footer class="FooterGrid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Interested in hearing more <br>about our progress? </h2>
+                        <h4>For more updates about the lives we touch, the products we create and the profits we enable, invite our stories into your inbox.</h4>
+						<div class="Subscrib">
+                            <input placeholder="Subscribe now" class="SubscribInput" id="SubscribInput" required="" type="text">
+                            <button class="SubscribBut"></button>
+                        </div>
+                    </div>
+		<div class="col-md-5 left-section">
+			<h2>Customer Support</h2>
+                        <h4>
+				For any kind of assistance from the customer support of Northern Arc Capital Limited please feel free to 
+				<b style="color:#FFF;"> call our toll-free number 1800 4198 766 </b>
+				anytime between 10.00 am and 6.00 pm, Monday to Friday, except public holidays or <b style="color:#FFF;">write in to 
+				customersupport@northernarc.com</b>.
+			</h4>
+		</div>
+                </div>
+				<div class="row">
+                    <div class="col-md-12">
+                        <div class="BotStrip"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                        <div class="Join-us">
+                            Join us on Social Media
+                        </div>
+                        <div class="BotSocial">
+                            <ul>
+                                <li><a href="https://www.youtube.com/channel/UCZrOsaxPlgLdceqMN-d3vXw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/northernarccapital/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/_NorthernArc" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/northern-arc-capital/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+	                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+				<div class="Subscrib grievance-link">
+					<a class="SubscribInput" href="https://www.northernarc.com/grievance-redressal-mechanism">
+						Grievance Redressal Mechanism 
+						<button class="SubscribBut"></button>
+					</a>
+                        	</div>
+                        <div class="CopyRight">
+                            Copyright © 2021, Northern Arc. All Rights Reserved. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container  -->
+        </footer>
+        
+        <script src="Northern%20Arc_files/bootstrap.js"></script>
+        <script>
+            $(".navToggle").click (function(){
+              $(this).toggleClass("open");
+              $(".nav").toggleClass("open");
+            });
+        </script>
+			<!-- Manage landing header for home page -->
+						<script>
+				$(window).scroll(function() {
+					if($(window).scrollTop() == 0){
+						$(".inner-sticky").hide();
+						$(".inner-fix").css('visibility', 'visible');
+						$('.inner-sticky').css('box-shadow', '0 0 0 rgba(0, 0, 0, 0)');
+					}else{
+						$(".inner-fix").css('visibility', 'hidden');
+						$('.inner-sticky').css('box-shadow', '0 0.0625em 0.5em rgba(0, 0, 0, .3)');
+						$(".inner-sticky").fadeIn();	
+					}
+				});
+			</script>
+									        <script src="Northern%20Arc_files/dashboard.js"></script>
+        
+		<script>$(function () {
+		  $('.Pdropdown-toggle').click(function () {
+			$(this).next('.Pdropdown').toggle();
+		  });
+		
+		  $(document).click(function (e) {
+			var target = e.target;
+			if (!$(target).is('.Pdropdown-toggle') && !$(target).parents().is('.Pdropdown-toggle')) {
+			  $('.Pdropdown').hide();
+			}
+		  });
+		
+		});
+		</script>
+		  <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#altfi-pop').modal('show');
+        });
+    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="Northern%20Arc_files/js.js"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-158903731-1');
+		</script>
+		<style>
+			.NA-Box, .PR-BoxGrid{ cursor:pointer; }
+			.JoinGrid .Box{display:block;}
+			.Press-Releases-Grid .LoadMore {margin: 0px 0px 40px 0px; }
+			.Press-Releases-Grid .LoadMore a {color:#fff;}
+			.LoadMore.governance{margin: 0px; }
+			.LoadMore.investor{margin: 50px 0px 0px 0px; }
+		</style>
+	
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

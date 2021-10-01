@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><link rel="shortcut icon" href="https://code.byjusfutureschool.com/images/byjuFavicon.png"><meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no,maximum-scale=1,user-scalable=no"><meta name="robots" content="noindex"><meta name="theme-color" content="#ffffff"><meta property="og:title" content="BYJU'S FutureSchool #1 Coding and Robotics Course for Kids"><meta property="og:image" content="/images/byju-og-image.png"><meta property="og:image:width" content="276px"><meta property="og:image:height" content="276px"><meta property="og:description" content="Live Online Coding Classes for Kids in Grade 1-12. Empower your kids with the joy of building their own apps and games. Learn from the leading tech curriculum for children."><meta property="og:url" content="https://code.byjusfutureschool.com"><meta name="twitter:title" content="BYJU'S FutureSchool #1 Coding and Robotics Course for Kids"><meta name="twitter:description" content="Live Online Coding Classes for Kids in Grade 1-12. Empower your kids with the joy of building their own apps and games. Learn from the leading tech curriculum for children."><meta name="twitter:image" content="/images/byju-og-image.png"><meta name="twitter:card" content="summary_large_image"><meta name="og:type" content="website"><script async="" src="index-byfs-CODING_files/a_002.js"></script><script async="" src="index-byfs-CODING_files/datadog-rum.js"></script><script type="text/javascript" async="" src="index-byfs-CODING_files/amplitude-5.js"></script><script type="text/javascript" async="" src="index-byfs-CODING_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-L1Joc/A2btBqMKjJOCvvgRe+ptim2I0yOZYwI/H/2MLPdAC7PAF87u7yYxzND7WF"></script><script type="text/javascript" async="" src="index-byfs-CODING_files/analytics.js"></script><script>!function(e){var r=e.location.hostname;-1!==r.indexOf("code")?e.currentCourseName="CODING":-1!==r.indexOf("math")?e.currentCourseName="MATH":-1!==r.indexOf("music")?e.currentCourseName="MUSIC":e.currentCourseName="MUSIC_FOR_ALL"}(window),localStorage.getItem("currentCourseName")&&-1===window.location.origin.indexOf(".com")&&(window.currentCourseName=localStorage.getItem("currentCourseName"))</script><script data-env="production" data-segment="w7YH8EJ1PxsEiWlAazGGdKaKbIXKcZl0" data-pagenamemap="{}" type="text/javascript" src="index-byfs-CODING_files/whjr-analytics.js"></script><link rel="manifest" href="https://code-assets-0.whjr.online/manifest.json"><script>window.publicUrl="https://code-assets-0.whjr.online",window.clientBuildVersion="%clientBuildVersion%"</script><title>BYJU'S FutureSchool</title><script type="text/javascript">var clevertap={event:[],profile:[],account:[],onUserLogin:[],notifications:[],privacy:[]}</script><script src="index-byfs-CODING_files/api.js" async="" defer="defer"></script><link href="index-byfs-CODING_files/75.css" rel="stylesheet"><link href="index-byfs-CODING_files/main.css" rel="stylesheet"><style data-styled="" data-styled-version="4.4.1"></style><style data-jss="" data-meta="MuiSnackbar">
+.MuiSnackbar-root {
+  left: 8px;
+  right: 8px;
+  display: flex;
+  z-index: 1400;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+.MuiSnackbar-anchorOriginTopCenter {
+  top: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopCenter {
+    top: 24px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginBottomCenter {
+  bottom: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomCenter {
+    left: 50%;
+    right: auto;
+    bottom: 24px;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginTopRight {
+  top: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopRight {
+    top: 24px;
+    left: auto;
+    right: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginBottomRight {
+  bottom: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomRight {
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginTopLeft {
+  top: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopLeft {
+    top: 24px;
+    left: 24px;
+    right: auto;
+  }
+}
+.MuiSnackbar-anchorOriginBottomLeft {
+  bottom: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomLeft {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  width: 100%;
+}
+.jss2 {
+  background-color: #43a047;
+}
+.jss3 {
+  background-color: #FF6400;
+}
+.jss4 {
+  background-color: rgb(18, 101, 118);
+}
+.jss5 {
+  background-color: #1a91a9;
+}
+.jss6 {
+  font-size: 20px;
+}
+.jss7 {
+  opacity: 0.9;
+  margin-right: 8px;
+}
+.jss8 {
+  display: flex;
+  align-items: center;
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.43;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: Muli-Regular;
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: Muli-Regular;
+  font-weight: 300;
+  line-height: 1.167;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: Muli-Regular;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.167;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.235;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.334;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: Muli-Regular;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: Muli-Regular;
+  font-weight: 500;
+  line-height: 1.57;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #1a91a9;
+}
+.MuiTypography-colorSecondary {
+  color: #ff6400;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Muli-Regular;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+</style><style data-jss="" data-meta="MuiGrid">
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+.MuiGrid-zeroMinWidth {
+  min-width: 0;
+}
+.MuiGrid-direction-xs-column {
+  flex-direction: column;
+}
+.MuiGrid-direction-xs-column-reverse {
+  flex-direction: column-reverse;
+}
+.MuiGrid-direction-xs-row-reverse {
+  flex-direction: row-reverse;
+}
+.MuiGrid-wrap-xs-nowrap {
+  flex-wrap: nowrap;
+}
+.MuiGrid-wrap-xs-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.MuiGrid-align-items-xs-center {
+  align-items: center;
+}
+.MuiGrid-align-items-xs-flex-start {
+  align-items: flex-start;
+}
+.MuiGrid-align-items-xs-flex-end {
+  align-items: flex-end;
+}
+.MuiGrid-align-items-xs-baseline {
+  align-items: baseline;
+}
+.MuiGrid-align-content-xs-center {
+  align-content: center;
+}
+.MuiGrid-align-content-xs-flex-start {
+  align-content: flex-start;
+}
+.MuiGrid-align-content-xs-flex-end {
+  align-content: flex-end;
+}
+.MuiGrid-align-content-xs-space-between {
+  align-content: space-between;
+}
+.MuiGrid-align-content-xs-space-around {
+  align-content: space-around;
+}
+.MuiGrid-justify-content-xs-center {
+  justify-content: center;
+}
+.MuiGrid-justify-content-xs-flex-end {
+  justify-content: flex-end;
+}
+.MuiGrid-justify-content-xs-space-between {
+  justify-content: space-between;
+}
+.MuiGrid-justify-content-xs-space-around {
+  justify-content: space-around;
+}
+.MuiGrid-justify-content-xs-space-evenly {
+  justify-content: space-evenly;
+}
+.MuiGrid-spacing-xs-1 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.MuiGrid-spacing-xs-1 > .MuiGrid-item {
+  padding: 4px;
+}
+.MuiGrid-spacing-xs-2 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 8px;
+}
+.MuiGrid-spacing-xs-3 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 12px;
+}
+.MuiGrid-spacing-xs-4 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.MuiGrid-spacing-xs-4 > .MuiGrid-item {
+  padding: 16px;
+}
+.MuiGrid-spacing-xs-5 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+  padding: 20px;
+}
+.MuiGrid-spacing-xs-6 {
+  width: calc(100% + 48px);
+  margin: -24px;
+}
+.MuiGrid-spacing-xs-6 > .MuiGrid-item {
+  padding: 24px;
+}
+.MuiGrid-spacing-xs-7 {
+  width: calc(100% + 56px);
+  margin: -28px;
+}
+.MuiGrid-spacing-xs-7 > .MuiGrid-item {
+  padding: 28px;
+}
+.MuiGrid-spacing-xs-8 {
+  width: calc(100% + 64px);
+  margin: -32px;
+}
+.MuiGrid-spacing-xs-8 > .MuiGrid-item {
+  padding: 32px;
+}
+.MuiGrid-spacing-xs-9 {
+  width: calc(100% + 72px);
+  margin: -36px;
+}
+.MuiGrid-spacing-xs-9 > .MuiGrid-item {
+  padding: 36px;
+}
+.MuiGrid-spacing-xs-10 {
+  width: calc(100% + 80px);
+  margin: -40px;
+}
+.MuiGrid-spacing-xs-10 > .MuiGrid-item {
+  padding: 40px;
+}
+.MuiGrid-grid-xs-auto {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.MuiGrid-grid-xs-true {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.MuiGrid-grid-xs-1 {
+  flex-grow: 0;
+  max-width: 8.333333%;
+  flex-basis: 8.333333%;
+}
+.MuiGrid-grid-xs-2 {
+  flex-grow: 0;
+  max-width: 16.666667%;
+  flex-basis: 16.666667%;
+}
+.MuiGrid-grid-xs-3 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.MuiGrid-grid-xs-4 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+.MuiGrid-grid-xs-5 {
+  flex-grow: 0;
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+.MuiGrid-grid-xs-6 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.MuiGrid-grid-xs-7 {
+  flex-grow: 0;
+  max-width: 58.333333%;
+  flex-basis: 58.333333%;
+}
+.MuiGrid-grid-xs-8 {
+  flex-grow: 0;
+  max-width: 66.666667%;
+  flex-basis: 66.666667%;
+}
+.MuiGrid-grid-xs-9 {
+  flex-grow: 0;
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.MuiGrid-grid-xs-10 {
+  flex-grow: 0;
+  max-width: 83.333333%;
+  flex-basis: 83.333333%;
+}
+.MuiGrid-grid-xs-11 {
+  flex-grow: 0;
+  max-width: 91.666667%;
+  flex-basis: 91.666667%;
+}
+.MuiGrid-grid-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+
+</style><style data-jss="" data-meta="makeStyles">
+.jss22 {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  overflow: hidden;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: 0 400px;
+}
+.jss23 {
+  margin: 0 8px;
+}
+.jss24 {
+  display: flex;
+  padding: 16px 24px 24px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.jss25 {
+  width: 60%;
+}
+.jss26 {
+  width: 80%;
+}
+.jss27 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:960px) {
+  .jss27 {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+</style><style data-jss="" data-meta="injectIntl(t)">
+.jss29 {
+  width: 80px;
+  margin-left: 10px;
+}
+</style><style data-jss="" data-meta="injectIntl(Component)">
+.jss16 {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  overflow: hidden;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: 0 400px;
+}
+.jss17 {
+  margin: 0 8px;
+}
+.jss18 {
+  display: flex;
+  padding: 16px 24px 24px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.jss19 {
+  width: 60%;
+}
+.jss20 {
+  width: 80%;
+}
+.jss21 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:960px) {
+  .jss21 {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+</style><style data-jss="" data-meta="injectIntl(Component)">
+.jss10 {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  overflow: hidden;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: 0 400px;
+}
+.jss11 {
+  margin: 0 8px;
+}
+.jss12 {
+  display: flex;
+  padding: 16px 24px 24px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.jss13 {
+  width: 60%;
+}
+.jss14 {
+  width: 80%;
+}
+.jss15 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:960px) {
+  .jss15 {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+</style><script charset="utf-8" src="index-byfs-CODING_files/316.js"></script><script charset="utf-8" src="index-byfs-CODING_files/16.js"></script><script charset="utf-8" src="index-byfs-CODING_files/272.js"></script><script async="" src="index-byfs-CODING_files/hotjar-1347255.js"></script><script type="text/javascript" src="index-byfs-CODING_files/a" class="ct-jp-cb" rel="nofollow" async=""></script><script async="" src="index-byfs-CODING_files/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head><body data-new-gr-c-s-check-loaded="8.884.0" data-gr-ext-installed=""><noscript>You need to enable JavaScript to run this app.</noscript><link rel="preconnect" href="https://connect.facebook.net/"><link rel="preconnect" href="https://www.datadoghq-browser-agent.com/"><link rel="preconnect" href="https://www.googletagmanager.com/"><link rel="preconnect" href="index-byfs-CODING_files/checkout.js"><link rel="preconnect" href="index-byfs-CODING_files/PIL.js"><link rel="preconnect" href="index-byfs-CODING_files/a.js"><link rel="preconnect" href="https://cdn.taboola.com/"><div id="root"><div class="main_container"><div class="jss16"><div class="MuiGrid-root mb-5 MuiGrid-container MuiGrid-justify-content-xs-center"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"><div class="container-fluid padded_container"><div class="MuiGrid-root mt-3 position-relative MuiGrid-item MuiGrid-grid-xs-12"><div class="MuiGrid-root header_logo logo_margin"><a class="logo-link" href="https://code.byjusfutureschool.com/"><div class="jss28"><h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap"><img src="index-byfs-CODING_files/byjuFutureSchool.png" alt="Company Logo" width="180"></h6></div></a></div><div class="MuiGrid-root jss27"><div class="heading_bold font24"><span>Privacy Policy</span></div></div></div></div><section class="w-100 box box_blue mt-5"><div class="container-fluid p-0"><div class="row"><div class="col-md-12 mx-auto"><div class="p-4"><section class="mb-4 mt-2"><div class="heading4_reg mx-4 mt-3"><p class="mb-2">This Privacy Policy outlines the approach of WHITEHAT EDUCATION TECHNOLOGY LLC
+ doing business as BYJU’S FutureSchool (including, its affiliates’) to 
+privacy to fulfil its obligations under the applicable privacy laws.</p><p class="mb-2">Throughout this document, the terms “we”, “us”, “our”, “ours” &amp; “WhiteHat” refer to WHITEHAT EDUCATION TECHNOLOGY LLC
+ doing business as BYJU’S FutureSchool (including its affiliates). And 
+the terms “you”, “your” “yours” &amp; “you and/or your child “refer to 
+You (as the User of the Platform). Users also include all persons who 
+access, browse, or sign up on the Platform for applying to teach on the 
+Platform (“Applicant(s)”) and those selected to teach on the Platform 
+(“Instructor(s)”).</p><p class="mb-2">This Privacy Policy applies to all
+ your PERSONAL DATA processed by us, whether in physical or electronic 
+mode. This Privacy Policy is meant to help you understand what 
+information we collect, why we collect it, and how you can update, 
+manage, export, and delete your information and shall be read with the 
+Terms and Conditions found on (URL: <a href="https://code.byjusfutureschool.com/terms-conditions" target="_blank">https://code.byjusfutureschool.com/terms-conditions</a> ) and the <a href="https://code.byjusfutureschool.com/coppa" target="_blank">COPPA Direct Notice to Parents.</a> Capitalized terms that are not defined in this Privacy Policy have the meaning given to them in the Terms of Conditions.</p><p class="mb-2">Please
+ note that this Privacy Policy is applicable to all instances where we 
+play the role of a DATA CONTROLLER of your Personal Data, when we 
+collect and process personal data about you for offering our products or
+ services (whether or not such role is defined in applicable 
+legislation).</p><p class="mb-2">Further specific privacy provisions in 
+respect of the EU, UK, Australia, Singapore and Malaysia are set out 
+below in the ANNEXURE A, ANNEXURE B, ANNEXURE C and ANNEXURE D and 
+ANNEXURE E respectively.</p><p class="mb-2">We are committed to keeping 
+your and your child's Personal Data private and secure. We process any 
+Personal Data we collect from you and your child in accordance with the 
+applicable laws and regulations and the provisions of this Privacy 
+Policy. Please read the following carefully to understand our practices 
+regarding your and your child's Personal Data and how we treat it.</p><p class="mb-2">By
+ choosing to visit and/or avail any Services provided by us, you agree 
+to this Privacy Policy (as may be amended from time to time). Please 
+read the following information carefully. You must be at least 18 years 
+old to register on our site. If you are under 18 years old, you are not 
+permitted to register unless such registration is completed by a parent 
+or legal guardian. By your continued access or use of the Platform, you 
+signify your agreement to be legally bound by Privacy Policy set forth 
+herein. If you do not agree to the Privacy Policy of this agreement, 
+promptly exit this page and stop accessing the Services.</p></div></section><section class="mb-4"><div class="heading_bold font18">1. Personal Data</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">‘Personal
+ Data’ means any information that may be used to identify an individual,
+ directly or indirectly, in particular by reference to an identifier, 
+including not limited to, a first and last name, physical address, email
+ address, online identifier or other contact information and/or identity
+ proof documents.</p></div></section><section class="mb-4"><div class="heading_bold font18">2. Children's Privacy</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ need to collect your and your child's Personal Data to provide our 
+services to you and your child. We are committed to protecting the 
+privacy of children who use our sites and applications. Whenever we 
+refer to a “child” in this privacy policy, we mean a child under the age
+ of 13 for US, UK and Singapore users, under the age of 16 for EU users,
+ under the age of 21 Hijri years for UAE users, and under the age of 18 
+for Malaysian users.</p></div></section><section class="mb-4"><div class="heading_bold font18">3. US Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is located in the United States of America, we handle their 
+Personal Data in compliance with the Children's Online Privacy 
+Protection Act (“COPPA”). COPPA applies to child users who are under the
+ age of 13.</p><p class="mb-2">COPPA requires that we receive verifiable
+ parental consent from the child's parent or legal guardian before the 
+collection, use, or disclosure of the child's Personal Data. To learn 
+more about how we receive this parental consent, what personal data we 
+collect from children, how we use this data, including when we disclose 
+it, go to <a href="https://code.byjusfutureschool.com/coppa" target="_blank">COPPA Direct Notice to Parents.</a> We display this notice to all parents and guardians when soliciting and obtaining verifiable parental consent.<p class="mb-2">If
+ you are a parent or guardian and you believe that your child has 
+provided us with Personal Data without your consent, please contact us 
+as at privacy@byjusfutureschool.com. We will dispose of that data in 
+accordance with applicable laws and regulations.</p><p class="mb-2">Parents
+ can always refuse to permit us to collect further Personal Data, 
+request to review their child's Personal Data, or request that we delete
+ from our records the personal data collected from or about their child.
+ Please keep in mind that a request to delete records may lead to a 
+termination of an account, membership, or other service, as the nature 
+of our services requires collection of Personal Data. To exercise any of
+ these options, please contact us at privacy@byjusfutureschool.com. 
+Please be aware that to protect children’s privacy and security, we will
+ take reasonable steps to verify a parent or legal guardian’s identity 
+before granting access to any personal data.</p></p></div></section><section class="mb-4"><div class="heading_bold font18">4. EU Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is a resident of a Member State of the European Union, we 
+will treat their Personal Data as a child’s Personal Data if they are 
+under 16 years of age, and receive consent of the holder of parental 
+responsibility as required for the processing of Personal Data. All 
+residents of the European Union further have certain specific rights 
+granted by the General Data Protection Regulation (“EU-GDPR”). See 
+Annexure A to this privacy policy.</p></div></section><section class="mb-4"><div class="heading_bold font18">5. UK Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is a resident of the United Kingdom, we will treat their 
+Personal Data as a child’s Personal Data if they are under 13 years of 
+age, and receive consent of the holder of parental responsibility as 
+required for the processing of Personal Data. All residents of the 
+United Kingdom further have certain specific rights granted by the 
+General Data Protection Regulation (“UK-GDPR”) and Data Protection Act, 
+2018 (“DPA”). See Annexure B to this privacy policy.</p></div></section><section class="mb-4"><div class="heading_bold font18">6. Singapore Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is a resident of Singapore, we will treat their Personal 
+Data as a minor’s Personal Data if they are under 13 years of age, and 
+require consent of the holder of parental responsibility as required for
+ the processing of Personal Data.</p><p class="mb-2">If you are a parent
+ or guardian and you believe that your child has provided us with 
+Personal Data without your consent, please contact us as at 
+privacy@byjusfutureschool.com. We will dispose of that data in 
+accordance with applicable laws and regulations.</p><p class="mb-2">Parents
+ can always refuse to permit us to collect further Personal Data, 
+request to review their child's Personal Data, or request that we delete
+ from our records the personal data collected from or about their child.
+ Please keep in mind that a request to delete records may lead to a 
+termination of an account, membership, or other service, as the nature 
+of our services requires collection of Personal Data. To exercise any of
+ these options, please contact us at privacy@byjusfutureschool.com. 
+Please be aware that to protect children’s privacy and security, we will
+ take reasonable steps to verify a parent or legal guardian’s identity 
+before granting access to any personal data.</p><p class="mb-2">All 
+residents of Singapore further have certain specific rights granted by 
+the Personal Data Protection Act. See Annexure D to this privacy policy.</p></div></section><section class="mb-4"><div class="heading_bold font18">7. UAE Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is resident in the UAE, we will receive consent of the 
+holder of parental responsibility for obtaining, receiving, collecting, 
+using, sharing, processing and storing the Personal Data of both the 
+individual with parental responsibility and the child in accordance with
+ this privacy policy as amended from time to time.</p></div></section><section class="mb-4"><div class="heading_bold font18">8. Malaysian Child Users</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">If
+ your child is a resident of Malaysia, we will treat their Personal Data
+ as a child’s Personal Data if they are under 18 years of age, and 
+receive consent of the holder of parental responsibility as required for
+ the processing of Personal Data. Persons whose personal data are 
+processed in Malaysia have certain specific rights granted by the 
+Personal Data Protection Act 2010. See Annexure E to this privacy 
+policy.</p></div></section><section class="mb-4"><div class="heading_bold font18">9. What Personal Data do we Collect &amp; Process?</div><div class="heading4_reg mx-4 mt-3"><p>Categories of Personal Data that we collect and process are as follows:</p><ul><li>From
+ you/ your child, we collect demographic &amp; identity data (name, 
+email address, contact number, photograph, location), gender, school 
+name, birth date and year of the child to validate age)</li><li>Your 
+child may also choose to provide Personal Data about themselves in the 
+content they post on our website. However, as outlined above, we require
+ and have safeguards in place to ensure that you first consent to our 
+collection and use of this Personal Data.</li><li>From you/ your child, we collect financial Data (for e.g., account, payment details, invoice details)</li><li>Online Identifiers and other technical Data (for e.g. IP address, transaction logs, device details)</li><li>Online training sessions are recorded and used for quality audits and Instructor teacher training</li><li>Projects, quizzes, activities, apps developed, performance completed as part of our programs.</li><li>If
+ you are an Applicant on the Platform, we collect your name, mobile 
+number, and email address. If you are selected as Instructor, we also 
+collect your demographic data (e.g., photo, location, gender), 
+government identifications, financial data (e.g., bank account, wallet, 
+or other payment details), and educational qualifications.</li></ul></div></section><section class="mb-4"><div class="heading_bold font18">10. Where do we obtain your Personal Data from?</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Most
+ of the Personal Data we process is provided by you directly to us when 
+you (i) register to use our products and/or services including the 
+registration for a free trial; or (ii) when you apply to teach as an 
+Instructor. This also includes the Personal Data collected automatically
+ and in the background by us when you use our website and 
+application(s). Certain information might be collected automatically as 
+you or the child navigate through the Platform (which may include usage 
+details, IP address, device ID and type, your browser type and language,
+ the operating system used by the device, access times, and information 
+collected through cookies, web beacons and other tracking technologies).
+ Note that we do not collect Personal Data from children for the 
+purposes of behavioral advertising. We do not allow third-party 
+behavioral trackers in areas intended to be used by children.</p><p class="mb-2">When
+ you sign into your social media account or otherwise connect to your 
+social media account with the Platform, you consent to our collection, 
+storage and use, in accordance with this Privacy Policy, of the 
+information that you make available to us through the social media 
+interface. This includes, without limitation, any information that you 
+have made public through your social media account, information that the
+ social media service shares with us or information that is disclosed 
+during the sign-up and sign-in processes.</p><p class="mb-2">In 
+furtherance of your usage of our Platform, we require the parents to 
+create a G-mail account on behalf of the Child in accordance with 
+Google’s terms and conditions. This account is created in order to 
+enable the Child to sign into and access various educational courses 
+available across the internet as listed on the Platform. We shall 
+collect information from this G-mail account that you use to connect 
+with or use our Services and access educational courses made available 
+through our Platform. When you sign in with this G-mail account, you 
+consent to our collection, storage, and use, in accordance with this 
+Privacy Policy, of the information that you make available to us through
+ the internet.</p><p class="mb-2">We may also receive Personal Data about you from publicly available sources of information.</p></div></section><section class="mb-4"><div class="heading_bold font18">11. How do we use your Personal Data?</div><div class="heading4_reg mx-4 mt-3"><ul><li>To verify your identity</li><li>To deliver our products and services</li><li>To improve our products and services</li><li>If you are an Applicant, to initiate and conduct the process of evaluating your application to teach on the Platform</li><li>If you are onboarded as an Instructor, for background checks and making payments to you</li><li>To perform quality audits and Instructor training</li><li>To
+ communicate with you regarding existing products and services availed 
+by you, including notifications of any alerts or updates or surveys</li><li>To evaluate, develop and improve our products and services</li><li>For market and product analysis and market research</li><li>To
+ send you information about our other products or services which may be 
+of interest to you (you may always opt out of such communications by 
+clicking an “Unsubscribe” link in the footer of each email)</li><li>To handle enquiries and complaints</li><li>To enable you to avail of our Services, and ensure efficient customer care experience and develop new features</li><li>To comply with legal or regulatory requirements</li><li>To
+ investigate, prevent, or take action regarding illegal activities, 
+suspected fraud and situations involving potential threats to the safety
+ of any person</li><li>To furnish your information to service partners 
+and providers only to the extent necessary for delivering the relevant 
+services (e.g. scheduling service and maintenance, providing emergency 
+assistance);</li><li>To publicize, post and display the projects, 
+achievements, and/or apps created by your child on our website or 
+related pages or any other social media platforms along with your 
+personal information in accordance with applicable laws;</li><li>Please 
+note that we may also monitor your computer's random-access memory for 
+the purpose of identifying any unauthorised actions to bypass servers 
+and/or use third party software to modify any aspect of the Service.</li></ul></div></section><section class="mb-4"><div class="heading_bold font18">12. Recording</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ reserve the right and you expressly consent to us recording the 
+classes, discussions, processes, events, conversations, feedback, 
+pertaining to our courses, offered online or any other format. Please 
+visit our Terms and Conditions at <a href="https://code.byjusfutureschool.com/terms-conditions" target="_blank">https://code.byjusfutureschool.com/terms-conditions</a> for more details.</p></div></section><section class="mb-4"><div class="heading_bold font18">13. Lawful Bases of processing your Personal Data</div><p class="mb-2">We process your Personal Data by relying on one or more of the following lawful bases:</p><div class="heading4_reg mx-4 mt-3"><ul><li>You
+ have explicitly agreed to/consented to us processing your Personal Data
+ for a specific reason. This includes, without limitation, any 
+information that you have made public through your social media account,
+ information that the social media service shares with us or information
+ that is disclosed during the sign-up and sign-in processes.</li><li>The
+ processing is necessary for the performance of the contract we have 
+with you or to take steps to enter into a contract with you</li><li>The processing is necessary for compliance with a legal obligation we have</li><li>Where we are able to rely on specific legal provisions</li></ul></div><p class="mb-2">Where
+ the processing is based on your consent, you have the right to withdraw
+ your consent at any point in time. Please note that should the 
+withdrawal of consent result in us not being able to continue offering 
+our products and services to you, we reserve the right to withdraw or 
+cease our products and services to you upon your consent withdrawal. You
+ may withdraw consent by contacting us with a written request to the 
+contact details specified below in the ‘Contact Us’ section. Upon 
+receipt of your request to withdraw your consent, the consequences of 
+withdrawal may be communicated to you. Upon your agreement to the same, 
+your request for withdrawal will be processed.</p><p class="mb-2">For 
+information on how we obtain verifiable parental consent for the 
+processing of US child users' Personal Data, see section US Child Users 
+above.</p></section><section class="mb-4"><div class="heading_bold font18">14. When do we share your Personal Data with third parties?</div><p class="mb-2">We
+ may use third parties in the provision of our products and services to 
+you. You consent to us sharing your Personal Data with such third 
+parties. We have appropriate contracts in place with all such third 
+parties. This means that they are not permitted to do anything with your
+ Personal Data which is outside of the scope specified by us. They are 
+committed to hold your Personal Data securely and retain it only for the
+ period specified in our contracts with them</p><div class="heading4_reg mx-4 mt-3"><ol><li>Reasons
+ for sharing your Personal Data with third parties: We may disclose your
+ Personal Data to third parties only where it is lawful to do so. This 
+includes instances where we or they:<ul><li>need to provide you with products or services</li><li>have asked you for your consent to share it, and you have agreed</li><li>have a legal obligation to do so. For e.g., to assist with detecting and preventing fraud</li><li>have a requirement in connection with regulatory reporting, litigation or asserting or defending legal rights and interests</li></ul></li><li>We
+ may also disclose your Personal Data (and you consent to us so doing) 
+to appropriate authorities if we believe that it is reasonably necessary
+ to comply with a law, regulation, legal process; protect the safety of 
+any person; address fraud, security, or technical issues; or protect our
+ rights or the rights of those who use our products &amp; services.</li><li>With whom your Personal Data may be shared:<p>We may disclose your Personal Data to the following third parties:</p><ul><li>who work for us or provide services or products to us</li><li>law
+ enforcement authorities, government authorities, courts, dispute 
+resolution bodies, regulators, auditors and any party appointed or 
+requested by applicable regulators to carry out investigations or audits
+ of our activities</li><li>statutory and regulatory bodies, authorities 
+(including the government) investigating agencies and entities or 
+persons, to whom or before whom it is mandatory to disclose Personal 
+Data as per the applicable law, courts, judicial and quasi-judicial 
+authorities and tribunals, arbitrators and arbitration tribunals.</li><li>Online
+ training sessions are recorded and used for quality audits and teacher 
+training. You consent to us recording such online training sessions. We 
+maintain complete confidentiality of the recordings and under no 
+circumstances they will be accessible to or shared with any third party.</li><li>We
+ may disclose an Instructor’s Personal Data to children enrolled on the 
+Platform and their parents, for them to know their qualifications and 
+contact information.</li></ul></li><li>For information on how we disclose Personal Data collected from US child users, see <a href="https://code.byjusfutureschool.com/coppa" target="_blank">COPPA Direct Notice to Parents.</a></li></ol></div></section><section class="mb-4"><div class="heading_bold font18">15. Use of Cookies and other Tracking Mechanisms</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ may use cookies and other tracking mechanisms on our website and other 
+digital properties to collect data about you and, subject to the 
+provisions below in respect of EU, UK and Singapore users, you consent 
+to our use of cookies.</p><p class="mb-2">Cookies are small text files 
+that are placed on your computer by websites that you visit. They are 
+widely used in order to make websites work, or work more efficiently, as
+ well as to provide information about your actions to the owners of the 
+website.</p><p class="mb-2">Most web browsers allow you some control of 
+cookies through browser settings. We offer certain features that are 
+only available using a cookie.</p><p class="mb-2">For EU, UK and 
+Singapore users, cookies are not set until the user specifically 
+opts-in. You may opt-out of cookies at a later date by mailing us at 
+privacy@byjusfutureschool.com</p><p class="mb-2">Outlined below are the categories of cookies along with a description of what they are used for.</p><ul><li>Strictly
+ Necessary Cookies - These cookies are needed to run our website, to 
+keep it secure and to comply with regulations that apply to us.</li><li>Functional
+ Cookies – We may use functional cookies on our website. These cookies 
+allow us to remember information you enter or choices you make (such as 
+your username, language, or your region) and provide you with enhanced, 
+more personalised features.</li><li>Performance/Analytics Cookies – We 
+may use performance/analytics cookies on our website. These cookies 
+collect information about how visitors use our website and services, 
+including which pages visitors go to most often and if they receive 
+error messages from certain pages. It is used to improve how our website
+ functions and performs.</li><li>Marketing Cookies – We may use 
+marketing cookies on our website. These cookies help us decide which of 
+our products, services and offers may be relevant for you. We may use 
+this data to tailor the marketing and ads you see on our own and other 
+websites and mobile apps, including social media. For instance, you may 
+see our ads on other sites after you have been to our website. We do not
+ use behavioral advertising cookies in areas that are intended to be 
+used by child users.</li></ul></div></section><section class="mb-4"><div class="heading_bold font18">16. How do we secure your and your child’s Personal Data?</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ are committed to protecting your and your child's Personal Data in our 
+custody. We take reasonable steps to ensure appropriate physical, 
+technical and managerial safeguards are in place to protect Personal 
+Data from unauthorized access, alteration, transmission and deletion. We
+ ensure that the third parties who provide services to us under 
+appropriate contracts take appropriate security measures to protect 
+Personal Data in line with our policies.</p></div></section><section class="mb-4"><div class="heading_bold font18">17. How long do we keep your and your child's Personal Data?</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ keep the Personal Data we collect about you and your child for as long 
+as it is required for the purposes set out in this Privacy Notice and 
+for legal or regulatory reasons or as otherwise communicated to you. We 
+may take reasonable steps to delete or permanently de- identify your 
+Personal Data that is no longer needed. We will delete your personal 
+information in accordance with applicable laws and no later than 3 
+(three) years from when we no longer require it for offering our 
+services to you.</p><p class="mb-2">Please note that we may, from time 
+to time, engage an overseas recipient to provide services to us, such as
+ cloud-based storage solutions. While the use of overseas service 
+providers to store Personal Information will not always involve a 
+disclosure of Personal Information to that overseas provider, we may be 
+required to store such information on overseas servers.</p></div></section><section class="mb-4"><div class="heading_bold font18">18. No Sale of Personal Data</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ shall not sell any Personal Data of yours and/ or the children for the 
+purpose of marketing, advertising, or any other third-party use, except 
+in accordance with express consent obtained from you.</p></div></section><section class="mb-4"><div class="heading_bold font18">19. Data Security</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We always strive to keep your and your child's Personal Data safe.</p><p class="mb-2">The
+ security of your and your child's Personal Data is important to us, but
+ remember that no method of transmission over the Internet, or method of
+ electronic storage, is 100% secure. While we strive to use commercially
+ acceptable means to protect your Personal Data, we cannot guarantee its
+ absolute security.</p><ul><li>Safety in the operating environment: we 
+store your Personal data, and your child's Personal Data in a safe 
+operating environment and it can only be accessed by employees, 
+representatives and service providers on a need-to-use basis. We comply 
+with industry standards and the law to protect your and your child's 
+Personal Data</li><li>The payment information: we adhere to confidentiality and security according to industry standards.</li></ul></div></section><section class="mb-4"><div class="heading_bold font18">20. Links to other Websites</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Our
+ website may contain links to websites of other organizations. This 
+privacy notice does not cover how those organizations process your 
+Personal Data. We encourage you to read the privacy notices on the other
+ websites you visit.</p><p class="mb-2">During and as part of the 
+classes or curriculum the child might be required to access, visit, 
+browse and make use of third-party websites and content, the use of 
+which is governed by terms and conditions of such third parties. The 
+information the third-party site or platform collects is subject to the 
+third-party site or platform’s privacy practices. Privacy choices you 
+have made on the third-party site or platform will not apply to our use 
+of the information we have collected directly through our applications. 
+We encourage you to be aware when you leave our sites or applications 
+and to read the privacy policies of other sites that may collect your 
+personal data.</p></div></section><section class="mb-4"><div class="heading_bold font18">21. Your Rights</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Depending
+ on the jurisdiction in which you are resident, you may enjoy certain 
+rights regarding Personal Data that we process about you. Such rights 
+may include:</p><ul><li>Access: You have a right to know what personal data we hold about you and to obtain a copy.</li><li>Data
+ portability: Subject to law, you have a right to obtain in machine 
+readable format the personal data you have provided to us.</li><li>Rectification
+ and erasure: You have a right to have incomplete, incorrect, 
+unnecessary or outdated personal data about you deleted or updated. If 
+any of your details change or if you believe that any Personal Data we 
+have collected about you is inaccurate, you can contact us at 
+privacy@byjusfutureschool.com and we will take all reasonable steps to 
+correct it.</li><li>Withdraw your consent: You have a right to withdraw your consent to process your and your child’s personal data.</li><li>The right to object. You have the right to object to our processing of your Personal Data.</li><li>The right of restriction. You have the right to request that we restrict the processing of your Personal Data.</li></ul><p class="mb-2">You
+ may exercise your rights by managing your Participant Account and 
+choices through our products and services or, if that is not possible, 
+by contacting us. In some cases, if you withdraw your consent or wish us
+ to delete or stop processing your personal data, we may not be able to 
+continue to provide the services to you.</p><p class="mb-2">If you are not satisfied with what we provide when you exercise your rights, you can let us know by contacting us.</p></div></section><section class="mb-4"><div class="heading_bold font18">22. Third Party Permission</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ disclose Personal Data to third party service providers to enable us to
+ offer our services to you and while accepting these terms, you 
+explicitly grant permission to these service providers to use your 
+Personal Data.</p><p class="mb-2">We do not disclose Personal Data to 
+third parties for the purpose of allowing them to send marketing 
+material to you. However, we may share non-personal, de-identified or 
+aggregated information with select third parties for research, 
+development, analytics or promotional purposes other than direct 
+marketing.</p><p class="mb-2">In some cases, the organisations that we 
+may disclose your personal information to may be based outside the 
+location where the information is collected. Where we do this, we 
+require these parties to take appropriate measures to protect that 
+information and to restrict how they can use that information. To the 
+greatest extent permitted by applicable law, you agree and consent to 
+your Personal Data being transferred, stored and hosted (either by us or
+ third parties) outside of the country from which you may be accessing 
+our services and may be transferred (whether to us or third parties) to 
+countries which do not have data protection laws or to countries where 
+your privacy and other fundamental rights will not be protected 
+extensively. These and all other transmissions will remain secure in 
+accordance with the terms of this policy.</p><p class="mb-2">In the event of any dispute between the third party and you the company shall not be held liable in any matter whatsoever.</p></div></section><section class="mb-4"><div class="heading_bold font18">23. User Communication</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">You
+ hereby explicitly consent to receive email, telephone, WhatsApp or text
+ messages from us, our subsidiaries, associates, or affiliates, for the 
+purpose of providing alerts and information related to services. 
+Further, you understand and agree that we and our subsidiaries, 
+associates and affiliates at their sole discretion and without any 
+obligation to disclose or inform you or anyone, may decide whether any 
+of our information, offerings and promotions of our subsidiaries’, 
+associates’, or affiliates’ is an update or upgrade to any goods or 
+services being availed or having availed by you from us.</p><p class="mb-2">Reply
+ 'STOP' on the same number to stop receiving any further SMS. Reply 
+'HELP' to get help. Standard data charges are applicable for SMS.</p><p class="mb-2">This
+ consent shall override any registration the Users may have done in 
+their respective jurisdiction to opt out of such communications 
+including through registration with a Do-Not- Call-Registry, as 
+applicable.</p><p class="mb-2">Please note that this section is not 
+applicable to EU, UK, Australian and Singapore residents. User 
+Communication for Australian residents should be dealt with specifically
+ under the AU residents section in ANNEXURE C.</p></div></section><section class="mb-4"><div class="heading_bold font18">24. Additional Rights Applicable to EU Residents</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Additional rights are applicable to EU residents, which are provided ANNEXURE A.</p></div></section><section class="mb-4"><div class="heading_bold font18">25. Additional Rights Applicable to UK Residents</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Additional rights are applicable to UK residents, which are provided ANNEXURE B.</p></div></section><section class="mb-4"><div class="heading_bold font18">26. Additional Matters for Australian Residents</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Additional matters for Australian Residents are provided in the below ANNEXURE C.</p></div></section><section class="mb-4"><div class="heading_bold font18">27. Additional Matters for Singapore Residents</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Additional matters for Singapore Residents are provided in the below ANNEXURE D.</p></div></section><section class="mb-4"><div class="heading_bold font18">28. Additional Matters for Persons Whose Personal Data are Processed in Malaysia</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">Additional matters for persons whose personal data are processed in Malaysia are provided in the below ANNEXURE E.</p></div></section><section class="mb-4"><div class="heading_bold font18">Contact Us</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">For any further queries and complaints related to privacy, or exercising your rights, you could reach us at:</p><p class="mb-2"><b>Contact Email Address:</b> <a href="mailto:privacy@byjusfutureschool.com">privacy@byjusfutureschool.com</a></p><p class="mb-2"><b>Organization's Name :</b> WHITEHAT EDUCATION TECHNOLOGY LLC</p><p class="mb-2"><b>Address :</b> Spaces Levi's Plaza, 1160 Battery Street East Suite 100, San Francisco, CA 94111, United States</p><p class="mb-2"><b>Phone number :</b> +1(315)6607300</p></div></section><section class="mb-4"><div class="heading_bold font18">30. Notification of changes</div><div class="heading4_reg mx-4 mt-3"><p class="mb-2">We
+ regularly review and update our Privacy Notice to ensure it is 
+up-to-date and accurate. Any changes we may make to this Privacy Notice 
+will be in effect immediately after being posted on this page. We 
+reserve the right to update or change our Privacy Policy at any time and
+ you should check this Privacy Policy periodically. Your continued use 
+of the Service after we post any modifications to the Privacy Policy on 
+this page will constitute your acknowledgment of the modifications and 
+your consent to abide and be bound by the modified Privacy Policy. If a 
+change in our privacy practices materially affects how we collect, 
+process, use, or disclose US child user's data, we will solicit and 
+obtain parental consent as required under COPPA.</p></div></section><section class="mb-4"><div class="heading_ex_bold font16 text_dec_underline text-center mb-2">ANNEXURE A</div><p class="mb-2">The below additional rights are available to you if you are an EU resident:</p><div class="mb-2"><p class="heading_bold">1. Right of Access</p><p>Upon
+ request, You have the right to get confirmation as to whether or not We
+ are processing Your Personal Data, a copy of Your Personal Data and any
+ other additional information as specified by EU-GDPR.</p></div><div class="mb-2"><p class="heading_bold">2. Right to Rectification</p><p>Upon request, You have the right to get Your inaccurate Personal Data rectified and Your incomplete Personal Data completed.</p></div><div class="mb-2"><p class="heading_bold">3. Right to Erasure</p><p>Upon
+ request, You have the right to obtain erasure or deletion of Your 
+Personal Data on the grounds specified by EU-GDPR unless there is any 
+exception specified by EU-GDPR that is preventing Us to execute Your 
+right.</p></div><div class="mb-2"><p class="heading_bold">4. Right to Restriction of Processing</p><p>Upon request, You have the right to request restriction of processing of Your Personal Data on the grounds specified by EU-GDPR.</p></div><div class="mb-2"><p class="heading_bold">5. Right to Data Portability</p><p>Upon
+ request, You have right to receive and/or transmittal to any other 
+organization, Your Personal Data that You have provided to Us in a 
+structured, commonly used and machine- readable format on the grounds 
+specified by EU-GDPR unless there is any exception specified by EU-GDPR 
+is preventing Us to execute Your right.</p></div><div class="mb-2"><p class="heading_bold">6. Right to Object</p><p>Upon request, You have the right to object to the processing of Your Personal Data on the grounds specified by EU-GDPR.</p></div><div class="mb-2"><p class="heading_bold">7. Right to not be subject to Automated decision-making, including profiling</p><p>You
+ have the right not to be subject to a decision based solely on 
+automated processing, including profiling, which produces legal or 
+similarly significant effects concerning You.</p></div><div class="mb-2"><p class="heading_bold">8. Right to lodge a complaint with the Supervisory Authority</p><p>You
+ have the right to lodge a complaint with a supervisory authority, 
+specifically in the Member State of Your habitual residence, place of 
+work or place of an alleged infringement of the General Data Protection 
+Regulation.</p><p>You can identify the supervising authority of Your concern by visiting</p><a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank">https://edpb.europa.eu/about-edpb/board/members_en</a></div><div class="mb-2"><p><b>Representative of controllers or processors not established in the Union (Article 27 GDPR)</b><br>ePrivacy Holding GmbH<br>Große Bleichen 21<br>20354 Hamburg<br>Germany<br>www.eprivacy.eu/en/legal</p></div></section><section class="mb-4"><div class="heading_ex_bold font16 text_dec_underline text-center mb-2">ANNEXURE B</div><p class="mb-2">The below additional rights are available to you if you are a UK resident:</p><div class="mb-2"><p class="heading_bold">1. Right of Access</p><p>Upon
+ request, You have the right to get confirmation as to whether or not We
+ are processing Your Personal Data, a copy of Your Personal Data and any
+ other additional information as specified by UK-GDPR.</p></div><div class="mb-2"><p class="heading_bold">2. Right to Rectification</p><p>Upon request, You have the right to get Your inaccurate Personal Data rectified and Your incomplete Personal Data completed.</p></div><div class="mb-2"><p class="heading_bold">3. Right to Erasure</p><p>Upon
+ request, You have the right to obtain erasure or deletion of Your 
+Personal Data on the grounds specified by UK-GDPR unless there is any 
+exception specified by UK-GDPR and/or DPA that is preventing Us to 
+execute Your right.</p></div><div class="mb-2"><p class="heading_bold">4. Right to Restriction of Processing</p><p>Upon request, You have the right to request restriction of processing of Your Personal Data on the grounds specified by UK-GDPR.</p></div><div class="mb-2"><p class="heading_bold">5. Right to Data Portability</p><p>Upon
+ request, You have right to receive and/or transmittal to any other 
+organization, Your Personal Data that You have provided to Us in a 
+structured, commonly used and machine- readable format on the grounds 
+specified by UK-GDPR unless there is any exception specified by UK-GDPR 
+and/or DPA preventing Us to execute Your right.</p></div><div class="mb-2"><p class="heading_bold">6. Right to Object</p><p>Upon request, You have the right to object to the processing of Your Personal Data on the grounds specified by UK-GDPR.</p></div><div class="mb-2"><p class="heading_bold">7. Right to not be subject to Automated decision-making, including profiling</p><p>You
+ have the right not to be subject to a decision based solely on 
+automated processing, including profiling, which produces legal or 
+similarly significant effects concerning You.</p></div><div class="mb-2"><p class="heading_bold">8. Right to lodge a complaint with the Supervisory Authority</p><p>You
+ have the right to lodge a complaint with the UK Information 
+Commissioner’s Office in relation to an alleged infringement of UK data 
+protection law.</p><p>See <a href="https://ico.org.uk/" target="_blank">https://ico.org.uk/</a></p></div><div class="mb-2"><p class="heading_bold">Representative of controllers or processors not established in UK (Article 27 UK GDPR):</p><p><b>UK Representative Service for GDPR Ltd.</b><br>7 Savoy Court<br>London WC2R 0EX<br>United Kingdom<br>www.eprivacy.eu/en/legal</p></div></section><section class="mb-4"><div class="heading_ex_bold font16 text_dec_underline text-center mb-2">ANNEXURE C</div><p class="mb-2">The following applies if you are an Australian resident.</p><p class="mb-2">Our Privacy Policy above complies with the Australian Privacy Principles (“APPs”) under the <i>Privacy Act 1988</i>(Cth) (<b>Privacy Act</b>), subject to the following:</p><p class="mb-2">A
+ reference to Personal Data in our Privacy Policy above (and below) is 
+to be read as a reference to Personal Information, as that term is 
+defined under the Privacy Act as follows:</p><p class="mb-2"><i>“Personal
+ Information means Information or an opinion about an identified 
+individual, or an individual who is reasonably identifiable, whether the
+ information or opinion is true or not, and whether the information or 
+opinion is recorded in a material form or not”</i></p><p class="mb-2">A reference to a DATA CONTROLLER in our Privacy Policy above is to be read as a reference to us <i>i.e.</i>, Company.</p><p class="mb-2">The following applies to all Australian residents:</p><div class="mb-2"><p class="heading_bold">1. Minors (children under 18)</p><p>The
+ Privacy Act applies to all Australian residents, regardless of age. For
+ users who are under 15 years of age, parental consent is required for 
+children to sign up to and use our services.</p></div><div class="mb-2"><p class="heading_bold">2. Collection notices</p><p>When
+ you sign up for our services, you will be asked to provide your consent
+ (or parental consent if you are under 15 years of age) to our 
+collection, use and disclosure of your Personal Information as described
+ in this Privacy Policy including ANNEXURE C. If you do not provide such
+ consent, we may not be able to provide you with our services.</p></div><div class="mb-2"><p class="heading_bold">3. How we collect your Personal Information</p><p>We
+ will collect and hold your Personal Information in a fair and lawful 
+manner, and not in an intrusive way. Where it is reasonably practical to
+ do so, we will collect your Personal Information directly from you. We 
+may collect the Personal Information you directly give us through some 
+of the following means:</p><ul><li>As described above in our Privacy Policy under section 10 “Where do we obtain your Personal Data from?”</li><li>in administering and performing any contracts with service providers;</li><li>when you contact us via telephone or facsimile;</li><li>from correspondence (whether in writing or electronically);</li><li>through any mobile applications provided by our organisation;</li><li>while conducting customer satisfaction and market research surveys;</li><li>when administering any of our services; and</li><li>as otherwise required to manage our business.</li></ul><p>However,
+ in certain cases we may collect Personal Information from publically 
+available sources and third parties, such as data suppliers, 
+contractors, our clients and business partners.</p><p>If we collect 
+Personal Information about you from a third party we will, where 
+appropriate, request that the third party inform you that we are holding
+ such information, how we will use and disclose it, and that you may 
+contact us to gain access to and correct and update the information.</p></div><div class="mb-2"><p class="heading_bold">4. Types of Personal Information we collect</p><p>The type of Personal Information we may collect can include (but is not limited to):</p><ul><li>Personal Information as described above in our Privacy Policy under section 9 “What Personal Data do we Collect &amp; Process?”</li></ul><p>We
+ only collect Sensitive Information (as defined under the Privacy Act) 
+about you with your consent, or otherwise in accordance with the Privacy
+ Act.</p><p>Where you do not wish to provide us with your Personal 
+Information, we may not be able to provide you with requested goods or 
+services.</p></div><div class="mb-2"><p class="heading_bold">5. Our purposes for handling your Personal Information</p><p>As
+ a general rule, we only process Personal Information for purposes that 
+would be considered relevant and reasonable in the circumstances. We 
+collect, hold, use and disclose Personal Information:</p><ul><li>for the purposes set out above in our Privacy Policy in section 11 “How do we use your Personal Data?”</li></ul><p>We may disclose your Personal Information:</p><ul><li>to
+ the parties set out above in our Privacy Policy above as per section 14
+ “When do we share your Personal Data with third parties?”</li><li>between our organisations</li></ul><p>Prior
+ to disclosing any of your Personal Information to another person or 
+organisation, we will take all reasonable steps to satisfy ourselves 
+that:</p><ul><li>the person or organisation has a commitment to protecting your Personal Information at least equal to our commitment, or</li><li>you have consented to us making the disclosure.</li></ul></div><div class="mb-2"><p class="heading_bold">6. Protection of Personal Information</p><p>We
+ will hold Personal Information as either secure physical records, 
+electronically on our intranet system, in cloud storage, and in some 
+cases, records on third party servers, which may be located overseas.</p><p>We
+ maintain appropriate physical, procedural and technical security for 
+our offices and information storage facilities so as to prevent any 
+loss, misuse, unauthorised access, disclosure, or modification of 
+Personal Information. This also applies to disposal of Personal 
+Information.</p><p>We further protect Personal Information by 
+restricting access to Personal Information to only those who need access
+ to the Personal Information to do their job. Physical, electronic and 
+managerial procedures have been employed to safeguard the security and 
+integrity of your Personal Information.</p><p>We will destroy or 
+de-identify Personal Information once it is no longer needed for a valid
+ purpose or required to be kept by law.</p></div><div class="mb-2"><p class="heading_bold">7. Direct marketing</p><p>Like
+ most businesses, marketing is important to our continued success. We 
+believe we have a unique range of products and services that we provide 
+to customers at a high standard. We therefore like to stay in touch with
+ customers and let them know about new opportunities. We may provide you
+ with information by telephone (subject to the Do Not Call Register), 
+SMS, email or WhatsApp about new products, services and promotions 
+either from us, or from third parties which may be of interest to you.</p><p>We will not disclose your Personal Information to third parties for marketing purposes without your consent.</p><p>If
+ you do not wish to receive marketing information, you may at any time 
+decline to receive such information by telephoning us on +91 2248933955 
+or by writing to us at:</p><p>WHITEHAT EDUCATION TECHNOLOGY LLC<br>Address: 919 North Market Street, Suite 950, Wilmington, Delaware - 19801</p><p>If
+ the direct marketing is by email, SMS or WhatsApp you may also use the 
+unsubscribe function. We will not charge you for giving effect to your 
+request and will take all reasonable steps to meet your request at the 
+earliest possible opportunity.</p></div><div class="mb-2"><p class="heading_bold">8. Cookies</p><p>A
+ cookie is a small text file stored in your computer’s memory or on your
+ hard disk for a pre- defined period of time. We use cookies as set out 
+in our Privacy Policy above in section 15 “Use of Cookies and other 
+Tracking Mechanisms”.</p></div><div class="mb-2"><p class="heading_bold">9. Accessing and correcting your Personal Information</p><p>You
+ may contact our Privacy Officer to request access to the Personal 
+Information that we hold about you and/or make corrections to that 
+information, at any time. On the rare occasions when we refuse access, 
+we will provide you with a written notice stating our reasons for 
+refusing access. We may seek to recover from you reasonable costs 
+incurred for providing you with access to any of the Personal 
+Information about you held by us.</p><p>We are not obliged to correct 
+any of your Personal Information if we do not agree that it requires 
+correction and may refuse to do so. If we refuse a correction request, 
+we will provide you with a written notice stating our reasons for 
+refusal.</p><p>We will respond to all requests for access to or correction of Personal Information within a reasonable time.</p></div><div class="mb-2"><p class="heading_bold">10. Overseas transfers of Personal Information</p><p>From
+ time to time, we may engage an overseas recipient to provide services 
+to us, such as cloud-based storage solutions. Please note that the use 
+of overseas service providers to store Personal Information will not 
+always involve a disclosure of Personal Information to that overseas 
+provider. However, by providing us with your Personal Information, you 
+consent to the storage of such information on overseas servers and 
+acknowledge that APP 8.1 will not apply to such disclosures. For the 
+avoidance of doubt, in the event that an overseas recipient breaches the
+ APPs, that entity will not be bound by, and you will not be able to 
+seek redress under the Privacy Act.</p></div><div class="mb-2"><p class="heading_bold">11. Resolving Personal Information concerns</p><p>If
+ you have any questions, concerns or complaints about this Privacy 
+Policy, or how we handle your Personal Information, please contact our 
+Privacy Officer:</p></div><div class="mb-2"><p class="heading_bold">12. The Privacy Officer</p><p>Telephone: +1(315)6607300<br>Email: <a href="mailto:privacy@byjusfutureschool.com">privacy@byjusfutureschool.com</a></p><p>We take all complaints seriously, and will respond to your complaint within a reasonable period.</p><p>If
+ you are dissatisfied with the handling of your complaint, you may 
+contact the Office of the Australian Information Commissioner:</p></div><div class="mb-2"><p class="heading_bold">Office of the Australian Information Commissioner</p><p>GPO Box 5218<br>Sydney NSW 2001<br>Telephone: 1300 363 992<br>Email: enquiries@oaic.gov.au</p></div><div class="mb-2"><p class="heading_bold">13. Changes</p><p>We
+ reserve the right to change the terms of this Privacy Policy from time 
+to time, without notice to you. An up-to-date copy of our Privacy Policy
+ is available on our Website.</p></div></section><section class="mb-4"><div class="heading_ex_bold font16 text_dec_underline text-center mb-2">ANNEXURE D</div><p class="mb-2">The following applies if you are a Singapore resident.</p><div class="mb-2"><p class="heading_bold">1. Collection notices</p><p>When
+ you sign up for our services, you will be asked to provide your consent
+ (or parental consent if you are under 13 years of age) to our 
+collection, use and disclosure of your Personal Data as described in 
+this Privacy Policy including ANNEXURE D. If you do not provide such 
+consent, we may not be able to provide you with our services.</p></div><div class="mb-2"><p class="heading_bold">2. Providing personal data belonging to others</p><p>In
+ certain circumstances, you may also provide us with personal data of 
+persons other than yourself. If you do so, you warrant that you have 
+informed him/her of the purposes for which we are collecting his/her 
+personal data and that he/she has consented to your disclosure of 
+his/her personal data to us for those purposes and accepts this Privacy 
+Policy. You agree to indemnify and hold us harmless from and against any
+ and all claims by such individuals relating to our collection, use and 
+disclosure of such personal data in accordance with the terms of this 
+Privacy Policy.</p></div><div class="mb-2"><p class="heading_bold">3. Direct marketing</p><p>If
+ you have provided us with your consent, we may use your personal data 
+for the purposes of marketing our products and services and those of our
+ strategic partners and business associates (e.g. informing you of our 
+latest activities, special offers and promotions). In order for us to 
+market products and services which are of special interest and relevance
+ to you, we may analyse and rely on your overall interaction with us 
+(such as but not limited to your participation in promotions or events 
+and your interactions with us).</p></div><div class="mb-2"><p class="heading_bold">4. User Communication</p><p class="mb-2">When
+ we contact or send you information for the purposes for which you have 
+consented, we may do so by post, e-mail, SMS, telephone, instant 
+messaging platform or such other means as may be authorised by you</p><p>We
+ will not contact you for marketing purposes unless you have provided us
+ with your consent, or unless we are exempted by applicable law from 
+having to obtain your consent. If you do not wish to receive any 
+communication or information from us, or wish to restrict the manner by 
+which we may contact or send you information, please contact us <i>(See the “Contact Us” section above)</i>.</p></div><div class="mb-2"><p class="heading_bold">5. Transfer to other countries and safeguards</p><p>You
+ fully understand and unambiguously consent that we may transfer your 
+personal data to any country (including to third parties where 
+necessary) for the purposes set out in this Privacy Policy or as 
+notified to you. Where we transfer your personal data outside of 
+Singapore, we will require foreign recipients of the personal data to 
+protect your personal data in accordance with this policy and applicable
+ data protection laws</p></div><div class="mb-2"><p class="heading_bold">6. Rights under Singapore’s Personal Data Protection Act</p><p class="mb-2">The below additional rights are available to you if you are a Singapore resident:</p><ul><li><b>Access:</b>
+ you may ask us if we hold your personal data and, if we are, you can 
+request access to your personal data. This enables you to receive a copy
+ of and information on the personal data we hold about you.</li><li><b>Correction:</b> you may request that any incomplete or inaccurate personal data we hold about you is corrected.</li><li><b>Withdrawal:</b> you may withdraw consent for our use of your personal data.</li><li><b>Portability:</b> you may request the transfer of certain of your personal data to another party under certain conditions.</li></ul></div><div class="mb-2"><p>If
+ you wish to exercise any of your rights, you may contact us at 
+privacy@byjusfutureschool.com. We may require that you submit certain 
+forms or provide certain information to process your request. Where 
+permitted by law, we may also charge you a fee to process your request.</p></div><div class="mb-2"><p>We
+ may be permitted under applicable laws to refuse a request, for 
+example, we may refuse (a) a request for erasure where the personal data
+ is required for in connection with claims; or (b) an objection request 
+and continue processing your personal data based on compelling 
+legitimate grounds for the processing.</p></div></section><section class="mb-4"><div class="heading_ex_bold font16 text_dec_underline text-center mb-2">ANNEXURE E</div><p class="mb-2">The following applies if your personal data is processed in Malaysia.</p><div class="mb-2"><p class="heading_bold">1. Collection notices</p><p>When
+ you sign up for our services, you will be asked to provide your consent
+ (or parental consent if you are under 18 years of age) to our 
+collection, use and disclosure of your personal data as described in 
+this Privacy Policy including ANNEXURE D. If you do not provide such 
+consent, we may not be able to provide you with our services.</p></div><div class="mb-2"><p class="heading_bold">2. Withdrawal of consent</p><p lassname="mb-2">You
+ have the right to withdraw your consent for the processing of your 
+personal data at any point in time. Please note that should the 
+withdrawal of consent result in us not being able to continue offering 
+our products and services to you, we reserve the right to withdraw or 
+cease our products and services to you upon your consent withdrawal. You
+ may withdraw consent by contacting us with a written request to the 
+contact details specified above in the ‘Contact Us’ section. We will 
+process your withdrawal request upon receipt of the same.</p><p>If you 
+have provided us with your consent, we may use your personal data for 
+the purposes of marketing our products and services. If you do not wish 
+for us to begin and/or continue processing your personal data for 
+marketing purposes, or wish to limit the manner by which we may send you
+ information, you may submit a written request to the contact details 
+specified above in the ‘Contact Us’ section</p></div><div class="mb-2"><p class="heading_bold">3. Transfer of personal data outside of Malaysia</p><p>You
+ hereby consent that we may transfer your personal data to any country 
+outside of Malaysia for the purposes set out in this Privacy Policy. 
+Where we transfer your personal data outside of Malaysia, we will take 
+all reasonable precautions and exercise all due diligence to ensure that
+ the personal data will be processed in accordance with this Privacy 
+Policy and applicable data protection laws</p></div></section></div></div></div></div></section></div></div><div class="bg-white w-100"><div class="row align-items-center p-2 mx-0"><div class="col-md-6"><div class="text-xl-left text-lg-left text-md-left text-center heading4_reg"><div><a class="text_blue" target="_blank" href="https://code.byjusfutureschool.com/privacy-policy">Privacy Policy</a></div>© 2021, made with Love by WHITEHAT EDUCATION TECHNOLOGY LLC.</div></div><div class="col-md-6 d-flex justify-content-end"><div class="text-xl-right text-lg-right text-md-right text-center "><span class="footer py-2 pl-2 pr-0 d-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfUAAABRCAMAAAD8bM9vAAADAFBMVEUAAAD///9zAyYjHiDWACjVACjWACjVACglHyLVACjVACcjHyAkHx8eHB3XADXVACfWACjXACokICLWACfVACfYACzWACjWACjWACshISHVACjWACgjHSDVACjVACjWACgjHyDWACgkHyDVACjXACjVACjWACjWACfWACjWACjVACgkHR/VACjWACjWACgkHyDWACjVACnWACjWACgpJSvWACjWACgkHyAkHyDWACfWACgkHyAkHyDWACgiICAkHyAkHyAkHyDVACgjHx/TACjPACfWACckHiAjHiDWACcjHh/YACjWACgkICEkHyAkHyAkHx/VACfVACfWACgkHyDWACjVACjXACgjHyAjHyDWACcjHh/SACgkHyDVACjVACcjHyDYACfVACckHyAkHx8jHiAkHyAkHx8kHiAkHyAkHyAlHyD////+/v7VACh/f395eXnWACjaACl7e3vX19fKysq9vb3ZACkAgwAkHyAAggDk5OTYACnbACn+//4AfgB8fHz5+fny8vKXl5e4uLh9fX3i4uLUAB8BgAH9/v7l5eXcACnVACYAfwAHgwjz+vPR6dPTAB37/fybm5vYACjTABnUACMRiBKdnZ3k8+Y3mjp+fn6q16z+7/Gi1KaExYb84ubV7Nf5/Pn1+/aJiYlWrVkWjBnt9+7o9epAokLbHDsymzYTiRX0qrJ6vn3eMEocjx/w+fErly4PhRALiA7ZGDT+///e3t6RkZHreowjkyb/+Pj/8vTZ7tyg0aOUzJiQyJOEhIT96ezp6emnp6fUCSDSABP0r7qbz59PqVMAegDt7e2/4cK53ryKx410vHjiR19GpEr/+/z29vbd8OHG5cmxsbGsrKzqcoLpanxntWvTAxX73OH60tj2vMShoaHwkqDmVXDhQVfbJj86nj3Z2dnM6M/Ozs74xMyv2bLfOE/09PT4y9HAwMCBgYFvunHcLkDYDi7WDibU1NTS0tLthpV+wYPFxcW1tbXyoa3kUGXHx8fDw8PnYXXeACnExMQRuVJ2AAAAbHRSTlMAPwLE/cf45xMnhk+iCgRfQhAObRwJolkLB/vrPzEsp0fUtlYV9NnLwrg3G7yNimdRI/DkBK6Tb2NI39KdmxbKqGplMg0Gz65UPDr87Sa6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" class="img-fluid"></span></div></div></div></div></div></div></div><script>!function(n){function e(e){for(var c,f,d=e[0],a=e[1],b=e[2],t=0,r=[];t<d.length;t++)f=d[t],l[f]&&r.push(l[f][0]),l[f]=0;for(c in a)Object.prototype.hasOwnProperty.call(a,c)&&(n[c]=a[c]);for(p&&p(e);r.length;)r.shift()();return u.push.apply(u,b||[]),o()}function o(){for(var e,c=0;c<u.length;c++){for(var f=u[c],d=!0,a=1;a<f.length;a++){var b=f[a];0!==l[b]&&(d=!1)}d&&(u.splice(c--,1),e=s(s.s=f[0]))}return e}var f={},i={66:0},l={66:0},u=[];function s(e){if(f[e])return f[e].exports;var c=f[e]={i:e,l:!1,exports:{}};return n[e].call(c.exports,c,c.exports,s),c.l=!0,c.exports}s.e=function(u){var e=[];i[u]?e.push(i[u]):0!==i[u]&&{11:1,13:1,24:1,30:1,31:1,36:1,37:1,46:1,49:1,54:1,65:1,67:1,68:1,69:1,70:1,71:1,72:1,73:1,74:1,76:1,77:1,79:1,80:1,81:1,82:1,83:1,84:1,85:1,86:1,87:1,88:1,89:1,91:1,92:1,93:1,95:1,96:1,97:1,98:1,99:1,101:1,102:1,103:1,104:1,105:1,106:1,107:1,108:1,112:1,113:1,114:1,116:1,117:1,119:1,122:1,124:1,128:1,130:1,132:1,133:1,134:1,135:1,136:1,139:1,151:1,155:1,158:1,159:1,165:1,166:1,167:1,170:1,173:1,177:1,178:1,179:1,190:1,191:1,192:1,197:1,198:1,199:1,206:1,216:1,226:1,227:1,228:1,229:1,238:1,239:1,240:1,249:1,250:1}[u]&&e.push(i[u]=new Promise(function(e,d){for(var c="static/css/"+({65:"newEpicJourney"}[u]||u)+"."+{0:"31d6cfe0",1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0",5:"31d6cfe0",6:"31d6cfe0",7:"31d6cfe0",8:"31d6cfe0",9:"31d6cfe0",10:"31d6cfe0",11:"da0d3b3e",12:"31d6cfe0",13:"0e3210d1",14:"31d6cfe0",15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"21030fe4",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"aafa7e99",31:"7f2fcee2",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"4c75aefc",37:"71fce27c",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"2595542f",47:"31d6cfe0",48:"31d6cfe0",49:"e1f8c122",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"768e3b32",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",65:"b754e2d8",67:"5001263a",68:"793e208c",69:"d659af3d",70:"f39e9143",71:"c56c4beb",72:"98306251",73:"0fd009ef",74:"acac64ef",76:"3cc8ce05",77:"3cc8ce05",78:"31d6cfe0",79:"b1b6b42d",80:"569b5046",81:"f044d41a",82:"c936e4e0",83:"b0b241a0",84:"d0a1505a",85:"c220a291",86:"0ae1925d",87:"776d7417",88:"e51bf33b",89:"86b7457f",90:"31d6cfe0",91:"0b1f31cf",92:"95c44a5b",93:"c5cc0105",94:"31d6cfe0",95:"0320b96d",96:"40cc4fde",97:"438f7fee",98:"6f8df44b",99:"6f8df44b",100:"31d6cfe0",101:"c936e4e0",102:"c936e4e0",103:"e0ff0965",104:"113dfe63",105:"c936e4e0",106:"c936e4e0",107:"fde7fb46",108:"574ba0d4",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"083e8121",113:"54b847b2",114:"4c099bf6",115:"31d6cfe0",116:"49834d67",117:"c220a291",118:"31d6cfe0",119:"0d58dbb4",120:"31d6cfe0",121:"31d6cfe0",122:"0458d795",123:"31d6cfe0",124:"59742612",125:"31d6cfe0",126:"31d6cfe0",127:"31d6cfe0",128:"801eb923",129:"31d6cfe0",130:"ccb1bc58",131:"31d6cfe0",132:"3a40f666",133:"c343f7ed",134:"09a04f55",135:"7f190223",136:"7ffeab9b",137:"31d6cfe0",138:"31d6cfe0",139:"113dfe63",140:"31d6cfe0",141:"31d6cfe0",142:"31d6cfe0",143:"31d6cfe0",144:"31d6cfe0",145:"31d6cfe0",146:"31d6cfe0",147:"31d6cfe0",148:"31d6cfe0",149:"31d6cfe0",150:"31d6cfe0",151:"113dfe63",152:"31d6cfe0",153:"31d6cfe0",154:"31d6cfe0",155:"113dfe63",156:"31d6cfe0",157:"31d6cfe0",158:"7263654e",159:"c220a291",160:"31d6cfe0",161:"31d6cfe0",162:"31d6cfe0",163:"31d6cfe0",164:"31d6cfe0",165:"36dd15ec",166:"473f09df",167:"19132687",168:"31d6cfe0",169:"31d6cfe0",170:"3543e08f",171:"31d6cfe0",172:"31d6cfe0",173:"11dbb311",174:"31d6cfe0",175:"31d6cfe0",176:"31d6cfe0",177:"113dfe63",178:"d3c180b7",179:"3ada3e76",180:"31d6cfe0",181:"31d6cfe0",182:"31d6cfe0",183:"31d6cfe0",184:"31d6cfe0",185:"31d6cfe0",186:"31d6cfe0",187:"31d6cfe0",188:"31d6cfe0",189:"31d6cfe0",190:"840dbf4a",191:"113dfe63",192:"7f2fcee2",193:"31d6cfe0",194:"31d6cfe0",195:"31d6cfe0",196:"31d6cfe0",197:"113dfe63",198:"21030fe4",199:"74daa329",200:"31d6cfe0",201:"31d6cfe0",202:"31d6cfe0",203:"31d6cfe0",204:"31d6cfe0",205:"31d6cfe0",206:"113dfe63",207:"31d6cfe0",208:"31d6cfe0",209:"31d6cfe0",210:"31d6cfe0",211:"31d6cfe0",212:"31d6cfe0",213:"31d6cfe0",214:"31d6cfe0",215:"31d6cfe0",216:"9de0c6fc",217:"31d6cfe0",218:"31d6cfe0",219:"31d6cfe0",220:"31d6cfe0",221:"31d6cfe0",222:"31d6cfe0",223:"31d6cfe0",224:"31d6cfe0",225:"31d6cfe0",226:"a2a08165",227:"c03e4c3a",228:"3e29f68c",229:"205799bc",230:"31d6cfe0",231:"31d6cfe0",232:"31d6cfe0",233:"31d6cfe0",234:"31d6cfe0",235:"31d6cfe0",236:"31d6cfe0",237:"31d6cfe0",238:"cd50cb5e",239:"fd351276",240:"6e832809",241:"31d6cfe0",242:"31d6cfe0",243:"31d6cfe0",244:"31d6cfe0",245:"31d6cfe0",246:"31d6cfe0",247:"31d6cfe0",248:"31d6cfe0",249:"c58517ee",250:"7f190223",251:"31d6cfe0",252:"31d6cfe0",253:"31d6cfe0",254:"31d6cfe0",255:"31d6cfe0",256:"31d6cfe0",257:"31d6cfe0",258:"31d6cfe0",259:"31d6cfe0",260:"31d6cfe0",261:"31d6cfe0",262:"31d6cfe0",263:"31d6cfe0",264:"31d6cfe0",265:"31d6cfe0",266:"31d6cfe0",267:"31d6cfe0",268:"31d6cfe0",269:"31d6cfe0",270:"31d6cfe0",271:"31d6cfe0",272:"31d6cfe0",273:"31d6cfe0",274:"31d6cfe0",275:"31d6cfe0",276:"31d6cfe0",277:"31d6cfe0",278:"31d6cfe0",279:"31d6cfe0",280:"31d6cfe0",281:"31d6cfe0",282:"31d6cfe0",283:"31d6cfe0",284:"31d6cfe0",285:"31d6cfe0",286:"31d6cfe0",287:"31d6cfe0",288:"31d6cfe0",289:"31d6cfe0",290:"31d6cfe0",291:"31d6cfe0",292:"31d6cfe0",293:"31d6cfe0",294:"31d6cfe0",295:"31d6cfe0",296:"31d6cfe0",297:"31d6cfe0",298:"31d6cfe0",299:"31d6cfe0",300:"31d6cfe0",301:"31d6cfe0",302:"31d6cfe0",303:"31d6cfe0",304:"31d6cfe0",305:"31d6cfe0",306:"31d6cfe0",307:"31d6cfe0",308:"31d6cfe0",309:"31d6cfe0",310:"31d6cfe0",311:"31d6cfe0",312:"31d6cfe0",313:"31d6cfe0",314:"31d6cfe0",315:"31d6cfe0",316:"31d6cfe0",317:"31d6cfe0",318:"31d6cfe0"}[u]+".chunk.css",a=s.p+c,f=document.getElementsByTagName("link"),b=0;b<f.length;b++){var t=(n=f[b]).getAttribute("data-href")||n.getAttribute("href");if("stylesheet"===n.rel&&(t===c||t===a))return e()}var r=document.getElementsByTagName("style");for(b=0;b<r.length;b++){var n;if((t=(n=r[b]).getAttribute("data-href"))===c||t===a)return e()}var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.onload=e,o.onerror=function(e){var c=e&&e.target&&e.target.src||a,f=new Error("Loading CSS chunk "+u+" failed.\n("+c+")");f.request=c,delete i[u],o.parentNode.removeChild(o),d(f)},o.href=a,document.getElementsByTagName("head")[0].appendChild(o)}).then(function(){i[u]=0}));var f=l[u];if(0!==f)if(f)e.push(f[2]);else{var c=new Promise(function(e,c){f=l[u]=[e,c]});e.push(f[2]=c);var d,b=document.createElement("script");b.charset="utf-8",b.timeout=120,s.nc&&b.setAttribute("nonce",s.nc),b.src=s.p+"static/js/"+({65:"newEpicJourney"}[u]||u)+"."+{0:"fb3340b8",1:"54ec15e8",2:"01981ce3",3:"e94006c3",4:"5ede5541",5:"1bf0f6ed",6:"bebeb68b",7:"78c7f3ab",8:"2bbd9986",9:"6f415a4c",10:"80a4a68f",11:"f2343060",12:"3ab8b553",13:"a022508e",14:"508d88a2",15:"2c094c19",16:"3836388f",17:"e2626205",18:"fef7dddc",19:"8ae5bf5b",20:"66d11520",21:"63dcc23a",22:"1528d654",23:"d1d99fce",24:"64df0c78",25:"310345cf",26:"233b888b",27:"262a309e",28:"001cd286",29:"fadc546e",30:"77a65de1",31:"e2407459",32:"37fa5ac8",33:"399ee488",34:"9d1013e1",35:"352b1953",36:"b70f8b88",37:"c2ef0102",38:"db283e69",39:"ebadd61a",40:"0d40f995",41:"6f9699db",42:"6f06bf5a",43:"95cb83e4",44:"a9fbc352",45:"cb27ac9e",46:"0d0f39c4",47:"4c69a963",48:"13892880",49:"ffd5df1c",50:"e7651b9d",51:"8c20eef1",52:"5dbab286",53:"ee27dd88",54:"d8de12c5",55:"a51af23f",56:"3c092928",57:"3b7d5b12",58:"539ec0f4",59:"0ad1a22a",60:"7358055f",61:"d098bd9f",62:"8a43b13a",63:"26c726b8",65:"9428d7ec",67:"d52ed014",68:"b302b595",69:"32765a23",70:"efcf3b09",71:"79f14fe9",72:"eb1b8323",73:"ae526552",74:"2acf4eb5",76:"26bd15f2",77:"43cfed21",78:"19e09b6b",79:"951f1663",80:"72df6655",81:"885807ee",82:"dd2894ca",83:"77e8a0f0",84:"07c203eb",85:"4ee3a867",86:"062f5646",87:"557bfab8",88:"82d32ac8",89:"83fcbd55",90:"668d9a01",91:"4d3dad7d",92:"b290c2b2",93:"60a76451",94:"362d6088",95:"088f812d",96:"98d41e9a",97:"76e4a81d",98:"176f1ab4",99:"40ca4134",100:"693239ad",101:"b9e55060",102:"54bc546e",103:"538d0d33",104:"07e67715",105:"8a7b5a2d",106:"a0e0ea27",107:"455890a8",108:"6d21512d",109:"e96048ea",110:"df30b39f",111:"00e1003a",112:"cbe6ca69",113:"e7a4da69",114:"fc37c7c6",115:"ec9583de",116:"f0a58334",117:"6b43fbdc",118:"283d949f",119:"fed90984",120:"318e1048",121:"e36e8bd2",122:"f469c00f",123:"ebd5a505",124:"8e6db0ad",125:"c6e35fb4",126:"b55cd579",127:"01d4388b",128:"3899d65f",129:"0a2957ad",130:"a44e76b6",131:"9c7547b3",132:"d05228d5",133:"281c3146",134:"d8f3bace",135:"ea2e779d",136:"a7c64784",137:"75910e1a",138:"647045d6",139:"3f3448a9",140:"7cd56ee0",141:"d4eccb65",142:"4e9c185d",143:"3d5b3338",144:"a5d5d21a",145:"ec48975b",146:"9eebf576",147:"7d24515f",148:"9268be71",149:"f1d987ac",150:"da4c9767",151:"983bc7f9",152:"5c609413",153:"3e3c057f",154:"8df79a42",155:"abe674c2",156:"00858365",157:"f3d508b2",158:"7e18f871",159:"9c466e3e",160:"806be5e5",161:"d795781e",162:"6e38f2da",163:"665e3a7c",164:"43f607e7",165:"60f7f97d",166:"f171bc64",167:"0323e07a",168:"94b0648e",169:"1e524027",170:"ea5f37b5",171:"4fc8c423",172:"aaa66ceb",173:"a69ef2c7",174:"b386c365",175:"454c4e5a",176:"a02aeaf8",177:"eaaa3aea",178:"ada92782",179:"5a7ff691",180:"2e503c38",181:"2fb6e7bb",182:"654d233e",183:"08bfc8b3",184:"ae808982",185:"221dc974",186:"ac0f2f90",187:"d85d25f5",188:"28d51141",189:"5f6f170d",190:"113745c7",191:"2d145a95",192:"27190dac",193:"3497a528",194:"58a45dac",195:"5d6a8a9a",196:"d56847db",197:"c1dcb6d5",198:"2b395b03",199:"230c6c43",200:"196b8b95",201:"966036c5",202:"e0e28f93",203:"4b55e039",204:"89898cde",205:"f34393fe",206:"72b10118",207:"67c772e9",208:"b662d6e4",209:"a9ada36e",210:"74fbbe9f",211:"613568cb",212:"c4006bec",213:"f3c7af8f",214:"5a59bf01",215:"d05b6417",216:"1349a5c0",217:"d5ef1f48",218:"2bfb3d1b",219:"9a6bc26e",220:"09310431",221:"d6ed2290",222:"1fe7d540",223:"9907e208",224:"22f3ad65",225:"f2d258bd",226:"610a79f8",227:"163529e5",228:"7e0c2f18",229:"f6a8389b",230:"14b66569",231:"9577c90e",232:"62c911b3",233:"5ad1d6d3",234:"04a67f80",235:"3fe46c48",236:"1c3f2f02",237:"d1624879",238:"5613715e",239:"9042cd65",240:"12ad2b6d",241:"992b6664",242:"e75df9e7",243:"8867f359",244:"c4164533",245:"51cceda1",246:"99f517ee",247:"9f5fd92d",248:"566e4bc1",249:"6d705c3b",250:"cc6f5850",251:"6be329a6",252:"90d585da",253:"555b5467",254:"cace8111",255:"57cb09d8",256:"27a787f6",257:"6201ff4d",258:"402f7e4b",259:"27502e3a",260:"bf49d65b",261:"3c36e6c8",262:"c760c115",263:"b247f86f",264:"ace3ea26",265:"188ca06f",266:"cde3e1dd",267:"2bc879e4",268:"d7fb53eb",269:"2d1dd8f0",270:"653570cd",271:"33115948",272:"6305919b",273:"6d9f86e0",274:"313d322c",275:"878ed6c1",276:"0d26c9fb",277:"592670fe",278:"80870c1f",279:"02a9b5d3",280:"5e40c88a",281:"41591420",282:"524b119e",283:"37ae6731",284:"6a2416ac",285:"745c1d85",286:"b792ee2c",287:"2ba668f9",288:"f66ef835",289:"7e6972c8",290:"82e2fce2",291:"bc4caef1",292:"20b95501",293:"fde5bc60",294:"40765b15",295:"cc59a769",296:"82210a80",297:"a1417a8b",298:"407adc44",299:"a235b5b8",300:"a1bc3c11",301:"c4602b7b",302:"d59142ed",303:"9e9e256b",304:"29540681",305:"26ab37d2",306:"67be8e02",307:"2630cf32",308:"ae65147a",309:"6a5d111e",310:"8822e3e7",311:"b5631f37",312:"5ec7ab46",313:"18fa2e07",314:"68ca7afa",315:"76c32f21",316:"5093a82b",317:"c0259e1f",318:"7973b17b"}[u]+".chunk.js",d=function(e){b.onerror=b.onload=null,clearTimeout(t);var c=l[u];if(0!==c){if(c){var f=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src,a=new Error("Loading chunk "+u+" failed.\n("+f+": "+d+")");a.type=f,a.request=d,c[1](a)}l[u]=void 0}};var t=setTimeout(function(){d({type:"timeout",target:b})},12e4);b.onerror=b.onload=d,document.head.appendChild(b)}return Promise.all(e)},s.m=n,s.c=f,s.d=function(e,c,f){s.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:f})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(c,e){if(1&e&&(c=s(c)),8&e)return c;if(4&e&&"object"==typeof c&&c&&c.__esModule)return c;var f=Object.create(null);if(s.r(f),Object.defineProperty(f,"default",{enumerable:!0,value:c}),2&e&&"string"!=typeof c)for(var d in c)s.d(f,d,function(e){return c[e]}.bind(null,d));return f},s.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(c,"a",c),c},s.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},s.p="https://code-assets-0.whjr.online/",s.oe=function(e){throw console.error(e),e};var c=window.webpackJsonp=window.webpackJsonp||[],d=c.push.bind(c);c.push=e,c=c.slice();for(var a=0;a<c.length;a++)e(c[a]);var p=d;o()}([])</script><script src="index-byfs-CODING_files/75.js"></script><script src="index-byfs-CODING_files/main.js"></script><script defer="defer" src="index-byfs-CODING_files/beacon.js" data-cf-beacon="{&quot;rayId&quot;:&quot;69796cd1996f17db&quot;,&quot;token&quot;:&quot;9209c4bccf6d41fcbaa2bf375cf7072b&quot;,&quot;version&quot;:&quot;2021.9.0&quot;,&quot;si&quot;:100}"></script>
+<script data-cookiecategory="targeting">
+      function getPageName(location) {
+        const pageMap = {
+          //path of page : name of page to be tracked
+        }
+
+        for (let route of Object.keys(pageMap)) {
+          if (location.includes(route))
+            return pageMap[route];
+        }
+
+        return false;
+      }
+      const pageName = getPageName(window.location.pathname);
+      if (pageName)
+        analytics.page(pageName)
+    </script><script async="true" src="index-byfs-CODING_files/a.js"></script><script async="true" src="index-byfs-CODING_files/checkout.js"></script><script async="true" src="index-byfs-CODING_files/PIL.js"></script><script src="index-byfs-CODING_files/datadog-logs-us.js" defer="true" onload="window.onDataDogLoad()"></script><script src="index-byfs-CODING_files/js.js" defer="true"></script><script defer="true">
+    (function(h,o,u,n,d) {
+      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+      d=o.createElement(u);d.async=1;d.src=n
+      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+    })(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum.js','DD_RUM')
+    DD_RUM.onReady(function() {
+      DD_RUM.init({
+        clientToken: 'pub2164d32f2f302313188a3241b65dd707',
+        applicationId: 'f6789ad7-c290-47c9-992c-c1fe1e2b89ec',
+        site: 'datadoghq.com',
+        service:'main_ui',
+        // Specify a version number to identify the deployed version of your application in Datadog 
+        version: '0.1.0',
+        sampleRate: 10,
+        env: 'production',
+        trackInteractions: true,
+      });
+      const event = new Event("datadogRumLoaded");
+      document.dispatchEvent(event);
+    })
+    </script><script defer="true">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'undefined');
+      window.gaTagQueueExecute()
+    </script><script defer="true">
+      // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+      window.clevertap.account.push({ id: "W4W-ZKR-495Z" });
+      window.clevertap.privacy.push({ optOut: false }); //set the flag to true, if the user of the device opts out of sharing their data
+      window.clevertap.privacy.push({ useIP: false }); //set the flag to true, if the user agrees to share their IP data
+      // importScripts('https://s3-eu-west-1.amazonaws.com/static.wizrocket.com/js/sw_webpush_only_registration.js');
+      (function() {
+        var wzrk = document.createElement("script");
+        wzrk.async = true;
+        wzrk.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/a.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wzrk, s);
+      })();
+    </script><script defer="true">
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1347255,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script><iframe name="__privateStripeMetricsController0600" allowtransparency="true" scrolling="no" allow="payment *" src="index-byfs-CODING_files/m-outer-79f4c4ec97e4a9c650a8aa5dc0a621df.html" aria-hidden="true" tabindex="-1" style="border: medium none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;" frameborder="0"></iframe><div class="razorpay-container" style="z-index: 1000000000; position: fixed; top: 0px; display: none; left: 0px; height: 100%; width: 100%; backface-visibility: hidden; overflow-y: visible;"><style>@keyframes rzp-rot{to{transform: rotate(360deg);}}@-webkit-keyframes rzp-rot{to{-webkit-transform: rotate(360deg);}}</style><div class="razorpay-backdrop" style="min-height: 100%; transition: all 0.3s ease-out 0s; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"><span style="text-decoration: none; background: rgb(214, 68, 68) none repeat scroll 0% 0%; border: 1px dashed white; padding: 3px; opacity: 0; transform: rotate(45deg); transition: opacity 0.3s ease-in 0s; font-family: lato, ubuntu, helvetica, sans-serif; color: white; position: absolute; width: 200px; text-align: center; right: -50px; top: 50px;">Test Mode</span></div><iframe style="opacity: 1; height: 100%; position: relative; background: none; display: block; border: 0 none transparent; margin: 0px; padding: 0px; z-index: 2;" allowtransparency="true" allowpaymentrequest="true" src="index-byfs-CODING_files/public.html" class="razorpay-checkout-frame" width="100%" height="100%" frameborder="0"></iframe></div><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="index-byfs-CODING_files/box-dfc01efbdc94bb0936d9a35a502b0b64.html"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
