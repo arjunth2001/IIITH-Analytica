@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://groww.in/privacy-policy/ -->
+<html lang="en-US" class=" js_active  vc_desktop  vc_transform  vc_transform "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./groww_files/analytics.js"></script><script async="" src="./groww_files/page.js"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://groww.in/xmlrpc.php">
+<meta name="robots" content="noindex, follow">
+
+<title>Privacy Policy - Groww</title><link rel="preload" as="style" href="./groww_files/css"><link rel="stylesheet" href="./groww_files/css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C400italic%2C700italic%7CRoboto%2C%3A400%2C400italic%2C700%7CRoboto%2C%3A400%2C700&#038;subset=latin&#038;display=swap" /></noscript><link rel="stylesheet" href="./groww_files/fcb93642dbb034ba8abbb2b5ba31db9e.css" media="all" data-minify="1">
+<meta name="description" content="This privacy policy sets out how Groww.in and NextBillion Technology Pvt. Ltd. uses and protects any information that you share when you use this website.">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy Policy - Groww">
+<meta property="og:description" content="This privacy policy sets out how Groww.in and NextBillion Technology Pvt. Ltd. uses and protects any information that you share when you use this website.">
+<meta property="og:url" content="https://groww.in/privacy-policy/">
+<meta property="og:site_name" content="Groww">
+<meta property="article:publisher" content="https://www.facebook.com/growwapp/">
+<meta property="article:modified_time" content="2021-02-17T12:44:56+00:00">
+<meta property="og:image" content="https://wp-asset.groww.in/wp-content/uploads/2021/04/23135203/og-image-new.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@_groww">
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="17 minutes">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://groww.in/#website","url":"https://groww.in/","name":"Groww","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://groww.in/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://groww.in/privacy-policy/#webpage","url":"https://groww.in/privacy-policy/","name":"Privacy Policy - Groww","isPartOf":{"@id":"https://groww.in/#website"},"datePublished":"2015-03-26T14:12:34+00:00","dateModified":"2021-02-17T12:44:56+00:00","description":"This privacy policy sets out how Groww.in and NextBillion Technology Pvt. Ltd. uses and protects any information that you share when you use this website.","breadcrumb":{"@id":"https://groww.in/privacy-policy/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://groww.in/privacy-policy/"]}]},{"@type":"BreadcrumbList","@id":"https://groww.in/privacy-policy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://groww.in/"},{"@type":"ListItem","position":2,"name":"Privacy Policy"}]}]}</script>
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<link rel="dns-prefetch" href="https://www.google-analytics.com/">
+<link rel="dns-prefetch" href="https://static.addtoany.com/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Groww » Feed" href="https://groww.in/feed/">
+<link rel="alternate" type="application/rss+xml" title="Groww » Comments Feed" href="https://groww.in/comments/feed/">
+
+<script src="./groww_files/js" type="text/javascript" data-cfasync="false" async=""></script>
+<script type="text/javascript" data-cfasync="false">
+				var em_version = '6.8.0';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+				
+								var disableStr = 'ga-disable-UA-76725130-1';
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					return document.cookie.indexOf( disableStr + '=true' ) > - 1;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					window[disableStr] = true;
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+					window[disableStr] = true;
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+				if ( em_track_user ) {
+					function __gtagTracker() {dataLayer.push( arguments );}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dNDMyYj' : true,
+						                    });
+					__gtagTracker( 'config', 'UA-76725130-1', {
+						forceSSL:true,					} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+										if ( args.hasOwnProperty(arg) && gaMap.hasOwnProperty(arg) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+
+<script id="groww-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id="addtoany-inline-css" type="text/css">
+.addtoany_header {
+    margin: 0 10px 16px 0;
+    color: #6d6d75;
+    display: inline;
+}
+.vc_desktop .addtoany_share_save_container, .vc_mobile .addtoany_share_save_container  {
+    display: none !important;
+}
+.addtoany_content {
+    margin: 0 0 26px 0;
+}
+.page .addtoany_content_top {
+    display: none;
+}
+</style>
+<style id="ebor-style-inline-css" type="text/css">
+
+				@media all and (max-width: 1024px) {
+				  .parallax > .background-image-holder,
+				  .parallax .slides li > .background-image-holder {
+				    top: 0 !important;
+				    transform: none !important;
+				    -webkit-transform: none !important;
+				    height: 100%;
+				  }
+				}
+			
+</style>
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://groww.in/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type="text/javascript" id="exactmetrics-frontend-script-js-extra">
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/groww.in","hash_tracking":"false","ua":"UA-76725130-1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./groww_files/frontend-gtag.min.js" id="exactmetrics-frontend-script-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./groww_files/jquery-migrate.min.js" id="jquery-migrate-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/addtoany.min.js" id="addtoany-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./groww_files/custom.js" id="hm_custom_js-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://groww.in/wp-json/"><link rel="alternate" type="application/json" href="https://groww.in/wp-json/wp/v2/pages/179"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://groww.in/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://groww.in/wp-includes/wlwmanifest.xml">
+<link rel="shortlink" href="https://groww.in/?p=179">
+<link rel="alternate" type="application/json+oembed" href="https://groww.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroww.in%2Fprivacy-policy%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://groww.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroww.in%2Fprivacy-policy%2F&amp;format=xml">
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+<style type="text/css">.wtr-time-wrap{ 
+    /* wraps the entire label */
+    margin: 0 10px;
+}
+
+.wtr-time-number{ 
+    /* applies only to the number */
+}
+
+#wtr-progress {
+    /*box-shadow: none;*/
+    /*-webkit-box-shadow: none;*/
+}
+
+#wtr-progress #wtr-slider {
+    height: 75%;
+}
+
+.article__title h1 .after-title {
+    display: none;
+}
+
+.wtr-time-wrap {
+    margin: 0;
+    vertical-align: unset;
+}
+
+.single-post .ins_author ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .single-post .ins_author ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://groww.in/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--> <meta name="onesignal" content="wordpress-plugin">
+<script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("https://groww.in");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '7ada6c66-4788-4c9e-8757-58043f08426d';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "";
+oneSignal_options['welcomeNotification']['message'] = "";
+oneSignal_options['path'] = "https://groww.in/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<style>
+      #related_posts_thumbnails li{
+          border-right: 1px solid #dddddd;
+          background-color: #ffffff      }
+      #related_posts_thumbnails li:hover{
+          background-color: #ffffff;
+      }
+      .relpost_content{
+          font-size:	14px;
+          color: 		#333333;
+      }
+      .relpost-block-single{
+          background-color: #ffffff;
+          border-right: 1px solid  #dddddd;
+          border-left: 1px solid  #dddddd;
+          margin-right: -1px;
+      }
+      .relpost-block-single:hover{
+          background-color: #ffffff;
+      }
+      </style>
+<style type="text/css">
+                    
+            @font-face {
+                font-family: 'aslsicons2';
+                src: url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
+                src: url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
+                     url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
+                     url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
+                     url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
+                     url('https://groww.in/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+                font-size: 0px !important;
+                color: rgba(0, 0, 0, 0);
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+                font-size: 11px !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            div[id*='ajaxsearchlite'].wpdreams_asl_container {
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+                font-weight: bold;
+                color: rgba(217, 49, 43, 1);
+                background-color: rgba(238, 238, 238, 1);
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+                width: 70px;
+                height: 70px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            div.asl_r .results {
+                max-height: none;
+            }
+            
+                .asl_w, .asl_w * {font-family:inherit !important;}
+                .asl_m input[type=search]::placeholder{font-family:inherit !important;}
+                .asl_m input[type=search]::-webkit-input-placeholder{font-family:inherit !important;}
+                .asl_m input[type=search]::-moz-placeholder{font-family:inherit !important;}
+                .asl_m input[type=search]:-ms-input-placeholder{font-family:inherit !important;}
+                
+                div.asl_r.asl_w.vertical .results .item::after {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background: #D8D8D8;
+                }
+                div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+                    display: none;
+                }
+                 /* Search Box */
+#ajaxsearchlite1 .probox, div.asl_w .probox {
+	border: unset;
+	border-radius: unset;
+}
+
+div[id*='ajaxsearchlite'].wpdreams_asl_container {
+border-radius: 5px;
+}
+                </style>
+<script type="text/javascript">
+                if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" )
+                    _ASL.initialize();
+            </script>
+<link rel="icon" href="https://wp-asset.groww.in/wp-content/uploads/2016/08/18123838/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://wp-asset.groww.in/wp-content/uploads/2016/08/18123838/favicon-32x32.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://wp-asset.groww.in/wp-content/uploads/2016/08/18123838/favicon-32x32.png">
+<meta name="msapplication-TileImage" content="https://wp-asset.groww.in/wp-content/uploads/2016/08/18123838/favicon-32x32.png">
+<style type="text/css" id="wp-custom-css">
+			#ssb-container{
+	top: 40% !important;
+	width: 50px;
+}
+
+.ssb-btns-right{
+	right: 1%;
+}
+
+#ssb-container ul li{
+	border-radius: 50px;	
+}
+
+#ssb-container ul li a{
+	padding: 0px !important;
+}
+
+/*Start Page Sidebar Menu*/
+
+/*Blog Sidebar*/
+
+#blog_sidebar_container {
+    margin-bottom: 20px;
+/* 		background: #f5f5f5; */
+}
+
+#blog_sidebar_container ul li{
+/* 	border-left: 2px solid #5367ff; */
+	border-bottom: 1px solid #e4e4e4;
+	padding: 3px 3px 3px 10px;
+}
+
+#blog_sidebar_container ul li a {
+	font-size: 14px;
+	color: #44475b;
+	font-weight: bold;
+}
+
+.blog_sidebar_subheading{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+		color: white;
+	  border: 1px solid #ccc;
+}
+
+.blog_sidebar_subheading a{
+	color: #222;
+}
+
+.blog_sidebar_main_heading{
+    font-size: 16px;
+    text-align: center;
+		color: #283540;
+/* 		border-left: 2px solid #5367ff; */
+		padding: 5px 5px 5px 10px;
+/* 		background: #00d09c; */
+}
+
+.sidebar ul li a {
+    color: #222;
+	  opacity: 0.90;
+}
+
+
+
+.single-post .sidebar .boxed.boxed--lg {
+    margin-top: 30px;
+}
+
+.sf__media {
+    padding-left: 10px;
+    padding-right: 10px;
+		width: 50%;
+}
+
+/* Blog Post Font */
+
+.blog-post{
+	font-size: 16px;
+	line-height: 2.0;
+  color: #222;
+	text-align: justify;
+}
+
+/* WP Bakery Pages Font */
+.wpb_wrapper {
+    font-size: 17px;
+    color: #222;
+    line-height: 2.0;
+		text-align: justify;
+}
+
+.wpb_wrapper a {
+    color: #005be2;
+}
+
+/* Sidebar Menu Subheading Font */
+ul#menu-page-sidebar-menu li {
+    font-size: 14px;
+/* 		margin-bottom: 5px; */
+}
+
+/* Bottom Floating Bar */
+.ig_heading{
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.ig_action_bar.ig_solid .ig_button{
+	margin: 0.3px 0px;
+}
+
+#icegram_message_29325 .ig_heading {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px){
+.ig_action_bar .ig_data {
+    padding-right: 0em;
+}
+}
+
+.mfd-container {
+  overflow: auto;
+}
+
+/* Header Nav Menu Font */
+ul#menu-start-here li {
+    font-size: 14px;
+}
+
+/* Calculator CSS Changes */
+.cp_cff_box #fbuilder .top_aligned .fields>label {
+    color: #09D09D !important;
+}
+
+#formheader_1 {
+    margin-bottom: 15px;
+}
+
+#fbuilder {
+    font-family: Roboto !important;
+}
+
+.dfield {
+    text-align: left;
+		position: relative;
+}
+
+.cp_cff_box #fbuilder .fform {
+    margin-bottom: 15px;
+}
+
+/* Saving Schemes Menu */
+
+
+/* Blog Sidebar CTA */
+.single-post .sidebar .boxed{
+	margin-top: 0;
+}
+.sidebar_cta_box{
+	position: relative;
+    overflow: hidden;
+    padding: 2.4375em;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 2;
+    margin-top: 0;
+		box-shadow: 5px 5px 5px 5px #222;
+}
+
+@media (max-width: 767px){
+.hidden-xs {
+    display: block !important;
+}
+}
+
+/* Nav Bar Items Hover Background */
+
+.menu > li ul{
+	background: white;
+}
+
+.menu > li ul li a{
+	color: #222;
+}
+
+/* Comment Section Hide */
+.blog-post__comments {
+    display: none;
+}
+
+/* WP Bakery Pages Custom Heading Font Size and Weight */
+.wpb_wrapper h1 {
+    font-weight: 500 !important;
+		font-size: 36px !important;
+}
+
+.wpb_wrapper h2, h3, h4, h5, h6{
+		font-weight: bold !important
+}
+
+
+/* Footer Text */
+.footer-text {
+    display: none;
+}
+
+/* Tablepress CSS */
+thead a {
+	color: white !important;
+	font-size: 19px;
+}
+.wpb_text_column table td{
+	padding: 10px;
+}
+table th {
+    padding: 10px !important;
+}
+thead{
+	color: white;
+}
+
+/* Stocks Sidebar */
+
+
+/* Email Opt-in Form */
+form#mc4wp-form-1 {
+    background: #f5f5f5;
+    padding: 15px;
+		margin-bottom: 20px;
+    border-left: 2px solid #5367FF;
+}
+input[type='email']{
+	width: 100%;
+}
+
+/* Blog Sidebar Footer Overlapping Fix */
+.col-sm-8.post-content {
+    /*min-height: 2520px;*/
+}
+
+.sidebar #text-7 .textwidget{
+	/*min-height: 2520px !important;*/
+}
+
+/* WP Bakery Pages - Mobile */
+@media (max-width: 768px){
+	.nav-stack .nav-stack__upper {
+    margin: 1.2em 0;
+    border-bottom: 1px solid #ddd;
+}
+	.page section {
+    padding: 10px 0 30px 0!important;
+}
+	.page-template-default .main-container {
+    margin-top: 100px;
+}
+	.wpb_wrapper h1{
+		font-size: 28px !important;
+		text-align: left;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0px !important;
+	}
+	.wpb_wrapper h2{
+		font-size: 24px !important;
+		text-align: left;
+	}
+	.wpb_wrapper h3{
+		font-size: 22px !important;
+		text-align: left;
+	}
+	.wpb_wrapper h4{
+		font-size: 20px !important;
+		text-align: left;
+	}
+	.wpb_wrapper h5{
+		font-size: 18px !important;
+		text-align: left;
+	}
+	.wpb_wrapper h6{
+		font-size: 16px !important;
+		text-align: left;
+	}
+	.wpb_wrapper p{
+		font-size: 16px;
+	}
+}
+
+/* Heading Tag Alignment for Blog Post & Pages - Desktop */
+
+.post-content h1, h2, h3, h4, h5, h6{
+		text-align: left;
+}
+
+.wpb_wrapper h1, h2, h3, h4, h5, h6{
+		text-align: left;
+}
+
+/* Text Alignment For Blogpost & WP Bakery Pages */
+@media (max-width: 768px){
+	.post-content p, li{
+		text-align: left;
+	}
+	.wpb_wrapper p, li{
+		text-align: left;
+	}
+}
+
+/* Blog Recent Posts */
+.display-posts-listing {
+/*     margin-top: 15px; */
+}
+.display-posts-listing li{
+	list-style: none;
+}
+
+
+
+/* Category Page Title */
+/* .text-center > h1 {
+    font-size: 42px !important;
+    margin-bottom: 20px !important;
+	  margin-top: 275px !important
+} */
+
+/* .page-title.page-title--animate .container * {
+    opacity: 1;
+    animation: none;
+    animation-delay: unset;
+    animation-fill-mode: unset;
+} */
+
+/* Related Post */
+.related-row img{
+	display: none;
+}
+
+.related-row .boxed {
+    min-height: 75px !important;
+	background-color: #f5f5f5;
+}
+
+.related-row .boxed h5{
+	font-size: 16px !important;
+	color: #005be2;
+}
+
+.related-row .boxed h5:hover{
+	font-size: 17px !important;
+	text-decoration: underline;
+}
+
+.single .related-row .boxed {
+    min-height: 100px !important;
+}
+
+/* Investment Header Banner */
+.header-banner .vc_btn3.vc_btn3-color-orange.vc_btn3-style-modern {
+    color: #222;
+    border-color: #00D09C;
+    background-color: #00D09C;
+    font-weight: bold;
+}
+.header-banner .vc_btn3-container {
+    margin-bottom: 0px;
+}
+@media (max-width: 768px){     
+  .page-template-default .main-container {
+    margin-top: 80px;
+}
+	.header-banner h3 {
+    font-size: 18px !important;
+		padding: 0 !important;
+}
+}
+/* Gif Banner Button Color */
+.vc_btn3.vc_btn3-color-vista-blue, .vc_btn3.vc_btn3-color-vista-blue.vc_btn3-style-flat {
+    background-color: #5367FF;
+    font-weight: bold;
+		opacity: 1 !important;
+}
+
+.vc_btn3.vc_btn3-color-vista-blue, .vc_btn3.vc_btn3-color-vista-blue.vc_btn3-style-flat:hover {
+    background-color: #5367FF !important;
+    font-weight: bold;
+		opacity: 1 !important;
+}
+
+/* Single Post CSS */
+.single-post .ins-top-text{
+	width: 100%;
+	color: #222;
+}
+
+
+/* Footer Text CSS */
+
+.footer-4 .footer__lower{
+	padding: 0 0 !important;
+}
+
+footer .footer__lower {
+    background: #1e2232 !important;
+}
+
+/* Groww Calculators For Mobile */
+@media (max-width: 768px){
+	.calc-iframe{
+		min-height: 500px !important;
+		max-height: 750px !important;
+	}
+	
+	.nps-calc-iframe{
+		max-height: 650px;
+	}
+}
+
+/* Navigation Menu Items Opacity */
+.menu>li>ul a {
+	opacity: 0.65 !important;
+}
+
+
+
+/* Weekly Digest Sidebar */
+.wd_widget_title h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #00D09C;
+    color: #fff;
+    padding: 5px;
+}
+
+.wpb_wrapper .weekly_digest_sidebar{
+	background: #f5f5f5;
+}
+
+.weekly_digest_sidebar > .wpb_wrapper>ul>li {
+		font-size: 16px;
+    text-align: left;
+    line-height: 27px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.weekly_digest_sidebar>.wpb_wrapper>ul>li>a:hover {
+		text-decoration: underline;
+		transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+}
+
+.weekly_digest_sidebar .post-date {
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+	.wd_title_extras p {
+    margin-top: 20px;
+    padding: 5px 0 5px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+	.wd_podcast_section {
+    margin-bottom: 20px;
+}
+	.wd_separator{
+		display: none;
+	}
+}
+
+/* News Page - Podcasts */
+@media (max-width: 768px){
+	.news_podcast {
+    display: block !important;
+    width: 100% !important;
+		padding: 0 !important;
+}
+	.news_podcast_h3{
+		text-align: center !important;
+	}
+}
+
+/* Page Sidebar GIF Button */
+@media (min-width: 767px){
+#page_sidebar_gif_button {
+    width: 100%;
+}
+}
+
+/* in Between CTA - Pages */
+.in-between-cta{
+	transition: border 0.7s ease-out, text-transform 1s, border-radius 1s ease-out;
+  border-radius: 0px;
+  box-shadow: 5px 5px rgba(77, 77, 77, 0.5);
+}
+
+.in-between-cta:hover{
+	border-radius: 25px;
+}
+
+.in-between-cta:active{
+	transform: translate3d(3px, 3px, 0px);
+  box-shadow: 5px 5px rgba(77, 77, 77, 0.5);
+}
+
+@media (max-width: 768px){
+	.in-between-cta{
+		box-shadow: 2px 2px rgba(77, 77, 77, 0.5);
+	}
+	.in-between-cta:hover{
+		box-shadow: 2px 2px rgba(77, 77, 77, 0.5);
+	}
+}
+
+/* Extra Footer Columns */
+@media (max-width: 768px){
+	.extra_column{
+		padding-left: 15px !important;
+	}
+}
+
+/* Footer Columns */
+#menu-footer-column-1 li{
+	line-height: 2em;
+}
+#menu-footer-column-2 li{
+	line-height: 2em;
+}
+#menu-footer-column-3 li{
+	line-height: 2em;
+}
+.footer_column li{
+	line-height: 2em;
+}
+
+#menu-footer-column-1 li a:hover{
+	text-decoration: underline;
+}
+
+#menu-footer-column-2 li a:hover{
+	text-decoration: underline;
+}
+
+#menu-footer-column-3 li a:hover{
+	text-decoration: underline;
+}
+
+.footer_column li a:hover{
+	text-decoration: underline;
+}
+
+/* Blog Recent Posts Sidebar  - Hide Date */
+.display-posts-listing .date {
+    display: none;
+}
+
+/* RD Interest Rate Menu */
+
+
+/* FD Sidebar Menu */
+
+
+/* blog single.php width */
+@media (min-width: 768px){
+.col-sm-8 {
+    width: 70%;
+}
+}
+
+@media (min-width: 992px){
+.col-md-4 {
+    width: 30%;
+}
+}
+
+/* Blog Sidebar New Design */
+.widget_container {
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 5px #a9a5a5;
+    border-radius: 5px;
+}
+
+/* Stocks Product Sidebar Menu */
+
+
+/* Helpline Blog Post Image Border */
+.helpline-img{
+	border: 1px solid #ccc;
+}
+
+/* Blogs with Less Content -  Min Height */
+.postid-36163 .col-sm-8.post-content{
+	min-height: 0px !important;
+}
+
+.postid-27973 .col-sm-8.post-content{
+	min-height: 0px !important;
+}
+
+.postid-36636 .col-sm-8.post-content{
+	min-height: 0px !important;
+}
+
+/* Icon Hide */
+.icon-Arrow-Down2:before{
+	display: none;
+}
+
+/* Table Header Text Color */
+.tablepress tr th a {
+    color: #fff !important;
+}
+
+/* Latest */
+.stocks-cta-content ul li {
+    width: 32% !important;
+    padding: 10px 15px;
+}
+
+footer .social_icons ul li {
+    margin-right: 5px !important;
+}
+
+.tag .main-container #ajaxsearchlite1 {
+	display: none;
+}
+
+.tag .main-container .lead {
+    padding: 0 15px;
+    font-size: 18px;
+    color: #44475b;
+}
+
+.the-tags {
+    display: none;
+}
+
+/* Stocks Header CTA - New */
+.stocks-hcta {
+  margin-top: 70px;
+  background: rgba(0, 208, 156, 0.05);
+  width: 100%;
+}
+
+.stocks-hcta .top-text {
+  padding-top: 20px;
+  padding-bottom: 14px;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: 700;
+  color: #44475b;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+}
+
+.stocks-hcta .top-text #two-minutes {
+  color: #00d09c;
+}
+
+.stocks-hcta .middle-div {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.stocks-hcta .middle-div p {
+  display: inline;
+  line-height: 22px !important;
+  font-size: 16px;
+  font-style: italic;
+  color: #44475b;
+  letter-spacing: 0.25px;
+}
+
+.stocks-hcta .middle-div p:first-child {
+  margin-right: 40px;
+}
+
+.stocks-hcta .middle-div p img {
+  width: 14px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 9px;
+  margin-bottom: 0;
+}
+
+.stocks-hcta .middle-div #small {
+  font-size: 12px;
+}
+
+.stocks-hcta .bottom-1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.stocks-hcta .bottom-1 a button {
+  line-height: 0; 
+}
+
+.stocks-hcta .bottom-1 button {
+  background: #00d09c;
+  border: none;
+  color: #fff;
+  letter-spacing: 0.23px;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.stocks-hcta .bottom-1 button:hover {
+  cursor: pointer;
+}
+
+.stocks-hcta .bottom-2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 13px;
+	opacity: 0.75;
+}
+
+.stocks-hcta .bottom-2 p {
+  max-width: 740px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.23px;
+  color: #44475b;
+}
+
+.stocks-hcta .bottom-2 p a {
+  color: #00d09c;
+  text-decoration: none;
+}
+
+.stocks-hcta .bottom-2 p a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.stocks-hcta #circle-1,
+.stocks-hcta #dots,
+.stocks-hcta #circle-2,
+.stocks-hcta #circle-3 {
+  position: absolute;
+}
+
+.stocks-hcta #dots {
+  top: 120px;
+  left: 167px;
+}
+
+.stocks-hcta #circle-2 {
+  top: 180px;
+  right: 15px;
+}
+
+.stocks-hcta #circle-3 {
+  right: 100px;
+  top: 100px;
+}
+
+@media (max-width: 768px) {
+	.stocks-hcta .top-text {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+  .stocks-hcta .middle-div,
+  .stocks-hcta .bottom-1,
+  .stocks-hcta .bottom-2 {
+    padding-left: 10px;
+		padding-right: 10px;
+  }
+	
+	.stocks-hcta .middle-div p {
+		font-size: 14px;
+	}
+
+  .stocks-hcta #circle-2 {
+    left: unset;
+    right: 10px;
+  }
+
+  .stocks-hcta #circle-3 {
+    display: none;
+  }
+	
+	.stocks-hcta #dots {
+  	left: 80px;
+	}
+
+  .stocks-hcta .top-text {
+    padding-top: 15px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .stocks-hcta .middle-div p:first-child {
+    margin-right: unset;
+    margin-bottom: 5px;
+  }
+
+  .stocks-hcta .middle-div p {
+    display: block;
+    line-height: 22px;
+  }
+
+  .stocks-hcta .middle-div {
+    margin-bottom: 20px;
+  }
+
+  .stocks-hcta .bottom-1 button {
+    padding: 20px 24px;
+  }
+
+  .stocks-hcta .bottom-1 {
+    margin-bottom: 15px;
+  }
+
+  .stocks-hcta .bottom-2 p {
+    max-width: 500px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+	.stocks-hcta {
+  	margin-top: 60px;
+	}
+}
+
+@media (max-width: 325px) {
+  .stocks-hcta .top-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/* Height Issue Fix */
+.archive .masonry .masonry__container {
+    height: auto !important;
+}
+
+		</style>
+<style type="text/css" title="dynamic-css" class="options-output">.wtr-time-wrap{line-height:15px;color:#6d6d75;font-size:15px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .wtr-time-wrap{opacity: 0;}.ie.wf-loading .wtr-time-wrap{visibility: hidden;}</style><style type="text/css" data-type="vc_custom-css">h1.vc_custom_heading{
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  line-height: 0.73 !important;
+  letter-spacing: 0.43px !important;
+  color: #44475b !important;
+}
+
+.wpb_wrapper p, .wpb_wrapper li:not(.social-icon) {
+  font-size: 14px !important;
+  line-height: 1.86 !important;
+  letter-spacing: 0.3px !important;
+  color: #44475b !important;
+}
+
+.wpb_wrapper h3{
+  font-size: 21px !important;
+  font-weight: 500 !important;
+  line-height: 1.05 !important;
+  letter-spacing: 0.3px !important;
+  color: #44475b !important;
+  margin-top: 20px !important;
+  margin-bottom: 15px !important;
+}
+
+footer .widget li a {
+    padding: 0px 10px 5px !important;
+}
+
+.wpb_wrapper ol {
+    margin-left: 0;
+}
+
+.wpb_wrapper ol li:not(.social-icon) {
+   font-size: 16px !important;
+}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<script>
+    	(function(h,o,t,j,a,r){
+	   h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+	   h._hjSettings={hjid:1439767,hjsv:6};
+	   a=o.getElementsByTagName('head')[0];
+	   r=o.createElement('script');r.async=1;
+	   r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+	   a.appendChild(r);
+	 })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+<link href="./groww_files/js" rel="preload" as="script"><script src="./groww_files/OneSignalPageSDKES6.js" async=""></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script async="" src="./groww_files/hotjar-1439767.js"></script><script async="" src="./groww_files/modules.e95f6e2deb67f1b24d8e.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body class="page-template-default page page-id-179 btn-regular scroll-assist no-page-loader wpb-js-composer js-comp-ver-5.4.7 vc_responsive aa-prefix-groww- vsc-initialized" data-smooth-scroll-offset="0" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+<nav class="navbar navbar-expand-lg navbar-light bg-light main-nav-bar">
+<div class="container my-nav-container">
+<a class="navbar-brand nav-logo col" href="https://groww.in/"><img style="width: 145px;" src="./groww_files/groww-logo.svg" alt="Groww"></a>
+<a class="signupBtn" href="https://groww.in/login?utm_source=msite_header">Sign Up</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse my-navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+ <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/mutual-funds" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Mutual Funds
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/p/equity-funds/">Equity Funds</a>
+<a class="dropdown-item" href="https://groww.in/p/hybrid-funds/">Hybrid Funds</a>
+<a class="dropdown-item" href="https://groww.in/p/debt-funds/">Debt Funds</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/stocks" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Stocks
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/p/small-cap-stocks/">Small Cap Stocks</a>
+<a class="dropdown-item" href="https://groww.in/p/mid-cap-stocks/">Mid Cap Stocks</a>
+<a class="dropdown-item" href="https://groww.in/p/large-cap-stocks/">Large Cap Stocks</a>
+<a class="dropdown-item" href="https://groww.in/p/blue-chip-stocks/">Blue Chip Stocks</a>
+<a class="dropdown-item" href="https://groww.in/p/stock-market-timings/">Stock Market
+Timings</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/calculators/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Calculators
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/calculators/sip-calculator/">SIP Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/lumpsum-calculator/">Lumpsum Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/swp-calculator/">SWP Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/mutual-fund-returns-calculator/">MF Returns Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/income-tax-calculator/">Income Tax Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/sukanya-samriddhi-yojana-calculator/">Sukanya Samriddhi Yojana Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/ppf-calculator/">PPF Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/epf-calculator/">EPF Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/fd-calculator/">FD Calculator</a>
+<a class="dropdown-item" href="https://groww.in/calculators/rd-calculator/">RD Calculator</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/p/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Personal Finance
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/p/savings-schemes/">Savings Schemes</a>
+<a class="dropdown-item" href="https://groww.in/p/fixed-deposit/">Fixed Deposit</a>
+<a class="dropdown-item" href="https://groww.in/p/recurring-deposit/">Recurring Deposit</a>
+<a class="dropdown-item" href="https://groww.in/p/tax/">Tax</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/privacy-policy/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Resources
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/p/investment-basics/">Investment Basics</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle my-nav-dropdown" href="https://groww.in/privacy-policy/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+More
+</a>
+<div class="dropdown-menu dropdown-menu-section" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://groww.in/about-us" target="_blank">About Us</a>
+<a class="dropdown-item" href="https://groww.in/blog/">Blog</a>
+<a class="dropdown-item" href="https://groww.in/p/press/">Press</a>
+<a class="dropdown-item" href="https://groww.in/ebooks/">EBooks</a>
+<a class="dropdown-item" href="https://groww.in/user/help" target="_blank">Contact Us</a>
+</div>
+</li>
+</ul>
+<a class="navLoginBtn" href="https://groww.in/login?utm_source=blog-header-register"><button class="btn btn-outline-success my-2 my-sm-0">Login/Register</button></a>
+</div>
+</div>
+</nav>
+<a href="https://groww.in/privacy-policy/#" id="top"></a>
+<div class="pillar-loader loader--fade"></div>
+<div class="main-container wpb-main-container transition--fade transition--active">
+<section class="vc_row wpb_row vc_row-fluid"><div class="container"><div class="row"><div class="wpb_column column_container col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h1 style="font-size: 36px;color: #44475b;text-align: left" class="vc_custom_heading">Privacy Policy</h1></div></div></div></div></div></section><section class="vc_row wpb_row vc_row-fluid"><div class="container"><div class="row"><div class="wpb_column column_container col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<p><strong><u>Last updated on </u></strong><em><u>February 9</u><u>, 2021</u></em></p>
+<p><strong>Billionbrains Garage Ventures Private Limited</strong>, a private limited company having its registered office at 1st floor, Proms Complex, SBI Colony, 1A, Koramangala, Bangalore – 560034 Karnataka, its affiliates and group entities, together referred to as “Company”, “We”, “Us” or “Our” which owns and operates the website www.groww.in and/or the mobile application ‘<strong>Groww’</strong> (collectively referred to as the “<strong>Platform</strong>”) is committed to protecting Your privacy and the information that You share while using the Platform. We value the trust You place in Us. That’s why We maintain the highest security standards for securing the transactions and Your information.</p>
+<p>This Privacy Policy specifies the manner in which personal data and other information are collected, received, stored, processed, disclosed, transferred, dealt with or otherwise handled by the Company. This Privacy Policy does not apply to information that You provide to, or that is collected by, any third-party (excluding the Company or its affiliates set out in paragraph 3 below) through the Platform, and any Third-Party Sites that You access or use in connection with the services offered on the Platform.</p>
+<p>Please read the Privacy Policy carefully prior to using or registering on the Platform or accessing/availing the services on the Platform including <em>interalia</em> in relation to mutual fund distribution, stock broking services, investment advisory services and KRA/KYC verification (“<strong>Services</strong>”).</p>
+<p>By visiting the Platform, You (“<strong>You</strong>” or “<strong>Your</strong>”), accept and agree to be bound by the terms and conditions of this privacy policy (“<strong>Privacy Policy</strong>”). This Privacy Policy is incorporated into and subject to the <a href="https://groww.in/terms-and-conditions/">terms of use</a> of the Platform (“<strong>Terms</strong>”) and shall be read harmoniously and in conjunction with the Terms.</p>
+<ol>
+<li><strong>Collection of Information </strong></li>
+</ol>
+<p>We collect Personal Information (<em>defined below</em>) from You when You register or set up an account with Us on the Platform. You can browse certain sections of the Platform without being a registered member, however, to avail certain Services on the Platform (such as investing in funds) You are required to register with Us.</p>
+<p>This Privacy Policy applies to information (“<strong>Personal Information</strong>”) that:</p>
+<ul>
+<li>You may provide to Us voluntarily while registering on Our Platform for using Our Services, such as mobile number, email address, password, date of birth, gender, Permanent Account Number (PAN), signature, marital status, nominee details, We may also ask You for certain financial information, including Your billing address, bank account details, credit card number, expiration date and/or other payment related details or other payment method data, and debit instructions or other standing instructions to process payments for the Services. We may ask You to provide certain additional information about Yourself on a case to case basis. All information disclosed by You shall be deemed to be disclosed willingly and without any coercion. No liability pertaining to the authenticity/ genuineness/misrepresentation/fraud/negligence, etc. of the information disclosed shall lie on the Company nor will the Company be in any way responsible to verify any information obtained from You;</li>
+<li>We may retrieve from Your records available with third party including from Know Your Customer (KYC) Registration Agency (KRA) such as name, KYC details, KYC status, father’s name, occupation, address details and related documents.;</li>
+<li>Further, if You choose to invest through the Platform, We will also collect information about Your transactions including transaction status and details and Your investment behaviour; and</li>
+<li>When and if You download and/or use the Platform through Your mobile, We may receive information about Your location, Your IP address, and/or Your mobile device, including a unique identifier number for Your device. We may use this information to provide You with location-based Services including but not limited to search results and other personalized content. You can withdraw Your consent at any time by disabling the location-tracking functions on Your mobile. However, this may affect Your enjoyment of certain functionalities on Our Platform.</li>
+</ul>
+<p>All transactional information including financial information gathered by the Company shall be stored on servers, log files and any other storage system owned by the Company or by third parties in India.</p>
+<p>Our primary goal in doing so is to provide You a safe, efficient, smooth and customized experience on the Platform. The information collected allows Us to provide the Services and features on the Platform that most likely meet Your needs, and to customize the Platform to make Your experience safer and easier. More importantly, while doing so, We collect the above – mentioned Personal Information from You that We consider necessary for achieving this purpose.</p>
+<p>We may also collect certain non-personal information, such as Your internet protocol address, web request, operating system, browser type, URL, internet service provider, IP address, aggregate user data, browser type, software and hardware attributes, pages You request, and cookie information, etc. which will not identify with You specifically (“<strong>Non – Personal Information</strong>”), while You browse, access or use the Platform. We receive and store Non – Personal Information, by the use of data collection devices such as “cookies” on certain pages of the Platform, in order to help and analyze Our web – page flow, track user trends, measure promotional effectiveness, and promote trust and safety. We offer certain additional features on the Platform that are only available through the use of a “cookie”. We place both permanent and temporary cookies in Your computer’s hard drive.</p>
+<p>We also use cookies to allow You to enter Your password less frequently during a session on the Platform. Most cookies are “session cookies,” meaning that they are automatically deleted from Your hard drive at the end of a session. You are always free to decline Our cookies if Your browser permits, although in that case, You may not be able to use certain features or Services being provided on the Platform or You may be required to re-enter Your password each time you log – in or access the Platform during a session.</p>
+<p>In general, You can browse the Platform without telling Us who You are or revealing any Personal Information about Yourself. In such a case, we will only collect and store the Non – Personal Information. Once You give us your Personal Information, You are not anonymous to Us. Wherever possible, while providing the information to Us, We indicate which fields are mandatory and which fields are optional for You. You always have the option to not provide the Personal Information to Us through the Platform by choosing to not use a particular Service or feature being provided by Us on the Platform, which requires You to provide such information. We may automatically track certain information about You based upon Your behaviour on the Platform. We use this information to do internal research on Your demographics, interests, and behaviour to better understand, protect and serve You. This information is compiled and analysed by the Company on an aggregated basis and not individually, in a manner that does not specifically identify You.</p>
+<p>If You choose to post messages on our message boards, chat rooms or other message areas or leave feedback, We will collect and store such information You provide to Us. We retain this information as necessary to resolve disputes, provide customer support, respond to queries and inquires, and troubleshoot problems and improve the Services.</p>
+<p>If You send us correspondence, such as emails or letters, or if other users or third parties send us correspondence about Your activities or postings on the Platform, We may collect and retain such information into a file specific to You for responding to Your request and addressing concerns in relation to Your use of the Platform. We shall be entitled to retain Your Personal Information and other information for such duration as may be required for the purposes specified hereunder and will be used by Us only in accordance with this Privacy Policy.</p>
+<ol start="2">
+<li><strong> Use of Your Information</strong></li>
+</ol>
+<p>We use the Personal Information and other Non-Personal Information, for the following: (i) to provide and improve the Services on the Platform that You request; (ii) to resolve disputes and troubleshoot problems; (iii) to help promote a safe service on the Platform and protect the security and integrity of the Platform, the Services and the users; (iv) collect money from You in relation to the Services, (v) inform You about online and offline offers, products, services, and updates; (vi) customize Your experience on the Platform or share marketing material with You; (vii) to detect, prevent and protect Us from any errors, fraud and other criminal or prohibited activity on the Platform; (viii) enforce and inform about our terms and conditions; (ix) to process and fulfil Your request for Services or respond to Your comments, and queries on the Platform; (x) to contact You; (xi) to allow Our business partners and/or associates to present customised messages to You; (xii) to communicate important notices or changes in the Services provided by the Company, use of the Platform and the terms/policies which govern the relationship between You and the Company and with Our affiliates as set out in paragraph 3 below for providing services to You; and (xiii) for any other purpose after obtaining Your consent at the time of collection.</p>
+<p>You also specifically agree and consent to Us collecting, storing, processing, transferring and sharing information (including Personal Information) related to You with third parties such as Banks, financial institutions, credit information companies, entities registered under applicable laws with Securities Exchange Board of India, National Stock Exchange of India Limited/BSE Limited/Central Registry of Securitisation Asset Reconstruction and Security Interest of India (CERSAI)/payment gateways/ collecting banks/KRAs etc. solely for the purpose of reviewing your profile and processing your transaction requests for the Services or for such other products/services offered by us or our group, affiliate or associates.</p>
+<p>In addition to the above, We identify and use Your IP address to help diagnose problems with Our server, resolve such problems and administer the Platform. Your IP address is also used to help identify you and to gather broad demographic information.</p>
+<p>We may occasionally ask You to complete optional online surveys. These surveys may ask You for Your contact information and demographic information (like zip code, age, or income level). We use this information to tailor Your experience at the Platform, providing You with content that We think You might be interested in and to display content according to Your preferences. We use Your Personal Information to send You promotional emails, however, We will provide You the ability to opt-out of receiving such emails from Us. If You opt out, the Company may still send You non-promotional emails, such as emails about the Services and Your account on the Platform.</p>
+<p>Unless and until, You explicitly give Your consent to Us, to do so, We will not share Your Personal Information with another user of the Platform and vice versa.</p>
+<ol start="3">
+<li><strong> Sharing of information</strong></li>
+</ol>
+<p>We may make Your Personal Information and/or other Non-Personal Information available to Our affiliates including Nextbillion Technologies Private Limited (“<strong>Nextbillion</strong>”) and Finvantage Investment Adviser Private Limited (“<strong>Finvantage</strong>”) to enable them to provide Services through the Platform to You. Please note that all information shared with our affiliates or made available to our affiliates will be governed by the terms of this Privacy Policy. In addition to the Personal Information and in order to provide Services to You, Nextbillion may also collect Your Aadhaar, finger – print details and signature solely for completing the account opening procedures and authenticating Your transactions on the Platform. The act of providing Your Aadhaar is voluntary in nature and the Company, Nextbillion and Finvantage hereby agree and acknowledge that they will collect, use and store such details in compliance with applicable laws and this Privacy Policy.</p>
+<p>We may also disclose Your Personal Information to third party vendors, consultants, and other service providers who work for the Company, who are bound by contractual obligations to keep such personal information confidential and use it only for the purposes for which We disclose it to them. This disclosure may be required for Us, for instance, to provide You access to Our Services and process payments including validation of Your bank accounts, to facilitate and assist Our marketing and advertising activities/initiatives, for undertaking auditing or data analysis, or to prevent, detect, mitigate, and investigate fraudulent or illegal activities related to Our Services. We do not disclose Your Personal Information to third parties for their marketing and advertising purposes without Your explicit consent.</p>
+<p>The Company may disclose Your information, to the extent necessary: (i) to comply with laws and to respond to lawful requests and legal process, (ii) to protect the rights and property of the Company, Our users, and others, including to enforce the Terms, and (iii) in an emergency to protect the personal safety and assets of the Company, the users, or any person. In such an event the Company is in no manner responsible for informing You or seeking Your approval or consent.</p>
+<p>We and Our affiliates may, in compliance with applicable laws, share/transfer/assign all of Your Personal Information and other information with any other business entit(ies), in the event of a merger, sale, re-organization, amalgamation, joint ventures, assignment, restructuring of business or transfer or disposition of all or any portion of Our business.</p>
+<ol start="4">
+<li><strong>Connecting your email account</strong></li>
+</ol>
+<p>You may also choose to provide Your explicit consent to connect/integrate Your email account(s) with Your account on the Platform by clicking on the authentication email sent by the Company on Your registered email address. You will be expressly asked in each case whether You want to connect Your email address with Your account on the Platform. You can also choose to enable Our access to one or more of Your email accounts by connecting such account(s) with Your account on the Platform.</p>
+<p>Once connected, the Platform will securely access and analyze the emails including attachments from CAMS or Karvy’s Consolidated Account Statement (CAS) and passwords, if any to populate and track Your investments details and history including those made through the account on the Platform and consolidate them at one place.</p>
+<p>Such data obtained by this integration will be used by the Company solely for providing the Services and improving Your experience of the features of the Platform and to consolidate your investment details and history. The Company hereby agrees and acknowledges that it shall not use or transfer any data or information received from the integration of the email addresses with the account on the Platform to third parties for serving ads, including retargeting, personalized, or interest-based advertising. Further, Company hereby undertakes to ensure that its employees, agents, contractors, and successors shall at all times comply with applicable laws.</p>
+<p>We encourage You to review the information prior to giving Your consent for integration of the email addresses with the account on the Platform. You may at any time opt to de-link Your email addresses connected with the account opened on the Platform, by managing these connections with the options provided on the Platform. For example, Google Mail’s permission settings are located at: myaccount.google.com/permissions. A user can de-link the access to their email accounts any time they wish.</p>
+<p>Groww’s use of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="nofollow noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<ol start="5">
+<li><strong> Links to Other Third – party Sites and collection of information </strong></li>
+</ol>
+<p>Our Platform may link You to other third – party Platforms (“<strong>Third – Party Sites</strong>”) that may collect Your Personal Information including Your IP address, browser specification, or operating system. The Company is not in any manner responsible for the security of such information or their privacy practices or content of those Third – Party Sites. Additionally, You may also encounter “cookies” or other similar devices on certain pages of the Third – Party Sites and it is hereby clarified by the Company that the Platform does not control the use of cookies by these Third – Party Sites. These third-party service providers and Third-Party Sites may have their own privacy policies governing the storage and retention of Your information that You may be subject to. This Privacy Policy does not govern any information provided to, stored on, or used by these third-party providers and Third-Party Sites. We recommend that when You enter a Third-Party Site, You review the Third Party Site’s privacy policy as it relates to safeguarding of Your information. We use third-party advertising companies to serve ads when You visit the Platform. These companies may use information (not including Your name, address, email address, or telephone number) about Your visits to the Platform and Third-Party Sites in order to provide advertisements about goods and services of interest to You. You agree and acknowledge that We are not be liable for the information published in search results or by any Third-Party Sites.</p>
+<ol start="6">
+<li><strong> Security Precautions and measures</strong></li>
+</ol>
+<p>Our Platform has reasonable security measures and safeguards in place to protect Your privacy and Personal Information from loss, misuse, unauthorized access, disclosure, destruction, and alteration of the information in compliance with applicable laws. Further, whenever You change or access Your account on the Platform or any information relating to it, We offer the use of a secure server. We cannot however ensure or warrant the security of any information You transmit to the Company or guarantee that Your Personal Information and/or other Non-Personal Information provided for availing the Services or Platform may not be accessed, disclosed, altered or destroyed by a breach of any of Our security measures and safeguards. It is further clarified that You have and so long as You access and/or use the Platform (directly or indirectly) the obligation to ensure that You shall at all times, take adequate physical, managerial, and technical safeguards, at Your end, to preserve the integrity and security of Your data which shall include and not be limited to Your Personal Information.</p>
+<p>When payment information is being transmitted on or through the Platform, it will be protected by encryption technology. You expressly consent to the sharing of Your information with third party service providers, including payment gateways, to process payments and manage your payment-related information. Hence, the Company cannot guarantee that transmissions of Your payment-related information or Personal Information will always be secure or that unauthorized third parties will never be able to defeat the security measures taken by the Company or the Company’s third-party service providers. The Company assumes no liability or responsibility for disclosure of Your information due to errors in transmission, unauthorized third-party access, or other causes beyond its control. You play an important role in keeping Your personal information secure. You shall not share Your Personal Information or other security information for Your account with anyone. The Company has undertaken reasonable measures to protect Your rights of privacy with respect to Your usage of the Platform controlled by Us and Our Services. However, We shall not be liable for any unauthorized or unlawful disclosures of Your personal information made by any third parties who are not subject to Our control.</p>
+<ol start="7">
+<li><strong> Your Consent and Changes to Privacy Policy</strong></li>
+</ol>
+<p><strong>Your Consent:</strong> By visiting the Platform or setting up/creating an account on the Platform for availing the Services on the Platform at such time, You signify Your acceptance to the provisions of the Privacy Policy.</p>
+<p><strong>Withdrawal of consent:</strong> You may choose to withdraw Your consent provided hereunder at any point in time. Such withdrawal of consent must be sent in writing to <a href="mailto:support@groww.in">support@groww.in</a>. In case You do not provide Your consent or later withdraw Your consent, We request you not to access the Platform and/or use the Services and also reserve the right to not provide You any Services through the Platform. In such a scenario, the Company may delete Your information (Personal or otherwise) or de-identify it so that it is anonymous and not attributable to You.</p>
+<p><strong>Changes to Privacy Policy:</strong> We reserve the unconditional right to change, modify, add, or remove portions of this Privacy Policy at any time, without specifically notifying You of such changes. Any changes or updates will be effective immediately. You should review this Privacy Policy regularly for changes. You can determine if changes have been made by checking the “Last Updated” legend above. Your acceptance of the amended Privacy Policy shall signify Your consent to such changes and agreement to be legally bound by the same.</p>
+<ol start="8">
+<li><strong>Grievance Officer</strong></li>
+</ol>
+<p>If You have any grievance with respect to the Platform, please feel free to reach out to the grievance officer, the name and contact details of this Officer have been provided below:</p>
+<p><strong>Name</strong>: Amritha Pallath</p>
+<p><strong>Email</strong>: <a href="mailto:support@groww.in">support@groww.in</a></p>
+<ol start="9">
+<li><strong> Questions?</strong></li>
+</ol>
+<p>Please feel free to contact us at <a href="mailto:support@groww.in">support@groww.in</a> regarding any questions on the Privacy Policy.</p>
+</div>
+</div>
+</div></div></div></div></div></section>
+<footer class="bg--dark footer-4">
+<div class="container footer__upper">
+<div class="row">
+<div class="col-sm-12">
+<div class="col-md-3 col-sm-6"><div id="text-5" class="widget widget_text sidebar__element"> <div class="textwidget"><p><a href="https://groww.in/"><img style="height: 50px; width: 150px; margin: 0px; padding: 0px;" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" data-lazy-src="/wp-content/themes/Groww/style/img/logo-light-groww.svg"><noscript><img style="height: 50px; width: 150px; margin: 0px; padding: 0px;" src="/wp-content/themes/Groww/style/img/logo-light-groww.svg" /></noscript></a></p>
+<p class="line1">No.11, 2nd floor, 80 FT Road, 4th Block, S.T Bed, Koramangala, Bengaluru – 560034</p>
+<p style="color: white; font-size: 15px; font-weight: 500; line-height: 10px; margin-top: -7px;"><a href="https://groww.in/help" target="_blank" rel="noopener">Contact Us</a></p>
+<div class="social_icons">
+<ul>
+<li><a href="https://www.facebook.com/growwapp" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="facebook" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/fb.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/fb.svg" alt="facebook" /></noscript></a></li>
+<li><a href="https://twitter.com/_groww" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="twitter" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/twitter.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/twitter.svg" alt="twitter" /></noscript></a></li>
+<li><a href="http://bit.ly/2rjkBHu" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="youtube" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/youtube.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/youtube.svg" alt="youtube" /></noscript></a></li>
+<li><a href="https://www.instagram.com/groww_official/" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="instagram" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/instagram.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/instagram.svg" alt="instagram" /></noscript></a></li>
+<li><a href="https://in.linkedin.com/company/groww.in" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="linkedin" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/linkedin.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/linkedin.svg" alt="linkedin" /></noscript></a></li>
+<li><a href="http://t.me/GrowwHQ" target="_blank" rel="nofollow noopener"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" alt="telegram" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/telegram.svg"><noscript><img src="https://storage.googleapis.com/groww-assets/wp-assets/img/telegram.svg" alt="telegram" /></noscript></a></li>
+</ul>
+</div>
+</div>
+</div></div><div class="col-md-3 col-sm-6"><div id="nav_menu-5" class="widget widget_nav_menu sidebar__element"><h6 class="widget-title">GROWW</h6><div class="menu-footer-column-1-container"><ul id="menu-footer-column-1" class="menu"><li id="menu-item-10740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10740"><a href="https://groww.in/about-us">About us</a></li>
+<li id="menu-item-10741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10741"><a href="https://groww.in/mutual-funds/amc">AMC Mutual Funds</a></li>
+<li id="menu-item-10742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10742"><a href="https://groww.in/pricing">Pricing</a></li>
+<li id="menu-item-10743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10743"><a href="https://groww.in/questions">Groww Q&amp;A</a></li>
+<li id="menu-item-10745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10745"><a href="https://groww.in/blog/">Blog</a></li>
+<li id="menu-item-28466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28466"><a href="https://groww.in/p/press/">Media &amp; Press</a></li>
+<li id="menu-item-28467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28467"><a href="https://groww.in/help">Help and Support</a></li>
+</ul></div></div></div><div class="col-md-3 col-sm-6"><div id="nav_menu-12" class="widget widget_nav_menu sidebar__element"><h6 class="widget-title">EXPLORE</h6><div class="menu-footer-column-2-container"><ul id="menu-footer-column-2" class="menu"><li id="menu-item-10747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10747"><a href="https://groww.in/mutual-funds">Mutual Funds</a></li>
+<li id="menu-item-10748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10748"><a href="https://groww.in/stocks">Stocks</a></li>
+<li id="menu-item-10749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10749"><a href="https://groww.in/nfo">NFO</a></li>
+<li id="menu-item-10751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10751"><a href="https://groww.in/mutual-funds/category">Mutual Funds Categories</a></li>
+<li id="menu-item-10752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10752"><a href="https://groww.in/explore/us-stocks">US Stocks</a></li>
+<li id="menu-item-10750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10750"><a href="https://groww.in/explore/gold">Gold</a></li>
+<li id="menu-item-28470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28470"><a href="https://groww.in/p/exchange-traded-funds/">ETFs</a></li>
+</ul></div></div></div><div class="col-md-3 col-sm-6"><div id="nav_menu-13" class="widget widget_nav_menu sidebar__element"><h6 class="widget-title">RESOURCES</h6><div class="menu-footer-column-3-container"><ul id="menu-footer-column-3" class="menu"><li id="menu-item-10756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10756"><a href="https://groww.in/beginners-guide-mutual-funds/">Mutual Fund Beginners</a></li>
+<li id="menu-item-10757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10757"><a href="https://groww.in/blog/how-to-invest-in-share-market/">Learn Stock Market</a></li>
+<li id="menu-item-10758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10758"><a href="https://groww.in/calculators/">Calculators</a></li>
+<li id="menu-item-10759" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10759"><a href="https://groww.in/p/">Glossary</a></li>
+<li id="menu-item-10761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10761"><a href="https://groww.in/mutual-funds/compare">Compare Funds</a></li>
+<li id="menu-item-28476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28476"><a href="https://groww.in/user/switch">Switch to Groww</a></li>
+<li id="menu-item-28477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28477"><a href="https://groww.in/p/download-forms/">Download Forms</a></li>
+</ul></div></div></div><div class="clear"></div></div>
+</div>
+<div class="footer_disclaimer">
+<p>Mutual fund investments are subject to market risks. Please read the scheme information and other related documents carefully before investing.</p>
+<p>Past performance is not indicative of future returns. Please consider your specific investment requirements, risk tolerance, investment goal, time frame, risk and reward balance and the cost associated with the investment before choosing a fund, or designing a portfolio that suits your needs.</p>
+</div>
+<div style="margin-top:37px;font-weight:600;font-size:14px;">
+MOST POPULAR ON GROWW
+</div>
+<div class="row_link">
+STOCK MARKET INDICES: <span><a href="https://groww.in/indices/sp-bse-sensex" target="_blank">S&amp;P BSE SENSEX</a></span> | <span><a href="https://groww.in/indices/sp-bse" target="_blank">S&amp;P BSE 100</a></span> | <span><a href="https://groww.in/indices/nifty-218500" target="_blank">NIFTY 100</a></span> | <span><a href="https://groww.in/indices/nifty" target="_blank">NIFTY 50</a></span> | <span><a href="https://groww.in/indices/nifty-midcap" target="_blank">NIFTY MIDCAP 100</a></span> | <span><a href="https://groww.in/indices/nifty-bank" target="_blank">NIFTY BANK</a></span> | <span><a href="https://groww.in/indices/nifty-next" target="_blank">NIFTY NEXT 50</a></span>
+</div>
+<div class="row_link">
+POPULAR MUTUAL FUNDS: <span><a href="https://groww.in/mutual-funds/axis-equity-fund-direct-growth" target="_blank">AXIS BLUECHIP FUND</a></span> | <span><a href="https://groww.in/mutual-funds/motilal-oswal-s-p-500-index-fund-direct-growth" target="_blank">MOTILAL OSWAL S&amp;P 500 INDEX FUND</a></span> | <span><a href="https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth" target="_blank">PARAG PARIKH LONG TERM EQUITY FUND</a></span> | <span><a href="https://groww.in/mutual-funds/sbi-small-midcap-fund-direct-growth" target="_blank">SBI SMALL CAP FUND</a></span> | <span><a href="https://groww.in/mutual-funds/hdfc-growth-fund-direct-growth" target="_blank">HDFC BALANCED ADVANTAGE FUND</a></span> | <span><a href="https://groww.in/mutual-funds/axis-long-term-equity-fund-direct-growth" target="_blank">AXIS LONG TERM EQUITY FUND</a></span> | <span><a href="https://groww.in/mutual-funds/uti-nifty-fund-direct-growth" target="_blank">UTI NIFTY INDEX FUND</a></span> | <span><a href="https://groww.in/mutual-funds/axis-midcap-fund-direct-growth" target="_blank">AXIS MIDCAP FUND</a></span> | <span><a href="https://groww.in/mutual-funds/sbi-bluechip-fund-direct-growth" target="_blank">SBI BLUECHIP FUND</a></span> | <span><a href="https://groww.in/mutual-funds/mirae-asset-emerging-bluechip-fund-direct-growth" target="_blank">MIRAE ASSET EMERGING BLUECHIP FUND</a></span>
+</div>
+<div class="row_link">
+MUTUAL FUNDS COMPANIES: <span><a href="https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds" target="_blank">ICICI PRUDENTIAL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/hdfc-mutual-funds" target="_blank">HDFC </a></span> | <span><a href="https://groww.in/mutual-funds/amc/reliance-mutual-funds" target="_blank">NIPPON INDIA</a></span> | <span><a href="https://groww.in/mutual-funds/amc/aditya-birla-sunlife-mutual-funds" target="_blank">ADITYA BIRLA SUN LIFE</a></span> | <span><a href="https://groww.in/mutual-funds/amc/sbi-mutual-funds" target="_blank">SBI</a></span> | <span><a href="https://groww.in/mutual-funds/amc/uti-mutual-funds" target="_blank">UTI</a></span> | <span><a href="https://groww.in/mutual-funds/amc/franklin-templeton-mutual-funds" target="_blank">FRANKLIN TEMPLETON</a></span> | <span><a href="https://groww.in/mutual-funds/amc/kotak-mutual-funds" target="_blank">KOTAK MAHINDRA</a></span> | <span><a href="https://groww.in/mutual-funds/amc/idfc-mutual-funds" target="_blank">IDFC</a></span> | <span><a href="https://groww.in/mutual-funds/amc/dsp-blackrock-mutual-funds" target="_blank">DSP BLACKROCK</a></span> | <span><a href="https://groww.in/mutual-funds/amc/axis-mutual-funds" target="_blank">AXIS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/tata-mutual-funds" target="_blank">TATA</a></span> | <span><a href="https://groww.in/mutual-funds/amc/lt-mutual-funds" target="_blank">L&amp;T</a></span> | <span><a href="https://groww.in/mutual-funds/amc/sundaram-mutual-funds" target="_blank">SUNDARAM</a></span> | <span><a href="https://groww.in/mutual-funds/amc/dhfl-pramerica-mutual-funds" target="_blank">PGIM</a></span> | <span><a href="https://groww.in/mutual-funds/amc/invesco-mutual-funds" target="_blank">INVESCO</a></span> | <span><a href="https://groww.in/mutual-funds/amc/lic-mutual-funds" target="_blank">LIC</a></span> | <span><a href="https://groww.in/mutual-funds/amc/jm-financial-mutual-funds" target="_blank">JM FINANCIAL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/baroda-pioneer-mutual-funds" target="_blank">BARODA PIONEER</a></span> | <span><a href="https://groww.in/mutual-funds/amc/canara-robeco-mutual-funds" target="_blank">CANARA ROBECO</a></span> | <span><a href="https://groww.in/mutual-funds/amc/hsbc-mutual-funds" target="_blank">HSBC</a></span> | <span><a href="https://groww.in/mutual-funds/amc/idbi-mutual-funds" target="_blank">IDBI</a></span> | <span><a href="https://groww.in/mutual-funds/amc/indiabulls-mutual-funds" target="_blank">INDIABULLS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/motilal-oswal-mutual-funds" target="_blank">MOTILAL OSWAL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/bnp-paribas-mutual-funds" target="_blank">BNP PARIBAS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/mirae-asset-mutual-funds" target="_blank">MIRAE ASSET</a></span> | <span><a href="https://groww.in/mutual-funds/amc/principal-mutual-funds" target="_blank">PRINCIPAL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/boi-axa-mutual-funds" target="_blank">BOI AXA</a></span> | <span><a href="https://groww.in/mutual-funds/amc/union-mutual-funds" target="_blank">UNION KBC</a></span> | <span><a href="https://groww.in/mutual-funds/amc/taurus-mutual-funds" target="_blank">TAURUS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/edelweiss-mutual-funds" target="_blank">EDELWEISS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/essel-mutual-funds" target="_blank">ESSEL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/mahindra-mutual-funds" target="_blank">MAHINDRA</a></span> | <span><a href="https://groww.in/mutual-funds/amc/quantum-mutual-funds" target="_blank">QUANTUM</a></span> | <span><a href="https://groww.in/mutual-funds/amc/ppfas-mutual-funds" target="_blank">PPFAS</a></span> | <span><a href="https://groww.in/mutual-funds/amc/iifl-mutual-funds" target="_blank">IIFL</a></span> | <span><a href="https://groww.in/mutual-funds/amc/escorts-mutual-funds" target="_blank">QUANT</a></span> | <span><a href="https://groww.in/mutual-funds/amc/shriram-mutual-funds" target="_blank">SHRIRAM</a></span> | <span><a href="https://groww.in/mutual-funds/amc/sahara-mutual-funds" target="_blank">SAHARA</a></span>
+</div>
+<div class="row_link">
+TOOLS: <span><a href="https://groww.in/calculators/brokerage-calculator/">BROKERAGE CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/sip-calculator/">SIP CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/swp-calculator/">SWP CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/sukanya-samriddhi-yojana-calculator/">SUKANYA SAMRIDDHI YOJANA CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/mutual-fund-returns-calculator/">MUTUAL FUND RETURNS CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/fd-calculator/">FD CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/rd-calculator/">RD CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/emi-calculator/">EMI CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/ppf-calculator/">PPF CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/epf-calculator/">EPF CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/nps-calculator/">NPS CALCULATOR</a></span> | <span><a href="https://groww.in/calculators/gratuity-calculator/">GRATUITY CALCULATOR</a></span>
+</div>
+<div class="row_link extra_links">
+<span><a href="https://www1.nseindia.com/" rel="nofollow" target="_blank">NSE</a></span> | <span><a href="https://www.bseindia.com/" rel="nofollow" target="_blank">BSE</a></span> | <span><a href="https://groww.in/terms-and-conditions/" target="_blank">Terms and Conditions</a></span> | <span><a href="https://groww.in/p/policies/" target="_blank">Policies and Procedures</a></span> | <span><a href="https://groww.in/p/regulatory-and-other-information/" target="_blank">Regulatory &amp; Other Info</a></span> | <span><a href="https://groww.in/privacy-policy/" target="_blank">Privacy Policy</a></span> | <span><a href="https://groww.in/p/disclosure/" target="_blank">Disclosure</a></span> | <span><a href="https://groww.in/p/security/" target="_blank">Security</a></span>
+</div>
+<div class="col s12" style="height:1px;opacity:0.1;border-bottom:1px solid #FFFFFF;box-sizing:border-box;margin-top:30px;">
+</div>
+<div class="row footer_copyright" style="padding: 35px 0;">
+<div class="col-6">
+<p id="copyright">ⓒ&nbsp;2016-2021 Groww. All rights reserved, Built with<span id="heart"> ♥ </span>in India</p>
+</div>
+<div class="col-6 as_links">
+<p>
+<a href="https://play.google.com/store/apps/details?id=com.nextbillion.groww" rel="nofollow" target="_blank"><img loading="lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/google-play.svg"><noscript><img loading="lazy" src="https://storage.googleapis.com/groww-assets/wp-assets/img/google-play.svg"></noscript></a>
+<a href="https://itunes.apple.com/us/app/groww-mutual-funds-app/id1404871703?ls=1&amp;mt=8" rel="nofollow" target="_blank"><img loading="lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%200%200&#39;%3E%3C/svg%3E" data-lazy-src="https://storage.googleapis.com/groww-assets/wp-assets/img/app-store.svg"><noscript><img loading="lazy" src="https://storage.googleapis.com/groww-assets/wp-assets/img/app-store.svg"></noscript></a>
+</p>
+</div>
+</div>
+</div>
+
+</footer>
+</div>
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap {border-color:#e4e4e4;}.saboxplugin-wrap .saboxplugin-socials {border-color:#e4e4e4;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color .st1 {display: none;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color:hover,.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}.saboxplugin-wrap .saboxplugin-socials{background-color:#ffffff;}.saboxplugin-wrap {background-color:#ffffff;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc  {color:#44475b !important;}.saboxplugin-wrap .saboxplugin-desc a, .saboxplugin-wrap .saboxplugin-desc  {color:#00d09c !important;}.saboxplugin-wrap .saboxplugin-authorname a,.saboxplugin-wrap .saboxplugin-authorname span {color:#283540;}.saboxplugin-wrap .saboxplugin-authorname {font-family:"Roboto";}.saboxplugin-wrap .saboxplugin-desc {font-family:Roboto;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:17px; line-height:24px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:32px;height:32px;}</style><script type="text/javascript" id="pt-cv-content-views-script-js-extra">
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"59a221455b","is_admin":"","is_mobile":"1","ajaxurl":"https:\/\/groww.in\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="./groww_files/cv.js" id="pt-cv-content-views-script-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./groww_files/wtr.js" id="wtr-js-js" defer=""></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wppd-entry\/|\/wp-admin\/|\/logout\/|\/wppd-entry\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/groww.in","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="text/javascript" src="./groww_files/sticky.min.js" id="sticky-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/jquery.matchHeight-min.js" id="matchHeight-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/regenerator-runtime.min.js" id="regenerator-runtime-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="./groww_files/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" id="wpdreams-ajaxsearchlite-js-before">
+window.ASL = typeof window.ASL !== 'undefined' ? window.ASL : {}; window.ASL.ajaxurl = "https:\/\/groww.in\/wp-admin\/admin-ajax.php"; window.ASL.backend_ajaxurl = "https:\/\/groww.in\/wp-admin\/admin-ajax.php"; window.ASL.js_scope = "jQuery"; window.ASL.detect_ajax = 0; window.ASL.scrollbar = 1; window.ASL.js_retain_popstate = 0; window.ASL.version = 4748; window.ASL.min_script_src = ["https:\/\/groww.in\/wp-content\/plugins\/ajax-search-lite\/js\/min\/jquery.ajaxsearchlite.min.js"]; window.ASL.highlight = {"enabled":false,"data":[]}; window.ASL.fix_duplicates = 1; window.ASL.analytics = {"method":0,"tracking_id":"","string":"?ajax_search={asl_term}","event":{"focus":{"active":1,"action":"focus","category":"ASL","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASL","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASL","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASL","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASL","label":"Return button pressed","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASL","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASL","label":"{result_title} | {result_url}","value":"1"}}};
+</script>
+<script type="text/javascript" src="./groww_files/jquery.ajaxsearchlite.min.js" id="wpdreams-ajaxsearchlite-js"></script>
+<script data-minify="1" type="text/javascript" src="./groww_files/parallax.js" id="ebor-parallax-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./groww_files/plugins.js" id="ebor-plugins-js" defer=""></script>
+<script type="text/javascript" id="ebor-scripts-js-extra">
+/* <![CDATA[ */
+var wp_data = {"slider_animation":"slide"};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="./groww_files/scripts.js" id="ebor-scripts-js" defer=""></script>
+<script type="text/javascript" src="./groww_files/wp-embed.min.js" id="wp-embed-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./groww_files/OneSignalSDK.js" async="async" id="remote_sdk-js"></script>
+<script type="text/javascript" src="./groww_files/js_composer_front.min.js" id="wpb_composer_front_js-js" defer=""></script>
+<script type="text/javascript">
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+<script>window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var i=0,length=advanced_ads_ready_queue.length;i<length;i++)advanced_ads_ready(advanced_ads_ready_queue[i]);</script><script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="./groww_files/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script><script src="./groww_files/jquery.min(1).js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+<script data-minify="1" src="./groww_files/bootstrap.min.js" crossorigin="anonymous" defer=""></script>
+<script defer="" src="./groww_files/beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;697350587b550de9&quot;,&quot;token&quot;:&quot;325a8077a90445fd9fb4d15b919a1e89&quot;,&quot;version&quot;:&quot;2021.9.0&quot;,&quot;si&quot;:100}"></script>
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="https://groww.in/privacy-policy/"><div class="lb-nav"><a class="lb-prev" href="https://groww.in/privacy-policy/"></a><a class="lb-next" href="https://groww.in/privacy-policy/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><div style="position: static;"><div style="height: 1px; width: 1px; position: absolute; z-index: 100000; top: 0px; visibility: hidden;"><iframe id="a2a_sm_ifr" title="AddToAny Utility Frame" transparency="true" allowtransparency="true" frameborder="0" src="./groww_files/sm.23.html" style="height: 1px; width: 1px; border: 0px; left: 0px; top: 0px; position: absolute; z-index: 100000; display: none;"></iframe></div></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./groww_files/box-dfc01efbdc94bb0936d9a35a502b0b64.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
