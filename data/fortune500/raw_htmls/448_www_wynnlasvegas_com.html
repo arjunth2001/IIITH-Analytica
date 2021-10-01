@@ -1,0 +1,735 @@
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete" lang="en"><head>
+    <meta charset="utf-8"><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script async="" src="https://s.pinimg.com/ct/lib/main.a37a8bbc.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_541" src="https://s.pinimg.com/ct/core.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_414" src="//cdn.quantummetric.com/qscripts/quantum-wynnresorts.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_555" src="https://sc-static.net/scevent.min.js"></script><script type="text/javascript" async="" charset="UTF-8" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js?v=4" data-domain-script="a8c920d5-1493-4f60-8cdf-e0e38099dcf0"></script><script type="text/javascript" async="" charset="utf-8" id="utag_45" src="//vt.myvisualiq.net/2/CpRTCLFl0rFfNbWwlnf3Lg%3D%3D/vt-118.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_247" src="https://s.yimg.com/wi/ytc.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_293" src="https://www.googletagmanager.com/gtag/js?id=AW-981145916"></script><script type="text/javascript" async="" charset="utf-8" id="utag_11" src="//js.adsrvr.org/up_loader.1.1.0.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_10" src="//js.adsrvr.org/up_loader.1.1.0.js"></script><script src="https://connect.facebook.net/signals/config/387109018144427?v=2.9.15&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/config/198537994672351?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" charset="utf-8" id="tealium-tag-7110" src="https://www.google-analytics.com/analytics.js"></script><script src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.js" type="text/javascript" async=""></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MXRM3LZ"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"74cada9aad","applicationID":"297778871","transactionName":"ZgdRMhBWWkZWBxcMW19NfjAhGGdcQwEACkZUIVwIFkVbWVsBEUp9XwZWHg==","queueTime":0,"applicationTime":157,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"74cada9aad",applicationID:"297778871"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta name="google-site-verification" content="0eEraG-ysmeBL4imey8YwWoZoxnuB20xiPJ1vq_egDY">
+    
+    <title>Wynn Las Vegas and Encore Resort | Privacy Policy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha384-8/AzSKHReNfZT4HGFTyRyJ1jXhhx/ZMnmX08Cy6TeaKWj0Vzho0AabG06C8mh02i" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css" integrity="sha384-u4bCcN0S9upsb7D8S4IKXV9qmKh7bJrJbKa+jqcIPwQsk/dV+QHB/JyI/BXR3pNo" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.5.7/dist/themes/airbnb.css" integrity="sha256-XTe5nn2BFZUixT74LIE681dhs06h3PCPgNtXj4xIlbE=" crossorigin="anonymous">
+
+<link rel="preload" href="/Assets/fonts/BigCaslon-Medium.woff2" as="font" crossorigin="">
+        <link rel="preload" href="/Assets/fonts/avenirltstd-light-webfont.woff" as="font" crossorigin="">
+        <link rel="preload" href="/Assets/fonts/avenirltstd-medium-webfont.woff" as="font" crossorigin="">
+        <link rel="preload" href="/Assets/fonts/avenirltstd-heavy-webfont.woff" as="font" crossorigin="">
+
+
+
+    <link rel="stylesheet" href="/Assets/css/wlv/styles.css?v=637164806796526312">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXRM3LZ');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">
+        (function (a, b, c, d) { a = '//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.js'; b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true; a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a); }
+        )();
+</script><!-- Start VWO Async Smartcode -->
+<script type="text/javascript">
+window._vwo_code = window._vwo_code || (function(){
+var account_id=444007,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script><script src="//dev.visualwebsiteoptimizer.com/j.php?a=444007&amp;u=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;f=1&amp;r=0.4852742413708443" type="text/javascript"></script>
+<!-- End VWO Async Smartcode -->
+
+<script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_293" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.293.js?utv=ut4.42.201902260132"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_10" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.10.js?utv=ut4.42.201808300356"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_11" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.11.js?utv=ut4.42.201808300356"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_13" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.13.js?utv=ut4.42.201909301455"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_45" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.45.js?utv=ut4.42.201809061844"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_247" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.247.js?utv=ut4.42.201902111723"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_294" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.294.js?utv=ut4.42.201910152353"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_299" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.299.js?utv=ut4.42.201903142210"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_340" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.340.js?utv=ut4.42.201907041601"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_379" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.379.js?utv=ut4.42.201910152329"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_414" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.414.js?utv=ut4.42.201902200053"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_438" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.438.js?utv=ut4.42.201904251542"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_506" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.506.js?utv=ut4.42.202002031920"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_541" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.541.js?utv=ut4.42.201907102045"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_555" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.555.js?utv=ut4.42.201908141738"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_616" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.616.js?utv=ut4.42.202002171410"></script><script type="text/javascript" async="" charset="utf-8" id="utag_wynnlv.main_649" src="//tags.tiqcdn.com/utag/wynnlv/main/prod/utag.649.js?utv=ut4.42.202002111533"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/737554853/?random=1582062159954&amp;cv=9&amp;fst=1582062159954&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=49&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2wg250&amp;sendb=1&amp;ig=0&amp;frm=0&amp;url=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;tiba=Wynn%20Las%20Vegas%20and%20Encore%20Resort%20%7C%20Privacy%20Policy&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" charset="utf-8" id="tiqapp" src="//tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=wynnlv/main/202002171410&amp;cb=1582062160355"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981145916/?random=1582062160573&amp;cv=9&amp;fst=1582062160573&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=49&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa250&amp;sendb=1&amp;ig=0&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;tiba=Wynn%20Las%20Vegas%20and%20Encore%20Resort%20%7C%20Privacy%20Policy&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/963390665/?random=1582062160574&amp;cv=9&amp;fst=1582062160574&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=49&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa250&amp;sendb=1&amp;ig=0&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;tiba=Wynn%20Las%20Vegas%20and%20Encore%20Resort%20%7C%20Privacy%20Policy&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/963390665/?random=1582062160575&amp;cv=9&amp;fst=1582062160575&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=49&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa250&amp;sendb=1&amp;ig=0&amp;data=event%3Dpage_view&amp;frm=0&amp;url=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;tiba=Wynn%20Las%20Vegas%20and%20Encore%20Resort%20%7C%20Privacy%20Policy&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="//dev.visualwebsiteoptimizer.com/6.0/va-5c145aae07c332978d27c6b49e41fb16.js" crossorigin="anonymous" type="text/javascript"></script><script src="https://cdn.cookielaw.org/scripttemplates/5.9.0/otBannerSdk.js" async="" type="text/javascript"></script><iframe style="display: none;"></iframe><script type="text/javascript" async="" src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location"></script></head>
+
+<body>
+<script src="https://login.wynnresorts.com/js/wynnauth.js"></script>
+<script>
+    function getCookieValue(cookieName) {
+        var name = cookieName + "=";
+        var cookies = document.cookie.split(';');
+
+        if (!cookies) {
+            return null;
+        }
+
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.indexOf(name) == 0) {
+                return cookie.substring(name.length, cookie.length);
+            }
+        }
+        return null;
+    }
+
+    var sessionCookie = getCookieValue("Wynn.Session");
+    if (!sessionCookie) {
+        console.log("Session Cookie is not set");
+        var authConfig = {
+            auth_url:  'https://login.wynnresorts.com/',
+            client_id: 'fdb5d4e1-317a-486b-bcfa-577293ae8497',
+            redirect_uri: 'https://www.wynnlasvegas.com/auth/account/signincallback',
+            silent_redirect_uri: 'https://www.wynnlasvegas.com/auth/account/signincallback',
+            response_type: 'id_token code',
+            scope: 'openid profile offline_access',
+            post_logout_redirect_uri: 'https://www.wynnlasvegas.com/auth/account/OidcSignOutCallback',
+            onAuthComplete: function (data) {
+                console.log(data);
+                if (data === 'auth_user_found') {        
+                    document.location.href = '/Login';
+                }
+            }
+        }
+        $.wynnAuth(authConfig);
+    }
+    else {
+        console.log(sessionCookie);
+    }
+</script><iframe id="silentAuthFrame" src="https://login.wynnresorts.com//connect/authorize?client_id=fdb5d4e1-317a-486b-bcfa-577293ae8497&amp;redirect_uri=https%3A%2F%2Fwww.wynnlasvegas.com%2Fauth%2Faccount%2Fsignincallback&amp;response_type=id_token code&amp;scope=openid profile offline_access&amp;nonce=sc8M4NXBnrDNfbt~MJRwRJDtb_leDlUJpmSTCsjMMC9o557U-_&amp;x-client-SKU=ID_AUTO_JS&amp;x-client-ver=1.0&amp;prompt=none" style="display:none;" width="0" height="0" frameborder="0"></iframe>
+
+    
+    <a class="skip-to-link" href="#main-content">Skip to main content</a>
+
+        <input type="hidden" id="urlBaseRoomReservations" value="https://reservations.wynnlasvegas.com/ibe/index.aspx?hotelID=13763&amp;langID=1&amp;currID=0">
+        <input type="hidden" id="urlBaseShowReservations" value="http://boxoffice.wynnlasvegas.com">
+        <input type="hidden" id="urlOpenTableDiningReservations" value="http://www.opentable.com/ism/interim.aspx">
+        <input type="hidden" id="urlOpenTableDiningReservationsAll" value="https://www.opentable.com/s/interim?covers=2&amp;currentview=list&amp;metroid=10&amp;neighborhoodids=7340&amp;regionids=53&amp;size=100&amp;sort=Popularity&amp;intersperseavailability=true">
+        <input type="hidden" id="Vendor" value="OpenTable">
+
+
+    
+
+    <header id="top">
+        <nav class="navbar navbar-default" role="navigation" aria-label="Main menu">
+
+            <div class="navbar-header col-md-12">
+                <div class="container">
+
+                    <div class="col-xs-3 col-sm-3 col-md-5 header-icon-wrap">
+
+    <div class="hidden-xs hidden-sm login-wrap loggedout" id="loggedin-state">
+
+        <ul class="">
+            <li><a href="/login" class="" target="" alt="">Sign In</a></li>
+            <li><a href="/login?signup=true" class="" target="" alt="">Join Redcard</a></li>
+            <li><a href="https://reservations.wynnlasvegas.com/ibe/index.aspx?propertyID=13763" class="btn btn-outline-secondary btn-xs" target="" alt="">Book A Room</a></li>
+            <li><a href="https://www.wynnvacations.com/default.aspx?plcode=GBWYNN" class="plane" target="_blank" alt="Air &amp; Hotel Packages">Air &amp; Hotel</a></li>
+
+</ul>
+
+    </div>
+</div>
+
+                    
+<div class="col-xs-6 col-sm-6 col-md-2 header-logo">
+    <a href="/" class="logocontainer">
+        <img class="img-responsive" src="//cdn.wynnlasvegas.com/-/media/images/wynn-resorts-global/logo/wynn-animated-logo.ashx" alt="Wynn Las Vegas">
+    </a>
+</div>
+
+
+                    <div class="col-xs-3 col-sm-3 col-md-4 header-mobile-toggle">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="slide-collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                            <pre class="sr-only">Toggle navigation</pre>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                        </button>
+                    </div>
+
+                    
+
+
+
+
+<div class="col-xs-12 col-md-5 nav navbar-nav navbar-right hidden-xs hidden-sm">
+    <form action="">
+        <div class="search">
+            <label for="search-input-d">
+                <i class="wynn-icon wynn-icon-search-icon-new" focusable="false"></i>
+                <span class="sr-only">Search rooms, restaurants, and more...</span>
+            </label>
+            <input type="search" id="search-input-d" size="60" name="search" placeholder="Search rooms, restaurants, and more...">
+            <a href="#" class="searchClear searchClear-d">
+                <svg class="svg-inline--fa fa-times-circle fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg><!-- <i class="fa fa-times-circle" aria-hidden="true"></i> -->
+            </a>
+        </div>
+    </form>
+</div>
+
+
+<div class="col-xs-12 col-md-4 nav navbar-nav navbar-right hidden-md hidden-lg">
+    <form action="">
+        <div class="search search-m">
+            <label for="search-input-m">
+                <i class="wynn-icon wynn-icon-search-icon-new" focusable="false"></i>
+                <span class="sr-only">Search rooms, restaurants, and more...</span>
+            </label>
+            <input type="search" id="search-input-m" size="60" name="search" placeholder="Search rooms, restaurants, and more...">
+            <a href="#" class="searchClear searchClear-m">
+                <svg class="svg-inline--fa fa-times-circle fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg><!-- <i class="fa fa-times-circle" aria-hidden="true"></i> -->
+            </a>
+        </div>
+    </form>
+</div>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="header-navbar-collapse">
+                <div class="container">
+
+                    
+
+
+<div class="welcome-nav-wrap hidden-md hidden-lg loggedout">
+    <div id="welcome-message-nav-mobile">
+        <ul class="">
+            <li><a href="/login" class="" target="" alt="">Sign In</a></li>
+            <li><a href="/login?signup=true" class="" target="" alt="">Join Redcard</a></li>
+            <li><a href="https://reservations.wynnlasvegas.com/ibe/index.aspx?propertyID=13763" class="btn btn-outline-secondary btn-xs" target="" alt="">Book A Room</a></li>
+            <li><a href="https://www.wynnvacations.com/default.aspx?plcode=GBWYNN" class="plane" target="_blank" alt="Air &amp; Hotel Packages">Air &amp; Hotel</a></li>
+
+</ul>
+
+    </div>
+</div>
+
+                    <ul class="nav navbar-nav main-nav col-md-12">
+
+                        
+
+
+
+                                    <li>
+
+                    <a href="/rooms-and-suites" target="">
+                        Rooms &amp; Suites
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/casino/wynn-insider" target="_self">
+                        Wynn Insider
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/dining" target="">
+                        Dining
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/entertainment" target="">
+                        Entertainment
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/nightlife" target="">
+                        Nightlife
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/shops" target="">
+                        Shops
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/meetings" target="">
+                        Meetings
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/casino" target="">
+                        Casino
+                    </a>
+
+            </li>
+            <li>
+
+                    <a href="/experiences" target="">
+                        Experiences
+                    </a>
+
+            </li>
+
+
+
+                        
+<ul class="hidden-lg hidden-md mobile-footer-links">
+            <li><a href="https://wynngiftcards.com/">Gift Cards</a></li>
+            <li><a href="https://wynnmagazine.com/digital-editions/">Wynn Magazine</a></li>
+            <li><a href="https://www.wynnathome.com/">Shop Home Collection</a></li>
+
+</ul>
+
+
+                        
+<ul class="hidden-lg hidden-md mobile-footer-links">
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="https://www.wynnresorts.com/">Investor Relations</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/cookie-notice">Cookie Notice</a></li>
+            <li><a href="https://www.visitwynn.com/tc/index.cfm?term_id=708708&amp;_ga=2.58004643.807548922.1545345355-1023184388.1545345355">Terms of Use</a></li>
+
+</ul>
+
+
+                        
+<ul class="hidden-lg hidden-md mobile-footer-links">
+            <li><a href="https://www.wynnpalace.com/en">Wynn Palace Cotai</a></li>
+            <li><a href="http://www.encorebostonharbor.com/">Encore Boston Harbor</a></li>
+            <li><a href="https://www.wynnmacau.com/en">Wynn Macau</a></li>
+
+</ul>
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    
+    <span id="main-content" tabindex="-1"></span>
+
+    
+<section class="page-header">
+    <div class="container">
+        <div class="col-xs-12 headerContent nopadding center-align text-center page-header">
+            <h1 class="h1">
+                Wynn Enterprise Privacy Notice
+            </h1>
+                <div class="copy-wrap">
+                    <p class="Default">Wynn Resorts Holdings, LLC, its subsidiaries and holding companies (“Wynn,” “Wynn Group,” “us” or “we”) is a leading developer, owner, and operator of destination casino resorts that integrate hotel accommodations and a wide range of amenities (including fine dining outlets, premium retail offerings, nightclubs, spas and salons, pools and fitness centers, distinctive entertainment theaters, and meeting and convention space), we understand and respect our customers, guests and users’ privacy.&nbsp;</p>
+<p class="Default">This Privacy Notice (“Notice”) describes how we collect, use, store, share and protect personal information collected from or about visitors to our online sites, mobile applications, and facilities or properties located in the United States. For information about Wynn Red Card information practices, please see <a rel="noopener noreferrer" href="https://www.visitwynn.com/tc/index.cfm?term_id=592787" target="_blank">here</a>.</p>
+<p class="Default"><strong>1.<span> </span>Practices Covered by this Notice&nbsp;</strong></p>
+<p class="Default">This Notice describes our privacy practices in relation to the personal information we collect:</p>
+<p class="Default">•<span> </span>Through our websites "<a rel="noopener noreferrer" href="https://www.wynnlasvegas.com/" target="_blank">wynnlasvegas.com</a>”, "<a rel="noopener noreferrer" href="https://www.wynnsocial.com/" target="_blank">wynnsocial.com</a>”, "<a rel="noopener noreferrer" href="https://www.wynnresorts.com/" target="_blank">wynnresorts.com</a>”, "<a rel="noopener noreferrer" href="https://www.encorebostonharbor.com" target="_blank">encorebostonharbor.com</a>",&nbsp; and “<a rel="noopener noreferrer" href="http://wynnpoker.com/" target="_blank">wynnpoker.com</a>” and any other websites owned or operated by Wynn and its affiliates (collectively the “Site” or “Sites”).</p>
+<p class="Default">• When you visit and stay as a guest at our resorts at Wynn Las Vegas, Encore at Wynn Las Vegas, and Encore Boston Harbor or use our on-property services such as restaurants, entertainment, retail outlets, spas, salons, fitness centers, concierge and customer services. </p>
+<p class="Default">• Through our mobile applications, such as Wynn Sports, Wynn Las Vegas and Encore, Wynn Social, Wynn Poker, and Quest for Discovery that display this privacy notice.</p>
+<p class="Default">• Through our social media pages that we control.</p>
+<p class="Default">• Through HTML-formatted email messages that we send to you.</p>
+<p class="Default">Together we refer to these services as “Wynn Services.” The Notice does not apply to the following Wynn entities or services, which are governed by separate Privacy Notices:&nbsp;</p>
+<p class="Default">
+•<span> </span><em>Wynn Red Card</em> – Please see&nbsp;<a rel="noopener noreferrer" href="https://www.visitwynn.com/tc/index.cfm?term_id=592787" target="_blank">here</a>&nbsp;our Privacy Notice which covers Red Card members.</p>
+<p class="Default">
+•<span> </span><em>Wynn Macau</em> and Wynn Palace – Companies that Wynn owns and operates in Macau (Wynn Macau, Limited or Macau Operations) located at wynnmacau.com and wynnpalace.com, and their related websites. Link to Privacy Policy <a rel="noopener noreferrer" href="https://www.wynnmacau.com/en/privacy-policy" target="_blank">here</a>.</p>
+<p class="Default">•<span> </span><em>Wynn Jobs</em> – Including any employment and job applicant personal information collected at <a href="https://www.wynnjobs.com/">wynnjobs.com</a> and <a rel="noopener noreferrer" href="https://www.encorebostonjobs.com/" target="_blank">encorebostonjobs.com</a>. Link to Privacy Policies <a rel="noopener noreferrer" href="https://www.wynnjobs.com/privacy-policy" target="_blank">here</a> and <a rel="noopener noreferrer" href="https://www.encorebostonjobs.com/privacy" target="_blank">here</a>.</p>
+<p class="Default">•<span> </span><em>Wynn Gift Cards</em> – Link to Privacy Policy <a rel="noopener noreferrer" href="https://wynngiftcards.com/order/PrivacyPolicy" target="_blank">here</a>.</p>
+<p class="Default">•<span> </span><em>Hotel Wi-Fi Services</em> – When using Wi-Fi services at our resorts, the personal information you provide is subject to the applicable privacy policy available through the Wi-Fi landing page.</p>
+<p class="Default">•<span> </span><em>Sweepstakes and other on-property Promotions</em> – We will use personal information to allow you to participate in these activities. Some of these activities have additional rules and privacy terms attached to them. Please refer to each activity’s terms and conditions for more information.&nbsp;</p>
+<p class="Default">•<span> </span><em>Online sports betting outside the State of Nevada</em> – We may offer online sports betting through the WSI US, LLC online sports betting app. Please refer to the terms and conditions and privacy notice on the respective app for more information.</p>
+<p class="Default">Although this Notice broadly describes Wynn’s general privacy practices, some jurisdictions may place restrictions on our personal information processing activities. Due to variances in local laws, our practices in such jurisdictions may be more restrictive than those described in this Notice, which enables us to comply with local requirements. Customers from California are directed to <strong>Appendix A</strong> which sets out additional information about information practices pursuant to the California Consumer Privacy Act (“CCPA”). Please note that if you are based in the European Economic Area (EEA) or UK, the additional information set out in <strong>Appendix B&nbsp;</strong>applies.&nbsp;</p>
+<p class="Default">Please read this Notice carefully to understand how we collect, use and process your personal information. By visiting, accessing, or using, or providing information to us in connection with, the Wynn Services, you understand and acknowledge our collection, storage, use and sharing of your information as described in this Privacy Notice. Please note that if you disagree with anything in this Privacy Policy, you should not visit, access, or use, or provide information to us in connection with, the Wynn Services. You can contact us with questions about our information practices or policies at <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>.<br>
+<br>
+<strong>2.<span> </span>What (and How) Information is Collected from or About You</strong></p>
+<p class="Default"><strong>We collect information from or about you at many, diverse points of interaction with Wynn Services, such as when you make inquiries, book accommodations or other services, purchase tickets, sign up for Wynn Insider, apply for credit, and visit our hotel and casino. We maintain integrated profiles of our customers, in keeping with the highest industry standards for an exceptional customer service experience at our luxury hotel, restaurant, spa and other properties.&nbsp;</strong></p>
+<p class="Default"><strong>Information You Provide to Us&nbsp;</strong></p>
+<p class="Default">•<span> </span><strong><em>Bookings, visits, and other interactions with Wynn Properties</em></strong> – We collect personal information about you when you make an online or offline (e.g. via phone) booking for our hotels or entertainment venues, and in the course of any stay or visit to our facilities, such as when your ID is scanned upon check-in at a Wynn property, or reserve spa, restaurant, or entertainment activities and services. This information may include your name, email and/or physical address, legal identification such as driver’s license or passport, vehicle information, date of birth, phone number, other guest names, business contact information (where relevant) and payment information. We may also use closed circuit television and other security measures at our properties that may capture or record images of guests and visitors in public areas, as well as information related to your location while on our properties (via keycards and other technologies). We may also use closed-circuit television and other technologies that record sound or video for the protection of our personnel, guests and visitors to our properties where permitted by law.</p>
+<p class="Default">•<span> </span><em><strong>Wynn Insider</strong></em> – We collect contact information through online forms when you sign up to join our loyalty programs such as your name and email address. We will ask you to create a password to manage your account.</p>
+<p class="Default">•<span> </span><strong><em>Marketing</em></strong> – We collect name and contact information directly for marketing purposes, for example when you sign up for promotional messages online, at one of our properties, or via one of our Wynn mobile applications.</p>
+<p class="Default">•<span> </span><em><strong>Wynn Concierge and Customer Service</strong></em> – We collect personal information from you such as your name and contact information when you:</p>
+<p class="Default">o<span> </span>Contact us for any reason and/or request or receive services or information;</p>
+<p class="Default">o<span> </span>Submit a guest claim, report any problems, contact lost and found, and/or are in dispute with us;&nbsp;</p>
+<p class="Default">o<span> </span>Contact us through our call center; and&nbsp;</p>
+<p class="Default">o<span> </span>Contact us through social media channels.&nbsp;</p>
+<p class="Default">Please note that telephone calls to our concierge, customer service and call center are recorded and actively monitored for the purposes of compliance, security and customer service.</p>
+<p class="Default">•<span> </span><strong><em>Travel</em></strong> – We collect personal information about you when you use our travel services such as your name, contact details, passport information, travel dates and other passenger details. This information may be shared with our affiliates and travel partners for purposes of providing our travel services only.</p>
+<p class="Default">•<span> </span><strong><em>Group Events and Meetings</em></strong> – We collect personal information in connection with your use of our meeting and convention space as part of group events, meetings or weddings. This information includes contact information such as guest names, guest email addresses, business contact information (where relevant) and group reservation details.</p>
+<p class="Default">•<span> </span><em><strong>Surveys</strong></em> – We collect personal information when you complete surveys about your stay at our hotels if you provided us with your email address. Information we collect through surveys include your name, email address, hotel stay location, quality of stay experience and amenities used during your stay.</p>
+<p class="Default">•<span> </span><em><strong>Financial Data</strong></em> – If you apply for credit, or in connection with other financial dealings with our casino properties, we will collect your name, contact information, and other personal information as needed to process and evaluate your application, pursuant to the specific privacy statements and disclosures you receive as part of your application and administering or servicing any such account with Wynn.</p>
+<p class="Default">•<span> </span><strong><em>Social Media</em></strong> – When you interact with us through social media (including Facebook, Instagram, Twitter, WhatsApp, and Snapchat) we collect personal information, such as your social media profile information and online behavior through this interaction consistent with your settings within the social media service. If you have provided us with your telephone number or email address, we may use this information to send targeted advertisements to you on these social media properties.&nbsp;</p>
+<p class="Default">•<span> </span><em><strong>Wynn Mobile Applications</strong></em> – If you download or use one of the Wynn mobile applications, we may collect and use information regarding your mobile device, including (if you activate / allow this functionality) your location. The privacy practices related to the Apps are available through the respective Apps.</p>
+<p class="Default"><strong>Information We Collect Automatically</strong></p>
+<p class="Default">When you visit our Sites, we automatically collect the following information:&nbsp;</p>
+<p class="Default">•<span> </span>Technical information, including your login information, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform;&nbsp;</p>
+<p class="Default">•<span> </span>IP address, this is identified and logged automatically in our server log files when you access our Sites. We use IP addresses to calculate usage levels, diagnose server problems and administer our Sites. We also may derive your approximate location from your IP address; and</p>
+<p class="Default">•<span> </span>Website visit information, including the full Uniform Resource Locators (“URL”) clickstream to, through and from the Sites (including date and time); products you viewed or searched for; page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page.</p>
+<p class="Default"><strong>Information Received from Third Parties</strong></p>
+<p class="Default">We also collect information about you (as relevant and appropriate to the Wynn Service you have requested) from third parties, including:</p>
+<p class="Default">•<span> </span>Online travel agencies and other third party hotel booking partners;</p>
+<p class="Default">•<span> </span>Consumer reporting agencies, in connection with a credit application or financial account with Wynn, as further disclosed and described to you at the time of your application;</p>
+<p class="Default">•<span> </span>Wynn event ticket sales management partners, ticket brokers, and club promoters;&nbsp;</p>
+<p class="Default">•<span> </span>Social media channels, such as Facebook or Instagram, consistent with your settings on such services;&nbsp;</p>
+<p class="Default">•<span> </span>Marketing and analytics providers; and&nbsp;</p>
+<p class="Default">•<span> </span>Third party analytics services and content from third party businesses, including as described in our <a href="/cookie-notice">Cookie Notice</a>.&nbsp;</p>
+<p class="Default">This information includes contact information such as your name, email address and phone number. It also includes, where applicable, your travel details, such as booking confirmation numbers, number of rooms, arrival and departure dates, payment information, online browsing and usage behavior and social media profile information. We will also obtain email addresses and limited demographic information for our US customer accounts where we do not hold a current email address or demographic information for such customer and append this to the customer account.</p>
+<p class="Default"><strong>3.<span> </span>How We Use Your Personal Information</strong></p>
+<p class="Default">Wynn uses your information for various purposes, including:</p>
+<p class="Default">•<span> </span>To send you personalized messages, publications, news, and information about events, special offers, promotions and benefits, as well as measure and understand the effectiveness of the content we serve to you and others.</p>
+<p class="Default">•<span> </span>As described in our <a href="/cookie-notice">Cookie Notice</a>.</p>
+<p class="Default">•<span> </span>To improve the Wynn Services and the content of the Sites to enhance users' experiences when visiting the Sites or using the Wynn Services and to customize the content and layout of the Sites to each individual user.</p>
+<p class="Default">•<span> </span>To administer the Sites, keep the Sites safe and secure, monitor and analyze our Sites usage and activity trends, to operate and improve our Sites, and for internal operations, to conduct troubleshooting and data analysis, including testing, research, statistical and survey analysis.&nbsp;</p>
+<p class="Default">•<span> </span>To enforce our Sites’ <a rel="noopener noreferrer" href="https://www.visitwynn.com/tc/index.cfm?term_id=708708" target="_blank">terms and conditions</a>.</p>
+<p class="Default">•<span> </span>To facilitate the processing of online reservations such as facilitating payment, sending of confirmation or pre-arrival messages including information about the resort you are visiting and the amenities available to you, sending administrative messages about events or meetings you have reserved and provide you with related customer service, such as sending your receipt by email.</p>
+<p class="Default">•<span> </span>To respond to your queries, and to communicate with you about your reservations, requests or transactions.&nbsp;</p>
+<p class="Default">•<span> </span>For analytics purposes, to optimize your experience at Wynn, enhance our marketing, create customer or audience segments, enhance our business and operational efficiency and tailor promotions and offers to your preferences and habits when interacting with us.</p>
+<p class="Default">•<span> </span>To offer, manage and administer the Wynn Insider loyalty program, assess your benefits, administer offers and manage your choices regarding how you wish to use your offers.</p>
+<p class="Default">•<span> </span>To maintain the accuracy of your account or profile information and to provide you with a better and more personalized service, including by pairing information collected under this privacy notice with your Red Card profile, if you have enrolled in that program. For further information about our privacy practices relating to Wynn Red Card, please see <a rel="noopener noreferrer" href="https://www.visitwynn.com/tc/index.cfm?term_id=592787" target="_blank">here</a>.&nbsp;</p>
+<p class="Default">•<span> </span>To facilitate our hotel operations, including guest account management, hotel room reservations and requests.&nbsp;</p>
+<p class="Default">•<span> </span>To organize events or meetings in connection with your use of our meeting and convention space and processing payments.</p>
+<p class="Default">•<span> </span>To facilitate the provision of airline services to you, if these services have been made available to you, upon your request.&nbsp;</p>
+<p class="Default">•<span> </span>To carry out appropriate compliance, security and/or financial checks, such as when we need to:</p>
+<p class="Default">o<span> </span>Confirm your identity;&nbsp;</p>
+<p class="Default">o<span> </span>Make a payment to you or receive payment from you; and</p>
+<p class="Default">o<span> </span>Comply with law enforcement, court, and regulatory obligations.</p>
+<p class="Default"><strong>4.<span> </span>Marketing Preferences</strong></p>
+<p class="Default">•<span> </span>You may withdraw your consent for direct marketing communications at any time by contacting us at <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>, by following the unsubscribe instructions in the marketing message, or by logging in to your Wynn Red Card or Wynn Insider account and updating your communication preferences.</p>
+<p class="Default">•<span> </span>When you receive a commercial (promotional) electronic communication, we provide the choice to opt-out of receiving future messages by following the instructions provided in the message.</p>
+<p class="Default">•<span> </span>You may choose whether to provide your phone number to receive text messages or advertising phone calls from us or our call center agents using an automatic telephone dialing system or an artificial or prerecorded voice. By providing your phone number and express consent, you are choosing to receive such messages until you withdraw your consent. </p>
+<p class="Default">Your consent to receive text messages or pre-recorded calls using an automatic telephone dialing system is not required to make a purchase with Wynn. You may revoke your consent at any time by contacting us at <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>.</p>
+<p class="Default">•<span> </span>Although we do not currently sell, as that term has been defined by the laws of the State of Nevada, your personal information and only share it with third parties who are facilitating the delivery of Wynn Services, if you would like to opt-out of any future sale of your information in the unlikely event we change our practices you can do so by contacting us a <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>.<br>
+&nbsp;<br>
+<strong>5.<span> </span>How We Share Your Information</strong></p>
+<p class="Default">We share your personal information only with selected recipients which include the following:&nbsp;</p>
+<p class="Default">•<span> </span><strong><em>Wynn Group</em></strong> - We share personal information with any corporate affiliate of the Wynn Group for the purposes described in this Notice such as providing the Wynn Services (e.g. when you book travel with us, we will share your personal information with our affiliated companies, Wynn Las Vegas, LLC and Wynn MA, LLC, the operators of our resorts), facilitating Red Card or other Wynn loyalty programs, to personalize an exceptional customer experience across the Wynn Sites and Services, and to fulfill your requests, such as responding to applications for a line of credit, advance, or other financial services or administering our self-exclusion or loyalty card programs.&nbsp;</p>
+<p class="Default">•<span> </span><em><strong>Marketing Partners</strong></em> - We share aggregated or de-identified information with our marketing partners to provide certain services, offers and enhance your experience at Wynn. This information cannot reasonably be used to identify you.</p>
+<p class="Default">•<span> </span><em><strong>Service Providers</strong></em> - We disclose your personal information to vendors, consultants and other service providers such as credit or background check companies, payment processors, marketing companies, email service providers, advertising networks and advertisers, information technology services and those who need access to such information to provide services on our behalf.&nbsp;These companies are prohibited from retaining, using, or disclosing your personal information except as necessary to provide the services on our behalf.</p>
+<p class="Default">•<span> </span><em><strong>Analytics and Search Engine Providers</strong></em> - We share personal information with these providers to assist us in the improvement and optimization of our guest records, Sites and Wynn Services. For more information please see our <a href="/cookie-notice">Cookie Notice</a>.&nbsp;</p>
+<p class="Default">•<span> </span><em><strong>Compliance and regulatory purposes</strong></em> - We share your personal information with law enforcement agencies, public authorities or other third parties if legally required to do so, or if we have a good faith belief that such use is reasonably necessary to:</p>
+<p class="Default">o&nbsp;Comply with a legal obligation, process or request, such as a subpoena, court order, search warrant or other valid legal process, or to comply with legal, administrative, or administrative requirements of any governmental authorities, including gaming regulators, tax authorities, and law enforcement authorities;</p>
+<p class="Default">o&nbsp;Enforce our terms and conditions and other agreements, including investigation of any potential violation thereof;</p>
+<p class="Default">o&nbsp;Detect, prevent or otherwise address security, fraud or technical issues; or</p>
+<p class="Default">o&nbsp;protect the rights, property or safety of the Wynn Group, or any of its corporate affiliates or workforce members, our users and guests, a third party or the public as required or permitted by law (including without limitation, exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction such as requesting and sharing your information with credit bureaus), which may be exercised in our sole discretion.</p>
+<p class="Default">• <strong><em>Sale or Merger</em></strong> -&nbsp;We will also disclose your information to third parties in connection with business transfers or bankruptcy proceedings, as permitted by law:</p>
+<p class="Default">o&nbsp;In the event we sell any business or assets, in which case we will disclose your data to the buyer of such business or assets; or</p>
+<p class="Default">o&nbsp;If Wynn or substantially all Wynn assets are acquired by a third party, in which case information held by us about our users will be one of the transferred assets.</p>
+<p class="Default">o&nbsp;Other than to the extent ordered by a court of competent jurisdiction, the use and disclosure of all transferred user information will be subject to this Notice. However, any information you submit or that is collected after this type of transfer may be subject to a new privacy notice adopted by the successor entity.&nbsp;<br>
+&nbsp;<br>
+<strong>6.<span> </span>Cookies and Tracking Technologies</strong></p>
+<p class="Default">We use cookies, tags and other similar technologies to collect information about your browsing activities over time and across different websites or online services following your use of Wynn Services or Sites, including our mobile applications. These technologies allow us to recognize your preference information, keep track of your purchases, remember your Wynn Red Card number/Wynn Insider details and facilitate effective site administration. We use the information we collect to enhance your visit to our various Sites and to provide you with information tailored to your needs. For more information about how we use cookies and to learn how to manage cookies and other tracking technologies related to interest-based advertising, please see our <strong><a href="/cookie-notice">Cookie Notice</a></strong>.&nbsp;<br>
+&nbsp;<br>
+<strong>7.<span> </span>How We Protect Your Information</strong></p>
+<p class="Default">We take appropriate technical and organizational measures to safeguard your personal information against loss, theft and unauthorized use, access or modification. We maintain information security policies, routinely test our security controls through internal and external audits, and maintain compliance with the Payment Card Industry Standard (“PCI DSS”) and other applicable regulatory compliance requirements. We also require third party service providers acting on our behalf or with whom we share your information to provide security measures in accordance with industry standards.&nbsp;</p>
+<p class="Default">Although we do our best to protect your personal information, we cannot guarantee the security of the information stored or handled by Wynn or its authorized service providers. The transmission of information via the internet or email is not completely secure and any transmission is at your own risk.&nbsp;</p>
+<p class="Default">For your own online security, please do not send payment card numbers or any other confidential personal information to us via email.<br>
+&nbsp;<br>
+<strong>8.<span> </span>Minimum Age Requirements&nbsp;</strong></p>
+<p class="Default">We do not knowingly or intentionally collect any personally identifiable information from, or market to, individuals under the age of 21. Pursuant to law, persons under the age of 21 are not permitted to gamble at our properties or loiter in casino areas. Our online services are not intended for persons under the age of 13. Persons under the age of 13 are not allowed to use our online services in any fashion, so the provisions of the Children’s Online Privacy Protection Act do not apply to Wynn online services. If you learn that a child under the age of 13 has provided us with personal information contrary to these rules, please contact us at the address listed in the “Contact Us” section below.<br>
+&nbsp;&nbsp;<br>
+<strong>9.<span> </span>Use of Third-Party Internet Sites</strong></p>
+<p class="Default">Certain third party services, websites, or applications you use, or navigate to and from our Sites may have separate user terms and privacy policies that are independent of this Notice. This includes, for example, websites owned and operated by our customers or partners. We are not responsible for the privacy practices of these third party services or applications. We recommend carefully reviewing the user terms and privacy statement of each third party service, website, and/or application prior to use.<br>
+&nbsp;<br>
+<strong>10.<span> </span>Changes to this Notice</strong></p>
+<p class="Default">We may change this Privacy Notice from time to time to reflect updates to the information that we collect from you, how we use that information and how we share that information with third parties. You can determine when this Privacy Notice was last revised by referring to the “Effective Date” at the bottom of this Notice. In some cases, we may provide you with additional notice of our privacy practices (such as adding a statement to the homepages of our Site or sending you an email notification). We encourage you to review the Privacy Notice whenever you interact with us to stay informed about our information practices and the ways you can help protect your privacy.<br>
+&nbsp;<br>
+<strong>11.<span> </span>Contact Us</strong></p>
+<p class="Default">To submit questions regarding this Privacy Notice or updating or requesting changes to your information, please contact our Privacy Team (see details below). Depending on the state you reside in, you may have the right to request information from a company that shares certain categories of personal information with unaffiliated third parties for their direct marketing purposes. Wynn does not share personal information with third parties for their direct marketing purposes, as these activities are defined in state law. However, if you feel you have such rights, you may send a request to the email address below and Wynn will respond promptly to your request.<br>
+<br>
+Email us at: <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a> or</p>
+<p class="Default">Write to us at:&nbsp;</p>
+<p class="Default">Privacy Team<br>
+Wynn Las Vegas<br>
+3131 Las Vegas Blvd. South<br>
+Las Vegas, NV 89109<br>
+Attn: Legal Department<br>
+<br>
+Effective Date: 12/30/2019&nbsp;<br>
+&nbsp;<br>
+<strong>APPENDIX A:&nbsp;ADDITIONAL PROVISIONS APPLICABLE TO PROCESSING OF PERSONAL INFORMATION OF RESIDENTS OF CALIFORNIA</strong></p>
+<p class="Default">The terms of this Appendix apply where you are a resident of California and sets out the rights you have with respect to the processing of your personal information, pursuant to the California Consumer Privacy Act (“CCPA”) and its implementing regulations (when finalized) and other applicable laws. Under these laws and regulations, California residents have certain legal rights such as to access, deletion, disclosure, or “do not sell.” These rights are not absolute and are subject to certain exceptions. This Appendix controls to the extent it conflicts with any provision in the main body of the Notice.<br>
+<br>
+For questions specifically about this Privacy Notice, or our use of your personal information, cookies or similar technologies, please contact our Privacy Team by email at&nbsp;<a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>&nbsp;</p>
+<p class="Default"><strong>How We Collect and Share Personal Information of California Residents</strong><br>
+<br>
+Over the last 12 months, personal information we have collected and shared includes the following:<br>
+<br>
+• Identifiers, including name, email and/or physical address, telephone number, legal identification such as driver’s license or passport, vehicle information, date of birth, phone number, other guest names, IP address. We collect this information from you directly, automatically from your browser or device, or from other companies. We use this information for the purposes described in Section 3. We share this information with our corporate affiliates; marketing partners; service providers; analytics and search engine providers; regulators, judicial authorities and law enforcement agencies; and entities that acquire all or substantially all of our business or assets.<br>
+<br>
+• Commercial information including payment information, and information associated with applications for a line of credit, advance, or other financial services. We collect this information from you directly or from other companies. We use this information for the purposes described in Section 3. We share this information with our corporate affiliates; marketing partners; service providers; analytics and search engine providers; regulators, judicial authorities and law enforcement agencies; and entities that acquire all or substantially all of our business or assets.<br>
+<br>
+• Internet or other electronic network activity information including your login information; browser type and version; time zone setting; browser plug-in types and versions; operating system and platform; website visit information; products you viewed or searched for; page response times, download errors, length of visits to certain pages’ page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page; social media profile information; information provided in surveys. We collect this information automatically from your browser or device, or from other companies. We use this information for the purposes described in Section 3. We share this information with our corporate affiliates; marketing partners; service providers; analytics and search engine providers; regulators, judicial authorities and law enforcement agencies; and entities that acquire all or substantially all of our business or assets.<br>
+<br>
+• Geolocation data, including precise GPS location information; location within the properties; and approximate location derived from IP address. We collect this information automatically from your browser or device or from your key card. We use this information for the purposes described in Section 3. We share this information with our corporate affiliates; marketing partners; service providers; analytics and search engine providers; regulators, judicial authorities and law enforcement agencies; and entities that acquire all or substantially all of our business or assets.<br>
+<br>
+• Audio, electronic, visual, thermal, olfactory or similar information, including images and audio recordings of guests and visitors in public areas or as otherwise permitted by law; and audio recordings of calls placed to the concierge or customer service. We collect this information from closed circuit television, from your browser or device, or from other companies. We use this information for the purposes described in Section 3. We share this information with our corporate affiliates; service providers; regulators, judicial authorities and law enforcement agencies; and entities that acquire all or substantially all of our business or assets.<br>
+<br>
+<strong>Sales of Personal Information</strong><br>
+<br>
+Over the past 12 months, we and our third-party partners have used cookies and other tracking technologies on our Sites and Wynn Services to serve advertisements about our products when you visit other websites and applications. We offer controls and options related to information collected via cookies and other tracking technologies. You can exercise such controls and opt-out of interest-based advertising by clicking on our&nbsp;<a href="/cookie-notice">Cookie Notice</a>.&nbsp;<br>
+<br>
+<strong>Data Subject Rights</strong><br>
+<br>
+Where the CCPA applies, you have certain rights in relation to the personal information we hold about you if an exemption does not apply to your or your personal information. We also set out how to exercise those rights. Please note that we require you to verify your identity before we respond to any of your requests. Under the CCPA, you have the right to:&nbsp;<br>
+<br>
+• Request we disclose to you free of charge the following information covering the 12 months preceding your request:</p>
+<p class="Default">o the categories of personal information about you that we collected;<br>
+o the categories of sources from which the personal information was collected;<br>
+o the purpose for collecting personal information about you;<br>
+o the categories of third parties to whom we disclosed personal information about you and the categories of personal information that was disclosed (if applicable) and the purpose for disclosing the personal information about you; and<br>
+o the specific pieces of personal information we collected about you;<br>
+• Request we delete personal information we collected from you, unless CCPA recognizes an exception; and<br>
+• Be free from unlawful discrimination for exercising your rights including providing a different level or quality of services or deny goods or services to you when you exercise your rights under the CCPA.&nbsp; &nbsp;<br>
+<br>
+We aim to fulfill all verified requests within 45 days pursuant to the CCPA.&nbsp; If necessary, extensions for an additional 45 days will be accompanied by an explanation for the delay.<br>
+<br>
+<strong>Exercising your Rights</strong><br>
+<br>
+To exercise any of these rights above, please contact us at <a href="mailto:privacy@wynnresorts.com" style="color: #c11c4f; background-color: #ffffff; text-align: center; letter-spacing: 0.5px;">privacy@wynnresorts.com</a><span style="background-color: #ffffff; text-align: center; letter-spacing: 0.5px; color: #000000;"></span>&nbsp;or by calling Wynn at 1-888-320-7123. You can also log in to your account to see certain information we hold about you and to update your account information. If you would like to designate an authorized agent to make a request on your behalf, please provide Wynn a copy of documentation establishing the authority of the agent (which may include without limitation, a signed letter of authority, power of attorney documents, or similar legal authorization), and verify that you are the Data Subject about which the request is being submitted.&nbsp;<br>
+<br>
+Please note that these rights are limited, for example, where fulfilling your request would adversely affect other individuals or company trade secrets or intellectual property, or where we are not required by law to comply with the request.</p>
+<p class="Default">&nbsp;</p>
+<p class="Default"><strong>APPENDIX B: ADDITIONAL PROVISIONS APPLICABLE TO PROCESSING OF PERSONAL INFORMATION OF INDIVIDUALS BASED IN THE EEA AND UK</strong></p>
+<p class="Default">
+The terms of this Appendix applies where you are an individual based in the EEA or UK and sets out the rights you have with respect to the processing of your personal information, pursuant to the General Data Protection Regulation (“<strong>GDPR</strong>”) and other applicable laws. This Appendix controls to the extent it conflicts with any provision in the main body of the Notice.</p>
+<p class="Default"><strong>Data Controller&nbsp;</strong></p>
+<p class="Default">For the purposes of the GDPR:</p>
+<p class="Default">•<span> </span>If you are a customer of Wynn properties in Las Vegas, the Data Controller is:&nbsp;</p>
+<p class="Default"><strong>Wynn Las Vegas, LLC</strong><br>
+3131 Las Vegas Blvd. South<br>
+Las Vegas, NV 89109<br>
+<br>
+•<span> </span>If you are a customer of Wynn properties in Boston, the Data Controller is:</p>
+<p class="Default"><strong>Wynn MA, LLC</strong><br>
+One Broadway<br>
+Everett, MA 02149</p>
+<p class="Default">To contact us about any queries you may have about this Notice or your rights, please see the address listed in the “Contact Us” section above.&nbsp;</p>
+<p class="Default"><strong>Purposes and Legal Bases for Processing</strong></p>
+<p class="Default">We process personal information for the purposes set out in this Notice. We collect and process your personal information only where we have legal basis for doing so under applicable data protection laws. The legal basis depends on the Services you use and how you use them. Our legal bases for processing include processing of personal information which is (i) necessary for the performance of a contract with you; (ii) compliance with a legal obligation; (iii) pursuant to your consent; and (iv) pursuant to our legitimate interests to run an effective operation and administer the Wynn Services you have requested.&nbsp;</p>
+<p class="Default">•<span> </span><strong><em>Wynn Insider and Wynn Red Card (Online) Loyalty Programs</em></strong> – We process personal information about you to fulfill our contractual obligations to you and to further our legitimate business interests. Specifically, to facilitate membership to our loyalty programs, provide you with access to member-only rates and promotions and allow you to manage your information and communications preferences. The terms and data practices associated with the Red Card program are available <a rel="noopener noreferrer" href="https://www.visitwynn.com/tc/index.cfm?term_id=592787" target="_blank">here</a>.&nbsp;</p>
+<p class="Default">•<span> </span><strong><em>Hotel Reservations</em></strong> – We process personal information about you to fulfill our contractual obligations to you and to further our legitimate business interests. Specifically, to process reservations for hotel rooms.</p>
+<p class="Default">•<span> </span><em><strong>Hotel Check-in and Stay</strong></em> – We process personal information about you to operate our business, including to improve and develop our hotel operations, for fraud prevention purposes, improve user experience or other legitimate interests.</p>
+<p class="Default">•<span> </span><strong><em>Group Events and Meetings</em></strong> – We process personal information about you to fulfill our contractual obligations to you and to further our legitimate business interests. Specifically, to provide you with access to use our meeting and convention space and facilitate reservations for group events, meetings or weddings.</p>
+<p class="Default">•<span></span><em><strong>Provision of Services</strong></em> – We process personal information about you to operate our business, including to improve and develop our Services and amenities, for fraud prevention purposes, improve user experience or other legitimate interests.</p>
+<p class="Default">•<span> </span><strong><em>Wynn Concierge and Customer Service</em></strong> – We process personal information about you to further our legitimate business interests. Specifically, to respond to your comments, questions, requests, and communicate with you to provide customer service through our call center or social media channels.</p>
+<p class="Default">•<span> </span><em><strong>Marketing and Communications</strong></em> – We process personal information about you for marketing purposes where we have your consent. Specifically, to inform you of promotions, and periodically send you marketing communications about services and events that are relevant to your interests and for related purposes. You can opt-out at any time by contacting us at <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a> or by following the unsubscribe instructions in the marketing message, or by logging in to your Wynn Red Card or Wynn Insider account and updating your communication preferences.</p>
+<p class="Default">•<span> </span><strong><em>Social Media</em></strong> – We process personal information about you obtained via social media based on our legitimate interests. Specifically, to respond to your queries and for analytics purposes to better understand our customers and their preferences.</p>
+<p class="Default">•<span> </span><strong><em>Surveys</em></strong> – We process personal information about you to further our legitimate business interests. Specifically, to conduct statistical analysis, research and development, customer surveys and customer profiling.</p>
+<p class="Default">•<span> </span><strong><em>Analytics and Profiling</em></strong> – We process personal information about you for our legitimate business interests, including for data analytics purposes and data accuracy, such as linking to or combining information we collect to help maintain the accuracy of your account or profile information and to provide you with a better and more personalized service and offers.</p>
+<p class="Default">•<span> </span><em><strong>Regulatory and Corporate Compliance</strong></em> – We process personal information about you to carry out appropriate compliance, security and/or financial checks, further to our legitimate business interests such as when we need to:</p>
+<p class="Default">o<span> </span>Confirm your identity;&nbsp;</p>
+<p class="Default">o<span> </span>Make a payment to you or receive payment from you;</p>
+<p class="Default">o<span> </span>Comply with law enforcement, court, tax authorities and regulatory obligations; and</p>
+<p class="Default">o<span> </span>Otherwise in compliance with law.</p>
+<p class="Default">•&nbsp;<em><strong>Sale, Merger or similar</strong></em> - We may also disclose your information further to our legitimate business interests to third parties in connection with sale, merger, business transfers or bankruptcy proceedings.</p>
+<p class="Default"><strong>Transfer of Personal Information to Other Countries</strong></p>
+<p class="Default">Where you provide personal information to us, in order to fulfill your request or provide the Wynn Services, please note that such data is transferred to and stored in the United States (“US”), where Wynn’s corporate headquarters is located and where our IT systems (including email) are located.</p>
+<p class="Default">Your personal information is also transferred to the third parties set out in the “How we share your information” section of the Notice who are located outside of the European Economic Area (EEA) (in most cases in the US). We transfer your personal data from the EEA to other countries in accordance with the European Commission’s standard contractual clauses.</p>
+<p class="Default">
+Although the data protection laws of various countries may differ from those in your own country, we take appropriate steps to ensure that your personal information is handled as described in this Notice and in accordance with the law.</p>
+<p class="Default">
+We transfer your information to third parties located outside the EEA where we have adequate measures in place to provide appropriate safeguards.&nbsp;</p>
+<p class="Default"><strong>Data Subject Rights</strong></p>
+<p class="Default">Where the GDPR applies, you have certain rights in relation to the personal information we hold about you. Some of these only apply in certain circumstances as set out below. We also set out how to exercise those rights. Please note that we require you to verify your identity before we respond to any of your requests. The GDPR provides the following rights:&nbsp;</p>
+<p class="Default">•<span> </span><strong>Right of Access</strong></p>
+<p class="Default">You have the right to ask us to access the personal information we hold about you and be provided with certain information about how we use your personal information and who we share it with.&nbsp;</p>
+<p class="Default">•<span> </span><strong>Right to Rectification</strong>&nbsp;</p>
+<p class="Default">You have the right to ask us to correct your personal information where it is inaccurate or incomplete and we endeavor to do so without undue delay.</p>
+<p class="Default">•<span> </span><strong>Right to Data Portability</strong>&nbsp;</p>
+<p class="Default">In certain circumstances, you have the right to ask us for a copy of your data in a structured, machine readable format and to ask us to share (port) this information to another entity.</p>
+<p class="Default">•<span> </span><strong>Right to Erasure</strong>&nbsp;</p>
+<p class="Default">In certain circumstances, you have the right to ask us to delete the personal information we hold about you:</p>
+<p class="Default">o<span> </span>Where you believe that it is no longer necessary for us to hold your personal information;</p>
+<p class="Default">o<span> </span>Where we are processing your personal information on the basis of legitimate interests and you object to such processing and we cannot demonstrate an overriding legitimate ground for the processing;</p>
+<p class="Default">o<span> </span>Where you have provided your personal information to us with your consent and you wish to withdraw your consent and there is no other ground under which we can process your personal information; or</p>
+<p class="Default">o<span> </span>Where you believe the personal information we hold about you is being unlawfully processed by us.</p>
+<p class="Default">•<span> </span><strong>Right to Restriction of Processing</strong>&nbsp;</p>
+<p class="Default">In certain circumstances, you have the right to ask us to restrict (stop any active) processing of your personal information:</p>
+<p class="Default">o<span> </span>Where you believe the personal information we hold about you is inaccurate and while we verify accuracy;&nbsp;</p>
+<p class="Default">o<span> </span>Where we want to erase your personal information as the processing is unlawful, but you want us to continue to store it;&nbsp;</p>
+<p class="Default">o<span> </span>Where we no longer need your personal information for the purposes of our processing, but you require us to retain the data for the establishment, exercise or defence of legal claims; or&nbsp;</p>
+<p class="Default">o<span> </span>Where you have objected to us processing your personal information based on our legitimate interests and we are considering your objection.</p>
+<p class="Default">•<span> </span><strong>Right to Object</strong></p>
+<p class="Default">You can object to our processing of your personal information based on our legitimate interests. We will no longer process your personal information unless we can demonstrate an overriding legitimate ground.&nbsp;</p>
+<p class="Default">•<span> </span><strong>Objection to Marketing and Profiling</strong></p>
+<p class="Default">At any time you have the right to object to our processing of personal information about you in order to send you promotions and special offers and other marketing, including where we build profiles for such purposes and we will stop processing the data for that purpose.</p>
+<p class="Default">•<span> </span><strong>Withdrawal of Consent</strong></p>
+<p class="Default">Where you have provided your consent for us to process your personal information, you can withdraw your consent at any time by emailing <a href="mailto:privacy@wynnresorts.com" style="color: #c11c4f; background-color: #ffffff; text-align: center; letter-spacing: 0.5px;">privacy@wynnresorts.com</a><span style="background-color: #ffffff; text-align: center; letter-spacing: 0.5px; color: #000000;"></span>.&nbsp;</p>
+<p class="Default">Exercising your Rights</p>
+<p class="Default">To exercise any of these rights above, please contact us at <a href="mailto:privacy@wynnresorts.com">privacy@wynnresorts.com</a>.&nbsp;</p>
+<p class="Default">Please note that these rights are limited, for example, where fulfilling your request would adversely affect other individuals or company trade secrets or intellectual property, where there are overriding public interest reasons or where we are required by law to retain your personal information.</p>
+<p class="Default"><strong>Complaints&nbsp;</strong></p>
+<p class="Default">We encourage you to come to us in the first instance but, to the extent that this right applies to you, you are entitled to address any grievance directly to the relevant Supervisory Authority.</p>
+<p class="Default"><strong>How Long We Retain Your Information</strong></p>
+<p class="Default">We retain your information for as long as needed to fulfill our legitimate business purposes outlined in this Notice, support our business operations, develop our Services, resolve disputes and enforce our rights. The criteria used to determine our retention periods include:&nbsp;</p>
+<p class="Default">•<span> </span>The duration of our relationship with you and the ongoing provision of Wynn Services to you (for example as long as you have a Wynn Insider Card with us).&nbsp;</p>
+<p class="Default">•<span> </span>Whether there is a legal or regulatory obligation which require us to retain certain records for a specific period of time (such as reporting to gaming and other regulatory authorities).&nbsp;</p>
+<p class="Default">•<span> </span>Whether retention of personal information is legitimate based on statute of limitations, litigation or other regulatory investigations.&nbsp;</p>
+<p class="Default">We may store your information in an aggregated and anonymized format following the retention periods noted above.</p>
+                </div>
+                    </div>
+    </div>
+</section>
+
+
+
+
+
+    <div class="scroll-to-top-wrap">
+        <a class="scrolltotop" data-scroll="" href="#top" id="scrolltotop">
+            <svg class="svg-inline--fa fa-angle-up fa-w-10 top-icon" focusable="false" aria-hidden="true" data-prefix="fa" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><!-- <i class="fa fa-angle-up top-icon" focusable="false"></i> --><span>TOP</span>
+        </a>
+    </div>
+
+    <footer>
+
+        <div id="sticky-anchor"></div>
+
+        <div class="container">
+
+                    <div class="col-sm-12 col-md-3  footer-nav">
+                <ul>
+                            <li><a href="https://www.wynnathome.com/" target="_blank">Shop Home Collection</a></li>
+                            <li><a href="https://wynngiftcards.com/" target="_blank">Gift Cards</a></li>
+                            <li><a href="http://wynnmagazine.com/digital-editions/" target="_blank">Wynn Magazine</a></li>
+                            <li><a href="/casino/wynn-slots" target="">Wynn Slots App</a></li>
+
+                </ul>
+        </div>
+        <div class="col-sm-12 col-md-3  footer-nav">
+                <ul>
+                            <li><a href="/about-us" target="">About Us</a></li>
+                            <li><a href="https://www.wynnresorts.com/" target="_blank">Investor Relations</a></li>
+                            <li><a href="/privacy-policy" target="">Privacy Policy</a></li>
+                            <li><a href="/cookie-notice" target="">Cookie Notice</a></li>
+                            <li><a href="https://www.visitwynn.com/tc/index.cfm?term_id=708708&amp;_ga=2.58004643.807548922.1545345355-1023184388.1545345355" target="_blank">Terms of Use</a></li>
+
+                </ul>
+        </div>
+        <div class="col-sm-12 col-md-3  footer-nav">
+                <ul>
+                            <li><a href="https://www.wynnpalace.com/en" target="_blank">Wynn Palace Cotai</a></li>
+                            <li><a href="http://www.encorebostonharbor.com/" target="_blank">Encore Boston Harbor</a></li>
+                            <li><a href="https://www.wynnmacau.com/en" target="_blank">Wynn Macau</a></li>
+
+                </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 social footer-nav">
+
+<p>Follow us</p>
+<ul class="social-icons">
+            <li>
+                <a aria-label="Wynn Las Vegas on Facebook" href="https://www.facebook.com/wynnlasvegas/">
+                    <span class="fa-layers fa-fw">
+                        <svg class="svg-inline--fa fa-circle fa-w-16" data-fa-transform="grow-25" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(2.5625, 2.5625)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fas fa-circle" data-fa-transform="grow-25"></i> -->
+                        <svg class="svg-inline--fa fa-facebook-f fa-w-9 fa-inverse" data-fa-transform="grow-7" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg="" style="transform-origin: 0.2578125em 0.5em;"><g transform="translate(132 256)"><g transform="translate(0, 0)  scale(1.4375, 1.4375)  rotate(0 0 0)"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" transform="translate(-132 -256)"></path></g></g></svg><!-- <i class="fa-inverse fab fa-facebook-f" data-fa-transform="grow-7"></i> -->
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a aria-label="Wynn Las Vegas on Twitter" href="https://www.twitter.com/wynnlasvegas/">
+                    <span class="fa-layers fa-fw">
+                        <svg class="svg-inline--fa fa-circle fa-w-16" data-fa-transform="grow-25" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(2.5625, 2.5625)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fas fa-circle" data-fa-transform="grow-25"></i> -->
+                        <svg class="svg-inline--fa fa-twitter fa-w-16 fa-inverse" data-fa-transform="grow-7" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(1.4375, 1.4375)  rotate(0 0 0)"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fa-inverse fab fa-twitter" data-fa-transform="grow-7"></i> -->
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a aria-label="Wynn Las Vegas on Instagram" href="https://www.instagram.com/wynnlasvegas/">
+                    <span class="fa-layers fa-fw">
+                        <svg class="svg-inline--fa fa-circle fa-w-16" data-fa-transform="grow-25" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(2.5625, 2.5625)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fas fa-circle" data-fa-transform="grow-25"></i> -->
+                        <svg class="svg-inline--fa fa-instagram fa-w-14 fa-inverse" data-fa-transform="grow-7" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.5em;"><g transform="translate(224 256)"><g transform="translate(0, 0)  scale(1.4375, 1.4375)  rotate(0 0 0)"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" transform="translate(-224 -256)"></path></g></g></svg><!-- <i class="fa-inverse fab fa-instagram" data-fa-transform="grow-7"></i> -->
+                    </span>
+                </a>
+            </li>
+
+</ul>
+        </div>
+
+
+            
+
+            
+<div class="col-xs-12 col-sm-12 col-md-12 text-center copyright">
+    <p>©&nbsp;2020&nbsp;Wynn Resorts Holdings, LLC. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </footer>
+
+    <div class="mobile-menu-opacity"></div>
+
+    
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+    
+    <script src="/Assets/js/WynnOwlCarousel.min.js?v=637164806808616360"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.5.7/dist/flatpickr.min.js" integrity="sha256-G8zoqUF5tPdnKqIP/YD+QSvirWve3Ma9p+T8eFxhGiY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js" integrity="sha384-7RnKw5sMIle5aza0DbXRxSFziONgSQKq4/v0JGJnfrCIMWMyasw3n7w2IW4HK7Ss" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" integrity="sha384-sIzeKWIAHvT0Vm8QbfLCqZwBG0WMCkWVAOYd/330YSNeeQ1Y57N3T9lQz5Ry/EHH" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js" integrity="sha384-ugp/e34LtoER7mwf3SLygR0OL+STa4FTLzk7MRbpY/usE4VV+24hBxRXRS6g5ZJy" crossorigin="anonymous"></script>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script src="/Assets/js/app-bundle.min.js?v=637164806811836329"></script>
+
+    
+
+    
+
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","198537994672351");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=198537994672351&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">var ec="".ea="",el="",pushToDl=function(a,b,c){dataLayer.push({event:"WLV_GA_Event",eventCategory:a,eventAction:b,eventLabel:c,eventValue:void 0})};jQuery("#top a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase().replace(/,\s*$/,""),b=jQuery(this).attr("class");"logocontainer"==b&&(a="WLV logo (back to home)");if(isNaN(a)||"logocontainer"==b)ec="top nav",ea="link click",el="top nav menu: "+a,pushToDl(ec,ea,el)});
+jQuery("#search-input-d").keydown(function(a){13==a.keyCode&&(a=jQuery("#search-input-d").val(),""!==a&&(ec="search",ea="search : click",el="search : click : "+a,pushToDl(ec,ea,el)))});jQuery("#search-input-m").keydown(function(a){13==a.keyCode&&(a=jQuery("#search-input-m").val(),""!==a&&(ec="search",ea="search : click",el="search : click : "+a,pushToDl(ec,ea,el)))});jQuery("a#scrolltotop").bind("mousedown",function(){ec="page nav";ea="link click";el="in-page: scroll to top";pushToDl(ec,ea,el)});
+jQuery('button.roomguestqty:contains("Confirm")').bind("mousedown",function(){ec="widget";ea="button click";el="widget: occupancy selector confirm";pushToDl(ec,ea,el)});jQuery("section.room-booking-bar-wrap \x3e section.booking-bar.shared-booking-bar-wrap \x3e div \x3e div.reserve-btn-wrap \x3e button").bind("mousedown",function(){ec="widget";ea="button click";el="widget: check availability";pushToDl(ec,ea,el)});
+jQuery(document).on("blur","#promocodeinput",function(){var a=$("#promocodeinput").val();0<a.length&&(a=a.toLowerCase(),ec="widget",ea="promo field",el="widget: promofield: "+a,pushToDl(ec,ea,el))});jQuery("input#checkin-desktop,input#checkin-mobile").bind("mousedown",function(){ec="widget";ea="button click";el="widget: checkin selector";pushToDl(ec,ea,el)});jQuery("input#checkout-desktop").bind("mousedown",function(){ec="widget";ea="button click";el="widget: checkout selector";pushToDl(ec,ea,el)});
+jQuery("span#totalRoomMobile,span#totalAdultMobile,span#totalChildrenMobile").bind("mousedown",function(){ec="widget";ea="button click";el="widget: occupancy selector";pushToDl(ec,ea,el)});jQuery("span#occupancy-label").parent("div").bind("mousedown",function(){ec="widget";ea="button click";el="widget: occupancy selector";pushToDl(ec,ea,el)});
+jQuery("button.navbar-toggle").bind("click",function(){setTimeout(function(){var a=document.getElementById("header-navbar-collapse").className;a.includes("open")?(ec="page nav",ea="menu icon",a="menu icon: open"):(ec="page nav",ea="menu icon",a="menu icon: close");pushToDl(ec,ea,a)},1E3)});jQuery("a[href*\x3d'mailto']").click(function(){var a=jQuery(this).html();a="mailto: "+a;a=a.toString().toLowerCase();ec="mailto link";ea="link click";el=a;pushToDl(ec,ea,el)});
+jQuery("div.promo-wrapper a").bind("mousedown",function(){var a=jQuery(this).closest(".promo-wrapper").find("h2").text(),b=jQuery(this).text();""===a&&(a=jQuery(this).closest(".promo-wrapper").find("p").text(),a=stringTruncate(a,25));a="promo "+a;var c=b.length;45<c&&(b=stringTruncate(b,45));ec="promo wrappers";ea="link click";el=a+" "+b;pushToDl(ec,ea,el)});
+jQuery("section.filter a").bind("mousedown",function(){var a=jQuery(this).text();ec="filter bar";ea="filter click";el="filter: "+a;pushToDl(ec,ea,el)});jQuery("section.hero div.owl-nav \x3e button.owl-next").bind("mousedown",function(){var a=jQuery(this).closest("section").attr("data-filterin");"undefined"===typeof a?(a=jQuery(this).closest("section").attr("class"),a=a.split(" "),a=a[0]):a=a.replace("-,-a-,-"," \x26 ");ec=a+" nav";ea="button click";el=a+" nav: next button";pushToDl(ec,ea,el)});
+jQuery("section.hero div.owl-nav \x3e button.owl-prev").bind("mousedown",function(){var a=jQuery(this).closest("section").attr("data-filterin");"undefined"===typeof a?(a=jQuery(this).closest("section").attr("class"),a=a.split(" "),a=a[0]):a=a.replace("-,-a-,-"," \x26 ");ec=a+" nav";ea="button click";el=a+" nav: previous button";pushToDl(ec,ea,el)});
+jQuery(document).on("mousedown","section.hp-module button",function(){var a=jQuery(this).closest("section").attr("data-filterin"),b=jQuery(this).attr("class");b.includes("owl-next")&&(a=a.replace("-,-a-,-"," \x26 "),ec=a+" nav",ea="button click",el=a+" nav: next button",pushToDl(ec,ea,el));b.includes("owl-prev")&&(a=a.replace("-,-a-,-"," \x26 "),ec=a+" nav",ea="button click",el=a+" nav: previous button",pushToDl(ec,ea,el))});
+jQuery("footer \x3e div \x3e div.social.footer-nav a").bind("mousedown",function(){var a=jQuery(this).attr("href");a="social: "+a;a=a.toString().toLowerCase();ec="footer nav";ea="button click";el=a;pushToDl(ec,ea,el)});jQuery("footer \x3e div \x3e div.footer-nav a").bind("mousedown",function(){var a=this.text,b=this.offsetParent.className;a="footer menu: "+a;a=a.toString().toLowerCase();b.includes("social")||(ec="footer nav",ea="link click",el=a,pushToDl(ec,ea,el))});
+jQuery(document).on("mousedown","#onetrust-policy-text",function(){ec="cookie footer";ea="link click";el="click here";pushToDl(ec,ea,el)});jQuery(document).on("mousedown","#onetrust-accept-btn-handler",function(){ec="cookie footer";ea="link click";el="accept cookies";pushToDl(ec,ea,el)});jQuery(document).on("mousedown",".onetrust-close-btn-handler.onetrust-close-btn-ui.banner-close-button.onetrust-lg.close-icon",function(){ec="cookie footer";ea="link click";el="close (X)";pushToDl(ec,ea,el)});
+jQuery("a[href*\x3d'pdf']").click(function(){var a=jQuery(this).attr("href"),b=a.indexOf("?");a=a.substring(0,-1!=b?b:a.length);a="download: "+a;a=a.toString().toLowerCase();ec="pdf file";ea="file download";el=a;pushToDl(ec,ea,el)});
+"/"==location.pathname&&jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),b.toLowerCase());
+ec="page nav";ea="link click";el="in-page: home : "+c+" : "+a+" link";pushToDl(ec,ea,el)});
+location.pathname.includes("/rooms-and-suites")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: rooms \x26 suites : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: rooms: "+a+" : "+b[0];pushToDl(ec,ea,el)}),jQuery("a.simple-link").bind("mousedown",function(){var a=jQuery(this).text(),b=jQuery("div.headerContent");
+b=b[0].innerText.split(/\n/);"view floor plan"==a.toLowerCase().trim()&&(ec="page nav",ea="link click",el="in-page: floor plan link : "+b[0],pushToDl(ec,ea,el));"view virtual tour"==a.toLowerCase().trim()&&(ec="page nav",ea="link click",el="in-page: view virtual tour link : "+b[0],pushToDl(ec,ea,el));"view the 3d walkthrough"==a.toLowerCase().trim()&&(ec="page nav",ea="link click",el="in-page: view the 3d walkthrough : "+b[0],pushToDl(ec,ea,el))}));
+location.pathname.includes("/dining")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: dining : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery(document).on("mousedown","div.select-restaurant-bar ul.dropdown-menu.inner \x3e li \x3e a",function(){var a=jQuery(this).text();ec="dining widget";ea="select a restaurant";el=a;pushToDl(ec,ea,el)}),jQuery(document).on("mousedown","div.party-size ul.dropdown-menu.inner \x3e li \x3e a",function(){var a=jQuery(this).text();ec="dining widget";ea="party size";el=a;pushToDl(ec,ea,el)}),jQuery(document).on("mousedown",
+"div.dining-time ul.dropdown-menu.inner \x3e li \x3e a",function(){var a=jQuery(this).text();ec="dining widget";ea="dining time";el=a;pushToDl(ec,ea,el)}),jQuery("button#check-dining-availability").bind("mousedown",function(){ec="dining widget";ea="button click";el="reserve a table";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";
+ea="link click";el="in-page: dining: "+a+" : "+b[0];pushToDl(ec,ea,el)}));
+location.pathname.includes("/entertainment")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: entertainment : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: entertainment: "+a+" : "+b[0];pushToDl(ec,ea,el)}));
+location.pathname.includes("/nightlife")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: nightlife : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: nightlife: "+a+" : "+b[0];pushToDl(ec,ea,el)}));
+location.pathname.includes("/shops")&&jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: shops : "+c+" : "+a+" link";pushToDl(ec,ea,el)});
+location.pathname.includes("/meetings")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery("section.page-header \x3e div \x3e div \x3e h1")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),b.toLowerCase());
+ec="page nav";ea="link click";el="in-page: meetings : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: meetings: "+a+" : "+b[0];pushToDl(ec,ea,el)}),jQuery("input[value\x3d'Send Request']").bind("mousedown",
+function(){ec="form";ea="form submit";el="form submit: send request for a meeting";pushToDl(ec,ea,el)}),jQuery("#speedrfp_button").bind("mousedown",function(){ec="page nav";ea="button click";el="in-page: request proposal button";pushToDl(ec,ea,el)}));
+location.pathname.includes("/weddings")&&(jQuery("div.owl-theme \x3e div.item a").bind("mousedown",function(){var a=jQuery(this).text().trim(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text(),c=jQuery(this).closest(".hp-module.filterResult.active").find("div.headingDiv")[0].innerText;""===a||"undefined"===a?(a=b,a=a.toLowerCase()+" image"):a=a.trim().toLowerCase()+" : "+b;b.toLowerCase();c=c.toLowerCase();utag.link({event_category:"page nav",event_action:"link click",event_label:"in-page: "+
+c+" : "+a+" link"});ec="page nav";ea="link click";el="in-page: "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: weddings: "+a+" : "+b[0];pushToDl(ec,ea,el)}),jQuery("input[value\x3d'Submit']").bind("mousedown",
+function(){ec="form";ea="form submit";el="form submit: plan a wedding";pushToDl(ec,ea,el)}));
+location.pathname.includes("/casino")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: casino : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: casino: "+a+" : "+b[0];pushToDl(ec,ea,el)}));
+location.pathname.includes("/experiences")&&(jQuery("div.owl-theme \x3e div a").bind("mousedown",function(){var a=jQuery(this).text().trim().toLowerCase(),b=jQuery(this).closest("div.item").find("div.card-wrap \x3e .h2").text().toLowerCase(),c=jQuery(this).closest(".hp-module-container").find("div.headingDiv")[0].innerText.toLowerCase();""===a?(b=b.toLowerCase(),a=jQuery(this).find("img").attr("alt"),""===a&&(a=b),a=a.toLowerCase()+" image",c=c.toLowerCase()):(a=a.toLowerCase()+" : "+b,c=c.toLowerCase(),
+b.toLowerCase());ec="page nav";ea="link click";el="in-page: experiences : "+c+" : "+a+" link";pushToDl(ec,ea,el)}),jQuery("section.page-header \x3e div \x3e div \x3e div.btn-wrap-pg-header \x3e a, section.page-header \x3e div \x3e div \x3e div.copy-wrap a").bind("mousedown",function(){var a=jQuery(this).text().toLowerCase(),b=jQuery("div.headerContent");b=b[0].innerText.split(/\n/);ec="page nav";ea="link click";el="in-page: experiences: "+a+" : "+b[0];pushToDl(ec,ea,el)}),jQuery('#meetingForm \x3e div \x3e input[type\x3d"submit"]').mousedown(function(){ec=
+"form";ea="form submit";el="form submit: salon/spa reservation";pushToDl(ec,ea,el)}));</script>  <div id="ttdUniversalPixelTag1c5271d3ca924774a194e7c80aac9c30" style="display: none;"></div><div id="ttdUniversalPixelTag8766c503d373479b86850e4579c6f650" style="display: none;"></div><script type="application/javascript" id="ywa-1582062160148-36468" class="ywa-10000" defer="" src="https://sp.analytics.yahoo.com/sp.pl?a=10000&amp;d=Tue%2C%2018%20Feb%202020%2021%3A42%3A40%20GMT&amp;n=5&amp;b=Wynn%20Las%20Vegas%20and%20Encore%20Resort%20%7C%20Privacy%20Policy&amp;.yp=405291&amp;f=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;enc=UTF-8&amp;et=custom"></script><iframe style="display: none; visibility: hidden;" src="https://4241729.fls.doubleclick.net/activityi;src=4241729;type=roomr130;cat=wynn_979;ord=1;num=1972552824603;gtm=2oa250;auiddc=190391718.1582062161;~oref=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy?" width="0" height="0"></iframe><iframe style="display: none; visibility: hidden;" src="https://4241729.fls.doubleclick.net/activityi;src=4241729;type=wynng0;cat=akqag0;ord=1;num=9518761455379;gtm=2oa250;auiddc=190391718.1582062161;u14=%2Fprivacy-policy;~oref=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy?" width="0" height="0"></iframe><iframe id="utag_506" style="display:none" src="//servedby.flashtalking.com/container/14096;105067;10770;iframe/?ft_referrer=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;cachebuster=910484.4843570187" width="1" height="1"></iframe><iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.7303c29a8108bca4ac5c9ef008ed8164.html?origin=https%3A%2F%2Fwww.wynnlasvegas.com" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe style="display: none;" name="__cmpLocator" title="CMP Locator"></iframe><iframe style="display: none;" name="__tcfapiLocator" title="TCF Locator"></iframe><iframe id="universal_pixel_o2bkppu" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=swijiix&amp;ref=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;upid=o2bkppu&amp;upv=1.1.0" title="TTD Universal Pixel" width="0" height="0"></iframe><iframe id="universal_pixel_hm1p6z8" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=swijiix&amp;ref=https%3A%2F%2Fwww.wynnlasvegas.com%2Fprivacy-policy&amp;upid=hm1p6z8&amp;upv=1.1.0" title="TTD Universal Pixel" width="0" height="0"></iframe></body></html>

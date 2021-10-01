@@ -1,0 +1,648 @@
+<html class="no-touchevents wf-bentonmoderndisplay-i7-active wf-din2014-n4-active wf-din2014-n7-active wf-active skrollr skrollr-desktop" lang="en-US"><head>
+        <meta charset="UTF-8"><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"1da960b874",applicationID:"34655988"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+                        <title>Privacy Statement | Tapestry</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.tapestry.com/privacy-statement">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy Statement | Tapestry">
+<meta property="og:description" content="TERMS OF USE COPYRIGHT INFORMATION Coach, Inc. (to be Tapestry, Inc. effective October 31, 2017), through its wholly owned subsidiary (collectively, “Tapestry”), owns www.tapestry.com&nbsp;(“the Site”). Tapestry owns or has rights to all of the wallpaper, icons, characters, artwork, images, graphics, music, text, software and other content of the Site (the “Content”), and all HTML, CGI …">
+<meta property="og:url" content="https://www.tapestry.com/privacy-statement">
+<meta property="og:site_name" content="Tapestry">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//www.tapestry.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Tapestry » Feed" href="https://www.tapestry.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Tapestry » Comments Feed" href="https://www.tapestry.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.tapestry.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.tapestry.com/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.tapestry.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="corp-style-css" href="https://www.tapestry.com/wp-content/themes/corp/assets/css/custom-style.css?ver=20190906" type="text/css" media="all">
+<script type="text/javascript" src="https://www.tapestry.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://www.tapestry.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://www.tapestry.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.tapestry.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.tapestry.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://www.tapestry.com/?p=328">
+<link rel="alternate" type="application/json+oembed" href="https://www.tapestry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tapestry.com%2Fprivacy-statement%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.tapestry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tapestry.com%2Fprivacy-statement%2F&amp;format=xml">
+
+		<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1265148,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+		</script><script async="" src="//static.hotjar.com/c/hotjar-1265148.js?sv=5"></script>
+		<link rel="icon" href="https://www.tapestry.com/wp-content/uploads/2017/10/cropped-tapestry-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.tapestry.com/wp-content/uploads/2017/10/cropped-tapestry-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.tapestry.com/wp-content/uploads/2017/10/cropped-tapestry-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.tapestry.com/wp-content/uploads/2017/10/cropped-tapestry-favicon-270x270.png">
+        <script src="https://use.typekit.net/zgh1fsw.js"></script>
+        <style type="text/css">.tk-benton-modern-display{font-family:"benton-modern-display",serif;}.tk-din-2014{font-family:"din-2014",sans-serif;}</style><style type="text/css">@font-face{font-family:benton-modern-display;src:url(https://use.typekit.net/af/ee7d49/00000000000000003b9af2d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/ee7d49/00000000000000003b9af2d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/ee7d49/00000000000000003b9af2d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:din-2014;src:url(https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:din-2014;src:url(https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}</style><script>try {
+              Typekit.load({async: false});
+          } catch (e) {
+          }</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111591289-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+              dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+
+          gtag('config', 'UA-111591289-1');
+        </script>
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.tapestry.com\/","name":"Tapestry","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.tapestry.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+        <script type="application/ld+json">{"@context":"http://schema.org/","@type":"Organization","name":"Tapestry, Inc.","legalName":"Tapestry, Inc.","brand":"Tapestry, Inc.","alternateName":"Tapestry","address":{"@type":"PostalAddress","streetAddress":"10 Hudson Yards","addressLocality":"New York","addressCountry":"US","addressRegion":"NY","postalCode":"10001"},"description":"Tapestry, Inc. is an American multinational luxury fashion company based in New York City. Tapestry, Inc. owns three major brands: Coach, Kate Spade New York, and Stuart Weitzman.","telephone":"1 (212) 594-1850","url":"http://www.tapestry.com/","logo":"http://www.tapestry.com/wp-content/themes/corp/assets/images/logo-tapestry.svg","subOrganization":[{"@context":"http://schema.org/","@type":"Organization","name":"Coach New York","legalName":"Coach New York","brand":"Coach New York","alternateName":"Coach, Inc.","address":{"@type":"PostalAddress","streetAddress":"10 Hudson Yards","addressLocality":"New York","addressCountry":"US","addressRegion":"NY","postalCode":"10001"},"description":"Coach is a leading design house of modern luxury accessories and lifestyle collections, with a long-standing reputation built on quality craftsmanship. Defined by a free-spirited, all-American attitude, the brand approaches design with a modern vision, reimagining luxury for today with an authenticity and innovation that is uniquely Coach. All over the world, the Coach name is synonymous with effortless New York style.","email":"info@coach.com","telephone":"1 (888) 262-6224","url":"https://www.coach.com/","logo":"https://www.coach.com/on/demandware.static/Sites-Coach_US-Site/-/default/dw54ab8442/images/coach-logo.png","sameAs":["https://www.instagram.com/coach/","https://www.facebook.com/coach","https://twitter.com/coach","https://www.youtube.com/user/coach","https://www.pinterest.com/coach/","https://www.snapchat.com/add/CoachNYC","https://www.wikidata.org/wiki/Q727697","https://en.wikipedia.org/wiki/Coach_New_York"]},{"@context":"http://schema.org/","@type":"Organization","name":"Kate Spade New York","legalName":"Kate Spade New York","brand":"Kate Spade New York","alternateName":"Kate Spade","address":{"@type":"PostalAddress","streetAddress":"2 Park Avenue","addressLocality":"New York","addressCountry":"US","addressRegion":"NY","postalCode":"10016"},"description":"In 1993, a revolution in accessories began with the design of a utilitarian nylon handbag—one that was an elegant, classic, unpretentious complement to every outfit. Simple silhouettes with clever details and crisp palettes soon established a visual shorthand for the kate spade new york brand that, today, is recognizable the world over.","telephone":"1 (866) 999-5283","url":"https://www.katespade.com/","logo":"https://cdn.katespade.tech/na/ksny_logo.png","sameAs":["https://www.facebook.com/katespadeny","https://twitter.com/katespadeny","https://www.pinterest.com/katespadeny/","https://www.instagram.com/katespadeny/","http://katespadeny.tumblr.com/","https://www.youtube.com/user/katespadenewyork/kate-spade-new-york","https://www.wikidata.org/wiki/Q6375797","https://en.wikipedia.org/wiki/Kate_Spade_New_York"]},{"@context":"http://schema.org/","@type":"Organization","name":"Stuart Weitzman","legalName":"Stuart Weitzman","brand":"Stuart Weitzman","alternateName":"Stuart Weitzman","address":{"@type":"PostalAddress","streetAddress":"10 Hudson Yards","addressLocality":"New York","addressCountry":"US","addressRegion":"NY","postalCode":"10001"},"description":"Stuart Weitzman creates beautiful shoes that combine form and function. For more than 30 years, every pair has been handcrafted using the finest materials and meticulously engineered for a flawless fit. The brand is one of the most recognizable names in footwear, and its award-winning shoes are worn by stylish women around the globe and celebrities both on and off the red carpet.","telephone":"1 (877) 793-4896","url":"https://www.stuartweitzman.com/","logo":"https://www.stuartweitzman.com/cms/images/layout/SW_LOGO_BLACK.svg","sameAs":["https://www.facebook.com/StuartWeitzman/","https://www.instagram.com/stuartweitzman/","https://www.snapchat.com/add/StuartWeitzman","https://www.pinterest.com/stuartweitzman/","https://twitter.com/stuartweitzman","https://www.youtube.com/user/TheStuartWeitzman","http://www.weibo.com/stuartweitzmanchina","https://www.wikidata.org/wiki/Q16106134","https://en.wikipedia.org/wiki/Stuart_Weitzman"]}]}</script>
+    <link type="text/css" href="https://optanon.blob.core.windows.net/skins/5.11.0/default_flat_bottom_two_button_black/v2/css/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color:  !important }#optanon ul#optanon-menu li.menu-item-selected { background-color:  !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #000000 !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #000000 !important; border-color: #000000 !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle button { color: #ffffff !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle button { color: #ffffff !important }#optanon #optanon-popup-bottom { background-color: #FFDD00 !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #FFDD00 !important }.optanon-alert-box-wrapper { background-color:#ffdd00 !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color:#000000 !important }</style><script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script async="" src="https://script.hotjar.com/modules.596dab810ace883b4ea8.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+    <body class="page-template page-template-page-container page-template-page-container-php page page-id-328 page-privacy-statement" style="height: 10027px;"><div id="optanon" class="modern"><div id="optanon-popup-bg"></div><div id="optanon-popup-wrapper" role="dialog" aria-modal="true" tabindex="-1" lang="en-GB"><div id="optanon-popup-top"><button onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Close Button');" aria-label="Close" class="optanon-close-link optanon-close optanon-close-ui" title="Close"><div id="optanon-close" style="background: url(https://optanon.blob.core.windows.net/skins/5.11.0/default_flat_bottom_two_button_black/v2/images/optanon-pop-up-close.png);width:34px;height:34px;"></div></button></div><div id="optanon-popup-body"><div id="optanon-popup-body-left"><div id="optanon-popup-body-left-shading"></div><div id="optanon-branding-top-logo" style="background-image: url('https://optanon.blob.core.windows.net/logos/6589/6589:tapestry.com/logo-tapestry.png') !important;"></div><ul id="optanon-menu" aria-label="Navigation Menu" role="tablist"><li class="menu-item-on menu-item-about" title="Your Privacy"><p class="preference-menu-item"><button role="tab" aria-selected="true" aria-controls="Your-Privacy" id="Your-Privacy">Your Privacy</button></p></li><li class="menu-item-necessary menu-item-on" title="Strictly Necessary Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Strictly-Necessary-Cookies" id="Strictly-Necessary">Strictly Necessary Cookies</button></p></li><li class="menu-item-on menu-item-performance" title="Performance Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Performance-Cookies" id="Performance-Cookies">Performance Cookies</button></p></li><li class="menu-item-on menu-item-functional" title="Functional Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Functional-Cookies" id="Functional-Cookies">Functional Cookies</button></p></li><li class="menu-item-on menu-item-advertising" title="Targeting Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Targeting-Cookies" id="Targeting-Cookies">Targeting Cookies</button></p></li><li class="menu-item-moreinfo menu-item-off" title="More Information"><p class="preference-menu-item"><a target="_blank" aria-label="More Information" href="https://cookiepedia.co.uk/giving-consent-to-cookies" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Cookie Policy');">More Information</a></p></li></ul></div><div><div id="optanon-popup-body-right"><p role="heading" aria-level="2" class="legacy-preference-banner-title h2" aria-label="Privacy Preference Center">Privacy Preference Center</p><div class="vendor-header-container"><p class="header-3" role="heading" aria-level="3"></p><div id="optanon-popup-more-info-bar"><div class="optanon-status"><div class="optanon-status-editable"><form><span class="fieldset"><p><input type="checkbox" value="check" id="chkMain" checked="checked" class="legacy-group-status optanon-status-checkbox"><label for="chkMain">Active</label></p></span></form></div><div class="optanon-status-always-active optanon-status-on"><p>Always Active</p></div></div></div></div><div class="optanon-main-info-text" role="tabpanel"></div></div><div class="optanon-bottom-spacer"></div></div></div><div id="optanon-popup-bottom"> <a href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener"><div id="optanon-popup-bottom-logo" alt="OneTrust Website" style="background: url(https://optanon.blob.core.windows.net/skins/5.11.0/default_flat_bottom_two_button_black/v2/images/cookie-collective-top-bottom.png);width:155px;height:35px;" title="powered by OneTrust"></div></a><div class="optanon-button-wrapper optanon-save-settings-button optanon-close optanon-close-consent"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Save Settings" aria-label="Save Settings" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Save Settings');">Save Settings</button></div><div class="optanon-white-button-right"></div></div><div class="optanon-button-wrapper optanon-allow-all-button optanon-allow-all" style="display: none;"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Allow All" aria-label="Allow All" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Allow All');">Allow All</button></div><div class="optanon-white-button-right"></div></div></div></div></div>
+                <div id="page" class="site">
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid navbar-container">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <div class="open">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </div>
+                                <div class="close"></div>
+                            </button>
+                            <a class="brand-text loaded" href="https://www.tapestry.com/" rel="home">
+                                <img class="logo" src="https://www.tapestry.com/wp-content/themes/corp/assets/images/logo-tapestry.svg" onerror="this.src='https://www.tapestry.com/wp-content/themes/corp/assets/images/logo-tapestry.png'">
+                            </a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <div class="menu-main-menu-container"><ul id="primary-menu" class="nav navbar-nav navbar-right loaded"><li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#our-brands">Our Brands</a>
+<ul class="sub-menu" style="margin-left: -64px; width: 1420px;">
+	<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://www.tapestry.com/coach/">Coach</a></li>
+	<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://www.tapestry.com/kate-spade/">Kate Spade</a></li>
+	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://www.tapestry.com/stuart-weitzman/">Stuart Weitzman</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://www.tapestry.com/leadership/">Leadership</a></li>
+<li id="menu-item-3166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3166 responsibility-link"><a href="https://www.tapestry.com/responsibility/">Responsibility</a>
+<ul class="sub-menu" style="margin-left: -64px; width: 1420px;">
+	<li id="menu-item-3291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3291"><a href="https://www.tapestry.com/responsibility/our-people/">our people</a></li>
+	<li id="menu-item-3294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3294"><a href="https://www.tapestry.com/responsibility/our-planet/">Our Planet</a></li>
+	<li id="menu-item-3301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3301"><a href="https://www.tapestry.com/responsibility/our-communities/">Our Communities</a></li>
+	<li id="menu-item-3300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3300"><a href="https://www.tapestry.com/responsibility/resources/">Resources</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.tapestry.com/investors/">Investors</a></li>
+<li id="menu-item-605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605"><a href="https://careers.tapestry.com">Careers</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.tapestry.com/contact/">Contact</a></li>
+</ul></div>                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </nav>
+            <div id="content" class="site-content">
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+			
+<article id="post-328" class="post-328 page type-page status-publish hentry">
+	<div class="entry-content container">
+        <div class="row">
+            <div class="col-xs-12">
+
+		<div class="container shortcode loaded">
+    <div class="row title loaded">
+        <div class="col-xs-12">
+            <h1 class="headline">Terms of Use &amp;<br>
+Privacy Statement</h1>
+        </div>
+        <div class="col-xs-12 col-md-5 col-md-offset-2 subheadline-text skrollable skrollable-after" data-0-bottom-center="opacity:0;margin-top:60px;" data-0-bottom-bottom="opacity:1;margin-top:0px;" style="opacity: 1; margin-top: 0px;">
+						        </div>
+    </div>
+</div>
+<h2>TERMS OF USE</h2>
+<h3>COPYRIGHT INFORMATION</h3>
+<p>Coach, Inc. (to be Tapestry, Inc. effective October 31, 2017), through its wholly owned subsidiary (collectively, “Tapestry”), owns www.tapestry.com&nbsp;(“the Site”). Tapestry owns or has rights to all of the wallpaper, icons, characters, artwork, images, graphics, music, text, software and other content of the Site (the “Content”), and all HTML, CGI and other code and scripts in any format used to implement the Site (the “Code”). You may not copy, modify, upload, download, transmit, re-publish, display for redistribution to third parties for commercial purposes, or otherwise distribute any Code or Content from the Site without the prior written agreement of Tapestry. All names, logos and trademarks which appear on the Site are the property of Tapestry or are used by Tapestry under license. Your failure to comply with this Terms of Use will constitute breach of contract and will violate Tapestry’s copyright, trademark and other proprietary and industrial property rights.</p>
+<h3>USE OF THE SITE</h3>
+<p>This Terms of Use governs the Site, and all sites of the affiliates of Tapestry. By using the Site, you expressly accept and agree to abide by all provisions set forth herein. Do not use the Site if you do not accept and agree to the Terms of Use. Unless otherwise referenced herein, any reference to “Tapestry” shall include Coach, Inc. (to be Tapestry, Inc. effective October 31, 2017) and all of its affiliates. If any material on this Site, or your use of the Site, is contrary to the laws of the place where you are when you access it, the Site is not intended for you, and Tapestry asks that you do not to use the Site. You are responsible for informing yourself of the laws of your jurisdiction and complying with them.</p>
+<p>The Site is available only for your personal use, which shall be limited to viewing the Site, providing information to the Site, downloading product information for your personal review and for the purchase of products.</p>
+<p>Tapestry may at any time revise the Terms of Use by updating this page. You are bound by any revisions and should periodically visit this page to review the current Terms of Use.</p>
+<p>You also may be subject to additional Terms of Use that are applicable to certain parts of the Site. Tapestry may terminate the Terms of Use and deny you access to the Site at any time, immediately and without notice, if in Tapestry’s sole discretion you fail to comply with any provision of these Terms of Use.</p>
+<p>You agree that no joint venture, partnership, employment, or agency relationship exists between Tapestry and you as a result of this Agreement or your use of the Site.</p>
+<p>The failure of Tapestry to exercise or enforce any right or provision of these Terms of Use shall not constitute a waiver of such right or provision.</p>
+<h3>NO LICENSE</h3>
+<p>Except as expressly provided herein, nothing contained herein shall be construed as conferring by implication, estoppel or otherwise any license or right under any patent, trademark, copyright or other proprietary or industrial right of Tapestry.</p>
+<h3>USE OF INFORMATION SUBMITTED BY YOU</h3>
+<p><strong><em>NOTE: THIS SECTION DOES NOT APPLY TO PERSONAL DATA SUPPLIED BY YOU TO THE SITE, SUCH AS YOUR NAME, ADDRESS, E-MAIL ADDRESS, TELEPHONE NUMBER AND THE LIKE. PLEASE SEE OUR PRIVACY POLICY STATEMENT FOR INFORMATION REGARDING OUR TREATMENT OF PERSONAL DATA.</em></strong></p>
+<p>If you respond to Tapestry with any information, including but not limited to feedback, data, questions, comments, suggestions, or the like, such information shall NOT be deemed confidential. All such submissions shall be deemed the property of Tapestry, and your submission of information shall constitute an assignment to Tapestry of all worldwide rights, titles and interests in such information. Tapestry will not be liable for any use or disclosure of such information. Tapestry will not have any obligation to keep such information confidential and will be free to reproduce, use, disclose and distribute the information to others without limitation. Tapestry will be free to use any ideas, concepts, know-how or techniques contained in such information for any purpose whatsoever, including but not limited to developing, manufacturing and marketing products which incorporate or otherwise rely upon such information.</p>
+<h3>PRODUCT AND PRICING INFORMATION</h3>
+<p>The information on this Site does not constitute a binding offer to sell products described or referenced on the Site. Tapestry reserves the right at any time after receipt of your order to accept or decline your order, or any portion thereof, in our sole discretion, even after your receipt of an order confirmation or after your credit card has been charged. Products displayed may be out-of-stock or discontinued, and prices are subject to change. Subject to the foregoing, the prices displayed are quoted in U.S. dollars and are effective only for United States purchases. Although Tapestry has made every effort to display the products and their colors as accurately as possible, the&nbsp;<strong>DISPLAYED</strong>&nbsp;colors of the products will depend upon the monitor of the user and Tapestry cannot guarantee that the user’s monitor will accurately portray the&nbsp;<strong>ACTUAL</strong>&nbsp;colors of the products. Purchases are subject to applicable taxes to be paid by the purchaser, and do not include shipping and handling.</p>
+<h3>DISCLAIMERS AND LIMITATIONS OF LIABILITY</h3>
+<p>While Tapestry attempts to provide accurate and timely information, there may be inadvertent technical or factual inaccuracies and typographical errors. Tapestry reserves the right to make corrections and changes to the Site at any time without notice. Tapestry does not claim that the information on the Site is appropriate to your jurisdiction or that the products described on the Site will be available for purchase in all jurisdictions.</p>
+<p>You assume all responsibility and risk with respect to their use of the Site. Tapestry disclaims all warranties, representations and endorsements, express or implied, with regard to information accessed from or via the Site, including, but not limited to, all express and implied warranties, such as warranty of title, merchantability, non-infringement and fitness for a particular purpose. Tapestry does not warrant that the Site is free of computer viruses, bugs or other harmful components. Tapestry does not warrant that the functions contained in the material will be uninterrupted or error-free or that errors will be detected or corrected. Tapestry does not assume any liability or responsibility for the accuracy, completeness, reliability or usefulness of the information disclosed or accessed through the Site. Tapestry does not have any duty to update the Site or modify their Content or Code, and Tapestry shall not be liable for its failure to update such information. It is your responsibility to verify any information contained on the Sites before relying upon it.</p>
+<p>Tapestry makes no warranties of any kind regarding any non- Tapestry websites to which you may be directed or hyperlinked from the Site. Hyperlinks are included solely for your convenience, and Tapestry makes no representations or warranties with regard to the accuracy, availability, suitability or safety of information provided in such non- Tapestry sites.</p>
+<p>IN NO EVENT SHALL TAPESTRY, ITS AFFILIATES OR ANY OF ITS RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, OR CONTENT OR SERVICE PROVIDERS BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, LOSSES OR ANY OTHER DAMAGES OF WHATEVER KIND RESULTING FROM WHATEVER CAUSE, INCLUDING, BUT NOT LIMITED TO, LOSS OF USE, LOSS OF PROFITS, LOSS OF DATA, OR ANY OTHER TYPE OF DAMAGE, TANGIBLE OR INTANGIBLE IN NATURE, WHETHER IN AN ACTION UNDER THEORIES OF CONTRACT, TORT OR OTHERWISE, ARISING OUT OF OR IN ANY WAY RELATING TO THE USE OR PERFORMANCE OF THE INFORMATION ON, OR ACCESSED THROUGH, THE SITE.</p>
+<h3>GIFT CARD DISCLAIMER</h3>
+<p>Tapestry reserves the right to refuse to send or transmit gift cards, including e-gift cards that contain vulgar, obscene, abusive, profane or otherwise offensive language.</p>
+<h3>ADDITIONAL DISCLAIMER</h3>
+<p>IN NO EVENT SHALL TAPESTRY BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY OTHER DAMAGE OF WHATEVER KIND RESULTING FROM WHATEVER CAUSE, INCLUDING, WITHOUT LIMITATION, LOSS OR DAMAGE TO PROPERTY AND INJURY OR DEATH TO PERSONS, ARISING OUT OF OR IN ANY WAY RELATING TO THE USE OR PERFORMANCE OF THE INFORMATION ON, OR ACCESSED THROUGH, THE SITE.</p>
+<h2>INDEMNIFICATION</h2>
+<p>You agree to indemnify, defend and hold harmless Tapestry and its affiliates and its officers, directors, attorneys, employees, contractors, agents, licensors, service providers, subcontractors and suppliers from and against any and all losses, liabilities, expenses, damages and costs, including reasonable attorneys’ fees and court costs, arising or resulting from your use of the Site and any violation of these Terms of Use. If you cause a technical disruption of the Site or the systems transmitting the Site to you or others, you agree to be responsible for any and all losses, liabilities, expenses, damages and costs, including reasonable attorneys’ fees and court costs, arising or resulting from that disruption. Tapestry reserves the right, at its own expense, to assume exclusive defense and control of any matter otherwise subject to indemnification by you and, in such case, you agree to cooperate with Tapestry in the defense of such matter.</p>
+<h3>SEVERABILITY</h3>
+<p>If any provision of the Terms of Use is unlawful, void or unenforceable, the remaining provisions of the agreement will remain in place.</p>
+<h3>DISPUTES</h3>
+<p>Any dispute relating in any way to these Terms of Use, your visit to the Site, or to any purchase, return or other transaction with the Site shall be submitted to confidential arbitration in New York, New York. Any claim or cause of action you may have with respect to Tapestry or the Site must be commenced within one (1) year after the claim or cause of action arose. However, if you have in any manner violated or threatened to violate any Tapestry Intellectual Property right, Tapestry may seek injunctive or other appropriate relief in any state or federal court in New York, New York. You consent to exclusive jurisdiction and venue New York, New York. Any arbitration under this agreement and these Terms of Use shall be conducted under the prevailing rules of the American Arbitration Association. The arbitrator’s award shall be binding and may be entered as a judgment in any court of competent jurisdiction. To the fullest extent permitted by applicable law, any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated or representative action.</p>
+<h3>ENTIRE AGREEMENT AND ADMISSIBILITY</h3>
+<p>The Terms of Use and any policies or operating rules posted on this Site constitute the entire agreement and understanding between you and Tapestry with respect to the subject matter thereof and supersede all prior or contemporaneous communications and proposals, whether oral or written, between the parties with respect to such subject matter. A printed version of these Terms of Use shall be admissible in judicial or administrative proceedings based on or relating to use of the Site to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.</p>
+<h2>PRIVACY STATEMENT</h2>
+<p><em>Last updated January 1, 2020</em></p>
+<p>We, Tapestry Inc., are part of the Tapestry Inc. brands which include COACH, kate spade, and STUART WEITZMAN. In this Privacy Notice, we describe how we use personal information that we collect from you if you are in the U.S. and you:</p>
+<ul>
+<li>Access or use our websites: <a href="http://www.tapestry.com">tapestry.com</a>, <a href="http://www.coach.com">www.coach.com</a>, <a href="http://www.katespade.com">www.katespade.com</a>, <a href="https://www.stuartweitzman.com/home/">www.stuartweitzman.com</a> or any other website, application or online service that we operate which includes a link to this Privacy Notice;</li>
+<li>Sign up in any of our stores for any of our online services; or</li>
+<li>Contact us for customer care.</li>
+</ul>
+<p>If you are a resident of California, please also see our Supplemental California Privacy Policy at Section 9 of this Privacy Statement below.</p>
+<p>&nbsp;</p>
+<p><strong>1. What Types of Personal Information Do We Collect?</strong></p>
+<p><strong>Information You Actively Submit: </strong>If you buy our products online, register for an online account with us, use the “wish list” features of our online services, sign up for updates and marketing communications from us, participate in our sweepstakes or surveys, request specific product customizations from us, submit a product review on our website, contact us for customer service, or otherwise interact with us via our online services, we may collect personal information about you, including the following:</p>
+<ul>
+<li><strong>Contact Data</strong>, which may include your name, alias, username, postal address, email address and telephone number;</li>
+<li><strong>Order information and Account Data</strong>, which may include your Contact Data, payment card information, billing address, birth day and month, gender, nationality, and the details of the products or services you have ordered, purchased or requested from us;</li>
+<li><strong>Gift Registry, “Wish List”, and “My Closet” Data,</strong> which may include your Contact Data and the products or services you are interested in;</li>
+<li><strong>Giveaways or Sweepstakes Data</strong>, which may include your Contact Data and the details of the giveaway or sweepstakes you have voluntarily entered;</li>
+<li><strong>Social Media Data</strong>, which may include your social media interactions with us (e.g., if you “like” or “share” or “comment” on something you see on our social media platforms) and any information you actively provide to us for social media marketing purposes; and</li>
+<li><strong>Correspondence Data</strong>, which you voluntarily provide to us when booking an appointment or sign up for an event at one of our stores, making inquiries to customer care, comments on our social media, product reviews on our site, survey feedback, interests if you choose to participate in our clienteling program, and any other information you actively provide to us.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Information Passively Submitted on our Online Services: </strong>When you use our online services, we collect information from or about the computer, phone or other device on which you have installed, or from which you access, our online services, and information about your usage of our online services, including the following:</p>
+<ul>
+<li><strong>Technical Data</strong>, which includes your IP address, browser type and version, device identifier, location and time zone setting, network and/or service provider, operating system and platform, page response times, and download errors;</li>
+<li><strong>Online Usage and Interaction Data</strong>, which includes the websites you visited before and after visiting our website, products you viewed or searched for on our online services, length of visits to certain online pages, online page interaction information (such as scrolling, clicks, and mouseovers), methods used to browse away from online pages, your interactions with our marketing emails (such as whether and when you opened an email from us, and whether you clicked a link in the email or forwarded the email), and your interactions with our online ads.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Cookies and Related Technologies: </strong>We and our business partners may use cookies and other similar technologies such as pixel tags and web beacons to collect certain types of the Technical Data and Usage Data described above as permitted by applicable law. Cookies and similar technologies are placed on our site for the following purposes:</p>
+<ul>
+<li>Enable basic functioning of our website;</li>
+<li>Web analytics to improve our website (structure, features, accessibility and usability, content, or to fix any technical issues through gathering relevant technical data);</li>
+<li>Enable certain basic functions of online browsing and shopping with us (for example, save information you generated or provided on our website such as preferred items, items placed in the cart);</li>
+<li>Monitor the effectiveness of our online ads and marketing (by recording your interactions with our ads on third-party websites, our social media platforms or our marketing emails); and</li>
+<li>Learn more about your preferences and Internet browsing habits to provide you with tailored web-visit.</li>
+</ul>
+<p>For more information about the cookies and similar technologies we use, please see our How do we use Cookies in section 8 below.</p>
+<p>&nbsp;</p>
+<p><strong>No Children’s Information: </strong>Our online services are not intended for use by children under the age of 13. We do not knowingly register or otherwise collect personal information from any child under the age of 13 without the prior verifiable consent of the child’s parent or guardian.</p>
+<p>&nbsp;</p>
+<p><strong>2. How Do We Use Your Personal Information?</strong></p>
+<p>We use the following categories of personal information for the following purposes:</p>
+<ul>
+<li><strong>Contact Data </strong>to communicate with you, including about products and services you have ordered, or to send you updates about our products, services, or campaigns that may be of interest; or when you voluntarily enter to win a contest, sweepstakes or giveaway.</li>
+<li><strong>Order Information and Account Data </strong>to create and manage your account on our website (for example to enable you to access, update and save your preferences to the account); fulfill your orders, including product customization requests.</li>
+<li><strong>Gift Registry, Wish List, and Closet Data </strong>to provide you with the “gift registry”, “wish list” or “closet” features of our online services, which allow you to identify and save products that you are interested in.</li>
+<li><strong>Social Media Data</strong> to interact with you through our social media platforms; and administer social media marketing initiatives or social media advertising campaigns.</li>
+<li><strong>Correspondence Data </strong>to respond to any specific queries when you contact customer care, to provide you with updates about our products, events, or services that may be of interest, provide you with a more tailored shopping experience when you arrive to our stores, to administer booking appointments at our stores, administer sweepstakes and giveaways, or to improve our product offerings and customer experience based on your responses to a survey or product review.</li>
+<li><strong>Technical Data </strong>and <strong>Online</strong> <strong>Usage and Interaction Data</strong> to provide, maintain, monitor, secure, debug, personalize and optimize our online services to and for you; provide you with customer service for example when you use our chat function; and to generally develop and improve our products and services. We also use technical data that is automatically collected by cookies and related technologies to understand the effectiveness of our ads and social media campaigns.</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<p>We also use your personal information for the following purposes (collectively, the “<strong>General Processing Purposes</strong>”), as permitted by applicable law:</p>
+<ul>
+<li><strong>Advertising and Marketing Activities:</strong> To provide you with marketing communications, updates on special offers or promotions, products and services that we believe you may be interested in, or to administer and let you know about our sweepstakes and giveaways.</li>
+<li><strong>Compliance with Laws: </strong>To perform activities necessary to ensure compliance with applicable national, state, provincial and other applicable laws, and to respond to requests from government authorities.</li>
+<li><strong>Performance of Contracts: </strong>To perform our obligations and exercise our rights under our Terms of Use or any other agreement that you enter with us.</li>
+<li><strong>Protection of Legal Interests:</strong> To protect our legal interests, such as in the event of a complaint or dispute.</li>
+<li><strong>Research and Development: </strong>To perform research and undertake surveys to understand preferences about our products and customer experience, to improve product design and product testing;</li>
+<li><strong>Merger or Sale:</strong> In the event that we, or some or all of our assets are acquired by or merged with a third-party entity or in connection with a merger, acquisition, sale, or other change of control, we may transfer some or all of the personal information that we have collected about you to another organization as part of that transaction. If we intend to transfer your personal information in connection with such a transaction, we may proceed with notice to you, grant you an opportunity to object, or seek your consent, as permitted or required by applicable law.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>3. With Whom Do We Share Your Personal Information?</strong></p>
+<p>We may share your personal information with the following types of third parties as permitted by applicable law:</p>
+<ul>
+<li><strong>Our service providers and business partners</strong>: We rely on affiliated and unaffiliated companies, agents and contractors to assist us with the provision of Tapestry services and products to you, including:
+<ul>
+<li>Online payment and fraud prevention service providers when you make a purchase;</li>
+<li>Delivery / logistics service providers, to deliver products you have purchased;</li>
+<li>Customer care services</li>
+<li>Infrastructure and IT service providers, including cloud service providers to administer our website and your account if you register with us;</li>
+<li>Marketing, advertising and communications agencies to send you information about products and services that may be of interest to you;</li>
+<li>Providers of services related to some enhanced online features such as customer review or sizing assistance when you log in to the sizing application linked on our site;</li>
+<li>Advertising companies who help us understand the effectiveness of our ads and traffic on our site;</li>
+<li>Providers of website testing / analytics services; or</li>
+<li>External auditors and advisers;</li>
+</ul>
+</li>
+</ul>
+<p>We provide our service providers and business partners with access to your personal information so that they may provide services to us, subject to non-disclosure agreements and other data protection safeguards.</p>
+<ul>
+<li><strong>Third parties permitted or required by law</strong>: In certain circumstances, we may be required to disclose or share your personal information to comply with a legal or regulatory obligation. For example, we may be required to disclose personal information to, regulators, government agencies or to judicial or administrative authorities. We may also disclose your personal information to third parties where disclosure is both legally permissible and necessary to protect or defend our rights, for law enforcement purposes, or to enforce our contracts or protect your rights.</li>
+<li><strong>Third parties connected with business transfers</strong>: We may transfer your personal information to third parties in connection with a reorganization, restructuring, merger, acquisition or transfer of assets, provided that the receiving party agrees to treat your personal information in a manner consistent with this Privacy Notice.</li>
+</ul>
+<p>Please note our online services may contain links to and from the websites of our partners or affiliates that are not owned or operated by us. If you follow a link to any of these websites, please review the privacy policies of third party websites before you submit any personal information to them. We are not responsible for any privacy or security policies of these third party sites.</p>
+<p>&nbsp;</p>
+<p><strong>4. How do we protect your personal information?</strong></p>
+<p>We have implemented technical and organizational security measures intended to safeguard the personal information in our custody and control. Such measures include, for example, limiting access to personal information only to employees and authorized service providers who need to know such information for the purposes described in this Privacy Notice, as well as other administrative, technical and physical safeguards.</p>
+<p>For example, when you place an order on <a href="http://www.coach.com">www.coach.com</a>, <a href="http://www.katespade.com">www.katespade.com</a>, or <a href="http://www.stuartweitzman.com">www.stuartweitzman.com</a>, we use Secure Socket Layer (SSL) technology, an encryption tool that provides security while transmitting information over the Internet. We also use firewall technology, password controls, and other technological and procedural safeguards in respect of your online interactions with us.</p>
+<p>While we endeavor to protect our systems, sites, operations and information against unauthorized access, use, modification and disclosure, due to the inherent nature of the Internet as an open global communications vehicle and other risk factors, we cannot guarantee that any information, during transmission or while stored on our systems, will be absolutely safe from intrusion by others.</p>
+<p>&nbsp;</p>
+<p><strong>5. What are Your Choices and Rights?</strong></p>
+<p><strong>Unsubscribe. </strong>You may unsubscribe from our marketing emails or SMS communications. To unsubscribe from email marketing, please click the “unsubscribe” link at the bottom of any email that you receive or email us at <a href="mailto:privacy@tapestry.com">privacy@tapestry.com</a>. To unsubscribe from SMS communications, follow the instructions in the message. Please note that if you have already requested products or services when you decide to withdraw consent, there may be a short period of time for us to update your preferences and ensure that we honor your request.</p>
+<p><strong>Update, Modify or Correct Your Information. </strong>We encourage you to contact us to update or correct your personal information if it changes or if you believe that any information that we have collected about you is inaccurate. We may request information from you to honor your request, such as to ensure proper authentication or to verify the business branch of ours to which the information was provided.</p>
+<p><strong>Rights under Applicable Privacy Laws. </strong>You may have rights under applicable privacy laws, including to access or erase certain personal information that we have about you, or restrict or object to certain activities in which we engage with respect to your personal information. To submit a request to exercise any such rights, please contact us using the details in Section 7 below. If you are a resident of California, please also see our Supplemental California Privacy Policy at Section 8 below.</p>
+<p>&nbsp;</p>
+<p><strong> 6. Changes to This Privacy Notice</strong></p>
+<p>We may change, modify, add, or remove portions of this Privacy Notice at any time, in which case we will provide individuals with notice of such updates where required by applicable law and then upload the updated Privacy Notice to our website <a href="http://www.tapestry.com">www.tapestry.com</a>. You should check this page periodically for changes. Your continued use of our online services or any of the other services described in this Privacy Notice following the posting of changes to this Privacy Notice will be considered your consent to those changes.</p>
+<p>&nbsp;</p>
+<p><strong> 7. How Can You Contact Us?</strong></p>
+<p>To exercise any of your privacy rights, or if you have any questions or concerns regarding this Privacy Notice or the data processing practices outlined herein, please contact us as follows:</p>
+<ul>
+<li>by email: privacy@tapestry.com</li>
+<li>by phone:</li>
+</ul>
+<p class="customer-care">Customer Care</p>
+<p class="customer-care">877.793.4896</p>
+<ul>
+<li>by post: Tapestry Privacy Office; 10 Hudson Yards New York, NY 10001</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>8. How Do We Use Cookies?</strong></p>
+<p>In this Cookie Notice, we, Tapestry, Inc., explain how we use cookies and similar digital tracking technologies on our website and other online services.</p>
+<p>Like many other organizations, we use cookies or similar digital tracking technologies on our website for a number of purposes as set out below. Cookies (or other similar technologies) can be placed on our website by us or by third-party partners we engage for our purposes.</p>
+<p>Third-party cookies may also be deployed on our behalf on third-party websites (e.g. to measure the effectiveness of ads). We respect applicable law about cookies. In particular, we use cookies only with your authorization where this is required by applicable law. In any case, you may opt-out from cookies at any time by changing your browser settings accordingly. However, as a consequence of your opt-out, certain functions, portions or features of our website may cease working or may prevent you from fully benefiting of our online services.</p>
+<p class="lettered-list"><strong>A. Categories of cookies</strong><br>
+Some cookies are deleted when you close down your browser. These are known as session cookies. Others remain on your device until they expire or you delete them from your cache. These are&nbsp; known as persistent cookies and these types enable us to remember things about you as a returning visitor. The main categories of cookies we use include:</p>
+<p>&nbsp;</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong> Strictly necessary cookies:</strong>These cookies are essential in order to enable you to move around the website and use its features, and ensuring the security of your online transactions with us and online access to our website. Without these cookies, services&nbsp; you have asked for, such as completing a transaction, cannot be provided. These&nbsp;cookies don’t gather information about you for the purposes of marketing.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong> Performance cookies:</strong>These cookies allow us to count the number of visitors and collect information about how visitors use a web site, for instance which pages visitors go to most often, and if they get error messages from web pages. These cookies don’t collect information that identifies a visitor although they may collect the IP address of the device used to access the site. All information these cookies collect is anonymous and is only used to improve how a website works and the user experience. By using our websites you agree that we can place these types of cookies on your device, however you can block these cookies using your browser settings (please see “How to manage your cookies” section below).</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong> Functionality cookies:</strong>These cookies allow us to recognize you when you return to our website and allows the website to remember choices you make (such as your user name). They may also be used to provide services you have requested such as watching a video. The information these cookies collect is anonymized (i.e. it does not contain your name, address, account details, etc.) and they do not track your browsing activity across other websites. By using our websites you agree that we can place these types of cookies on your device, however you can block these cookies using your browser settings (please see “How to manage your cookies” section below).</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>First and third party cookies:</strong>Whether a cookie is a first or third party cookie depends on which website the cookie comes from. First party cookies are those set by or on behalf of the website visited. All other cookies are third party cookies.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>Targeting/Marketing cookies:</strong>These cookies make marketing messages more relevant to you. We or a third party advertising network may collect information relating to your browsing history and interests to tailor relevant advertising to you. The advertisement network partner may use marketing cookies to collect usage, navigational or other statistical data about your activities on our websites and mobile applications to provide you targeted advertising based upon your interests, limit the number of times you see the same advertisement on our websites or mobile applications and to help measure the effectiveness of advertising campaigns.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>Personalization cookies:</strong>Cookies may also be used on our website to personalize your shopping experience and enable you to use certain function (such as “add to wishlist”or “save”), to deliver ads which might be relevant to you, or for us to conduct internal&nbsp;testing on what works best for our customers.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p class="lettered-list">To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit www.allaboutcookies.org. Alternatively, you can search the Internet for other independent information on cookies.</p>
+<p class="lettered-list"><strong>B. Purposes of use of cookies</strong><br>
+We use cookies for the following purposes:</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Enable basic functioning of our website or to fix any technical issue through gathering relevant technical data;</li>
+<li class="list-disc-ccpa">Web analytics to improve our website (structure, features, accessibility and usability, content);</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Enable certain basic functions of online browsing and shopping with us (for example, save information you generated or provided on our website such as preferred items,items placed in the cart, billing address to save time and effort when you next return to our website or shop with us);</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Monitor the effectiveness of our online ads and marketing (by recording your interactions with our ads on third-party websites, our social media platforms or our marketing emails); and</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Learn more about your preferences and tastes to provide you with tailored advertising (you certainly don’t want to hear from us about something you are not interested in).</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p class="lettered-list" id="anchor-name"><strong>C. How to manage your cookies?</strong><br>
+The browsers of most computers, smartphones and other web-enabled devices are typically set up to accept cookies. If you wish to amend your cookie preferences for this website or any other websites, you can do this through your browser settings. Your browser’s ‘help’ function will tell you how to do this. If you do not want the benefit of cookies, there is a simple procedure to manually delete your cookies at <a href="http://www.allaboutcookies.org/manage-cookies/stop-cookies-installed.html">http://www.allaboutcookies.org/manage-cookies/stop-cookies-installed.html</a>, but please visit the links below to opt-out of marketing cookies from over 50+ major third party behavioral advertising providers:</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Network Advertising Initiative:&nbsp;<a href="http://www.networkadvertising.org/choices/"><strong>http://www.NetworkAdvertising.org/choices/</strong></a></li>
+<li class="list-disc-ccpa">Digital Advertising Alliance:&nbsp;<a href="http://www.aboutads.info/choices/"><strong>http://www.aboutads.info/choices/</strong></a></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p class="lettered-list">Please remember that cookies are often used to enable and improve certain functions on our website. If you choose to switch certain cookies off, it may affect the user experience.</p>
+<p>&nbsp;</p>
+<p><strong> 9. Supplemental California Privacy Policy</strong></p>
+<p>In this Supplemental California Privacy Policy, we, Tapestry, Inc., disclose information about our data processing practices as required by the California Consumer Privacy Act of 2018 (“<strong>CCPA</strong>”) and California law. This Supplemental California Privacy Policy is effective January 1, 2020.</p>
+<p class="lettered-list"><strong>A.Who and what information is subject to the CCPA?</strong><br>
+The CCPA protects California residents as “consumers” with respect to their personal information, although a number of exceptions apply. As a result, the Supplemental CCPA Disclosures and relevant CCPA Rights subsections below may not apply when they restrict our ability to comply with a court order or regulator with competent authority, federal, state or local laws, cooperation with law enforcement, exercise of our legal claims, or collection or use of de-identified information.</p>
+<p class="lettered-list"><strong>B.Supplemental CCPA Disclosures</strong><br>
+We have set out below the categories of personal information we have collected about California residents in the preceding 12 months and describe, for each category of personal information collected, the business or commercial purposes for which the information was collected. Each of the categories of personal information listed in the table are collected directly from consumers. Each of the categories of personal information in the table may also be shared with the following categories of third parties: (i) our Service providers and business partners, including those listed at Section 3 above (ii) Government entities as required by applicable law (iii) other recipients at your discretion or with your consent (iv) Third parties in the event of a proposed or actual business transaction involving all or any portion of our business.</p>
+<p class="lettered-list">Additional information about sales of information can be found below the table.</p>
+<p>&nbsp;</p>
+<table class="table-ccpa">
+<tbody>
+<tr style="background-color: grey;">
+<td><strong>Category of personal information:</strong></td>
+<td><strong>We collected such personal information for the following purposes:</strong></td>
+</tr>
+<tr>
+<td>Identifiers such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, or other similar identifiers.</td>
+<td>We may use this information for any of the purposes described in Section 2 above.</td>
+</tr>
+<tr>
+<td>Categories of personal information described in subdivision (e) of Section 1798.80 of the California Civil Code, including name, signature, address, telephone number, passport number, and credit card number, debit card number, or any other financial information.</td>
+<td>We use this information to process payment, fulfil your order, or process a return.</td>
+</tr>
+<tr>
+<td>Characteristics of protected classifications under California or federal law; namely, gender and age.</td>
+<td>We use this information to better understand our clientele, for example when joining our clienteling program, booking an in-store appointment or event, or signing up for a gift registry.</td>
+</tr>
+<tr>
+<td>Commercial information, including records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</td>
+<td>We use this information to fulfil your order, manage consumers’ online account with us, personalize and optimize consumers’ shopping experience with us (for example, letting you know when a favorite product is back in stock, recording certain information from past purchases which can be used in future purchases such as preferred address and favorite store locations), provide consumers with customer care, and customize a product per a consumer’s specific request.</td>
+</tr>
+<tr>
+<td>Internet or other electronic network activity information, including, but not limited to, browsing history, search history, and information regarding a consumer’s interaction with an Internet Web site, application, or advertisement.</td>
+<td>We may use this information for any of the purposes described in Section 2 above.</td>
+</tr>
+<tr>
+<td>Geolocation data.</td>
+<td>We may use this information to enable consumers to view nearby stores.</td>
+</tr>
+<tr>
+<td>Audio, electronic, visual, or similar information.</td>
+<td>We use audio, visual or similar information that you may voluntarily provide in connection with customer care inquiries or when you engage with our social media initiatives.</td>
+</tr>
+<tr>
+<td>Inferences drawn from any of the information identified in this subdivision to create a profile about a consumer reflecting the consumer’s preferences, characteristics and attitudes.</td>
+<td>We use such information to personalize and optimize consumers’ shopping experience with us, enable consumers to use our “wish list” or “add to closet” features online, tailor our marketing efforts, and develop and improve our products and services.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="lettered-list">Over the past 12 months, we also used the categories of personal information listed above as necessary to fulfil the General Processing Purposes described in Section 2 of this Notice above.</p>
+<p class="lettered-list">During the past 12 months, we shared certain categories of personal information about California residents with third parties and business partners in a manner that may constitute a “sale” under the CCPA, as described below:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>Online Promotions and Advertising</strong>: We work with one or more third parties to: (i) administer and analyze effectiveness of advertising or promotional campaigns. These third parties may place cookies on individuals’ computers to receive information about traffic to our site, browsing and purchasing activity on our online services, and (ii) From time to time third parties may help us to provide a more tailored user experience. These third parties may collect information about individuals’ internet or other similar network activity and browsing patterns, IP address, page interaction (such as scrolling, clicks and mouseovers), and information obtained via cookies with these third parties (such as the site visited before or after), and may retain rights to use some of this information for their own purposes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p class="lettered-list"><strong>C. CCPA Rights</strong><br>
+California residents have the following rights:</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>Right to Opt-out of Sale:</strong> California residents have the right to opt-out of our “sales” of their personal information. To exercise this right, email us at <a href="mailto:privacy@tapestry.com">privacy@tapestry.com</a> with “California Request to Opt-Out” in the subject line, or use the contact details in Section 7 of this Privacy Notice above.
+<ul>
+<li>In addition, to opt out from the sale of your personal information collected by targeting cookies, update your cookie preferences by clicking the “Cookie Settings” link below, and toggle the button from “active” to “inactive”. Please note that when you opt out of targeting cookies, you may see less relevant ads on other sites.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p class="cookie-settings-link"><div class="optanon-show-settings-popup-wrapper"><div class="optanon-show-settings-button optanon-toggle-display"><div class="optanon-show-settings-left"></div><div class="optanon-show-settings-middle"><a class="optanon-show-settings">Cookie Settings</a></div><div class="optanon-show-settings-right"></div></div></div></p>
+<p>&nbsp;</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa"><strong>Right to Know: </strong>California residents have the right to request that we disclose what personal information we collect, use, disclose and sell about them specifically. To submit a request to exercise this right to know, email us at <a href="mailto:privacy@tapestry.com">privacy@tapestry.com</a> with “California Request to Know”, or use the contact details in Section 7 of this Privacy Notice Please specify in your request the details you would like to know, including any specific pieces of personal information you would like to access.</li>
+<li class="list-disc-ccpa"><strong>Right to Delete:</strong> California residents have the right to request the deletion of personal information that we collect or maintain about them. To submit a request to delete personal information, email us at <a href="mailto:privacy@tapestry.com">privacy@tapestry.com</a> with “California Request to Delete” in the subject line, or use the contact details in Section 7 of this Privacy Notice Please specify in your request the personal information about you that you would like to have deleted, which can be all of your personal information as required by the CCPA.</li>
+<li class="list-disc-ccpa"><strong>Right Not to be Discriminated Against: </strong>You may not be discriminated against because you exercise any of your rights under the CCPA in violation of Cal. Civ. Code § 1798.125.
+<ul>
+<li><strong>Financial Incentives:</strong> From time to time we offer consumers who provide their email address, phone number and/or zip code to us for the purposes of receiving our marketing communications, free shipping, or sometimes a discount on an order. Consumers may opt in by entering their information when prompted upon first visiting our website. Consumers may opt out of marketing communications at any time by following the instructions in such communications. Consumers may also exercise their rights at any time by emailing privacy@tapestry.com. The financial incentive is permitted under the CCPA because it is not discriminatory in nature—it does not deny consumers their rights under the CCPA or discriminate against consumers who may have exercised their rights under the CCPA.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p class="lettered-list">If you submit a request to exercise your CCPA rights, we may ask that you provide certain information to verify your identity. If you have a password-protected account with us, we may verify your identity through our existing authentication practices for your account. The information that we ask you to provide to verify your identity will depend on your prior interactions with us and the sensitivity of the personal information at issue. We will respond to your request in accordance with the CCPA. If we deny your request, we will explain why.</p>
+<p>&nbsp;</p>
+<p class="lettered-list">You can designate an authorized agent to make a request under the CCPA on your behalf if:</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">The authorized agent is a natural person or a business entity registered with the Secretary of State of California; and</li>
+<li class="list-disc-ccpa">You sign a written declaration that you authorize the authorized agent to act on your behalf.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p class="lettered-list">If you use an authorized agent to submit a request to exercise your right to know, right to opt-out of the “sale” of your personal information, or your right to request deletion, please have the authorized agent take the following steps in addition to the steps described earlier:</p>
+<ol class="letters">
+<li style="list-style-type: none;">
+<ol class="letters">
+<li style="list-style-type: none;">
+<ul>
+<li class="list-disc-ccpa">Mail a certified copy of your written declaration authorizing the authorized agent to act on your behalf to Coach Privacy Office; 10 Hudson Yards New York, NY 10001; and</li>
+<li class="list-disc-ccpa">Provide any information we request in our response to your email to verify your identity. The information that we ask you to provide to verify your identity will depend on your prior interactions with us and the sensitivity of the personal information at issue.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p class="lettered-list">If you provide an authorized agent with power of attorney pursuant to California Probate Code sections 4000 to 4465, it may not be necessary to perform these steps and we will respond to any request from such authorized agent in accordance with the CCPA.</p>
+<p>&nbsp;</p>
+<p class="lettered-list"><strong>D. Shine </strong><strong>the Light Law </strong></p>
+<p class="lettered-list">California residents are entitled once per year to request and obtain certain information regarding our disclosure, if any, of your personally identifiable information to third parties for their direct marketing purposes during the immediately prior calendar year. To make such a request, please send an email to <a href="mailto:privacy@tapestry.com">privacy@tapestry.com</a> with your full name, email address, and postal address in your message. In response to your request, we will provide you with a notice describing the cost-free means to opt-out of our sharing your personally identifiable information with third parties with whom we do not share the same brand name, if the third party will use it for their direct marketing purposes.</p>
+<p>&nbsp;</p>
+<style>
+      table, th, td {padding: 10px;border: 1px solid black;border-collapse: collapse;}  .customer-care{padding-left: 6%;} .lettered-list{padding-left: 6%;} .cookie-settings-link{padding-bottom:10px;margin-left:50%} .table-ccpa{width:94%;margin-left:6%;} .list-disc-ccpa{list-style: disc;}</style>
+<p>&nbsp;</p>
+            </div>
+        </div>
+	</div><!-- .entry-content -->
+</article><!-- #post-328 -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+
+</div><!-- #content -->
+
+<footer id="colophon" class="footer">
+    <div class="container-fluid footer-container notfull">
+      <p> <script src="https://optanon.blob.core.windows.net/consent/8e4368fc-0b86-465d-8d2c-d354b40eb46b.js" type="text/javascript" charset="UTF-8"></script> </p>
+      <p>   <script type="text/javascript" class="Optanon-Category-4"></script></p>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-2">
+                <h4 class="header">Our Brands</h4>
+                <ul class="links">
+                    <li><a class="link" href="https://www.tapestry.com/our-brands/coach/">Coach</a>
+                    </li>
+                    <li><a class="link" href="https://www.tapestry.com/our-brands/kate-spade/">Kate
+                            Spade</a></li>
+                    <li><a class="link" href="https://www.tapestry.com/our-brands/stuart-weitzman">Stuart
+                            Weitzman</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-2">
+                <h4 class="header">About Us</h4>
+                <ul class="links">
+                    <li><a class="link" href="https://www.tapestry.com/leadership">Leadership</a></li>
+                    <li><a class="link" href="https://www.tapestry.com/investors">Investors</a></li>
+                    <li><a class="link" href="https://www.tapestry.com/investors">Governance</a></li>
+                    <li><a class="link" href="//careers.tapestry.com">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h4 class="header">Connect</h4>
+                <ul class="links">
+                    <li><a class="link" href="https://www.tapestry.com/contact">Contact</a></li>
+					                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-sm-push-8 logos">
+                <img src="https://www.tapestry.com/wp-content/themes/corp/assets/images/footer-logos-v3.svg" onerror="this.src='https://www.tapestry.com/wp-content/themes/corp/assets/images/footer-logos-v3.png'">
+            </div>
+            <div class="col-xs-12">
+                <hr class="black-thin">
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-push-6 legal privacy">
+                <p>
+                    <a href="https://www.tapestry.com/privacy-statement">Terms of Use and Privacy
+                        Statement</a><br>
+                        <a href="https://www.tapestry.com/privacy-statement#anchor-name">Do Not Sell My Personal Information</a><br>
+                    <a href="https://www.tapestry.com/california-transparency-act-uk-modern-slavery-act-statement/">California
+                        Transparency Act &amp; UK Modern Slavery Act Statement</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-6 legal">
+								                    <p>© 2020 Tapestry, Inc. TAPESTRY, COACH, KATE SPADE, STUART WEITZMAN and
+                        corresponding logos/designs are trademarks owned by subsidiaries of Tapestry, Inc.</p>
+				            </div>
+        </div>
+    </div>
+
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+<script type="text/javascript" src="https://www.tapestry.com/wp-content/themes/corp/assets/js/custom-script.js?ver=20190122"></script>
+<script type="text/javascript" src="https://www.tapestry.com/wp-content/themes/corp/js/skip-link-focus-fix.js?ver=20190122"></script>
+<script type="text/javascript" src="https://www.tapestry.com/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1da960b874","applicationID":"34655988","transactionName":"NlRTbBcEWkdWVkRYCQ8ecFsRDFtaGEVRVgNMUl5WEQRdWlJH","queueTime":0,"applicationTime":171,"atts":"GhNQGl8eSUk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>

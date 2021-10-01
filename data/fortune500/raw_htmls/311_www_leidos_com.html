@@ -1,0 +1,3033 @@
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " style="" class=" no-touchevents details js" lang="en"><head>
+    <meta charset="utf-8"><script type="text/javascript" async="" src="//siteimproveanalytics.com/js/siteanalyze_6012907.js"></script><script src="https://s.yimg.com/wi/ytc.js" async=""></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://production-cdn.lift.acquia.com/LEIDOS/lift-capture.min.js"></script><script type="text/javascript" async="" src="https://cdn.lift.acquia.com/lift-capture-bootstrap.min.js"></script><script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflYl14TA/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script async="" src="//s.swiftypecdn.com/install/v2/st.js"></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-W7RRQW4" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-139ccfcd9062b353000",applicationID:"525689437"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta itemprop="acquia_lift:content_title" content="Privacy Statement">
+<meta itemprop="acquia_lift:content_type" content="page">
+<meta itemprop="acquia_lift:page_type" content="node page">
+<meta itemprop="acquia_lift:context_language" content="en">
+<meta itemprop="acquia_lift:content_section" content="">
+<meta itemprop="acquia_lift:content_keywords" content="">
+<meta itemprop="acquia_lift:post_id" content="6371">
+<meta itemprop="acquia_lift:content_uuid" content="1caa3287-e2a4-46bc-8f82-719b3321066b">
+<meta itemprop="acquia_lift:published_date" content="1533152710">
+<meta itemprop="acquia_lift:persona" content="">
+<meta itemprop="acquia_lift:engagement_score" content="1">
+<meta itemprop="acquia_lift:account_id" content="LEIDOS">
+<meta itemprop="acquia_lift:site_id" content="leidos_prod">
+<meta itemprop="acquia_lift:contentOrigin" content="">
+<meta itemprop="acquia_lift:liftAssetsURL" content="https://builder.lift.acquia.com">
+<meta itemprop="acquia_lift:liftDecisionAPIURL" content="https://us-east-1-decisionapi.lift.acquia.com">
+<meta itemprop="acquia_lift:bootstrapMode" content="auto">
+<meta itemprop="acquia_lift:contentReplacementMode" content="trusted">
+<script src="https://builder.lift.acquia.com/lift.js" async=""></script>
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"":"Leidos","userUid":0});</script>
+<meta name="title" content="Privacy Statement | Leidos">
+<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="Leidos">
+<link rel="canonical" href="https://www.leidos.com/privacy">
+<meta property="og:type" content="article">
+<meta name="description" content="Leidos Privacy Statement. You should consult this privacy statement regularly for any changes.">
+<meta name="twitter:title" content="Privacy Statement">
+<meta name="twitter:site" content="@leidosinc">
+<meta property="og:url" content="https://www.leidos.com/privacy">
+<meta property="og:title" content="Privacy Statement">
+<meta name="twitter:url" content="https://www.leidos.com/privacy">
+<meta property="article:publisher" content="https://www.facebook.com/LeidosInc/">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://www.leidos.com/privacy"
+        }
+    ]
+}</script>
+<link rel="shortcut icon" href="/themes/custom/leidos/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="revision" href="https://www.leidos.com/privacy">
+<script src="/sites/g/files/zoouby166/files/google_tag/google_tag.script.js?q5wvto"></script>
+<script>(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+_st('install','6BQHvsvmsi-kr7qr4YWh','2.0.0');</script>
+
+    <title>Privacy Statement | Leidos</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/zoouby166/files/css/css_peEmmnxjDvBD5rJjxFkg0KbAuQ1UlWiLKhdskZZtN3I.css?q5wvto">
+<link rel="stylesheet" media="all" href="/sites/g/files/zoouby166/files/css/css_v6cYpcB53EWLWKFcW6kkfAGpWZFUO4s8xwReg6G-s2s.css?q5wvto">
+
+              <script type="text/javascript" src="//assets.adobedtm.com/0257477ca00a16f359688bb454d3cb3198324ca4/satelliteLib-cda8fce1de1cb34e4b527f1a3cdeed9c7c39e6c8.js"></script>
+        
+    <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/zoouby166/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+<script src="/sites/g/files/zoouby166/files/js/js_B7pS3ddmNLFYOJi3j28odiodelMu-EhaOeKlHZ8E6y0.js"></script>
+
+  <script src="https://assets.adobedtm.com/0257477ca00a16f359688bb454d3cb3198324ca4/s-code-contents-8090272ad8a310c47bb9d085c6463aefba6c12e7.js"></script><script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/countries/EU?callback=?"></script><link rel="stylesheet" type="text/css" href="//s.swiftypecdn.com/assets/new_embed-20cee04df5c6e7e2687598f076a0147d.css"><style type="text/css">.st-install-6BQHvsvmsi-kr7qr4YWh .st-ui-result .st-ui-type-heading { color:#850F88 !important }
+.st-install-6BQHvsvmsi-kr7qr4YWh .st-ui-result em {font-style:normal; font-weight:bold; background-color:#f6fcfe !important}</style><script src="https://cdn.cookielaw.org/consent/7aa0b015-dca1-4e6f-95ef-401fb8c42bd9.js" charset="utf-8" async=""></script><link type="text/css" href="https://cdn.cookielaw.org/skins/5.7.0/default_flat_bottom_two_button_black/v2/css/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color: #DBDBDB !important }#optanon ul#optanon-menu li.menu-item-selected { background-color: #FFFFFF !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #201747 !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #201747 !important; border-color: #201747 !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle button { color: #ffffff !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle button { color: #ffffff !important }#optanon #optanon-popup-bottom { background-color: #DBDBDB !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #DBDBDB !important }.optanon-alert-box-wrapper { background-color:#BDBDBD !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color:#201747 !important }div {
+    word-wrap: normal;
+} 
+#optanon fieldset input:checked+label:after {
+    top: 2px;
+}
+ 
+#optanon *, #optanon *:before, #optanon *:after {
+    border: unset;
+    padding: 0;
+}
+.optanon-alert-box-wrapper .banner-content .banner-policy-link {
+    text-decoration: underline !important;
+    color: gray;
+}</style><script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/866239788/?random=1582060295471&amp;cv=9&amp;fst=1582060295471&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=9&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2wg250&amp;sendb=1&amp;ig=0&amp;frm=0&amp;url=https%3A%2F%2Fwww.leidos.com%2Fprivacy&amp;tiba=Privacy%20Statement%20%7C%20Leidos&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+  <body class="path-node node--type-page"><div class="optanon-alert-box-wrapper hide-accept-button " role="alertdialog" aria-labelledby="alert-box-title" aria-describedby="alert-box-message" style="bottom: -85.4134px;"><div class="optanon-alert-box-bottom-top"><div class="optanon-alert-box-corner-close"><button class="optanon-alert-box-close banner-close-button" aria-label="Close" title="Close" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Banner Close Button');" tabindex="3"></button></div></div><div class="optanon-alert-box-bg"><div class="optanon-alert-box-logo"> </div><div class="optanon-alert-box-body"><p class="optanon-alert-box-title legacy-banner-title" id="alert-box-title" role="heading" aria-level="2">Cookie Notice</p><p class="banner-content" id="alert-box-message">We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. We also share information about your use of our site with our social media, advertising and analytics partners. &nbsp;   <a href="https://www.leidos.com/privacy" class="banner-policy-link" tabindex="1" aria-label="Cookie Policy">Cookie Policy</a></p></div><div class="optanon-clearfix"></div><div class="optanon-alert-box-button-container"><div class="optanon-alert-box-button optanon-button-close"><div class="optanon-alert-box-button-middle"><button class="optanon-alert-box-close" aria-label="Close">Close</button></div></div><div class="optanon-alert-box-button optanon-button-more"><div class="optanon-alert-box-button-middle"><button class="optanon-toggle-display cookie-settings-button" title="Cookie Settings" aria-label="Cookie Settings" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Banner Open Preferences');" tabindex="2">Cookie Settings</button></div></div></div><div class="optanon-clearfix optanon-alert-box-bottom-padding"></div></div></div><div id="optanon" class="modern"><div id="optanon-popup-bg"></div><div id="optanon-popup-wrapper" role="dialog" aria-modal="true" tabindex="-1" lang="en-US"><div id="optanon-popup-top"><button onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Close Button');" aria-label="Close" class="optanon-close-link optanon-close optanon-close-ui" title="Close"><div id="optanon-close" style="background: url(https://cdn.cookielaw.org/skins/5.7.0/default_flat_bottom_two_button_black/v2/images/optanon-pop-up-close.png);width:34px;height:34px;"></div></button></div><div id="optanon-popup-body"><div id="optanon-popup-body-left"><div id="optanon-popup-body-left-shading"></div><div id="optanon-branding-top-logo" style="background-image: url('https://cdn.cookielaw.org/logos/5922/5922:leidos.com/2000px-Leidos_logo_2013.svg.png') !important;"></div><ul id="optanon-menu" aria-label="Navigation Menu" role="tablist"><li class="menu-item-on menu-item-about" title="Your Privacy"><p class="preference-menu-item"><button role="tab" aria-selected="true" aria-controls="Your-Privacy" id="Your-Privacy">Your Privacy</button></p></li><li class="menu-item-necessary menu-item-on" title="Strictly Necessary Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Strictly-Necessary-Cookies" id="Strictly-Necessary">Strictly Necessary Cookies</button></p></li><li class="menu-item-on menu-item-performance" title="Performance Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Performance-Cookies" id="Performance-Cookies">Performance Cookies</button></p></li><li class="menu-item-on menu-item-functional" title="Functional Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Functional-Cookies" id="Functional-Cookies">Functional Cookies</button></p></li><li class="menu-item-on menu-item-advertising" title="Targeting Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="Targeting-Cookies" id="Targeting-Cookies">Targeting Cookies</button></p></li><li class="menu-item-moreinfo menu-item-off" title="More Information"><p class="preference-menu-item"><a target="_blank" aria-label="More Information" href="http://www.leidos.com/privacy" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Cookie Policy');">More Information</a></p></li></ul></div><div><div id="optanon-popup-body-right"><p role="heading" aria-level="2" class="legacy-preference-banner-title h2" aria-label="Privacy Preference Center">Privacy Preference Center</p><div class="vendor-header-container"><p class="header-3" role="heading" aria-level="3"></p><div id="optanon-popup-more-info-bar"><div class="optanon-status"><div class="optanon-status-editable"><form><span class="fieldset"><p><input type="checkbox" value="check" id="chkMain" checked="checked" class="legacy-group-status optanon-status-checkbox"><label for="chkMain">Active</label></p></span></form></div><div class="optanon-status-always-active optanon-status-on"><p>Always Active</p></div></div></div></div><div class="optanon-main-info-text" role="tabpanel"></div></div><div class="optanon-bottom-spacer"></div></div></div><div id="optanon-popup-bottom"> <a href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener"><div id="optanon-popup-bottom-logo" alt="OneTrust Website" style="background: url(https://cdn.cookielaw.org/skins/5.7.0/default_flat_bottom_two_button_black/v2/images/cookie-collective-top-bottom.png);width:155px;height:35px;" title="powered by OneTrust"></div></a><div class="optanon-button-wrapper optanon-save-settings-button optanon-close optanon-close-consent"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Save Settings" aria-label="Save Settings" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Save Settings');">Save Settings</button></div><div class="optanon-white-button-right"></div></div><div class="optanon-button-wrapper optanon-allow-all-button optanon-allow-all" style="display: none;"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Allow All" aria-label="Allow All" onclick="Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Preferences Allow All');">Allow All</button></div><div class="optanon-white-button-right"></div></div></div></div></div>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7RRQW4" height="0" width="0" title="Google Tag Manager"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div id="page-wrapper" class="clearfix">
+  <div id="page" class="clearfix with--header without--menus without--preface-first without--preface-second without--preface-third without--preface-fourth without--highlighted with--content without--sidebar-first without--sidebar-second without--postscript-first without--postscript-second without--postscript-third without--postscript-fourth with--footer">
+
+    <header id="header-outer-wrapper" class="outer-wrapper clearfix without-secondary-menu" role="banner" aria-label="Primary menu">
+      <div id="header-layout" class="header-layout with--header without--menus inner-wrapper clearfix">
+          <div class="region--header region region-header" data-swiftype-index="false">
+    <div id="block-leidos-branding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+
+  <div id="site-branding">
+                  <div id="logo">
+          <a href="https://www.leidos.com/" title="Home" rel="home" class="site-logo" target="_self">
+            <img src="/themes/custom/leidos/logo.svg" alt="Home" typeof="foaf:Image">
+
+          </a>
+        </div>
+            <button class="toggle" data-target="main-menu">
+        <span class="ico ico-bars" aria-label="menu-toggle"></span>
+      </button>
+    <a href="#searchModal" aria-label="searchModal" data-toggle="modal" class="ico ico-search"><span class="sr-only">Search</span></a>
+      
+    </div>
+  </div>
+<div id="block-megamenulatest" data-block-plugin-id="leidos_megamenu:latest" class="block block-leidos-menus block-leidos-megamenulatest">
+  
+    
+
+  <div class="block-content">
+      <div class="main-menu">
+    <nav class="utility" aria-label="utility navigation">
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/company/global" target="_self" data-drupal-link-system-path="node/1476">Global</a>
+              </li>
+                <li class="menu-item">
+        <a href="/employees" target="_self" data-drupal-link-system-path="node/2206">Employees</a>
+              </li>
+                <li class="menu-item">
+        <a href="/news" target="_self" data-drupal-link-system-path="node/2406">News</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://investors.leidos.com" target="_blank">Investors</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contact" target="_self" data-drupal-link-system-path="node/6431">Contact</a>
+              </li>
+        </ul>
+  
+
+
+    </nav>
+    <div class="main">
+        
+<nav id="mainNav" class="leidos-megamenu" role="navigation" aria-label="Main navigation">
+      <ul class="field field--name-field-megamenu-links field--type-entity-reference-revisions field--label-hidden full" role="menubar">
+      <li class="list-item parent" role="menuitem" tabindex="0">      
+  <div><a href="/company">Company</a></div>
+
+          <div class="tier-2 bg-ang-gray dropdown">
+        <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/our-business" data-lift-slot="524831e7-a2e0-429f-b085-c07d1a566b8c" data-lift-slot-valid="true" class="lift-static" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/524831e7-a2e0-429f-b085-c07d1a566b8c" data-content-barrier="trusted" data-lift-for-slot="524831e7-a2e0-429f-b085-c07d1a566b8c">Our Business</a></div>
+
+          <div class="tier-3">
+        <div class="col-1 lift-static" data-lift-slot="861831d7-b130-4c3c-b717-0875595a3dc7" data-lift-slot-valid="true" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/861831d7-b130-4c3c-b717-0875595a3dc7" data-content-barrier="trusted" data-lift-for-slot="861831d7-b130-4c3c-b717-0875595a3dc7">
+          <p class="cta lead">
+  We embrace and solve some of the world's toughest challenges. 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/our-business/civil">Civil</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/our-business/defense">Defense</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/our-business/health">Health</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/our-business/intelligence">Intelligence</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/our-business/leidos-innovations-center">Leidos Innovations Center (LInC)</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-5821">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/IMG-mega-menu-50th-ebook.jpg?itok=V-Bfr8Iw" alt="kaleidoscope design with images of employees, airplanes, and ships" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-5821" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Now available for download, "A Kaleidoscope of Innovation: The Story of Leidos" is an enhanced eBook optimized for iBooks.
+</p>
+
+  <p><a href="https://itunes.apple.com/us/book/id1446485377" aria-labeledby="meganav-featured-text-5821" target="_blank">Download the Book</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/mission-vision-and-values">Mission, Vision and Values</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Everything we do is built on a commitment to do the right thing for our customers, our people, and our community.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/mission-vision-and-values#mission">Mission</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/mission-vision-and-values#vision">Vision</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/mission-vision-and-values#values">Values</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-5801">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMAGE-opioid-epidemic.jpg?h=77ff26b0&amp;itok=s4AMi3lY" alt="man sitting on bleachers holding soccer ball" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-5801" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Let’s come together and talk about the changes that are needed
+</p>
+
+  <p><a href="/insights/opioid-epidemic-call-action" aria-label="Read more about The Opioid Epidemic: A call to action" aria-labeledby="meganav-featured-text-5801">The Opioid Epidemic: A Call to Action</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/leadership">Leadership</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Meet the executive team responsible for leading our 36,000 forward-thinking employees toward shared success.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/krone">Roger Krone</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/reagan">James Reagan</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/engola">Paul Engola</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/stevens">Roy Stevens</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/hull">Steve Hull</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/howe">Jerry Howe</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/brown">Michele Brown</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/carlini">Jim Carlini</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/cantor">James Cantor</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/dua">Kamal Dua</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/moos">Jim Moos</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/fasano">Gerry Fasano</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/schmanske">Vicki Schmanske</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/scholl">Jonathan Scholl</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership/king">David King</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/leadership#bod">Board of Directors</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-5841">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMAGE-krone-featured.jpg?itok=Gf3Ps-zq" alt="Roger Krone" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-5841" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Meeting the challenges of an uncertain world
+</p>
+
+  <p><a href="http://www.politico.com/sponsor-content/2017/10/meeting-the-challenges-of-an-uncertain-world" aria-labeledby="meganav-featured-text-5841" target="_blank">An interview with CEO Roger Krone</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/history">History</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Leidos has a long history of innovative problem-solving and customer service, dating all the way back to 1969 when Dr. J. Robert Beyster founded his "crazy little company". 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/history">Explore our History</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/node/8726">Dr. J. Robert Beyster</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://itunes.apple.com/us/book/id1446485377" target="_blank">A Kaleidoscope of Innovation: The Story of Leidos </a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-5781">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/Dr_Beyster_1969.jpg?h=5716b04c&amp;itok=aEUMQ8M7" alt="Dr. Beyster" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-5781" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Almost 50 years ago, visionary scientist J. Robert Beyster, Ph.D. founded the company that evolved into Leidos.
+</p>
+
+  <p><a href="/company/history/our-founder" aria-label="Read more about Our Founder" aria-labeledby="meganav-featured-text-5781">Read More</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability">Responsibility &amp; Sustainability</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  We're equally committed to using our time and resources to support people, enrich communities, and protect the environment.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/ceo-message">CEO Message</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/executive-summary">Executive Summary</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/community">Community</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/environment">Environment</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/people">People</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/political-activities">Political Activities</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/supplier-and-small-business-relationships">Suppliers and Small Business Relationships</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/about-our-reporting">About our Reporting</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/responsibility-and-sustainability/gri-g4-index">GRI™ Standards</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6801">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMAGE-Leidos-CEO-Roger-Krone.png?itok=hzg1v6jU" alt="Leidos CEO Roger Krone" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6801" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Roger Krone Honored with CR Magazine 2017 Responsible CEO of the Year Award
+</p>
+
+  <p><a href="/insights/leidos-chief-executive-officer-roger-krone-honored-cr-magazine-2017-responsible-ceo-year" aria-label="Read more about Leidos Chief Executive Officer Roger Krone Honored with CR Magazine 2017 Responsible CEO of the Year Award" aria-labeledby="meganav-featured-text-6801">Read More</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/ethics-and-compliance">Ethics &amp; Compliance</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  We have a strong history of performance that rests on our foundation of integrity.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/ethics-and-compliance">File a Report </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/ethics-and-compliance#history">History of Ethics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/ethics-and-compliance#ethicsprogramstructure">Ethics Program Structure</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/ethics-and-compliance#code">Code of Conduct </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/privacy">Privacy Statement</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6806">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/GS0I2426_large%20%281%29.jpg?itok=iWv0D10G" alt="four coworkers sitting at a table talking while pointing at a laptop screen" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6806" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  We take every report seriously and have zero tolerance for retaliation of any kind against individuals who, in good faith, raise questions or report concerns.
+</p>
+
+  <p><a href="https://leidos.ethicspoint.com/" aria-labeledby="meganav-featured-text-6806" target="_blank">File a Report</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/rankings-and-awards">Rankings &amp; Awards</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Our innovative approach and the services and solutions we deliver frequently earn Leidos recognition from our industry and the media.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/rankings-and-awards#enterprise">Enterprise Awards</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/rankings-and-awards#defense">Defense Awards</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/rankings-and-awards#civil">Civil Awards</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/rankings-and-awards#health">Health Awards</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6811">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/awards_icons.png?h=74b88c8f&amp;itok=AFFxACJz" alt="three award icons" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6811" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  A frequent honoree on the corporate awards circuit, Leidos is proud of its many industry-specific and corporate-level achievements.
+</p>
+
+  <p><a href="/insights/cue-applause-its-awards-season-leidos" aria-label="Read more about Cue the applause: It’s awards season at Leidos" aria-labeledby="meganav-featured-text-6811">Read More</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/partners">Partners</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  The Leidos Alliance Partner Network emphasizes connections through partnership and collaboration that drive innovation, advance technology and build efficiency. 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/partners#corporatestrategicpartners">Corporate Strategic Partners</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/partners#technologyintegrationpartners">Technology Integration Partners</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/partners#emergingtechnologypartners">Emerging Technology Partners</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6816">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-02/MM%20edit.png?itok=H2k3LVsU" alt="D.C. United player Wayne Rooney with soccer ball mid-game with Leidos banner in background" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6816" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos partnership with MLS club D.C. United takes the field again.
+</p>
+
+  <p><a href="/dc-united" aria-label="Read more about D.C. United " aria-labeledby="meganav-featured-text-6816">Why we're in Black-and-Red's corner</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/subsidiaries">Subsidiaries</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Our wholly-owned and majority-owned subsidiaries attract and retain top talent motivated to deliver results for clients.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#dynetics">Dynetics, Inc.</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries/leidos-biomedical-research">Leidos Biomedical Research, Inc.</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#leidos-digital-solutions">Leidos Digital Solutions</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#beontra">BEONTRA</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#qtc">QTC</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#engineering">Leidos Engineering, LLC</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries/systems-made-simple">Systems Made Simple</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries#varec">Varec, Inc.</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/subsidiaries/aranea-solutions">Aranea Solutions, Inc.</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6866">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/FEATURE-2170x1240_CHQ.jpg?h=b211a1f1&amp;itok=b9DBlPlN" alt="Dynetics Campus" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6866" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos completes acquisition of Dynetics, expanding company’s portfolio with new offerings and technical capabilities.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/leidos-completes-acquisition-dynetics-expanding-companys-portfolio-new-offerings" aria-labeledby="meganav-featured-text-6866" target="_blank">View Release </a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/contract-vehicles">Contract Vehicles</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Whether you’re a potential government customer or a prospective supplier, through this listing you can find our technical and professional services under pre-negotiated terms and conditions.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/contract-vehicles#governmentwide-multiple-agency-contracts-macs-idiqs">Governmentwide MACs &amp; IDIQs</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/contract-vehicles#gsa-schedules">GSA Schedules</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/contract-vehicles#agency-specific-idiqs">Agency Specific IDIQs</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/contract-vehicles#international">International</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6891">
+            
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/company/global">Global</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  With more than 400 locations in 30 countries, we continue to expand our presence and strengthen our international relationships.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global/uk-europe">United Kingdom &amp; Europe</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global/australia">Australia</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global/israel">Israel</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global#middleeast">Middle East</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global#canada">Canada</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6906">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/IMG-mega-menu-uk-to-south-sudan-map.jpg?h=77982996&amp;itok=bN6VtFga" alt="map pointing out the UK, Oman, Kenya, and South Sudan" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6906" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Transporting supplies across 3 continents to help set up a field hospital in South Sudan
+</p>
+
+  <p><a href="/insights/transporting-supplies-across-3-continents-help-set-field-hospital-south-sudan" aria-label="Read more about Transporting supplies across 3 continents to help set up a field hospital in South Sudan" aria-labeledby="meganav-featured-text-6906">Read Case Study</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+</ul>
+
+      </div>
+      </li>
+      <li class="list-item parent" role="menuitem" tabindex="0">      
+  <div><a href="/markets">Markets</a></div>
+
+          <div class="tier-2 bg-ang-gray dropdown">
+        <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/aviation">Aviation</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Bringing efficiency and modernization to the global civil aviation market.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation/air-traffic-management">Air Traffic Management</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation#faa">ANSP Professional Services</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation/intelligent-approach">Intelligent Approach</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation#forecasting">Scenario Planning &amp; Forecasting</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation/airport-wide-collaboration-integration-and-optimization">Airport Operational Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation/passenger-flow-measurement">Passenger Flow Measurement</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/products/reveal">Baggage Inspection Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation#varec">FODD &amp; Fuels Management</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/products/vacis">Cargo &amp; Vehicle Inspection Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/aviation#FlightManagement">Flight Management &amp; Briefing</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6621">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/insight-overview/2019-08/NASA%20UAM%20Grand%20Challenge.jpg?h=55b9d52c&amp;itok=HrCM4Lz5" alt="skyline of city with drones flying around buildings" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6621" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  The urban air mobility (UAM) market is projected to grow to nearly $8 billion over the next decade.
+</p>
+
+  <p><a href="/insights/national-aviation-day-and-unmanned-conquest-air" aria-label="Read more about National Aviation Day and the unmanned conquest of the air" aria-labeledby="meganav-featured-text-6621">How UAM Will Flourish</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/defense">Defense</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Science for a safer world 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/defense#airborne">Airborne</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/autonomy-and-autonomous-solutions">Autonomy &amp; Autonomous Solutions</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/command-control">Command &amp; Control</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/defense#cyber">Cyber</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/defense#digital">Digital Modernization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/defense#operations">Operations &amp; Logistics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/defense#training">Training</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6616">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/FEATURE-2170x1240_CHQ_0.jpg?h=63323230&amp;itok=zndNIVet" alt="Dynetics Campus" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6616" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos completes acquisition of Dynetics, expanding company’s portfolio with new offerings and technical capabilities.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/leidos-completes-acquisition-dynetics-expanding-companys-portfolio-new-offerings" aria-labeledby="meganav-featured-text-6616" target="_blank">View Release </a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/energy">Energy</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Trusted expertise for energy projects and programs
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/doe">Site Management &amp; Operations</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/power-delivery">Power Delivery</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/integrated-energy-management">Integrated Energy Management</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/project-finance-development">Project Finance &amp; Development</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/digital-utilities">Digital Utilities</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/energy/manufacturing-systems">Manufacturing Systems</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7011">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2019-05/okc_university.png?h=a1ef4070&amp;itok=ptlBBhgK" alt="Oklahoma City University building" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7011" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Our tailored steam optimization strategy helped Oklahoma City University achieve significant energy improvements and cost savings.
+</p>
+
+  <p><a href="https://learn.leidos.com/oklahoma-city-university-case-study" aria-labeledby="meganav-featured-text-7011" target="_blank">Read The Case Study</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/government">Government</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Collaborating with government agencies to help citizens thrive
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#federal-cybersecurity">Cybersecurity </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#digital">Digital Modernization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#health-it">Health IT</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#forms">Forms Processing </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#operations">Operations &amp; Logistics </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/government#mission">Mission Software Systems</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6976">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-12/wv_fbi_building.jpg?itok=uWQCHNml" alt="FBI building in Clarksburg, West Virginia" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6976" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos continues to win big with its West Virginia-centric strategy
+</p>
+
+  <p><a href="/insights/leidos-wins-big-using-west-virginia-centric-strategy" aria-label="Read more about Leidos wins big using West Virginia-centric strategy" aria-labeledby="meganav-featured-text-6976">Learn About Our Work in the Mountain State</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/health">Healthcare</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Building a healthy connection between technology and people
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/health/hospital-systems">Hospital Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/health/federal-health">Federal Health</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/military-health">Military Health</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/health/veteran-health">Veteran Health</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7061">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-02/FEATURE-Healthcare-digital-transformation-2170x1240.jpg?h=0d582804&amp;itok=XK4tuMQd" alt="Healthcare professional using tablet" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7061" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Taking a strategic approach to experience true digital transformation in healthcare
+</p>
+
+  <p><a href="https://learn.leidos.com/rs/059-GQO-645/images/WP-Digital-Transformation-Leidos-201910.pdf" aria-labeledby="meganav-featured-text-7061" target="_blank">Read White Paper</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/homeland">Homeland</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Integrating, applying, and advancing IT to tackle the ever-advancing challenges of protecting our borders.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#biometrics">Biometrics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#mission-cyber">Mission Cyber and Network Defense</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems">Integrated Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#digital">Digital Modernization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#data-analytics">Data Analytics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#intelligence-linguistics">Intelligence &amp; Linguistic Services</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#cbrn-defense">CBRN Defense</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#human-capital">Human Capital Services</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/homeland#complex-logistics">Complex Logistics</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7021">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/insight-overview/2019-06/Boston_Marathon.jpeg?h=a4975088&amp;itok=JdtWTpZb" alt="runners at the Boston Marathon on the street" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7021" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  A trio of environmental experts worked with the EPA to keep the Boston Marathon safe.
+</p>
+
+  <p><a href="/insights/air-scientists-help-keep-boston-marathon-safe" aria-label="Read more about Air scientists help keep Boston Marathon safe" aria-labeledby="meganav-featured-text-7021">Learn About Their Contribution</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/intelligence">Intelligence</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Rapidly transforming vast and varied data into actionable intelligence
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/intelligence#intelligence-community-engineering">Intelligence Community Engineering</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/intelligence#collection-analysis-reporting">Collection, Analysis &amp; Reporting</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/intelligence#operational-support-reporting">Operational Support &amp; Training</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6981">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/FEATURE-2170x1240_CHQ_2.jpg?h=2c4012a4&amp;itok=Kf6o5c0p" alt="Dynetics Campus" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6981" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos completes acquisition of Dynetics, expanding company’s portfolio with new offerings and technical capabilities.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/leidos-completes-acquisition-dynetics-expanding-companys-portfolio-new-offerings" aria-labeledby="meganav-featured-text-6981" target="_blank">View Release</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/science">Science</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Groundbreaking scientific research and environmental management best practices that make headways in the defense, civilian and health markets
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/science/life-sciences">Life Sciences</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#autonomous" target="_blank">Autonomous Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#airborne-and-ground-isr" target="_blank">Airborne &amp; Ground ISR</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/command-control">Command and Control</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#electronic-warfare" target="_blank">Electronic Warfare</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#environmental-science" target="_blank">Environmental Science</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#modeling" target="_blank">Modeling, Simulation &amp; Training</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/sensors">Sensors</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://www.leidos.com/markets/science#specialty-sciences" target="_blank">Specialty Sciences</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7036">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/GDC_project_team.jpg?h=06e56e46&amp;itok=IQXLzHkD" alt="three coworkers standing outside office building" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7036" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos Biomedical Research staff are helping to advance Genomic Data Commons capabilities for cancer research.
+</p>
+
+  <p><a href="/insights/leidos-biomedical-research-staff-advance-genomic-data-commons-capabilities" aria-label="Read more about Leidos Biomedical Research staff advance Genomic Data Commons capabilities" aria-labeledby="meganav-featured-text-7036">Read Their Research</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/space">Space</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  IT, engineering, and science expertise to execute on the most critical of exploration missions
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/space#nasa">NASA</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/space#defense">Defense</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/space#commercial">Commercial</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-6986">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/FEATURE-2170x1240_CHQ_1.jpg?h=3769236f&amp;itok=xTUzqb6L" alt="Dynetics Campus " typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-6986" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos completes acquisition of Dynetics, expanding company’s portfolio with new offerings and technical capabilities.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/leidos-completes-acquisition-dynetics-expanding-companys-portfolio-new-offerings" aria-labeledby="meganav-featured-text-6986" target="_blank">View Release</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/markets/surface-transportation">Surface Transportation</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Engineering and research in support of next generation transportation
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#connected-vehicles">Connected &amp; Automated Vehicles</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#human-factors-research">Human Factors Research</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#analysis-modeling-simulation">Analysis, Modeling &amp; Simulation</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#transportation-safety">Transportation Safety</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#transportation-operations">Operations </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#transportation-asset-management">Asset Management</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#e-construction-accelerated-construction">Accelerated &amp; e-Construction  </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#freight">Freight</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/markets/surface-transportation#research-facility-management">Research Facility Management</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7026">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMAGE-ConnectedCars-MegaM.jpg?h=046436b0&amp;itok=cCylGgUx" alt="vehicles from behind all lined up with break lights visible" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7026" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Connected Vehicle Systems: The Next Generation
+</p>
+
+  <p><a href="/insights/connected-vehicle-systems-next-generation" aria-label="Read more about Connected vehicle systems: The next generation" aria-labeledby="meganav-featured-text-7026">Read Article </a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+</ul>
+
+      </div>
+      </li>
+      <li class="list-item parent" role="menuitem" tabindex="0">      
+  <div><a href="/competencies">Competencies</a></div>
+
+          <div class="tier-2 bg-ang-gray dropdown">
+        <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/cyber">Cyber</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Comprehensive support for your cybersecurity journey
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber/packit">Security Operations Center</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber/insider-threat">Insider Threat</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber#cyber-analytics">Cyber Analytics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber#information-assurance">Information Assurance</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber#rmf">Risk Management Framework</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/cyber#ate">Accredited Testing &amp; Evaluation</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7126">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2019-02/wapo_cyber_trenches.PNG?h=8a611a72&amp;itok=LAyw47RT" alt="cartoon hand using a tablet" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7126" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Deep in the trenches of cyber warfare, the American government and top cybersecurity contractors defend the world’s most heavily attacked networks.
+</p>
+
+  <p><a href="https://www.washingtonpost.com/brand-studio/leidos/inside-the-cyber-trenches/" aria-labeledby="meganav-featured-text-7126" target="_blank">Learn How We Help Secure Assets</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering">Data Science &amp; Engineering</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Extensive quantitative analytics and visualization methods to exploit data and discover creative benefits with actionable decisions
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering/data-analytics">Data Analytics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering#engineering">Data Engineering</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering#visualization">Data Visualization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights/real-time-predictive-analytics-point-care">Predictive Analytics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights/utility-asset-management-evolving-three-tools-utilities-need">Data Mining and Analysis</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/artificial-intelligence-machine-learning">AI and Machine Learning</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering#modeling">Behavior Modeling</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/data-science-and-engineering/healthcare-analytics">Healthcare Analytics</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7136">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2019-04/MM-IMAGE-Q%26AI.jpg?h=2d2e8d0c&amp;itok=5V-HI_g8" alt="Q &amp; AI Conversation about AI &amp; Machine Learning " typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7136" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  How does AI improve combat readiness?
+</p>
+
+  <p><a href="/insights/how-does-artificial-intelligence-improve-combat-readiness" aria-label="Read more about How does AI improve combat readiness?" aria-labeledby="meganav-featured-text-7136">Explore AI Technology</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/digital-modernization">Digital Modernization</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Secure, user-centric Information Technology that helps transform your organization's ideas into action
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#userengagement">User Engagement</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#digitalworkplace">Digital Workplace</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#mobility">Mobility</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/digital-modernization/cloud">Cloud</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#applicationmodernization">Application Modernization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#datacentermodernization">Data Center Modernization</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/enterprise-it-modernization#devops">SecDevOps</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/digital-modernization/network-modernization">Network Modernization</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7141">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-07/IMG-2800x1320-Modernize-the-mission.jpg?h=1b9c6755&amp;itok=D_Dvq9B6" alt="coworkers in a data center working on a laptop" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7141" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Secure, user-centric IT that helps transform your organization's ideas in to action
+</p>
+
+  <p><a href="https://s3.amazonaws.com/leidos-com-static/modernize/index.html" aria-labeledby="meganav-featured-text-7141" target="_blank">Modernize Your Mission</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/integrated-systems">Integrated Systems</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Combining hardware and software with diverse initial applications to address the key mission challenges in an array of markets.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems#autonomy">Autonomous and Unmanned Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems#reveal">Reveal Baggage Inspection Systems</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems#secore">SE Core</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems#vacis">VACIS</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/integrated-systems#traps">TRAPS</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7311">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2019-02/SBLIII_news.PNG?h=b3f45588&amp;itok=cnRyFFR2" alt="trucks driving through vehicle scanning machine" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7311" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Preparations for Super Bowl LIII required the inspection of 200 commercial vehicles daily.
+</p>
+
+  <p><a href="/insights/vehicle-scanner-technology-use-part-super-bowl-liii-security" aria-label="Read more about Vehicle scanner technology in use as part of Super Bowl LIII security" aria-labeledby="meganav-featured-text-7311">Watch How The Big Game Gets Secured</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems">Mission Software Systems</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Our mission software systems are designed to manage complexity in environments that require precision, speed, and scale in equal measure.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems#leaf">LEAF</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems#carec2">careC2</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems#onesaf">OneSAF</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems#data">Data Analytics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/mission-software-systems#c2">Command and Control</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7131">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/FEATURE-2170x1240-Command-and-Control.jpg?h=6e4560dc&amp;itok=gDztB4ka" alt="man working at three monitors looking at maps" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7131" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Learn how expertise in Mission Systems development and LEAF enabled Leidos to build an upgraded and enhanced C2 system on a budget.
+</p>
+
+  <p><a href="/insights/novel-solution-complex-command-and-control-system" aria-label="Read more about A novel solution to a complex command and control system" aria-labeledby="meganav-featured-text-7131">Read the Article</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies#missionsupport">Mission Support</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  We have developed a robust understanding of our government customers and the ability to provide innovative solutions to their most demanding challenges.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies#missionsupport">Approach to Mission Support</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-41646">
+            
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics">Operations &amp; Logistics</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  We provide cost-effective tools combined with experienced thought leadership and enhanced processes to meet global, mission-critical customer needs through product support, transportation and distribution, and logistics enablers.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics#antarctic-support">Antarctic Support Contract</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics#iss-cargo">ISS Cargo Mission Contract</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics#lcst">Logistic Commodities &amp; Services Transformation Programme</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics#strategic-national">Strategic National Stockpile</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/operations-and-logistics#defense-logistics">Defense Logistics Support</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7191">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-12/supply_chain_mgmt.jpg?h=d339c5b7&amp;itok=Ll1Q0o_w" alt="man working at two monitors looking at maps" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7191" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Supply chain management that uses data analytics and open architecture solutions.
+</p>
+
+  <p><a href="https://www.mydigitalpublication.com/publication/?i=547131#{%22issue_id%22:547131,%22page%22:58}" aria-labeledby="meganav-featured-text-7191" target="_blank">Learn About Our Approach</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies#securedevelopment">Secure Development &amp; Operations</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  With rapid changes in technology and tools, software development is a central success factor in any large transformation program.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies#securedevelopment">Secure Development Overview</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7246">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/Software_Development_0.gif?itok=xJi2JzLX" alt="cartoon of computer monitor" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7246" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  The Leidos Enterprise Application Framework (LEAF) facilitates rapid development and provides a foundation for prototyping solutions.
+</p>
+
+  <p><a href="/insights/what-does-leidos-do-part-3-software-development" aria-label="Read more about What does Leidos do? Part 3: Software Development" aria-labeledby="meganav-featured-text-7246">Read More</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology">Sensors, Collection &amp; Phenomenology</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Developing and implementing multiple sensor modalities and integrating collection systems to meet demanding requirements across multiple operational domains.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/autonomy-and-autonomous-solutions">Autonomy and Autonomous Solutions</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/biometrics">Biometrics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/sensors">Sensors</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology#advancedcomputing">Advanced Computing</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology#computational-fluid-dynamics">Computational Fluid Dynamics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/command-control">Command &amp; Control</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/sensors-collection-phenomenology/tactical-data-links">Tactical Data Links</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7241">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2020-01/FEATURE-2170x1240_CHQ_3.jpg?h=2b421277&amp;itok=FsgT6Xrq" alt="Dynetics Campus " typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7241" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Leidos completes acquisition of Dynetics, expanding company’s portfolio with new offerings and technical capabilities.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/leidos-completes-acquisition-dynetics-expanding-companys-portfolio-new-offerings" aria-labeledby="meganav-featured-text-7241" target="_blank">View Release</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/competencies#systemsengineering">Systems Engineering &amp; Integration</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Our approach is designed to ensure mission success and is the foundational DNA of every technical project we execute.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies#systemsengineering">Approach to Systems Engineering</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-7251">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/MCPL5024.jpg?itok=HtClws2j" alt="employee talking to two coworkers" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-7251" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Building the future with Systems Engineering and Integration
+</p>
+
+  <p><a href="/insights/building-future-systems-engineering-and-integration" aria-label="Read more about Building the future with Systems Engineering and Integration" aria-labeledby="meganav-featured-text-7251">Read Article</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/competencies/technology-certifications">Technology Certifications</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Technology certifications with world-class providers
+</p>
+                      
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-44551">
+            
+          </div>
+        </div>
+      </div>
+      </li>
+</ul>
+
+      </div>
+      </li>
+      <li class="list-item parent" role="menuitem" tabindex="0">      
+  <div><a href="/insights">Insights</a></div>
+
+          <div class="tier-2 bg-ang-gray dropdown">
+        <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/insights">Insights</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Expertise, industry leadership, unique perspectives, and more - directly from our employees and stakeholders.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights">Latest Insights</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?type=191">Press Releases</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?community=361">50th Anniversary</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?community=241">Heroes of Leidos</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?community=141">Our Experts</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?community=146">Careers &amp; Culture</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?community=151">Community</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?type=161">Articles</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?type=166">Case Studies</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?type=171">Infographics</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights?type=176">Q&amp;As</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph" id="mm-featured-paragraph-21671">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2019-06/Valerie_Baldwin_header.jpg?h=145e4717&amp;itok=W032lvA9" alt="Valerie Baldwin sitting at a conference table while talking" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-21671" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  We recently interviewed Valerie Baldwin, our new Senior Vice President of Government Affairs.
+</p>
+
+  <p><a href="https://www.leidos.com/insights/meet-valerie-baldwin-our-new-senior-vp-government-affairs" aria-labeledby="meganav-featured-text-21671" target="_blank">Read What She Had To Say</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+</ul>
+
+      </div>
+      </li>
+      <li class="list-item parent" role="menuitem" tabindex="0">      
+  <div><a href="/careers">Careers</a></div>
+
+          <div class="tier-2 bg-ang-gray dropdown">
+        <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/careers">Latest Opportunities </a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Keep up to date on the latest career opportunities at Leidos. 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/insights/operation-mvp-military-veteran-program">Military Veteran Program</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/erp">External Referral Program </a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://careers.leidos.com/pages/intern-and-new-graduate-jobs" target="_blank">Intern &amp; New Graduate Jobs</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="https://ukcareers.leidos.com" target="_blank">Careers with Leidos in the United Kingdom</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/global/australia/careers">Careers with Leidos in Australia</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph lift-static" id="mm-featured-paragraph-31666" data-lift-slot="7b094cfd-934f-40fc-b232-bd55b7ca8e91" data-lift-slot-valid="true" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/7b094cfd-934f-40fc-b232-bd55b7ca8e91" data-content-barrier="trusted" data-lift-for-slot="7b094cfd-934f-40fc-b232-bd55b7ca8e91">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-10/IMG-1085x620-Vacancies_0.jpg?itok=yGK0D3qj" alt="five coworkers sitting around a laptop" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-31666" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Your most important work is still ahead. Explore opportunities at Leidos.
+</p>
+
+  <p><a href="/careers" aria-label="Read more about Careers" aria-labeledby="meganav-featured-text-31666">View our Latest Opportunities</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/careers/life">Life at Leidos</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  A career at Leidos offers meaningful and engaging work, a collaborative culture, support for your career goals, while nurturing a healthy work-life balance.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/company/mission-vision-and-values">Our Values</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/life/culture">Our Culture</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/life/build-career">Build a Career</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/life/inclusive-workforce">Inclusion at Leidos</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph lift-static" id="mm-featured-paragraph-8636" data-lift-slot="bcc97525-72c0-42fd-b93f-b0ce28d4682e" data-lift-slot-valid="true" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/bcc97525-72c0-42fd-b93f-b0ce28d4682e" data-content-barrier="trusted" data-lift-for-slot="bcc97525-72c0-42fd-b93f-b0ce28d4682e">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-10/IMG-1085x620-Vacancies.jpg?itok=kyTDBzd9" alt="five coworkers sitting around a laptop" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-8636" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Your most important work is still ahead. Explore opportunities at Leidos.
+</p>
+
+  <p><a href="/careers" aria-label="Read more about Careers" aria-labeledby="meganav-featured-text-8636">View our Latest Opportunities</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/careers/pay-benefits">Pay &amp; Benefits</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Pay and benefits are fundamental to any career decision, which is why our compensation packages reflect the importance of the work we do for our customers.
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#compensation">Compensation</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#health">Health &amp; Wellness</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#income">Income Protection</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#leave">Leave</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#retirement">Retirement</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/pay-benefits#family">Family Benefits</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph lift-static" id="mm-featured-paragraph-8641" data-lift-slot="f0a0392f-a770-4331-a121-c9b8fa70515e" data-lift-slot-valid="true" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/f0a0392f-a770-4331-a121-c9b8fa70515e" data-content-barrier="trusted" data-lift-for-slot="f0a0392f-a770-4331-a121-c9b8fa70515e">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMG-1085x620-Vacancies.jpg?h=f549015a&amp;itok=cfGHFesZ" alt="five coworkers sitting around a laptop" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-8641" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Your most important work is still ahead. Explore opportunities at Leidos. 
+</p>
+
+  <p><a href="https://careers.leidos.com" aria-labeledby="meganav-featured-text-8641" target="_blank">View our Latest Opportunities</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+  <li class="list-item parent" role="menuitem">      
+  <div><a href="/careers/faqs">Frequently Asked Questions</a></div>
+
+          <div class="tier-3">
+        <div class="col-1">
+          <p class="cta lead">
+  Find answers to the most commonly asked questions related to securing a role at Leidos. 
+</p>
+                      <ul class="field field--name-field-megamenu-link-children field--type-entity-reference-revisions field--label-hidden" role="menu">
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#search">Searching for a Role</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#apply">Applying for a Job</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#status">Determining Application Status</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#system">System Access</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#eligibility">Job Eligibility Requirements</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#notifications">Receiving Job Notifications</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#talent">Our Talent Community</a></div>
+
+  </li>
+  <li class="list-item" role="menuitem">      
+  <div><a href="/careers/faqs#insights">Career Insights</a></div>
+
+  </li>
+</ul>
+
+                  </div>
+        <div class="col-2">
+          <div class="mm-featured-paragraph lift-static" id="mm-featured-paragraph-12186" data-lift-slot="d37e3615-76cc-4756-96ab-abab2e0b7193" data-lift-slot-valid="true" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/d37e3615-76cc-4756-96ab-abab2e0b7193" data-content-barrier="trusted" data-lift-for-slot="d37e3615-76cc-4756-96ab-abab2e0b7193">
+                                <div class="field field--name-field-megamenu-link-feat-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/zoouby166/files/styles/crop_megamenu_feature/public/megamenu/2018-08/IMG-1085x620-Vacancies.jpg?h=f549015a&amp;itok=cfGHFesZ" alt="five coworkers sitting around a laptop" typeof="foaf:Image" class="image-style-crop-megamenu-feature" width="368" height="260">
+
+
+</div>
+            <p id="meganav-featured-text-12186" class="field field--name-field-megamenu-link-feat-text field--type-string field--label-hidden">
+  Your most important work is still ahead. Explore opportunities at Leidos.
+</p>
+
+  <p><a href="https://careers.leidos.com" aria-labeledby="meganav-featured-text-12186" target="_blank">View our Latest Opportunities</a></p>
+
+          </div>
+        </div>
+      </div>
+      </li>
+</ul>
+
+      </div>
+      </li>
+    <li class="search"><a href="#searchModal" aria-label="searchModal" data-toggle="modal" class="ico ico-search"><span class="sr-only">Search</span></a></li>
+</ul>
+
+    <ul class="simple" role="menu">
+              <li role="menuitem"><a href="/company">Company</a></li>
+              <li role="menuitem"><a href="/markets">Markets</a></li>
+              <li role="menuitem"><a href="/competencies">Competencies</a></li>
+              <li role="menuitem"><a href="/insights">Insights</a></li>
+              <li role="menuitem"><a href="/careers">Careers</a></li>
+          </ul>
+  </nav>
+
+    </div>
+  </div>
+  <!--Header Search Modal-->
+  <div class="modal" id="searchModal" role="dialog">
+    <figure role="document" class="container narrow">
+      <header aria-label="Search">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </header>
+      <article>
+        <div class="leidos-search-form">
+  <form role="search">
+          <label id="site-search-label" for="site-search"><h6>Search</h6></label>
+      <input class="st-default-search-input" id="site-search" type="text" placeholder="Enter Keyword" aria-labelledby="site-search-label" autocomplete="off" autocorrect="off" autocapitalize="off">
+        <button class="site-search--submit-button" id="site-search-submit" type="submit" name="op" value="Search" aria-label="Submit">
+  
+  
+</button></form></div>
+
+      </article>
+    </figure>
+  </div>
+  </div>
+</div>
+
+  </div>
+
+      </div>
+    </header> <!-- /.section, /#header-->
+
+    <section id="core-outer-wrapper" class="outer-wrapper clearfix">
+      <div id="core-layout" class="core-layout without--highlighted inner-wrapper clearfix">
+              </div>
+    </section>
+
+    
+    <section id="content-outer-wrapper" class="outer-wrapper clearfix">
+      <a id="main-content" tabindex="-1" target="_blank"><span class="label">Back to top</span></a>      <div id="main-layout" class="main-layout with--content without--sidebar-first without--sidebar-second inner-wrapper clearfix lift-loaded-slot">
+
+                    <div class="region--content region region-content">
+    <div data-drupal-messages-fallback="" class="hidden"></div><div id="block-leidos-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+
+  <div>
+          
+<article role="article" about="/privacy" class="node node--type-page node--view-mode-full" data-swiftype-index="true">
+  <section class="hero bg-dark style1">
+          <div class="container">
+        <h1 data-swiftype-name="title" data-swiftype-type="string"><span class="field field--name-title field--type-string field--label-hidden">Privacy Statement</span>
+</h1>
+                </div>
+      </section>
+  
+  
+    
+
+  
+  <div data-swiftype-name="body" data-swiftype-type="text" class="node__content">
+    
+<div class="field field--name-field-page-paragraphs field--type-entity-reference-revisions field--label-hidden">
+  
+  <div id="paragraph-20086" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><p><strong>Last Updated: May 2019</strong></p>
+
+<p>Leidos, Inc. and its subsidiaries and affiliates (collectively, “Leidos,”&nbsp;“we” or us”) recognizes the importance of protecting the personal information of any&nbsp;visitor&nbsp;to&nbsp;<strong><a href="https://www.leidos.com/" target="_blank">leidos.com</a></strong>, sites that operate on a related sub-domain, or sites identified as being owned and operated by Leidos (“Leidos&nbsp;websites”). This Privacy Statement (or “Statement”) applies only to Leidos’ online activities and is valid for visitors to Leidos websites with regards to the information that is shared and/or collected. This <strong>policy</strong> is not applicable to any information collected offline or via channels other than this <strong>website</strong>. We commit to processing your&nbsp;Personal&nbsp;Information responsibly and&nbsp;in compliance with applicable data protection/privacy&nbsp;laws in&nbsp;the&nbsp;countries&nbsp;where&nbsp;we operate.&nbsp;</p>
+
+<p>This&nbsp;Statement&nbsp;applies to all users of our&nbsp;Leidos websites. If you are a resident of the European Economic Area, you have additional rights, which are explained in the <a href="https://www.leidos.com/privacy#application" target="_blank">Application of Local Laws</a> and <a href="https://www.leidos.com/privacy#managing" target="_blank">Managing Your Personal Information</a> sections.&nbsp;</p>
+
+<p>For purposes of this Statement, “you” refers to any visitor to a Leidos website.</p>
+
+<p>Some Leidos websites may have a separate or supplemental privacy Statement, policy or&nbsp;notice, which you should review as well. For example, the <a href="/privacy/leidos-australia-privacy-policy">Leidos Australia Privacy Policy can be found here</a>&nbsp;(in the event of a conflict between this Privacy Statement&nbsp;and the Leidos Australia Privacy Policy, the Leidos Australia Privacy Policy takes precedence).</p>
+
+<p>If there is a conflict between this Statement and the terms of any agreement between a Leidos customer and Leidos, the terms of such agreement will control.</p>
+
+<p class="MsoCommentText text-align-center">&nbsp;&nbsp;<a class="btn primary" href="#current">Current Privacy STATEMENT</a>&nbsp;<a class="btn secondary" href="#changes">Changes since PRIOR Privacy STATEMENT&nbsp;</a></p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+    
+  <div id="paragraph-20091" class="paragraph paragraph--type--jump-nav paragraph--view-mode--default sticky">
+          
+      </div>
+
+  
+  <div id="paragraph-20096" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Current Privacy Statement">
+          
+  <a id="current" target="_blank"><span class="label">Current Privacy Statement</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20126" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Accepting this statement">
+          
+  <a id="accept" target="_blank"><span class="label">Accepting this statement</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20131" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Accepting this Statement</h3>
+
+<p>You acknowledge that you have read this Statement and&nbsp;that you understand and accept it.</p>
+
+<p>Your use of our Leidos websites and any dispute related to the collection of your Personal Information is subject to this Privacy Statement,&nbsp;any applicable Terms of Service (including any applicable limitations on damages and the resolution of disputes) and any applicable End User License Agreement.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20136" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Application of Local Laws">
+          
+  <a id="application" target="_blank"><span class="label">Application of Local Laws</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20141" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Application of Local Laws</h3>
+
+<p>This Privacy Statement is designed to comply with&nbsp;relevant applicable laws in the United States, United Kingdom, European Union, Canada and Australia. If an applicable local data protection or privacy law provides for a lesser level of protection&nbsp;than that established by this Statement, then this Statement shall prevail.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20146" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Consent to Data Transfer">
+          
+  <a id="data" target="_blank"><span class="label">Consent to Data Transfer</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20151" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Consent to Data Transfer</h3>
+
+<p>While Leidos has active businesses in many countries around the globe, we are headquartered in the United States. Thus, if you proceed to use this site, your Personal Information may be transferred to or accessible by entities or individuals in the United States and processed according to the terms described in this Privacy Statement.</p>
+
+<p>Personal Information collected by Leidos may be stored and processed in the United States and/or in any other country where Leidos or its affiliates, subsidiaries, or service providers operate facilities. Typically, the primary storage location is in the United States or a customer’s region (which may also be the United States), often with a backup to a data center in a different region. Storage location(s) are chosen in order to operate efficiently, improve performance, and create redundancies to protect the data in the event of an outage or other problem.</p>
+
+<p>We (or our service providers) may transfer Personal Information from the EEA to other countries, some of which have not yet been determined by the European Commission to have an adequate level of data protection. For example, those countries’ laws may not guarantee you the same rights, or there may not be a government authority capable of addressing your concerns. When we engage in such transfers, we use a variety of legal mechanisms, including contracts and written assurances from service providers, to help ensure your rights and protections travel with your Personal Information. To learn more about the European Commission’s decisions on the adequacy of the personal data protection in the countries where Leidos operates (such as the United States), please visit:&nbsp;<strong><a href="https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en" target="_blank">https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en</a></strong>.</p>
+
+<p>By continuing to use this site, you authorize Leidos and its service providers to transfer your Personal Information to – or make it available in – destinations outside your home country and to process it according to this Privacy Statement. You may contact us at&nbsp;<strong><a href="mailto:privacy@leidos.com" target="_blank">privacy@leidos.com</a></strong><strong>&nbsp;</strong>for more information about the safeguards used to protect your Personal Information if it is transferred outside of your country of residence.</p>
+
+<p></p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-27216" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="What Types of Personal Information Are Collected via Leidos Websites?">
+          
+  <a id="information" target="_blank"><span class="label">What Types of Personal Information Are Collected via Leidos Websites?</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26366" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>What Types of Personal Information Are Collected via Leidos Websites?</h3>
+
+<p>For the purposes of this Privacy Statement, “Personal Information” generally means&nbsp;data, or a combination of data from one or more sources, that identifies or could reasonably be used to identify an individual.</p>
+
+<p>When you visit a Leidos website, the Personal Information collected about you may include, but is not limited to:</p>
+
+<ul><li>name;</li>
+	<li>postal address;</li>
+	<li>e-mail address;</li>
+	<li>organization name and job title;</li>
+	<li>telephone number;</li>
+	<li>IP address;</li>
+	<li>network and geo-location; and</li>
+	<li>education and/or employment history.</li>
+</ul><p>If you cannot or choose not to provide us with this Personal Information, we may be unable to provide you with the information or services you have requested.</p>
+
+<p class="MsoNoSpacingCxSpLast"></p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26361" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Why is this Personal Information collected?">
+          
+  <a id="collection" target="_blank"><span class="label">Why is this Personal Information collected?</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-27221" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Why is this Personal Information Collected?</h3>
+
+<p>We generally collect the Personal Information described above on an entirely&nbsp;voluntary basis – in other words, we do not require you to give us your Personal Information. Certain areas of&nbsp;Leidos websites, however, may request your Personal Information so that you can use specific features, learn more about Leidos or access certain content. For example, you may be asked to submit Personal Information if you:</p>
+
+<ul><li>request a product demo, download or access information about our&nbsp;products, services or programs;</li>
+	<li>watch on-demand content; &nbsp;</li>
+	<li>submit a contact form&nbsp;to request&nbsp;customer or technical support;&nbsp;</li>
+	<li>access Investor Relations information; &nbsp;</li>
+	<li>apply for a job with Leidos; or</li>
+	<li>ask to have a Leidos employee contact you.</li>
+</ul><p class="MsoNoSpacingCxSpLast"></p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20156" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Non-Personal Information, Analytics, and Advertising">
+          
+  <a id="analytics" target="_blank"><span class="label">Non-Personal Information, Analytics, and Advertising</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20161" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Non-Personal Information, Analytics, and Advertising</h3>
+
+<p>We market our business&nbsp;in a number of ways, primarily through digital advertising, owned social media presences, email marketing campaigns and other offline mechanisms. To understand how our marketing or promotional campaigns are performing, one or more of our third-party service providers may collect certain information via our Leidos websites.&nbsp;We and these service providers use several&nbsp;industry standard analytics and tracking tools to collect this information, such as web browsers and flash cookies, web beacons and other,&nbsp;similar technologies. The information we collect includes IP addresses,&nbsp;number of page visits, pages viewed, search engine referrals, browsing activities over time and across other websites following your visit to one or more of our Leidos websites, and responses to offline&nbsp;marketing campaigns through dedicated tracking web addresses.</p>
+
+<p><em>Note</em>: Although network or device identifiers such as computer or device IP&nbsp;addresses, serial numbers or other identification numbers do not necessarily identify an individual who uses such computers or devices, some jurisdictions’ laws may define them as Personal Information.</p>
+
+<p>We use Non-Personal Information to:</p>
+
+<ul><li>identify new visitors to Leidos websites;&nbsp;</li>
+	<li>recognize returning visitors;&nbsp;</li>
+	<li>analyze the effectiveness of our website content and marketing or sales-related activities;</li>
+	<li>better understand our audience, customers, or other website visitors; and</li>
+	<li>determine whether website visitors, potential customers and customers might be interested in additional content, new products or services.</li>
+</ul></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26381" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Use of Personal Information">
+          
+  <a id="use" target="_blank"><span class="label">Use of Personal Information</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20176" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3 class="CxSpFirst">Use of Personal Information</h3>
+
+<p><strong>Legal Basis for Collecting and Using Personal Information</strong></p>
+
+<p>We collect, use and share Personal Information when we have an appropriate legal basis to do this, such as the following:</p>
+
+<ul><li>you have consented, for example by signing up to receive communications from us;</li>
+	<li>our use of your Personal Information is necessary to meet our legitimate interests as a commercial organization (see examples below);</li>
+	<li>our use of your Personal Information is necessary to perform a contract or take steps to enter into a contract with you, for example if you apply for a job with us or if you work for one of our service providers, partners, prime contractors or subcontractors; and/or</li>
+	<li>our use of your Personal Information is necessary to comply with a relevant legal or regulatory obligation, for example, in response to an audit, subpoena or court order.</li>
+</ul><p><strong>Examples of Leidos’ legitimate interests</strong>:</p>
+
+<ul><li>operating, maintaining, and improving Leidos websites, products, services and programs;</li>
+	<li>responding to comments and questions, or provide customer service or technical support;</li>
+	<li>sending information such as&nbsp;confirmations, invoices, technical notices, software updates, security alerts, and support and administrative messages;</li>
+	<li>providing information which may be of interest to website visitors, potential customers and customers, including but not limited to, educational content, fact sheets, webinars, white papers,&nbsp;upcoming events, and other news about products and services offered by us and our selected partners;</li>
+	<li>protecting against, investigating, and deterring fraudulent, unauthorized, or illegal activity;</li>
+	<li>to process employment applications (more detail below); and</li>
+	<li>protecting Leidos’ personnel or property.</li>
+</ul><p>We may also use what we know about you to highlight&nbsp;products and services<em>&nbsp;</em>that may be of interest to you, or we may combine your online Personal and Non-Personal Information with information collected from offline sources or information we already have.</p>
+
+<p><strong>More About Employment Applications</strong></p>
+
+<p>In general, if you apply for a Leidos job through any Leidos or third party website, we use the Personal Information you submitted via the application process to process and respond to your job application, including to assess your skills and interest in job opportunities, conduct reference checks and/or background checks, verify the information you provided, and for compliance with corporate governance and/or legal and regulatory requirements. Personal Information that you submit may also be added to our candidate database for purposes of considering whether you are suitable for other job vacancies.&nbsp;If you are hired, we may also use the information collected during the application process for other business purposes related to your employment.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20101" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Sharing Personal and Non-Personal Information">
+          
+  <a id="useshare" target="_blank"><span class="label">Sharing Personal and Non-Personal Information</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26386" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Sharing Personal and Non-Personal&nbsp;Information</h3>
+
+<p>We&nbsp;process and share your Personal Information and Non-Personal Information&nbsp;only to the extent reasonably necessary to fulfill your requests and&nbsp;for&nbsp;our legitimate business<em>&nbsp;</em>purposes, as further described above and in the&nbsp;Authorized Service Providers&nbsp;section below. When we disclose Personal and Non-Personal Information to&nbsp;other&nbsp;entities or individuals to perform support services for us, they may access such information for the limited purposes of performing those support services. &nbsp;</p>
+
+<p>We may disclose Personal&nbsp;and Non-Personal&nbsp;Information to others to:</p>
+
+<ul><li>respond to questions about our product or services;</li>
+	<li>send communications, including&nbsp;email newsletters, or other marketing materials;</li>
+	<li>comply with applicable laws, obey judicial orders, respond to subpoenas; cooperate with law enforcement authorities, and&nbsp;respond to law enforcement requests;</li>
+	<li>detect or prevent&nbsp;suspected or actual illegal activities or harm to our personnel or property;</li>
+	<li>help us run our&nbsp;day-to-day&nbsp;business<em>&nbsp;</em>operations;</li>
+	<li>protect our legal rights or to enforce our Terms of Use or any applicable&nbsp;laws, Leidos policies or regulations;</li>
+	<li>protect the rights or property of others, including our customers; and</li>
+	<li>respond to and/ or assist our auditors and legal advisors.</li>
+</ul><p>We may also disclose Personal&nbsp;and Non-Personal&nbsp;Information:</p>
+
+<ul><li>when legally&nbsp;required (e.g., for government reports);&nbsp;</li>
+	<li>for&nbsp;other&nbsp;legitimate business purposes, such as product or service development, marketing, sales and&nbsp;website administration; and</li>
+	<li>as otherwise permitted or required by law.</li>
+</ul><p><strong>Authorized Service Providers&nbsp;</strong></p>
+
+<p>We sometimes hire or contract with other&nbsp;companies and individuals&nbsp;to&nbsp;perform certain functions&nbsp;and services&nbsp;on our behalf.&nbsp;This is a common industry practice.&nbsp; We may&nbsp;need to&nbsp;disclose&nbsp;Personal&nbsp;and Non-Personal&nbsp;Information so that they can perform these functions and services which may&nbsp;include,&nbsp;for example, call center/customer service&nbsp;support, sending or processing postal&nbsp;mail&nbsp;or email,&nbsp;and&nbsp;analyzing or hosting data on cloud-based servers.</p>
+
+<p>Leidos does not share or sell&nbsp;Personal Information&nbsp;with unaffiliated third parties for their own direct marketing purposes.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26371" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Use of Cookies">
+          
+  <a id="cookies" target="_blank"><span class="label">Use of Cookies</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26376" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Use of Cookies</h3>
+
+<p>Your device browser may give you the ability to control cookies and online tracking tools such as those we outlined above. How you do so depends on your browser and the type of cookie or online tracking tool. You can set your preferences for Leidos websites by clicking the Cookie Settings button below. For more information on the types of cookies we set,&nbsp;<a href="/privacy/cookies">click here</a>.</p>
+
+
+<p><div class="optanon-show-settings-popup-wrapper"><div class="optanon-show-settings-button optanon-toggle-display"><div class="optanon-show-settings-left"></div><div class="optanon-show-settings-middle"><a class="optanon-show-settings" target="_blank">Cookie Settings</a></div><div class="optanon-show-settings-right"></div></div></div> </p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20166" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Minors and Children Under 13">
+          
+  <a id="minors" target="_blank"><span class="label">Minors and Children Under 13</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-20171" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3 class="CxSpFirst">Minors and Children under 13</h3>
+
+<p class="CxSpMiddle">Leidos websites are not directed to nor intended for use by minors. We do not knowingly collect any Personal Information or knowingly track the use of Leidos websites by children under the age of 13.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26391" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Safeguarding your Information">
+          
+  <a id="safeguard" target="_blank"><span class="label">Safeguarding your Information</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26396" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Safeguarding your Information</h3>
+
+<p>The&nbsp;integrity, availability and confidentiality of your Personal Information matters to us. That is why we&nbsp;use industry-standard and government-approved&nbsp;technical, administrative and physical controls&nbsp;to protect&nbsp;Personal Information from unauthorized access, use and disclosure. We&nbsp;also&nbsp;review and evaluate our security procedures and controls on an ongoing basis to consider appropriate new technology and updated methods and to help minimize risks from new security threats as they become known.&nbsp;</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26401" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Managing Your Personal Information">
+          
+  <a id="managing" target="_blank"><span class="label">Managing Your Personal Information</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26406" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Managing Your Personal Information</h3>
+
+<p>Certain data protection/privacy laws may provide you rights with respect to how we manage your Personal Information. These rights (and potential limitations on them) are described below.</p>
+
+<p><strong>Right to Change or Delete Your Personal Information</strong></p>
+
+<p>You have a right to request that we correct or delete inaccurate Personal Information about you.&nbsp;&nbsp;In such cases, we will first verify your identity and then check whether the Personal Information is in fact inaccurate. We will correct any Personal Information found to be incorrect.&nbsp;</p>
+
+<p>You can also request that we delete your Personal Information if, for example,</p>
+
+<ul><li>it is no longer needed for the purposes for which it was collected;</li>
+	<li>you have withdrawn your consent (where the data processing was initially based on consent), and where there is no other&nbsp;<strong><a href="https://www.leidos.com/privacy#use" target="_blank">legal basis</a></strong>&nbsp;for the processing;</li>
+	<li>we are relying on our legitimate interests as the basis for processing your Personal Information, you object to such processing, and there is no overriding legitimate interest to continue processing it; &nbsp;</li>
+	<li>we are processing it for direct marketing purposes and you object to that processing; or</li>
+	<li>it has been processed unlawfully.</li>
+</ul><p>Please note that this right to deletion is not absolute and only applies in certain circumstances. For example, we are not required to comply with your request if it is necessary for us to maintain your Personal Information:</p>
+
+<ul><li>for compliance with a legal obligation;</li>
+	<li>for the establishment, exercise or defense of legal claims;</li>
+	<li>for the performance of a contract;</li>
+	<li>to detect, prevent, or&nbsp;otherwise mitigate&nbsp; illegal activities, including but not limited to fraud, computer crimes and identity theft;</li>
+	<li>to avoid or mitigate harm to Leidos personnel or property or to others,&nbsp;</li>
+	<li>it is in our legitimate interests and there are compelling legitimate grounds for the processing that override your interests in having your Personal Information deleted; and&nbsp;</li>
+	<li>to the extent necessary to comply with applicable laws and regulations, including employment laws and regulations.</li>
+</ul><p><strong>Right to Restrict the Processing of Your Personal Information</strong></p>
+
+<p>You can ask us to limit processing of your Personal Information, but only when:</p>
+
+<ul><li>you dispute its accuracy, to allow us to verify its accuracy;</li>
+	<li>the processing is unlawful, but you do not want it erased;</li>
+	<li>it is no longer needed for the purposes for which it was collected, but we still need it to establish, exercise or defend legal claims; or</li>
+	<li>you have exercised the right to object, and verification of overriding grounds is pending.</li>
+</ul><p>After you submit a request to restrict the processing of your Personal Information, we can continue to process it:</p>
+
+<ul><li>when we have your consent;</li>
+	<li>to establish, exercise or defend legal claims; or</li>
+	<li>to protect the rights of another natural or legal person.</li>
+</ul><p><strong>Right to Transfer your Personal Information</strong></p>
+
+<p>You can ask us to provide your Personal Information &nbsp;to you in a structured, commonly used, machine-readable format, or you can ask to have it transferred directly to another entity or company, but only when:</p>
+
+<ul><li>the processing of your Personal Information is based on your consent or the performance of a contract with you;</li>
+	<li>the processing is carried out by automated means; and</li>
+	<li>where such transfer or production is technically feasible.</li>
+</ul><p><strong>Right to Object to the Processing of your Personal Information</strong></p>
+
+<p>You have the right to object to our processing of your Personal Information if our processing is for direct marketing purposes.</p>
+
+<p>You can also object if the processing is for:</p>
+
+<ul><li>a task carried out in the public interest;</li>
+	<li>the exercise of official authority vested in us; or</li>
+	<li>our legitimate interests (or those of a third party).</li>
+</ul><p>In these circumstances the right to object is not absolute. You must provide specific reasons why you are objecting to the processing of your Personal Information. These reasons should be based upon your particular situation. And please note that we may still continue processing if:</p>
+
+<ul><li>we have compelling legitimate grounds for the processing which outweigh your interests, rights and freedoms; or</li>
+	<li>the processing is for the establishment, exercise or defense of legal claims.</li>
+</ul><p>If we are processing your Personal Information for scientific or historical research, or for statistical purposes, your right to object might also be limited.</p>
+
+<p><strong>How to Exercise the Rights Listed Above</strong></p>
+
+<p>If you are an EU or UK Resident, you can submit a request to us <a href="https://app.onetrust.com/app/#/webform/36c07102-d11c-4c67-a49b-9cf3d621afd5" target="_blank">here</a>.</p>
+
+<p>If you are not an EU or UK resident, or if you would prefer to submit your request by another means, you may write us at this address:</p>
+
+<p>Leidos Global Privacy Office<br>
+11955 Freedom Dr.<br>
+Reston, VA 20190&nbsp;</p>
+
+<p>or by email:<strong> </strong><a href="mailto:%20privacy@leidos.com" target="_blank">privacy@leidos.com</a><strong>.</strong></p>
+
+<p><strong>Right to Object to the Use of your Personal Information for Direct Marketing purposes</strong></p>
+
+<p>You can request that we change the manner in which we contact you for direct marketing purposes. We will respect your wishes not to receive marketing communications. You can change your marketing preferences by contacting us&nbsp;<strong><a href="https://learn.leidos.com/preference-center" target="_blank">here</a></strong>. You can also opt-out at any time by using the unsubscribe links or instructions included at the bottom of our emails. &nbsp;Please note that we may continue to send you service-related communications regardless of any opt-out request.</p>
+
+<p>Leidos does not share or sell&nbsp;Personal Information&nbsp;with unaffiliated third parties for their own direct marketing purposes.</p>
+
+<p><strong>Right to Not be Subject to Automated Decision-Making</strong></p>
+
+<p>You will not be subject to decisions that will have a significant impact on you based solely on automated decision-making, unless we have a lawful basis for doing so and we have notified you.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-29016" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Data Retention">
+          
+  <a id="dataretention" target="_blank"><span class="label">Data Retention</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-29021" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Data Retention</h3>
+
+<p>We will retain your Personal Information for as long as required for the purposes for which it was collected. How long we retain it depends on a number of factors, including the&nbsp;<strong><a href="https://www.leidos.com/privacy#use" target="_blank">legal basis</a></strong>&nbsp;for which it was obtained and/or additional legal or regulatory obligations.&nbsp;Thus, in some circumstances we may store your Personal Information for longer periods of time, for instance where we are required to do so to meet legal, regulatory, tax, or accounting requirements. We may also store it for longer periods of time to have an accurate record of your interactions with us in the event of any complaints or challenges, or if we reasonably believe there is a prospect of litigation.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26411" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Other Websites">
+          
+  <a id="other" target="_blank"><span class="label">Other Websites</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26421" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Other Websites</h3>
+
+<p>This Privacy Statement&nbsp;applies only to&nbsp;<strong><a href="https://www.leidos.com/" target="_blank">leidos.com</a></strong>&nbsp;and Leidos websites that are clearly identified as being owned and operated by us&nbsp;and which link to this Privacy Statement.</p>
+
+<p>You should be aware that hyperlinks on this site may&nbsp;direct you to&nbsp;other websites that we do not control. Leidos has no control over the privacy policies or practices of these other websites, and is not responsible for the privacy practices or the content of websites to which we link, list, rank or identify by means of a search. Leidos takes no responsibility for the products, services, policies or actions of third parties or the content of third-party websites. We encourage you to be aware when you are leaving our site and to read the privacy policies of each website you visit.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26416" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Queries and Complaints">
+          
+  <a id="queries" target="_blank"><span class="label">Queries and Complaints</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26501" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Queries and Complaints</h3>
+
+<p>If you have any questions, have a complaint, or wish to send us comments about this Privacy Statement, please send an e-mail to&nbsp;<strong><a href="mailto:%20privacy@leidos.com" target="_blank">privacy@leidos.com</a></strong>. &nbsp;We will investigate your complaint, and use reasonable efforts to respond as soon as possible.&nbsp;</p>
+
+<p><strong>Right to lodge a complaint with your local supervisory authority</strong></p>
+
+<p>You also have a right to file a complaint with your&nbsp;<strong><a href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080" target="_blank">local supervisory authority</a></strong>&nbsp;if you have concerns about how we are processing your Personal Information. We ask that you please attempt to resolve any issues with us first, although you have a right to contact your supervisory authority at any time.&nbsp;</p>
+
+<p><strong>For UK visitors to Leidos websites:</strong></p>
+
+<p>If you have concerns about our&nbsp;information rights practices, you may lodge a complaint with the Information Commissioner's Office ("ICO"). Details of how to contact the ICO are located at&nbsp;<strong><a href="https://ico.org.uk/" target="_blank">ico.org.uk</a></strong>.</p>
+
+<p><strong>For Australian visitors to Leidos websites:</strong></p>
+
+<p>If we fail to respond to your complaint within a reasonable period of receiving it in writing, or if you are dissatisfied with the response that you receive from us, you may lodge a complaint with the Office of the Australian Information Commissioner ("OAIC"). Details of how to contact the OAIC are located at&nbsp;<strong><a href="http://www.oaic.gov.au/" target="_blank">oaic.gov.au</a></strong>.</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-26506" class="paragraph paragraph--type--anchor paragraph--view-mode--default" data-anchor-label="Changes to the Privacy Statement">
+          
+  <a id="changes" target="_blank"><span class="label">Changes to the Privacy Statement</span></a>
+
+      </div>
+
+  
+  <div id="paragraph-26511" class="paragraph-slot">
+        <div class="container narrow component-formattedtext paragraph paragraph--type--formatted-text paragraph--view-mode--default">
+    <section>
+                                  <div class="clearfix text-formatted field field--name-field-formatted-text field--type-text-long field--label-hidden field__item"><h3>Changes to this&nbsp;Privacy Statement</h3>
+
+<p>This Privacy Statement&nbsp;may be updated periodically. We will notify you of any changes by posting the new Privacy Statement at&nbsp;<strong><a href="https://www.leidos.com/privacy" target="_blank">leidos.com/privacy</a></strong>&nbsp;and we will change the "Last Updated" date above.&nbsp;You should consult this page regularly for any changes.</p>
+
+<p>If you expand the + symbol next to the dates below, you will see a summary of the recent&nbsp;substantive changes to this Privacy Statement and the dates these updates came in to effect.&nbsp;</p></div>
+            
+          </section>
+  </div>
+
+  </div>
+
+  
+  <div id="paragraph-20121" class="paragraph-slot">
+        
+  <div class="container narrow component-edge paragraph paragraph--type--tabs paragraph--view-mode--default">
+    <section class="component-edge">
+              
+        <div>
+                  </div>
+        <dl class="accordion" data-allow-toggle="" role="tablist">
+            
+  
+
+        <dt class="field field--name-field-tabs-item-name field--type-string field--label-hidden" role="tab">
+  <button aria-expanded="false" aria-controls="sect20111" id="sect20111Toggle" type="button">
+    August 2018
+  </button>
+</dt>
+  <dd class="field field--name-field-tabs-item-text field--type-text-long field--label-hidden" role="tabpanel" id="sect20111" aria-labelledby="sect20111Toggle" hidden="">
+  <div>
+          <ul><li>Privacy&nbsp;Statement refreshed&nbsp;in light of the EU General Data Protection Regulation (GDPR).&nbsp;</li>
+	<li>Privacy Statement also made more concise and easier to navigate&nbsp;for all users of Leidos websites.&nbsp;</li>
+</ul>
+      </div>
+</dd>
+
+  
+  
+
+        <dt class="field field--name-field-tabs-item-name field--type-string field--label-hidden" role="tab">
+  <button aria-expanded="false" aria-controls="sect36051" id="sect36051Toggle" type="button">
+    January 2019
+  </button>
+</dt>
+  <dd class="field field--name-field-tabs-item-text field--type-text-long field--label-hidden" role="tabpanel" id="sect36051" aria-labelledby="sect36051Toggle" hidden="">
+  <div>
+          <ul><li>Updated Legal Basis for Collecting and Using Personal Information section</li>
+	<li>Updated Managing your Personal Information section, including updates to the following subsections:
+	<ul><li>Right to Change or Delete Your Personal Information</li>
+		<li>Right to Object to the Processing of your Personal Information</li>
+		<li>How to Exercise the Rights Listed Above</li>
+	</ul></li>
+</ul>
+      </div>
+</dd>
+
+  
+  
+
+        <dt class="field field--name-field-tabs-item-name field--type-string field--label-hidden" role="tab">
+  <button aria-expanded="false" aria-controls="sect41021" id="sect41021Toggle" type="button">
+    May 2019
+  </button>
+</dt>
+  <dd class="field field--name-field-tabs-item-text field--type-text-long field--label-hidden" role="tabpanel" id="sect41021" aria-labelledby="sect41021Toggle" hidden="">
+  <div>
+          <ul><li>Updated link to Leidos Australia Privacy Policy</li>
+</ul>
+      </div>
+</dd>
+
+  
+
+        </dl>
+          </section>
+  </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+</div>
+
+  </div>
+
+        
+        
+        
+      </div><!-- /#main -->
+    </section><!-- /#main-outer-wrapper -->
+
+    
+        <footer id="footer-outer-wrapper" class="outer-wrapper clearfix">
+      <div id="footer-layout" role="contentinfo" class="footer-layout with--footer inner-wrapper clearfix">
+          <div class="region--footer region region-footer container" data-swiftype-index="false">
+    <div id="block-footermenublock" data-block-plugin-id="leidos_footermenu" class="block block-leidos-menus block-leidos-footermenu">
+  <div class="primary">
+    
+        
+
+          
+              <ul class="menu">
+                    <li class="menu-item menu-item--expanded">
+        <a href="/company" target="_self" data-drupal-link-system-path="node/1331">Company</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/company/our-business" target="_self" data-drupal-link-system-path="node/1661">Our Business</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/mission-vision-and-values" target="_self" data-drupal-link-system-path="node/1351">Mission, Vision, and Values</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/leadership" target="_self" data-drupal-link-system-path="node/1181">Leadership</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/history" target="_self" data-drupal-link-system-path="node/1471">History</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/responsibility-and-sustainability" target="_self" data-drupal-link-system-path="node/1216">Responsibility &amp; Sustainability</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/ethics-and-compliance" target="_self" data-drupal-link-system-path="node/2011">Ethics &amp; Compliance</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/rankings-and-awards" target="_self" data-drupal-link-system-path="node/1576">Rankings &amp; Awards</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/partners" target="_self" data-drupal-link-system-path="node/1666">Partners</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/subsidiaries" target="_self" data-drupal-link-system-path="node/1366">Subsidiaries</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/contract-vehicles" target="_self" data-drupal-link-system-path="node/1541">Contract Vehicles</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/global" target="_self" data-drupal-link-system-path="node/1476">Global</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/markets" target="_self" data-drupal-link-system-path="node/1716">Markets</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/markets/aviation" target="_self" data-drupal-link-system-path="node/1721">Aviation</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/defense" target="_self" data-drupal-link-system-path="node/1231">Defense</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/energy" target="_self" data-drupal-link-system-path="node/1341">Energy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/government" target="_self" data-drupal-link-system-path="node/2166">Government</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/health" target="_self" data-drupal-link-system-path="node/1756">Healthcare</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/homeland" target="_self" data-drupal-link-system-path="node/1741">Homeland</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/intelligence" target="_self" data-drupal-link-system-path="node/1731">Intelligence</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/science" target="_self" data-drupal-link-system-path="node/1751">Science</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/space" target="_self" data-drupal-link-system-path="node/1736">Space</a>
+              </li>
+                <li class="menu-item">
+        <a href="/markets/surface-transportation" target="_self" data-drupal-link-system-path="node/1746">Surface Transportation</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/competencies" target="_self" data-drupal-link-system-path="node/1761">Competencies</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/competencies/cyber" target="_self" data-drupal-link-system-path="node/1376">Cyber</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/data-science-and-engineering" target="_self" data-drupal-link-system-path="node/1356">Data Science &amp; Engineering</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/digital-modernization" target="_self" data-drupal-link-system-path="node/1201">Digital Modernization</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/integrated-systems" target="_self" data-drupal-link-system-path="node/1786">Integrated Systems</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/mission-software-systems" target="_self" data-drupal-link-system-path="node/1766">Mission Software Systems</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/operations-and-logistics" target="_self" data-drupal-link-system-path="node/2171">Operations &amp; Logistics</a>
+              </li>
+                <li class="menu-item">
+        <a href="/competencies/sensors-collection-phenomenology" target="_self" data-drupal-link-system-path="node/1421">Sensors, Collection &amp; Phenomenology</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/insights" target="_self" data-drupal-link-system-path="node/2341">Insights</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/news" target="_self" data-drupal-link-system-path="node/2406">News</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/careers" target="_self" data-drupal-link-system-path="node/2386">Careers</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/careers/life" target="_self" data-drupal-link-system-path="node/2331">Life at Leidos</a>
+              </li>
+                <li class="menu-item">
+        <a href="/careers/pay-benefits" target="_self" data-drupal-link-system-path="node/2326">Pay &amp; Benefits</a>
+              </li>
+                <li class="menu-item">
+        <a href="/careers/faqs" target="_self" data-drupal-link-system-path="node/2401">FAQs</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+    
+    <div class="bg-dark">
+      <h2>Want to know more?</h2>
+
+<p>Contact us about product information and pricing, customer feedback, stockholder services, or just to voice a concern.</p>
+
+<p><a class="btn secondary" href="/contact-us">Get started</a></p>
+    </div>
+  </div>
+</div>
+<div class="utility row">
+  <div>
+    <ul>
+    <li>© 2020 Leidos</li>
+    <li><a href="/privacy" target="_self" data-lift-slot="73e1205d-e7a7-47f9-b5f3-ba1fc6750aa8" data-lift-slot-valid="true" class="lift-static" data-card-url="//localhost:8080/index-2020-01-22_cad0862.html?hasContent=true#/lift-slot/73e1205d-e7a7-47f9-b5f3-ba1fc6750aa8" data-content-barrier="trusted" data-lift-for-slot="73e1205d-e7a7-47f9-b5f3-ba1fc6750aa8">Privacy Statement</a></li>
+    </ul>
+  </div>
+  <nav role="navigation" aria-labelledby="block-utilityfooternavigation-menu" id="block-utilityfooternavigation" data-block-plugin-id="menu_block:utility-footer" class="block block-menu navigation menu--utility-footer">
+                      
+    <h2 class="visually-hidden" id="block-utilityfooternavigation-menu">Utility Footer Navigation</h2>
+    
+
+              
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/products" target="_self" data-drupal-link-system-path="node/2346">Products</a>
+              </li>
+                <li class="menu-item">
+        <a href="/customers" target="_self" data-drupal-link-system-path="node/1681">Customers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/suppliers" target="_self" data-drupal-link-system-path="node/1571">Suppliers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/company/partners" title="Learn about the Leidos Alliance Partner Network" target="_self" data-drupal-link-system-path="node/1666">Partners</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://investors.leidos.com" title="Visit our Investor site" target="_blank">Investors</a>
+              </li>
+                <li class="menu-item">
+        <a href="/alumni" target="_self" data-drupal-link-system-path="node/1676">Alumni</a>
+              </li>
+                <li class="menu-item">
+        <a href="/employees" title="Resources for employees" target="_self" data-drupal-link-system-path="node/2206">Employees</a>
+              </li>
+        </ul>
+  
+
+
+      </nav>
+  <div>
+    <nav class="social col" aria-label="Social links">
+      <ul>
+        <li> <a href="https://twitter.com/leidosinc" class="ico ico-twitter" alt="twitter" target="_blank"><span class="sr-only">Twitter</span></a> </li>
+        <li> <a href="https://www.facebook.com/LeidosInc/" class="ico ico-facebook" alt="facebook" target="_blank"><span class="sr-only">Facebook</span></a> </li>
+        <li> <a href="https://www.instagram.com/leidosinc/" class="ico ico-instagram" alt="instagram" target="_blank"><span class="sr-only">Instagram</span></a></li>
+        <li> <a href="https://www.linkedin.com/company/leidos/" class="ico ico-linkedin" alt="linkedin" target="_blank"><span class="sr-only">Linkedin</span></a> </li>
+        <li> <a href="https://www.youtube.com/user/LeidosInc" class="ico ico-youtube" alt="youtube" target="_blank"><span class="sr-only">YouTube</span></a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  </div>
+
+      </div> <!-- /#footer -->
+    </footer> <!-- /#footer-outer-wrapper -->
+    </div></div> <!-- /#page, /#page-wrapper -->
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/6371","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"lazy":{"errorClass":"b-error","loadInvisible":false,"offset":100,"saveViewportOffsetDelay":"50","selector":".b-lazy","skipClass":"no-b-lazy","src":"data-src","successClass":"b-loaded","validateDelay":"25","placeholderSrc":"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="},"omega_breakpoints":{"leidos.default.all":{"query":"all and (min-width: 0px)","name":"All"},"leidos.default.narrow":{"query":"all and (min-width: 768px) and (max-width: 1023px)","name":"Narrow"},"leidos.default.normal":{"query":"all and (min-width: 1024px) and (max-width: 1219px)","name":"Normal"},"leidos.default.wide":{"query":"all and (min-width: 1220px)","name":"Wide"}},"omega":{"activeLayout":"primary","activeTheme":"leidos"},"statistics":{"data":{"nid":"6371"},"url":"\/core\/modules\/statistics\/statistics.php"},"ajax":[],"user":{"uid":0,"permissionsHash":"74a948d65cbeee5073bb01250345a2ab40053638a468b748f19e7cd38fe2f41c"}}</script>
+<script src="/sites/g/files/zoouby166/files/js/js_-gu1HQWpWNE7MohUW5B3G85R17d1L7x9mcIgyyHpODc.js"></script>
+<script type="text/javascript" id="" charset="UTF-8" src="https://cdn.cookielaw.org/geoswitch/0e65d10f-da9e-4e54-9d00-87784cbafcec.js"></script>
+
+
+        <script type="text/javascript">_satellite.pageBottom();</script>
+      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-139ccfcd9062b353000","applicationID":"525689437","transactionName":"ZVRRNkUDW0IDUEJRX1wecgFDC1pfTUNXX1VtUlIBXwc=","queueTime":0,"applicationTime":37,"atts":"SRNSQA0ZSEw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="drupal-live-announce" class="visually-hidden" aria-live="polite" aria-busy="false"></div><div id="scroll-indicator-bullets"><ul><li><a href="#main-content" class="bullet-item-link active"><span class="bullet-nav-title">Back to top</span><i class="circle"></i></a></li><li><a href="#current" class="bullet-item-link"><span class="bullet-nav-title">Current Privacy Statement</span><i class="circle"></i></a></li><li><a href="#accept" class="bullet-item-link"><span class="bullet-nav-title">Accepting this statement</span><i class="circle"></i></a></li><li><a href="#application" class="bullet-item-link"><span class="bullet-nav-title">Application of Local Laws</span><i class="circle"></i></a></li><li><a href="#data" class="bullet-item-link"><span class="bullet-nav-title">Consent to Data Transfer</span><i class="circle"></i></a></li><li><a href="#information" class="bullet-item-link"><span class="bullet-nav-title">What Types of Personal Information Are Collected via Leidos Websites?</span><i class="circle"></i></a></li><li><a href="#collection" class="bullet-item-link"><span class="bullet-nav-title">Why is this Personal Information collected?</span><i class="circle"></i></a></li><li><a href="#analytics" class="bullet-item-link"><span class="bullet-nav-title">Non-Personal Information, Analytics, and Advertising</span><i class="circle"></i></a></li><li><a href="#use" class="bullet-item-link"><span class="bullet-nav-title">Use of Personal Information</span><i class="circle"></i></a></li><li><a href="#useshare" class="bullet-item-link"><span class="bullet-nav-title">Sharing Personal and Non-Personal Information</span><i class="circle"></i></a></li><li><a href="#cookies" class="bullet-item-link"><span class="bullet-nav-title">Use of Cookies</span><i class="circle"></i></a></li><li><a href="#minors" class="bullet-item-link"><span class="bullet-nav-title">Minors and Children Under 13</span><i class="circle"></i></a></li><li><a href="#safeguard" class="bullet-item-link"><span class="bullet-nav-title">Safeguarding your Information</span><i class="circle"></i></a></li><li><a href="#managing" class="bullet-item-link"><span class="bullet-nav-title">Managing Your Personal Information</span><i class="circle"></i></a></li><li><a href="#dataretention" class="bullet-item-link"><span class="bullet-nav-title">Data Retention</span><i class="circle"></i></a></li><li><a href="#other" class="bullet-item-link"><span class="bullet-nav-title">Other Websites</span><i class="circle"></i></a></li><li><a href="#queries" class="bullet-item-link"><span class="bullet-nav-title">Queries and Complaints</span><i class="circle"></i></a></li><li><a href="#changes" class="bullet-item-link"><span class="bullet-nav-title">Changes to the Privacy Statement</span><i class="circle"></i></a></li></ul></div>
+<div class="optanon-button-allow" style="display:none;"></div>
+<script type="text/javascript" id="">function OptanonWrapper(){window.dataLayer.push({event:"OneTrustGroupsUpdated"})};</script>
+<div class="st-injected-content-generated st-install-6BQHvsvmsi-kr7qr4YWh" data-st-install-key="6BQHvsvmsi-kr7qr4YWh" id="st-injected-content"><div class="st-default-autocomplete" data-st-target-element=".st-default-search-input" style="display: none;">
+  <div class="st-autocomplete-results st-ui-autocomplete"><div class="st-query-present" style="display: none;"></div></div>
+</div>
+</div><div class="st-injected-content-generated st-install-6BQHvsvmsi-kr7qr4YWh __st-search-container" data-st-install-key="6BQHvsvmsi-kr7qr4YWh">
+<div class="st-ui-embed " style="">
+  <!-- Swiftype input and results overlay -->
+  <div class="st-ui-container st-ui-injected-container   st-ui-injected-on-page-container">
+    <!-- HEADER -->
+    <div class="st-ui-container-header_bar st-position-container">
+    </div>
+
+    <!-- LEFT SIDEBAR -->
+    <div class="st-ui-container-left_sidebar st-position-container">
+      <div class="st-ui-injected-search-controls">
+      </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="st-ui-container-right_sidebar st-position-container">
+      <div class="st-ui-injected-container-right_sidebar">
+        <div class="st-ui-injected-search-controls">
+        </div>
+      </div>
+    </div>
+
+    <!-- PRIMARY CONTENT -->
+    <div class="st-ui-container-primary_content st-position-container">
+        <div class="st-ui-injected-search-summary st-search-summary" aria-live="polite"></div>
+        <div class="st-ui-injected-content st-search-results"><div class="st-query-present" style="display: none;"></div></div>
+
+      <section class="st-ui-no-results st-search-suggestions"><div class="st-query-not-present">
+      </div></section>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="st-ui-container-footer_bar st-position-container">
+      <section class="st-ui-footer">
+        <span class="st-ui-pagination st-search-pagination"></span>
+      </section>
+    </div>
+  </div>
+</div>
+</div><div style="display: none; visibility: hidden;">[]
+<script type="text/javascript">(function(){function b(){!1===c&&(c=!0,Munchkin.init("059-GQO-645"))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script></div><div style="display: none; visibility: hidden;"><script type="text/javascript">var ssaUrl=("https:"==document.location.protocol?"https://":"http://")+"pixel-a.basis.net/iap/151c65a5ba1a0b34";(new Image).src=ssaUrl;(function(a){var c=("https:"==document.location.protocol?"https://":"http://")+"pixel-a.basis.net/dmp/asyncPixelSync",b=a.createElement("iframe");(b.frameElement||b).style.cssText="width: 0; height: 0; border: 0;";b.src="javascript:false";a.body.appendChild(b);a=b.contentWindow.document;a.open().write("\x3cbody onload\x3d\"window.location.href\x3d'"+c+"'\"\x3e");a.close()})(document);</script>
+</div><iframe style="width: 0px; height: 0px; border: 0px none;" src="javascript:false" data-gtm-yt-inspected-8169426_12="true"></iframe><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1821867998127714");fbq("track","PageView");</script>
+<noscript></noscript>
+
+</div><div style="display: none; visibility: hidden;"><script type="text/javascript">_linkedin_data_partner_id="118374";</script><script type="text/javascript">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https://secure":"http://edge")+".quantserve.com/quant.js";a.async=!0;a.type="text/javascript";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();_qevents.push({qacct:"p-Es1a_ugcYRp7z"});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"><script type="application/javascript">(function(d,a,b,f,e){d[e]=d[e]||[];d[e].push({projectId:"10000",properties:{pixelId:"10072678"}});var c=a.createElement(b);c.src=f;c.async=!0;c.onload=c.onreadystatechange=function(){var a=this.readyState,c=d[e];if(!a||"complete"==a||"loaded"==a)try{var b=YAHOO.ywa.I13N.fireBeacon;d[e]=[];d[e].push=function(a){b([a])};b(c)}catch(g){}};a=a.getElementsByTagName(b)[0];b=a.parentNode;b.insertBefore(c,a)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script></div><script type="text/javascript" id="">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//siteimproveanalytics.com/js/siteanalyze_6012907.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script><script type="text/javascript" id="">OptanonWrapper();</script></body></html>

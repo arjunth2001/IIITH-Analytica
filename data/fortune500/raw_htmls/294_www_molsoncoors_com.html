@@ -1,0 +1,660 @@
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class=" js" lang="en"><head>
+    <meta charset="utf-8"><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"173f877119",applicationID:"55447502"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<link rel="canonical" href="https://www.molsoncoors.com/privacy-policy">
+<meta name="description" content="Privacy Policy -">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #041E42} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<link rel="shortcut icon" href="/sites/molsonco/files/MolsonCoors-Logo-Favicon.png" type="image/png">
+<link rel="alternate" hreflang="fr" href="https://www.molsoncoors.com/fr/politique-confidentialite">
+<link rel="alternate" hreflang="en" href="https://www.molsoncoors.com/privacy-policy">
+<link rel="revision" href="https://www.molsoncoors.com/privacy-policy">
+<script src="//assets.adobedtm.com/284fab1c816f/1a92847956c5/launch-2870b3a18ea9.min.js" type="text/javascript"></script><script src="https://assets.adobedtm.com/extensions/EP5e9ec493dfa0465eaa797b523b09d3f7/AppMeasurement.min.js" async=""></script>
+
+    <title>Privacy Policy | Molson Coors</title>
+    <link rel="stylesheet" media="all" href="/sites/molsonco/files/css/css_gZgAnZjRcsHHPnAzVa-inkwhnJIaSXpAfki96CnlqGM.css">
+<link rel="stylesheet" media="all" href="/sites/molsonco/files/css/css_rI67rchlFKfoSGZfxBfuwQ1pGmwobX4slzNL777bf7c.css">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/molsonco/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="node-id-336 path-node page-node-type-mc-page node-title-privacy-policy navbar-is-fixed-top has-glyphicons lang-en country-">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <header class="navbar navbar-default navbar-fixed-top" id="navbar" role="banner">
+              <div class="container">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <img src="/sites/molsonco/files/MolsonCoors-Logo.png" alt="Home">
+      <span class="logo-heading">Molson Coors - </span>
+    </a>
+  
+  </div>
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-molsonco-main-menu-menu" id="block-molsonco-main-menu">
+            <h2 class="sr-only" id="block-molsonco-main-menu-menu">Main Nav (EN)</h2>
+
+      
+            <ul class="menu menu--main nav navbar-nav">
+                            <li>
+        <a href="/" title="MillerCoors Home Page" data-drupal-link-system-path="<front>">Home Page</a>
+                  </li>
+                        <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+                                <ul class="dropdown-menu items-6">
+                                  <li style="">
+        <a href="/about" title="About Us" data-drupal-link-system-path="node/34">About Us</a>
+                  </li>
+                        <li style="">
+        <a href="/about/leadership-team" title="Leadership Team" data-drupal-link-system-path="node/1496">Leadership Team</a>
+                  </li>
+                        <li style="">
+        <a href="/about/board-of-directors" title="Board of Directors" data-drupal-link-system-path="node/1446">Board of Directors</a>
+                  </li>
+                        <li style="">
+        <a href="/about/history" title="History" data-drupal-link-system-path="node/1481">History</a>
+                  </li>
+                        <li style="">
+        <a href="/about/governance-and-ethics" title="Governance and Ethics" data-drupal-link-system-path="node/1501">Governance and Ethics</a>
+                  </li>
+                        <li style="">
+        <a href="/contact-us" title="Contact Us Link" data-drupal-link-system-path="node/1621">Contact Us</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Brands <span class="caret"></span></a>
+                                <ul class="items-6 dropdown-menu items-2">
+                                  <li style="">
+        <a href="/brands/our-brands" title="Our Brands" data-drupal-link-system-path="node/341">Our Brands</a>
+                  </li>
+                        <li style="">
+        <a href="/brands/nutritional-information" title="Nutritional Information" data-drupal-link-system-path="node/81">Nutritional Information</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Brewery Tours <span class="caret"></span></a>
+                                <ul class="items-6 dropdown-menu items-7">
+                                  <li style="">
+        <a href="https://www.coors.com/brewery" target="_blank" title="Coors Brewery">Coors Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="https://creemoresprings.com/en/index#thetour" target="_blank" title="Creemore Springs Brewery Tour Link">Creemore Springs Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="http://www.gib.ca/tours-tastings/" target="_blank" title="Granville Island Brewery Tour Link">Granville Island Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="https://www.leinie.com/tours" target="_blank" title="Leinenkugel Brewery">Leinenkugel Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="https://www.millerbrewerytour.com/tour-information" target="_blank" title="Miller Brewery">Miller Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="https://en.pernstejn.cz/brewery/tours/" target="_blank" title="Pardubice Brewery Tour Link">Pardubice Brewery</a>
+                  </li>
+                        <li style="">
+        <a href="https://www.centrumstaropramen.cz/en/" target="_blank" title="Staropramen Brewery">Staropramen Brewery</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Sustainability <span class="caret"></span></a>
+                                <ul class="items-6 items-7 dropdown-menu items-2">
+                                  <li style="">
+        <a href="/sustainability/responsibly-refreshing" title="Responsibly Refreshing" data-drupal-link-system-path="node/1511">Responsibly Refreshing</a>
+                  </li>
+                        <li style="">
+        <a href="/sustainability/sustainability-reporting" title="2019 Sustainability Reporting" data-drupal-link-system-path="node/1506">2019 Sustainability Reporting</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li>
+        <a href="/careers" title="Careers" data-drupal-link-system-path="node/1646">Careers</a>
+                  </li>
+                        <li>
+        <a href="/investor-relations" title="Investor Relations" data-drupal-link-system-path="node/1526">Investor Relations</a>
+                  </li>
+                        <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">News <span class="caret"></span></a>
+                                <ul class="items-6 items-7 dropdown-menu items-4">
+                                  <li style="">
+        <a href="/news/news-center" title="News Center" data-drupal-link-system-path="node/1521">News Center</a>
+                  </li>
+                        <li style="">
+        <a href="/news/media-contacts" title="Media and Investor Contacts" data-drupal-link-system-path="node/1531">Media and Investor Contacts</a>
+                  </li>
+                        <li style="">
+        <a href="https://www.molsoncoorsblog.com" target="_blank" title="Molson Coors Blog">Molson Coors Blog</a>
+                  </li>
+                        <li style="">
+        <a href="http://ir.molsoncoors.com/news/default.aspx" target="_blank" title="Investor Press Releases">Investor Press Releases</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li>
+        <a href="" class="dropdown-toggle" id="search-toggle" data-toggle="dropdown"><span class="visually-hidden">Search</span><i class="fa fa-search"></i></a>
+        <ul class="dropdown-menu">
+          <li><div class="search-block-form block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-molsonco-search" role="search">
+  
+      <h2 class="visually-hidden">Search</h2>
+    
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+      <label for="edit-keys" class="control-label sr-only">Search</label>
+  
+  
+  <div class="input-group"><input title="Enter the terms you wish to search for." aria-label="Search" data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name=""><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+
+  
+  
+      <div id="edit-keys--description" class="description help-block">
+      Enter the terms you wish to search for.
+    </div>
+  </div>
+<input data-drupal-selector="edit-advanced-form" type="hidden" name="advanced-form" value="1"><input data-drupal-selector="edit-f-0" type="hidden" name="f[0]" value="language:en"><div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+
+</form>
+
+  </div>
+</li>
+        </ul>
+                  </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                    </div>
+          </header>
+  
+  <div role="main" class="main-container container js-quickedit-main-content" id="page">
+    <div class="row">
+
+            
+            
+                  <section class="col-sm-12">
+
+                
+                                      
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      <article data-history-node-id="336" role="article" about="/privacy-policy" class="mc-page full clearfix">
+
+  
+    
+
+  
+  <div class="content">
+    
+      <div>
+
+
+
+
+
+
+
+<div class="paragraph paragraph--type--bp-simple paragraph--view-mode--default paragraph--id--11461">
+  <div class="paragraph__column">
+    
+            <div class="field field--name-bp-text field--type-text-long field--label-hidden field--item"><p class="text-align-right"><a class="button" click="" for="" here="" href="/privacy/international-privacy" languages="" other="" style="margin-top: 25px; title=">CLICK HERE FOR OTHER LANGUAGES</a></p>
+
+<h1 class="page-title-main">Molson Coors Beverage Company Privacy Policy</h1>
+
+<p><em>Last Modified and Effective Date: January 1, 2020 </em></p>
+
+<h2>Introduction</h2>
+
+<p>Molson Coors Beverage Company, its subsidiaries, operating companies, and affiliates, and affiliated brands, agents, trusted service vendors/providers, and corporate affiliates acting on our behalf (collectively, “Molson Coors”, “we”, “us”, and “our”) values and respects the privacy of every individual. We are providing this Privacy Policy to help you understand how we collect, use, transfer, disclose, and store your Information (as defined below).</p>
+
+<p>We encourage you to read the entire Privacy Policy to familiarize yourself with our practices. You can jump to particular topics by going to the headings below:</p>
+
+<ul style="padding-left: 25px"><li><a class="smoothScroll" href="#drinkingage">ACCESS RESTRICTED TO INDIVIDUALS OF LEGAL DRINKING AGE</a></li>
+	<li><a class="smoothScroll" href="#privacyapply">WHEN DOES THIS PRIVACY POLICY APPLY? </a></li>
+	<li><a class="smoothScroll" href="#collection">COLLECTION, USE &amp; DISCLOSURE OF INFORMATION</a></li>
+	<li><a class="smoothScroll" href="#trackingtech">TRACKING TECHNOLOGIES</a></li>
+	<li><a class="smoothScroll" href="#sharinginfo">SHARING YOUR INFORMATION/DISCLOSURE TO THIRD-PARTIES</a></li>
+	<li><a class="smoothScroll" href="#optout">CHOICES AND OPT-OUT</a></li>
+	<li><a class="smoothScroll" href="#securityinfo">SECURITY AND STORAGE OF INFORMATION</a></li>
+	<li><a class="smoothScroll" href="#thirdappweb">THIRD PARTY APPLICATIONS/WEBSITES</a></li>
+	<li><a class="smoothScroll" href="#privacyinfo">PRIVACY INQUIRIES AND CORRECTING YOUR INFORMATION</a></li>
+	<li><a class="smoothScroll" href="#policyupdates">CHANGES TO THIS PRIVACY POLICY</a></li>
+	<li><a class="smoothScroll" href="#euinfo">INFORMATION FOR EU RESIDENTS</a></li>
+	<li><a class="smoothScroll" href="#calinfo">INFORMATION FOR CALIFORNIA RESIDENTS</a></li>
+</ul><ol style="padding-left: 25px"><li>
+	<h2 id="drinkingage" style="font-size:20px;"><u>ACCESS RESTRICTED TO INDIVIDUALS OF LEGAL DRINKING AGE</u></h2>
+
+	<p><strong>MOLSON COORS SITES AND ADVERTISING ARE INTENDED ONLY FOR PERSONS OF LEGAL DRINKING AGE BASED ON THE JURISDICTION WHERE SUCH CONTENT IS BEING ACCESSED OR VIEWED. YOU WILL BE REQUIRED TO VERIFY YOUR DATE OF BIRTH PRIOR TO ENTERING OR INTERACTING WITH A SITE. AGE VERIFICATION PROMPTS MAY ALSO BE LOCATED WITHIN THE SITES.</strong></p>
+
+	<p><strong>WE DO NOT KNOWINGLY COLLECT INFORMATION FROM THOSE UNDER THE LEGAL DRINKING. IF YOU ARE UNDER THE LEGAL DRINKING AGE IN YOUR JURISDICTION AND HAVE ENTERED OUR SITE BY PROVIDING A FALSE DATE OF BIRTH, YOU MUST IMMEDIATELY LEAVE THE SITE. IF YOU BELIEVE SOMEONE UNDER THE LEGAL DRINKING AGE HAS PROVIDED US WITH INFORMATION BY OBTAINING ACCESS IN VIOLATION OF THIS PRIVACY POLICY, PLEASE CONTACT US IMMEDIATELY SO THAT WE MAY REMOVE THIS INFORMATION.</strong></p>
+	</li>
+	<li>
+	<h2 id="privacyapply" style="font-size:20px;"><u>WHEN DOES THIS PRIVACY POLICY APPLY?</u></h2>
+
+	<p>This Privacy Policy describes our practices in connection with the Information collected from individuals interacting with us and our Sites, products and services, including our websites, social media pages and promotional sites that we control, widgets and mobile sites and applications, our reward programs, blogs, interactive applications, chat bots, emails and text messages (SMS and MMS) that we send to you, and other interactive features (each a “Site,” collectively the “Sites”), through our online advertisements on third-party websites, and through vendors/sources from which we source information.</p>
+
+	<p>It does not apply to information we obtain in our capacity as an employer. For information on how Molson Coors will process your information where you apply for a job with us, please see our separate fair processing notice which can be found when you apply for a job.</p>
+	</li>
+	<li>
+	<h2 id="collection" style="font-size:20px;"><u>COLLECTION, USE, AND DISCLOSURE OF INFORMATION</u></h2>
+
+	<p>Molson Coors collects personal information relating to you in a variety of ways depending on how you interact with us. The following represents a non-exhaustive list of common activities with examples of the type of information that we collect from and about you, and how we use that information (collectively, “Information”):</p>
+
+	<p>&nbsp;</p>
+
+	<table style="font-size:12px;" cellspacing="0" cellpadding="2" border="1" align="center"><tbody><tr style="background:#D3D3D3"><th class="text-align-center"><u>Context</u></th>
+				<th class="text-align-center"><u>Type of Information</u></th>
+				<th class="text-align-center"><u>Primary Purpose for Collection &amp; Use</u></th>
+			</tr><tr><td class="text-align-center">Contact customer service, make inquiries, or otherwise communicate with us</td>
+				<td>
+				<p class="text-align-center">Contact information (e.g., name, home or physical address, email address, telephone number, and mobile phone number).</p>
+
+				<p class="text-align-center">Some of our Sites utilize live or automated conversation systems, or “chat bots,” that allow us to interact with customer, help customers buy goods and services, and answer a wide variety of questions. When you communicate with our chat bots, we collect the content that you send to us in order to reply. For more information about our use of chat bots, please go to <a href="/terms-and-conditions" target="_blank">Terms &amp; Conditions</a>.</p>
+				</td>
+				<td class="text-align-center">We have a legitimate interest in receiving, and responding to your inquiries and acting upon your feedback or issues.</td>
+			</tr><tr><td class="text-align-center">Opt in to receive promotional communications</td>
+				<td class="text-align-center">Contact information (e.g., name, home or physical address, email address, telephone number, and mobile phone number);</td>
+				<td class="text-align-center">We share information about new products, events, and promotions with individuals that have opted in to receive such information. We also have a legitimate interest in sharing information about our products or services.</td>
+			</tr><tr><td class="text-align-center">Order merchandise</td>
+				<td>
+				<p class="text-align-center">Contact information (e.g., name, home or physical address, email address, telephone number, and mobile phone number);</p>
+
+				<p class="text-align-center">Billing and shipping information (e.g., credit/debit card number, expiration date, CVV code, billing and shipping addresses and contact information).</p>
+				</td>
+				<td class="text-align-center">We use your information to perform our contract to fulfill your order and process your transactions/payments.</td>
+			</tr><tr><td class="text-align-center">Register for an account</td>
+				<td>
+				<p class="text-align-center">Contact information (e.g., name, home or physical address, email address, telephone number, and mobile phone number);</p>
+
+				<p class="text-align-center">Username and passwords used to access Sites, including verification through social media platforms.</p>
+				</td>
+				<td class="text-align-center">We have a legitimate interest in administering your account and providing account related functionalities. Accounts can be used for easy checkout and to save your preferences and transaction history.</td>
+			</tr><tr><td class="text-align-center">Interact with us on social media</td>
+				<td class="text-align-center">Social media account information (e.g., user name and passwords, profile images, and other images that you make available such as user-generated content).</td>
+				<td>
+				<p class="text-align-center">We have a legitimate interest providing customers with a means for interacting with us on social media.</p>
+
+				<p class="text-align-center">We also have a legitimate interest in understanding customer perception of our brands and products, creating content tailored to our followers, understanding industry trends, improving customer experience, and developing products that would be of interest to our followers.</p>
+				</td>
+			</tr><tr><td class="text-align-center">Enter a promotion, sweepstakes, contest, or other special offer</td>
+				<td>
+				<p class="text-align-center">Contact information (e.g., name, home or physical address, email address, telephone number, and mobile phone number);</p>
+
+				<p class="text-align-center">Government identification numbers (which may include, if you are resident in the US, Social Security Number (in limited circumstances, for example if you win a sweepstakes or receive compensation that must be reported on government tax forms)).</p>
+				</td>
+				<td class="text-align-center">We have a legitimate interest in operating the sweepstakes, contests, and special offers, including notifying you if you are selected. In some contexts we are also required by law to collect information about those that enter into our sweepstakes, and we have a legitimate interest in complying with those laws.</td>
+			</tr><tr><td class="text-align-center">Complete a survey or voluntarily provide information about yourself</td>
+				<td>
+				<p class="text-align-center">Demographic information including date of birth, gender, interests, state, zip/postal code, time zone, country, and language;</p>
+
+				<p class="text-align-center">Preferences, shopping habits, and other lifestyle information, including product wish lists, order history, marketing preferences, and cell phone carrier.</p>
+				</td>
+				<td>
+				<p class="text-align-center">We have a legitimate interest in understanding our users and providing tailored services.</p>
+
+				<p class="text-align-center">We have a legitimate interest in understanding how you interact with our website to better improve it, and to understand your preferences and interests in order to select offerings that you might find most useful. We also have a legitimate interest in detecting and preventing fraud.</p>
+				</td>
+			</tr><tr><td class="text-align-center">Interact with our Site, emails, and/or online advertisements</td>
+				<td>
+				<p class="text-align-center">Search queries, Application usage data;</p>
+
+				<p class="text-align-center">Server log file location, internet service provider, mobile or other device identifier (e.g., UDID and MEID), user agents, or IP address;</p>
+
+				<p class="text-align-center">Information collected through cookies, tags, pixels, clear pixels, beacons, and other similar technologies;</p>
+
+				<p class="text-align-center">Referring and exiting websites/URLs (including click through URL and pixel tags);</p>
+
+				<p class="text-align-center">Browser and device information (including platform and version);</p>
+
+				<p class="text-align-center">Geo-location information such as your precise or approximate location.</p>
+				</td>
+				<td>
+				<p class="text-align-center">We have a legitimate interest in understanding our users and providing tailored services. In some contexts our use is also based upon your consent, such as when we obtain your consent for the deployment of cookies on our Sites.</p>
+
+				<p class="text-align-center">We have a legitimate interest in understanding how you interact with our website to better improve it, and to understand your preferences and interests in order to select offerings that you might find most useful.</p>
+
+				<p class="text-align-center">We have a legitimate interest in monitoring our networks and the visitors to our Sites. We also have a legitimate interest in detecting and preventing fraud.</p>
+				</td>
+			</tr></tbody></table><p>&nbsp;</p>
+
+	<p>Although the above chart describes examples of information we collect and our primary purpose in collecting such information, in many situations we have more than one legitimate purpose. For example, if you complete an online order we collect your payment and shipping information to perform our contract with you (e.g., to process and fulfill your order), but we also collect your information because we have a legitimate interest in maintaining your information after your transaction is complete so that we can quickly and easily respond to any questions about your order. As a result, our collection and processing of your information is based in different contexts upon: (i) your consent (e.g., to place cookies or for marketing), (ii) the performance of our contract with you (e.g., to provide you with products and services you have requested); (iii) compliance with legal obligations (e.g., where we are required to disclose information to a court or tax authority); and/or (iv) our legitimate interests in conducting our business.</p>
+
+	<p>To the extent that any Information is considered “personal information” by local law, we treat this information as such and ensure that our handling of this information complies with all applicable data privacy and protection laws. To the extent permitted by applicable law, any Information you provide to us directly may be combined with other Information that you provide to us through other channels, that is publicly available, or that we may otherwise obtain, including from third parties.</p>
+
+	<ol type="A"><li><u>How We May Collect Information:</u> Molson Coors may collect Information from the following:
+
+		<ul style="list-style-type:disc"><li><strong>From You</strong> (e.g., information, such as date of birth, gender, hobbies and interests, consumption habits, zip/postal code and your preferred means of communication when you voluntarily provide it);</li>
+			<li><strong>Our Sites and Applications</strong> (e.g., when you purchase a product on an e-commerce Site or opt-in to receive promotional emails);</li>
+			<li><strong>Offline</strong> (e.g., customer service inquiries, sweepstakes);</li>
+			<li><strong>Online tracking technologies, including cross-device tracking</strong> (e.g., service file logs, IP address, cookies, tags, pixels, clear pixels, gifs, bugs, beacons, and other similar technologies, some of which may enable Molson Coors or our service providers to identify you and collect information about you across devices and Sites);</li>
+			<li><strong>Mobile usage</strong> ((i.e., information learned from our mobile application, such as your device’s latitude and longitude or your device’s location capabilities (e.g., GPS, Wi-Fi, Bluetooth signal, beacons, LED light chips or other similar technologies)) and 3rd party mobile pay applications or services;</li>
+			<li><strong>Through your browser or device</strong> (e.g., certain information, including your computer type, operating system name and version, IP address, Media Access Control (“MAC”) address, language, Internet browser type and version, and service provider that is often automatically collected by most browsers);</li>
+			<li><strong>Through website analytics and advertising features</strong> (e.g., Google Analytics, Google Analytics Demographics, Interest Reporting, Adobe Flash technologies including but not limited to Adobe Flash Local Stored Objects, Quantcast);</li>
+			<li><strong>Other Sources</strong> (e.g., public databases; joint marketing partners, social media platforms, from people with whom you are connected on social media platforms, public forums, and from other third parties).</li>
+		</ul></li>
+		<li>
+		<p><u>How We May Use Information:</u> To the extent permitted by applicable law, Molson Coors may use your Information to:</p>
+
+		<ul style="list-style-type:disc"><li>Identify you when you visit our Sites;</li>
+			<li>Send administrative information to you, for example, information regarding the Sites and changes to our terms, conditions, and policies.</li>
+			<li>Administer your account on any of our Sites, including rewards programs, sweepstakes, and contests for which you enter, including notifying you of the results.
+			<ul style="list-style-type:circle"><li><em>Please note that some promotions have additional rules, which could contain additional information about the use and disclosure of your Information;</em></li>
+			</ul></li>
+			<li>Send you marketing communications and updates about Molson Coors for which you have opted in (e.g., emails, push notifications, SMS and MMS messages);</li>
+			<li>Deliver customized or targeted advertisements to you;</li>
+			<li>Send you transactional emails about purchases made on our Sites, including order confirmation and abandoned cart emails;</li>
+			<li>Fulfill your order and process transactions/payments;</li>
+			<li>Provide customer support and respond to your inquiries and fulfill requests;</li>
+			<li>Allow you to send messages to a friend (legal drinking age only) through the Sites. By using this functionality, you are telling us that you are entitled to use and provide us with your friend’s contact information;</li>
+			<li>Conduct marketing research and analysis;</li>
+			<li>Personalize your experience on our Sites, including displaying content based upon your location, past purchases, interests, as well as Information collected across devices and Sites;</li>
+			<li>Diagnose, enhance and improve our products, services, Sites, content, advertising, and promotions;</li>
+			<li>Comply with or enforce applicable legal requirements, including complying with laws outside of your country of residence;</li>
+			<li>Respond to requests from governmental authorities, including those outside of the country of residence;</li>
+			<li>Use your Information for other purposes on an anonymized or aggregate basis; or</li>
+			<li>As otherwise required by law.</li>
+		</ul><p>We may also share your Information within Molson Coors in a manner consistent with this Privacy Policy. We may also share your Information with third-parties as described below.</p>
+		</li>
+	</ol></li>
+	<li>
+	<h2 id="trackingtech" style="font-size:20px;"><u>TRACKING TECHNOLOGIES</u></h2>
+
+	<ol type="A"><li>
+		<p><u>Cookies and Tracking Technologies.</u> Molson Coors utilizes “cookies”, “tags”, “pixels”, “clear gifs” and other similar tracking technologies on our Sites. A cookie is a text file that is placed on your computer or other mobile device when you access the Sites or the Internet. These technologies allow us to collect Information about your interaction with our Sites and advertisements. Examples of such Information may include, but are not limited to: demographic Information, browser type, IP address, pages viewed, activity conducted, and timing of your visit.</p>
+
+		<p>Different types of cookies may be used for different purposes on our Sites. These are known as: required cookies, functional cookies, and advertising cookies. Some cookies may be provided by an external third party to provide additional functionality to our Sites and these are included below. You may at any time "opt out" of certain tracking mechanisms. However, disabling such cookies may prevent you from using certain features or taking full advantage of all our offerings on our Site.</p>
+
+		<ul style="list-style-type:disc"><li><strong>Required Cookies</strong>
+
+			<p>These cookies are necessary to enable the basic features of this site to function, such as providing secure log-in or remembering how far you are through an order. If you do not agree to the Required Cookies, then you will not be able to use the Sites.</p>
+			</li>
+			<li><strong>Functional Cookies</strong>
+			<p>These cookies allow us to analyze your use of the site to evaluate and improve our performance.&nbsp; They may also be used to provide a better customer experience on this site.&nbsp; For example, remembering your log-in details, saving what is in your shopping cart, or providing us information about how our site is used.</p>
+			</li>
+			<li><strong>Advertising cookies</strong>
+			<p>These cookies are used to show you ads that are more relevant to you.&nbsp; We may share this information with advertisers or use it to better understand your interests.&nbsp; For example, Advertising Cookies may be used to share data with advertisers so that the ads you see are more relevant to you, allow you to share certain pages with social networks, or allow you to post comments on our site.</p>
+			</li>
+		</ul><p>Molson Coors, our trusted service vendors/providers, and permitted third parties may also advertise our products on third-party websites. Third-party websites may also use cookies or other tracking devices. Molson Coors, our trusted service vendors/providers, and permitted third parties do not have control over the tracking technologies utilized by third-party websites. As such, you should carefully review the privacy policies of those third-party sites to understand their tracking activities, if any.</p>
+		</li>
+		<li>
+		<p><u>Cookies on Your Browser.</u> Subject to applicable privacy laws, we will automatically collect cookies and other information when you visit our Sites. We currently participate in third party ad networks and use third party cookies as discussed above to track your visits across websites.</p>
+
+		<p>Additionally, you may at any time "opt out" of certain tracking mechanisms through your browser settings. However, disabling such features may prevent you from using certain features or taking full advantage of all our offerings on our Site. Please refer to your browser Help instructions to learn more about cookies and other tracking devices and how to manage their use. If you use another computer or change browsers, you will need to repeat the process of refusing or deleting cookies. For more information about cookies including how to set your internet browser to reject cookies please go to <a href="http://www.allaboutcookies.org/" target="_blank">www.allaboutcookies.org.</a></p>
+		</li>
+		<li>
+		<p><u>Ad Tracking.</u> Certain devices may allow you to Limit Ad Tracking. Please refer to the settings on your computer or device for information on how to disable Ad Tracking.</p>
+		</li>
+		<li>
+		<p><u>Do Not Track Requests.</u> While some browsers have a “do not track” feature, because these features are not yet uniform we do not currently recognize browser based “do not track” requests.</p>
+		</li>
+	</ol></li>
+	<li>
+	<h2 id="sharinginfo" style="font-size:20px;"><u>SHARING YOUR INFORMATION/DISCLOSURE TO THIRD-PARTIES</u></h2>
+
+	<p>At times, Molson Coors may make certain Information available to third parties (e.g., trusted vendors and providers) and within our family of companies/brands. We will only share your Information with these third parties and related entities in the ways that are described in this Privacy Policy and consistent with applicable law.</p>
+
+	<ul style="list-style-type:disc"><li><strong>Affiliates.</strong> We share information with our corporate affiliates (e.g., parent company, sister companies, subsidiaries, joint ventures, or other companies and brands under common control).</li>
+		<li><strong>Marketing Partners.</strong> We share information with service vendors/providers that help us to evaluate and improve our marketing and promotional efforts, content, products and services, to better understand customer interests and preferences, to provide you relevant information, and to conduct joint marketing programs.</li>
+		<li><strong>Service Vendors/Providers.</strong> We share information with service vendors/providers that help us with certain business activities, including but not limited to processing credit card transactions, administering promotions, fulfilling and shipping your order, assisting us in Site operations, providing customer service (e.g., telephone, online, or via chat bots), and delivering email communications.</li>
+		<li><strong>Corporate Change.</strong> We may share information in connection with a corporate change including a merger, acquisition, or sale of assets, including during the planning and negotiation stages.</li>
+		<li><strong>Third-party Partners.</strong> We may offer contests, sweepstakes, or other promotions with third party partners. If you decide to enter a contest, sweepstakes, or promotion that is sponsored by a third party, the information that you provide will be shared with us and them. Their use of your information is not governed by this Privacy Policy. We also share information with other third-party partners with whom we may enter into a relationship (e.g., joint marketing campaigns, sports alliances). Depending on the purposes for this sharing, Molson Coors may provide you with the option of whether this information may be shared prior to sharing with such a partner. The subsequent use of the information by the third-party partner will be governed by their own privacy practices and policies.</li>
+		<li><strong>Public.</strong> Some of our Sites permit you to engage with or post on our social media pages and blogs, and other similar platforms. When you post on social networking platforms or other public platforms, the information that you share is visible to other users and can be read, collected, or used by other users. For example, if you list your name, age, and address on a social media site, this information is public. Please be aware that the privacy policy of the social networking site will apply to any content you post on or provide to that Site.</li>
+		<li><strong>Certain Other Disclosures with Your Consent.</strong> We may ask if you would like us to share your information with other third parties who are not described elsewhere in this Privacy Policy with your prior formal consent to do so.</li>
+		<li><strong>Certain Other Disclosures Without Your Consent.</strong> We may disclose information as required by law, such as in conjunction with a government inquiry or to comply with a subpoena, warrant, court order, or similar legal process. We may also share your information when we believe in good faith that disclosure is necessary to protect our rights, to defend against a legal claim, to protect your safety or the safety of others, to investigate, prevent, or take action regarding possible illegal activities, suspected fraud, or a violation of our policies.</li>
+	</ul></li>
+	<li>
+	<h2 id="optout" style="font-size:20px;"><u>CHOICES AND OPT-OUT</u></h2>
+
+	<ol type="A"><li><strong>Emails.</strong> We may use your email address to send emails, newsletters, surveys, offers, and other promotional materials to you, as well as targeted offers from third parties. You can stop receiving promotional emails by following the unsubscribe instructions included in emails you receive from us, or by contacting us using the details below.</li>
+		<li><strong>Mobile Marketing (SMS and MMS) Updates.</strong> We may send you text messages relating to our brands, promotions, and other legitimate purposes. If you choose to join a mobile marketing list or participate in any text message program with us, there are typically message and data costs associated with receiving SMS (text) or MMS (multimedia) messages. These will vary based on your wireless carrier and plan. Check with your mobile carrier to determine what charges may apply. If you would like to stop receiving messages from us on your mobile device, reply to the message with “STOP” (or other message as instructed). You may also contact your mobile carrier for additional information on receiving or stopping mobile messages.</li>
+		<li><strong>Location Services.</strong> If you have previously enabled location sharing on your computer or mobile device, you may be able to opt out from further sharing by changing the settings on your computer or mobile device or by uninstalling the Application. We will not use any precise location data without your prior consent, which may be obtained directly by us or through our service providers or media partners.</li>
+		<li><strong>Push Notifications.</strong> If you wish to disable push notifications on your mobile device, refer to Settings on your mobile device.</li>
+		<li><strong>Third Party Analytics.</strong>
+		<ul style="list-style-type:circle"><li>Google Analytics: For more information on how to opt out of our use of Google Analytics and our use of its Advertising Features visit <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">https://tools.google.com/dlpage/gaoptout</a> and <a href="http://www.google.com/safetycenter/tools/#manage-your-ads-preferences" target="_blank">http://www.google.com/safetycenter/tools/#manage-your-ads-preferences</a>.</li>
+			<li>Quantcast: For more information on or to opt-out of Quantcast, visit their site at <a href="https://www.quantcast.com/opt-out" target="_blank">https://www.quantcast.com/opt-out</a>.</li>
+			<li>DAA Opt-Out Page: Users can opt out of additional tracking and targeted advertising, including Google Analytics and Quantcast, via the Digital Advertising Alliance’s (“DAA”) opt-out page and the Networking Advertising Initiatives’ (“NAI”) opt-out page at <a href="http://www.aboutads.info/choices/" target="_blank">http://www.aboutads.info/choices/</a> and <a href="http://www.networkadvertising.org/choices/" target="_blank">http://www.networkadvertising.org/choices/</a>, respectively.</li>
+		</ul></li>
+	</ol></li>
+	<li>
+	<h2 id="securityinfo" style="font-size:20px;"><u>SECURITY AND STORAGE OF INFORMATION</u></h2>
+
+	<p>Molson Coors uses administrative, technical, and physical security to protect the Information we maintain to ensure that it is used according to this Privacy Policy. Please be aware though that, despite our best efforts, no security measures are perfect or impenetrable. If you have reason to believe that your Information is not secure, please contact us immediately in accordance with the contact information below. In the event that we are required by law to inform you of a breach to your personal information we may notify you electronically, in writing, or by telephone, if permitted to do so by law.</p>
+
+	<p>We will store your Information for as long as is reasonably necessary for the purposes for which it was collected, as explained in this notice. In some circumstances, we may store your Information for longer periods of time, for instance where we are required to do so in accordance with legal, regulatory, tax, or accounting requirements.</p>
+	</li>
+	<li>
+	<h2 id="thirdappweb" style="font-size:20px;"><u>THIRD PARTY APPLICATIONS/WEBSITES</u></h2>
+
+	<ol type="A"><li><u>Social Networks/Online Communities</u>
+
+		<p>On certain Sites, we may enable you to access online communities for sharing information such as messages, photos, and videos. We may also enable you to post content from some Sites to your profile on other social networks. We cannot control any policies or terms of such third party social networks. For example, sharing such information with Facebook may require us to implement cookies and/or APIs in order to facilitate the communication between our Sites and Facebook. That information, shared through cookies and/or APIs, then becomes subject to Facebook’s Data Policy, located at <a href="https://www.facebook.com/full_data_use_policy" target="_blank">https://www.facebook.com/full_data_use_policy</a>. As a result, we cannot be responsible for any use of your information or content by a third party social network, which you use at your own risk.</p>
+		</li>
+		<li><u>Linked Sites</u>
+		<p>Our Sites may contain links to third-party websites or applications not controlled by Molson Coors or covered by this Privacy Policy. If you submit information to any of those websites or applications, your information is governed by their privacy policies. We encourage you to carefully read the privacy policy of any website or application that you visit.&nbsp; We have no control or authority over third-party sites and are not responsible for any information that you may submit on that site.</p>
+		</li>
+		<li><u>Transactions</u>
+		<p>In some cases, we may use a third-party payment service to process purchases made through the Sites, including but not limited to reservation booking sites, consumer promotions sites, and eCommerce/online retail shop sites.&nbsp; In these cases, your information may be collected by this third party and not by us, and will be subject to the third party’s privacy policy, rather than this Privacy Policy.&nbsp; We have no control over, and are not responsible for, this third party’s use or disclosure of your information.</p>
+		</li>
+		<li><u>Widgets and Interactive Applications</u>
+		<p>Our Sites may include interactive programs that provide specific services from another company, such as “liking” or sharing content, often referred to as widgets. You may have the opportunity to submit Information, such as your email or phone number for collection through a widget. A widget may also use cookies and/or collect usage data. Information collected by a widget is governed by the privacy policy of the company that created it.</p>
+		</li>
+	</ol></li>
+	<li>
+	<h2 id="privacyinfo" style="font-size:20px;"><u>PRIVACY INQUIRIES AND CORRECTING YOUR INFORMATION</u></h2>
+
+	<p>If you have any questions or comments regarding this Privacy Policy, or if you would like to review, update, correct, or remove any Information from our records, please contact us using the information below. Once we receive your request for removal, we will remove your Information from our records unless we have a specific legal requirement/legitimate interest to retain your Information. However, except where disclosure is required by law, we may decide not to grant access or make revisions where the burden or expense of providing access would be disproportionate to the risks to the individual’s privacy in any given case, or when the rights of others would be violated by granting the access. Any requested deletions or changes may not be effective immediately. We will aim to address your request as soon as practicable.</p>
+
+	<div class="text-align-center">Molson Coors Beverage Company<br>
+	250 S. Wacker Drive<br>
+	Chicago, IL 60606 USA<br>
+	Toll Free: 1-866-294-9302<br>
+	Email: <a href="mailto:dataprotection@molsoncoors.com">dataprotection@molsoncoors.com</a><br><a href="https://molsoncoors.ethicspointvp.com/custom/molsoncoors/forms/data/form_data.asp" target="_blank">https://molsoncoors.ethicspointvp.com/custom/molsoncoors/forms/data/form_data.asp</a></div>
+
+	<p>Please note that email communications are not always secure; so please do not include any sensitive information, including credit card information, in your emails to us.</p>
+
+	<p>For further information on how we ensure compliance with applicable EU data privacy and protection legislation, please see the “Information for EU Residents” section below.</p>
+	</li>
+	<li>
+	<h2 id="policyupdates" style="font-size:20px;"><u>CHANGES TO THIS PRIVACY POLICY</u></h2>
+
+	<p>Your use of the Sites, and continued use of the Sites following any changes to the Privacy Policy, signifies that you agree with the terms and conditions of the Privacy Policy. If you do not agree to the terms of this Privacy Policy, please do not use the Site or provide any Information to us.</p>
+
+	<p>Additionally, we may update this Privacy Policy from time to time by posting additions or modifications to this page, so we encourage you to periodically review this Privacy Policy.</p>
+
+	<p>To help you stay current of any changes, we take the following two steps: (i) we note the date the Privacy Policy was last updated above; (ii) when we make a material change to the Privacy Policy, we post conspicuous announcement of such changes on the homepage of the Site next to the link to this Privacy Policy or we send an email to all users for whom Molson Coors (or the appropriate business unit) has Information. In certain situations, we may send you an email advising you of the new Privacy Policy. Your use of any Site following the posting of any revised Privacy Policy shall be deemed acceptance of the revised policy, so we strongly recommend that you review the Privacy Policy periodically.</p>
+	</li>
+	<li>
+	<h2 id="euinfo" style="font-size:20px;"><u>INFORMATION FOR EU RESIDENTS</u></h2>
+
+	<p>Our Sites may include interactive programs that provide specific services from another company, such as “liking” or sharing content, often referred to as widgets. You may have the opportunity to submit Information, such as your email address, for collection through a widget. A widget may also use cookies and/or collect usage data. Information collected by a widget is governed by the privacy policy of the company that created it.</p>
+
+	<ol type="A"><li><u>Legal Basis for Processing.</u> All processing (i.e., collection and use) of your Information is based on one of a number of legal conditions. Generally, these include:
+
+		<ul style="list-style-type:disc"><li>Your consent (for example, to place cookies which process Information, or to receive marketing communications from us);</li>
+			<li>The performance of our contract with you (e.g., to process your payment or shipping information in order to fulfil your order);</li>
+			<li>Compliance with a legal obligation (e.g., where we are required to disclose information to a court or a tax authority); and</li>
+			<li>Our legitimate interests, provided these do not override your fundamental rights and freedoms (e.g., where we carry out research and analysis to improve our Site, products and services).</li>
+		</ul></li>
+		<li><u>Rights of EU Residents.</u> Subject to applicable law, as a resident of the EU, you may have certain rights with respect to your Information. These rights may include some of the following:
+		<ul style="list-style-type:disc"><li>To obtain a copy of your Information together with information about how and on what basis that Information is processed;</li>
+			<li>To rectify inaccurate Information (including the right to have incomplete Information completed);</li>
+			<li>To erase your Information (in limited circumstances, where it is no longer necessary in relation to the purposes for which it was collected or processed);</li>
+			<li>To restrict processing of your Information where:
+			<ul style="list-style-type:circle"><li>The accuracy of the Information is contested;</li>
+				<li>The processing is unlawful but you object to the erasure of the Information;</li>
+				<li>We no longer require the Information but it is still required for the establishment, exercise or defense of a legal claim;</li>
+			</ul></li>
+			<li>To challenge processing which we have justified based on a legitimate interest (as opposed to your consent, or to perform a contract with you);</li>
+			<li>To prevent us from sending you direct marketing;</li>
+			<li>To withdraw your consent to our processing of your Information (where that processing is based on your consent);</li>
+			<li>To object to decisions which are based solely on automated processing or profiling; and</li>
+			<li>To obtain, or see a copy of the appropriate safeguards under which your Information is transferred to a third country or international organization.</li>
+		</ul><p>In addition to the above, you have the right to lodge a complaint with your local supervisory authority (for example, the ICO in the United Kingdom).</p>
+
+		<p>Please contact us using the details above to exercise your rights. As noted above, we will request proof of identity, and verify such identity. Additionally, we reserve the right to charge a fee where permitted by law, including for example, if your request is manifestly excessive or unfounded. Lastly, we will respond to your requests within the applicable timeframes and consistent with applicable regulations.</p>
+		</li>
+		<li><u>International Transfers for EU Residents</u>
+		<p>You should be aware that Molson Coors is headquartered in the United States with corporate offices abroad. Your Information may be transferred to and stored in the United States for processing. By submitting your Information to us you agree to the transfer, storage and processing of your information in a country other than your country of residence including, but not necessarily limited to, the United States.</p>
+
+		<p>Additionally, any information that you provide to or that is collected by or on behalf of Molson Coors may be transferred or accessed by entities around the world consistent with the practices described within this Privacy Policy. The privacy laws in these countries may be less stringent than the laws in your country of residence. Molson Coors take steps to protect your Information using the same privacy principles and securities that apply pursuant to the law of the country in which you reside.</p>
+
+		<p>In relation to both internal transfers and the use of affiliates, service providers or suppliers, for information that is transferred outside the European Economic Area ("<strong>EEA</strong>"), we enter into data transfer agreements, use the EU Commission approved Standard Contractual Clauses, or rely on certification schemes such as the EU - US Privacy Shield. You may have a right to request additional details about the mechanisms under which your data is transferred outside the EEA. If you would like more information concerning our attempts to apply the privacy principles applicable in one jurisdiction to data when it goes to another jurisdiction you can contact us using the contact information above.</p>
+		</li>
+	</ol></li>
+	<li>
+	<h2 id="calinfo" style="font-size:20px;"><u>INFORMATION FOR CALIFORNIA RESIDENTS</u></h2>
+
+	<ol type="A"><li><u>California Information Sharing Disclosure.</u> California law indicates that organizations should disclose whether certain categories of information are collected, transferred for “valuable consideration,” or transferred for an organization’s “business purpose” as those terms are defined under California law. You can find a list of the categories of information that we collect and share in the chart below. Please note that because this list is comprehensive it may refer to types of information that we collect and share about people other than you.</li>
+		<li><u>Rights of California Residents.</u> Subject to applicable law, as a resident of California, you may have certain rights with respect to your personal information. These rights may include the following:
+		<ul style="list-style-type:disc"><li>To request access to the personal information that we hold about you. Additionally, if you would like to obtain a list of any Information Molson Coors has disclosed about you to third parties for direct marketing purposes during the preceding calendar year, please send a written, signed request to Molson Coors by mail at the address above.</li>
+			<li>To request that Molson Coors deletes your Information (in limited circumstances).</li>
+		</ul></li>
+	</ol><a class="button" href="/privacy/california-privacy-disclosure" style="margin-top: 25px;" title="Click here for California Privacy Disclosure">CLICK HERE FOR CALIFORNIA PRIVACY DISCLOSURE</a></li>
+</ol><p>&nbsp;</p>
+</div>
+      
+  </div>
+</div>
+</div>
+  
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+<div class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+                        <div class="col-sm-4">
+              <div class="region region-footer-1">
+    <section id="block-molsonco-sociallinks" class="block block-block-content block-block-contentf1d9076d-a390-4254-96b1-05bd727527cb clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a aria-label="MillerCoors Facebook page external link" href="https://www.facebook.com/molsoncoors" target="_blank"><i aria-hidden="" class="fa fa-facebook-official">&nbsp;</i> </a> <a aria-label="MillerCoors Twitter page external link" href="https://www.twitter.com/molsoncoors" target="_blank"> <i aria-hidden="" class="fa fa-twitter">&nbsp;</i> </a> <a aria-label="MillerCoors Instagram page external link" href="https://www.instagram.com/molsoncoors" target="_blank"> <i aria-hidden="" class="fa fa-instagram">&nbsp;</i> </a> <a aria-label="MillerCoors LinkedIn page external link" href="https://www.linkedin.com/company/molson-coors" target="_blank"> <i aria-hidden="" class="fa fa-linkedin">&nbsp;</i> </a></p>
+</div>
+      
+  </section>
+
+<section id="block-molsonco-cr" class="block block-block-content block-block-content0d7e1178-87f7-4f68-af02-b32365ed4c18 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="/sustainability/responsibly-refreshing" title="Responsibly Refreshing">CELEBRATE RESPONSIBLY<sup>®</sup></a><br>
+©2020 Molson Coors Beverage Company<br>
+Do not share with anyone under the legal drinking age.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+                                            <div class="col-sm-8">
+              <div class="region region-footer-3">
+    <section id="block-footermenuen" class="block block-block-content block-block-content2ea62f1e-5031-4e5f-b769-f7cb91da8521 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><ul class="menu menu--footer"><li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+	<li><a href="/privacy-policy">Privacy Policy</a></li>
+	<li><a href="/contact-us">Contact Us</a></li>
+	<li><a href="/about/governance-and-ethics">Policies</a></li>
+	<li><a href="https://na6.salesforce.com/secur/login_portal.jsp?orgId=00D80000000KuKd&amp;portalId=06080000000MkJ7" target="_blank">MCI Partner Login</a></li>
+</ul></div>
+      
+  </section>
+
+<section id="block-molsonco-cr-2" class="block block-block-content block-block-content0d7e1178-87f7-4f68-af02-b32365ed4c18 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="/sustainability/responsibly-refreshing" title="Responsibly Refreshing">CELEBRATE RESPONSIBLY<sup>®</sup></a><br>
+©2020 Molson Coors Beverage Company<br>
+Do not share with anyone under the legal drinking age.</p>
+</div>
+      
+  </section>
+
+<section id="block-languageselectoren" class="block block-block-content block-block-content3302bfcd-99c0-4352-addc-f257f9d5584c clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="lang-selector"><span class="button-lang selected">English</span><a class="button-lang" href="/fr/node/336">French</a></div>
+</div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+                        </div>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/336","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cp\u003EThis website uses cookies and other tracking technologies to assist with functionality, to analyze your use of our sites and advertising, to provide customized content and advertisements and assist with our marketing efforts, and to provide content from third parties with whom we have a relationship. Please view the \u003Ca href=\u0022\/privacy-policy\u0022\u003EPrivacy Policy\u003C\/a\u003E for our Cookie Policy. By continuing to browse or by clicking \u201cAccept All Cookies,\u201d you agree to the storing of first- and third-party cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccept all cookies\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENo, thanks\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccept all cookies\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENo, thanks\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/privacy-policy","popup_link_new_window":false,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"disagree_do_not_show_popup":false,"method":"opt_in","whitelisted_cookies":"AV\r\nselectLanguage\r\noriginalLanguage\r\nprivacypolicy2020","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"withdraw_button_on_info_popup":false,"cookie_categories":[],"enable_save_preferences_button":true,"fix_first_cookie_category":true,"select_all_categories_by_default":false},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ageverification":{"avCheckToken":"https:\/\/avbypass2.millercoors.com\/av\/check","avUrl":"\/av","avFailUrl":"\/av\/fail","avBypassUrls":["\/av","\/av\/fail","\/legal\/privacy","\/legal\/terms","\/terms-and-conditions","\/fr\/terms-and-conditions","\/fr\/conditions","\/terms-and-conditions\/international-terms-and-conditions","\/privacy-policy","\/fr\/privacy-policy","\/fr\/politique-confidentialite","\/privacy\/international-privacy","\/privacy\/california-privacy-disclosure","\/contact-us","\/fr\/contact-us","\/fr\/nous-joindre","\/about\/governance-and-ethics","\/fr\/about\/governance-and-ethics","\/fr\/a-propos\/gouvernance-et-ethique","\/fr\/confidentialite\/protection-internationale-de-la-vie-privee","\/fr\/conditions\/conditions-internationales","\/fr\/privacy\/california-privacy-disclosure","\/privacy\/california-privacy-disclosure","\/fr\/politique-confidentialite\/divulgation-du-partage-de-renseignements-de-la-californie","\/fr\/modalites","\/fr\/modalites\/modalites-internationales","\/careers","\/fr\/carrieres"],"avEnableFacebookLogin":0,"avFacebookAppId":"","avFacebookApiVersion":"","avSearchUserAgents":["Googlebot","Googlebot-Mobile","Googlebot-Image","bingbot","msnbot","slurp","Yahoo! Slurp","facebookexternalhit","Twitterbot"],"avFailRedirectURL":"http:\/\/www.dontserveteens.gov","enableAVFailRedirect":0,"enableMobileAVFailRedirect":0,"avMobileFailRedirectURL":"http:\/\/www.dontserveteens.gov","user":"anonymous","maxmindBypassUrls":[],"avUrlSetting":"av","availableLanguages":{"US":{"en-US":{"language":"English","path_prefix":"en-US"}},"CA":{"en-CA":{"language":"English","path_prefix":"en-CA"},"fr-CA":{"language":"French","path_prefix":"fr-CA"}},"GB":{"en-GB":{"language":"English","path_prefix":"en-GB"}},"en":{"en":{"language":"English","path_prefix":"","default":1}},"AR":{"en-AR":{"language":"English","path_prefix":"en-AR"}},"AU":{"en-AU":{"language":"English","path_prefix":"en-AU"}},"CN":{"en-CN":{"language":"English","path_prefix":"en-CN"}},"CO":{"en-CO":{"language":"English","path_prefix":"en-CO"}},"CR":{"en-CR":{"language":"English","path_prefix":"en-CR"}},"DK":{"en-DK":{"language":"English","path_prefix":"en-DK"}},"FI":{"en-FI":{"language":"English","path_prefix":"en-FI"}},"FR":{"en-FR":{"language":"English","path_prefix":"en-FR"},"fr-FR":{"language":"French","path_prefix":"fr-FR"}},"DE":{"en-DE":{"language":"English","path_prefix":"en-DE"}},"GT":{"en-GT":{"language":"English","path_prefix":"en-GT"}},"IE":{"en-IE":{"language":"English","path_prefix":"en-IE"}},"JP":{"en-JP":{"language":"English","path_prefix":"en-JP"}},"MX":{"en-MX":{"language":"English","path_prefix":"en-MX"}},"KP":{"en-KP":{"language":"English","path_prefix":"en-KP"}},"PA":{"en-PA":{"language":"English","path_prefix":"en-PA"}},"PR":{"en-PR":{"language":"English","path_prefix":"en-PR"}},"KR":{"en-KR":{"language":"English","path_prefix":"en-KR"}},"ES":{"en-ES":{"language":"English","path_prefix":"en-ES"}},"SE":{"en-SE":{"language":"English","path_prefix":"en-SE"}},"CH":{"en-CH":{"language":"English","path_prefix":"en-CH"}}}},"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"cdb5ab94fd466cd2f85051d34cf33afac78918062f422e6d7deb63ba12152eec"}}</script>
+<script src="/sites/molsonco/files/js/js_UicL-NhCe53E-iUvAITD8lQs2DZudWaP7fP63tN6q1E.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"173f877119","applicationID":"55447502","transactionName":"NFwEY0FWWEIHAhZcWQ0WJ1RHXllfSREDUlM8WgdUW1I=","queueTime":0,"applicationTime":20,"atts":"GBsHFQlMS0w=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="sliding-popup" style="height: auto; width: 100%; bottom: 0px;" class="sliding-popup-bottom"><div class="eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in">
+  <div class="popup-content info eu-cookie-compliance-content">
+    <div id="popup-text" class="eu-cookie-compliance-message">
+      <p>This website uses cookies and other tracking technologies to assist with functionality, to analyze your use of our sites and advertising, to provide customized content and advertisements and assist with our marketing efforts, and to provide content from third parties with whom we have a relationship. Please view the <a href="/privacy-policy">Privacy Policy</a> for our Cookie Policy. By continuing to browse or by clicking “Accept All Cookies,” you agree to the storing of first- and third-party cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.</p>
+              <button type="button" class="find-more-button eu-cookie-compliance-more-button find-more-button-processed">More info</button>
+          </div>
+
+    
+    <div id="popup-buttons" class="eu-cookie-compliance-buttons">
+      <button type="button" class="agree-button eu-cookie-compliance-secondary-button">Accept all cookies</button>
+              <button type="button" class="decline-button eu-cookie-compliance-default-button">No, thanks</button>
+          </div>
+  </div>
+</div></div></body></html>

@@ -1,0 +1,637 @@
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/Content/vendor/angular/angular.min.js"></script>
+
+    <title>Privacy and Legal | WellCare</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/content/wellcare/img/fav.ico">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/content/Wellcare/css/shared/base/ie.min.css" />
+    <![endif]-->
+    <link href="/styles/css?v=KiDUwcRj8GW5XDQr3kAbyPOSKzVbfd58Ie4Nrt1xE381" rel="stylesheet">
+
+    
+
+    <script src="/content/vendor/jquery.min.js"></script>
+    <script src="/content/vendor/jquery-ui.min.js"></script>
+    <script src="/content/vendor/modernizr.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65024057-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>document.cookie = '<%= resolution %>=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+    <!--Stiewide js bundle divided to bypass selecctrix problems-->
+    <script src="/bundles/presitewide?v=D1woplSmrpQYiXzrkNehyFtB5ykyA_7UssUGlHlzVls1"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+
+<meta class="foundation-mq-topbar"></head>
+<body class="">
+    <a title="Skip" id="skipnav" href="#main-content">Skip to main content</a>
+    <div id="body-wrapper">
+        <div class="wrapper-header">
+                <header class="hide-for-medium-down">
+        <input type="hidden" id="searchPageUrl" value="/en/SearchResults">
+        <input type="hidden" id="searchPageCCGUrl" value="/en/SearchResultsCCG">
+        <input type="hidden" id="geoLocated" value="false">
+        <input type="hidden" id="statePage" value="true">
+        <div id="searchErrorModal" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div>
+                <h3>The search value cannot be empty</h3>
+
+                <a title="error" class="main-cta button modelOptNo">Ok</a>
+            </div>
+            <div class="close-reveal-modal" aria-label="Close">×</div>
+        </div>
+        
+        <div id="formSubmitWaitModal" class="reveal-modal " style="margin-top: 20%;" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="modal-header">
+                <h2 class="modal-title formSubmitModal" id="modalTitle">Please wait while your request is being processed.</h2>
+            </div>
+            
+        </div>
+
+        <div id="leavingSiteModel" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div>
+                <h4>This link will leave wellcare.com, opening in a new window. </h4>
+                <a title="continue" class="button small wide modelOptYes">Continue</a>
+                <a title="return" class="button link small modelOptNo">Return to Site</a>
+            </div>
+            <div class="close-reveal-modal" aria-label="Close">×</div>
+        </div>
+        
+        
+        <div class="row collapse">
+            <div class="large-12 columns">
+                <nav class="top-bar header-bar" data-topbar="" role="navigation" data-options="is_hover: false">
+                    <!-- Title -->
+                    <ul class="title-area">
+                        <li class="name">
+                            <div class="logo">
+                                <a title="state" href="/">
+                                    <img src="/~/media/Images/logo-17-4.ashx?mw=1382" alt="wellcareimage">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Top Bar Section -->
+                    
+                <section class="top-bar-section">
+                        <!-- Top Bar Right Nav Elements -->
+                        <ul class="right">
+                            <!-- Search | has-form wrapper -->
+                            <li class="has-form">
+                                <div class="row collapse search-wrapper">
+                                    <div class="large-11 small-9 columns">
+                                        <input type="text" pattern="[A-Za-z][A-Za-z0-9 ]*" class="searchbox" placeholder="Search Wellcare" id="site-searchbox">
+                                    </div>
+                                    <div class="large-1 small-3 columns">
+                                        <a title="submit" href="#" class="button" id="site-searchbox-submit"><i class="icon fi-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a title="register" class="button header-link" href="#" data-dropdown="login-dropdown" aria-controls="login-dropdown" aria-expanded="false">
+                                    <i class="icon fi-lock"></i>Login / Register
+                                </a>
+                            </li>
+                                <li><a title="contact us" href="/en/Contact-Us" class="button header-link">Contact Us</a></li>
+                                                            <li><a title="help" href="/en/Help-Center" class="button header-link">Help</a></li>
+                            <li class="spacer">
+                                    <div class="selectric-wrapper selectric-state-selector selectric-selectric selectric-url-selector selectric-location-selector"><div class="selectric-hide-select"><select class="state-selector selectric url-selector location-selector" style="min-width:130px;" tabindex="0">
+                                        <option selected="selected">Select State</option>
+                                                <option value="/en/Alabama">Alabama</option>
+                                                <option value="/en/Alaska">Alaska</option>
+                                                <option value="/en/Arizona">Arizona</option>
+                                                <option value="/en/Arkansas">Arkansas</option>
+                                                <option value="/en/California">California</option>
+                                                <option value="/en/Colorado">Colorado</option>
+                                                <option value="/en/Connecticut">Connecticut</option>
+                                                <option value="/en/Delaware">Delaware</option>
+                                                <option value="/en/District-of-Columbia">District of Columbia</option>
+                                                <option value="/en/Florida">Florida</option>
+                                                <option value="/en/Georgia">Georgia</option>
+                                                <option value="/en/Hawaii">Hawaii</option>
+                                                <option value="/en/Idaho">Idaho</option>
+                                                <option value="/en/Illinois">Illinois</option>
+                                                <option value="/en/Indiana">Indiana</option>
+                                                <option value="/en/Iowa">Iowa</option>
+                                                <option value="/en/Kansas">Kansas</option>
+                                                <option value="/en/Kentucky">Kentucky</option>
+                                                <option value="/en/Louisiana">Louisiana</option>
+                                                <option value="/en/Maine">Maine</option>
+                                                <option value="/en/Maryland">Maryland</option>
+                                                <option value="/en/Massachusetts">Massachusetts</option>
+                                                <option value="/en/Michigan">Michigan</option>
+                                                <option value="/en/Minnesota">Minnesota</option>
+                                                <option value="/en/Mississippi">Mississippi</option>
+                                                <option value="/en/Missouri">Missouri</option>
+                                                <option value="/en/Montana">Montana</option>
+                                                <option value="/en/Nebraska">Nebraska</option>
+                                                <option value="/en/Nevada">Nevada</option>
+                                                <option value="/en/New-Hampshire">New Hampshire</option>
+                                                <option value="/en/New-Jersey">New Jersey</option>
+                                                <option value="/en/New-Mexico">New Mexico</option>
+                                                <option value="/en/New-York">New York</option>
+                                                <option value="/en/North-Carolina">North Carolina</option>
+                                                <option value="/en/North-Dakota">North Dakota</option>
+                                                <option value="/en/Ohio">Ohio</option>
+                                                <option value="/en/Oklahoma">Oklahoma</option>
+                                                <option value="/en/Oregon">Oregon</option>
+                                                <option value="/en/Pennsylvania">Pennsylvania</option>
+                                                <option value="/en/Rhode-Island">Rhode Island</option>
+                                                <option value="/en/South-Carolina">South Carolina</option>
+                                                <option value="/en/South-Dakota">South Dakota</option>
+                                                <option value="/en/Tennessee">Tennessee</option>
+                                                <option value="/en/Texas">Texas</option>
+                                                <option value="/en/Utah">Utah</option>
+                                                <option value="/en/Vermont">Vermont</option>
+                                                <option value="/en/Virginia">Virginia</option>
+                                                <option value="/en/Washington">Washington</option>
+                                                <option value="/en/West-Virginia">West Virginia</option>
+                                                <option value="/en/Wisconsin">Wisconsin</option>
+                                                <option value="/en/Wyoming">Wyoming</option>
+                                    </select></div><div class="selectric"><p class="sl-label">Select State</p><b class="sl-button">▾</b></div><div class="selectric-items" tabindex="-1"><div class="selectric-scroll"><ul><li data-index="0" class="selected">Select State</li><li data-index="1" class="">Alabama</li><li data-index="2" class="">Alaska</li><li data-index="3" class="">Arizona</li><li data-index="4" class="">Arkansas</li><li data-index="5" class="">California</li><li data-index="6" class="">Colorado</li><li data-index="7" class="">Connecticut</li><li data-index="8" class="">Delaware</li><li data-index="9" class="">District of Columbia</li><li data-index="10" class="">Florida</li><li data-index="11" class="">Georgia</li><li data-index="12" class="">Hawaii</li><li data-index="13" class="">Idaho</li><li data-index="14" class="">Illinois</li><li data-index="15" class="">Indiana</li><li data-index="16" class="">Iowa</li><li data-index="17" class="">Kansas</li><li data-index="18" class="">Kentucky</li><li data-index="19" class="">Louisiana</li><li data-index="20" class="">Maine</li><li data-index="21" class="">Maryland</li><li data-index="22" class="">Massachusetts</li><li data-index="23" class="">Michigan</li><li data-index="24" class="">Minnesota</li><li data-index="25" class="">Mississippi</li><li data-index="26" class="">Missouri</li><li data-index="27" class="">Montana</li><li data-index="28" class="">Nebraska</li><li data-index="29" class="">Nevada</li><li data-index="30" class="">New Hampshire</li><li data-index="31" class="">New Jersey</li><li data-index="32" class="">New Mexico</li><li data-index="33" class="">New York</li><li data-index="34" class="">North Carolina</li><li data-index="35" class="">North Dakota</li><li data-index="36" class="">Ohio</li><li data-index="37" class="">Oklahoma</li><li data-index="38" class="">Oregon</li><li data-index="39" class="">Pennsylvania</li><li data-index="40" class="">Rhode Island</li><li data-index="41" class="">South Carolina</li><li data-index="42" class="">South Dakota</li><li data-index="43" class="">Tennessee</li><li data-index="44" class="">Texas</li><li data-index="45" class="">Utah</li><li data-index="46" class="">Vermont</li><li data-index="47" class="">Virginia</li><li data-index="48" class="">Washington</li><li data-index="49" class="">West Virginia</li><li data-index="50" class="">Wisconsin</li><li data-index="51" class="last">Wyoming</li></ul></div></div><input class="selectric-input" tabindex="0"></div>
+                            </li>
+                            <li class="spacer">
+                                
+                            </li>
+                        </ul>
+                    </section></nav>
+            </div>
+        </div>
+    </header>
+
+            
+    <div class="row-full-width top-nav-bar">
+        <div class="row">
+            <div class="centered print-mobile">
+                <div class="contain-to-grid sticky">
+                    <nav class="top-bar" data-topbar="" role="navigation" data-options="sticky_on: large">
+                        <ul class="title-area">
+
+                            <li class="name hide-for-medium-up">
+                                <div class="logo">
+                                    <a title="logo" href="/" style="display:inline-block">
+                                        <img src="/~/media/Images/logo-17-4.ashx?mw=1382" alt="wellcaremobileicon">
+                                    </a>
+                                </div>
+                                <div class="nav-icon hide-for-medium-up login">
+                                    <a title="login DDL" href="#" data-dropdown="login-dropdown" aria-controls="login-dropdown" aria-expanded="false"><i class="icon fi-torso"></i></a>
+                                </div>
+                                <div class="nav-icon hide-for-medium-up location">
+                                    <a title="marker" href="#"><i class="icon fi-marker"></i></a>
+                                </div>
+                            </li>
+                            <li class="toggle-topbar menu-icon">
+                                <!-- TODO: localize text -->
+                                <a title="menu" href="#"><span>MENU</span></a>
+                            </li>
+                        </ul>
+                        
+                    <section class="top-bar-section">
+                            <!-- Left Nav Section -->
+                            <ul class="left">
+                                <li class="has-form hide-for-medium-up">
+                                    <div class="row collapse search-wrapper">
+                                        <div class="large-11 small-9 columns">
+                                            <input type="text" class="searchbox" placeholder="Search Wellcare" id="site-searchbox">
+                                        </div>
+                                        <div class="large-1 small-3 columns">
+                                            <a title="search" href="#" class="button" id="site-searchbox-submit"><i class="icon fi-magnifying-glass"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                    <li class="">
+<a href="/en/Need-A-Plan" class="nav-l1">Need&nbsp;a Plan</a>                                                                            </li>
+                                    <li class="">
+<a href="/en/Members" class="nav-l1">Members</a>                                                                            </li>
+                                    <li class="">
+<a href="/en/Providers" class="nav-l1">Providers</a>                                                                            </li>
+                                    <li class="has-dropdown not-click">
+<a href="https://www.centene.com/" class="nav-l1" data-reveal-id="leavingSiteModel">Corporate</a>                                                                                    <ul class="dropdown m-menu"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="https://www.centene.com/">Corporate</a></li>
+                                                <li>
+                                                    <div class="row collapse dropdown-container">
+                                                        <div>
+                                                                    <div class="medium-3 columns end">
+                                                                        <div class="nav-l2-container">
+                                                                            <h3 class="nav-l2">Corporate Information</h3>
+                                                                            <ul>
+                                                                                        <li>
+                                                                                            <a href="https://www.centene.com/" class="nav-l3" data-reveal-id="leavingSiteModel">Company Overview</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="/en/Corporate/Careers" class="nav-l3">Careers</a>
+                                                                                        </li>                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="medium-3 columns end">
+                                                                        <div class="nav-l2-container">
+                                                                            <h3 class="nav-l2">Investor Relations</h3>
+                                                                            <ul>
+                                                                                        <li>
+                                                                                            <a href="http://ir.wellcare.com" class="nav-l3">Investor Home</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="http://ir.wellcare.com/od" class="nav-l3" target="_blank">Corporate Governance</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="http://ir.wellcare.com/event" class="nav-l3" target="_blank">Events and Presentations</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="http://ir.wellcare.com/News" class="nav-l3" target="_blank">News Releases</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="http://ir.wellcare.com/Docs" class="nav-l3" target="_blank">SEC Filings</a>
+                                                                                        </li>                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="medium-3 columns end">
+                                                                        <div class="nav-l2-container">
+                                                                            <h3 class="nav-l2">Agent Home</h3>
+                                                                            <ul>
+                                                                                        <li>
+                                                                                            <a href="/en/Producers" class="nav-l3">Agent Resources</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="/en/Producers/Producer-Contracting" class="nav-l3">Agent Contracting</a>
+                                                                                        </li>                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="medium-3 columns end">
+                                                                        <div class="nav-l2-container">
+                                                                            <h3 class="nav-l2">Media Center</h3>
+                                                                            <ul>
+                                                                                        <li>
+                                                                                            <a href="https://www.centene.com/media-contact.html" class="nav-l3" data-reveal-id="leavingSiteModel">Media Relations</a>
+                                                                                        </li>                                                                                        <li>
+                                                                                            <a href="https://www.centene.com/news.html" class="nav-l3" data-reveal-id="leavingSiteModel">News</a>
+                                                                                        </li>                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                    </li>
+                            </ul>
+                            <!-- Right Nav Section -->
+                            <ul class="right">
+
+                                <li>
+                                    <div class="mod-cta">
+                                        <a title="search" href="/en/FAP" class="button nav-button btn-find-provider radius">
+                                            <i class="icon fap-icon fi-social-bing"></i>Find a Provider/Pharmacy
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </section></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login component -->
+    <div id="login-dropdown" data-dropdown-content="" class="f-dropdown content small ng-scope" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+        <div class="row ng-scope" ng-controller="LoginController">
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>
+                            Who are you?
+                            <div class="selectric-wrapper selectric-selectric"><div class="selectric-hide-select"><select class="selectric" id="userSelect" data-rel-ddl="stateSelect" tabindex="0">
+                                <option selected="selected" value="0">Select type</option>
+                                    <option value="d81a2560-1f3b-4fec-9997-c2cfd385af92">I am a Caregiver</option>
+                                    <option value="5a59945d-639c-42d3-aeb2-436ac4356c92">I am a Member</option>
+                                    <option value="d8452d3a-0f1c-4275-acf5-706647dc5ed8">I am a Provider</option>
+                            </select></div><div class="selectric"><p class="sl-label">Select type</p><b class="sl-button">▾</b></div><div class="selectric-items" tabindex="-1"><div class="selectric-scroll"><ul><li data-index="0" class="selected">Select type</li><li data-index="1" class="">I am a Caregiver</li><li data-index="2" class="">I am a Member</li><li data-index="3" class="last">I am a Provider</li></ul></div></div><input class="selectric-input" tabindex="0"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>
+                            Select your state
+                            <div class="selectric-wrapper selectric-selectric  selectric-disabled"><div class="selectric-hide-select"><select class="selectric" id="stateSelect" data-rel-ddl="planSelect" tabindex="0" disabled="disabled">
+                                <option selected="selected" value="0">Select your state</option>
+                                <!-- ngRepeat: state in states -->
+                            </select></div><div class="selectric"><p class="sl-label">Select your state</p><b class="sl-button">▾</b></div><div class="selectric-items" tabindex="-1"><div class="selectric-scroll"><ul><li data-index="0" class="selected last">Select your state</li></ul></div></div><input class="selectric-input" tabindex="0" disabled=""></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>
+                            Select your plan
+                            <div class="selectric-wrapper selectric-selectric  selectric-disabled"><div class="selectric-hide-select"><select class="selectric" id="planSelect" tabindex="0" disabled="disabled">
+                                <option selected="selected" value="0">Select your plan</option>
+                                <!-- ngRepeat: plan in plans -->
+                            </select></div><div class="selectric"><p class="sl-label">Select your plan</p><b class="sl-button">▾</b></div><div class="selectric-items" tabindex="-1"><div class="selectric-scroll"><ul><li data-index="0" class="selected last">Select your plan</li></ul></div></div><input class="selectric-input" tabindex="0" disabled=""></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="row mod-cta">
+                    <div class="large-12 columns centered">
+                        <a title="login" href="" class="button full-width disabled" id="loginBtn" target="">Go to Login</a>
+                    </div>
+                    <div class="large-12 columns centered">
+                        <a title="register" href="" class="button link small disabled" id="registrtionBtn" target="">Register for an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login component -->
+
+
+        </div>
+        <div id="main-content">
+                <div class="row-full-width solid-background  CORPORATE">
+        <div class="row collapse">
+            <div class="large-12 columns">
+                    <div class="row collapse page-header header-small" id="hero-gradient" style="background-image:url('/~/media/Heroes/hero_default.ashx?mw=1382')">
+                <!-- Section 1-->
+                <div class="large-10 medium-10 small-12 columns end">
+                                            <h1 class="mod-title">Privacy and Legal Information</h1>
+
+                    <div class="breadcrumbs-container">
+                        
+
+                    </div>
+                    <div class="hero-buttons">
+                    </div>
+                </div>
+
+    <div class="hero-black-box show-for-large-up text-right">
+
+        <div class="page-controls">
+
+<div class="button text-size-button hero-button micro">
+    <a title="- font" class="fontsize-btn decreaseFont"><i class="fi-zoom-out"></i></a>
+            <span>Size</span>
+    <a title="+ font" class="fontsize-btn increaseFont"><i class="fi-zoom-in"></i></a>
+</div>                                            </div>
+    </div>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row-full-width">
+        <div class="row collapse">
+            <div class="large-12 columns">
+                <div>    <div class="rich-text-content">
+        <p style="text-align: center;"><strong><span style="text-decoration: underline;">TERMS AND CONDITIONS</span></strong></p>
+<p style="text-align: justify;">YOUR USE OF THE WELLCARE WEBSITE LOCATED AT <a href="http://www.wellcare.com/" data-reveal-id="leavingSiteModel">WWW.WELLCARE.COM</a> AND ITS RELATED SUBDOMAINS, SERVICES, AND OTHER SITES AND TOOLS LINKED TO WWW.WELLCARE.COM BY WELLCARE, AS WELL AS THE SERVICES AVAILABLE THROUGH SUCH WELLCARE WEBSITE (COLLECTIVELY, THE “<strong>SITE</strong>”) IS GOVERNED BY THESE TERMS AND CONDITIONS (THE “<strong>TERMS AND CONDITIONS</strong>”), WHICH IS A LEGAL CONTRACT BETWEEN YOU AND WELLCARE. As used in these Terms and Conditions, “<strong>WellCare</strong>,” “<strong>we</strong>” or “<strong>us</strong>” refers to WELLCARE HEALTH PLANS, INC., ITS SUBSIDIARIES AND AFFILIATED COMPANIES. IN ORDER TO USE THE SITE, YOU MUST READ AND CONSENT TO THIS AGREEMENT, AS IT INCLUDES TERMS SUCH AS LIMITATION OF LIABILITY, CHOICE OF FORUM FOR DISPUTES AND OTHER PROVISIONS THAT MAY LIMIT YOUR RIGHTS. IF YOU DO NOT AGREE TO ALL OF THESE TERMS, YOU MAY NOT ACCESS OR USE THE SITE. &nbsp;</p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Intellectual Property Notice</span></strong>. All of the content, information and materials on the Site, such as text, graphics, logos, images, data, software and other material (collectively “<strong>Content</strong>”), is owned or licensed by WellCare or one of its affiliate companies or by third parties, and is proprietary and protected by copyright, trademark, patent, trade dress and/or other intellectual property rights. The selection, collection, arrangement, and assembly of all Content on the Site is the exclusive property of WellCare. WellCare hereby grants you a limited, personal, non-exclusive and non-transferable license to use and to display the Content and to use this Site solely for your personal use. Except for the foregoing license, you may not copy, reproduce, modify, remove, delete, augment, add to, publish, transmit, participate in the transfer or sale of, create derivative works from, or in any way exploit any of the Content, in whole or in part. </p>
+<p style="text-align: justify;">Certain information and other content on the Site may be provided by third party licensors and suppliers to WellCare (“<strong>Third Party Content</strong>”). The Third Party Content is, in each case, the copyrighted and/or trademarked work of the creator/licensor. You agree to only access the Third Party Content on the Site solely for your personal use. You acknowledge and agree that you have no right to download, cache, reproduce, modify, display (except as set forth in this paragraph), edit, alter or enhance any of the Third Party Content in any manner unless you have permission from the owner of the Third Party Content. WellCare DISCLAIMS ALL EXPRESS, IMPLIED AND STATUTORY WARRANTIES AND CONDITIONS WITH REGARD TO THIRD PARTY CONTENT, INCLUDING, BUT NOT LIMITED TO, ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.</p>
+<p style="text-align: justify;">WellCare and its licensors expressly reserve all intellectual property rights in all text, programs, products, processes, technology, content and other materials that appear on the Site. Access to the Site does not confer and shall not be considered as conferring upon anyone any license under any of WellCare’s or any third party’s intellectual property rights. </p>
+<p style="break-after: avoid; text-align: justify;"><strong><span style="text-decoration: underline;">Prohibited Uses</span></strong>. By using the Site, you agree not to:</p>
+<ol>
+    <li>Use any false or inaccurate information for purposes of registering as a user of the Site;</li>
+    <li>Delete or revise any material or other information of any other user or WellCare;</li>
+    <li>Introduce or attempt to introduce a Trojan horse, worm, virus, spider, robot, files, programs, or other malicious and/or foreign code into the Site designed to interrupt, destroy, or limit the functionality of the Site, the Content or any computer software or hardware or telecommunications equipment;</li>
+    <li>Forge headers or otherwise manipulate identifiers in order to disguise the origin of any content transmitted to or through the Site;</li>
+    <li>Use the Site to collect or store personal data about others;</li>
+    <li>Use the Site in a manner that intentionally or unintentionally violates any applicable local, state, national or international law;</li>
+    <li>Use the Site or the Content for any commercial or pecuniary purpose;</li>
+    <li>Use the Site in any manner that is harmful to others;</li>
+    <li>Take any action that imposes an unreasonable or disproportionately large load on the Site’s infrastructure;</li>
+    <li><span style="text-indent: -0.25in;">Allow any other person or entity to use your username or password;</span></li>
+    <li><span style="text-indent: -0.25in;">Attempt to modify, adapt, translate, decipher, decompile, disassemble or reverse engineer any of the software comprising or in any way making up a part of the Site or the Content; or</span></li>
+    <li><span style="text-indent: -0.25in;">Reproduce, duplicate, copy, sell, resell or otherwise exploit for any commercial purposes, any portion of, use of, or access to the Site;</span></li>
+    <li><span style="text-indent: -0.25in;">Remove any copyright, trademark or other proprietary rights notice from the Site or materials originating from the Site;</span></li>
+    <li><span style="text-indent: -0.25in;">Frame or mirror any part of the Site without WellCare’s prior written consent; or</span></li>
+    <li><span style="text-indent: -0.25in;">Create a database by systematically downloading and storing Site content;</span></li>
+    <li>You shall not violate or attempt to violate the security of the Site including, but not limited to, actions such as:</li>
+    <li>Accessing data not intended for you or logging into a server or account that you are not authorized to access;</li>
+    <li>Accessing the Site by any means other than through the interface that is provided by us for use in accessing the Site;</li>
+    <li>Using the Site for unintended purposes or trying to change the behavior of the Site;</li>
+    <li>Attempting to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures without proper authorization;</li>
+    <li>Attempting to interfere with service to any user, host or network including, but not limited to, by way of submitting a virus to, or overloading, “flooding,” “spamming,” “mailbombing” or “crashing”; </li>
+    <li>Forging communications on behalf of the Site (impersonating the Site) or to the Site (impersonating another user); or</li>
+    <li>Taking any action that may otherwise harm, disrupt or overburden the Site. </li>
+</ol>
+<p style="text-align: justify;">This list of prohibitions provides examples and is not complete or exclusive. WellCare reserves the right to terminate your access to your account with or without cause and with or without notice, for any reason or no reason, or for any action that WellCare determines is inappropriate or disruptive to this Site or to any other user of this Site. Violations of system or network security may result in civil or criminal liability. WellCare reserves the right to investigate any actual, reported or suspected violations. WellCare also may report information about any such suspected, reported or actual violations to law enforcement and may cooperate with law enforcement authorities in investigating and prosecuting users who have participated in such violations. WellCare also reserves the right to disclose any information necessary to satisfy any applicable law, regulation, legal process or government request. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Age of Users</span></strong>. You must be 13 years or older to use the Site. If you are under the age of 18, you must have your parent’s permission to use the Site and to agree to these Terms and Conditions. WellCare may terminate these Terms and Conditions and use of the Site without notice if we, in our sole discretion, believe that you are either (i) under the age of 18 and using the Site and its services without the permission of your parent or (ii) under the age of 13. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Changes to these Terms and Conditions and/or the Site</span></strong>. WellCare reserves the right to make changes to these Terms and Conditions at any time. In the event of any such changes, you will be required to consent to the updated Terms and Conditions the next time you access the Site. If you do not consent to the changes, you may no longer use the Site. WellCare may change the information, services and any other resources accessible through the Site, or discontinue the Site altogether, at any time and without notice.</p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Using the Site</span></strong>. Some features of the Site are available without registering with WellCare. However, in order to access certain member-only or password-restricted areas of the Site and to use certain services and materials offered through the Site, you must login using your WellCare account username and password.</p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Submissions</span></strong>. You acknowledge and agree that by submitting remarks, reviews, ratings, and other materials (other than information given in connection with registration) to WellCare (individually and collectively, the “<strong>Submissions</strong>”), you (i) grant WellCare a nonexclusive, royalty-free, fully-paid, perpetual, transferable, irrevocable and fully sublicensable right to use, reproduce, modify, adapt, translate, distribute, publish, create derivative works from and publicly display and perform the Submissions throughout the world in any media, now known or hereafter created without attribution, (ii) grant WellCare the right to pursue at law any person or entity that violates your and/or WellCare’s rights in your Submissions, and (iii) forever waive any and all of your rights, including but not limited to moral rights, if any, in and to your Submissions, including, without limitation, any all rights or requirements of attribution or identification of you as the author of the Submissions or any derivative thereof. You further acknowledge and agree that your Submissions are non-confidential and do not contain proprietary information.</p>
+<p style="text-align: justify;">Except as described in our Privacy Policy, WellCare will not be required to treat any of your Submissions as confidential, and you acknowledge and agree WellCare may use in connection with its business any of the concepts and ideas contained in your Submissions without compensation to you and WellCare will not incur any liability to you as a result of any similarities between concepts and ideas contained in your Submissions and future WellCare operations and business. Except as otherwise set forth in these Terms and Conditions, WellCare will be entitled to use the Submissions for any commercial or other purpose whatsoever without compensation to you or any other person.</p>
+<p style="text-align: justify;">Your Submissions, including personally identifiable information contained therein, are made voluntarily and are subject to our Privacy Policy. You are responsible for the content of your Submissions and agree to defend (at WellCare’s option and at your sole expense), indemnify and hold WellCare harmless from any damages, losses, costs, or expenses, including reasonable attorneys’ fees, which WellCare may incur as a result of your Submissions.</p>
+<p style="text-align: justify;">With respect to your Submissions, you acknowledge, warrant and agree that:</p>
+<p style="text-align: justify;">1.&nbsp; If your Submissions concern providers, your Submissions will be true and accurate, only concern or relate to the care or service that you, your minor child or your ward received from the provider being reviewed, that you are not related to or employed by the providers being reviewed and that you are not impersonating any other person;</p>
+<p style="text-align: justify;">2.&nbsp; Your Submissions will not violate any law, or in any manner infringe or interfere with the rights of others, including but not limited to the use of names, information, or materials that (i) libel, defame, or invade the privacy of any third party, (ii) are obscene or pornographic, (iii) are harmful, threatening, offensive, abusive, harassing, vulgar, false or inaccurate, racially, sexually, ethnically or are otherwise objectionable or otherwise contrary to the laws of any place where such Submissions may be accessed, (iv) constitute personal attacks on other individuals, (v) infringe the intellectual property, trade secret or proprietary rights of any third party, (vi) promote criminal or other illegal activity, (vii) promote or advertise any person, product or service or solicit funds, or (viii) are deemed confidential by any contract or policy.</p>
+<p style="text-align: justify;">You are permitted to post only one (1) Submission regarding the same provider, entity, procedure or subject during any thirty (30) day period. Once submitted, Submissions cannot be modified or deleted. WellCare retains the right to review and delete or remove from public view any Submissions, which WellCare in its sole discretion considers illegal, offensive, obscene, abusive, harassing, commercial in nature, infringing, inappropriate or otherwise violates these Terms and Conditions. If notified of an allegation that any Submission contains infringing information, materials or other content, WellCare may investigate the allegation and determine in WellCare’s sole discretion whether to remove or request the removal from any other media or server where the infringing content may be stored or displayed by WellCare.</p>
+<p style="text-align: justify;"><strong>YOUR SUBMISSIONS DO NOT CONSTITUTE THE FILING OF A FORMAL GRIEVANCE UNDER WELLCARE’S GRIEVANCE POLICIES CONCERNING THE CARE OR SERVICE THAT YOU, YOUR MINOR CHILD OR YOUR WARD RECEIVED. IN ORDER TO FILE A FORMAL GRIEVANCE, PLEASE REFER TO WELLCARE’S GRIEVANCE SUBMISSION POLICIES.</strong></p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Your Account</span></strong>.<strong> </strong>You are required to register with WellCare in order to access certain services or areas of the Site. You agree to provide true, accurate, current and complete information about yourself as prompted by the registration form (the “<strong>Account Information</strong>”) and to maintain and promptly update your Account Information to keep it true, accurate, current and complete. If you provide any information that is fraudulent, untrue, inaccurate, not current or incomplete, we may suspend or terminate your account and refuse any and all current and future use of the Site. Because any termination of your access to the Site may be effective without prior notice, you agree and acknowledge that we may immediately deactivate or delete your account and all related information and files in your account and bar any further access to such files or this Site. You also agree that WellCare shall not be liable to you or any third party for any suspension or termination of your access to your account or this Site. Account information and certain other information about you is subject to our Privacy Policy, which is incorporated by reference into these Terms and Conditions, as well as our HIPAA Notice of Privacy Practices, where applicable. You will receive a username and password when you have completed the Account Information and the registration process. Your username and password will be your identity for purposes of interacting with WellCare through the Site. Your username and password are for your personal use only. You agree you will not permit others, including those whose account have been suspended or terminated, to access the Site using your username or password. If you use the Site, you are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer or device from which you access the Site, and you agree to accept responsibility for all activities that occur under your username and password. You should take steps to protect against unauthorized access to your password and computer or device from which you access the Site by, among other things, signing out of the Site after using a shared computer, choosing a robust password that nobody else knows or can easily guess, and keeping your username and password private. WellCare is not responsible for any unauthorized account activity using your username and password. You agree to immediately notify us of any unauthorized use of your password or account or any other breach of security. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Privacy Policy</span></strong>. You must also read and agree to our Privacy Policy that is incorporated herein by referenced and governs your use of the Site. You agree that WellCare may collect, use and disclose the information it collects about you through the Site in accordance with the Privacy Policy.</p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Electronic Communications</span></strong>. When you visit the Site, you are communicating with WellCare electronically. WellCare will communicate with you by e-mail or by posting notices on the Site. These electronic communications are part of your relationship with WellCare. You consent to receive communications from us electronically. You also agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement, including any requirement that such communications be in writing. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">No Professional Advice</span></strong>. Any information supplied through the Site by any employee or agent of WellCare, whether by telephone, e-mail, letter, facsimile or other form of communication, is for educational purposes or general guidance on the use of the Site, and does not constitute medical, legal, or other professional advice. Health-related information provided through the Site is intended as an educational aid only. It is not intended as medical advice for individual conditions or treatment. It is not a substitute for a medical exam, nor does it replace the need for services provided by medical professionals. The receipt of any questions or feedback you submit to WellCare does not create a professional relationship and does not create any privacy interests other than those described in our Privacy Policy. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Wireless Phone Policy</span></strong>. By providing your wireless phone number to WellCare, you expressly consent to WellCare calling you at this phone number, including phone calls through an automated system. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Links</span></strong>. The Site may contain links to websites owned or operated by third parties or affiliate companies of WellCare. Links to websites owned or operated by third parties are provided for your reference only and WellCare does not control such third party websites and is not responsible for their content. WellCare reserves the right to terminate a link to a third party website at any time and the fact that we provide a link to a third party website does not mean that we endorse, authorize or sponsor that website. YOUR USE OF THIRD PARTY WEBSITES AND RESOURCES IS AT YOUR OWN RISK. Links to websites of WellCare affiliate companies may be subject to additional terms and/or governed by a separate and different terms and conditions and/or privacy policy. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Disclaimer</span></strong>. YOUR USE OF THE SITE IS AT YOUR SOLE RISK. YOUR USE OF THE SITE AND ALL INFORMATION, CONTENT, AND SERVICES ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SITE ARE PROVIDED BY WELLCARE ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT REPRESENTATIONS OR WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW, WELLCARE DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT OR NONMISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS OF A THIRD PARTY, TITLE, CUSTOM, TRADE, QUIET ENJOYMENT, ACCURACY OF INFORMATION OR COMPLETENESS OF CONTENT, OR SYSTEM INTEGRATION. </p>
+<p style="text-align: justify;">WELLCARE SHALL NOT HAVE ANY LIABILITY OR RESPONSIBILITY FOR ERRORS OR OMISSIONS IN THE CONTENT OF THE SITE. WELLCARE DOES NOT REPRESENT OR WARRANT THAT THE INFORMATION ON THIS SITE IS ACCURATE, COMPLETE, RELIABLE, USEFUL, TIMELY OR CURRENT OR THAT THE WELLCARE WEBSITE WILL BE AVAILABLE OR OPERATE WITHOUT INTERRUPTION OR ERROR OR IN A COMPLETELY SECURE MANNER OR THAT ERRORS OR DEFECTS WILL BE CORRECTED. </p>
+<p style="text-align: justify;">WELLCARE DOES NOT ENDORSE OR MAKE ANY REPRESENTATIONS OR WARRANTIES ABOUT THE OPTIONS OR OTHER SERVICE OR DATA YOU MAY ACCESS, DOWNLOAD OR USE AS A RESULT OF THE USE OF THE INFORMATION CONTAINED ON THIS SITE, OR ABOUT ANY THIRD PARTY SITES YOU MAY LINK THROUGH THE SITE, WHICH LINKS ARE PROVIDED FOR CONVENIENCE ONLY. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Limitation of Liability</span></strong>. TO THE FULLEST EXTENT PERMITTED BY LAW, UNDER NO CIRCUMSTANCES SHALL WELLCARE OR ITS AFFILIATE COMPANIES OR ANY OF THEIR EMPLOYEES, DIRECTORS, OFFICERS, AGENTS, VENDORS, LICENSORS, OR SUPPLIERS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES ARISING OUT OF OR RELATING TO THESE TERMS AND CONDITIONS OR USE OF OR INABILITY TO USE THE SITE OR ITS CONTENT (INCLUDING BUT NOT LIMITED TO LOSS OF DATA, REVENUE, PROFITS, USE OR OTHER ECONOMIC ADVANTAGE), EVEN IF WELLCARE KNOWS THERE IS A POSSIBILITY OF SUCH DAMAGE. THE MAXIMUM CUMULATIVE DAMAGES YOU MAY OBTAIN FROM WELLCARE OR ITS AFFILIATE COMPANIES OR ANY OF THEIR EMPLOYEES, DIRECTORS, OFFICERS, AGENTS, VENDORS, LICENSORS, OR SUPPLIERS SHALL BE LIMITED TO FUNDS PAID TO WELLCARE FOR YOUR USE OF THE SITE OR ONE-HUNDRED DOLLARS ($100.00), WHICHEVER IS GREATER. YOUR USE OF THE SITE IS AT YOUR SOLE RISK AND IF YOU ARE DISSATISFIED WITH THE SITE, ITS CONTENT OR WITH THESE TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Indemnification</span></strong>. You agree to indemnify and hold WellCare, its affiliate companies, employees, directors, officers, agents, vendors, licensors and suppliers harmless from and against any losses, liabilities, investigations, inquiries, claims, demands, suits, damages and/or costs and expenses, including reasonable attorneys’ fees and costs for defending such claims, made by any third party arising out of or relating to your use of the Site and/or the Content, your violation of these Terms and Conditions, or your violation of any rights of another. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Termination</span></strong>. These Terms and Conditions shall be effective until terminated. We reserve the right, without notice to you and in our sole discretion, to terminate these Terms and Conditions, your account or your use of the Site, and to block or prevent future access to and use of the Site if you violate these Terms and Conditions. You further agree that WellCare may in its sole discretion and at any time discontinue all or part of the Site without prior notice to you. You agree that any termination of your access to the Site and the services available through the Site, under any provision of these Terms and Conditions, may be effected without prior notice to you, and you acknowledge and agree that WellCare may bar any further access to the Site and/or your account. Further, you agree that WellCare shall not be liable to you or any third party for any termination of access to the Site. Upon termination, all provisions of these Terms and Conditions that are by their nature intended to survive termination, all representations and warranties, limitation of liabilities, and all indemnities shall survive such termination. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Jury Waiver</span></strong>. TO THE EXTENT NOT OTHERWISE PROHIBITED BY APPLICABLE LAW, YOU AND WELLCARE AGREE TO WAIVE TRIAL BY JURY WITH RESPECT TO ANY MATTERS ARISING UNDER OR RELATING TO THESE TERMS AND CONDITIONS OR THE SITE. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">General Terms</span></strong>. BY ACCESSING AND USING THE SITE, YOU AGREE THAT YOUR ACCESS TO AND USE OF THE SITE IS SUBJECT TO THESE TERMS AND CONDITIONS, AS WELL AS ALL APPLICABLE LAWS, AS GOVERNED AND INTERPRETED PURSUANT TO THE LAWS OF THE STATE OF FLORIDA. The laws of the State of Florida, without regard to any choice or conflicts of law provisions, govern all matters arising out of or related to these Terms and Conditions. Foreign laws do not apply. The United Nations Convention on Contracts for the International Sale of Goods and any laws based on the Uniform Computer Information Transactions Act (UCITA) shall not apply to these Terms and Conditions. Any other dispute, claim or controversy arising out of or relating to these Terms and Conditions, or the breach, termination, enforcement, interpretation or validity thereof, including the determination of the scope or applicability of the Terms and Conditions, shall be determined by binding arbitration in Hillsborough County, Florida, in accordance with the Commercial Arbitration Rules of the American Arbitration Association then in effect. Judgment on the arbitrator’s award may be entered in any court having jurisdiction. The costs of the arbitration, including the fees of the arbitrator shall be borne equally by the Parties, and each Party shall be responsible for the fees of its own attorneys and experts. The arbitrator shall not consolidate claims of third parties into one proceeding, nor shall the arbitrator have the power to hear the arbitration as a class action. The sole right of the arbitrator shall be to enforce and interpret these Terms and Conditions and not to expand the rights or obligations of the Parties. The arbitrator shall only have the right to award actual direct damages and shall not have the right to award special, consequential or punitive damages.</p>
+<p style="text-align: justify;">Where permitted by law, you and WellCare agree that any cause of action arising out of or related to these Terms and Conditions or this Site must be commenced within one (1) year after the cause of action accrues. Otherwise, such action is permanently barred. </p>
+<p style="text-align: justify;">These Terms and Conditions are the entire agreement between you and WellCare relating to or arising out of your use of the Site and supersede all prior or contemporaneous negotiations, discussions or agreements between you and WellCare relating to this Site or these Terms and Conditions. The proprietary rights, disclaimer of warranties, representations made by you, indemnities, limitations of liability and general provisions shall survive any termination of these Terms and Conditions. </p>
+<p style="text-align: justify;">The failure by either party to exercise or enforce, the partial exercise or enforcement, or a delay in exercising or enforcing any right or provision of these Terms and Conditions shall not operate as a waiver or estoppel of any right, remedy or condition. </p>
+<p style="text-align: justify;">Should any part of these Terms and Conditions be declared invalid, illegal or unenforceable by a court of competent jurisdiction, that provision shall be enforced to the maximum extent possible and the validity, legality and enforceability of the remaining provisions will not be affected or impaired. </p>
+<p style="text-align: justify;"><strong><span style="text-decoration: underline;">Contact Us</span></strong>. If you have any questions, complaints or claims with respect to the Site or these Terms and Conditions, or otherwise&nbsp;need to contact WellCare for any reason, you can reach us at:&nbsp;<a href="https://www.wellcare.com/en/Contact-Us/Contact-Us-Form">https://www.wellcare.com/en/Contact-Us/Contact-Us-Form</a>.</p>
+<p style="text-align: justify;"><strong>Review our <a href="/en/SMS-Texting-Terms-and-Conditions">SMS Texting Terms and Conditions</a>.</strong></p>
+<p style="text-align: justify;"><strong>Review our <a href="/en/Email-Terms-and-Conditions">Email Terms and Conditions</a>.</strong></p>
+    </div>
+    <div class="row-full-width document-list">
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3 class="mod-title">
+                        Important Privacy Documents
+                    </h3>
+                    <div class="mod-description"></div>
+                </div>
+            </div>
+            <div class="mod-pdf-container">
+                    <div class="mod-item-container ">
+                        <div class="row collapse-on-small-only">
+                            <div class="large-9 columns">
+
+                                <label>
+                                    <img alt="pdf icon" class="pdf-icon" src="/Content/WellCare/img/icons/PDF_24x24.png">Notice of Privacy Practice 
+                                    <i data-tooltip="" aria-haspopup="true" class="has-tip icon fi-info" data-selector="tooltip-k6s7tm9h0" aria-describedby="tooltip-k6s7tm9h0" title=""></i>
+                                </label>
+                                <p class="hide-for-medium-up">This notice describes how medical information about you may be used and disclosed and how you can get access to this information.</p>
+
+                            </div>
+                            <div class="large-3 columns">
+                                    <a title="plans" class="button cta micro" data-dropdown="a7d2d2_drop_1" aria-controls="a7d2d2_drop_1" aria-expanded="false">Download <i class="icon fi-arrow-down"></i></a>
+                                    <ul id="a7d2d2_drop_1" class="f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Member/2019/NA_Notice_of_Privacy_Practices_ENG_3_2019_R.ashx" target="_blank">English</a></li>
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Member/2019/na_notice_privacy_practices_spa_10_2019.ashx" target="_blank">Spanish</a></li>
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Shared/na_all_notice_privacy_practices_chi_01_2020.ashx" target="_blank">Chinese</a></li>
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Shared/na_all_notice_privacy_practices_kor_01_2020.ashx" target="_blank">Korean</a></li>
+                                            <li><a title="plan file" target="_blank">Ilocano coming soon</a></li>
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Shared/na_all_notice_privacy_practices_tag_01_2020.ashx" target="_blank">Tagalog</a></li>
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Shared/na_all_notice_privacy_practices_vie_01_2020.ashx" target="_blank">Vietnamese</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-item-container alternate">
+                        <div class="row collapse-on-small-only">
+                            <div class="large-9 columns">
+
+                                <label>
+                                    <img alt="pdf icon" class="pdf-icon" src="/Content/WellCare/img/icons/PDF_24x24.png">Information on Fraud and Abuse
+                                    <i data-tooltip="" aria-haspopup="true" class="has-tip icon fi-info" data-selector="tooltip-k6s7tm9h1" aria-describedby="tooltip-k6s7tm9h1" title=""></i>
+                                </label>
+                                <p class="hide-for-medium-up">Information on Fraud and Abuse</p>
+
+                            </div>
+                            <div class="large-3 columns">
+                                    <a title="plans" class="button cta micro" data-dropdown="a7d2d2_drop_2" aria-controls="a7d2d2_drop_2" aria-expanded="false">Download <i class="icon fi-arrow-down"></i></a>
+                                    <ul id="a7d2d2_drop_2" class="f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                                            <li><a title="plan file" href="/~/media/PDFs/NA/Shared/na_corporate_fraud_abuse_eng_2014.ashx" target="_blank">English</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+<script src="/Content/WellCare/js/NAP/nap-details.js"></script>
+</div>
+                    <div><p><br>
+</p></div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        
+
+
+    <div class="row-full-width contact-us-blade">
+        <div class="row">
+                <div class="medium-8 columns">
+                    <div class="row ">
+                        <div class="medium-2 columns small-only-text-center">
+                            <img src="/~/media/Contact-Us/ico_contact_us.ashx?mw=1382&amp;h=100&amp;w=100&amp;la=en&amp;hash=E2285E76C2DDABAC9878369D6A8422024D2AFDC9" alt="contact-us">
+                        </div>
+                        <div class="medium-10 columns small-only-text-center">
+                            <h3>Need help? We're here for you.</h3>
+                            <a href="/en/Contact-Us" class="button secondary radius">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+
+<footer>
+    <div class="row">
+        <div class="row links">
+                                <div class="large-2 medium-3 small-12 columns">
+                                        <h5>Agents</h5>
+                                        <ul>
+                                                <li>
+                                                    <a href="/en/Producers">Agent Resources</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/en/Producers/Producer-Contracting">Agent Contracting</a>
+                                                </li>
+                                        </ul>
+                                                                    </div>
+                                <div class="large-2 medium-3 small-12 columns">
+                                        <h5>Corporate Information</h5>
+                                        <ul>
+                                                <li>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <a href="/en/Corporate/Careers">Careers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/en/Corporate/Compliance">Compliance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/en/Contact-Us">Contact Us</a>
+                                                </li>
+                                        </ul>
+                                                                    </div>
+                                <div class="large-2 medium-3 small-12 columns">
+                                        <h5>Get Adobe Reader</h5>
+                                        <ul>
+                                                <li>
+                                                    <a href="https://get.adobe.com/reader/" target="_blank" title="By clicking on this link, you will be leaving the WellCare website." data-reveal-id="leavingSiteModel"><img alt="Get Adobe Acrobat reader." src="~/media/5519E748DE99494C88D9E7CAEB72A22A.ashx" width="158" height="39"><br>If you are unable to view PDFs, please download Adobe Reader.</a>
+                                                </li>
+                                        </ul>
+                                                                    </div>
+                                <div class="large-2 medium-3 small-12 columns">
+                                                                            <h5 class="follow-us">Follow Us</h5>
+                                        <div class="social">
+<a href="https://www.facebook.com/WellCareHealthPlans" class="icon-social" title="Facebook" data-reveal-id="leavingSiteModel"><img src="/~/media/Icons/Social-Media-Icons/FacebookFooterIcon.ashx?mw=1382&amp;h=40&amp;w=40&amp;la=en&amp;hash=940EA1EAD3CE7376E5D1E42915D6D53B39BA3EEB" alt="Facebook"></a><a href="https://twitter.com/wellcare_health" class="icon-social" title="Twitter" data-reveal-id="leavingSiteModel"><img src="/~/media/Icons/Social-Media-Icons/TwitterFooterIcon.ashx?mw=1382&amp;h=40&amp;w=40&amp;la=en&amp;hash=1ADE446B3B343108F5A118CD21F93B8B5A449535" alt="Twitter"></a><a href="https://www.linkedin.com/company/wellcare" class="icon-social" target="_blank" title="LinkedIn" data-reveal-id="leavingSiteModel"><img src="/~/media/Icons/Social-Media-Icons/LinkedInFooterIcon.ashx?mw=1382&amp;h=40&amp;w=40&amp;la=en&amp;hash=56BFE848968F299DA6D89BB6E310F5310AC94F53" alt="LinkedIn"></a><a href="https://www.youtube.com/user/WellCareHealthPlan" class="icon-social" title="YouTube" data-reveal-id="leavingSiteModel"><img src="/~/media/Icons/Social-Media-Icons/YouTubeFooterIcon.ashx?mw=1382&amp;h=40&amp;w=40&amp;la=en&amp;hash=69C461BA87A87822D54A6BF43D89AE9B76A3665D" alt="Youtube"></a><a href="https://www.glassdoor.com/Overview/Working-at-WellCare-EI_IE34976.11,19.htm" class="icon-social" title="Glassdoor" data-reveal-id="leavingSiteModel"><img src="/~/media/Icons/Social-Media-Icons/GlassDoorFooterIcon.ashx?mw=1382&amp;h=40&amp;w=40&amp;la=en&amp;hash=FE856A83E1FBFD7426842052B160FE30D0EC8978" alt="GlassDoorFooterIcon"></a>                                        </div>
+                                </div>
+        </div>
+
+        <div class="row secondary">
+            <div class="large-6 medium-6 small-12 columns copyright">
+                    <p>Copyright 2020 WellCare</p>
+            </div>
+
+            <div class="large-6 medium-6 small-12 columns sub-links">
+                    <ul>
+                            <li>
+                                <a href="/en/Corporate/Legal">Privacy &amp; Legal</a>
+                            </li>
+                            <li>
+                                <a href="/en/Terms-and-Conditions">Terms of Use</a>
+                            </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    <div class="row-full-width approval-number">
+        <div class="row">
+            <div class="mod-container">
+
+                        <span class="date-approval">Last Updated On: 11/2/2016</span>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+    
+
+
+    <script src="/bundles/sitewide?v=qfqsV6_DbvJUFT_s1P__uzlWhEmzcRzBnsvIBup-NEE1"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+            $('select.selectric').selectric();
+        });
+        angular.bootstrap(document.getElementById("login-dropdown"), ["WellcareNextGenLoginModule"]);
+    </script>
+    
+
+
+<span data-selector="tooltip-k6s7tm9h0" id="tooltip-k6s7tm9h0" class="tooltip" role="tooltip">This notice describes how medical information about you may be used and disclosed and how you can get access to this information.<span class="nub"></span></span><span data-selector="tooltip-k6s7tm9h1" id="tooltip-k6s7tm9h1" class="tooltip" role="tooltip">Information on Fraud and Abuse<span class="nub"></span></span></body></html>

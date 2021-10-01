@@ -1,0 +1,604 @@
+<html lang="en"><head> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Google Tag Manager --> <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MGLNRHM&amp;l=dataLayer"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/iSKA0nwgdnEaDqPkXlkFtlLWNGqCtZMK/analytics.min.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MGLNRHM"></script><script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MGLNRHM');
+    </script> <!-- End Google Tag Manager --> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="shortcut icon" href="/assets/img/bx-favicon.ico" sizes="16x16" type="image/x-icon"> <link rel="icon" href="/assets/img/bx-favicon-32.png" sizes="32x32" type="image/png"> <link rel="icon" href="/assets/img/bx-favicon-192.png" sizes="192x192" type="image/png"> <link rel="apple-touch-icon-precomposed" href="/assets/img/bx-favicon-192.png"> <link rel="stylesheet" type="text/css" href="/assets/fonts/1809-JIGWTL.css"> <link rel="stylesheet" type="text/css" href="/assets/fonts/bx-webfont.css"> <link rel="stylesheet" type="text/css" href="/assets/fonts/cal-w01.css"> <title>
+	Privacy
+</title> <script src="/assets/js/common.a67eeacf.js" type="text/javascript"></script><script src="/assets/js/bx.004b7f73.js" type="text/javascript"></script><link href="/assets/css/bx.004b7f73.css" rel="stylesheet" type="text/css"> <script type="text/javascript">var sf_appPath='/';</script><script>
+    function getCookie(name)
+    {
+        var value = '; ' + document.cookie;
+        var parts = value.split('; ' + name + '=');
+        if (parts.length == 2) return parts.pop().split(';').shift();
+    };
+    (function (w) {
+        w.URLSearchParams = w.URLSearchParams || function (searchString) {
+            var self = this;
+            self.searchString = searchString;
+            self.get = function (name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(self.searchString);
+                if (results == null) {
+                    return null;
+                }
+                else {
+                    return decodeURI(results[1]) || 0;
+                }
+            };
+        }
+    })(window);
+    var searchParams = new URLSearchParams(window.location.search);
+    function trackIds(bxid, crmId, crossDomainId) {
+        analytics.track('Ids loaded', {
+            'BXID': bxid,
+            'crmId': crmId,
+            'crossDomainId': crossDomainId
+        });
+    }
+    !function(){var analytics = window.analytics = window.analytics ||[]; if (!analytics.initialize) 
+    if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+    else{analytics.invoked = !0; analytics.methods =["trackSubmit", "trackClick", "trackLink", 
+    "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", 
+    "debug", "page", "once", "off", "on"]; analytics.factory = function(t){ return function(){ 
+    var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics} }; 
+    for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; 
+    analytics[e] = analytics.factory(e)}analytics.load = function(t, e){ var n = document.createElement("script"); 
+    n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + 
+    "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); 
+    analytics._loadOptions = e}; analytics.SNIPPET_VERSION = "4.1.0";
+    analytics.load("iSKA0nwgdnEaDqPkXlkFtlLWNGqCtZMK");
+    }}();
+    analytics.page();
+    analytics.ready(function() {
+        var bxid = getCookie('BXID');
+        var crmId = searchParams.get('c');
+        var traits = analytics.user().traits();
+        if (typeof traits.crossDomainId === 'undefined') {
+            analytics.on('identify', function(event, properties, options) {
+                //refresh
+                bxid = getCookie('BXID');
+                traits = analytics.user().traits();
+                trackIds(bxid, crmId, traits.crossDomainId);
+            });
+        } else {
+            trackIds(bxid, crmId, traits.crossDomainId);
+        }
+    });
+</script><style type="text/css" media="all">/*
+.page-header-section:after {
+    height: 100vh;
+    min-height: 399px;
+}
+*/</style><meta name="Generator" content="Sitefinity 10.0.6412.0 PU"></head> <body> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLNRHM" height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) -->  <div class="all-content sfPublicWrapper standAloneNav" id="PublicWrapper"> 
+
+
+    <nav class="navbar navbar-default bx-navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" id="logoContainer">
+                    <img src="/images/default-source/logos/blackstone-logo.png" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Home">
+                </a>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown ">
+            <a href="/the-firm" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="The Firm">
+                The Firm
+            </a>
+                    <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                <h5>The Firm</h5>
+
+                
+                            <ul class="topNavCol"><li class="">
+            <a class="cta" href="/the-firm/overview" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="The Firm | Overview">Overview</a>
+        </li><li class="">
+            <a class="cta" href="/the-firm/our-people" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="The Firm | Our People">Our People</a>
+        </li><li class="">
+            <a class="cta" href="/investors/overview" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="The Firm | Our Clients">Our Clients</a>
+        </li></ul>
+        
+        
+
+                
+            </li>
+
+                    </ul>
+        </li>
+        <li class="dropdown ">
+            <a href="/our-businesses" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses">
+                Our Businesses
+            </a>
+                    <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                <h5>Our Businesses</h5>
+
+                
+                            <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-businesses/private-equity" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Private Equity">Private Equity</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/real-estate" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Real Estate">Real Estate</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/credit-(gso)" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Credit (GSO)">Credit (GSO)</a>
+        </li></ul>
+        
+        
+        <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-businesses/hedge-fund-solutions-(baam)" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Hedge Fund Solutions (BAAM)">Hedge Fund Solutions (BAAM)</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/strategic-partners" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Strategic Partners">Strategic Partners</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/tactical-opportunities" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Tactical Opportunities">Tactical Opportunities</a>
+        </li></ul>
+        
+        
+        <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-businesses/infrastructure" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Infrastructure">Infrastructure</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/insurance-solutions" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Insurance Solutions">Insurance Solutions</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/life-sciences" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Life Sciences">Life Sciences</a>
+        </li></ul>
+        
+        
+        <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-businesses/innovations" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Innovations">Innovations</a>
+        </li><li class="">
+            <a class="cta" href="/our-businesses/registered-products" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Businesses | Registered Products">Registered Products</a>
+        </li></ul>
+        
+
+                
+            </li>
+
+                    </ul>
+        </li>
+        <li class="dropdown ">
+            <a href="/our-impact" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Our Impact">
+                Our Impact
+            </a>
+                    <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                <h5>Blackstone Charitable Foundation</h5>
+
+                
+                            <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-impact/blackstone-charitable-foundation/charitable-foundation" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Blackstone Charitable Foundation | Overview">Overview</a>
+        </li></ul>
+
+                
+            </li>
+            <li class="dropdown-submenu">
+                <h5>Corporate Social Responsibility</h5>
+
+                
+                            <ul class="topNavCol"><li class="">
+            <a class="cta" href="/our-impact/corporate-social-responsibility/overview" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Corporate Social Responsibility | Overview ">Overview </a>
+        </li></ul>
+
+                
+            </li>
+
+                    </ul>
+        </li>
+        <li class="">
+            <a href="https://ir.blackstone.com/investors/shareholders/default.aspx" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Shareholders">Shareholders</a>
+        </li>
+        <li class="">
+            <a href="/insights" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Insights">Insights</a>
+        </li>
+        <li class="dropdown ">
+            <a href="/careers" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Careers">
+                Careers
+            </a>
+                    <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                <h5>Careers</h5>
+
+                
+                            <ul class="topNavCol"><li class="">
+            <a class="cta" href="/careers/why-blackstone" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Careers | Why Blackstone">Why Blackstone</a>
+        </li><li class="">
+            <a class="cta" href="/careers/diversity-inclusion" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Careers | Diversity &amp; Inclusion ">Diversity &amp; Inclusion </a>
+        </li></ul>
+        
+
+                
+            </li>
+
+                    </ul>
+        </li>
+        <li class="">
+            <a href="https://www.bxaccess.com/portal/" target="_blank" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="LP Login">LP Login</a>
+        </li>
+
+                    <li class="search-dropdown">
+                        <a href="/search" title="Search" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Search">
+                            <i class="icon icon-MagnifyGlass" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navHelper"></div>
+
+    
+
+    
+
+    
+
+
+ 
+<div id="Contentplaceholder1_C001_Col00" class="sf_colsIn container bx-container" data-sf-element="Container" data-placeholder-label="Container">
+<div>
+    <div><h1 id="onlinePrivacyNotice">Online Privacy Notice</h1><h5>Updated: January 14, 2020</h5><br></div>    
+
+</div>
+<div>
+    <div><p><span style="color:#333333;">We at The Blackstone Group Inc., including our relevant local entities listed in&nbsp;</span><a class="copper-text" href="https://www.blackstone.com/privacy#appendixA"> Appendix A</a><span style="color:#333333;">&nbsp;("<strong>Blackstone</strong>"), respect your concerns about privacy. This Online Privacy Notice describes how we process the Personal Data:</span></p><ul><li><span style="color:#333333;">that we collect on&nbsp;</span><a class="copper-text" href="http://blackstone.com/">Blackstone.com</a>,&nbsp;<a class="copper-text" href="https://bxaccess.com/">bxaccess.com</a>,&nbsp;<a class="copper-text" href="http://blackstone.com/careers">our careers pages</a>&nbsp;that are accessible through&nbsp;<a class="copper-text" href="http://blackstone.com/">Blackstone.com</a>, and other websites or applications that may link to this Online Privacy Notice (the "<strong>Sites</strong>");
+	</li><li><span style="color:#333333;">where you visit our premises;</span></li><li><span style="color:#333333;">where you are a contact at one of our suppliers or other business partners; and</span></li><li><span style="color:#333333;">through other data collection points or notices that reference this Online Privacy Notice.</span></li></ul><p><span style="color:#333333;">We provide information on the types of Personal Data we collect, how we use the information, with whom we may share it and the choices available to you regarding our use of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices. "<strong>Personal Data</strong>" is any information that relates to, describes, identifies or can be used, directly or indirectly, to identify an individual, such as name, address, date of birth, personal identification numbers, sensitive personal information, and economic information).</span></p><p><span style="color:#333333;">Click on one of the links below to jump to the listed section:</span></p><ul type="disc"><li><a class="copper-text" href="https://www.blackstone.com/privacy#howWeObtain">Information We Obtain</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#howWeObtainAutomated">Information We Obtain By Automated Means</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#howWeUse">How We Use the Information We Obtain</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#OnlineTracking">Online Tracking and Interest-Based Advertising</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#infoWeShare">Information We Disclose to Others</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#dataTransfers">Data Transfers</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#retentionDelete">Retention and Deletion of your Information</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#yourRights">Your Rights and Choices</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#howWeProtect">How We Protect Personal Data</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#linksToOtherWebsites">Links To Other Websites</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#updatesToPolicy">Updates To Our Online Privacy Notice</a>
+	</li><li><a class="copper-text" href="https://www.blackstone.com/privacy#howToContact">How To Contact Us</a>
+	</li></ul><h3 id="howWeObtain">&nbsp;</h3><h3 id="howWeObtain">Information We Obtain</h3><p><strong><span style="color:#333333;">Information that you give us</span></strong></p><p><span style="color:#333333;">The types of information we collect concerning individuals includes:</span></p><ol style="list-style-type:lower-alpha;"><li><span style="color:#333333;">business and personal contact information (such as name, postal and email addresses, and telephone number); and</span></li><li><span style="color:#333333;">other information you provide to us (such as information provided by registering for email alerts or filling in forms).</span></li></ol><span style="color:#333333;">In connection with a job inquiry or application on our careers pages, you may provide: login credentials; information regarding your work authorization status, education history, current or past job/employment history and professional designations; performance evaluations; and other information about your background and qualifications. You may also provide information regarding your political contributions for the last two years for legal and compliance purposes, but this does not apply if you are based in the European Union ("<strong>EU</strong>"). In addition, where legally permissible, you may provide information regarding your gender, race/ethnicity, and your veteran and disability status. Blackstone will not consider either this information or your choice to decline to provide it in evaluating your qualifications for employment with us. This information will be used only for Equal Employment Opportunity reporting and other legal and compliance purposes.</span><p>&nbsp;</p><p><span style="color:#333333;">In connection with our Investor Portal at&nbsp;</span><a class="copper-text" href="https://bxaccess.com/" target="_blank">bxaccess.com</a><span style="color:#333333;">, you may provide: login credentials; financial information (such as banking information and an account number); taxpayer ID number; jurisdiction of tax residence; date of birth; and certain investment-related information. Please see our separate Investor Data Privacy Notice for detailed information as to how we use your Personal Data.</span></p><span style="color:#333333;">Depending on the nature of our relationship with you, in the past 12 months we may have collected Personal Data concerning you in the following categories:</span><p>&nbsp;</p><ol style="list-style-type:lower-alpha;"><li><span style="color:#333333;">Identifiers (<em>e.g.</em>, real name, postal address, email address, government ID, financial information);</span></li><li><span style="color:#333333;">Sensitive/protected characteristic information (<em>e.g.</em>, age, race, citizenship, gender);</span></li><li><span style="color:#333333;">Commercial information (<em>e.g.</em>, products or services purchased, obtained, or considered, personal information disclosed in a sale or acquisition process);</span></li><li><span style="color:#333333;">Internet or other network activity (<em>e.g.</em> browsing or search history, information regarding interaction with an internet website, application, or advertisement);</span></li><li><span style="color:#333333;">Geolocation data (<em>e.g.</em> physical location);</span></li><li><span style="color:#333333;">Professional or employment-related information (<em>e.g.</em> job history, performance evaluations);</span></li><li><span style="color:#333333;">Non-public education information (<em>e.g.</em> education records); and</span></li><li><span style="color:#333333;">Inferences drawn from other personal information (<em>e.g.</em> profiles reflecting preferences and trends).</span></li></ol><p><strong><span style="color:#333333;">Other information</span></strong><span style="color:#333333;">:<strong></strong></span></p><p><span style="color:#333333;">In connection with electronic interactions you have with us or our service providers (including by email, phone or other forms of electronic communication), we may record and monitor details of those interactions, including their content, to the extent permitted or required by applicable law.</span></p><p><span style="color:#333333;">We may also collect some information from other sources, including:</span></p><ol style="list-style-type:lower-alpha;"><li><span style="color:#333333;">if we have a business relationship with the organization that you represent, your colleagues or other business contacts may give us information about you such as your contact details or details of your role in the relationship; and</span></li><li><span style="color:#333333;">information from third party data providers or publicly available sources for anti-money laundering, background checking and similar purposes, and to protect our business and comply with our legal and regulatory obligations.</span></li></ol><h3 id="howWeObtainAutomated">&nbsp;</h3><h3 id="howWeObtainAutomated">Information We Obtain By Automated Means</h3><p><span style="color:#333333;">When you visit our Sites or open our emails, we may collect certain information by automated means (such as by cookies, web server logs, web beacons and JavaScript). The information we collect in this manner includes your IP address, network location, browser characteristics, device characteristics, operating system, referring URLs, information on actions taken on our Sites, and dates and times of website visits. Cookies are files that websites send to your computer or other Internet-connected device to uniquely identify your browser or to store information or settings on your device - please see our&nbsp;</span><a class="copper-text" href="https://www.blackstone.com/cookie-notice">Cookie Policy</a><span style="color:#333333;">&nbsp;for information about what cookies are and how we use cookies and similar technology. We also may use these and similar technology in emails we send you to collect certain information, such as whether you opened or clicked on links in our email.</span></p><p><span style="color:#333333;">Our Sites may use cookies (such as HTTP, HTML5 and Flash cookies) as well as other types of local storage (such as browser-based or plugin-based local storage). Some of these cookies may be placed by third parties such as our service providers. Your browser may tell you how to be notified when you receive certain types of cookies and how to restrict or disable certain cookies. You also may be able to delete your Flash cookies or adjust your Flash cookie settings by visiting the Adobe Flash&nbsp;</span><a class="copper-text" href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html">Website Storage Settings Panel</a><span style="color:#333333;">&nbsp;and&nbsp;</span><a class="copper-text" href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html">Global Storage Settings Panel</a><span style="color:#333333;">. Please note, however, that without cookies you may not be able to use all of the features of our Sites or other websites and online services.</span></p><p><span style="color:#333333;">In conjunction with gathering information through cookies, our web servers may log information such as your device type, operating system type, browser type, domain, and other system settings, as well as the language your system uses and the country and time zone in which your device is located. We also may record information such as the address of the web page that referred you to our Sites and the IP address of the device you used to connect to our Sites. We may log information about your interaction with the Sites, such as which pages you visit. To control which web servers collect information by automated means, we may place tags on our web pages called "web beacons", which are small files that link web pages to particular web servers and their cookies. We also may send instructions to your device using JavaScript or other computer languages to gather the sorts of information described above and other details about your interactions with the Sites.</span></p><p><span style="color:#333333;">We may use third-party web analytics services on our Sites, such as those of Google Analytics. These service providers help us analyse how visitors use the Sites. The information obtained for this purpose (including your IP address and other information collected by automated means) may be disclosed to or collected directly by these service providers. To learn about opting out of Google Analytics, please&nbsp;</span><a class="copper-text" href="http://tools.google.com/dlpage/gaoptout">click here</a><span style="color:#333333;">.</span></p><p><span style="color:#333333;">The providers of third-party plugins and widgets on our Sites, such as embedded videos and social media sharing tools, may use automated means to collect information regarding your use of the Sites and your interactions with the plugins and widgets. This information is subject to the privacy policies or notices of the providers of the plugins and widgets.</span></p><p><span style="color:#333333;">Information about our cookie practices in the EU is available&nbsp;</span><a class="copper-text" href="https://www.blackstone.com/cookie-notice-(eu)">here</a><span style="color:#333333;">.</span></p><h3 id="howWeUse">&nbsp;</h3><h3 id="howWeUse">How We Use the Information We Obtain</h3><p><span style="color:#333333;">We may use, disclose or otherwise handle the information described in this Online Privacy Notice for the following purposes to:</span></p><ul type="disc"><li><span>operate, evaluate, develop, promote, and improve our business (including developing new products and services; enhancing, improving and analysing our products and services; managing our communications; managing our premises; and performing accounting, auditing and other internal functions);</span></li><li><span>create and manage your account;</span></li><li><span>manage your investments;</span></li><li><span>comply with and enforce applicable legal requirements, relevant industry standards and our policies, including our&nbsp;</span><span style="color:windowtext;"><a class="copper-text" href="https://www.blackstone.com/the-firm/overview/legal">Terms and Conditions of Use</a></span><span>;</span></li><li><span>protect against, identify and prevent fraud, money-laundering, breach of confidence, cyber attack, theft of proprietary materials, financial or business crimes, and other unlawful activity;</span></li><li><span>in some cases, in order to operate, administer and improve the user's experience of the Sites;</span></li><li><span>provide our products and services to you, such as market commentary and email alerts;</span></li><li><span>send you (or produce) promotional materials, newsletters and other communications, including in visual and audio form (such as videos, podcasts and online seminars);</span></li><li><span>communicate with you about, and administer your participation in, special events, programs, promotions, offers, surveys and market research;</span></li><li><span>respond to your inquiries;</span></li><li><span>manage your employment application, assess your qualifications and manage your employment with us – please see our Career Page Privacy Notice for full information about how and why we use your Personal Data in this context;</span></li><li><span>verify your information; and</span></li><li><span>perform data analyses (including market and consumer research, demographic analyses and anonymization and aggregation of information).</span></li></ul><p><span style="color:#333333;">In addition, we use information collected through cookies, web beacons, web server logs and other automated means for purposes such as (i) customizing our users' visits to our Sites, (ii) delivering content tailored to our users' interests and the manner in which our users browse our Sites, and (iii) managing our Sites and other aspects of our business.</span></p><p><span style="color:#333333;"><br>We may also use the information in other ways for which we provide specific notice at the time of collection.<br><br>We will only process your Personal Data as necessary so that we can pursue the purposes described above. Where we process your Personal Data for our legitimate interests as a business or those of a third party, we do so only where we have concluded that our processing does not prejudice you or your privacy in a way that would override our legitimate interest in pursuing those purposes.</span></p><p><span style="color:#333333;"><br>When we collect Personal Data from you, unless indicated otherwise, you should assume that, if we ask you for information, we need it for our business or compliance purposes. In limited circumstances, we are required to collect Personal Data to comply with a legal obligation and/or might ask you to provide information which is purely voluntary; in either case, this will be indicated to you.</span></p><p><span style="color:#333333;">If you are a former employee, worker, contractor or member of Blackstone, we will continue to process your Personal Data for a reasonable period following the end of your employment or engagement for our legitimate business and/or our legal compliance purposes and/or for the establishment or defence of a legal claim. Further, in some instances, we may process your data to perform our obligations under the contract between us (e.g. to pay you your final salary payment after your termination date). We only carry out such processing where we have concluded that our processing does not prejudice you or your privacy in a way that would override our legitimate interests in pursuing those purposes. Your data will be retained and deleted in accordance with our retention policies and procedures (as discussed further below).</span></p><h3 id="OnlineTracking">&nbsp;</h3><h3 id="OnlineTracking">Online Tracking and Interest-Based Advertising</h3><p><span style="color:#333333;">We and third parties acting on our behalf (such as Facebook, Twitter and LinkedIn) may collect information about your online activities over time and across third-party websites to provide you with advertising about products and services tailored to your interests. Where required by applicable law, we will obtain your consent for the processing of your Personal Data for direct marketing purposes.</span></p><p><span style="color:#333333;">You may see our ads on other websites or mobile apps because we participate in advertising networks. Ad networks allow us to target our messaging to users by considering demographic data, users' inferred interests and browsing context. These networks track users' online activities over time by collecting information through automated means (such as by cookies, web server logs, web beacons and other similar technologies). The networks use this information to show ads that may be tailored to individuals’ interests, to track users' browsers or devices across multiple websites or apps, and to build a profile of users' online browsing activities. The information our ad networks may collect includes data about users' visits to websites and apps that participate in the relevant ad networks, such as the pages or ads viewed and the actions taken on the websites or apps. This data collection takes place both on the Sites and on third-party websites and apps that participate in the ad networks. This process also helps us track the effectiveness of our marketing efforts.<br><br>The Sites are not designed to respond to "do not track" signals received from browsers. To learn how to opt out of ad network interest-based advertising, please visit&nbsp;</span><a class="copper-text" href="http://www.aboutads.info/choices" target="_blank">www.aboutads.info/choices</a><span style="color:#333333;">,&nbsp;</span><a class="copper-text" href="http://www.networkadvertising.org/choices/" target="_blank">http://www.networkadvertising.org/choices/</a><span style="color:#333333;">&nbsp;or&nbsp;</span><a class="copper-text" href="http://www.youronlinechoices.eu/" target="_blank">http://www.youronlinechoices.eu/</a><span style="color:#333333;">.</span></p><h3 id="infoWeShare">&nbsp;</h3><h3 id="infoWeShare">Information We Disclose to Others</h3><p><span style="color:#333333;">We do not disclose Personal Data we obtain about you through the Sites or other channels covered by this Online Privacy Notice, except as described in this Online Privacy Notice. We may share your Personal Data with our affiliates and subsidiaries. Depending on the nature of our relationship with you, we also share Personal Data with service providers who perform services on our behalf, our financial and transaction counterparties, our professional advisors, and your agents and representatives. We do not authorize these persons to use or disclose the information except as necessary for the purposes for which it is provided or to comply with legal requirements.</span></p><p><span style="color:#333333;">We also may disclose information about you (i) if we are required to do so by law or legal process, (ii) to law enforcement authorities, regulators and/or other government entities and/or other competent authorities based on a lawful disclosure request, or (iii) when we believe disclosure is necessary or appropriate to prevent harm or financial loss, or in connection with an investigation of suspected or actual fraudulent or illegal activity. We reserve the right to transfer Personal Data we have about you in the event that we sell or transfer all or a portion of our business or assets (including in the event of a reorganization, spin-off, dissolution or liquidation).<br><br>In addition, we may share anonymous/aggregated information with third parties, such as service providers, in order to facilitate our business operations.</span></p><p><span style="color:#333333;">Information collected through third-party plug-ins and widgets on the Sites (such as information relating to your use of a social media sharing tool) is collected directly by the providers of the plug-ins and widgets. This information is subject to the privacy policies of the providers of the plug-ins and widgets, and Blackstone is not responsible for those providers' information practices.</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><span style="color:#333333;">For California Residents, in the preceding 12 months, we may have disclosed Personal Data listed in any of the categories in the "Information We Obtain" section above for business purposes (in particular, as described in this section).</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><span style="color:#333333;">We have not sold Personal Data in the 12 months preceding the date of this Online Privacy Notice.</span></p><h3 id="dataTransfers">&nbsp;</h3><h3 id="dataTransfers">Data Transfers</h3><p><span style="color:#333333;">We may transfer the Personal Data we collect about you to recipients in countries other than the country in which the information was originally collected. Where you are based in the UK (after it has left the EU), the EU, or another country which imposes data transfer restrictions outside of its territory, <span>&nbsp;</span>this includes transfers outside of the UK and the European Economic Area ("<strong>EEA</strong>") or that geographical area, including to those countries in which our affiliates, group members, service providers and business partners operate. Those countries may not have the same data protection laws as the country in which you initially provided the information. Where we transfer Personal Data outside of the UK, the EEA, or other territories subject to data transfer restrictions to other members of the Blackstone group or our service providers, we will ensure that our arrangements with them are governed by data transfer agreements or safeguards, designed to ensure that your Personal Data is protected as required under applicable data protection law (including, where appropriate, under an agreement on terms approved for this purpose by the European Commission or by obtaining your consent).</span></p><h3 id="retentionDelete">&nbsp;</h3><h3 id="retentionDelete">Retention and Deletion of your Information</h3><p><span style="color:#333333;">We intend to keep your Personal Data accurate and up-to-date. We will delete the information that we hold about you when we no longer need it.<span>&nbsp;</span> We retain your Personal Data for as long as it is required by us for our legitimate purposes, to perform our contractual obligations, or where longer, such longer period as is required or permitted by law or regulatory obligations which apply to us.</span></p><p><span style="color:#333333;">We will retain your information in line with our retention policies and, in any event, for no longer than is necessary given the purpose for which it was collected, after which it will be deleted or anonymized.</span></p><p><span style="color:#333333;">Note that we may retain some limited information about you (even when we know that you have left the organization that you represent) so that we can maintain a continuous relationship with you if and when we are in contact with you again.</span></p><h3 id="yourRights">&nbsp;</h3><h3 id="yourRights">Your Rights and Choices</h3><p><span style="color:#333333;">We offer you certain choices in connection with the Personal Data we collect from you. To update your preferences or submit a request, please contact us as indicated in the "How to Contact Us" section of this Online Privacy Notice. To the extent provided by the law of your jurisdiction or otherwise applicable to our processing of your information, you may request access to the Personal Data we maintain about you or request that we correct, amend, delete or block the information by contacting us as indicated below. Where provided by law, you may withdraw any consent you previously provided to us or object at any time on legitimate grounds to the processing of your Personal Data, and we will apply your preferences going forward. You can also lodge a complaint about our processing of your Personal Data with the body regulating data protection in your country.</span></p><p><span style="color:#333333;">&nbsp;</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><span style="color:#333333;">These rights, subject to certain limitations, may include:</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><strong><span style="color:#333333;">Rights of access, correction and deletion.</span></strong><span style="color:#333333;">&nbsp;You may have a right of access to the Personal Data that we hold about you, and to some related information, including the purpose for processing the Personal Data, the categories of recipients of that Personal Data to the extent it has been transferred internationally, and, where the Personal Data has not been collated directly from you, the source (the "<strong>category information</strong>"). You may also have the right to require any inaccurate Personal Data to be corrected or deleted.</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><strong><span style="color:#333333;">Right to object, and portability.</span></strong><span style="color:#333333;">&nbsp;You can object to our use of your Personal Data for direct marketing purposes at any time and you may have the right to object to our processing of some or all of your Personal Data (and require it to be deleted) in some other circumstances. In some circumstances, you may also have a "data portability" right to require us to transfer your Personal Data to you or a third party, in a data portable format.</span></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><a id="_Hlk26876041" name="_Hlk26876041"><span style="color:#333333;">California residents may also request certain information about our disclosure of Personal Data during the prior year, including category information (as defined above).<span>&nbsp;</span></span></a></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><a id="_Hlk26876066" name="_Hlk26876066"><span style="color:#333333;">We review and verify requests to protect your Personal Data, and will action data protection requests fairly and in accordance with applicable data protection laws and principles.</span></a></p><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><span style="color:#333333;">If you wish to exercise any of these rights, please contact us as set out below.<span>&nbsp;</span></span></p><p><span style="color:#333333;">&nbsp;</span></p><p><strong><span style="color:#333333;">Complaints.</span></strong><span style="color:#333333;">&nbsp;You can also lodge a complaint about our processing of your Personal Data with the body regulating data protection in your country.</span></p><h3 id="howWeProtect">&nbsp;</h3><h3 id="howWeProtect">How We Protect Personal Data</h3><p><span style="color:#333333;">We maintain administrative, technical and physical safeguards designed to protect Personal Data we obtain through the Sites against accidental, unlawful or unauthorized destruction, loss, alteration, access, disclosure or use.</span></p><h3 id="linksToOtherWebsites">&nbsp;</h3><h3 id="linksToOtherWebsites">Links To Other Websites</h3><p><span style="color:#333333;">Our Sites may provide links to other websites for your convenience and information. These websites may operate independently from us. Linked websites may have their own privacy notices or policies, which we strongly suggest you review. To the extent any linked websites are not owned or controlled by us, we are not responsible for their content, any use of the websites, or the privacy practices of the websites.</span></p><h3 id="updatesToPolicy">&nbsp;</h3><h3 id="updatesToPolicy">Updates To Our Online Privacy Notice</h3><p><span style="color:#333333;">This Online Privacy Notice may be updated periodically and without prior notice to you to reflect changes in our Personal Data practices. We will post the updated version on the Sites and indicate at the top of the Notice when it was most recently updated.<span>&nbsp;</span> Please check for any updates regularly.</span></p><h3 id="howToContact">&nbsp;</h3><h3 id="howToContact">How To Contact Us</h3><p style="margin-bottom:7.5pt;text-align:justify;background:white;"><span style="color:#333333;">If you have any questions or comments about this Privacy Notice, or if you would like us to update information we have about you or your preferences, please email us at</span> <a class="copper-text" href="mailto:PrivacyQueries@Blackstone.com">PrivacyQueries@Blackstone.com</a><span style="color:#333333;"> or access our </span><a class="copper-text" href="mailto:PrivacyQueries@Blackstone.com">web form</a>.</p><p>&nbsp;</p><p><span style="color:#333333;">You also may write to:</span></p><p><span style="color:#333333;">The Blackstone Group Inc.<br>Attn: Legal &amp; Compliance<br>345 Park Avenue<br>New York, NY 10154<br><br>Individuals in the UK and EU may write to:<br>The Blackstone Group International Partners LLP<br>Attn: Legal &amp; Compliance<br>40 Berkeley Square<br>London, W1J 5AL<br>United Kingdom</span></p><p style="text-align:justify;background:white;"><a id="_Hlk26876094" name="_Hlk26876094"><span style="color:#333333;">Please also contact us via any of the above methods if you have a disability and require an alternative format of this Online Privacy Notice.</span></a></p></div>    
+
+</div>
+<div>
+    <div><br><h3 id="appendixA">Appendix A</h3><span style="color:#333333;">For purposes of our&nbsp;</span><a class="copper-text" href="https://www.blackstone.com/privacy#onlinePrivacyNotice">Online Privacy Notice</a>&nbsp;<span style="color:#333333;">and </span><a class="copper-text" href="/docs/default-source/default-document-library/bx---investor-data-privacy-notice-220690-4-18877-v2-0.pdf?sfvrsn=468fbcad_2" target="_blank">Investor Data Privacy Notice</a><span style="color:#333333;">, below are country-specific contact details for the relevant local Blackstone entities. References in the Online Privacy Notice to “we,” “us,” “our” and “Blackstone” are references to the relevant entity below, which is responsible for the processing of your Personal Data.</span><p>&nbsp;</p><p>Please also note that Blackstone also has offices and/or operations in, or involving, jurisdictions that are not listed below, including Abu Dhabi, California, Cayman Islands, and Korea.</p><p>&nbsp;</p><div class="table-responsive"><table class="table  bx-table k-table"><thead><tr class="table-header"><td style="width:50%;">Country</td><td>Blackstone Entity</td></tr></thead><tbody><tr class="table-row"><td class="Name">United States </td><td>The Blackstone Group Inc.&nbsp;<br>Attn:&nbsp; Legal &amp; Compliance <br>345 Park Avenue <br>New York, NY 10154 <br>United States
+            </td></tr><tr class="table-row"><td class="Name">United States </td><td>Blackstone Administrative Services Partnership L.P. <br>Attn:&nbsp; Legal &amp; Compliance <br>345 Park Avenue <br>New York, NY 10154 <br>United States
+            </td></tr><tr class="table-row"><td class="Name">Australia</td><td>The Blackstone Group (Australia) PTY Limited<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>Gateway One Macquarie Place<br>Suite 3901<br>Sydney NSW 2000<br>Australia
+ </td></tr><tr class="table-row"><td class="Name">Australia</td><td>Blackstone Real Estate Australia Pty Limited<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>Gateway One Macquarie Place<br>Suite 3901<br>Sydney NSW 2000<br>Australia
+ </td></tr><tr class="table-row"><td class="Name">Brazil </td><td>Blackstone Assessoria em Investimentos Ltda.<br>Edificio Plaza Iguatemi<br>Avenida Brigadeiro Faria Lima 2277<br>Suite 1201<br>São Paulo, Brazil
+            </td></tr><tr class="table-row"><td class="Name">Canada</td><td>BX Real Estate Canada ULC<br>130 Adelaide Street West<br>Suite 3001<br>Toronto, ON M5H 3P5<br>Canada
+ </td></tr><tr class="table-row"><td class="Name">China</td><td>Blackstone (Shanghai) Equity Investment Management Co., Ltd<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>HKRI Centre One [Zone 3]<br>Unit 3901-3903, 39th Floor <br>288 Shimen Yi Road<br>Shanghai 200041
+            </td></tr><tr class="table-row"><td class="Name">China</td><td>Blackstone (Shanghai) Equity Investment Management Co., Ltd Beijing Branch&nbsp;<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>Winland International Finance Center<br>Unit F817-18, No. 7<br>Financial Street<br>Xicheng District, Beijing<br>China 100140
+            </td></tr><tr class="table-row"><td class="Name">Denmark</td><td>The Blackstone Group Denmark, filial af Blackstone Europe Fund Management S.à r.l., Luxembourg<br>Tuborg Boulevard 12<br>3rd Floor<br>2900 Hellerup<br>Denmark
+ </td></tr><tr class="table-row"><td class="Name">Dubai</td><td>The Blackstone Group International Partners LLP (DIFC Representative Office)<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>Dubai International Financial Centre<br>The Gate, Level 15<br>P.O. Box 121208<br>Dubai, U.A.E.
+            </td></tr><tr class="table-row"><td class="Name">France</td><td>The Blackstone Group International Partners LLP<br>Paris Representative Office<br>278 Boulevard Saint-Germain<br>75007 Paris, France
+            </td></tr><tr class="table-row"><td class="Name">Germany
+ </td><td>The Blackstone Group Germany GmbH<br>Attn:&nbsp; Legal &amp; Compliance<strong></strong><br>Grüneburgweg 58-62<br>60322 Frankfurt am Main<br>Germany
+ </td></tr><tr class="table-row"><td class="Name">Hong Kong</td><td>The Blackstone Group (HK) Limited<br>Attn:&nbsp; Legal &amp; Compliance<br>Two International Finance Centre<br>Suite 901<br>8 Finance Street Central<br>Hong Kong
+            </td></tr><tr class="table-row"><td class="Name">India </td><td>Blackstone Advisors India Private Ltd. <br>Attn:&nbsp; Legal &amp; Compliance<br>Express Towers Nariman Point<br>Mumbai – 400021<br>India
+ </td></tr><tr class="table-row"><td class="Name">Ireland</td><td>Blackstone / GSO Debt Funds Management Europe Limited<br>Attn:&nbsp; Legal &amp; Compliance<br>30 Herbert Street<br>2nd Floor<br>Dublin 2, Ireland
+            </td></tr><tr class="table-row"><td class="Name">Ireland</td><td>Blackstone / GSO Debt Funds Management Europe II Limited<br>Attn:&nbsp; Legal &amp; Compliance<br>30 Herbert Street<br>2nd Floor<br>Dublin 2, Ireland
+            </td></tr><tr class="table-row"><td>Italy</td><td>The Blackstone Group International Partners LLP<br>Milan Branch<br>Piazza Armando Diaz 2<br>21023 Milan<br>Italy
+ </td></tr><tr class="table-row"><td class="Name">Japan</td><td style="width:71%;" valign="top">The Blackstone Group Japan K.K. <br>Attn:&nbsp; Legal &amp; Compliance<br>Midtown Tower<br>22<sup>nd</sup> Floor<br>9-7-1 Akasaka<br>Minato-ku<br>Tokyo, 107-6222
+            </td></tr><tr class="table-row"><td class="Name">Luxembourg</td><td>Blackstone Europe Fund Management S.á r.l<br>Attn: Legal &amp; Compliance<br>2-4, rue Eugène Ruppert<br>L-2453 Luxembourg<br>Luxembourg
+ </td></tr><tr class="table-row"><td class="Name">Mexico</td><td>BX Real Estate Mexico<br>Sociedad Civil<br>Alfonso Nápoles Gándara No.50 - Piso 4<br>Col. Peña Blanca Santa Fe<br>México, DF<br>01210
+ </td></tr><tr class="table-row"><td class="Name">Singapore
+ </td><td>Blackstone Singapore Pte Ltd.<br>Attn:&nbsp; Legal &amp; Compliance<br>Marina Bay Financial Centre Tower 2<br>Suite 13-01/02<br>10 Marina Boulevard<br>Singapore 018983
+            </td></tr><tr class="table-row"><td v="">Spain
+ </td><td>The Blackstone Group Spain SLU<br>C/Hermosilla, 11, Piso 4<br>28001 Madrid<br>Spain
+ </td></tr><tr class="table-row"><td class="Name">United Kingdom
+            </td><td>The Blackstone Group International Partners LLP<br>Attn:&nbsp; Legal &amp; Compliance <br>40 Berkeley Square<br>London, W1J 5AL<br>United Kingdom
+            </td></tr><tr class="table-row"><td class="Name">United Kingdom
+            </td><td>GSO Capital Partners International LLP<br>Attn:&nbsp; Legal &amp; Compliance <br>40 Berkeley Square<br>London, W1J 5AL<br>United Kingdom
+            </td></tr><tr class="table-row"><td class="Name">United Kingdom
+            </td><td>Blackstone Property Management Limited<br>Attn: Legal &amp; Compliance<br>12 St James' Square <br>London SW1Y 4LB <br>United Kingdom
+            </td></tr></tbody></table></div><br><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-column-resize-handle-wrapper" data-role="draggable" style="top:241.813px;left:435px;position:absolute;width:10px;height:2208px;touch-action:none;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:216.313px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:847.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:437px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:2447.31px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div><div class="k-table-resize-handle-wrapper" data-role="draggable" style="touch-action:none;top:1331.81px;left:26.5px;position:absolute;" unselectable="on" contenteditable="false"></div></div>    
+
+</div>
+</div>
+ 
+
+<div aria-hidden="true" class="modal fade bx-modal bx-cookie-notice" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <h3>Contact Information and Consent Request</h3>
+            <h5>Blackstone Cookie Policy</h5>
+            <p>This website uses cookies, including third-party cookies, in order to obtain information about your visit to the website and make this website better. Please click on the link "Learn More" if you would like more information about the cookies used on this website and how to change your cookie settings. Otherwise, we will assume you're OK to continue.</p>
+            <button aria-label="Close" class="bx-btn popup-center-taupe-btn accept-policy" data-dismiss="modal" data-gtm-category="Page Engagement" data-gtm-action="CTA Click" data-gtm-label="Contact Information and Consent Request | i am fine to continue" type="button">i am fine to continue</button>
+        </div>
+    </div>
+</div><div class="bx-footer" data-sf-element="Row">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+                <h6 id="Footer_TA2057344005_Col00" class="sf_colsIn footer-title" data-sf-element="Column 1" data-placeholder-label="Footer Section Title">
+<div>
+    <div>Quick Links</div>    
+
+</div></h6>
+                <div id="Footer_TA2057344005_Col01" class="sf_colsIn footer-links" data-sf-element="Column 2" data-placeholder-label="Footer Links">
+
+
+<div class="footer-links-row">
+    <ul class="footer-links-list f1">
+            <li class="">
+                <a href="/the-firm" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | The Firm">The Firm</a>
+            </li>
+            <li class="">
+                <a href="/the-firm/our-people" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Our People">Our People</a>
+            </li>
+            <li class="">
+                <a href="/press-releases" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Press Releases">Press Releases</a>
+            </li>
+    </ul>
+</div>
+
+
+</div>
+            </div>
+			<div class="col-xs-6 col-md-3 col-md-push-6">
+                <h6 id="Footer_TA2057344005_Col02" class="sf_colsIn footer-title" data-sf-element="Column 3" data-placeholder-label="Footer Section Title">
+<div>
+    <div>Get in Touch</div>    
+
+</div></h6>
+                <div id="Footer_TA2057344005_Col03" class="sf_colsIn footer-links" data-sf-element="Column 4" data-placeholder-label="Footer Links">
+
+
+<div class="footer-links-row">
+    <ul class="footer-links-list f1">
+            <li class="">
+                <a href="/careers" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Careers">Careers</a>
+            </li>
+            <li class="">
+                <a href="/the-firm/our-offices" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Our Offices">Our Offices</a>
+            </li>
+            <li class="">
+                <a href="#popup-left-modal" target="_self" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | Contact Us" data-toggle="modal" data-target="#popup-left-modal">Contact Us</a>
+            </li>
+    </ul>
+</div>
+
+
+
+
+<div class="nav-buttons">
+    <a class="instagram-ico" href="https://www.instagram.com/blackstone/" target="_blank" title="Follow Blackstone on Instagram">
+        <em class="fa fa-instagram" data-gtm-category="Content Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | Instagram"></em>
+    </a>
+    <a class="facebook-ico" href="https://www.facebook.com/blackstone" target="_blank" title="Like Blackstone on Facebook">
+        <em class="fa fa-facebook" data-gtm-category="Content Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | Facebook"></em>
+    </a>
+    <a class="twitter-ico" href="https://twitter.com/blackstone" target="_blank" title="Follow Blackstone on Twitter">
+        <em class="fa fa-twitter" data-gtm-category="Content Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | Twitter"></em>
+    </a>
+    <a class="linkedin-ico" href="https://www.linkedin.com/company/blackstonegroup/" target="_blank" title="Blackstone on LinkedIn">
+        <em class="fa fa-linkedin" data-gtm-category="Content Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | LinkedIn"></em>
+    </a>
+    <a class="launch-email-alert-signup email-ico" href="#" data-toggle="modal" data-target="#email_collect_modal" title="Sign up for email alerts">
+        <em class="fa fa-envelope" data-gtm-category="Content Engagement" data-gtm-action="CTA Click" data-gtm-label="Footer | Email"></em>
+    </a>
+</div>
+
+
+<div class="modal fade right" id="email_collect_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <div class="modal-header">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <h1 class="modal-title">Stay up-to-date</h1>
+                    <h4>Email Alerts</h4>
+                    <p class="b2">To receive email alerts from Blackstone, sign up below.</p>
+                   <div>
+                        <form data-pardot-endpoint="https://go.pardot.com/l/213192/2017-05-05/nz68" class="bx-email-submit bx-form" name="bx-email-submit">
+                            <div class="alert hide" role="alert">
+                                &nbsp;
+                            </div>
+                            <div class="form-group bx-EMAIL-wrapper">
+                                <input class="form-control required bx-EMAIL" name="email" placeholder="Email address*" type="email" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | Email address">
+                                <label class="headerSixStyle" for="EMAIL">Email address*</label>
+                                <div class="formError">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group bx-FIRSTNAME-wrapper">
+                                <input class="form-control required bx-FIRSTNAME" name="first_name" placeholder="First name*" type="text" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | First name">
+                                <label class="headerSixStyle" for="FIRSTNAME">First name*</label>
+                                <div class="formError">Please enter your first name</div>
+                            </div>
+                            <div class="form-group bx-LASTNAME-wrapper">
+                                <input class="form-control required bx-LASTNAME" name="last_name" placeholder="Last name*" type="text" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | Last name">
+                                <label class="headerSixStyle" for="LASTNAME">Last name*</label>
+                                <div class="formError">Please enter your last name</div>
+                            </div>
+                            <div class="form-group bx-COMPANY-wrapper">
+                                <input class="form-control bx-COMPANY" name="company" placeholder="Company name" type="text" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | Company name">
+                                <label class="headerSixStyle" for="COMPANY">Company name</label>
+                            </div>
+                            <div class="form-group bx-JOBTITLE-wrapper">
+                                <input class="form-control bx-JOBTITLE" name="job_title" placeholder="Job title" type="text" data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | Job title">
+                                <label class="headerSixStyle" for="JOBTITLE">Job title</label>
+                            </div>
+
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox bx-checkbox">
+                                    <label class="checkbox-label headerSixStyle">
+                                        <input id="mce-lists-market-commentary" name="list_byron_market_commentary" type="checkbox" value="1" checked="">
+                                        <span class="checkmark"></span>
+                                        Market commentary from Byron Wien and Joe Zidle
+                                    </label>
+                                </div>
+                                <div class="checkbox bx-checkbox">
+                                    <label class="checkbox-label headerSixStyle">
+                                        <input id="mce-lists-press-releases" name="list_press_releases" type="checkbox" value="1" checked="">
+                                        <span class="checkmark"></span>
+                                        Press releases
+                                    </label>
+                                </div>
+                                <div class="checkbox bx-checkbox">
+                                    <label class="checkbox-label headerSixStyle">
+                                        <input id="mce-lists-foundation-newsletter" name="list_foundation_newsletter" type="checkbox" value="1" checked="">
+                                        <span class="checkmark"></span>
+                                        Charitable Foundation newsletter
+                                    </label>
+                                </div>
+                            </div>
+
+                            <input class="bxid" name="bxid" type="hidden" value="7e9c4fb5-f6b3-4f95-8d6a-bb47bb80d69a">
+                            <input class="submission_url" name="URL" type="hidden" value="/privacy">
+                            <div style="position:absolute;left:-5000px;">
+                                <iframe class="email_capture_iframe" name="email_capture_iframe" width="1" height="1"></iframe>
+                            </div>
+                            <button data-gtm-category="Form Engagement" data-gtm-action="CTA Click" data-gtm-label="Email Alerts | Submit" class="btn btn-primary btn-lg btn-block" type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-3">
+                <h6 id="Footer_TA2057344005_Col04" class="sf_colsIn footer-title" data-sf-element="Column 5" data-placeholder-label="Footer Section Title">
+<div>
+    <div>Explore Blackstone</div>    
+
+</div></h6>
+                <div id="Footer_TA2057344005_Col05" class="sf_colsIn footer-links" data-sf-element="Column 6" data-placeholder-label="Footer Links">
+
+
+<div class="footer-links-row">
+    <ul class="footer-links-list f1">
+            <li class="">
+                <a href="/our-businesses/private-equity" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Private Equity">Private Equity</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/real-estate" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Real Estate">Real Estate</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/credit-(gso)" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Credit (GSO)">Credit (GSO)</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/hedge-fund-solutions-(baam)" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Hedge Fund Solutions (BAAM)">Hedge Fund Solutions (BAAM)</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/strategic-partners" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Strategic Partners">Strategic Partners</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/tactical-opportunities" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Tactical Opportunities">Tactical Opportunities</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/infrastructure" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Infrastructure">Infrastructure</a>
+            </li>
+                </ul><ul class="footer-links-list f1 ">
+            <li class="">
+                <a href="/our-businesses/insurance-solutions" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Insurance Solutions">Insurance Solutions</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/life-sciences" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Life Sciences">Life Sciences</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/innovations" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Innovations">Innovations</a>
+            </li>
+            <li class="">
+                <a href="/our-businesses/registered-products" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Registered Products">Registered Products</a>
+            </li>
+    </ul>
+</div>
+
+
+</div>
+            </div>
+            <div id="Footer_TA2057344005_Col06" class="sf_colsIn col-xs-12 legal-links-wrap" data-sf-element="Column 7" data-placeholder-label="footer-copyright">
+
+    <div class="legal-links f1">
+        <div>© 2020 The Blackstone Group Inc.</div>
+            <span class="">
+                <a href="/transparency-disclosure" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Transparency &amp; Disclosure">Transparency &amp; Disclosure</a>
+            </span>
+            <span class="">
+                <a href="/legal" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Legal">Legal</a>
+            </span>
+            <span class="active">
+                <a href="/privacy" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Privacy">Privacy</a>
+            </span>
+            <span class="">
+                <a href="/cookie-policy-EU" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Cookie Policy (EU)">Cookie Policy (EU)</a>
+            </span>
+            <span class="">
+                <a href="/japan-disclaimer" target="_self" data-gtm-category="Page Engagement" data-gtm-action="Navigation Click" data-gtm-label="Footer | Japan Disclaimer">Japan Disclaimer</a>
+            </span>
+    </div>
+
+
+
+</div>
+	</div>
+</div>
+
+<div class="modal fade right" id="popup-left-modal" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="icon-menu_close popup-center-navModal"></span></button></div></div>
+            <div class="contact-us-body">
+                <div id="Footer_TA2057344014_Col00" class="sf_colsIn" data-placeholder-label="Container">
+<div>
+    <div><h1>Contact Us</h1></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col01" class="sf_colsIn  bottom-spacer" data-placeholder-label="Container">
+<div>
+    <div><p>For office-specific contact information, please visit <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | our offices page" href="/the-firm/our-offices">our offices page</a>. Switchboard: <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | Switchboard: +1 (212) 583-5000" href="tel:12125835000">+1 (212) 583-5000</a></p></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col02" class="sf_colsIn" data-placeholder-label="Container">
+<div>
+    <div><h4>Investor Relations</h4></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col03" class="sf_colsIn" data-placeholder-label="Container">
+<div>
+    <div><p>For investor relations contact information or to receive email notifications for SEC filings, events, end of day stock quotes, and financial reports, please visit our <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | Investor Relations page" href="https://ir.blackstone.com/investors/contact-us-and-email-alerts/default.aspx">Investor Relations page</a>.</p></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col04" class="sf_colsIn contact-us-anchor" data-placeholder-label="Container">
+<div>
+    <div><p>US: <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | US: +1 888-756-8443" href="tel:18887568443">+1 888-756-8443</a><br>International: <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | International: +1 646-313-6590" href="tel:16463136590">+1 646-313-6590</a><br><a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | BlackstoneInvestorRelations@blackstone.com" href="mailto:BlackstoneInvestorRelations@blackstone.com">BlackstoneInvestorRelations@blackstone.com</a></p></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col05" class="sf_colsIn top-spacer" data-placeholder-label="Container">
+<div>
+    <div><h4>Media Contacts</h4></div>    
+
+</div></div>
+                <div id="Footer_TA2057344014_Col06" class="sf_colsIn" data-placeholder-label="Container">
+<div>
+    <div><p>For press inquiries, contact <a class="contact-us-cta" data-gtm-action="CTA Click" data-gtm-category="Form Engagement" data-gtm-label="Contact Us | pressinquiries@blackstone.com" href="mailto:pressinquiries@blackstone.com">pressinquiries@blackstone.com</a>.</p><p>To view recent press releases, <a class="contact-us-cta" href="#">click here</a>.</p></div>    
+
+</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ </div> <script type="text/javascript">
+$( document ).ready(function() {
+    $.getScript("https://players.brightcove.net/5843213364001/experience_5c40a9c0cc238f0011f11033/live.js");
+});
+</script> <script async="" type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=1397916082"></script>
+ 
+</div></body></html>

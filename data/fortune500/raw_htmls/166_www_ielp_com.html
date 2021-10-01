@@ -1,0 +1,308 @@
+<html dir="ltr" prefix="og: http://ogp.me/ns#" style="" class=" no-touchevents details js" lang="en"><head><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="async" src="https://www.adobetag.com/d2/thomsonreuterscorporategroupweb/live/CoreClientCode.js"></script>
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"37278538"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="title" content="Legal Disclaimer | Icahn Enterprises">
+<meta property="og:site_name" content="Icahn Enterprises">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ielp.com/legal-disclaimer">
+<meta property="og:title" content="Legal Disclaimer | Icahn Enterprises">
+<meta property="og:description" content="The Investor Relations website contains information about Icahn Enterprises's business for stockholders, potential investors, and financial analysts.">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.4">
+<link rel="alternate" hreflang="en" href="https://www.ielp.com/legal-disclaimer">
+<link rel="canonical" href="https://www.ielp.com/legal-disclaimer">
+<link rel="shortlink" href="https://www.ielp.com/node/13501">
+<link rel="revision" href="https://www.ielp.com/legal-disclaimer">
+
+    <title>Legal Disclaimer | Icahn Enterprises</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/knoqqb10296/files/css/css_8zWKN6qWWUtDIuPxDLTytXs0iepG3wRB9x86fVDdjDc.css?q1eibw">
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb10296/files/css/css_msznBriyr9Ipi4D-MYoWTe4NXbhkdd2QqirQrPEkChI.css?q1eibw">
+<link rel="stylesheet" media="print" href="/sites/g/files/knoqqb10296/files/css/css_uR7CBnjEs5VZNOTbN5egaIVEsuJ_uLDLaCxQpDsgq_0.css?q1eibw">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb10296/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+    
+  </head>
+  <body class="body-sidebars-both nir-node nir-node--type-page nir-node--13501 page-node-13501 node_type_page path-node page-node-type-page nmdbsq" id="wsh_body">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    
+
+  <div id="wsh_container">
+    <div id="wsh_top">
+      <div align="center"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/header.gif" alt="Icahn Enterprises" vspace="0" hspace="0" border="0"></div>
+    </div>
+    <div id="wsh_bread"> <a href="/home">Home</a>&nbsp;&nbsp;<a href="/investor-relations" class="on">Investor Relations</a>&nbsp;&nbsp;<a href="/corporate-governance">Corporate Governance</a>&nbsp;&nbsp;<a href="/press-releases">Press</a>&nbsp;&nbsp;<a href="/contact-us">Contact Us</a> </div>
+    <div id="wsh_leftNav">       <aside class="sidebar-first sidebars" id="sidebar-first">   <div class="region region-sidebar-first">
+    
+
+<nav role="navigation" aria-labelledby="block-nir-pid950-investorrelations-menu" id="block-nir-pid950-investorrelations" class="block--system-menu-blockir block--system-menu-blockir--13501 block--sidebar-first--system-menu-block--ir block--sidebar-first--system-menu-block--ir--13501 block--27e55bee-1175-4569-bea7-0468293aacb4 block--27e55bee-1175-4569-bea7-0468293aacb4--13501 block block-menu navigation block-system-menublock menu--ir">
+                        
+    <h2 class="visually-hidden" id="block-nir-pid950-investorrelations-menu">Investor Relations</h2>
+    
+
+                              <ul data-block-uuid="27e55bee-1175-4569-bea7-0468293aacb4" class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="/index.php/" title="Main Investor Relations Page" data-drupal-link-system-path="<front>">Investor Relations</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/events-and-presentations" data-drupal-link-system-path="node/5821">Events &amp; Presentations</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/financial-information" data-drupal-link-system-path="node/5871">Financial Information</a>
+                                    <ul class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="/index.php/financial-information/sec-filings" data-drupal-link-system-path="node/5876">SEC Filings</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="http://www.ielp.com/sec.cfm?FormatFilter=XBRL" target="" rel="">XBRL</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/financial-information/annual-reports" data-drupal-link-system-path="node/5881">Annual Reports</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/financial-information/quarterly-results" data-drupal-link-system-path="node/5986">Quarterly Results</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/financial-information/key-ratios" data-drupal-link-system-path="node/5906">Key Ratios</a>
+                  </li>
+          </ul>
+  
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/stock-information" data-drupal-link-system-path="node/5916">Stock Information</a>
+                                    <ul class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="/index.php/stock-information/historic-stock-lookup" data-drupal-link-system-path="node/5921">Historic Stock Lookup</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/stock-information/investment-calculator" data-drupal-link-system-path="node/5926">Investment Calculator</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/stock-information/dividends-splits" data-drupal-link-system-path="node/5931">Dividend History</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/stock-information/analyst-coverage" data-drupal-link-system-path="node/5896">Analyst Coverage</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/stock-information/ownership-profile" data-drupal-link-system-path="node/5901">Ownership Profile</a>
+                  </li>
+          </ul>
+  
+                  </li>
+              <li class="side-menu__item">
+          <a href="/index.php/investor-faqs" data-drupal-link-system-path="node/5941">Investor FAQs</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+  </div>
+ </aside> </div>
+    <div id="wsh_content">
+      <div id="menu_container" class="wsh_floatR">
+        <a href="javascript:window.print();" rel="nofollow"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/clear_print.gif" alt="Print" title="Print" border="0"></a>&nbsp;&nbsp;
+        <a href="#" class="wsh_JSon sharethis" alt="Share This" title="Share This"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/icon_share.png" class="toolbarIcons" alt="Share" border="0"></a>
+        <div id="pop2">
+          <div id="pop2content">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Share this on:</td>
+                  <td>
+                    <a href="#" class="closepop2"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/share-close.gif" alt="Close window" border="0"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a href="http://delicious.com/save?v=5&amp;amp;noui&amp;jump=close&amp;url=https://www.ielp.com/legal-disclaimertitle=Icahn Enterprises - Legal Disclaimer" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=https://www.ielp.com/legal-disclaimertitle=Icahn Enterprises - Legal Disclaimer','delicious','resizable=yes,scrollbars=yes,width=550,height=550'); return false;" title="Delicious"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/delicious_icon.gif" alt="delicious" border="0"> Delicious</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a href="http://digg.com/submit?phase=2&amp;url=https://www.ielp.com/legal-disclaimer" onclick="window.open('http://digg.com/submit?phase=2&amp;url=https://www.ielp.com/legal-disclaimer','Digg','resizable=yes,scrollbars=yes,width=550,height=550'); return false;" title="Digg"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/digg_icon.gif" alt="Digg" border="0"> Digg</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a href="http://www.facebook.com/share.php?u=https://www.ielp.com/legal-disclaimert=Icahn Enterprises - Legal Disclaimer" onclick="window.open('http://www.facebook.com/share.php?u=https://www.ielp.com/legal-disclaimert=Icahn Enterprises - Legal Disclaimer','Facebook','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="Facebook"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/facebook_icon.gif" alt="Facebook" border="0"> Facebook</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ielp.com/legal-disclaimertitle=Icahn Enterprises - Legal Disclaimer" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;urlhttps://www.ielp.com/legal-disclaimertitle=Icahn Enterprises - Legal Disclaimer','LinkedIn','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="LinkedIn"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/linkedin_icon.gif" alt="LinkedIn" border="0"> LinkedIn</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a href="http://twitter.com/home?status=Currently%20reading%20https://www.ielp.com/legal-disclaimer" onclick="window.open('http://twitter.com/home?status=Currently%20reading%20https://www.ielp.com/legal-disclaimer','Twitter','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="Twitter"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/twitter_icon.gif" alt="Twitter" border="0"> Twitter</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:center;"><img src="/sites/g/files/knoqqb10296/themes/site/nir_pid950/client/images/dots.gif" alt="" width="110" height="1"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:center;"><a href="/what" title="What is this">What is this?</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <section id="content">
+        <div id="content-header">  </div>
+        <div class="col1">
+          <div id="content-area">  <div class="region region-content">
+    <div id="block-nir-pid950-websitenoticeblock" class="block--website-notice-block block--website-notice-block--13501 block--content--website-notice-block block--content--website-notice-block--13501 block--60db7578-e495-4837-b02c-48ffcf767d97 block--60db7578-e495-4837-b02c-48ffcf767d97--13501 block block-nir-website-notices block-website-notice-block">
+  
+    
+      
+  </div>
+<div data-drupal-messages-fallback="" class="hidden"></div>
+<div id="block-nir-pid950-content" class="block--system-main-block block--system-main-block--13501 block--content--system-main-block block--content--system-main-block--13501 block--a89c791f-0654-428a-9ae8-6f91c5634f61 block--a89c791f-0654-428a-9ae8-6f91c5634f61--13501 block block-system block-system-main-block">
+  
+    
+      
+<article role="article" class="node node--page--full node--type-page node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+  <h1 class="field__item">Legal Disclaimer</h1>
+
+            <div class="clearfix text-formatted field field--name-field-nir-page-body field--type-text-long field--label-hidden field__item"><p><strong>LEGAL DISCLAIMER</strong></p>
+
+<p>We prepared this website for the sole purpose of providing information about Icahn Enterprises L.P. and its subsidiaries. We make no representations as to the accuracy or completeness of information contained in our website. We are not responsible for any errors or omissions, or for the results obtained from the use of this information. All information in this website is provided "as-is", with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose. Securities and Exchange Commission Reports are filed on the respective dates and the reports may become out-of-date. We reserve the right to modify, add or delete information on our website at any time. Reproduction or distribution of any information or materials obtained on our website or links without prior written permission is prohibited.</p>
+
+<p>This website may include forward-looking statements that discuss expectations about future events and conditions. Such statements are not historical fact and are subject to significant risks and uncertainties. Actual results or future events may vary from these forward-looking statements, and the variations may be material. Visitors to this site are referred to the sections entitled “Risk Factors” in Icahn Enterprises L.P.'s SEC filings, including its Annual Report on Form 10-K, for a summary of some of the risks that could cause actual results to differ materially from those expressed or implied by any of the forward-looking statements. None of the information contained herein is intended to be, and shall not be deemed to be, incorporated into any of Icahn Enterprises L.P.'s securities filings or documents.<br>
+&nbsp;</p></div>
+      
+  </div>
+
+  
+</article>
+
+  </div>
+
+  </div>
+</div>
+        </div>
+      </section>
+    </div>
+    <!-- close wsh_content-->
+    <div id="wsh_rightCol">       <div class="col2">
+        <aside class="sidebar-last sidebars" id="sidebar-last">   <div class="region region-sidebar-last">
+    <div id="toolbar"><div class="search_box ToolbarContent"><div class="ToolbarTitle">Search</div><div id="block-nir-pid950-search" class="block--search-form block--search-form--5876 block--sidebar-last--search-form block--sidebar-last--search-form--5876 block--84f86a5d-8e48-4cd4-8e28-ca8bf436ecd4 block--84f86a5d-8e48-4cd4-8e28-ca8bf436ecd4--5876 block block-nir-search block-search-form">
+  
+    
+      <form data-block-uuid="84f86a5d-8e48-4cd4-8e28-ca8bf436ecd4" action="/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="">
+  <div class="js-form-item form-item js-form-type-search form-item-query js-form-item-query form-no-label">
+        <input type="search" name="query" size="60" maxlength="128" placeholder="keyword(s)" class="form-search required" required="required" aria-required="true">
+
+        </div>
+<input type="submit" name="op" value="Search" class="button button--primary js-form-submit form-submit">
+
+</form>
+
+  </div></div></div>
+<div id="block-nir-pid950-stockquote" class="block--market-data-block__stock-quote block--sidebar-last--market-data-block__stock-quote block--e2a44602-6d88-44ac-8b0c-9194644c13b4 block block-nir-market-data-block block-market-data-block__stock-quote">
+  
+      <h2>Stock Quote</h2>
+    
+      
+<div class="quote-wrap user-toggle-off stock-quote__featured">
+  <div class="quote-wrapper">
+                        <div id="wsh_miniQuote">
+   <div class="wsh_miniQuote_Head">Stock Quote(NASDAQ: IEP)</div>
+   <div class="wsh_miniQuote_Label">Price:</div>
+   <div class="wsh_miniQuote_Data">$67.16</div>
+   <div class="wsh_clear"></div>
+   <div class="wsh_miniQuote_Label">Change:</div>
+   <div class="wsh_miniQuote_Data price-up">+0.22</div>
+   <div class="wsh_clear"></div>
+   <div class="wsh_miniQuote_Label">Day High:</div>
+   <div class="wsh_miniQuote_Data">67.48</div>
+   <div class="wsh_clear"></div>
+   <div class="wsh_miniQuote_Label">Day Low:</div>
+   <div class="wsh_miniQuote_Data">66.73</div>
+   <div class="wsh_clear"></div>
+   <div class="wsh_miniQuote_Label">Volume:</div>
+   <div class="wsh_miniQuote_Data">50550</div>
+   <div class="wsh_clear"></div>
+   <div class="wsh_miniQuote_Date">1:06 PM EST on 02/18/20</div>
+   <div class="disclaimer wsh_miniQuote_Disc">Copyright Nasdaq. Minimum 15 minutes delayed.</div>
+</div>                        
+                             
+                             
+       </div>
+</div>
+
+  </div>
+
+
+
+<nav role="navigation" aria-labelledby="block-nir-pid950-shareholdertools-menu" id="block-nir-pid950-shareholdertools" class="block--system-menu-blockshareholder-tools block--system-menu-blockshareholder-tools--5876 block--sidebar-last--system-menu-block--shareholder-tools block--sidebar-last--system-menu-block--shareholder-tools--5876 block--338f9ca2-a02b-4f2c-96fe-b449e66bd09c block--338f9ca2-a02b-4f2c-96fe-b449e66bd09c--5876 block block-menu navigation block-system-menublock menu--shareholder-tools">
+            
+    <h2 id="block-nir-pid950-shareholdertools-menu">Shareholder Tools</h2>
+    
+
+                              <ul data-block-uuid="338f9ca2-a02b-4f2c-96fe-b449e66bd09c" class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="/printed-materials" data-drupal-link-system-path="node/5966">Printed Materials</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/email-alerts" data-drupal-link-system-path="node/5946">Email Alerts</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/download-library" data-drupal-link-system-path="node/6016">Download Library</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/rss-news-feeds" data-drupal-link-system-path="node/5951">RSS News Feeds</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+  </div>
+ </aside>         <!-- End toolbar -->
+      </div>
+      <!-- close wsh_rightCol -->
+      
+      <!-- close wsh_footer -->
+    </div>
+    <div id="wsh_footer"> Copyright 2020 Icahn Enterprises | <a href="disclaimer.cfm">Legal Disclaimer</a> </div>
+    <!-- close wsh_container -->
+    <!--/DO NOT REMOVE/-->
+    <!-- End SiteCatalyst code version: H.25.3. -->
+  </div>
+
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgclientweb2775";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/13501","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"classy\/node,core\/drupal.collapse,core\/html5shiv,nir_base\/adobe_omniture,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_market_data_block\/nir_market_data_block.command,nir_market_data_block\/nir_market_data_block.stockQuote,nir_multimedia\/nir_multimedia,nir_pid950\/override,nir_website_notices\/nir_website_notices.notices,system\/base","theme":"nir_pid950","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"7e7c38b640706c66c2af71b8485d3773adc53988fe411b87d8f83d7f5c104101"}}</script>
+<script src="/sites/g/files/knoqqb10296/files/js/js_Km8JJXR1AFxjMfsZgycfv7vChz-lpuLg3vRKwIXaE5M.js"></script><div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div><style>.mboxDefault{visibility:hidden;}</style>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"761e715901","applicationID":"37278538,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fYEcMTlxbVF1ITUBZQA==","queueTime":0,"applicationTime":91,"atts":"ShJUF18aSEg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="drupal-modal" class="ui-front" style="display: none;"></div><div id="drupal-live-announce" class="visually-hidden" aria-live="polite" aria-busy="false"></div></body></html>

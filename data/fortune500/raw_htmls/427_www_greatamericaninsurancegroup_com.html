@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>     <html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]>        <html class="no-js lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="js wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n3-active wf-proximanovacondensed-n7-active wf-proximanovacondensed-i7-active wf-proximanovacondensed-n4-active wf-proximanovacondensed-i4-active wf-active" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta charset="utf-8"><script src="427_www_greatamericaninsurancegroup_com_files/nr-spa-1167.js"></script><script type="text/javascript" async="" src="427_www_greatamericaninsurancegroup_com_files/conversion_async.js"></script><script type="text/javascript" async="" src="427_www_greatamericaninsurancegroup_com_files/insight.js"></script><script type="text/javascript" async="" src="427_www_greatamericaninsurancegroup_com_files/analytics.js"></script><script async="" src="427_www_greatamericaninsurancegroup_com_files/gtm.js"></script><script type="text/javascript" async="" data-id="bec" org-id="f00000000090316" domain=".greatamericaninsurancegroup.com" session-timeout="86400000" src="427_www_greatamericaninsurancegroup_com_files/conv_v3.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"254dc64f4e","applicationID":"106997615","transactionName":"NFUEZkoAXkBVAhVRCg0fJ2FoTkNVWRcCSAQEVRVXShdZUFFOBwkBUAIHBQtMAVdSB0wOAQdSS1ALVlMeUgdRCFVTCVICW1AJbFoOFVAADlU5V1ZPUUBEGQ==","queueTime":0,"applicationTime":324,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQEOV1VbChABVFdbDgYBV1E=",licenseKey:"254dc64f4e",applicationID:"106997615"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(25),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(26),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),O=t(6),R=t(13),P=t(7),T=t(14),N=t(9),M=t("ee"),S=M.get("tracer");t(16),y.features.spa=!0;var C,L=0;M.on(u,r),M.on(p,r),M.on(d,o),M.on(l,o),M.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),R.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),P.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),N.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(M,"xhr-resolved"),a(M,"xhr-done"),a(P,m+s),a(P,m+"-done"),a(N,"new-jsonp"),a(N,"jsonp-end"),a(N,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(26),a=t(25);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),s=i(a),c=t(25),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(23),s=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||"document"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(25),s=t(26),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!p){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,p=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var p=!1,l=["click","keydown","mousedown","pointerdown","touchstart"];l.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],23:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],24:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],25:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],26:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],27:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(25),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(25),u=t("ee"),d=t(24),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1167.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(19),t(22),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(27)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(26),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);</script> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>
+	Great American Insurance Group Privacy Policy
+</title> <link rel="icon" type="image/x-icon" href="https://www.greatamericaninsurancegroup.com/favicon.ico"> <script src="427_www_greatamericaninsurancegroup_com_files/ryn7ryq.js"></script> <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-proxima-nova-condensed{font-family:"proxima-nova-condensed",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-proxima-nova-n3;src:url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-proxima-nova-condensed-n7;src:url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-condensed-i7;src:url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-condensed-n4;src:url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-condensed-i4;src:url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style><script>try { Typekit.load({ async: true }); } catch (e) { }</script> <link href="427_www_greatamericaninsurancegroup_com_files/font-awesome.css" rel="stylesheet"> <link href="427_www_greatamericaninsurancegroup_com_files/application.css" rel="stylesheet" type="text/css"> <script>
+        (function () {
+            "use strict";
+            var el = document.getElementsByTagName('html')[0],
+                nojsClass = "no-js", jsClass = "js";
+
+            if (el.classList) {
+                el.classList.remove(nojsClass);
+                el.classList.add(jsClass);
+            } else {
+                el.className = el.className.replace(new RegExp('(^|\\b)' + nojsClass.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                el.className += ' ' + jsClass;
+            }
+        }());
+    </script> <!--[if lt IE 9]><script src="/Frontend-Assembly/Telerik.Sitefinity.Frontend/assets/dist/js/respond.min.js?package=GAIG&amp;v=MTIuMS43MTI2LjA%3d" type="text/javascript"></script><![endif]--> <script type="text/javascript">
+if (window.BEJSSDKObserver === undefined) {
+  (function(BEJSSDKObserver, $, undefined) {
+    var observer = void 0;
+    var listeners = [];
+    var readySet = [];
+    var doc = window.document;
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+    function checkSelector(selector, fn, indexList) {
+      var elements = doc.querySelectorAll(selector);
+  /**
+    issues on IE @see https://www.codesd.com/item/javascript-es6-not-a-function-error.html
+    elements = Array.from(elements);
+
+    */
+    for (var i = 0, len = elements.length; i < len; i++) {
+      /* -1 means all instances */
+      if (indexList != -1 && !(i in indexList)) {
+        continue;
+      }
+      var element = elements[i];
+      for (var j = 0; j < readySet.length; j++) {
+        if (readySet[j] == element.className || readySet[j] == element.id) {
+          return;
+        }
+      }
+      if (element.className) {
+        readySet.push(element.className);
+      }
+      if (element.id) {
+        readySet.push(element.id);
+      }
+
+      if (!element.ready || MutationObserver==null) {
+        element.ready = true;
+        fn.call(element, element);
+      }
+    }
+  }
+
+  function checkListeners() {
+    listeners.forEach(function (listener) {
+      return checkSelector(listener.selector, listener.fn, listener.indexList);
+    });
+  }
+
+  function removeListener(selector, fn) {
+    var i = listeners.length;
+    while (i--) {
+      var listener = listeners[i];
+      if (listener.selector === selector && listener.fn === fn) {
+        listeners.splice(i, 1);
+        if (!listeners.length && observer) {
+          observer.disconnect();
+          observer = null;
+        }
+      }
+    }
+  }
+
+/**
+ * Fire event on first js selector
+ * @param selector string to watch on
+ * @param fn       callback function
+ * @param index_list can be undefined which means only first one
+ *                   or -1 which means all
+ *                   or a list of allowable indexes
+ */
+ BEJSSDKObserver.jsElementReady = function(selector, fn, index_list) {
+  if (index_list === undefined) {
+    index_list = [];
+    index_list.push(0);
+  }
+
+  if (MutationObserver != null) {
+    if (!observer) {
+      observer = new MutationObserver(checkListeners);
+      observer.observe(doc.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+    listeners.push({ selector: selector, fn: fn, indexList: index_list });
+  } else {
+    /* <= IE8 */
+    if (!document.addEventListener) {
+      /* log("<=IE8 attachEvent assignment"); */
+      document.addEventListener = document.attachEvent;
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var elements = doc.querySelectorAll(selector);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        /* -1 means all instances */
+        if (index_list != -1 && !(i in index_list)) {
+          continue;
+        }
+        var element = elements[i];
+        element.ready = true;
+        fn.call(element, element);
+      }
+    });
+  }
+
+  checkSelector(selector, fn, index_list);
+  return function () {
+    return removeListener(selector, fn);
+  };
+};
+}(window.BEJSSDKObserver = window.BEJSSDKObserver || {}));
+}
+var jsElementReady = window.BEJSSDKObserver.jsElementReady;
+
+if (window.BELinkBlockGenerator === undefined) {
+  (function(BELinkBlockGenerator, $, undefined) {
+    BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = 100;
+    BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = 200;
+
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE = 0;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE = 1;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE = 2;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE = 3;
+
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE = 0;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_POST_APPEND_ELEMENT = 1;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT = 2;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT = 3;
+
+    BELinkBlockGenerator.setMaximumHeadlineLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.setMaximumDescriptionLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.generateIndividualLinks = function(parentElement, linkStructure, link) {
+      var link_level_element_tag = linkStructure[0];
+      var link_level_element = document.createElement(link_level_element_tag);
+      var link_attribute_dictionary = linkStructure[1];
+      var allowable_elements = linkStructure[2];
+      var children_link_structures = linkStructure[3];
+      for (var link_attribute_key in link_attribute_dictionary) {
+        link_level_element.setAttribute(link_attribute_key, link_attribute_dictionary[link_attribute_key]);
+      }
+
+      var added_something = false;
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE)>=0) {
+        link_level_element.setAttribute('href', link.url);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE)>=0 && link.h1) {
+        var headline_text = link.h1;
+        if (headline_text.length > BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) {
+          headline_text = headline_text.substring(0, BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(headline_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE)>=0 && link.desc) {
+        var desc_text = link.desc;
+        if (desc_text.length > BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) {
+          desc_text = desc_text.substring(0, BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(desc_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE)>=0 && link.image) {
+        link_level_element.setAttribute('src', link.image);
+        added_something = true;
+      }
+/**
+    don't emit for empty links, desc, headline, image
+    except for parent structures where allowable_length=0
+    */
+    if (!added_something && allowable_elements.length != 0) {
+
+      return;
+    }
+    /* go depth first */
+    for (var childrenIndex=0; childrenIndex<children_link_structures.length; childrenIndex++) {
+      var childLinkStructure = children_link_structures[childrenIndex];
+      BELinkBlockGenerator.generateIndividualLinks(link_level_element, childLinkStructure, link);
+    }
+    parentElement.appendChild(link_level_element);
+  };
+
+  BELinkBlockGenerator.insertLinkBlocks = function(targetElement, replacementStrategy, overallStructure, linkStructure, links,
+                                                   titleStructure) {
+    if (targetElement == null) {
+      return;
+    }
+
+    if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE) {
+      while (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
+      }
+    }
+
+    var previousElement = targetElement;
+    for (var i=0;i<overallStructure.length;i++) {
+      var level_definition = overallStructure[i];
+      var level_element_tag = level_definition[0];
+      var level_element = document.createElement(level_element_tag);
+      var attribute_dictionary = level_definition[1];
+      for (var attribute_key in attribute_dictionary) {
+        level_element.setAttribute(attribute_key, attribute_dictionary[attribute_key]);
+      }
+
+      /* need to place title structure */
+      if (titleStructure && titleStructure[0] == i) {
+        var title_element_tag = titleStructure[1];
+        var title_element = document.createElement(title_element_tag);
+        var title_attribute_dictionary = titleStructure[2];
+        var title_text_content = titleStructure[3];
+        for (var title_attribute_key in title_attribute_dictionary) {
+          title_element.setAttribute(title_attribute_key, title_attribute_dictionary[title_attribute_key]);
+        }
+
+        var title_text_node = document.createTextNode(title_text_content);
+        title_element.appendChild(title_text_node);
+
+
+        level_element.appendChild(title_element);
+      }
+
+      /* last level place links */
+      if (i == overallStructure.length-1) {
+        for (var link_i=0; link_i < links.length; link_i++) {
+          var link = links[link_i];
+          for (var linkStructureIndex=0;linkStructureIndex < linkStructure.length; linkStructureIndex++) {
+            BELinkBlockGenerator.generateIndividualLinks(level_element, linkStructure[linkStructureIndex], link)
+          }
+        }
+      }
+
+      /* first level child we need to check placement */
+      if (previousElement == targetElement) {
+        if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT) {
+          /* 2 means insert right before */
+          previousElement.insertBefore(level_element, targetElement.firstChild);
+        } else if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT) {
+          /* 3 means insert right before at parent level */
+          var parentElement = previousElement.parentElement;
+          parentElement.insertBefore(level_element, previousElement);
+        } else {
+          previousElement.appendChild(level_element);
+        }
+      } else {
+        previousElement.appendChild(level_element);
+      }
+      previousElement = level_element;
+    }
+  };
+}(window.BELinkBlockGenerator = window.BELinkBlockGenerator || {}))
+};
+</script> <script>
+      (function() {
+      var bec = document.createElement('script');
+      bec.type = 'text/javascript';
+      bec.async = true;
+      bec.setAttribute("data-id", "bec");
+      bec.setAttribute("org-id", "f00000000090316");
+      bec.setAttribute("domain", ".greatamericaninsurancegroup.com");
+      bec.setAttribute("session-timeout", 86400000);
+      bec.src = document.location.protocol + '//cdn.b0e8.com/conv_v3.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(bec, s);
+})();
+</script> <script type="text/javascript">var sf_appPath='/';</script><meta property="og:title" content="Great American Insurance Group Privacy Policy"><meta property="og:description" content="Great American Insurance Group privacy policy"><meta property="og:url" content="https://www.greatamericaninsurancegroup.com/contact/privacy/notice"><meta property="og:type" content="website"><meta property="og:site_name" content="Default"><script type="text/javascript">
+<!-- Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDRT56Q');
+<!-- End Google Tag Manager -->
+</script><link href="427_www_greatamericaninsurancegroup_com_files/gaig-sub-stylesheet-comp.css" media="screen" rel="stylesheet" type="text/css"><link href="427_www_greatamericaninsurancegroup_com_files/_print.css" media="print" rel="stylesheet" type="text/css"><meta name="Generator" content="Sitefinity 12.1.7126.0 PU"><link rel="canonical" href="427_www_greatamericaninsurancegroup_com_files/notice_002.html"><meta name="description" content="Great American Insurance Group privacy policy"><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/437c3d/00000000000000003b9b0932/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:proxima-nova-condensed;src:url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/290aa2/00000000000000003b9b094b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova-condensed;src:url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/1c562a/00000000000000003b9b094a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova-condensed;src:url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/970510/00000000000000003b9b0944/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova-condensed;src:url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3854e3/00000000000000003b9b0945/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style><meta name="keywords" content="Great American Insurance, privacy, privacy policy"><script type="text/javascript" async="" src="427_www_greatamericaninsurancegroup_com_files/munchkin.js"></script><script type="text/javascript" async="" src="427_www_greatamericaninsurancegroup_com_files/munchkin.js"></script><script src="427_www_greatamericaninsurancegroup_com_files/a"></script><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head> <body><div style="display: none;" id="lightningjs-usabilla_live"><div><iframe id="lightningjs-frame-usabilla_live" frameborder="0"></iframe></div></div> <ul id="be_sdkms_capsule_open" style="display:none!important"> <li id="be_sdkms_sdk_version">be_ixf; dotnet_sdk; dotnet_sdk_1.4.9</li> <li id="be_sdkms_capsule_connect_timer">62 ms</li> <li id="be_sdkms_capsule_index_time">iy_2020; im_02; id_18; ih_15; imh_32; i_epoch:1582068750701</li> <li id="be_sdkms_capsule_pub">ixf-compiler; ixf-compiler_1.0.0.0</li> <li id="be_sdkms_capsule_date_modified">py_2020; pm_01; pd_30; ph_10; pmh_03; p_epoch:1580407383628</li> </ul> <ul class"be_sdkms_node"="" style="display:none!important"> <li class="be_sdkms_pub">link-block; link-block_1.0.0.0; bodystr</li> <li class="be_sdkms_date_modified">pn_tstr:Thu Jan 30 10:03:03 PST 2020; pn_epoch:1580407383628</li> <li class="be_sdkms_timer">0 ms</li> </ul> 
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDRT56Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="sfPublicWrapper" id="PublicWrapper"> <header id="site-header" class="global-header" role="banner"> 
+
+<div class="sf-contentblock">
+     <div><div class="alert alert-warning alert-dismissible fade in cookie-alert" role="alert" style="display: block;"><div class="container-fluid"><small>We
+ use cookies to personalize content and to analyze our traffic. We also 
+share information about your use of our site with our analytics 
+partners. By continuing on our website, you consent to our use of 
+cookies. Click here to learn more about our <a href="https://www.greatamericaninsurancegroup.com/contact/privacy/cookie-policy">Cookie Policy</a>.<button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true" class="fa fa-times"></span>&nbsp;CLOSE</button></small></div></div></div> 
+   
+</div><div id="Header_T0FD0BE24002_Col00" class="sf_colsIn navbar1" data-sf-element="Div" data-placeholder-label="Top Navigation Bar"><div id="Header_T0FD0BE24003_Col00" class="sf_colsIn container-fluid" data-sf-element="Container" data-placeholder-label="Container">
+<div class="sf-contentblock">
+     <div><ul class="nav navbar-nav navbar-right"><li class="li-search"><a class="search-toggle" href="#">Search <span class="fa fa-search"></span></a></li><!-- <li class="li-comment"><a href="#">Chat <i class="fa fa-comment"></i></a></li> -->
+ <li class="li-login"><a href="https://www.greatamericaninsurancegroup.com/contact/login">Login</a></li></ul></div> 
+   
+</div>
+
+
+<div class="site-search clearfix">
+    <div class="input-group">
+        <input type="search" title="Search input" placeholder="Enter Keywords" id="eb939930-6002-4509-aab4-76345d5f31f5" class="form-control">
+        <span class="input-group-btn"><button type="button" class="btn btn-primary" id="5c97c1b2-8da1-4466-8567-f9d7186881a9">Search</button></span>
+    </div>
+	
+	<input type="hidden" data-sf-role="resultsUrl" value="/search-results">
+    <input type="hidden" data-sf-role="indexCatalogue" value="search">
+    <input type="hidden" data-sf-role="wordsMode" value="AllWords">
+    <input type="hidden" data-sf-role="disableSuggestions" value="true">
+    <input type="hidden" data-sf-role="minSuggestionLength" value="3">
+    <input type="hidden" data-sf-role="suggestionFields" value="Title,Content">
+    <input type="hidden" data-sf-role="language" value="en">
+    <input type="hidden" data-sf-role="suggestionsRoute" value="/restapi/search/suggestions">
+    <input type="hidden" data-sf-role="searchTextBoxId" value="#eb939930-6002-4509-aab4-76345d5f31f5">
+    <input type="hidden" data-sf-role="searchButtonId" value="#5c97c1b2-8da1-4466-8567-f9d7186881a9">
+</div>
+
+
+
+
+
+</div></div><nav id="Header_T0FD0BE24005_Col00" class="sf_colsIn navbar2 yamm navbar-default" data-sf-element="HTML 5 Navigation Container" data-placeholder-label="Header Logo and Navigation" role="navigation"><div id="Header_T0FD0BE24008_Col00" class="sf_colsIn container-fluid" data-sf-element="Container" data-placeholder-label="Container">
+<div class="navbar-header sf-contentblock">
+     <div><button class="navbar-toggle" data-target="#navbar-collapse-grid" data-toggle="collapse" type="button"><span class="icon-bar center-block"></span><span class="icon-bar center-block"></span><span class="icon-bar center-block"></span>MENU</button><a class="navbar-brand" href="https://www.greatamericaninsurancegroup.com/"></a></div> 
+   
+</div>
+
+
+
+<div id="navbar-collapse-grid" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-individuals" target="_self">
+                <span>For Individuals</span>
+            </a>
+        </li>
+        <li class="dropdown yamm-fw">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false" target="_self">
+                <span>For Businesses</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="container-bleed">
+                        <section>
+                            
+
+                            <ul class="nav nav-tabs" role="tablist">                <li role="presentation" class="active"><a href="#OurIndustries" aria-controls="OurIndustries" role="tab" data-toggle="tab">Our Industries</a></li>
+                <li role="presentation"><a href="#PropertyCasualtyDivisions" aria-controls="PropertyCasualtyDivisions" role="tab" data-toggle="tab">Property &amp; Casualty Divisions</a></li>
+</ul>
+                            <div class="tab-content">                <div role="tabpanel" class="tab-pane fade in active" id="OurIndustries">
+                    <div class="row">
+                            <ul>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/agriculture-farming-insurance" target="_self">Agriculture &amp; Farming</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/aviation" target="_self">Aviation</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/services-1" target="_self">Business Services</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/construction-insurance" target="_self">Construction</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/cultural-institutions" target="_self">Cultural Institutions</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/education" target="_self">Educational Institutions</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/energy" target="_self">Energy</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/equine-insurance" target="_self">Equine</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/equipment" target="_self">Equipment</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/financial-institutions" target="_self">Financial Institutions</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/food-beverage" target="_self">Food &amp; Beverage</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/healthcare" target="_self">Healthcare</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/hospitality-leisure" target="_self">Hospitality &amp; Leisure</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/manufacturing" target="_self">Manufacturing</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/marine" target="_self">Marine</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/nonprofits-social-services" target="_self">Nonprofits &amp; Social Services</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/professional-services" target="_self">Professional Services</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/public-entity" target="_self">Public Entity</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/real-estate-building-maintenance" target="_self">Real Estate &amp; Building Maintenance</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/retail" target="_self">Retail</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/technology" target="_self">Technology</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/transportation" target="_self">Transportation</a>
+                </li>
+                <li class="">
+                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/our-industries/wholesale-distribution" target="_self">Wholesale &amp; Distribution</a>
+                </li>
+    </ul>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="PropertyCasualtyDivisions">
+                    <div class="row">
+                                    <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts" target="_self" class="section-title"><strong>All U.S. Operations</strong></a>
+            <ul>        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/aba-insurance-services" target="_self">ABA Insurance Services</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/accident-health" target="_self">Accident &amp; Health</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/agribusiness" target="_self">AgriBusiness®</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/alternative-markets" target="_self">Alternative Markets</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/aviation" target="_self">Aviation</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/bond-division" target="_self">Bond</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/crop" target="_self">Crop</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/cyber-risk-insurance" target="_self">Cyber Risk</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/eca-nonsubscription" target="_self">ECA-Nonsubscription</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/environmental" target="_self">Environmental</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/equine-mortality" target="_self">Equine Mortality</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/excess-liability" target="_self">Excess Liability</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/executive-liability" target="_self">Executive Liability</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/fcia-trade-credit-political-risk" target="_self">FCIA-Trade Credit &amp; Political Risk</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/fidelity-crime" target="_self">Fidelity / Crime</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/financial-institution-services" target="_self">Financial Institution Services</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/great-american-custom" target="_self">Great American Custom</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/great-american-risk-solutions" target="_self">Great American Risk Solutions</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/mergers-acquisitions-liability" target="_self">Mergers &amp; Acquisitions Liability</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/mid-continent-group" target="_self">Mid-Continent Group</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/national-interstate" target="_self">National Interstate</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/ocean-marine" target="_self">Ocean Marine</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/professional-liability" target="_self">Professional Liability</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/property-inland-marine" target="_self">Property &amp; Inland Marine</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/public-sector" target="_self">Public Sector</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/republic-indemnity" target="_self">Republic Indemnity</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/specialty-equipment" target="_self">Specialty Equipment</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/specialty-human-services" target="_self">Specialty Human Services</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/strategic-comp" target="_self">Strategic Comp</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/summit" target="_self">Summit</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/trucking" target="_self">Trucking</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/unemployment-risk-solutions" target="_self">Unemployment Risk Solutions</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts/vanliner" target="_self">Vanliner</a>
+        </li>
+</ul>
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations" target="_self" class="section-title"><strong>All International Operations</strong></a>
+            <ul>        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/canadian-branch" target="_self">Canadian Branch</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/el-aguila" target="_self">El Aguila</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/great-american-europe" target="_self">Great American Europe</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/great-american-p-c-mexico-division" target="_self">Great American P&amp;C Mexico</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/neon" target="_self">Neon</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/singapore-branch" target="_self">Singapore Branch</a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-businesses/property-casualty-divisions/division-contacts-international-operations/trade-credit" target="_self">Trade Credit Canada</a>
+        </li>
+</ul>
+    <ul>
+    </ul>
+
+                    </div>
+                </div>
+</div>
+
+                                <a class="all" href="https://www.greatamericaninsurancegroup.com/for-businesses">Learn More</a>
+                        
+                        </section>
+                                                    <aside>            
+<img src="427_www_greatamericaninsurancegroup_com_files/forbiz-idealcoverage-crop.jpg" alt="Male agent and farm owner in corn field">                                <h3>Find your ideal Coverage</h3>                                <p>Use our product concierge to personalize your search to your specific needs.</p>                                <p><a class="btn btn-gray" href="https://www.greatamericaninsurancegroup.com/for-businesses/concierge-product-guide">Get Your Results</a></p>                            </aside>
+
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown yamm-fw">
+            <a href="https://www.greatamericaninsurancegroup.com/for-claims" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false" target="_self">
+                <span>For Claims</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="container-bleed">
+                                                    <div class="bannerCard">            
+                                
+<h2>Annuities &amp; Life Insurance</h2>                                <p>Report a death claim for an annuity or life insurance policyholder</p>                                <p><a class="btn btn-gray" href="https://www.greatamericaninsurancegroup.com/for-individuals/tools-resources/report-a-death-claim">Report a Death Claim</a></p>                            </div>                         
+                             <div class="bannerCard">                
+                                
+<h2>Property &amp; Casualty</h2>                                <p>Auto, property or liability losses for a business or entity</p>                                <p><a class="btn btn-gray" href="https://www.greatamericaninsurancegroup.com/for-claims/report-a-claim">P&amp;C Claims Information</a></p>                            </div>
+
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/for-agents" target="_self">
+                <span>For Agents</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="https://www.greatamericaninsurancegroup.com/careers" target="_self">
+                <span>Careers</span>
+            </a>
+        </li>
+        <li class="current-open-child">
+            <a href="https://www.greatamericaninsurancegroup.com/contact" target="_self">
+                <span>Contact Us</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+</div></nav> </header> <main id="site-main" class="main" tabindex="-1" role="main"> <div id="MainContent">
+<div id="Main_TB2A11AE8001_Col00" class="sf_colsIn container top-spacing" data-sf-element="Container" data-placeholder-label="Container"><div>
+    <ul class="sf-breadscrumb breadcrumb">
+                <li><a href="https://www.greatamericaninsurancegroup.com/contact">Contact Us </a></li>
+                <li><a href="https://www.greatamericaninsurancegroup.com/contact/privacy">Privacy </a></li>
+                <li class="active">Notice</li>
+    </ul>
+</div>
+<div class="sf-contentblock">
+     <div><hr></div> 
+   
+</div>
+<div class="sf-contentblock">
+     <div><h1>GREAT AMERICAN INSURANCE GROUP PRIVACY POLICY</h1><p><strong><em>Last Updated: January 1, 2020</em></strong></p><p>Great American Insurance Group (<strong>“Great American”</strong>)
+ respects your privacy, and we strive to be transparent in how we 
+collect and use your information. This Privacy Policy describes how 
+Great American collects, uses, discloses,
+    and protects your personal information.</p><ol class="list-content"><li><strong>SCOPE</strong></li></ol><p>This
+ Privacy Policy applies to all personal information Great American 
+receives or collects from you and from other sources about you during 
+the course of our business operations and insurance relationships, 
+including personal information we receive or
+    collect when you visit our website (<a href="https://www.greatamericaninsurancegroup.com/">www.gaig.com</a>)
+ or use our mobile applications (GAIG Annuity, GAIG Trucking, GAIG 
+Equine Mortality, GreatAg Mobile, ELDQuoter, Adjuster Mobile, and Grower
+ Mobile).</p><p>For purposes of this Privacy Policy, “<strong><em>Great American</em></strong>”, “<strong><em>we</em></strong>”, and “<strong><em>us</em></strong>”
+ means (a) the Great American life insurance companies and operations,
+    and (b) the Great American property and casualty insurance companies
+ and operations, other than those identified in Section 11: Exclusions 
+below.</p><ol class="list-content" start="2"><li><strong>PERSONAL INFORMATION COLLECTED BY GREAT AMERICAN</strong></li></ol><p>Great
+ American offers and administers a variety of annuity, life, and 
+property and casualty insurance products and services. Depending on our 
+relationship with you – policyholder, insured, claimant, annuity owner, 
+certificate owner, beneficiary,
+    producer (including brokers, agents, and advisors), business 
+partner, vendor, or other person or entity – Great American may collect 
+or receive the following information that may contain personal 
+information:</p><ul class="list-content" style="margin-left:50px;"><li><span style="text-decoration:underline;">Identity Information</span>:
+ First name; middle name or initial; last name; gender; genetic 
+characteristics; date of birth; marital status; age; mother’s maiden 
+name; identification number, such as social
+        security or tax identification number; geolocation data; 
+permanent residence; professional licenses and affiliations; contract or
+ policy number; relationship to policyholder, insured, owner, annuitant,
+ or claimant; date and cause of death, injury,
+        or disability; identification of insured property (such as 
+addresses or vehicle license plate numbers); and other similar 
+information. In cases involving a trust, the date of the trust 
+instrument, the state law that governs the trust, the identity
+        of each grantor, the identity of each current trustee, whether 
+the trust is revocable, whether conflicts of interest are present, and 
+information related to the tax status of the trust.</li><li><span style="text-decoration:underline;">Contact Information</span>: Business and/or personal addresses, email addresses, telephone numbers, fax numbers, and other contact details.</li><li><span style="text-decoration:underline;">Financial and Business Information</span>:
+ Financial statements; assets; liabilities; tax filings and other tax 
+information; business operations information; payroll information; 
+credit history; credit score;
+        educational information; employment details; vehicle driving 
+records; prior accident or loss history; status as a director, partner, 
+or other ownership or management position; insurance coverage 
+information; and any other business or financial
+        information required to underwrite or support a claim under a 
+property and casualty insurance policy or support the suitability 
+determination of an annuity purchase.</li><li><span style="text-decoration:underline;">Payment Information</span>:
+ Bank account information, credit or debit card information, wire 
+transfer instructions, and other information necessary for Great 
+American to make or receive payments.</li><li><span style="text-decoration:underline;">Health Information</span>:
+ Medical history; past, current, and future physical, mental, or medical
+ condition or treatment; medical procedures performed; health status, 
+injury, or disability information; personal
+        habits (for example, smoking or consumption of alcohol); 
+prescription information; payment for medical treatment; and other 
+similar health information.</li><li><span style="text-decoration:underline;">Regulatory Information</span>:
+ Any personal information needed for Great American to comply with its 
+obligations under applicable laws and regulations, including, without 
+limitation, anti-money laundering,
+        anti-bribery, insurance fraud, economic and trade sanctions, and
+ other regulatory schemes. In the event Great American intends to obtain
+ a consumer credit report about a U.S. individual, Great American will 
+provide separate notice to the individual
+        and, if required under the Fair Credit Reporting Act, obtain the
+ individual’s consent prior to obtaining the consumer report. Similarly,
+ Great American will obtain consent from any Canadian resident prior to 
+obtaining a consumer credit report
+        in accordance with applicable law in the province or territory 
+in which the individual resides.</li><li><span style="text-decoration:underline;">Website Usage Information</span>:
+ Great American’s website uses cookies and other automatic data 
+collection technologies to collect certain information about visitors to
+ our website, including IP address;
+        details about your browser, operating system and 
+device/hardware; general location (if available); webpages visited; and 
+other logging information such as the date, time, and duration of your 
+use of the website. Please refer to our <a href="https://www.greatamericaninsurancegroup.com/contact/privacy/cookie-policy">Cookie Policy</a> for additional information about Great American’s use of cookies and other automatic data collection technologies.</li></ul><ol class="list-content" start="3"><li><strong>HOW GREAT AMERICAN COLLECTS YOUR INFORMATION</strong></li></ol><p>Great American collects and receives the personal information described in <strong>Section 2: Personal Information Collected by Great American</strong>
+ above from a variety of sources. We may receive personal information 
+directly from you, through our
+    website, software, and mobile applications, as well as from third 
+parties such as producers, appraisers, adjustors, claims handlers, other
+ insurance companies, reinsurers, vendors, service providers, consumer 
+reporting agencies, account verification
+    services, and other publicly-available sources of information.</p><ol class="list-content" start="4"><li><strong>HOW GREAT AMERICAN USES YOUR PERSONAL INFORMATION</strong></li></ol><p>Great American uses the personal information collected above for the following purposes:</p><ul class="list-content" style="margin-left:50px;"><li><span style="text-decoration:underline;">Underwriting and Policy Issuance, Maintenance, and Renewal</span>:
+ In order to underwrite and issue, maintain, and renew annuity contracts
+ and insurance policies, bonds, or warranty products, obtain 
+reinsurance,
+        and communicate important information to you throughout this 
+process, Great American may collect, use and share (“process”) identity,
+ contact, financial and business, health, and regulatory information 
+about policyholders, insureds,
+        producers, loss payees, enrollees, annuity owners, certificate 
+owners, annuitants, participants, beneficiaries, trustees, legal 
+representatives, reinsurers, underwriters, appraisers, actuaries, and 
+other related persons or entities. We process
+        this information to enter into and perform our contractual 
+obligations to you and for our legitimate business purposes.</li><li><span style="text-decoration:underline;">Claims Review and Approval</span>:
+ In order to process claims under an annuity contract, life insurance 
+policy, or a property and casualty insurance policy, bond, or warranty 
+contract and to communicate with
+        you throughout this process, Great American may process 
+identity, contact, financial and business, health, and regulatory 
+information about claimants, policyholders, insureds, annuity owners, 
+certificate owners, annuitants, beneficiaries, trustees,
+        legal representatives, witnesses, loss payees, claims 
+administrators, adjusters, agents, advisors, brokers, and other third 
+parties. We process this information to perform our contractual 
+obligations to you and for our legitimate business purposes.</li><li><span style="text-decoration:underline;">Payment</span>:
+ In order to collect premium payments, collect purchase payments, 
+collect reinsurance proceeds, purchase reinsurance, make annuity 
+payments, process annuity withdrawals and loans, pay annuity
+        death claims, pay insurance claims, pay third-party service 
+providers and other payees, and make other business-related payments, 
+Great American may process identity, contact, financial and business, 
+payment, and regulatory information about policyholders,
+        insureds, reinsurers, annuity owners, certificate owners, 
+annuitants, beneficiaries, trustees, claimants, loss payees, appraisers,
+ adjustors, third party administrators, professional advisors, service 
+providers, vendors, and other payees. We process
+        this information to perform our contractual obligations to you 
+and for our legitimate business purposes.</li><li><span style="text-decoration:underline;">Internal Operations</span>:
+ Great American may process identity, contact, financial and business, 
+payment, health, regulatory, and website usage information for purposes 
+of Great American’s internal business
+        operations, including but not limited to marketing; servicing 
+your account; improving our products and services; data security; 
+financial, claim or other audits; quality assurance measures; resolving 
+complaints; identifying and preventing fraud;
+        managing commercial risk; complying with legal, regulatory, and 
+contractual obligations; business continuity and disaster recovery; 
+complying with internal policies and procedures; establishing and 
+defending Great American’s legal rights;
+        communicating important information regarding our policies, 
+terms and conditions, and other administrative information; 
+communicating with agents, advisors, brokers, policyholders, contract 
+owners, certificate owners and beneficiaries; responding
+        to requests for information; website personalization and 
+optimization; as well as actuarial studies, analytics, and statistical 
+modeling. We process this information to perform our contractual 
+obligations to you, for our legitimate business purposes
+        to provide and customize our products and services to you and to
+ secure your information, and to comply with legal obligations and 
+exercise any legal rights we may have.</li></ul><ol class="list-content" start="5"><li><strong>HOW GREAT AMERICAN SHARES YOUR PERSONAL INFORMATION</strong></li></ol><p>Great
+ American may disclose your personal information to the following 
+entities, as allowed by and in accordance with applicable law, for the 
+purposes set forth in <strong>Section 4: How Great American Uses Your Information</strong> above:</p><ul class="list-content" style="margin-left:50px;"><li><span style="text-decoration:underline;">Parents, Subsidiaries, and Affiliates</span>:
+ In connection with our business operations, to provide products and 
+services, and to comply with applicable laws and regulations, Great 
+American entities may share
+        information with their parent companies, subsidiaries, and 
+affiliates.</li><li><span style="text-decoration:underline;">Professional Advisors</span>:
+ In order to comply with applicable laws and regulations, to obtain 
+professional advice and services, and in connection with our business 
+operations, Great American may disclose
+        personal information to accountants, auditors, lawyers, bankers,
+ insurers, and other professional advisors to Great American.</li><li><span style="text-decoration:underline;">Insurance-Related Business Partners and Third Parties</span>:
+ In connection with our business operations and to provide products and 
+services, Great American may share information with underwriters, 
+actuaries,
+        appraisers, brokers, agents, advisors, and loss adjusters; 
+claims administrators; insurance support organizations; reinsurance 
+providers; other insurance companies; financial institutions, such as 
+banks; payment processors; securities firms; credit
+        bureaus; consumer reporting agencies; and other third parties.</li><li><span style="text-decoration:underline;">Other Vendors and Service Providers</span>:
+ In order to provide products and services and to support our business 
+operations, Great American may share information with vendors and third 
+party service providers
+        such as IT vendors, developers, software providers, and website 
+hosting providers; records management and data storage providers; data 
+analytics companies; printing, advertising, marketing and market 
+research companies; translators; and other
+        third parties.</li><li><span style="text-decoration:underline;">Legal and Regulatory</span>:
+ For the purpose of meeting our legal and regulatory obligations, or 
+otherwise as allowed or required by law, Great American may share 
+personal information with third parties such
+        as federal, state, and local regulatory authorities, tax 
+authorities, law enforcement, public, administrative, or judicial 
+bodies, or other persons or entities in response to a legal process 
+(such as a subpoena).</li><li><span style="text-decoration:underline;">Authorized Representatives and Successors in Interest</span>:
+ Great American may share personal information with your agent, 
+representative, attorney-in-fact, guardian, or conservator. If an 
+interest in the
+        annuity contract, life insurance policy, or property and 
+casualty insurance policy is transferred, assigned, or otherwise passes 
+to a new owner, assignee, or other successor, Great American may share 
+personal information with that successor to
+        the extent needed to confirm the successor’s interest. After 
+your death, Great American may share personal information with your 
+executor, administrator, or personal representative, your beneficiary, 
+or other legally authorized successor
+        to your interest in the annuity contract, life insurance policy,
+ or property and casualty insurance policy.</li><li><span style="text-decoration:underline;">Corporate Transaction</span>:
+ Great American may disclose your personal information to a third party 
+in connection with a proposed or actual reorganization, merger, sale, 
+joint venture, assignment, transfer,
+        or other disposition of all or any portion of the Great American
+ business, assets, or stock (including in connection with any insolvency
+ event or similar proceedings).</li><li><span style="text-decoration:underline;">Marketing</span>:
+ Great American may disclose your personal information to an affiliate 
+or a third party marketing service provider in connection with the 
+marketing efforts of Great American or its affiliates,
+        which may include joint marketing arrangements with third 
+parties. You may opt out of marketing emails at any time by following 
+the instructions in our marketing communications or by contacting us 
+using the information provided in <strong>Section 12: Questions and Contact Information</strong> below.</li></ul><ol class="list-content" start="6"><li><strong>CONSENT</strong></li></ol><p>There
+ may be situations where Great American is required by law to obtain 
+your consent in order to process or share your personal information. If 
+you are asked to give your consent and have provided your consent, you 
+may withdraw it at any time by contacting
+    us using the information provided in <strong>Section 12: Questions and Contact Information</strong>
+ below. Please note, however, that withdrawing your consent could impact
+ our ability to provide you with the requested products and services.</p><ol class="list-content" start="7"><li><strong>YOUR RIGHTS WITH RESPECT TO YOUR PERSONAL INFORMATION</strong></li></ol><p>Great
+ American strives to ensure the information we have is accurate and 
+up-to-date. Please notify us if you believe an error has been made in 
+the accuracy of the information Great American has about you, and we 
+will correct it upon confirmation of
+        the error and receipt of the correct information.</p><p>In 
+addition, you may have additional rights with respect to your personal 
+information, depending on the laws of your jurisdiction. For example, 
+European Union data subjects may have a right of access, rectification, 
+erasure, and/or portability of
+        their personal information, as well as the right to object to 
+certain processing activities by Great American. Singapore residents may
+ have the right to access the personal data about that individual that 
+is in the possession or control of GAIG,
+        as well as the ways in which such personal data has been or may 
+have been used or disclosed by Great American in the preceding 12 
+months.</p><p>If you wish to exercise one or more of your rights with 
+respect to your personal information, please contact Great American 
+using the information provided in <strong>Section 12: Questions and Contact Information</strong>
+ below. Please understand that
+        in order to protect your privacy and security, we will need to 
+take reasonable steps to verify your identity before we can respond or 
+comply with any request relating to your personal information. Great 
+American will respond to your request as
+        soon as practicable, but in any event within the legally 
+required time.</p><ol class="list-content" start="8"><li><strong>DATA RETENTION AND INFORMATION SECURITY</strong></li></ol><p>Great
+ American retains your personal information for as long as reasonable or
+ necessary to fulfill the purposes for which the data was collected, 
+meet its business requirements, and comply with applicable laws and 
+regulations.</p><p>Great American is committed to protecting your 
+personal information and has implemented physical, procedural, 
+organizational, and technical safeguards, consistent with applicable 
+law, intended to prevent loss, misuse, unauthorized access, disclosure,
+        or modification of personal information under our control. If 
+you have reason to believe that any of your personal information is no 
+longer secure, please notify us using the information provided in <strong>Section 12: Questions and Contact Information</strong> below.</p><ol class="list-content" start="9"><li><strong>INTERNATIONAL OPERATIONS AND DATA TRANSFERS</strong></li></ol><p>In
+ connection with the purposes described above, Great American may 
+transfer personal information to persons and organizations that are 
+located in other countries. Where permitted by applicable law, by 
+providing your personal information to Great
+        American, you understand and consent to the collection, use, 
+processing, disclosure, and transfer of such information in the United 
+States of America (“<strong><em>United States</em></strong>” or “<strong><em>U.S.</em></strong>”)
+
+ and other countries or territories, which may not offer the same level 
+of data protection as the country where you reside, in accordance with 
+applicable law and the terms of this Privacy Policy. Further, please 
+note that information collected
+        through the use of this website and any communication you send 
+to a gaig.com email address will be routed through the United States.</p><ol class="list-content" start="10"><li><strong>OTHER GREAT AMERICAN NOTICES OF PRIVACY AND INFORMATION PRACTICES</strong></li></ol><p>The
+ federal Gramm-Leach-Bliley Act and U.S. state privacy laws require 
+Great American to provide the following notices of privacy and insurance
+ information practices to its U.S. consumers:</p><ul class="list-content" style="margin-left:50px;"><li><span style="text-decoration:underline;"><a href="https://www.greatamericaninsurancegroup.com/contact/privacy/annuity-privacy-notice">Annuity Group</a></span>: Great American Insurance Group Notice of Privacy and Insurance Information Practices</li><li><span style="text-decoration:underline;"><a href="https://www.greatamericaninsurancegroup.com/contact/privacy/specialty-property-casualty-privacy-notice">Great American Property and Casualty Group</a></span>: Great American Insurance Group Privacy Notice and Notice of Insurance Information
+            Practices
+        </li></ul><p>The <span style="text-decoration:underline;"><a href="https://www.greatamericaninsurancegroup.com/contact/privacy/privacy-notice-disclosure-for-california-residents">California Consumer Privacy Act of 2018</a></span> grants California residents rights with respect to the use and collection
+        of their personal information.</p><ol class="list-content" start="11"><li><strong>EXCLUSIONS FROM THIS PRIVACY POLICY</strong></li></ol><p><span style="text-decoration:underline;">Great American Affiliates</span></p><p>Great
+ American conducts business in the United States and internationally 
+through subsidiaries, affiliates, and international divisions (“<strong><em>Affiliates</em></strong>”),
+ which may have their own privacy policies. If you visit the
+        website of, have a relationship with, or otherwise provide 
+personal information to any Great American Affiliate listed below, 
+please review that Affiliate’s privacy policy for information about how 
+that Affiliate collects, uses, and discloses
+        your personal information.</p><p><em>U.S. Affiliates:</em></p><ul class="list-content" style="margin-left:50px;"><li>Mid-Continent Group: <a href="http://www.mcg-ins.com/" target="_blank">http://www.mcg-ins.com/</a></li><li>National Interstate: <a href="https://www.nationalinterstate.com/" target="_blank">https://www.nationalinterstate.com/</a></li><li>Republic Indemnity: <a href="http://www.republicindemnity.com/home" target="_blank">http://www.republicindemnity.com/home</a></li><li>Summit: <a href="https://www.summitholdings.com/wc/" target="_blank">https://www.summitholdings.com/wc/</a></li><li>Vanliner: <a href="https://www.vanliner.com/" target="_blank">https://www.vanliner.com/</a></li></ul><p><em>Mexican Affiliates:</em></p><ul class="list-content" style="margin-left:50px;"><li>El Aguila, Campania de Seguros, S.A. de C.V.: <a href="https://www.elaguila.com.mx/es/Home" target="_blank">https://www.elaguila.com.mx/es/Home</a></li><li>Great American Division Danos Mexico: <a href="https://www.greatamericaninsurancegroup.com/docs/default-source/division-danos-mexico/aviso-de-privacidad.pdf" target="_blank">https://www.greatamericaninsurancegroup.com/docs/default-source/division-danos-mexico/aviso-de-privacidad.pdf</a></li></ul><p><em>European Affiliates:</em></p><ul class="list-content" style="margin-left:50px;"><li>Neon Underwriting Limited: <a href="https://www.neonuw.com/" target="_blank">https://www.neonuw.com/</a></li><li>Great American International</li><ul class="list-content" style="margin-left:50px;"><li>Great American International Insurance DAC: <a href="http://www.gaiil.com/" target="_blank">http://www.gaiil.com/</a></li><li>Great American Specialty &amp; Affinity Limited: <a href="http://www.greatamericanspecialtyaffinity.com/" target="_blank">http://www.greatamericanspecialtyaffinity.com/</a></li><li>Lease &amp; Loan Insurance Services: <a href="http://www.llisl.com/en/" target="_blank">http://www.llisl.com/en/</a></li></ul></ul><p><span style="text-decoration:underline;">Other Exclusions</span></p><p>This
+ Privacy Policy does not apply to information Great American receives 
+and maintains about its job applicants, employees, directors, or 
+independent contractors.</p><p>Great American’s website is intended for 
+individuals who are over the age of eighteen (18). We do not knowingly 
+collect personal information through our website from children under the
+ age of eighteen (18) and ask that they do not provide us
+        with personal information through the website.</p><p>Although 
+our website may contain links to third party websites, this Privacy 
+Policy does not apply to those third party websites. You should review 
+the privacy policies associated with those third party websites to 
+understand their privacy practices.</p><ol class="list-content" start="12"><li><strong>QUESTIONS AND CONTACT INFORMATION</strong></li></ol><p>If
+ you have any questions about the Privacy Policy or wish to exercise any
+ legal rights with respect to your personal information, you may reach 
+us by clicking the “Contact Us” button at the top of our website, or by 
+mail, email, or
+            phone at the following address:</p><p><strong>U.S. Operations</strong></p><p>Great American Insurance – Property and Casualty Group<br>301 E. Fourth Street<br>Cincinnati, Ohio 45202-4201<br><a href="tel:800-545-4269">(800) 545-4269</a><br><a href="mailto:clegal@gaig.com">clegal@gaig.com</a><br>Attention:
+ General Counsel</p><p>Great American Insurance – Annuity Group<br>301 E. Fourth Street<br>Cincinnati, Ohio 45202-4201<br><a href="tel:800-854-3649">(800) 854-3649</a> (select 3)<br>Attention: Privacy Officer</p><p><strong>Canadian branch</strong></p><p>Great American Insurance Company, Chief Agency<br>Scotia Plaza, 40 King Street West, Suite 2100<br>Toronto, Ontario Canada M5H3C2<br>Attention: Chief Agent</p><p><strong>Singapore branch</strong></p><p>Ian Lee<br>Director, Risk Management &amp; Compliance<br><a href="mailto:Ian.lee@sg.gaig.com">Ian.lee@sg.gaig.com</a><br>Telephone: <a href="tel:+6568046039">+65 6804 6039</a><br>Fax: <a href="tel:+6562350302">+65 6235 0302</a></p><ol class="list-content" start="13"><li><strong>CHANGES TO THIS PRIVACY POLICY</strong></li></ol><p>This
+ Privacy Policy may be changed from time to time. We will post any 
+changes we make to the Privacy Policy on our website. The “Last Updated”
+ date at the top of this Privacy Policy indicates when it was last 
+revised. We encourage
+                you to check this page periodically and to review any 
+updates, and we will obtain your consent to any changes where required 
+by applicable law.</p></div> 
+   
+</div><div class="row" data-sf-element="Row">
+    <div id="Main_T7E4F5056004_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"></div>
+</div>
+</div></div> </main> <!--IXF: place the following div in the html at the location where the link block will be added--> <div class="be-ix-link-block"> <!--
+   be_sdkms_pub: bec-built-in; bec-built-in_1.0.0; bodystr</li>
+   be_sdkms_date_modified: pn_tstr:Tue Feb 18 15:32:30 PST 2020; pn_epoch:1582068750701;
+   be_sdkms_timer: 0 ms;
+--> <ul id="be_sdkms_capsule" style="display:none!important"> <ul id="be_sdkms_capsule_messages"> <!-- ixf_msg: CM bodystr node_type node feature_group body_1 --> </ul> <li id="be_sdkms_sdk_version">be_ixf; dotnet_sdk; dotnet_sdk_1.4.9</li> <li id="be_sdkms_original_url">https://www.greatamericaninsurancegroup.com:80/contact/privacy/notice</li> <li id="be_sdkms_capsule_url">https://ixf2-api.bc0a.com/api/ixf/1.0.0/get_capsule/f00000000090316/0473937346?client=dotnet_sdk&amp;client_version=1.4.9&amp;orig_url=https%3A%2F%2Fwww.greatamericaninsurancegroup.com%3A80%2Fcontact%2Fprivacy%2Fnotice&amp;base_url=https%3A%2F%2Fwww.greatamericaninsurancegroup.com%2Fcontact%2Fprivacy%2Fnotice&amp;user_agent=Mozilla%2F5.0+(X11%3B+Ubuntu%3B+Linux+x86_64%3B+rv%3A73.0)+Gecko%2F20100101+Firefox%2F73.0</li> <li id="be_sdkms_normalized_url">https://www.greatamericaninsurancegroup.com/contact/privacy/notice</li> <li id="be_sdkms_configuration">sdk.environment=production;sdk.charset=UTF-8;api.endpoint=https://ixf2-api.bc0a.com;sdk.account=f00000000090316;sdk.connectTimeout=2000;sdk.socketTimeout=2000;sdk.crawlerConnectTimeout=10000;sdk.crawlerSocketTimeout=10000;whitelist.parameter.list=ixf;flat.file=true;sdk.proxyPort=3128;sdk.proxyProtocol=http;crawler.useragents=google|bingbot|msnbot|slurp|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver;forcedirectapi.parameter.list=ixf-api|ixf;capsule.mode=remote.prod.capsule;page.independent=false;sdk.proxyHost=squid.td.afg;canonical.host=www.greatamericaninsurancegroup.com;canonical.protocol=https</li> </ul> <!--Link Equity Target Div--> </div> <footer id="site-footer" class="global-footer" role="contentinfo">
+<div id="Footer_T0FD0BE24009_Col00" class="sf_colsIn container-fluid" data-sf-element="Container" data-placeholder-label="Footer Container">
+<div class="footer-logo sf-contentblock">
+     <div><hr><a href="https://www.greatamericaninsurancegroup.com/"> </a></div> 
+   
+</div><nav id="Footer_T0FD0BE24011_Col00" class="sf_colsIn" data-sf-element="HTML 5 Navigation Container" data-placeholder-label="Footer Navigation" role="navigation"><div id="Footer_T0FD0BE24012_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Footer Navigation Container"><div class="row" data-sf-element="Row" data-placeholder-label="Row">
+    <div id="Footer_T0FD0BE24040_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="footer-logo sf-contentblock">
+     <div><p class="footer-title">Specialty Property &amp; Casualty U.S. Operations</p></div> 
+   
+</div><div class="row" data-sf-element="Row" data-placeholder-label="Row">
+    <div id="Footer_T0FD0BE24041_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/aba-insurance-services">ABA Insurance Services</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/accident-health">Accident &amp; Health</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/agribusiness">AgriBusiness®</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/alternative-markets">Alternative Markets</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/aviation">Aviation</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/bonds">Bond</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/crop">Crop</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/cyber-risk-insurance">Cyber Risk</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/employers-comp-associates">ECA-Nonsubscription</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/environmental">Environmental</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/equine-mortality">Equine Mortality</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/excess-liability">Excess Liability</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/executive-liability">Executive Liability</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/fcia---trade-credit-political-risk">FCIA - Trade Credit &amp; Political Risk</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/fidelity-crime">Fidelity / Crime</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/financial-institution-services">Financial Institution Services</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/great-american-custom">Great American Custom</a></li></ul></div> 
+   
+</div></div>
+    <div id="Footer_T0FD0BE24041_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/great-american-risks-solutions">Great American Risk Solutions</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/mergers-acquisitions-liability">Mergers &amp; Acquisitions Liability</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/mid-continent-group">Mid-Continent Group</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/national-interstate">National Interstate</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/ocean-marine">Ocean Marine</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/professional-liability">Professional Liability</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/property-inland-marine">Property &amp; Inland Marine</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/public-sector">Public Sector</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/republic-indemnity">Republic Indemnity</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/equipment-insurance">Specialty Equipment</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/specialty-human-services">Specialty Human Services</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/strategic-comp">Strategic Comp</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/summit">Summit</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/trucking">Trucking</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/unemployment-risk-solutions">Unemployment Risk Solutions</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/vanliner">Vanliner</a></li></ul></div> 
+   
+</div></div>
+</div>
+</div>
+    <div id="Footer_T0FD0BE24040_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="footer-logo sf-contentblock">
+     <div><p class="footer-title">Annuity Operations - Subsidiaries</p></div> 
+   
+</div>
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/for-individuals">Annuity Investors Life Insurance Company®</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-individuals">Great American Life Insurance Company®</a></li></ul></div> 
+   
+</div>
+<div class="footer-logo sf-contentblock">
+     <div><p class="footer-title">Specialty Property &amp; Casualty International Operations</p></div> 
+   
+</div>
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/contact/canadian-contacts">Canadian Branch</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/trade-credit">Canada - Trade Credit</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/el-aguila">El Aguila</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/great-american-europe">Great American Europe</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/great-american-p-c-mexico-division">Great American P&amp;C Mexico</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/neon">Neon</a></li><li><a href="https://www.greatamericaninsurancegroup.com/for-businesses/division-details/singapore-branch">Singapore Branch</a></li></ul></div> 
+   
+</div></div>
+    <div id="Footer_T0FD0BE24040_Col02" class="sf_colsIn col-md-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="sf-contentblock">
+     <div><p class="footer-title">About Us</p><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/about-us">About Great American</a></li><li><a href="https://www.greatamericaninsurancegroup.com/content-hub">Great Insights &amp; News</a></li><li><a href="https://www.greatamericaninsurancegroup.com/about-us/financial-strength">Financial Strength</a></li></ul></div> 
+   
+</div>
+<div class="footer-info sf-contentblock">
+     <div><p>Great American Insurance Group’s member companies are subsidiaries of <a href="https://www.afginc.com/" target="_blank">American Financial Group, Inc. (AFG)</a>. AFG is a Fortune 500 holding company whose common stock is listed on the New York Stock
+    Exchange.</p><address><strong>Corporate Headquarters</strong><br>Great American Insurance Group Tower<br>301 E. Fourth St.<br>Cincinnati, Ohio 45202<br><a href="tel:800-545-4269">800-545-4269</a> / <a href="tel:513-369-5000">513-369-5000</a>
+ </address></div> 
+   
+</div>
+<div class="footer-social sf-contentblock">
+     <div><ul class="list-inline" style="margin-bottom:20px;font-size:160%;"><li><a href="https://www.linkedin.com/company/great-american-insurance" target="_blank"><span class="fa fa-linkedin fa-lg"></span><span class="sr-only">LinkedIn</span></a></li><li><a href="https://www.facebook.com/GreatAmericanInsuranceGroup" target="_blank"><span class="fa fa-facebook fa-lg"></span><span class="sr-only">Facebook</span></a></li><li><a href="https://twitter.com/gaigroup" target="_blank"><span class="fa fa-twitter fa-lg"></span><span class="sr-only">Twitter</span></a></li><li><a href="https://www.youtube.com/user/GAIGroup" target="_blank"><span class="fa fa-youtube-play fa-lg"></span><span class="sr-only">YouTube</span></a></li></ul></div> 
+   
+</div>
+<script type="text/javascript">
+document.write("&copy; " + new Date().getFullYear() + " Great American Insurance Company. All Rights Reserved.")
+</script>© 2020 Great American Insurance Company. All Rights Reserved.
+
+<div class="sf-contentblock">
+     <div><div style="margin-top:20px;">&nbsp;</div></div> 
+   
+</div>
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/contact/legal-disclosures">Legal Disclosures/Terms and Conditions</a></li></ul></div> 
+   
+</div><div class="row" data-sf-element="Row" data-placeholder-label="Row">
+    <div id="Footer_T0FD0BE24050_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/contact/privacy">Privacy</a></li><li><a href="https://www.greatamericaninsurancegroup.com/contact/privacy/cookie-policy">Cookie Policy</a></li><li><a href="https://www.greatamericaninsurancegroup.com/docs/default-source/default-document-library/gaig-pcservice-marks.pdf" target="_blank">Service Marks</a></li><li><a href="https://www.greatamericaninsurancegroup.com/contact/accessibility">Accessibility</a></li></ul></div> 
+   
+</div></div>
+    <div id="Footer_T0FD0BE24050_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="sf-contentblock">
+     <div><ul class="list-unstyled"><li><a href="https://www.greatamericaninsurancegroup.com/site-map">Site Map</a></li><li><!--integrated feedback button --><a href="#" id="usbl-integrated-button">Site Feedback</a></li><li><a href="https://gaig.sharepoint.com/Pages/Home.aspx" target="_blank">Gateway Employee Login</a></li></ul></div> 
+   
+</div></div>
+</div>
+</div>
+</div></div></nav></div></footer> <div id="ScriptWrapper"> <script src="427_www_greatamericaninsurancegroup_com_files/application.js" type="text/javascript"></script> <script src="427_www_greatamericaninsurancegroup_com_files/ScriptResource.axd" type="text/javascript"></script><script src="427_www_greatamericaninsurancegroup_com_files/Search-box.js" type="text/javascript"></script> 
+
+
+
+
+
+
+ </div> </div>  
+<script type="text/javascript" src="427_www_greatamericaninsurancegroup_com_files/WebResource.axd">
+
+</script><script type="text/javascript">
+	StatsClient.LogVisit('f1d32a73-1dff-6ddb-b37c-ff0000940c19', '5f22cf36-b156-4f23-b26a-2fda90b1b302');
+</script><script type="text/javascript">
+/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/11ad4d9eed07.js");
+/*]]>{/literal}*/
+</script><script type="text/javascript">
+//Hide Usabilla Default button
+window.usabilla_live("hide");
+//Find a Link and open de Usabilla Feedback form when the user clicks on the link
+document.getElementById("usbl-integrated-button").addEventListener("click",function(){window.usabilla_live("click");
+});
+</script>  
+<script type="text/javascript" id="">var eventType="change";document.addEventListener?document.addEventListener(eventType,google_tag_manager["GTM-MDRT56Q"].macro(2),!1):document.attachEvent&&document.attachEvent("on"+eventType,google_tag_manager["GTM-MDRT56Q"].macro(3));</script><script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("677-QFU-507"))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script><script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("898-RPL-310"))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script><iframe style="display: none;" src="https://bid.g.doubleclick.net/xbbe/pixel?d=KAE"></iframe><div class="usabilla_live_button_container" role="button" tabindex="0" style="position: fixed; width: 0px; height: 0px; z-index: 99999990; right: 0px; top: 50%; margin-top: 0px; display: none;" aria-label="Usabilla Feedback Button"><iframe src="427_www_greatamericaninsurancegroup_com_files/notice_002.html" style="width: 0px; height: 0px; margin: 0px; padding: 0px; border: 0px none; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Usabilla Feedback Button" frameborder="0"></iframe></div></body></html>

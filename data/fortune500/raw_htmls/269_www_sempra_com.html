@@ -1,0 +1,2317 @@
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="color-blue logo-fit-mobile js no-touchevents stop-250 stop-500 stop-750 stop-1000 stop-1250" lang="en"><head>
+    <!-- Google Tag Manager Theme -->
+    <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script async="" src="//static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="https://sjs.bizographics.com/insight.min.js"></script><script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5P87PR5"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P87PR5');</script>
+    <!-- End Google Tag Manager Theme -->
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e9ddf909db",applicationID:"77073612"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<link rel="canonical" href="https://www.sempra.com/privacy">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="375">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy">
+<meta name="description" property="og:description" content="Privacy Policy
+
+ California Consumer Privacy Act Policy
+
+ CCPA Requests
+
+(function($){
+
+$(document).ready(function() { 
+
+ $('.text-nav li a').click(function (e) {
+
+ e.preventDefault();
+
+ $('a[href=&quot;' + $(this).attr('href') + '&quot;]').tab('show');
+
+ })
+
+});
+
+})(jQuery);
+
+Privacy Policy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ California Consumer Privacy Act Policy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ CCPA Requests
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ Privacy Policy
+
+ 
+
+ 
+
+ 
+
+ Privacy Policy
+
+Privacy Policy
+
+Sempra Energy (“Sempra”) is committed to keeping our visitors informed about how we use the information we gather on our web site, at our mobile optimized web site, and in our mobile apps (if any) (collectively, the “web site”). By using our web site or obtaining any product or service through our web site, you agree to the collection and use of information as set forth in this policy. If you do not agree to this policy, please do not use the web site.
+
+Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage &quot;Privacy&quot; footer&amp;nbsp;follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.
+
+Information We Collect and How We Use It
+
+In order to better provide you with products and services, Sempra’s web site collects two types of information: Personal Information and Non Personal Information.
+
+Personal Information:&amp;nbsp;“Personal Information” refers to information that lets us know the specifics of who you are and can be used to identify, contact, or locate you. You may choose not to provide any Personal Information and you will still be able to access most portions of the web site. However, Personal Information may be collected from visitors seeking to obtain services offered by Sempra on this web site, such as:
+
+Applications regarding possible employment;
+
+ Use of Sempra’s mobile apps (if any); and
+
+ Requesting to be included on mailing, email, texting, landline telephone, or cellular telephone lists of Sempra, as may be described in more detail on this web site from time to time.
+
+Examples of Personal Information you may submit include your name or, when combined with your name or other information which could reasonably be used to identify you, your mailing address, telephone number, mobile phone number, email address, and other identification and contact information. We may also collect certain financial account information (if you choose to provide it), as well as other types of information that you may have entered into employment applications.
+
+Sempra uses this Personal Information to provide services, conduct its business, and improve our visitors’ experience on our web site.
+
+Non Personal Information: “Non Personal Information” refers to information that does not identify a specific individual by itself or in combination with other Non Personal Information. Sempra may collect Non Personal Information by using cookies, agents, or through the collection of traffic data and location information.
+
+Do Not Track: At this time, our web site does not respond to Do Not Track (DNT) signals sent from your web browser. Additionally, we use a variety of third-party services to help provide our services and to help us understand the use of our web site. These third-party service providers may collect information sent by your browser as part of a web page request, even if you have enabled your browser’s DNT functionality.
+
+Cookies:&amp;nbsp;Sempra’s web site may store cookies on your computer or other device to allow us to monitor your use of the web site. No attempts are made to identify individual users unless actions are taken to identify yourself by an “opt in,” for example:
+
+Individual services are requested;
+
+ Application is made regarding possible employment;
+
+ Inclusion on a Sempra mailing list is requested;
+
+ Illegal behavior or unauthorized activities are suspected; or
+
+ User identification is required under law.
+
+Cookies are used to improve the usefulness of our web site for our visitors.
+
+Agents:&amp;nbsp;We may also work with 3rd party service providers or solutions which employ “agents” to monitor, track, and analyze user behavior and traffic data on their device and on this web site. The information collected by the agents may include, without limitation: hardware model, unique device identifiers (UDID), mobile network information including phone number, the agent version, platform, SDK version, timestamp, API key (identifier for application), application version, model, manufacturer and OS version of device or hardware, session start/stop time, locale, time zone, and network status (WiFi, etc.). Information collected through the agents is used to customize services and improve web site usability. Information collected through agents may identify individual users in combination with previously provided Personal Information.
+
+Traffic Data:&amp;nbsp;Sempra automatically collects and maintains statistical information from our web site’s data logs that concern web site activity, navigation, network traffic flow, and volume (“Traffic Data”). Examples of Traffic Data include the following:
+
+Name of the domain, or URL, from which the visitor accesses the Internet (e.g., &quot;a company.com&quot;; &quot;a school.edu&quot;; or &quot;an agency.gov&quot;);
+
+ Internet Protocol (“IP”) Number;
+
+ Type of web browser used;
+
+ Web pages visited; and
+
+ Date and time this web site is visited.
+
+Our primary purpose for collecting Traffic Data is to optimize the usefulness to visitors of our web site. Traffic Data is also helpful in permitting us to improve the overall user experience on our web site. Traffic Data may identify individual visitors in combination with previously provided Personal Information.
+
+Location Information:&amp;nbsp;To the extent location-enabled functionality is made available in Sempra’s web site, such functionality is provided by third party providers. Your use of that functionality is subject to such third party’s terms and conditions and privacy policy (as updated from time to time). When you use such location-enabled services, Sempra may also receive information about your actual location, like GPS signals sent by a mobile device or via your IP address. Location-enabled services may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers. Location information helps Sempra customize and tailor services to you. Location information may identify individual users in combination with previously provided Personal Information.
+
+Sharing Your Information with Third Parties
+
+Sempra will not, without your consent, share your Personal Information with third parties for their commercial purposes except that Sempra may share your Personal Information with third-parties, including certain affiliated companies (consistent with applicable laws and regulations) or other trusted businesses solely in order to enable them to perform services for Sempra related to Sempra’s own business purposes (subject to confidentiality and security obligations).
+
+Compliance with Laws and Public Safety:&amp;nbsp;Sempra may also disclose Personal Information if we believe in good faith that such disclosure is necessary to comply with relevant laws or to respond to subpoenas or warrants served on us or to protect or defend the rights, property, or safety of our users, others, or ourselves. Sempra may be required by law enforcement or judicial authorities to provide Personal Information to the appropriate governmental authorities. We will disclose Personal Information upon receipt of a court order or subpoena or to cooperate with a law enforcement investigation. Sempra fully cooperates with law enforcement agencies in identifying those who use our services for illegal activities. Sempra reserves the right to report to law enforcement agencies any activities that we in good faith believe to be unlawful.
+
+Mergers and Acquisitions:&amp;nbsp;In the event of a merger, consolidation, reorganization, or sale or transfer of all or substantially all of the assets or business of Sempra, one of the assets that would generally be transferred is the information we collect from our visitors and customers (including both Personal Information and Non Personal Information). However, the use of this information by any successor entity would still be governed by the terms of this policy, as amended from time to time, including any amendment after such transaction.
+
+Information Security Practices
+
+Sempra uses commercially reasonable efforts to prevent third parties from acquiring, altering, or destroying information made available to Sempra through this web site. These efforts include monitoring network traffic to identify unauthorized attempts to upload or change information and under some circumstances encrypting sensitive information using Secure Socket Layers (“SSL”) or other comparable technology. Monitoring also occurs to prevent any activity that is illegal, or which may subject Sempra to legal liability or damage. Sempra is committed to maintaining the web site’s security and its ongoing compliance with law so that this service will remain available to all visitors.
+
+Although Sempra takes commercially reasonable efforts to prevent unauthorized third parties from acquiring Personal Information submitted to Sempra on this web site, an unlawful interception or acquisition by a third party may still be possible.
+
+Children
+
+Sempra does not knowingly collect Personal Information from children under 13 years of age. Additionally, we are not aware of any content on our web site that would be considered harmful to children. If Sempra learns that we have inadvertently gathered Personal Information from children under 13, we will erase such information from our records and terminate the applicable account.
+
+Links
+
+This web site may provide links to various governmental, industry association and other third party web sites or materials. These links are provided for informational purposes only. Sempra does not endorse any advice, goods or services offered by third parties. To the extent third party materials contain assertions of fact, recommendations, or any other interpretations or advice, the third party is solely responsible for the content of the third party site, and Sempra makes no representation as to the accuracy, completeness or fitness for any purpose or use thereof. Further, Sempra has not verified the privacy policies applicable to third party web sites or hosted materials, or determined what actions such parties will take regarding the privacy of visitors. Accordingly, you should carefully review the privacy policies of any third party sites accessible from any Sempra web site. In no event shall Sempra be responsible for any third party content, policies or actions. Sempra encourages you to ask questions and to be very cautious before you disclose your Personal Information to third parties.
+
+Changes to This Privacy Policy
+
+Sempra reserves the right, at any time, and without notice, to add to, change, modify, or update this Privacy Policy by posting a revised policy on this web site. Any revised Privacy Policy shall be effective immediately on posting. However, any time this policy is updated, the date of modification will be posted.
+
+Disclaimer
+
+Sempra is not responsible in the event that any password provided to a user is obtained by a third party or for any unlawful activities in connection with this web site. In the event a user believes any password has been obtained without permission by third parties, or if the visitor has other privacy concerns, the user should contact Sempra immediately so the password can be changed, or other steps taken as appropriate. This notification should be made to&amp;nbsp;webmaster@Sempra.com.
+
+Questions or Comments
+
+If you have any questions or comments regarding (a) our web site Privacy Policy, or (b) any other questions about this web site, Sempra or its services, please contact Sempra by e-mail at&amp;nbsp;webmaster@Sempra.com, or by phone at (619) 696-2000, or by regular mail at: 488 8th Ave., San Diego, CA 92101.
+
+Please note, however, that information regarding these contacts or correspondence with Sempra may be retained in a file that is specific to you.
+
+California Consumer Privacy Act Policy
+
+ 
+
+ 
+
+ 
+
+ California Consumer Privacy Act Policy
+
+California Consumer Privacy Act Policy
+
+This document provides specific information for California residents, as required under the California Consumer Privacy Act (“CCPA”). The CCPA requires that we provide California residents information about how we use their personal information, whether collected online or offline, and this document is intended to satisfy that requirement. Our Privacy Policy further describes our policies and practices relating to privacy.
+
+Under the CCPA, “personal information” is any information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular resident or household.
+
+Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage &quot;Privacy&quot; footer follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.
+
+Notice at Collection: Categories of Personal Information that We Collect or Disclose
+
+Below please find the categories of personal information about California residents that we collect and/or disclose to third parties or service providers for a business purpose.
+
+Categories of personal information
+
+ Last Updated: 1/1/2020
+
+ 
+
+ Do we collect?
+
+ Do we disclose for business purpose?
+
+ Do we sell?
+
+ 
+
+ 
+
+ 
+
+ 
+
+ NAME, CONTACT INFORMATION AND IDENTIFIERS: Identifiers such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver’s license number, passport number, or other similar identifiers.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ CONSUMER RECORDS: Paper and electronic customer records containing personal information, such as name, signature, social security number, physical characteristics or description, address and location from which customer interactions with us occur, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ PROTECTED CLASSIFICATIONS: Characteristics of protected classifications under California or federal law such as race (only at the individual’s option), sex, age, national origin, disabilities, and citizenship status.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ USAGE DATA: Internet or other electronic network activity information, including, but not limited to, browsing history, search history, and information regarding a resident’s interaction with an internet website, application, or advertisement.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ GEOLOCATION DATA: Precise geolocation location information about a particular individual or device.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ AUDIO/VISUAL: Audio, electronic, visual, thermal, olfactory, or similar information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ EMPLOYMENT HISTORY: Professional or employment-related information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ EDUCATION INFORMATION: Information that is not publicly available personally identifiable information as defined in the federal Family Educational Rights and Privacy Act (20 U.S.C. section 1232g, 34 C.F.R. Part 99).
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ PROFILES AND INFERENCES: Inferences drawn from any of the information identified above to create a profile about a resident reflecting the resident’s preferences, and characteristics. We may also collect the foregoing about employees’ and job applicants’ behavior, attitudes, intelligence, abilities, and aptitudes.
+
+ Yes
+
+ Yes
+
+ No
+
+California Residents’ Rights
+
+California law grants California residents certain rights and imposes restrictions on particular business practices as set forth below.
+
+Do-Not-Sell: We do not sell your personal information.
+
+Initial Notice: We are required to notify California residents, at or before the point of collection of their personal information, the categories of personal information collected and the purposes for which such information is used.
+
+Verifiable Requests for Copy, Deletion and Right to Know: Subject to certain exceptions, California residents have the right to make the following requests, at no charge:
+
+Right of Deletion: The right to request deletion of their personal information that we have collected about them, subject to certain exemptions, and to have such personal information deleted, except where necessary that we maintain such personal information in order to:
+
+Complete the transaction for which the personal information was collected, provide a good or service requested by the consumer, or reasonably anticipated within the context of a business’s ongoing business relationship with the consumer, or otherwise perform a contract between the business and the consumer.
+
+ 
+
+ 
+
+ Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity; or prosecute those responsible for that activity.
+
+ 
+
+ 
+
+ Debug to identify and repair errors that impair existing intended functionality.
+
+ 
+
+ 
+
+ Exercise free speech, ensure the right of another consumer to exercise his or her right of free speech, or exercise another right provided for by law.
+
+ 
+
+ 
+
+ Comply with the California Electronic Communications Privacy Act pursuant to Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code.
+
+ 
+
+ 
+
+ Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the businesses’ deletion of the information is likely to render impossible or seriously impair the achievement of such research, if the consumer has provided informed consent.
+
+ 
+
+ 
+
+ Enable solely internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business.
+
+ 
+
+ 
+
+ Comply with a legal obligation.
+
+ 
+
+ 
+
+ Otherwise use the consumer’s personal information, internally, in a lawful manner that is compatible with the context in which the consumer provided the information.
+
+Please note that the great majority of personal information we collect falls into the foregoing exemptions.
+
+Right to a Copy: (Up to twice every 12 months) the right to request a copy of the specific pieces of personal information that we have collected about them in the prior 12 months and to have this delivered, free of charge, either (a) by mail or (b) electronically in a portable and, to the extent technically feasible, readily useable format that allows the individual to transmit this information to another entity without hindrance. For security reasons, certain highly sensitive types of personal information, such as social security numbers, drivers’ license numbers, and bank account numbers, will not be provided but we will inform you if we may have collected them during such 12-month period.
+
+Right to Know: (Up to twice every 12 months) the right to request that we provide them certain information about how we have handled their personal information in the prior 12 months, including the:
+
+categories of personal information collected;
+
+ 
+
+ 
+
+ categories of sources of personal information;
+
+ 
+
+ 
+
+ business and/or commercial purposes for collecting and selling their personal information;
+
+ 
+
+ 
+
+ categories of third parties/with whom we have disclosed or shared their personal information;
+
+ 
+
+ 
+
+ categories of personal information that we have disclosed or shared with a third party for a business purpose;
+
+ 
+
+ 
+
+ categories of personal information collected; and
+
+ 
+
+ 
+
+ categories of third parties to whom the residents’ personal information has been sold and the specific categories of personal information sold to each category of third party.
+
+Submitting Requests: Requests to exercise the right to deletion, right to a copy, and / or the right to know may be submitted at sempra.com/privacy or by contacting us at (619) 696-2000. We will respond to verifiable requests received from California consumers as required by law.
+
+Incentives and Discrimination: The CCPA prohibits discrimination against California residents for exercising their rights under the CCPA and imposes requirements on any financial incentives offered to California residents related to their personal information.
+
+Discrimination: Businesses may not discriminate against residents who exercise their rights under CCPA. Discrimination may exist where a business denies or provides a different level or quality of goods or services, or charges (or suggests that it will charge) different prices or rates or impose penalties on residents who exercise their CCPA rights, unless doing so is reasonably related to the value provided to the business by the residents’ data.
+
+Disclosure of Incentives: If businesses offer any financial incentives for the collection, sale or deletion of their personal information, residents have the right to be notified of any financial incentives offers and their material terms, the right not be included in such offers without prior informed opt-in consent, and the right to be able to opt-out of such offers at any time. Businesses may not offer unjust, unreasonable, coercive or usurious financial incentives. We do not offer any such incentives at this time.
+
+CCPA Requests
+
+ 
+
+ 
+
+ 
+
+ CCPA Requests
+
+CCPA Requests
+
+This form is for requests submitted to Sempra Energy and its subsidiaries other than Southern California Gas Company and San Diego Gas &amp; Electric Company pursuant to the California Consumer Privacy Act (CCPA). If you are inquiring about personal information collected or disclosed by those companies, please visit their websites.
+
+Please note that consumers may generally make a request only on behalf of themselves or their minor children. A person registered with the California Secretary of State may also make a request on behalf of the consumer if authorized to do so pursuant to such registration. To initiate the process to submit documentation verifying that you are a consumer making a request on behalf of your minor child or that you have such registered authorization, please contact (619) 696-2000.
+
+Fill out my Wufoo form!">
+<meta property="og:image" content="https://www.sempra.com/themes/custom/semprab/images/selogo-release-default.png">
+<meta property="url" content="https://www.sempra.com/privacy?vid=15031">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sempraenergy">
+<meta name="twitter:title" content="Privacy">
+<meta name="twitter:description" content="Privacy Policy
+
+ California Consumer Privacy Act Policy
+
+ CCPA Requests
+
+(function($){
+
+$(document).ready(function() { 
+
+ $('.text-nav li a').click(function (e) {
+
+ e.preventDefault();
+
+ $('a[href=&quot;' + $(this).attr('href') + '&quot;]').tab('show');
+
+ })
+
+});
+
+})(jQuery);
+
+Privacy Policy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ California Consumer Privacy Act Policy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ CCPA Requests
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ Privacy Policy
+
+ 
+
+ 
+
+ 
+
+ Privacy Policy
+
+Privacy Policy
+
+Sempra Energy (“Sempra”) is committed to keeping our visitors informed about how we use the information we gather on our web site, at our mobile optimized web site, and in our mobile apps (if any) (collectively, the “web site”). By using our web site or obtaining any product or service through our web site, you agree to the collection and use of information as set forth in this policy. If you do not agree to this policy, please do not use the web site.
+
+Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage &quot;Privacy&quot; footer&amp;nbsp;follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.
+
+Information We Collect and How We Use It
+
+In order to better provide you with products and services, Sempra’s web site collects two types of information: Personal Information and Non Personal Information.
+
+Personal Information:&amp;nbsp;“Personal Information” refers to information that lets us know the specifics of who you are and can be used to identify, contact, or locate you. You may choose not to provide any Personal Information and you will still be able to access most portions of the web site. However, Personal Information may be collected from visitors seeking to obtain services offered by Sempra on this web site, such as:
+
+Applications regarding possible employment;
+
+ Use of Sempra’s mobile apps (if any); and
+
+ Requesting to be included on mailing, email, texting, landline telephone, or cellular telephone lists of Sempra, as may be described in more detail on this web site from time to time.
+
+Examples of Personal Information you may submit include your name or, when combined with your name or other information which could reasonably be used to identify you, your mailing address, telephone number, mobile phone number, email address, and other identification and contact information. We may also collect certain financial account information (if you choose to provide it), as well as other types of information that you may have entered into employment applications.
+
+Sempra uses this Personal Information to provide services, conduct its business, and improve our visitors’ experience on our web site.
+
+Non Personal Information: “Non Personal Information” refers to information that does not identify a specific individual by itself or in combination with other Non Personal Information. Sempra may collect Non Personal Information by using cookies, agents, or through the collection of traffic data and location information.
+
+Do Not Track: At this time, our web site does not respond to Do Not Track (DNT) signals sent from your web browser. Additionally, we use a variety of third-party services to help provide our services and to help us understand the use of our web site. These third-party service providers may collect information sent by your browser as part of a web page request, even if you have enabled your browser’s DNT functionality.
+
+Cookies:&amp;nbsp;Sempra’s web site may store cookies on your computer or other device to allow us to monitor your use of the web site. No attempts are made to identify individual users unless actions are taken to identify yourself by an “opt in,” for example:
+
+Individual services are requested;
+
+ Application is made regarding possible employment;
+
+ Inclusion on a Sempra mailing list is requested;
+
+ Illegal behavior or unauthorized activities are suspected; or
+
+ User identification is required under law.
+
+Cookies are used to improve the usefulness of our web site for our visitors.
+
+Agents:&amp;nbsp;We may also work with 3rd party service providers or solutions which employ “agents” to monitor, track, and analyze user behavior and traffic data on their device and on this web site. The information collected by the agents may include, without limitation: hardware model, unique device identifiers (UDID), mobile network information including phone number, the agent version, platform, SDK version, timestamp, API key (identifier for application), application version, model, manufacturer and OS version of device or hardware, session start/stop time, locale, time zone, and network status (WiFi, etc.). Information collected through the agents is used to customize services and improve web site usability. Information collected through agents may identify individual users in combination with previously provided Personal Information.
+
+Traffic Data:&amp;nbsp;Sempra automatically collects and maintains statistical information from our web site’s data logs that concern web site activity, navigation, network traffic flow, and volume (“Traffic Data”). Examples of Traffic Data include the following:
+
+Name of the domain, or URL, from which the visitor accesses the Internet (e.g., &quot;a company.com&quot;; &quot;a school.edu&quot;; or &quot;an agency.gov&quot;);
+
+ Internet Protocol (“IP”) Number;
+
+ Type of web browser used;
+
+ Web pages visited; and
+
+ Date and time this web site is visited.
+
+Our primary purpose for collecting Traffic Data is to optimize the usefulness to visitors of our web site. Traffic Data is also helpful in permitting us to improve the overall user experience on our web site. Traffic Data may identify individual visitors in combination with previously provided Personal Information.
+
+Location Information:&amp;nbsp;To the extent location-enabled functionality is made available in Sempra’s web site, such functionality is provided by third party providers. Your use of that functionality is subject to such third party’s terms and conditions and privacy policy (as updated from time to time). When you use such location-enabled services, Sempra may also receive information about your actual location, like GPS signals sent by a mobile device or via your IP address. Location-enabled services may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers. Location information helps Sempra customize and tailor services to you. Location information may identify individual users in combination with previously provided Personal Information.
+
+Sharing Your Information with Third Parties
+
+Sempra will not, without your consent, share your Personal Information with third parties for their commercial purposes except that Sempra may share your Personal Information with third-parties, including certain affiliated companies (consistent with applicable laws and regulations) or other trusted businesses solely in order to enable them to perform services for Sempra related to Sempra’s own business purposes (subject to confidentiality and security obligations).
+
+Compliance with Laws and Public Safety:&amp;nbsp;Sempra may also disclose Personal Information if we believe in good faith that such disclosure is necessary to comply with relevant laws or to respond to subpoenas or warrants served on us or to protect or defend the rights, property, or safety of our users, others, or ourselves. Sempra may be required by law enforcement or judicial authorities to provide Personal Information to the appropriate governmental authorities. We will disclose Personal Information upon receipt of a court order or subpoena or to cooperate with a law enforcement investigation. Sempra fully cooperates with law enforcement agencies in identifying those who use our services for illegal activities. Sempra reserves the right to report to law enforcement agencies any activities that we in good faith believe to be unlawful.
+
+Mergers and Acquisitions:&amp;nbsp;In the event of a merger, consolidation, reorganization, or sale or transfer of all or substantially all of the assets or business of Sempra, one of the assets that would generally be transferred is the information we collect from our visitors and customers (including both Personal Information and Non Personal Information). However, the use of this information by any successor entity would still be governed by the terms of this policy, as amended from time to time, including any amendment after such transaction.
+
+Information Security Practices
+
+Sempra uses commercially reasonable efforts to prevent third parties from acquiring, altering, or destroying information made available to Sempra through this web site. These efforts include monitoring network traffic to identify unauthorized attempts to upload or change information and under some circumstances encrypting sensitive information using Secure Socket Layers (“SSL”) or other comparable technology. Monitoring also occurs to prevent any activity that is illegal, or which may subject Sempra to legal liability or damage. Sempra is committed to maintaining the web site’s security and its ongoing compliance with law so that this service will remain available to all visitors.
+
+Although Sempra takes commercially reasonable efforts to prevent unauthorized third parties from acquiring Personal Information submitted to Sempra on this web site, an unlawful interception or acquisition by a third party may still be possible.
+
+Children
+
+Sempra does not knowingly collect Personal Information from children under 13 years of age. Additionally, we are not aware of any content on our web site that would be considered harmful to children. If Sempra learns that we have inadvertently gathered Personal Information from children under 13, we will erase such information from our records and terminate the applicable account.
+
+Links
+
+This web site may provide links to various governmental, industry association and other third party web sites or materials. These links are provided for informational purposes only. Sempra does not endorse any advice, goods or services offered by third parties. To the extent third party materials contain assertions of fact, recommendations, or any other interpretations or advice, the third party is solely responsible for the content of the third party site, and Sempra makes no representation as to the accuracy, completeness or fitness for any purpose or use thereof. Further, Sempra has not verified the privacy policies applicable to third party web sites or hosted materials, or determined what actions such parties will take regarding the privacy of visitors. Accordingly, you should carefully review the privacy policies of any third party sites accessible from any Sempra web site. In no event shall Sempra be responsible for any third party content, policies or actions. Sempra encourages you to ask questions and to be very cautious before you disclose your Personal Information to third parties.
+
+Changes to This Privacy Policy
+
+Sempra reserves the right, at any time, and without notice, to add to, change, modify, or update this Privacy Policy by posting a revised policy on this web site. Any revised Privacy Policy shall be effective immediately on posting. However, any time this policy is updated, the date of modification will be posted.
+
+Disclaimer
+
+Sempra is not responsible in the event that any password provided to a user is obtained by a third party or for any unlawful activities in connection with this web site. In the event a user believes any password has been obtained without permission by third parties, or if the visitor has other privacy concerns, the user should contact Sempra immediately so the password can be changed, or other steps taken as appropriate. This notification should be made to&amp;nbsp;webmaster@Sempra.com.
+
+Questions or Comments
+
+If you have any questions or comments regarding (a) our web site Privacy Policy, or (b) any other questions about this web site, Sempra or its services, please contact Sempra by e-mail at&amp;nbsp;webmaster@Sempra.com, or by phone at (619) 696-2000, or by regular mail at: 488 8th Ave., San Diego, CA 92101.
+
+Please note, however, that information regarding these contacts or correspondence with Sempra may be retained in a file that is specific to you.
+
+California Consumer Privacy Act Policy
+
+ 
+
+ 
+
+ 
+
+ California Consumer Privacy Act Policy
+
+California Consumer Privacy Act Policy
+
+This document provides specific information for California residents, as required under the California Consumer Privacy Act (“CCPA”). The CCPA requires that we provide California residents information about how we use their personal information, whether collected online or offline, and this document is intended to satisfy that requirement. Our Privacy Policy further describes our policies and practices relating to privacy.
+
+Under the CCPA, “personal information” is any information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular resident or household.
+
+Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage &quot;Privacy&quot; footer follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.
+
+Notice at Collection: Categories of Personal Information that We Collect or Disclose
+
+Below please find the categories of personal information about California residents that we collect and/or disclose to third parties or service providers for a business purpose.
+
+Categories of personal information
+
+ Last Updated: 1/1/2020
+
+ 
+
+ Do we collect?
+
+ Do we disclose for business purpose?
+
+ Do we sell?
+
+ 
+
+ 
+
+ 
+
+ 
+
+ NAME, CONTACT INFORMATION AND IDENTIFIERS: Identifiers such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver’s license number, passport number, or other similar identifiers.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ CONSUMER RECORDS: Paper and electronic customer records containing personal information, such as name, signature, social security number, physical characteristics or description, address and location from which customer interactions with us occur, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ PROTECTED CLASSIFICATIONS: Characteristics of protected classifications under California or federal law such as race (only at the individual’s option), sex, age, national origin, disabilities, and citizenship status.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ USAGE DATA: Internet or other electronic network activity information, including, but not limited to, browsing history, search history, and information regarding a resident’s interaction with an internet website, application, or advertisement.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ GEOLOCATION DATA: Precise geolocation location information about a particular individual or device.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ AUDIO/VISUAL: Audio, electronic, visual, thermal, olfactory, or similar information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ EMPLOYMENT HISTORY: Professional or employment-related information.
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ EDUCATION INFORMATION: Information that is not publicly available personally identifiable information as defined in the federal Family Educational Rights and Privacy Act (20 U.S.C. section 1232g, 34 C.F.R. Part 99).
+
+ Yes
+
+ Yes
+
+ No
+
+ 
+
+ 
+
+ PROFILES AND INFERENCES: Inferences drawn from any of the information identified above to create a profile about a resident reflecting the resident’s preferences, and characteristics. We may also collect the foregoing about employees’ and job applicants’ behavior, attitudes, intelligence, abilities, and aptitudes.
+
+ Yes
+
+ Yes
+
+ No
+
+California Residents’ Rights
+
+California law grants California residents certain rights and imposes restrictions on particular business practices as set forth below.
+
+Do-Not-Sell: We do not sell your personal information.
+
+Initial Notice: We are required to notify California residents, at or before the point of collection of their personal information, the categories of personal information collected and the purposes for which such information is used.
+
+Verifiable Requests for Copy, Deletion and Right to Know: Subject to certain exceptions, California residents have the right to make the following requests, at no charge:
+
+Right of Deletion: The right to request deletion of their personal information that we have collected about them, subject to certain exemptions, and to have such personal information deleted, except where necessary that we maintain such personal information in order to:
+
+Complete the transaction for which the personal information was collected, provide a good or service requested by the consumer, or reasonably anticipated within the context of a business’s ongoing business relationship with the consumer, or otherwise perform a contract between the business and the consumer.
+
+ 
+
+ 
+
+ Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity; or prosecute those responsible for that activity.
+
+ 
+
+ 
+
+ Debug to identify and repair errors that impair existing intended functionality.
+
+ 
+
+ 
+
+ Exercise free speech, ensure the right of another consumer to exercise his or her right of free speech, or exercise another right provided for by law.
+
+ 
+
+ 
+
+ Comply with the California Electronic Communications Privacy Act pursuant to Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code.
+
+ 
+
+ 
+
+ Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the businesses’ deletion of the information is likely to render impossible or seriously impair the achievement of such research, if the consumer has provided informed consent.
+
+ 
+
+ 
+
+ Enable solely internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business.
+
+ 
+
+ 
+
+ Comply with a legal obligation.
+
+ 
+
+ 
+
+ Otherwise use the consumer’s personal information, internally, in a lawful manner that is compatible with the context in which the consumer provided the information.
+
+Please note that the great majority of personal information we collect falls into the foregoing exemptions.
+
+Right to a Copy: (Up to twice every 12 months) the right to request a copy of the specific pieces of personal information that we have collected about them in the prior 12 months and to have this delivered, free of charge, either (a) by mail or (b) electronically in a portable and, to the extent technically feasible, readily useable format that allows the individual to transmit this information to another entity without hindrance. For security reasons, certain highly sensitive types of personal information, such as social security numbers, drivers’ license numbers, and bank account numbers, will not be provided but we will inform you if we may have collected them during such 12-month period.
+
+Right to Know: (Up to twice every 12 months) the right to request that we provide them certain information about how we have handled their personal information in the prior 12 months, including the:
+
+categories of personal information collected;
+
+ 
+
+ 
+
+ categories of sources of personal information;
+
+ 
+
+ 
+
+ business and/or commercial purposes for collecting and selling their personal information;
+
+ 
+
+ 
+
+ categories of third parties/with whom we have disclosed or shared their personal information;
+
+ 
+
+ 
+
+ categories of personal information that we have disclosed or shared with a third party for a business purpose;
+
+ 
+
+ 
+
+ categories of personal information collected; and
+
+ 
+
+ 
+
+ categories of third parties to whom the residents’ personal information has been sold and the specific categories of personal information sold to each category of third party.
+
+Submitting Requests: Requests to exercise the right to deletion, right to a copy, and / or the right to know may be submitted at sempra.com/privacy or by contacting us at (619) 696-2000. We will respond to verifiable requests received from California consumers as required by law.
+
+Incentives and Discrimination: The CCPA prohibits discrimination against California residents for exercising their rights under the CCPA and imposes requirements on any financial incentives offered to California residents related to their personal information.
+
+Discrimination: Businesses may not discriminate against residents who exercise their rights under CCPA. Discrimination may exist where a business denies or provides a different level or quality of goods or services, or charges (or suggests that it will charge) different prices or rates or impose penalties on residents who exercise their CCPA rights, unless doing so is reasonably related to the value provided to the business by the residents’ data.
+
+Disclosure of Incentives: If businesses offer any financial incentives for the collection, sale or deletion of their personal information, residents have the right to be notified of any financial incentives offers and their material terms, the right not be included in such offers without prior informed opt-in consent, and the right to be able to opt-out of such offers at any time. Businesses may not offer unjust, unreasonable, coercive or usurious financial incentives. We do not offer any such incentives at this time.
+
+CCPA Requests
+
+ 
+
+ 
+
+ 
+
+ CCPA Requests
+
+CCPA Requests
+
+This form is for requests submitted to Sempra Energy and its subsidiaries other than Southern California Gas Company and San Diego Gas &amp; Electric Company pursuant to the California Consumer Privacy Act (CCPA). If you are inquiring about personal information collected or disclosed by those companies, please visit their websites.
+
+Please note that consumers may generally make a request only on behalf of themselves or their minor children. A person registered with the California Secretary of State may also make a request on behalf of the consumer if authorized to do so pursuant to such registration. To initiate the process to submit documentation verifying that you are a consumer making a request on behalf of your minor child or that you have such registered authorization, please contact (619) 696-2000.
+
+Fill out my Wufoo form!">
+<meta name="twitter:image" content="https://www.sempra.com/themes/custom/semprab/images/selogo-release-default.png">
+<link rel="shortcut icon" href="/sites/default/files/favicons.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://www.sempra.com/privacy">
+<link rel="revision" href="https://www.sempra.com/privacy">
+
+    <title>Privacy | Sempra Energy</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_n_hYilxfAOQXDT80TX8GvXP6UaK_XG_PJvpjf0d4HzI.css">
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_uB2UUci17w66XIVEUXeT24Uc19jytn30mfP7rSfwLUA.css">
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.4.1"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/731751754/?random=1582059276813&amp;cv=9&amp;fst=1582059276813&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2wg250&amp;sendb=1&amp;ig=0&amp;frm=0&amp;url=https%3A%2F%2Fwww.sempra.com%2Fprivacy&amp;tiba=Privacy%20%7C%20Sempra%20Energy&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<script src="/libraries/mouseover_detect/dist/mouseover_detect.min.js?v=8.8.1"></script>
+<script src="/libraries/stop-classes/dist/stop-classes.min.js?q5wvcs"></script>
+
+  </head>
+  <body class="custom-stickynav-present language-toggle-disabled path-node page-node-type-page navbar-is-fixed-top has-glyphicons">
+    <!-- Google Tag Manager (noscript) Theme -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P87PR5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) Theme -->
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div id="ticker-wrapper" class="ticker-wrapper" role="ticker">
+    <div class="region region-ticker">
+    <section class="views-element-container block block-views block-views-blockbulletin-bulletin-ticker clearfix" id="block-views-block-bulletin-bulletin-ticker">
+  
+    
+
+      <div class="form-group"><div class="view view-bulletin view-id-bulletin view-display-id-bulletin_ticker js-view-dom-id-b8a2f80372bb692a9ac5beac2f983bb748be5063bc39f7e814fd36925c2f9f5a">
+  
+    
+      <div class="view-header">
+      
+    </div>
+      
+  
+          </div>
+</div>
+
+  </section>
+
+  </div>
+
+</div>
+<div id="above-all">
+    </div>
+<div id="page-content">
+            <header class="navbar navbar-default navbar-fixed-top" id="navbar" role="banner">
+              <div class="nav-portrait nav-mode">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <span class="svg regular">
+        <svg shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.63 89.7"><defs><style>.cls-1{fill:#004694;}.cls-2{fill:#df134c;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path shape-rendering="geometricPrecision" class="cls-1" d="M357,46.24a4.59,4.59,0,1,1,4.59-4.59A4.42,4.42,0,0,1,357,46.24Zm0-8.59a4,4,0,1,0,4,4A3.85,3.85,0,0,0,357,37.65Zm.86,4.28L359,44.1h-.79L357.16,42h-1.09V44.1h-.67V39h2.06a1.43,1.43,0,0,1,1.63,1.46A1.4,1.4,0,0,1,357.91,41.93Zm-.5-2.3h-1.35v1.72h1.27c.72,0,1.07-.27,1.07-.85S358,39.63,357.41,39.63Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M64.78,0a31.43,31.43,0,0,1-.19,28.78,19.75,19.75,0,0,0,4.93-10.62,13.13,13.13,0,0,1,1.12,3.54,17,17,0,0,0-.15-12s5.66,8.78-.5,16.55a18.69,18.69,0,0,0-.4-2.18,28,28,0,0,1-6.75,7.78c7-2,10.16-5.4,11.55-9.95C77.89,10.34,64.78,0,64.78,0Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M73.62,28.6a.27.27,0,0,0-.37,0c-.16.15-8.13,8.66-23.46,6.62A108.33,108.33,0,0,1,37,32.56c1.11-2.26,1.91-5.48-1.38-7.34-4.72-2.66-11.13,1.94-11.5,2.55-.14.24.05.37.25.39.83.08,7.16-.09,9.87,3.74-6.72-1.66-7.53,1.21-6.54,4.17A36.87,36.87,0,0,0,32,44.31a.33.33,0,0,1,0,.38.66.66,0,0,1-.33.21C21.09,48.45,13.2,59,8.16,68a33.76,33.76,0,0,1-3.81-15.6A34.33,34.33,0,0,1,49.05,19.91l0-.08A36.14,36.14,0,0,0,5.59,72.88a87.08,87.08,0,0,0-4,9.57C1.12,83.85,1,85,1.9,85.39s1.43-.1,2.66-1.8c3.92-5.4,20.57-30.1,32.14-22.29,5.75,3.89,7.56,7.49,4.21,10.85-1.77,1.77-6,4.27-8.54,5.47-3.94,1.86-6.07,2.23-5.74,3.62s2,1.27,8.58-.44c7.61-2,24.9-6.47,16-21.12C47.17,53.08,43,48.08,40.27,44a.27.27,0,0,1,0-.34c.09-.14.34-.12.34-.12C70,41.34,73.53,29.45,73.64,29c0-.08.12-.33,0-.45Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M69.55,67.09a34.41,34.41,0,0,1-55.51,9c-1,1.26-2,2.49-2.86,3.63A36.14,36.14,0,0,0,69.63,67.12l-.08,0Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M96.84,43.11h-.91l-1.24-3.57a8.75,8.75,0,0,0-4.62-1.1c-3.11,0-5.49,1.33-5.49,4.85,0,3.06,2.79,4.8,6.36,6.22S99,53.22,99,58.94s-4.16,8.6-9.88,8.6A15.24,15.24,0,0,1,81,65.07V60.13h1.1l1,3.84a10,10,0,0,0,6.32,2c4,0,6.32-2.2,6.32-6,0-2.7-1.79-4.8-6.18-6.59-4.07-1.65-8.28-3.66-8.28-9,0-4.26,2.93-7.5,8.79-7.5a16.53,16.53,0,0,1,6.82,1.37v4.85Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M105.77,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51H119c.18-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.68,11.68,0,0,0,6.22-1.83l-.46-1a10.09,10.09,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M157.62,67h-6.91V52.53c0-2.7-.55-4.94-3.16-4.94a9.18,9.18,0,0,0-6.13,3.16V65.39l2.61.78V67h-6.09V52.53c0-2.7-.64-4.94-3.07-4.94a9.34,9.34,0,0,0-6.27,3.16V65.53l2.56.64V67h-9.24v-.87l3.2-.73V48.28l-3.75-.73v-.87a34.78,34.78,0,0,1,6.59-.32l.5,2.33a11.83,11.83,0,0,1,7.37-2.88,4.75,4.75,0,0,1,4.9,3.39,12.13,12.13,0,0,1,7.51-3.39c4.12,0,5.95,2.29,5.95,7.42V65.44l3.43.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M165.63,51.71c1.1-2.29,2.93-4,5.17-4,2.88,0,4.53,3,4.53,8.88,0,5.63-1.51,9.43-5.91,9.43a7.57,7.57,0,0,1-3.8-1V51.71Zm-.14-2.33a23.37,23.37,0,0,0-.64-3,25.24,25.24,0,0,0-6.45.32v.87l3.75.73V75l-3.43.78v.87h10.34v-1l-3.43-.64V66.54a8.89,8.89,0,0,0,4,.92c5,0,9.61-3.85,9.61-10.85,0-5.72-1.92-10.8-7.37-10.8a8,8,0,0,0-6.41,3.57Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M188.74,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.91,24.91,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.17,5.17,0,0,1,1.74.23l-1.33,2.84a3.83,3.83,0,0,0-1.87-.46A7.22,7.22,0,0,0,188.74,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M210.93,62c-1.05,2.52-2.84,3.71-4.53,3.71-2.11,0-4-1.65-4-4.49,0-3.57,2.65-5.35,5.86-5.35h2.7V62Zm6.68,3.89-3.2-.64V52.76c0-5.22-3.52-7-7.23-7A12.58,12.58,0,0,0,200,48l1,4.12,1-.18.23-3a6.73,6.73,0,0,1,4.35-1.42c2.24,0,4.44,1.14,4.44,4.44v2.29h-1.55c-5.08,0-10.57,1.51-10.57,7.55,0,3.34,3.07,5.63,6.32,5.63a7,7,0,0,0,5.95-3.29l.87,2.79a25.54,25.54,0,0,0,5.67-.27v-.87Z"></path><polygon shape-rendering="geometricPrecision" class="cls-1" points="247.55 63.15 246.36 67.04 227.09 67.04 227.09 65.99 230.29 65.35 230.29 38.8 227.09 38.12 227.09 37.06 245.21 37.06 246.4 40.91 245.44 41.32 243.98 38.85 234 38.85 234 50.2 243.7 50.2 243.7 51.98 234 51.98 234 65.26 245.08 65.26 246.59 62.74 247.55 63.15 247.55 63.15"></polygon><path shape-rendering="geometricPrecision" class="cls-1" d="M272.54,67h-6.73V52.49c0-3.8-1.05-4.94-3.48-4.94a9.61,9.61,0,0,0-5.86,3.16V65.53l2.56.64V67h-9.25v-.87l3.2-.73V48.28l-3.75-.73v-.87a28.68,28.68,0,0,1,6.59-.37l.5,2.38a11.87,11.87,0,0,1,7-2.88c4,0,5.95,2.15,5.95,7.28V65.44l3.25.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M278.21,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51h13.36c.19-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.67,11.67,0,0,0,6.22-1.83l-.46-1a10.08,10.08,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M301,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.93,24.93,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.15,5.15,0,0,1,1.74.23l-1.33,2.84a3.85,3.85,0,0,0-1.88-.46A7.23,7.23,0,0,0,301,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M314.36,52.9c0-3.25,2.15-5.54,4.67-5.54s4.58,2.29,4.58,5.54c0,4.21-2.38,5.81-4.58,5.81s-4.67-1.65-4.67-5.81Zm-1.6,4.9a5.09,5.09,0,0,0-2.2,3.94,4.54,4.54,0,0,0,3.61,4.53c-2.74.69-4.44,2.7-4.44,4.9,0,2.7,2.61,5.45,9.2,5.45,7.23,0,10.57-4.21,10.57-8.05a5.92,5.92,0,0,0-2.56-5h-9.11c-3.75,0-5-1.37-5-2.93a2.74,2.74,0,0,1,1-2A9.66,9.66,0,0,0,319,60.27c5.63,0,8-3.7,8-7.28a6.77,6.77,0,0,0-2-4.9l3.71-.69V46.17h-6.32a20,20,0,0,0-3.39-.37c-5.17,0-8.1,3.07-8.1,7.19a6.86,6.86,0,0,0,1.83,4.8Zm13.09,8.88a3.14,3.14,0,0,1,1.42,2.75c0,2.52-2.24,5.58-7.32,5.58s-6.73-2.1-6.73-4.21A4.61,4.61,0,0,1,316,66.67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M334.36,75.24c1.78-.91,3.66-2.15,4.39-4.17l1.65-4.62-6.73-18.26-3-1v-.87h8.88v.87l-2.24.78L342.1,62.1l5.58-15.79h4.8v.87l-3.52,1-8.06,22.15c-1.51,4.12-2.7,5.13-5.49,6.77l-1.05-1.83Z"></path></g></g></svg>
+      </span>
+      <span class="svg white">
+        <svg shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.63 89.7"><defs><style>.cls-1{fill:#004694;}.cls-2{fill:#df134c;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path shape-rendering="geometricPrecision" class="cls-1" d="M357,46.24a4.59,4.59,0,1,1,4.59-4.59A4.42,4.42,0,0,1,357,46.24Zm0-8.59a4,4,0,1,0,4,4A3.85,3.85,0,0,0,357,37.65Zm.86,4.28L359,44.1h-.79L357.16,42h-1.09V44.1h-.67V39h2.06a1.43,1.43,0,0,1,1.63,1.46A1.4,1.4,0,0,1,357.91,41.93Zm-.5-2.3h-1.35v1.72h1.27c.72,0,1.07-.27,1.07-.85S358,39.63,357.41,39.63Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M64.78,0a31.43,31.43,0,0,1-.19,28.78,19.75,19.75,0,0,0,4.93-10.62,13.13,13.13,0,0,1,1.12,3.54,17,17,0,0,0-.15-12s5.66,8.78-.5,16.55a18.69,18.69,0,0,0-.4-2.18,28,28,0,0,1-6.75,7.78c7-2,10.16-5.4,11.55-9.95C77.89,10.34,64.78,0,64.78,0Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M73.62,28.6a.27.27,0,0,0-.37,0c-.16.15-8.13,8.66-23.46,6.62A108.33,108.33,0,0,1,37,32.56c1.11-2.26,1.91-5.48-1.38-7.34-4.72-2.66-11.13,1.94-11.5,2.55-.14.24.05.37.25.39.83.08,7.16-.09,9.87,3.74-6.72-1.66-7.53,1.21-6.54,4.17A36.87,36.87,0,0,0,32,44.31a.33.33,0,0,1,0,.38.66.66,0,0,1-.33.21C21.09,48.45,13.2,59,8.16,68a33.76,33.76,0,0,1-3.81-15.6A34.33,34.33,0,0,1,49.05,19.91l0-.08A36.14,36.14,0,0,0,5.59,72.88a87.08,87.08,0,0,0-4,9.57C1.12,83.85,1,85,1.9,85.39s1.43-.1,2.66-1.8c3.92-5.4,20.57-30.1,32.14-22.29,5.75,3.89,7.56,7.49,4.21,10.85-1.77,1.77-6,4.27-8.54,5.47-3.94,1.86-6.07,2.23-5.74,3.62s2,1.27,8.58-.44c7.61-2,24.9-6.47,16-21.12C47.17,53.08,43,48.08,40.27,44a.27.27,0,0,1,0-.34c.09-.14.34-.12.34-.12C70,41.34,73.53,29.45,73.64,29c0-.08.12-.33,0-.45Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M69.55,67.09a34.41,34.41,0,0,1-55.51,9c-1,1.26-2,2.49-2.86,3.63A36.14,36.14,0,0,0,69.63,67.12l-.08,0Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M96.84,43.11h-.91l-1.24-3.57a8.75,8.75,0,0,0-4.62-1.1c-3.11,0-5.49,1.33-5.49,4.85,0,3.06,2.79,4.8,6.36,6.22S99,53.22,99,58.94s-4.16,8.6-9.88,8.6A15.24,15.24,0,0,1,81,65.07V60.13h1.1l1,3.84a10,10,0,0,0,6.32,2c4,0,6.32-2.2,6.32-6,0-2.7-1.79-4.8-6.18-6.59-4.07-1.65-8.28-3.66-8.28-9,0-4.26,2.93-7.5,8.79-7.5a16.53,16.53,0,0,1,6.82,1.37v4.85Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M105.77,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51H119c.18-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.68,11.68,0,0,0,6.22-1.83l-.46-1a10.09,10.09,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M157.62,67h-6.91V52.53c0-2.7-.55-4.94-3.16-4.94a9.18,9.18,0,0,0-6.13,3.16V65.39l2.61.78V67h-6.09V52.53c0-2.7-.64-4.94-3.07-4.94a9.34,9.34,0,0,0-6.27,3.16V65.53l2.56.64V67h-9.24v-.87l3.2-.73V48.28l-3.75-.73v-.87a34.78,34.78,0,0,1,6.59-.32l.5,2.33a11.83,11.83,0,0,1,7.37-2.88,4.75,4.75,0,0,1,4.9,3.39,12.13,12.13,0,0,1,7.51-3.39c4.12,0,5.95,2.29,5.95,7.42V65.44l3.43.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M165.63,51.71c1.1-2.29,2.93-4,5.17-4,2.88,0,4.53,3,4.53,8.88,0,5.63-1.51,9.43-5.91,9.43a7.57,7.57,0,0,1-3.8-1V51.71Zm-.14-2.33a23.37,23.37,0,0,0-.64-3,25.24,25.24,0,0,0-6.45.32v.87l3.75.73V75l-3.43.78v.87h10.34v-1l-3.43-.64V66.54a8.89,8.89,0,0,0,4,.92c5,0,9.61-3.85,9.61-10.85,0-5.72-1.92-10.8-7.37-10.8a8,8,0,0,0-6.41,3.57Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M188.74,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.91,24.91,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.17,5.17,0,0,1,1.74.23l-1.33,2.84a3.83,3.83,0,0,0-1.87-.46A7.22,7.22,0,0,0,188.74,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M210.93,62c-1.05,2.52-2.84,3.71-4.53,3.71-2.11,0-4-1.65-4-4.49,0-3.57,2.65-5.35,5.86-5.35h2.7V62Zm6.68,3.89-3.2-.64V52.76c0-5.22-3.52-7-7.23-7A12.58,12.58,0,0,0,200,48l1,4.12,1-.18.23-3a6.73,6.73,0,0,1,4.35-1.42c2.24,0,4.44,1.14,4.44,4.44v2.29h-1.55c-5.08,0-10.57,1.51-10.57,7.55,0,3.34,3.07,5.63,6.32,5.63a7,7,0,0,0,5.95-3.29l.87,2.79a25.54,25.54,0,0,0,5.67-.27v-.87Z"></path><polygon shape-rendering="geometricPrecision" class="cls-1" points="247.55 63.15 246.36 67.04 227.09 67.04 227.09 65.99 230.29 65.35 230.29 38.8 227.09 38.12 227.09 37.06 245.21 37.06 246.4 40.91 245.44 41.32 243.98 38.85 234 38.85 234 50.2 243.7 50.2 243.7 51.98 234 51.98 234 65.26 245.08 65.26 246.59 62.74 247.55 63.15 247.55 63.15"></polygon><path shape-rendering="geometricPrecision" class="cls-1" d="M272.54,67h-6.73V52.49c0-3.8-1.05-4.94-3.48-4.94a9.61,9.61,0,0,0-5.86,3.16V65.53l2.56.64V67h-9.25v-.87l3.2-.73V48.28l-3.75-.73v-.87a28.68,28.68,0,0,1,6.59-.37l.5,2.38a11.87,11.87,0,0,1,7-2.88c4,0,5.95,2.15,5.95,7.28V65.44l3.25.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M278.21,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51h13.36c.19-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.67,11.67,0,0,0,6.22-1.83l-.46-1a10.08,10.08,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M301,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.93,24.93,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.15,5.15,0,0,1,1.74.23l-1.33,2.84a3.85,3.85,0,0,0-1.88-.46A7.23,7.23,0,0,0,301,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M314.36,52.9c0-3.25,2.15-5.54,4.67-5.54s4.58,2.29,4.58,5.54c0,4.21-2.38,5.81-4.58,5.81s-4.67-1.65-4.67-5.81Zm-1.6,4.9a5.09,5.09,0,0,0-2.2,3.94,4.54,4.54,0,0,0,3.61,4.53c-2.74.69-4.44,2.7-4.44,4.9,0,2.7,2.61,5.45,9.2,5.45,7.23,0,10.57-4.21,10.57-8.05a5.92,5.92,0,0,0-2.56-5h-9.11c-3.75,0-5-1.37-5-2.93a2.74,2.74,0,0,1,1-2A9.66,9.66,0,0,0,319,60.27c5.63,0,8-3.7,8-7.28a6.77,6.77,0,0,0-2-4.9l3.71-.69V46.17h-6.32a20,20,0,0,0-3.39-.37c-5.17,0-8.1,3.07-8.1,7.19a6.86,6.86,0,0,0,1.83,4.8Zm13.09,8.88a3.14,3.14,0,0,1,1.42,2.75c0,2.52-2.24,5.58-7.32,5.58s-6.73-2.1-6.73-4.21A4.61,4.61,0,0,1,316,66.67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M334.36,75.24c1.78-.91,3.66-2.15,4.39-4.17l1.65-4.62-6.73-18.26-3-1v-.87h8.88v.87l-2.24.78L342.1,62.1l5.58-15.79h4.8v.87l-3.52,1-8.06,22.15c-1.51,4.12-2.7,5.13-5.49,6.77l-1.05-1.83Z"></path></g></g></svg>
+      </span>
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+    
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <div class="search-block-form contextual-region block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-semprab-search" role="search">
+  <p class="visually-hidden">Search</p>
+  <div id="search-overlay">&nbsp;</div>
+  <a id="search-opener" href="#">Search</a>
+  <div class="search-box">
+    <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8" class="processed">
+      <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+        <div class="inner">
+          <label for="edit-keys" class="control-label sr-only"><span class="title">Search</span></label>
+          <div class="input-group">
+            <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keywords" value="" size="15" maxlength="128">
+            <span class="input-group-btn">
+              <button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name="">
+                <span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+            </span>
+          </div>
+          <div id="edit-keys--description" class="description help-block">Enter the terms you wish to search for.</div>
+        </div>
+      </div>
+      <div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+    </form>
+  </div>
+</div>
+<nav role="navigation" aria-labelledby="block-semprab-main-menu-menu" id="block-semprab-main-menu" class="block-semprab-main-menu processed">
+      <div id="menu-overlay">&nbsp;</div>
+              <ul class="menu nav navbar-nav">
+                            <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/about-us" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/about-us" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1713">About Us</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/our-companies" target="_self" rel="" data-drupal-link-system-path="node/59">Our Companies</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/corporate-values" target="_self" data-drupal-link-system-path="node/69">Vision, Mission &amp; Values</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/leadership/meet-sempra-ceo-jeffrey-martin" data-drupal-link-system-path="node/3871">Meet Chairman &amp; CEO</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/leadership" data-drupal-link-system-path="node/1793">Leadership Team</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/history" target="_self" data-drupal-link-system-path="node/3479">History</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/awards" id="" target="" data-drupal-link-system-path="node/70">Awards</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/sustainability" class="dropdown-toggle" data-toggle="dropdown">Sustainability</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/sustainability" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1712">Sustainability</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/sustainability/sustainability-report" target="_self" data-drupal-link-system-path="node/1727">2018 Sustainability Report</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/sustainability/giving" target="_self" rel="" data-drupal-link-system-path="node/1717">Corporate Giving</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/spotlight-articles?f%5B0%5D=category%3ASustainability" target="_self" rel="" data-drupal-link-query="{&quot;f&quot;:[&quot;category:Sustainability&quot;]}" data-drupal-link-system-path="newsroom/spotlight-articles">Sustainability News</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/investors" class="dropdown-toggle" data-toggle="dropdown">Investors</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/investors" id="" class="default-page" target="">Investors</a>
+                  </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/stock-information" target="_self" data-mddd="1" class="mDDD-link">Stock Information</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/stock-information" target="_self" class="default-page">Stock Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/historic-stock-lookup" target="_self">Historic Stock Lookup</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/investment-calculator" target="_self">Investment Calculator</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/stock-information/dividends-splits" target="_self">Dividends</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/sec-filings" target="_self">SEC Filings</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/events" target="_self">Events &amp; Presentations</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/press-releases" target="_self">Financial News</a>
+                  </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/financials.cfm" id="" target="_self" data-mddd="2" class="mDDD-link">Financial Information</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/financial-information" target="_self">Financial Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-information/quarterly-results" target="_self">Quarterly Results</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-reports" target="_self" class="default-page">Financial Reports</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="/investors/governance" id="" target="" data-drupal-link-system-path="node/73" data-mddd="3" class="mDDD-link">Governance</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="/investors/governance" id="" class="default-page" target="" data-drupal-link-system-path="node/73">Governance</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/code-of-conduct" id="" target="" data-drupal-link-system-path="node/83">Code of Conduct</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/board-of-directors" id="" target="" data-drupal-link-system-path="node/80">Board of Directors</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/Investors/governance/policies-position-statements" id="" target="" data-drupal-link-system-path="node/81">Policies &amp; Position Statements</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/political-engagements-contributions" id="" target="" data-drupal-link-system-path="node/82">Political Engagement &amp; Contributions</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" data-mddd="4" class="mDDD-link">Resources</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" class="default-page">Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self">Shareholder Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/email-alerts" target="_self">Email Alerts</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/download-library" target="_self">Download Library</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/analyst-coverage" target="_self">Analyst Coverage</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/printed-materials" target="_self">Printed Materials</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/investor-faqs?b27a098e_field_nir_faq_category%5Bvalue%5D%5B0%5D=4101&amp;op=Filter&amp;b27a098e_widget_id=b27a098e&amp;form_build_id=form-DTTvpkZ5Vy_XhEnc_ytv_0Z9wQbZfLNgKKbLDyH0l4c&amp;form_id=widget_form_base" target="_self">FAQs</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/contact-us" target="_self">Investor Contact</a>
+                  </li>
+        </ul>
+  
+            <ul class="menu dropdown-menu mddd-1 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/stock-information" target="_self" class="default-page">Stock Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/historic-stock-lookup" target="_self">Historic Stock Lookup</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/investment-calculator" target="_self">Investment Calculator</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-2 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/financial-information" target="_self">Financial Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-information/quarterly-results" target="_self">Quarterly Results</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-reports" target="_self" class="default-page">Financial Reports</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-3 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="/investors/governance" id="" class="default-page" target="" data-drupal-link-system-path="node/73">Governance</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/code-of-conduct" id="" target="" data-drupal-link-system-path="node/83">Code of Conduct</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/board-of-directors" id="" target="" data-drupal-link-system-path="node/80">Board of Directors</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/Investors/governance/policies-position-statements" id="" target="" data-drupal-link-system-path="node/81">Policies &amp; Position Statements</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/political-engagements-contributions" id="" target="" data-drupal-link-system-path="node/82">Political Engagement &amp; Contributions</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-4 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" class="default-page">Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self">Shareholder Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/email-alerts" target="_self">Email Alerts</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/download-library" target="_self">Download Library</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/analyst-coverage" target="_self">Analyst Coverage</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/printed-materials" target="_self">Printed Materials</a>
+                  </li>
+        </ul></li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/careers" class="dropdown-toggle" data-toggle="dropdown">Careers</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/careers" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1716">Careers</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/benefits" target="_self" rel="" data-drupal-link-system-path="node/64">Benefits</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/diversity-inclusion" target="_self" rel="" data-drupal-link-system-path="node/157">Diversity &amp; Inclusion</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/employee-giving" target="_self" rel="" data-drupal-link-system-path="node/67">Employee Giving</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/newsroom" class="dropdown-toggle" data-toggle="dropdown">Newsroom</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/newsroom" id="" class="default-page" target="" data-drupal-link-system-path="node/1718">Newsroom</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/spotlight-articles" id="" target="" data-drupal-link-system-path="newsroom/spotlight-articles">Spotlight Articles</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/news-releases" id="" target="" data-drupal-link-system-path="newsroom/news-releases">News Releases</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/mediakits" data-drupal-link-system-path="node/3783">Media Kits</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/multimedia" id="" target="" data-drupal-link-system-path="newsroom/multimedia">Multimedia Library</a>
+                  </li>
+        </ul>
+  
+            </li>
+        </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </nav>
+<section class="language-switcher-language-url block block-language block-language-blocklanguage-interface clearfix" id="block-semprab-block-language-switcher" role="navigation">
+  
+    
+
+  <a id="language-toggler-opener" href="#">Eng</a>
+      <ul class="links"><li hreflang="en" data-drupal-link-system-path="node/1752" class="en is-active"><a href="/privacy" class="language-link is-active" hreflang="en" data-drupal-link-system-path="node/1752"><span class="mobile">ENG</span><span class="desktop">English</span></a></li><li hreflang="es" data-drupal-link-system-path="node/1752" class="es"><a href="/es/node/1752" class="language-link" hreflang="es" data-drupal-link-system-path="node/1752"><span class="mobile">SPA</span><span class="desktop">Spanish</span></a></li></ul>
+  </section>
+
+<nav role="navigation" aria-labelledby="block-socialmenu-menu" id="block-socialmenu" class="block block-menu-block block-menu-blocksocial-menu clearfix">
+            
+  <p class="visually-hidden block-title" id="block-socialmenu-menu">Social menu</p>
+  
+
+        
+      <ul class="menu menu--social-menu nav">
+                      <li class="first">
+                                        <a href="https://www.linkedin.com/" id="linkedin" target="_blank">Linkedin</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://twitter.com" id="twitter" target="_blank">Twitter</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                    </div>
+          <div class="nav-landscape nav-mode">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <span class="svg regular">
+        <svg shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.63 89.7"><defs><style>.cls-1{fill:#004694;}.cls-2{fill:#df134c;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path shape-rendering="geometricPrecision" class="cls-1" d="M357,46.24a4.59,4.59,0,1,1,4.59-4.59A4.42,4.42,0,0,1,357,46.24Zm0-8.59a4,4,0,1,0,4,4A3.85,3.85,0,0,0,357,37.65Zm.86,4.28L359,44.1h-.79L357.16,42h-1.09V44.1h-.67V39h2.06a1.43,1.43,0,0,1,1.63,1.46A1.4,1.4,0,0,1,357.91,41.93Zm-.5-2.3h-1.35v1.72h1.27c.72,0,1.07-.27,1.07-.85S358,39.63,357.41,39.63Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M64.78,0a31.43,31.43,0,0,1-.19,28.78,19.75,19.75,0,0,0,4.93-10.62,13.13,13.13,0,0,1,1.12,3.54,17,17,0,0,0-.15-12s5.66,8.78-.5,16.55a18.69,18.69,0,0,0-.4-2.18,28,28,0,0,1-6.75,7.78c7-2,10.16-5.4,11.55-9.95C77.89,10.34,64.78,0,64.78,0Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M73.62,28.6a.27.27,0,0,0-.37,0c-.16.15-8.13,8.66-23.46,6.62A108.33,108.33,0,0,1,37,32.56c1.11-2.26,1.91-5.48-1.38-7.34-4.72-2.66-11.13,1.94-11.5,2.55-.14.24.05.37.25.39.83.08,7.16-.09,9.87,3.74-6.72-1.66-7.53,1.21-6.54,4.17A36.87,36.87,0,0,0,32,44.31a.33.33,0,0,1,0,.38.66.66,0,0,1-.33.21C21.09,48.45,13.2,59,8.16,68a33.76,33.76,0,0,1-3.81-15.6A34.33,34.33,0,0,1,49.05,19.91l0-.08A36.14,36.14,0,0,0,5.59,72.88a87.08,87.08,0,0,0-4,9.57C1.12,83.85,1,85,1.9,85.39s1.43-.1,2.66-1.8c3.92-5.4,20.57-30.1,32.14-22.29,5.75,3.89,7.56,7.49,4.21,10.85-1.77,1.77-6,4.27-8.54,5.47-3.94,1.86-6.07,2.23-5.74,3.62s2,1.27,8.58-.44c7.61-2,24.9-6.47,16-21.12C47.17,53.08,43,48.08,40.27,44a.27.27,0,0,1,0-.34c.09-.14.34-.12.34-.12C70,41.34,73.53,29.45,73.64,29c0-.08.12-.33,0-.45Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M69.55,67.09a34.41,34.41,0,0,1-55.51,9c-1,1.26-2,2.49-2.86,3.63A36.14,36.14,0,0,0,69.63,67.12l-.08,0Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M96.84,43.11h-.91l-1.24-3.57a8.75,8.75,0,0,0-4.62-1.1c-3.11,0-5.49,1.33-5.49,4.85,0,3.06,2.79,4.8,6.36,6.22S99,53.22,99,58.94s-4.16,8.6-9.88,8.6A15.24,15.24,0,0,1,81,65.07V60.13h1.1l1,3.84a10,10,0,0,0,6.32,2c4,0,6.32-2.2,6.32-6,0-2.7-1.79-4.8-6.18-6.59-4.07-1.65-8.28-3.66-8.28-9,0-4.26,2.93-7.5,8.79-7.5a16.53,16.53,0,0,1,6.82,1.37v4.85Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M105.77,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51H119c.18-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.68,11.68,0,0,0,6.22-1.83l-.46-1a10.09,10.09,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M157.62,67h-6.91V52.53c0-2.7-.55-4.94-3.16-4.94a9.18,9.18,0,0,0-6.13,3.16V65.39l2.61.78V67h-6.09V52.53c0-2.7-.64-4.94-3.07-4.94a9.34,9.34,0,0,0-6.27,3.16V65.53l2.56.64V67h-9.24v-.87l3.2-.73V48.28l-3.75-.73v-.87a34.78,34.78,0,0,1,6.59-.32l.5,2.33a11.83,11.83,0,0,1,7.37-2.88,4.75,4.75,0,0,1,4.9,3.39,12.13,12.13,0,0,1,7.51-3.39c4.12,0,5.95,2.29,5.95,7.42V65.44l3.43.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M165.63,51.71c1.1-2.29,2.93-4,5.17-4,2.88,0,4.53,3,4.53,8.88,0,5.63-1.51,9.43-5.91,9.43a7.57,7.57,0,0,1-3.8-1V51.71Zm-.14-2.33a23.37,23.37,0,0,0-.64-3,25.24,25.24,0,0,0-6.45.32v.87l3.75.73V75l-3.43.78v.87h10.34v-1l-3.43-.64V66.54a8.89,8.89,0,0,0,4,.92c5,0,9.61-3.85,9.61-10.85,0-5.72-1.92-10.8-7.37-10.8a8,8,0,0,0-6.41,3.57Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M188.74,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.91,24.91,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.17,5.17,0,0,1,1.74.23l-1.33,2.84a3.83,3.83,0,0,0-1.87-.46A7.22,7.22,0,0,0,188.74,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M210.93,62c-1.05,2.52-2.84,3.71-4.53,3.71-2.11,0-4-1.65-4-4.49,0-3.57,2.65-5.35,5.86-5.35h2.7V62Zm6.68,3.89-3.2-.64V52.76c0-5.22-3.52-7-7.23-7A12.58,12.58,0,0,0,200,48l1,4.12,1-.18.23-3a6.73,6.73,0,0,1,4.35-1.42c2.24,0,4.44,1.14,4.44,4.44v2.29h-1.55c-5.08,0-10.57,1.51-10.57,7.55,0,3.34,3.07,5.63,6.32,5.63a7,7,0,0,0,5.95-3.29l.87,2.79a25.54,25.54,0,0,0,5.67-.27v-.87Z"></path><polygon shape-rendering="geometricPrecision" class="cls-1" points="247.55 63.15 246.36 67.04 227.09 67.04 227.09 65.99 230.29 65.35 230.29 38.8 227.09 38.12 227.09 37.06 245.21 37.06 246.4 40.91 245.44 41.32 243.98 38.85 234 38.85 234 50.2 243.7 50.2 243.7 51.98 234 51.98 234 65.26 245.08 65.26 246.59 62.74 247.55 63.15 247.55 63.15"></polygon><path shape-rendering="geometricPrecision" class="cls-1" d="M272.54,67h-6.73V52.49c0-3.8-1.05-4.94-3.48-4.94a9.61,9.61,0,0,0-5.86,3.16V65.53l2.56.64V67h-9.25v-.87l3.2-.73V48.28l-3.75-.73v-.87a28.68,28.68,0,0,1,6.59-.37l.5,2.38a11.87,11.87,0,0,1,7-2.88c4,0,5.95,2.15,5.95,7.28V65.44l3.25.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M278.21,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51h13.36c.19-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.67,11.67,0,0,0,6.22-1.83l-.46-1a10.08,10.08,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M301,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.93,24.93,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.15,5.15,0,0,1,1.74.23l-1.33,2.84a3.85,3.85,0,0,0-1.88-.46A7.23,7.23,0,0,0,301,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M314.36,52.9c0-3.25,2.15-5.54,4.67-5.54s4.58,2.29,4.58,5.54c0,4.21-2.38,5.81-4.58,5.81s-4.67-1.65-4.67-5.81Zm-1.6,4.9a5.09,5.09,0,0,0-2.2,3.94,4.54,4.54,0,0,0,3.61,4.53c-2.74.69-4.44,2.7-4.44,4.9,0,2.7,2.61,5.45,9.2,5.45,7.23,0,10.57-4.21,10.57-8.05a5.92,5.92,0,0,0-2.56-5h-9.11c-3.75,0-5-1.37-5-2.93a2.74,2.74,0,0,1,1-2A9.66,9.66,0,0,0,319,60.27c5.63,0,8-3.7,8-7.28a6.77,6.77,0,0,0-2-4.9l3.71-.69V46.17h-6.32a20,20,0,0,0-3.39-.37c-5.17,0-8.1,3.07-8.1,7.19a6.86,6.86,0,0,0,1.83,4.8Zm13.09,8.88a3.14,3.14,0,0,1,1.42,2.75c0,2.52-2.24,5.58-7.32,5.58s-6.73-2.1-6.73-4.21A4.61,4.61,0,0,1,316,66.67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M334.36,75.24c1.78-.91,3.66-2.15,4.39-4.17l1.65-4.62-6.73-18.26-3-1v-.87h8.88v.87l-2.24.78L342.1,62.1l5.58-15.79h4.8v.87l-3.52,1-8.06,22.15c-1.51,4.12-2.7,5.13-5.49,6.77l-1.05-1.83Z"></path></g></g></svg>
+      </span>
+      <span class="svg white">
+        <svg shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.63 89.7"><defs><style>.cls-1{fill:#004694;}.cls-2{fill:#df134c;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path shape-rendering="geometricPrecision" class="cls-1" d="M357,46.24a4.59,4.59,0,1,1,4.59-4.59A4.42,4.42,0,0,1,357,46.24Zm0-8.59a4,4,0,1,0,4,4A3.85,3.85,0,0,0,357,37.65Zm.86,4.28L359,44.1h-.79L357.16,42h-1.09V44.1h-.67V39h2.06a1.43,1.43,0,0,1,1.63,1.46A1.4,1.4,0,0,1,357.91,41.93Zm-.5-2.3h-1.35v1.72h1.27c.72,0,1.07-.27,1.07-.85S358,39.63,357.41,39.63Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M64.78,0a31.43,31.43,0,0,1-.19,28.78,19.75,19.75,0,0,0,4.93-10.62,13.13,13.13,0,0,1,1.12,3.54,17,17,0,0,0-.15-12s5.66,8.78-.5,16.55a18.69,18.69,0,0,0-.4-2.18,28,28,0,0,1-6.75,7.78c7-2,10.16-5.4,11.55-9.95C77.89,10.34,64.78,0,64.78,0Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M73.62,28.6a.27.27,0,0,0-.37,0c-.16.15-8.13,8.66-23.46,6.62A108.33,108.33,0,0,1,37,32.56c1.11-2.26,1.91-5.48-1.38-7.34-4.72-2.66-11.13,1.94-11.5,2.55-.14.24.05.37.25.39.83.08,7.16-.09,9.87,3.74-6.72-1.66-7.53,1.21-6.54,4.17A36.87,36.87,0,0,0,32,44.31a.33.33,0,0,1,0,.38.66.66,0,0,1-.33.21C21.09,48.45,13.2,59,8.16,68a33.76,33.76,0,0,1-3.81-15.6A34.33,34.33,0,0,1,49.05,19.91l0-.08A36.14,36.14,0,0,0,5.59,72.88a87.08,87.08,0,0,0-4,9.57C1.12,83.85,1,85,1.9,85.39s1.43-.1,2.66-1.8c3.92-5.4,20.57-30.1,32.14-22.29,5.75,3.89,7.56,7.49,4.21,10.85-1.77,1.77-6,4.27-8.54,5.47-3.94,1.86-6.07,2.23-5.74,3.62s2,1.27,8.58-.44c7.61-2,24.9-6.47,16-21.12C47.17,53.08,43,48.08,40.27,44a.27.27,0,0,1,0-.34c.09-.14.34-.12.34-.12C70,41.34,73.53,29.45,73.64,29c0-.08.12-.33,0-.45Z"></path><path shape-rendering="geometricPrecision" class="cls-2" d="M69.55,67.09a34.41,34.41,0,0,1-55.51,9c-1,1.26-2,2.49-2.86,3.63A36.14,36.14,0,0,0,69.63,67.12l-.08,0Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M96.84,43.11h-.91l-1.24-3.57a8.75,8.75,0,0,0-4.62-1.1c-3.11,0-5.49,1.33-5.49,4.85,0,3.06,2.79,4.8,6.36,6.22S99,53.22,99,58.94s-4.16,8.6-9.88,8.6A15.24,15.24,0,0,1,81,65.07V60.13h1.1l1,3.84a10,10,0,0,0,6.32,2c4,0,6.32-2.2,6.32-6,0-2.7-1.79-4.8-6.18-6.59-4.07-1.65-8.28-3.66-8.28-9,0-4.26,2.93-7.5,8.79-7.5a16.53,16.53,0,0,1,6.82,1.37v4.85Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M105.77,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51H119c.18-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.68,11.68,0,0,0,6.22-1.83l-.46-1a10.09,10.09,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M157.62,67h-6.91V52.53c0-2.7-.55-4.94-3.16-4.94a9.18,9.18,0,0,0-6.13,3.16V65.39l2.61.78V67h-6.09V52.53c0-2.7-.64-4.94-3.07-4.94a9.34,9.34,0,0,0-6.27,3.16V65.53l2.56.64V67h-9.24v-.87l3.2-.73V48.28l-3.75-.73v-.87a34.78,34.78,0,0,1,6.59-.32l.5,2.33a11.83,11.83,0,0,1,7.37-2.88,4.75,4.75,0,0,1,4.9,3.39,12.13,12.13,0,0,1,7.51-3.39c4.12,0,5.95,2.29,5.95,7.42V65.44l3.43.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M165.63,51.71c1.1-2.29,2.93-4,5.17-4,2.88,0,4.53,3,4.53,8.88,0,5.63-1.51,9.43-5.91,9.43a7.57,7.57,0,0,1-3.8-1V51.71Zm-.14-2.33a23.37,23.37,0,0,0-.64-3,25.24,25.24,0,0,0-6.45.32v.87l3.75.73V75l-3.43.78v.87h10.34v-1l-3.43-.64V66.54a8.89,8.89,0,0,0,4,.92c5,0,9.61-3.85,9.61-10.85,0-5.72-1.92-10.8-7.37-10.8a8,8,0,0,0-6.41,3.57Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M188.74,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.91,24.91,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.17,5.17,0,0,1,1.74.23l-1.33,2.84a3.83,3.83,0,0,0-1.87-.46A7.22,7.22,0,0,0,188.74,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M210.93,62c-1.05,2.52-2.84,3.71-4.53,3.71-2.11,0-4-1.65-4-4.49,0-3.57,2.65-5.35,5.86-5.35h2.7V62Zm6.68,3.89-3.2-.64V52.76c0-5.22-3.52-7-7.23-7A12.58,12.58,0,0,0,200,48l1,4.12,1-.18.23-3a6.73,6.73,0,0,1,4.35-1.42c2.24,0,4.44,1.14,4.44,4.44v2.29h-1.55c-5.08,0-10.57,1.51-10.57,7.55,0,3.34,3.07,5.63,6.32,5.63a7,7,0,0,0,5.95-3.29l.87,2.79a25.54,25.54,0,0,0,5.67-.27v-.87Z"></path><polygon shape-rendering="geometricPrecision" class="cls-1" points="247.55 63.15 246.36 67.04 227.09 67.04 227.09 65.99 230.29 65.35 230.29 38.8 227.09 38.12 227.09 37.06 245.21 37.06 246.4 40.91 245.44 41.32 243.98 38.85 234 38.85 234 50.2 243.7 50.2 243.7 51.98 234 51.98 234 65.26 245.08 65.26 246.59 62.74 247.55 63.15 247.55 63.15"></polygon><path shape-rendering="geometricPrecision" class="cls-1" d="M272.54,67h-6.73V52.49c0-3.8-1.05-4.94-3.48-4.94a9.61,9.61,0,0,0-5.86,3.16V65.53l2.56.64V67h-9.25v-.87l3.2-.73V48.28l-3.75-.73v-.87a28.68,28.68,0,0,1,6.59-.37l.5,2.38a11.87,11.87,0,0,1,7-2.88c4,0,5.95,2.15,5.95,7.28V65.44l3.25.73V67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M278.21,54.23c.41-3.84,2.24-7.14,5.08-7.14,3.48,0,4.49,4.44,4.49,7.14Zm-.09,1.51h13.36c.19-3.34-1.1-9.93-8.1-9.93-5.26,0-9.06,4.3-9.06,10.76,0,6.18,3.89,10.89,10.3,10.89a11.67,11.67,0,0,0,6.22-1.83l-.46-1a10.08,10.08,0,0,1-5.22,1.19c-4.39,0-7-4.26-7-10.07Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M301,65.49l3.39.64V67h-10.3v-.92l3.43-.69V48.28l-3.75-.73v-.87a24.93,24.93,0,0,1,6.41-.37,11,11,0,0,1,.73,2.75,9,9,0,0,1,6.82-3.25,5.15,5.15,0,0,1,1.74.23l-1.33,2.84a3.85,3.85,0,0,0-1.88-.46A7.23,7.23,0,0,0,301,51V65.49Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M314.36,52.9c0-3.25,2.15-5.54,4.67-5.54s4.58,2.29,4.58,5.54c0,4.21-2.38,5.81-4.58,5.81s-4.67-1.65-4.67-5.81Zm-1.6,4.9a5.09,5.09,0,0,0-2.2,3.94,4.54,4.54,0,0,0,3.61,4.53c-2.74.69-4.44,2.7-4.44,4.9,0,2.7,2.61,5.45,9.2,5.45,7.23,0,10.57-4.21,10.57-8.05a5.92,5.92,0,0,0-2.56-5h-9.11c-3.75,0-5-1.37-5-2.93a2.74,2.74,0,0,1,1-2A9.66,9.66,0,0,0,319,60.27c5.63,0,8-3.7,8-7.28a6.77,6.77,0,0,0-2-4.9l3.71-.69V46.17h-6.32a20,20,0,0,0-3.39-.37c-5.17,0-8.1,3.07-8.1,7.19a6.86,6.86,0,0,0,1.83,4.8Zm13.09,8.88a3.14,3.14,0,0,1,1.42,2.75c0,2.52-2.24,5.58-7.32,5.58s-6.73-2.1-6.73-4.21A4.61,4.61,0,0,1,316,66.67Z"></path><path shape-rendering="geometricPrecision" class="cls-1" d="M334.36,75.24c1.78-.91,3.66-2.15,4.39-4.17l1.65-4.62-6.73-18.26-3-1v-.87h8.88v.87l-2.24.78L342.1,62.1l5.58-15.79h4.8v.87l-3.52,1-8.06,22.15c-1.51,4.12-2.7,5.13-5.49,6.77l-1.05-1.83Z"></path></g></g></svg>
+      </span>
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+    
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <div class="search-block-form contextual-region block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-semprab-search" role="search">
+  <p class="visually-hidden">Search</p>
+  <div id="search-overlay">&nbsp;</div>
+  <a id="search-opener" href="#">Search</a>
+  <div class="search-box">
+    <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8" class="processed">
+      <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+        <div class="inner">
+          <label for="edit-keys" class="control-label sr-only"><span class="title">Search</span></label>
+          <div class="input-group">
+            <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keywords" value="" size="15" maxlength="128">
+            <span class="input-group-btn">
+              <button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name="">
+                <span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+            </span>
+          </div>
+          <div id="edit-keys--description" class="description help-block">Enter the terms you wish to search for.</div>
+        </div>
+      </div>
+      <div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+    </form>
+  </div>
+</div>
+<nav role="navigation" aria-labelledby="block-semprab-main-menu-menu" id="block-semprab-main-menu" class="block-semprab-main-menu processed">
+      <div id="menu-overlay">&nbsp;</div>
+              <ul class="menu nav navbar-nav">
+                            <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/about-us" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/about-us" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1713">About Us</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/our-companies" target="_self" rel="" data-drupal-link-system-path="node/59">Our Companies</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/corporate-values" target="_self" data-drupal-link-system-path="node/69">Vision, Mission &amp; Values</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/leadership/meet-sempra-ceo-jeffrey-martin" data-drupal-link-system-path="node/3871">Meet Chairman &amp; CEO</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/leadership" data-drupal-link-system-path="node/1793">Leadership Team</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/history" target="_self" data-drupal-link-system-path="node/3479">History</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/about-us/awards" id="" target="" data-drupal-link-system-path="node/70">Awards</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/sustainability" class="dropdown-toggle" data-toggle="dropdown">Sustainability</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/sustainability" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1712">Sustainability</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/sustainability/sustainability-report" target="_self" data-drupal-link-system-path="node/1727">2018 Sustainability Report</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/sustainability/giving" target="_self" rel="" data-drupal-link-system-path="node/1717">Corporate Giving</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/spotlight-articles?f%5B0%5D=category%3ASustainability" target="_self" rel="" data-drupal-link-query="{&quot;f&quot;:[&quot;category:Sustainability&quot;]}" data-drupal-link-system-path="newsroom/spotlight-articles">Sustainability News</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/investors" class="dropdown-toggle" data-toggle="dropdown">Investors</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/investors" id="" class="default-page" target="">Investors</a>
+                  </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/stock-information" target="_self" data-mddd="5" class="mDDD-link">Stock Information</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/stock-information" target="_self" class="default-page">Stock Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/historic-stock-lookup" target="_self">Historic Stock Lookup</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/investment-calculator" target="_self">Investment Calculator</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/stock-information/dividends-splits" target="_self">Dividends</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/sec-filings" target="_self">SEC Filings</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/events" target="_self">Events &amp; Presentations</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/press-releases" target="_self">Financial News</a>
+                  </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/financials.cfm" id="" target="_self" data-mddd="6" class="mDDD-link">Financial Information</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/financial-information" target="_self">Financial Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-information/quarterly-results" target="_self">Quarterly Results</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-reports" target="_self" class="default-page">Financial Reports</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="/investors/governance" id="" target="" data-drupal-link-system-path="node/73" data-mddd="7" class="mDDD-link">Governance</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="/investors/governance" id="" class="default-page" target="" data-drupal-link-system-path="node/73">Governance</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/code-of-conduct" id="" target="" data-drupal-link-system-path="node/83">Code of Conduct</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/board-of-directors" id="" target="" data-drupal-link-system-path="node/80">Board of Directors</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/Investors/governance/policies-position-statements" id="" target="" data-drupal-link-system-path="node/81">Policies &amp; Position Statements</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/political-engagements-contributions" id="" target="" data-drupal-link-system-path="node/82">Political Engagement &amp; Contributions</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-2"><div class="dropdown-overlay"></div>
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" data-mddd="8" class="mDDD-link">Resources</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" class="default-page">Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self">Shareholder Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/email-alerts" target="_self">Email Alerts</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/download-library" target="_self">Download Library</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/analyst-coverage" target="_self">Analyst Coverage</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/printed-materials" target="_self">Printed Materials</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/investor-faqs?b27a098e_field_nir_faq_category%5Bvalue%5D%5B0%5D=4101&amp;op=Filter&amp;b27a098e_widget_id=b27a098e&amp;form_build_id=form-DTTvpkZ5Vy_XhEnc_ytv_0Z9wQbZfLNgKKbLDyH0l4c&amp;form_id=widget_form_base" target="_self">FAQs</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="http://investor.sempra.com/contact-us" target="_self">Investor Contact</a>
+                  </li>
+        </ul>
+  
+            <ul class="menu dropdown-menu mddd-5 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/stock-information" target="_self" class="default-page">Stock Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/historic-stock-lookup" target="_self">Historic Stock Lookup</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/investment-calculator" target="_self">Investment Calculator</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-6 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/financial-information" target="_self">Financial Information</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-information/quarterly-results" target="_self">Quarterly Results</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/financial-reports" target="_self" class="default-page">Financial Reports</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-7 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="/investors/governance" id="" class="default-page" target="" data-drupal-link-system-path="node/73">Governance</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/code-of-conduct" id="" target="" data-drupal-link-system-path="node/83">Code of Conduct</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/board-of-directors" id="" target="" data-drupal-link-system-path="node/80">Board of Directors</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/Investors/governance/policies-position-statements" id="" target="" data-drupal-link-system-path="node/81">Policies &amp; Position Statements</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="/investors/governance/political-engagements-contributions" id="" target="" data-drupal-link-system-path="node/82">Political Engagement &amp; Contributions</a>
+                  </li>
+        </ul><ul class="menu dropdown-menu mddd-8 dupp-dropdown"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self" class="default-page">Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/shareholder-services" target="_self">Shareholder Resources</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/email-alerts" target="_self">Email Alerts</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/download-library" target="_self">Download Library</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/stock-information/analyst-coverage" target="_self">Analyst Coverage</a>
+                  </li>
+                        <li class="expanded hover-here level-3">
+        <a href="http://investor.sempra.com/printed-materials" target="_self">Printed Materials</a>
+                  </li>
+        </ul></li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/careers" class="dropdown-toggle" data-toggle="dropdown">Careers</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/careers" target="_self" rel="" class="default-page" data-drupal-link-system-path="node/1716">Careers</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/benefits" target="_self" rel="" data-drupal-link-system-path="node/64">Benefits</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/diversity-inclusion" target="_self" rel="" data-drupal-link-system-path="node/157">Diversity &amp; Inclusion</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/careers/employee-giving" target="_self" rel="" data-drupal-link-system-path="node/67">Employee Giving</a>
+                  </li>
+        </ul>
+  
+            </li>
+                        <li class="expanded dropdown hover-here level-1"><div class="dropdown-overlay"></div>
+        <a href="/newsroom" class="dropdown-toggle" data-toggle="dropdown">Newsroom</a>
+                                  <ul class="menu dropdown-menu"><li class="back-link"><a href="#">Back</a></li>
+                            <li class="expanded hover-here li-back">
+        <a href="/newsroom" id="" class="default-page" target="" data-drupal-link-system-path="node/1718">Newsroom</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/spotlight-articles" id="" target="" data-drupal-link-system-path="newsroom/spotlight-articles">Spotlight Articles</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/news-releases" id="" target="" data-drupal-link-system-path="newsroom/news-releases">News Releases</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/mediakits" data-drupal-link-system-path="node/3783">Media Kits</a>
+                  </li>
+                        <li class="expanded hover-here">
+        <a href="/newsroom/multimedia" id="" target="" data-drupal-link-system-path="newsroom/multimedia">Multimedia Library</a>
+                  </li>
+        </ul>
+  
+            </li>
+        </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </nav>
+<section class="language-switcher-language-url block block-language block-language-blocklanguage-interface clearfix" id="block-semprab-block-language-switcher" role="navigation">
+  
+    
+
+  <a id="language-toggler-opener" href="#">Eng</a>
+      <ul class="links"><li hreflang="en" data-drupal-link-system-path="node/1752" class="en is-active"><a href="/privacy" class="language-link is-active" hreflang="en" data-drupal-link-system-path="node/1752"><span class="mobile">ENG</span><span class="desktop">English</span></a></li><li hreflang="es" data-drupal-link-system-path="node/1752" class="es"><a href="/es/node/1752" class="language-link" hreflang="es" data-drupal-link-system-path="node/1752"><span class="mobile">SPA</span><span class="desktop">Spanish</span></a></li></ul>
+  </section>
+
+<nav role="navigation" aria-labelledby="block-socialmenu-menu" id="block-socialmenu" class="block block-menu-block block-menu-blocksocial-menu clearfix">
+            
+  <p class="visually-hidden block-title" id="block-socialmenu-menu">Social menu</p>
+  
+
+        
+      <ul class="menu menu--social-menu nav">
+                      <li class="first">
+                                        <a href="https://www.linkedin.com/" id="linkedin" target="_blank">Linkedin</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://twitter.com" id="twitter" target="_blank">Twitter</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                    </div></header>
+  
+        <div role="main" class="main-container js-quickedit-main-content">
+
+            
+      <section>
+
+                                      <div class="highlighted">
+              <div class="container container-limit">
+                  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+              </div>
+            </div>
+                  
+                
+                        
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      <article data-history-node-id="1752" role="article" about="/privacy" typeof="schema:WebPage" class="page full clearfix">
+
+  
+      <span property="schema:name" content="Privacy" class="hidden"></span>
+
+
+  
+  <div class="content">
+                                      <div id="" class="content-row paragraph--one_column"><div class="content--block container container-limit ">
+  <div class="paragraph content--block--main paragraph--type--text-block paragraph--view-mode--default">
+      <h2>Privacy</h2>
+        <div class="body">
+      <style type="text/css">.tab-pane h4 {
+display: none;
+visibility: hidden;
+}
+</style>
+<ul class="text-nav">
+	<li><a data-toggle="tab" href="#tab-2260">Privacy Policy</a></li>
+	<li><a data-toggle="tab" href="#tab-2261">California Consumer Privacy Act Policy</a></li>
+	<li><a data-toggle="tab" href="#tab-2262">CCPA Requests</a></li>
+</ul>
+<script>
+(function($){
+
+    $(document).ready(function() { 
+  $('.text-nav li a').click(function (e) {
+      e.preventDefault();
+      $('a[href="' + $(this).attr('href') + '"]').tab('show');
+  })
+});
+
+})(jQuery);
+</script>
+    </div>
+    </div>
+</div>
+
+</div>
+                                                <div id="" class="content-row paragraph--one_column content-row-2">      <div class="paragraph content--block paragraph--type-tabbed-content-block paragraph--view-mode--default tabs-count-3 accordion-mobile" role="tablist">
+  <div class="container container-limit tabs-to-dropdown-container">
+    <div class="row real-tabs">
+            <div class="col-xs-12 tab-list">
+        <div class="block tabbed-nav">
+          <div class="block-content">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                                                <li role="tabpanel" class="active item-1">
+                    <a href="#tab-2260" role="tab" data-toggle="tab" aria-expanded="true" data-index="1" style="min-height: 66px;">
+                      <h3>Privacy Policy</h3>
+                    </a>
+                  </li>
+                                                                <li role="tabpanel" class="item-2">
+                    <a href="#tab-2261" role="tab" data-toggle="tab" aria-expanded="false" data-index="2" style="min-height: 66px;">
+                      <h3>California Consumer Privacy Act Policy</h3>
+                    </a>
+                  </li>
+                                                                <li role="tabpanel" class="item-3">
+                    <a href="#tab-2262" role="tab" data-toggle="tab" aria-expanded="false" data-index="3" style="min-height: 66px;">
+                      <h3>CCPA Requests</h3>
+                    </a>
+                  </li>
+                                          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="block tabbed-content">
+    <div class="block-content">
+      <!-- Tab panes -->
+      <div class="container container-limit">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="tab-content">
+                                                <div class="tab-accordion open">
+                    <a href="#tab-2260" data-index="1">
+                    Privacy Policy
+                    </a>
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="tab-2260">
+                        <h4>Privacy Policy</h4>
+<div class="body">
+  <h2>Privacy Policy</h2>
+
+<p>Sempra Energy (“Sempra”) is committed to keeping our visitors informed about how we use the information we gather on our web site, at our mobile optimized web site, and in our mobile apps (if any) (collectively, the “web site”). By using our web site or obtaining any product or service through our web site, you agree to the collection and use of information as set forth in this policy. If you do not agree to this policy, please do not use the web site.</p>
+
+<p>Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage "Privacy" footer&nbsp;follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.</p>
+
+<div class="h3">Information We Collect and How We Use It</div>
+
+<p>In order to better provide you with products and services, Sempra’s web site collects two types of information: Personal Information and Non Personal Information.</p>
+
+<p><strong>Personal Information:&nbsp;</strong>“Personal Information” refers to information that lets us know the specifics of who you are and can be used to identify, contact, or locate you. You may choose not to provide any Personal Information and you will still be able to access most portions of the web site. However, Personal Information may be collected from visitors seeking to obtain services offered by Sempra on this web site, such as:</p>
+
+<ul>
+	<li>Applications regarding possible employment;</li>
+	<li>Use of Sempra’s mobile apps (if any); and</li>
+	<li>Requesting to be included on mailing, email, texting, landline telephone, or cellular telephone lists of Sempra, as may be described in more detail on this web site from time to time.</li>
+</ul>
+
+<p>Examples of Personal Information you may submit include your name or, when combined with your name or other information which could reasonably be used to identify you, your mailing address, telephone number, mobile phone number, email address, and other identification and contact information. We may also collect certain financial account information (if you choose to provide it), as well as other types of information that you may have entered into employment applications.</p>
+
+<p>Sempra uses this Personal Information to provide services, conduct its business, and improve our visitors’ experience on our web site.</p>
+
+<p><strong>Non Personal Information</strong>: “Non Personal Information” refers to information that does not identify a specific individual by itself or in combination with other Non Personal Information. Sempra may collect Non Personal Information by using cookies, agents, or through the collection of traffic data and location information.</p>
+
+<p><strong>Do Not Track</strong>: At this time, our web site does not respond to Do Not Track (DNT) signals sent from your web browser. Additionally, we use a variety of third-party services to help provide our services and to help us understand the use of our web site. These third-party service providers may collect information sent by your browser as part of a web page request, even if you have enabled your browser’s DNT functionality.</p>
+
+<p><strong>Cookies:&nbsp;</strong>Sempra’s web site may store cookies on your computer or other device to allow us to monitor your use of the web site. No attempts are made to identify individual users unless actions are taken to identify yourself by an “opt in,” for example:</p>
+
+<ul>
+	<li>Individual services are requested;</li>
+	<li>Application is made regarding possible employment;</li>
+	<li>Inclusion on a Sempra mailing list is requested;</li>
+	<li>Illegal behavior or unauthorized activities are suspected; or</li>
+	<li>User identification is required under law.</li>
+</ul>
+
+<p>Cookies are used to improve the usefulness of our web site for our visitors.</p>
+
+<p><strong>Agents:</strong>&nbsp;We may also work with 3rd party service providers or solutions which employ “agents” to monitor, track, and analyze user behavior and traffic data on their device and on this web site. The information collected by the agents may include, without limitation: hardware model, unique device identifiers (UDID), mobile network information including phone number, the agent version, platform, SDK version, timestamp, API key (identifier for application), application version, model, manufacturer and OS version of device or hardware, session start/stop time, locale, time zone, and network status (WiFi, etc.). Information collected through the agents is used to customize services and improve web site usability. Information collected through agents may identify individual users in combination with previously provided Personal Information.</p>
+
+<p><strong>Traffic Data:</strong>&nbsp;Sempra automatically collects and maintains statistical information from our web site’s data logs that concern web site activity, navigation, network traffic flow, and volume (“Traffic Data”). Examples of Traffic Data include the following:</p>
+
+<ul>
+	<li>Name of the domain, or URL, from which the visitor accesses the Internet (e.g., "a company.com"; "a school.edu"; or "an agency.gov");</li>
+	<li>Internet Protocol (“IP”) Number;</li>
+	<li>Type of web browser used;</li>
+	<li>Web pages visited; and</li>
+	<li>Date and time this web site is visited.</li>
+</ul>
+
+<p>Our primary purpose for collecting Traffic Data is to optimize the usefulness to visitors of our web site. Traffic Data is also helpful in permitting us to improve the overall user experience on our web site. Traffic Data may identify individual visitors in combination with previously provided Personal Information.</p>
+
+<p><strong>Location Information:</strong>&nbsp;To the extent location-enabled functionality is made available in Sempra’s web site, such functionality is provided by third party providers. Your use of that functionality is subject to such third party’s terms and conditions and privacy policy (as updated from time to time). When you use such location-enabled services, Sempra may also receive information about your actual location, like GPS signals sent by a mobile device or via your IP address. Location-enabled services may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers. Location information helps Sempra customize and tailor services to you. Location information may identify individual users in combination with previously provided Personal Information.</p>
+
+<div class="h3">Sharing Your Information with Third Parties</div>
+
+<p>Sempra will not, without your consent, share your Personal Information with third parties for their commercial purposes except that Sempra may share your Personal Information with third-parties, including certain affiliated companies (consistent with applicable laws and regulations) or other trusted businesses solely in order to enable them to perform services for Sempra related to Sempra’s own business purposes (subject to confidentiality and security obligations).</p>
+
+<p><strong>Compliance with Laws and Public Safety:</strong>&nbsp;Sempra may also disclose Personal Information if we believe in good faith that such disclosure is necessary to comply with relevant laws or to respond to subpoenas or warrants served on us or to protect or defend the rights, property, or safety of our users, others, or ourselves. Sempra may be required by law enforcement or judicial authorities to provide Personal Information to the appropriate governmental authorities. We will disclose Personal Information upon receipt of a court order or subpoena or to cooperate with a law enforcement investigation. Sempra fully cooperates with law enforcement agencies in identifying those who use our services for illegal activities. Sempra reserves the right to report to law enforcement agencies any activities that we in good faith believe to be unlawful.</p>
+
+<p><strong>Mergers and Acquisitions:</strong>&nbsp;In the event of a merger, consolidation, reorganization, or sale or transfer of all or substantially all of the assets or business of Sempra, one of the assets that would generally be transferred is the information we collect from our visitors and customers (including both Personal Information and Non Personal Information). However, the use of this information by any successor entity would still be governed by the terms of this policy, as amended from time to time, including any amendment after such transaction.</p>
+
+<div class="h3">Information Security Practices</div>
+
+<p>Sempra uses commercially reasonable efforts to prevent third parties from acquiring, altering, or destroying information made available to Sempra through this web site. These efforts include monitoring network traffic to identify unauthorized attempts to upload or change information and under some circumstances encrypting sensitive information using Secure Socket Layers (“SSL”) or other comparable technology. Monitoring also occurs to prevent any activity that is illegal, or which may subject Sempra to legal liability or damage. Sempra is committed to maintaining the web site’s security and its ongoing compliance with law so that this service will remain available to all visitors.</p>
+
+<p>Although Sempra takes commercially reasonable efforts to prevent unauthorized third parties from acquiring Personal Information submitted to Sempra on this web site, an unlawful interception or acquisition by a third party may still be possible.</p>
+
+<div class="h3">Children</div>
+
+<p>Sempra does not knowingly collect Personal Information from children under 13 years of age. Additionally, we are not aware of any content on our web site that would be considered harmful to children. If Sempra learns that we have inadvertently gathered Personal Information from children under 13, we will erase such information from our records and terminate the applicable account.</p>
+
+<div class="h3">Links</div>
+
+<p>This web site may provide links to various governmental, industry association and other third party web sites or materials. These links are provided for informational purposes only. Sempra does not endorse any advice, goods or services offered by third parties. To the extent third party materials contain assertions of fact, recommendations, or any other interpretations or advice, the third party is solely responsible for the content of the third party site, and Sempra makes no representation as to the accuracy, completeness or fitness for any purpose or use thereof. Further, Sempra has not verified the privacy policies applicable to third party web sites or hosted materials, or determined what actions such parties will take regarding the privacy of visitors. Accordingly, you should carefully review the privacy policies of any third party sites accessible from any Sempra web site. In no event shall Sempra be responsible for any third party content, policies or actions. Sempra encourages you to ask questions and to be very cautious before you disclose your Personal Information to third parties.</p>
+
+<div class="h3">Changes to This Privacy Policy</div>
+
+<p>Sempra reserves the right, at any time, and without notice, to add to, change, modify, or update this Privacy Policy by posting a revised policy on this web site. Any revised Privacy Policy shall be effective immediately on posting. However, any time this policy is updated, the date of modification will be posted.</p>
+
+<div class="h3">Disclaimer</div>
+
+<p>Sempra is not responsible in the event that any password provided to a user is obtained by a third party or for any unlawful activities in connection with this web site. In the event a user believes any password has been obtained without permission by third parties, or if the visitor has other privacy concerns, the user should contact Sempra immediately so the password can be changed, or other steps taken as appropriate. This notification should be made to&nbsp;<a href="mailto:webmaster@Sempra.com">webmaster@Sempra.com</a>.</p>
+
+<div class="h3">Questions or Comments</div>
+
+<p>If you have any questions or comments regarding (a) our web site Privacy Policy, or (b) any other questions about this web site, Sempra or its services, please contact Sempra by e-mail at&nbsp;<a href="mailto:webmaster@Sempra.com">webmaster@Sempra.com</a>, or by phone at <a href="tel:+16196962000">(619) 696-2000</a>, or by regular mail at: 488 8th Ave., San Diego, CA 92101.</p>
+
+<p>Please note, however, that information regarding these contacts or correspondence with Sempra may be retained in a file that is specific to you.</p>
+
+</div>
+<div class="webform">
+  
+</div>
+
+                  </div>
+                                                                <div class="tab-accordion">
+                    <a href="#tab-2261" data-index="2">
+                    California Consumer Privacy Act Policy
+                    </a>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="tab-2261">
+                        <h4>California Consumer Privacy Act Policy</h4>
+<div class="body">
+  <h2 paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{165}" paraid="160059674">California Consumer Privacy Act Policy</h2>
+
+<p paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{165}" paraid="160059674">This document provides specific information for California residents, as required under the California Consumer Privacy Act (“CCPA”). The CCPA requires that we provide California residents information about how we use their personal information, whether collected online or offline, and this document is intended to satisfy that requirement. Our Privacy Policy further describes our policies and practices relating to privacy.</p>
+
+<p paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{225}" paraid="1925612490">Under the CCPA, “personal information” is any information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular resident or household.</p>
+
+<p paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{225}" paraid="1925612490">Please be aware that other sites accessible through Sempra’s web site (including, without limitation, our subsidiaries’ sites) have their own privacy policies and data collection, use, and disclosure practices. The information practices of those other sites linked to Sempra’s web site are not covered by this policy, except that those sites of our subsidiaries which have a direct “Privacy” link to the Sempra Energy homepage "Privacy" footer follow and use this policy as their own policy. In such circumstances, with respect to such sites, references herein to “we” and “Sempra” mean such subsidiaries.</p>
+
+<h3 paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{247}" paraid="1153090927">Notice at Collection: Categories of Personal Information that We Collect or Disclose</h3>
+
+<p paraeid="{b283b427-9039-4eb2-96f9-88d81b0ebb8c}{247}" paraid="1153090927">Below please find the categories of personal information about California residents that we collect and/or disclose to third parties or service providers for a business purpose.</p>
+
+<table class="table table-striped table-bordered table-hover table-responsive">
+	<thead>
+		<tr class="info">
+			<th scope="col" width="50%">
+			<p>Categories of personal information<br>
+			Last Updated: 1/1/2020</p>
+			</th>
+			<th scope="col" width="16%">Do we collect?</th>
+			<th scope="col" width="18%">Do we disclose for business purpose?</th>
+			<th scope="col" width="16%">Do we sell?</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>NAME, CONTACT INFORMATION AND IDENTIFIERS: </strong>Identifiers such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver’s license number, passport number, or other similar identifiers.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>CONSUMER RECORDS:</strong> Paper and electronic customer records containing personal information, such as name, signature, social security number, physical characteristics or description, address and location from which customer interactions with us occur, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>PROTECTED CLASSIFICATIONS: </strong>Characteristics of protected classifications under California or federal law such as race (only at the individual’s option), sex, age, national origin, disabilities, and citizenship status.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>USAGE DATA:</strong> Internet or other electronic network activity information, including, but not limited to, browsing history, search history, and information regarding a resident’s interaction with an internet website, application, or advertisement.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>GEOLOCATION DATA: </strong>Precise geolocation location information about a particular individual or device.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>AUDIO/VISUAL: </strong>Audio, electronic, visual, thermal, olfactory, or similar information.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>EMPLOYMENT HISTORY:</strong> Professional or employment-related information.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>EDUCATION INFORMATION: </strong>Information that is not publicly available personally identifiable information as defined in the federal Family Educational Rights and Privacy Act (20 U.S.C. section 1232g, 34 C.F.R. Part 99).</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>PROFILES AND INFERENCES: </strong>Inferences drawn from any of the information identified above to create a profile about a resident reflecting the resident’s preferences, and characteristics. We may also collect the foregoing about employees’ and job applicants’ behavior, attitudes, intelligence, abilities, and aptitudes.</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{61}" paraid="398782921">California Residents’ Rights</h3>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{71}" paraid="2038194353">California law grants California residents certain rights and imposes restrictions on particular business practices as set forth below.</p>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{87}" paraid="865491646"><strong>Do-Not-Sell:</strong> We do not sell your personal information.</p>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{97}" paraid="1375378104"><strong>Initial Notice:</strong> We are required to notify California residents, at or before the point of collection of their personal information, the categories of personal information collected and the purposes for which such information is used.</p>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{121}" paraid="706996478"><strong>Verifiable Requests for Copy, Deletion and Right to Know:</strong> Subject to certain exceptions, California residents have the right to make the following requests, at no charge:</p>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{139}" paraid="1539887984"><strong>Right of Deletion:</strong> The right to request deletion of their personal information that we have collected about them, subject to certain exemptions, and to have such personal information deleted, except where necessary that we maintain such personal information in order to:</p>
+
+<ul role="list">
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{175}" paraid="1113873302">Complete the transaction for which the personal information was collected, provide a good or service requested by the consumer, or reasonably anticipated within the context of a business’s ongoing business relationship with the consumer, or otherwise perform a contract between the business and the consumer.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{186}" paraid="521818765">Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity; or prosecute those responsible for that activity.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{197}" paraid="1339925125">Debug to identify and repair errors that impair existing intended functionality.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{204}" paraid="78685212">Exercise free speech, ensure the right of another consumer to exercise his or her right of free speech, or exercise another right provided for by law.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{213}" paraid="127166168">Comply with the California Electronic Communications Privacy Act pursuant to Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{220}" paraid="1664755567">Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the businesses’ deletion of the information is likely to render impossible or seriously impair the achievement of such research, if the consumer has provided informed consent.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{227}" paraid="288489794">Enable solely internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{236}" paraid="1181151662">Comply with a legal obligation.</p>
+	</li>
+	<li>
+	<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{247}" paraid="1985117336">Otherwise use the consumer’s personal information, internally, in a lawful manner that is compatible with the context in which the consumer provided the information.</p>
+	</li>
+</ul>
+
+<p paraeid="{9941708e-7653-47dc-96e3-7c8fc66b0a14}{254}" paraid="506042628">Please note that the great majority of personal information we collect falls into the foregoing exemptions.</p>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{5}" paraid="927246353"><strong>Right to a Copy:</strong> (Up to twice every 12 months) the right to request a copy of the specific pieces of personal information that we have collected about them in the prior 12 months and to have this delivered, free of charge, either (a) by mail or (b) electronically in a portable and, to the extent technically feasible, readily useable format that allows the individual to transmit this information to another entity without hindrance. For security reasons, certain highly sensitive types of personal information, such as social security numbers, drivers’ license numbers, and bank account numbers, will not be provided but we will inform you if we may have collected them during such 12-month period.</p>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{27}" paraid="1442109534"><strong>Right to Know:</strong> (Up to twice every 12 months) the right to request that we provide them certain information about how we have handled their personal information in the prior 12 months, including the:</p>
+
+<ul role="list">
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{45}" paraid="756907812">categories of personal information collected;</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{54}" paraid="1604542110">categories of sources of personal information;</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{63}" paraid="426888124">business and/or commercial purposes for collecting and selling their personal information;</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{72}" paraid="1034009138">categories of third parties/with whom we have disclosed or shared their personal information;</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{85}" paraid="7402566">categories of personal information that we have disclosed or shared with a third party for a business purpose;</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{98}" paraid="139970642">categories of personal information collected; and</p>
+	</li>
+	<li>
+	<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{107}" paraid="715960239">categories of third parties to whom the residents’ personal information has been sold and the specific categories of personal information sold to each category of third party.</p>
+	</li>
+</ul>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{124}" paraid="919578597"><strong>Submitting Requests:</strong> Requests to exercise the right to deletion, right to a copy, and / or the right to know may be submitted at sempra.com/privacy or by contacting us at (619)<a href="tel:+16196962000"> </a>696-2000. We will respond to verifiable requests received from California consumers as required by law.</p>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{172}" paraid="1135897013"><strong>Incentives and Discrimination:</strong> The CCPA prohibits discrimination against California residents for exercising their rights under the CCPA and imposes requirements on any financial incentives offered to California residents related to their personal information.</p>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{194}" paraid="1566416970"><strong>Discrimination:</strong> Businesses may not discriminate against residents who exercise their rights under CCPA. Discrimination may exist where a business denies or provides a different level or quality of goods or services, or charges (or suggests that it will charge) different prices or rates or impose penalties on residents who exercise their CCPA rights, unless doing so is reasonably related to the value provided to the business by the residents’ data.</p>
+
+<p paraeid="{6a133008-6a06-4719-ae27-2e8ce611034a}{250}" paraid="1809526449"><strong>Disclosure of Incentives:</strong> If businesses offer any financial incentives for the collection, sale or deletion of their personal information, residents have the right to be notified of any financial incentives offers and their material terms, the right not be included in such offers without prior informed opt-in consent, and the right to be able to opt-out of such offers at any time. Businesses may not offer unjust, unreasonable, coercive or usurious financial incentives. We do not offer any such incentives at this time.</p>
+
+</div>
+<div class="webform">
+  
+</div>
+
+                  </div>
+                                                                <div class="tab-accordion">
+                    <a href="#tab-2262" data-index="3">
+                    CCPA Requests
+                    </a>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="tab-2262">
+                        <h4>CCPA Requests</h4>
+<div class="body">
+  <h2>CCPA Requests</h2>
+
+<p><strong>This form is for requests submitted to Sempra Energy and its subsidiaries other than Southern California Gas Company and San Diego Gas &amp; Electric Company pursuant to the California Consumer Privacy Act (CCPA). If you are inquiring about personal information collected or disclosed by those companies, please visit their websites.</strong></p>
+
+<p>Please note that consumers may generally make a request only on behalf of themselves or their minor children. A person registered with the California Secretary of State may also make a request on behalf of the consumer if authorized to do so pursuant to such registration. To initiate the process to submit documentation verifying that you are a consumer making a request on behalf of your minor child or that you have such registered authorization, please contact (619) 696-2000.</p>
+
+<p><iframe allowtransparency="true" scrolling="no" src="https://sempra.wufoo.com/embed/zhyu8331ssx8bn/" style="width:100%;border:none" title="Embedded Wufoo Form" height="1355" frameborder="0">Fill out my Wufoo form!</iframe></p>
+
+</div>
+<div class="webform">
+  
+</div>
+
+                  </div>
+                                          </div>
+          </div>  
+        </div>    
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+</div>
+                          
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+    </div>
+  
+        <div role="main-bottom" class="main-bottom-container container-fluid js-quickedit-main-bottom-content">
+      <div class="row">
+
+                
+                      </div>
+    </div>
+  
+    <div id="footer" class="region region--footer">
+          <footer class="footer container" role="contentinfo">
+        <div class="row">
+                                            <div class="col-sm-9">
+              <div class="row">
+                                                                    <div class="col-sm-4">
+                      <div class="region region-footer-col-1">
+    <nav role="navigation" aria-labelledby="block-semprab-footer-menu-1-menu" id="block-semprab-footer-menu-1" class="block block-menu-block block-menu-blockfooter clearfix">
+            
+  <p class="visually-hidden block-title" id="block-semprab-footer-menu-1-menu">Footer Menu 1</p>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+                                        <a href="/about-us" target="_self" data-drupal-link-system-path="node/1713">About Us</a>
+              </li>
+                      <li class="last">
+                                        <a href="/careers/diversity-inclusion" target="_self" rel="" data-drupal-link-system-path="node/157">Diversity &amp; Inclusion</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+                  </div>
+                                      
+                                                                    <div class="col-sm-4">
+                      <div class="region region-footer-col-2">
+    <nav role="navigation" aria-labelledby="block-semprab-footer-menu-2-menu" id="block-semprab-footer-menu-2" class="block block-menu-block block-menu-blockfooter clearfix">
+            
+  <p class="visually-hidden block-title" id="block-semprab-footer-menu-2-menu">Footer Menu 2</p>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+                                        <a href="/investors" id="" target="">Investors</a>
+              </li>
+                      <li class="last">
+                                        <a href="/newsroom" target="_self" rel="" data-drupal-link-system-path="node/1718">Newsroom</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+                  </div>
+                                      
+                                                                    <div class="col-sm-4">
+                      <div class="region region-footer-col-3">
+    <nav role="navigation" aria-labelledby="block-semprab-footer-menu-3-menu" id="block-semprab-footer-menu-3" class="block block-menu-block block-menu-blockfooter clearfix">
+            
+  <p class="visually-hidden block-title" id="block-semprab-footer-menu-3-menu">Footer Menu 3</p>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+                                        <a href="/careers" id="" target="" data-drupal-link-system-path="node/1716">Careers</a>
+              </li>
+                      <li class="last">
+                                        <a href="/contact-us" id="" target="" data-drupal-link-system-path="node/1798">Contact Us</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+                  </div>
+                                                </div>
+            </div>
+                      
+                                            <div class="col-sm-3">
+                <div class="region region-footer-col-4">
+    <nav role="navigation" aria-labelledby="block-semprab-footer-menu-4-menu" id="block-semprab-footer-menu-4" class="block block-menu-block block-menu-blockfooter clearfix">
+      
+  <p id="block-semprab-footer-menu-4-menu" class="block-title">Social</p>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+                                        <a href="https://www.linkedin.com/company/165918?trk=tyah" id="li" target="_blank">LinkedIn</a>
+              </li>
+                      <li>
+                                        <a href="https://twitter.com/sempraenergy" id="tw" target="_blank">Twitter</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://www.instagram.com/sempraenergy/" id="instagram" target="_blank">Instagram</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+            </div>
+                              </div>
+      </footer>
+      </div>
+  <div id="footer-2" class="region region--footer">
+          <footer class="footer container" role="contentinfo">
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="region region-footer">
+    <section id="block-semprab-footer-block-companies" class="block block-block-content block-block-content2e014043-b846-4b45-8e03-a28043e6d858 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-text field--type-text-long field--label-hidden field--item"><p>© <script>document.write( new Date().getUTCFullYear() );</script>2020 Sempra Energy. All rights reserved.&nbsp; &nbsp; &nbsp;&nbsp;<a href="/privacy" id="" target="">Privacy</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="/terms-and-conditions" id="" target="">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;|&nbsp; &nbsp;<a href="/forward-looking-statements" rel="" target="_self">Forward-Looking Statements</a>&nbsp;&nbsp;&nbsp;|&nbsp; &nbsp;<a href="/sitemap" rel="" target="_self">Sitemap</a></p>
+
+<p>Sempra South American Utilities, Sempra North American&nbsp;&nbsp;Infrastructure, Sempra LNG, Sempra Renewables, Sempra Mexico, Sempra Texas Utility, Oncor Electric Delivery Company LLC (Oncor) and Infraestructura Energética Nova, S.A.B. de C.V. (IEnova) are not the same companies as the California utilities, San Diego Gas &amp; Electric Company (SDG&amp;E) or Southern California Gas Company (SoCalGas), and Sempra South American Utilities, Sempra&nbsp;North American Infrastructure, Sempra LNG, Sempra Renewables, Sempra Mexico, Sempra Texas Utility, Oncor and IEnova are not regulated by the California Public Utilities Commission.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+        </div>
+      </footer>
+        </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1752","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorheight":{"offset":1,"line_height":1.5,"unit":"em","disable_autogrow":null},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"user":{"uid":0,"permissionsHash":"ac15f21052c582733cc7b53334fd9b3ffb7bb85784b33fb02a4f90645a3746e6"}}</script>
+<script src="/core/assets/vendor/underscore/underscore-min.js?v=1.8.3"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.8.1"></script>
+<script src="/core/misc/drupal.js?v=8.8.1"></script>
+<script src="/core/misc/drupal.init.js?v=8.8.1"></script>
+<script src="/themes/contrib/bootstrap/js/drupal.bootstrap.js?q5wvcs"></script>
+<script src="/themes/contrib/bootstrap/js/attributes.js?q5wvcs"></script>
+<script src="/themes/contrib/bootstrap/js/theme.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/waypoint.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/modernizr.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/icheck.ext.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.scrollTo.min.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.cycle2.min.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.cycle2.carousel.min.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.cycle2.swipe.min.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.easing.1.3.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.selectric.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.touchswipe.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/cookie.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/main-nav.mobile-landscape.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/scripts.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/accordions.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/hover.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/jquery.custom-scrollbar.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/main.dropdown.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/main-nav.custom-scrollbar.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/superscript.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/video.autoplay.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/gtm-events.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/affix.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/alert.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/button.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/carousel.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/collapse.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/dropdown.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/modal.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/tooltip.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/popover.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/scrollspy.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/tab.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/bootstrap/js/transition.js?q5wvcs"></script>
+<script src="/themes/contrib/bootstrap/js/popover.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/tabs-url.js?q5wvcs"></script>
+<script src="/themes/custom/semprab/js/tabs-to-dropdown.js?q5wvcs"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e9ddf909db","applicationID":"77073612","transactionName":"YFBUN0FTDBJYWkZZXVkadwBHWw0PFklTV1doVlcAW1c=","queueTime":0,"applicationTime":23,"atts":"TBdXQQlJHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" id="">document.cookie="pv\x3d"+((parseInt(google_tag_manager["GTM-5P87PR5"].macro(2))||0)+1)+";path\x3d/";</script>
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","o0bjd");twq("track","PageView");</script>
+<script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=o0bjd&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.sempra.com%2Fprivacy" type="text/javascript"></script></body></html>

@@ -1,0 +1,909 @@
+<html decorate:with="#root" class="dj_gecko dj_ff73 dj_contentbox"><head><script async="" src="https://cdn.appdynamics.com/adrum-ext.18b6b3ec105ee15f14ef7c382e15f446.js"></script><script type="text/javascript" async="" src="//statse.webtrendslive.com/dcskvvq5c1000047gwmksu7ev_4w9l/wtid.js?callback=Webtrends.dcss.dcsobj_0.dcsGetIdCallback"></script><script src="https://nexus.ensighten.com/metlife/prod/code/1f1b592b1569702caa33050c555e6c58.js?conditionId0=422872"></script><script type="text/javascript" async="" src="https://nexus.ensighten.com/metlife/prod/code/5b341ef36e2aaa6444606ba5259040da.js?conditionId0=207299"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/phoenix/main.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/3rdparty/liveperson/loader.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/dojo/parser.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/dojo/window.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/dojo/_base/url.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/dojo/date/stamp.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/phoenix/nls/main_en-us.js"></script><script type="text/javascript" charset="utf-8" src="/edge/ui/public/res/js-src/spin.min.js"></script><script src="//nexus.ensighten.com/metlife/prod/serverComponent.php?r=534.7124413796548&amp;ClientID=155&amp;PageID=https%3A%2F%2Fonline.metlife.com%2Fedge%2Fweb%2Fpublic%2FprivacyPolicy.html%3Fview%3DloggedOut"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=10">
+		
+		<!--mod-adrum_v2.2.0-SNAPSHOT--><script>if(!window['adrum-start-time']){window['adrum-start-time']=new Date().getTime();window['adrum-config'] = {appKey:'EUM-AAB-AUY'};document.write('<scr' + 'ipt src="https://assets.services.metlife.com/content/dam/MetOnline/public/adrum/adrum-latest.js"></scr' + 'ipt>');}</script><script src="https://assets.services.metlife.com/content/dam/MetOnline/public/adrum/adrum-latest.js"></script><script type="text/javascript" src="//nexus.ensighten.com/metlife/Bootstrap.js"></script>
+                <script type="text/javascript" src="/edge/ui/public/res/3rdparty/iframeResizer/iframeResizer.contentWindow.min.js"></script>
+		
+		
+	<title>Login</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- Added for ADOBE changes 2017 STARTS -->
+	
+	<!-- Added for ADOBE changes 2017 ENDS -->
+	<style type="text/css">
+		@import url('/edge/ui/public/res/css/phoenix.css');
+		@import url('/edge/ui/public/res/css/pages/homepage.css');
+		@import url('/edge/ui/public/css/login.css');
+		@import url('/edge/ui/public/css/grid.css');
+	</style>
+    <style type="text/css" media="print">
+		@import url('/edge/ui/public/res/css/pages/MyAccounts_print.css');
+	</style>
+	<script type="text/javascript" src="/edge/ui/public/res/js-src/config.js"></script>
+	<script type="text/javascript" src="/edge/ui/public/res/js-src/dojo/dojo.js" data-dojo-config="parseOnLoad: true"></script>
+	<script type="text/javascript">
+	    /*<![CDATA[*/
+		    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+		    var viewportmeta = document.querySelector('meta[name="viewport"]');
+		    if (viewportmeta) {
+		        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+		        document.addEventListener('orientationchange', function () {
+		            viewportmeta.content = 'width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1';
+		        }, false);
+		      }
+		    }
+		/*]]>*/
+	</script>
+	
+	<script type="text/javascript">/*<![CDATA[*/
+	var loginUrl = location.href;
+		require(['dojo/ready', 'dojo/parser', 'dojo/query', 'dojo/_base/connect', 'dojo/window','dojo/dom-geometry'
+			],function(ready,parser,$,connect,win,domGeom){
+			ready(function() {
+				if(loginUrl.match('loggedOut')!= null){
+				dojo.byId('goHome').style.display='block';
+				dojo.byId('PrivacyPolicyHeaderWrapper').style.display='block';
+				dojo.byId('PrivacyPolicyHeader').style.display='block';
+				dojo.byId('loggedOutFooter').style.display='block';
+				dojo.byId('loggedInFooter').style.display='none';
+				}else if(window.location.search.match('preSignin')!=null){
+				dojo.byId('goHome').style.display='none';
+				dojo.byId('PrivacyPolicyHeaderWrapper').style.display='none';
+				dojo.byId('PrivacyPolicyHeader').style.display='block';
+				dojo.byId('loggedOutFooter').style.display='none';
+				dojo.byId('loggedInFooter').style.display='none';
+				}else{
+				dojo.byId('goHome').style.display='none';
+				dojo.byId('PrivacyPolicyHeader').style.display='none';
+				dojo.byId('PrivacyPolicyHeaderWrapper').style.display='none';
+				dojo.byId('loggedOutFooter').style.display='none';
+				dojo.byId('loggedInFooter').style.display='block';
+				}
+				dojo.byId('PrivacyPolicyMainContent').style.display='block';
+			});
+		});
+		function printpage()
+  {
+  window.print()
+  }
+  
+ 
+      function loadTermsOfUse(logState) {
+			require([ "dojo/parser", "phoenix/url" ], function(parser, url) {
+
+				if (logState == "loggedIn") {
+					document.location = url.wrap(url.forFlow('public/termsOfUse.html?fromPhoenix=true&view=' + logState));
+				} else if(logState.match('preSignin')!=null){
+				document.location = url.forFlow(logState);
+				}else{
+					var fromSourceUrl = window.location.search.indexOf('source')
+					if(fromSourceUrl != -1){
+						document.location = url.forFlow('public/termsOfUse.html?fromPhoenix=true&view='+ logState +'&source=quickPay');
+					}
+					else{
+						document.location = url.forFlow('public/termsOfUse.html?fromPhoenix=true&view='+ logState);
+					}
+				
+				}
+			});
+		}
+		function loadPrivacy(urlValue) {
+			require(["phoenix/url" ], function( url) {
+			if(urlValue.match('preSignin')!=null)
+				//document.location = url.forFlow(urlValue);
+				window.scrollTo(0,0);
+			});
+		}
+		function getProductsDisclaimer(urlValue) {
+			require(["phoenix/url" ], function( url) {
+			if(urlValue.match('preSignin')!=null)
+				document.location = url.forFlow(urlValue);
+			});
+		}
+		function getHipaaNotices(urlValue){
+			require([ "dojo/parser", "phoenix/url" ], function(parser, url) {
+				document.location = url.forFlow(urlValue);
+			});
+		}
+		function loadLogin() {
+			require([ "phoenix/url" ], function(url) {
+
+				if (loginUrl.match("sweepStakes")) {
+					document.location = url.forFlow('public/sweepstakesLanding');
+				}if(window.location.search.match('preSignin')!=null){
+				document.location = url.forFlow('public/benefits');
+				}else{
+					document.location = url.forFlow('public/login');
+				}
+			});
+		}
+
+		function openUrl(Url) {
+			openWindow(Url, 780, 445, 5, 30);
+		}
+		//below method is taken from eservice
+		// Create a new popup window that opens on top
+		//in I.E. 5, and Netscape 4.7
+		//netscape 6.0 will open on top only the first time
+		function openWindow(url, argWidth, argHeight, argX, argY) {
+			// BEGIN 03/05/2012 - Primeon Finding H4
+			// overrides attribute value or takes value from parent in not set
+			var win = "";
+			//browser version
+			var browserVersion = navigator.appVersion;
+			var browserAgt = navigator.userAgent.toLowerCase();
+
+			//netscape indicator
+			var isNetscape;
+			var isIE;
+
+			//set netscape indicator
+			var i = browserVersion.indexOf("(");
+			isNetscape = (browserVersion.charAt(i + 1).toUpperCase() != "C");
+			var str = "location=yes,menubar,resizable=yes,scrollbars=yes,status=yes,toolbar,width="
+					+ argWidth
+					+ ",height="
+					+ argHeight
+					+ ",screenX="
+					+ argX
+					+ ",screenY=" + argY + ",left=" + argX + ",top=" + argY;
+			// END 03/05/2012 - Primeon Finding H4
+			// open, close then open the window again for IE to force it to open on top
+			if (!isNetscape) {
+				win = window.open('', "wind", str);
+				win.close();
+			}
+			win = window.open(url, "wind", str);
+			if (isNetscape)
+				win.focus();
+		}
+	/*]]>*/</script>
+	
+
+		
+		
+	<script type="text/javascript" src="/edge/ui/public/res/3rdparty/liveperson/mtagconfig.js" charset="utf-8"></script><script charset="UTF-8" src="https://lptag.liveperson.net/tag/tag.js?site=72771772"></script><script charset="UTF-8" id="_lpTagScriptId_0" src="https://lptag.liveperson.net/lptag/api/account/72771772/configuration/applications/taglets/.jsonp?v=2.0&amp;df=0&amp;b=3"></script><style type="text/css"></style></head>
+	
+
+	<body class="metlife phoenix claro homepage agreements">
+	
+	<div style="position: absolute; font-size: 80%;"></div>
+	<div id="PrivacyPolicyHeader" style="display: block;" class="loginContentWidth favorite">
+		<div class="infoBar linkbar">
+		<div class="loginInnerMargin">
+			
+		</div>
+		</div>
+	</div>
+	<div id="PrivacyPolicyHeaderWrapper" style="display: block;" class="loginContentWidth header">
+		<div class="loginWrapper headerWrapper">
+	<!-- Retail Seperation changes starts -->
+	
+		 <div class="logoBar">
+			<img src="/edge/ui/public/cms/img/Met_Brighthouse_blue.png" class="cobrand">
+		</div>
+		
+		
+		
+		
+		
+		
+	<!-- Retail Seperation changes ends -->
+		</div>
+	</div>
+	
+	<div id="PrivacyPolicyMainContent" style="display: block;" class="page">
+		<div class="body">
+		<div class="phoenixPage">
+			<div class="header">
+				<h1>Privacy Policy</h1>
+			</div>
+			<div data-dojo-type="dijit/layout/ContentPane" class="dijitContentPane content" data-dojo-attach-point="pageContent" id="dijit_layout_ContentPane_0" widgetid="dijit_layout_ContentPane_0">
+		<div class="row">
+			<div class="mainContent span_4">
+				<div id="goHome" style="display: block;" class="returnHomepage">
+					<a class="fBold" href="javascript:loadLogin();" title="Return to Homepage">« Return to Homepage</a>
+				</div>
+				<div><div class="privacyPage">
+						<div class="privacyMainSection">
+							<h2>Privacy Overview
+<br></h2>
+							<div>
+								<a onclick="printpage()" href="#">print</a>
+							</div>
+							<p>Protecting your privacy is important to us. Below you will find MetLife's privacy policies. These policies explain how we protect your personal information. If you would like additional information regarding our privacy policies, please contact us through our <a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/privacy-questions/index.html');">Ask a Privacy Policy Question form</a>, or write to your MetLife insurance company, c/o MetLife Privacy Office, P.O. Box 489, Warwick, Rhode Island 02887-9954.</p>
+							<p>
+								<a href="#Privacy">Online Privacy Policy</a>
+							</p>
+							<p>
+								<a href="#VAVLPrivacy">MetLife Total Control Account and Individual Life and Annuity Annual Customer Privacy Notice</a>
+							</p>
+							<p>
+								<a href="#AHPrivacy">MetLife Auto &amp; Home Annual Customer Privacy Notice</a>
+							</p>
+							<p>
+								<a href="#Customer">MetLife Customer Privacy Policy</a>
+							</p>
+						</div>
+						<hr>
+						<div class="privacySection">
+							<h3>
+								<a name="Privacy" id="Privacy"></a> Online Privacy Policy</h3>
+							<p>
+								<strong>Last Updated August 25,2017</strong>
+							</p>
+							<p>Welcome to MetLife!</p>
+							<p>The companies in the MetLife, Inc. family (collectively, "MetLife") recognize the importance of protecting all information that you, our online visitor, may choose to provide to us. (For purposes of this policy, references to "we", or "us", and "our" mean both of MetLife. To further this commitment, we have adopted this Online Privacy Policy to tell you how each of us collects, uses, stores, and shares the information you provide to us online.</p>
+							<p>Besides this Online Privacy Policy, we also have other more general privacy policies that may apply to you as a consumer or customer of MetLife. For more information about all of our privacy policies, please visit us at <a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/index.html');">www.metlife.com/about/privacy</a>.</p>
+							<h3>Online Privacy Policy FAQ</h3>
+							<h4>What information does this Online Privacy Policy cover?</h4>
+							<p>This Online Privacy Policy only applies to personal information collected on websites with a link to this Online Privacy Policy, and does not apply to information collected by either of us through any other means.</p>
+							<p>It covers how we collect, use, store, and share personal information as of the date that this Online Privacy Policy is posted.</p>
+							<p>It also covers information submitted and collected online, and does not necessarily apply to information that we collect offline.</p>
+							<p>And it only covers websites maintained by MetLife for its domestic operations. Also, this policy doesn't apply to any other websites maintained by other companies or organizations to which we link. MetLife is not responsible for the content or activities provided on those websites.</p>
+							<h4>What types of personal information do we collect about our online visitors?</h4>
+							<p>Personal information is information that identifies you. We only collect personal information voluntarily given to us by our visitors. Generally, we don't require you to give us personal information to access public areas of our website. Certain secure web areas, however, enable or require you to provide personal information online when you use specific features on our website. For example, we collect personal information from you when you:</p>
+							<ul>
+								<li>Apply for or obtain a product or service</li>
+								<li>Register to access your financial account information</li>
+								<li>Ask to have a representative contact you</li>
+								<li>Ask to receive information about our products or services</li>
+								<li>Purchase merchandise from our online store</li>
+								<li>Participate in any promotion or survey</li>
+								<li>Request customer or technical support</li>
+							</ul>
+							<p>For example, this information may include:</p>
+							<ul>
+								<li>Name</li>
+								<li>Account or policy number</li>
+								<li>Social security number</li>
+								<li>Credit card or debit card number</li>
+								<li>Telephone number</li>
+								<li>User name</li>
+								<li>Email address</li>
+								<li>Postal or billing address</li>
+								<li>State identification card number</li>
+								<li>Driver's license number</li>
+								<li>Passport number</li>
+								<li>Medical information</li>
+								<li>Date of birth</li>
+								<li>Mother's maiden name</li>
+								<li>Unique biometric data</li>
+							</ul>
+							<p>Additionally, we may also collect other types of information such as gender, occupation, hobbies, and other preferences.</p>
+							<h4>Children</h4>
+							<p>We don't knowingly collect personal information from children under 13.</p>
+							<h4>Information We Collect Through Technology</h4>
+							<p>We collect information through technology to enhance our ability to serve you. For example, when you come to one of our websites, we collect your IP address. An IP address is often associated with the portal you used to enter the Internet, like your ISP (Internet service provider), company, association, or university. Standing alone, however, your IP address is not personally identifiable information. At times, we also use IP addresses to study how often our visitors visit various areas of our websites. We may combine this information with personal information. Finally, our websites do not respond to browser Do Not Track signals or other similar mechanisms.</p>
+							<h4>Cookies and Web Beacons</h4>
+							<p>Our websites also use cookies and web beacons to collect and store information.</p>
+							<p>
+								<strong>Cookies</strong> are pieces of information that a website sends to your computer while you are viewing the website. We use cookies for a variety of purposes. For example, when you return to one of our websites after logging in, cookies provide information to the website so that the website will remember who you are. You can choose to have your computer warn you each time a cookie is sent, or you can choose to turn off all cookies. You can do this through your browser (e.g., Google Chrome or Microsoft Internet Explorer) settings. Each browser is a little different, so look at your browser Help menu to learn the correct way to modify your cookies. If you turn cookies off, you won't have access to many features that make your web experience smoother, and some of our services may not function properly.</p>
+							<p>
+								<strong>Web beacons</strong> are small pieces of data that are embedded in images on the pages of websites and in our email communications. We also use these web beacons to analyze the traffic patterns, such as the frequency users visit various areas of our websites. These technical methods may involve transmitting information either directly to us or to another entity authorized by us to collect information on our behalf. We also use web beacons in HTML e-mails that we send our visitors to determine whether our visitors have opened those e-mails or clicked on links in those e-mails.</p>
+							<p>
+								<strong>Network Advertisers.</strong> Advertisements managed by third parties may be placed on our websites. These companies are called 'network advertisers.' Network advertisers placing advertisements on our websites may also use cookies and web beacons to collect information when you click on or move your cursor over one of their banner advertisements. You may not realize this information is being collected. In some cases, we may have access to information from web beacons and cookies used by network advertisers on our sites, and this information may permit us to identify other sites that you have visited that are also associated with the network advertiser. In doing so, however, network advertisers do not collect personal information, and we do not give any personally identifiable information to them.</p>
+							<p>For more information about our ad service provider and its cookies, including information about how to opt out of these technologies, go to <a href="javascript:openUrl('http://www.google.com/intl/en/policies/privacy/');">http://www.google.com/intl/en/policies/privacy/</a> , <a href="javascript:openUrl('http://atlassolutions.com/privacy-policy/');">http://atlassolutions.com/privacy-policy</a> and <a href="javascript:openUrl('http://www.aboutads.info/consumers');">http://www.aboutads.info/consumers</a>.</p>
+							<p>Finally, once you've clicked on an advertisement and have left our websites, our Online Privacy Policy no longer applies, and you must read the privacy policy of the advertiser to see how your personal information will be handled on their website.</p>
+							<p>
+								<strong>How is your personal information used and shared?</strong>
+							</p>
+							<p>Whatever the purpose may be, we will only collect information to the extent reasonably necessary to fulfill your requests and our legitimate business objectives. We may also use and disclose your personal information to our affiliates and others for any purpose allowed by law.</p>
+							<p>
+								<strong>Online Activities and Updates</strong>
+							</p>
+							<p>For example, we use and may disclose your personal information to:</p>
+							<ul>
+								<li>authenticate your identity</li>
+								<li>provide you with online planning tools</li>
+								<li>process an application for our products and administer your account information</li>
+								<li>respond to your product or service information requests</li>
+								<li>send you customer newsletters and updates</li>
+								<li>provide you with additional materials that may be of interest, including marketing materials</li>
+								<li>for other everyday business purposes, such as product development and website administration</li>
+							</ul>
+							<h4>e-Cards</h4>
+							<p>When you send an e-card describing any of our products to your friends and family, we delete both sender and recipient email address information after you send the e-card.</p>
+							<h4>Purchase or Sale of Businesses</h4>
+							<p>From time to time, we may purchase a business or sell one or more of our businesses and your personal information may be transferred as a part of the purchase or sale. If we purchase a business, the personal information received with that business would be treated in accordance with all of our privacy policies, including this Online Privacy Policy, if it is practicable and permissible to do so. If we sell a business, we will include provisions in the selling contract requiring the purchaser to treat your personal information in the same way required by our privacy policies, if it is practicable and permissible to do so. The provisions of this paragraph will also apply if we are sold as part of bankruptcy proceedings.</p>
+							<h4>Disclosures Required By Law and Disclosures to Help Protect the Security and Safety of Our Websites and Others</h4>
+							<p>We may disclose any information as permitted or required by law, when we believe in good faith it is necessary for safety purposes, required for legal reporting, or to protect our legal rights or to enforce our Terms of Use or any contest rules. We may also disclose information about you to our auditors, regulators, legal advisors, or to respond to a subpoena.</p>
+							<h4>What choices do you have about the collection, use, and sharing of your personal information?</h4>
+							<p>We don't share our customer's personal information with unaffiliated third parties for their own direct marketing purposes.</p>
+							<p>If you signed up to receive newsletters or other e-mail messages from us, you can opt-out any time by clicking the unsubscribe link at the bottom of the message. You may also choose to opt-out from receiving marketing materials from us by making a request at <a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/opting-out/index.html');">www.metlife.com/optout</a>.</p>
+							<p>Finally, at this time, our websites do not respond to browser Do Not Track signals or similar mechanisms.</p>
+							<h4>What kinds of security measures do we take to safeguard your personal information?</h4>
+							<p>The security and confidentiality of your information is extremely important to us. That's why we have technical, administrative, and physical security measures in place to protect your personal information from unauthorized access and improper use. For example, the areas of our website that enable or require you to submit personal information online use encryption to protect that information. We also review our security procedures periodically to consider appropriate new technology and updated methods. But, despite our reasonable efforts, no security measure is ever perfect or impenetrable.</p>
+							<h4>How can you update your personal information?</h4>
+							<p>You can use our <a href="javascript:openUrl('https://www.metlife.com/about/corporate-profile/contact/index.html');">online resources page</a> to submit any changes to your contact information.</p>
+							<h4>How can you ask questions, or send us comments, about this Online Privacy Policy?</h4>
+							<p>If you have questions or wish to send us comments about this Online Privacy Policy, e-mail us at <a href="mailto:privacy@metlife.com">privacy@metlife.com</a> or call or write to us at:</p>
+							<p>MetLife, Inc. Attn.: Privacy Policy Administrator P.O. Box 489 Warwick, RI 02887-9954 (877) 638-7684</p>
+							<p>You can also contact us through our form, which is available at the link "Ask a Privacy Policy Question" on the first page of this Online Privacy Policy.</p>
+							<h4>How will you know if we amend this Online Privacy Policy?</h4>
+							<p>We may amend this Online Privacy Policy at any time. If we make any material change in how we collect your personal information online, or how we use or share it, we will prominently post notice of the changes on the websites covered by this Online Privacy Policy. Any material changes to this Online Privacy Policy will be effective 10 days after our posting of notice of the changes on the websites covered by this Online Privacy Policy.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+						</div>
+						<hr>
+						<div class="privacySection">
+							<h3>
+								<a name="VAVLPrivacy" id="VAVLPrivacy"></a> MetLife Total Control Account and Individual Life and Annuity Annual Customer Privacy Notice</h3>
+							<p>We know that you buy our products and services because you trust us. This notice explains how we protect your privacy and treat your personal information. It applies to current and former customers. "Personal information" here means anything we know about you personally.</p>
+							<h4>Protecting Your Information:</h4>
+							<p>We take important steps to protect your personal information. We treat it as confidential. We tell our employees to take care in handling it. We limit access to those who need it to perform their jobs. Our outside service providers must also protect it, and use it only to meet our business needs. We also take steps to protect our systems from unauthorized access. We comply with all laws that apply to us.</p>
+							<h4>Collecting Your Information:</h4>
+							<p>We typically collect your name, address, age, and other relevant information. For example, we may ask about your:</p>
+							<ul>
+								<li>finances</li>
+								<li>creditworthiness</li>
+								<li>employment</li>
+								<li>health (if you apply for life, disability or certain other types of insurance)</li>
+							</ul>
+							<p>We may also collect information about any business you have with us, our affiliates, or other companies. Our affiliates include life, car, and home insurers. They also include a bank, a legal plans company, and securities broker-dealers. In the future, we may also have affiliates in other businesses.</p>
+							<h4>How We Get Your Information:</h4>
+							<p>We get your personal information mostly from you. We may also use outside sources to help ensure our records are correct and complete. These sources may include consumer reporting agencies, employers, other financial institutions, adult relatives, and others. These sources may give us reports or share what they know with others. We don't control the accuracy of information outside sources give us. If you want to make any changes to information we receive from others about you, you must contact those sources.</p>
+							<h4>Using Your Information:</h4>
+							<p>We collect your personal information to help us decide if you're eligible for our products or services. We may also need it to verify identities to help deter fraud, money laundering, or other crimes. How we use this information depends on what products and services you have or want from us. It also depends on what laws apply to those products and services. For example, we may also use your information to:</p>
+							<ul>
+								<li>administer your products and services</li>
+								<li>process claims and other transactions</li>
+								<li>perform business research</li>
+								<li>confirm or correct your information</li>
+								<li>market new products to you</li>
+								<li>help us run our business</li>
+								<li>comply with applicable laws</li>
+							</ul>
+							<h4>Sharing Your Information With Others:</h4>
+							<p>We may share your personal information with your consent or as permitted or required by law. For example, we may share your information with businesses hired to carry out services for us. We may also share it with our affiliated or unaffiliated business partners through joint marketing agreements. In those situations, we share your information to jointly offer you products and services or have others offer you products and services we endorse or sponsor.</p>
+							<p>Other reasons we may share your information include:</p>
+							<ul>
+								<li>doing what a court, law enforcement, or government agency requires us to do (for example, complying with search warrants or subpoenas)</li>
+								<li>telling another company what we know about you if we are selling or merging any part of our business</li>
+								<li>giving information to a governmental agency so it can decide if you are eligible for public benefits</li>
+								<li>giving your information to someone with a legal interest in your assets (for example, creditor with a lien on your account)</li>
+								<li>those listed in our "Using Your Information" section above</li>
+							</ul>
+							<h4>Opting Out:</h4>
+							<p>You may tell us not to share your information with our affiliates for their own marketing purposes or unaffiliated business partners as part of a joint marketing arrangement. Even if you don't "opt out," we will not share your information with unaffiliated companies for their own marketing purposes without a joint marketing arrangement. Before sharing your information with an affiliate for its own marketing purposes or a joint marketing partner, we will notify you and give you an opportunity to "opt out." Depending on your product or service, we may give the "opt-out" form when we first issue your policy or open your account. You can also "opt out" anytime by contacting your Agent directly or contacting us at:</p>
+							<div class="privacyAddress">
+								<p>
+									<span>MetLife Privacy Office</span>
+									<span>P. O. Box 489</span>
+									<span>Warwick, Rhode Island 02887-9954</span>
+									<span>(877) 638-7684</span>
+									<span>
+										<a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/opting-out/index.html');">www.metlife.com/optout</a>
+									</span>
+								</p>
+								<p>If you hold a policy or account jointly with someone else, we will accept instructions from either of you, and apply them to the entire policy or account</p>
+							</div>
+							<h4>Accessing and Correcting Your Information:</h4>
+							<p>You may ask us for a copy of the personal information we have about you. Generally, we will provide it as long as it is reasonably retrievable and within our control. You must make your request in writing listing the account or policy numbers with the information you want to access. For legal reasons, we may not show you anything we learned as part of a claim or lawsuit, unless required by law.</p>
+							<p>If you tell us that what we know about you is incorrect, we will review it. If we agree, we will update our records. Otherwise, you may dispute our findings in writing, and we will include your statement whenever we give your disputed information to anyone outside MetLife.</p>
+							<h4>Questions:</h4>
+							<p>We want you to understand how we protect your privacy. If you have any questions about this notice, please contact us. When you write, include your name, address, and policy or account number.</p>
+							<h4>Send privacy questions to:</h4>
+							<div class="privacyAddress">
+								<p>MetLife Privacy Office P. O. Box 489 Warwick, RI 02887-9954 privacy@metlife.com</p>
+							</div>
+							<p>We may revise this privacy notice. If we make any material changes, we will notify you as required by law. We provide this privacy notice to you on behalf of these MetLife companies:</p>
+							<table cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td>Metropolitan Life Insurance Company</td>
+										<td>&nbsp; Metropolitan Tower Life Insurance Company</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+						</div>
+						<hr>
+						<div class="privacySection">
+							<h3>
+								<a name="AHPrivacy" id="AHPrivacy"></a> MetLife Auto &amp; Home Annual Customer Privacy Notice</h3>
+							<p>This Privacy Notice is given to you on behalf of one or more of the following companies:</p>
+							<ul>
+								<li>Metropolitan Property and Casualty Insurance Company</li>
+								<li>Metropolitan Casualty Insurance Company</li>
+								<li>Metropolitan Direct Property and Casualty Insurance Company</li>
+								<li>Metropolitan General Insurance Company</li>
+								<li>Metropolitan Group Property and Casualty Insurance Company</li>
+								<li>Economy Fire &amp; Casualty Company</li>
+								<li>Economy Preferred Insurance Company</li>
+								<li>Metropolitan Lloyds Insurance Company of Texas</li>
+								<li>Economy Premier Assurance Company</li>
+								<li>Liberty County Mutual Insurance Company</li><li>Metropolitan Tower Life Insurance</li>
+							</ul>
+							<h4>We are required by law to give you this notice. Please read it carefully.</h4>
+							<p>It describes in broad terms how we learn about you and members of your household who may be covered under your insurance with us (collectively 'you') and how we treat the information we get about you. At MetLife Auto &amp; Home, we respect your right to privacy. We treat all your personal information confidentially before, during and even after your business relationship with us.</p>
+							<h4>Why We Need Information:</h4>
+							<p>We need to know about you so that we can provide the insurance and other products and services you've asked for. When you first apply, we need information to determine if you qualify for coverage and at what rate. If you are insured with us, we may need information to conduct periodic reviews to make sure that you are still eligible for coverage, and that the rate charged is correct. We may also need it to administer your business with us, evaluate claims, process transactions and run our business. What we need to know includes names of all members of your household, address, age and other basic information. But we may need more information, such as employment, business conducted with us, with other MetLife companies (our 'affiliates') or with other companies and information from consumer reports.</p>
+							<h4>How We Get Information:</h4>
+							<p>What we know about you we get mostly from you. Your application and claims are important sources of information for us. But we may also have to find out more about you to make sure that what we know is correct and complete. Those sources may include adult relatives, our affiliates, unaffiliated insurers, consumer reporting agencies, and others. For example, we may ask another insurer for information about the insurance you have with them and the claims you have filed.</p>
+							<p>We may also ask a consumer reporting agency for a 'consumer report' about you. Any consumer reporting agency that gathers information about you may share this information with others who are authorized to use consumer reports by the Federal Fair Credit Reporting Act or by state credit reporting acts. Consumer reports may tell us certain things about you including but not limited to:</p>
+							<ul>
+								<li>your driving record (e.g., Motor Vehicle Reports or MVR's),</li>
+								<li>financial information (e.g. Credit Reports),</li>
+								<li>your record of claims, or</li>
+								<li>the condition and maintenance of your property.</li>
+							</ul>
+							<p>Please see the Consumer Reports section below.</p>
+							<h4>How We Protect What We Know:</h4>
+							<p>We treat what we know about you confidentially. Our employees are told to take care in handling your information. They may get information about you only when there is a good reason to do so. We take steps to make our computer data bases secure and to safeguard the information we have about you.</p>
+							<h4>How We Use And Disclose What We Know About You:</h4>
+							<p>We may use what we know about you to help us serve you better and to ensure you are treated fairly. We are allowed by law to use it, and disclose it to our affiliates and others, for many purposes. For instance, we may use your information, and disclose it to others, in order to:</p>
+							<div>
+								<ul>
+									<li>Help us evaluate your request for a product or service from us or an affiliate</li>
+									<li>Help us process claims and other transactions</li>
+									<li>Confirm or correct what we know about you</li>
+									<li>Help us prevent fraud and other crimes</li>
+									<li>Help us run our business</li>
+									<li>To comply with applicable laws</li>
+									<li>Process information for us</li>
+									<li>Perform research for us</li>
+									<li>Audit our business</li>
+								</ul>
+							</div>
+							<p>We generally will not give information about you to third parties without your consent, unless otherwise permitted by law. When we do disclose information we generally will disclose only what we consider reasonably necessary and no more. If necessary to conduct our business, we may give information to:</p>
+							<ul>
+								<li>our agents,</li>
+								<li>our affiliates, or</li>
+								<li>others who perform business services for us.</li>
+							</ul>
+							<p>When we disclose information to others to perform business services for us, they must agree to protect this information. And they may use the information only for the purposes of performing those business services. Other reasons we may disclose what we know about you include:</p>
+							<ul>
+								<li>Doing what a court or government agency requires us to do; for example, complying with a search warrant or subpoena,</li>
+								<li>Telling another company about you, if we may be selling any part of our business or merging with another company; or</li>
+								<li>Giving your information to someone pursuant to your written authorization.</li>
+							</ul>
+							<p>We may use what we know about you in order to offer you our other products and services. We may also provide information to others outside of the MetLife companies, such as marketing companies, to help us offer our own products and services to you. If you do not qualify for coverage from the MetLife Auto &amp; Home affiliate to which you applied, and you directed us to do so on your application, we may share information with an affiliated MetLife Auto &amp; Home company that offers a similar policy for which you qualify. In addition, we can tell you about our affiliates and the products that they offer. To the extent permitted by law, we may also disclose information to your own Independent Insurance Agent or Broker.</p>
+							<p>Unless you tell us not to (see 'Opt Out' Election below), we may disclose information to our affiliates so that they can offer their products and services directly to you - without your specific authorization or direction. Our affiliates include life, securities firms, broker-dealers, a bank, a legal plans company and financial advisors. In the future, we may have affiliates in other businesses. In addition, if we have joint marketing agreements with unaffiliated companies, we may give them information about you so that we can offer products jointly or so they can offer products and services endorsed or sponsored by us to you. But we will not share information for joint marketing if you tell us not to or if the law that applies to you does not allow it.</p>
+							<p>Even if you do not 'opt out'', we will not share your information with unaffiliated companies who may want to market their products directly to you, unless it is in connection with a joint marketing arrangement (as described above). For example, we will not sell or otherwise disclose your information to a catalog company.</p>
+							<h4>"Opt Out" Election:</h4>
+							<p>You can tell us not to share your information to let our affiliates market their products directly to you or not to disclose your information to a third party in connection with a joint marketing arrangement. To make this election, please complete an "Opt Out" form and mail it to the address indicated on the form. If you are renewing your policy and have not received a form with this notice please see "<span class="fBold">You Can Get Other Information from Us</span>" below. If you bought your MetLife Auto &amp; Home insurance through an Independent Agent or certain of our MetLife Auto &amp; Home Group Insurance Programs, you do not need to Opt Out. Our contract with your representative prohibits us from sharing your information for marketing purposes.</p>
+							<h4>Consumer Reports:</h4>
+							<p>Consumer reporting agencies are independent and impartial. They provide information to others in the form of consumer reports. They do not make decisions related to the insurance you applied for or have with us.</p>
+							<p>If we deny or change your coverage, or increase your premium, based on information in a consumer report, we will tell you and provide the name and address of the consumer reporting agency to you. You may obtain a copy of your consumer report by contacting the consumer reporting agency directly. If you contact the consumer reporting agency within sixty (60) days of the denial, change or premium increase, the report will be furnished free of charge.</p>
+							<p>In a few cases, if you have authorized us to do so in connection with your application, we may ask a consumer reporting agency to provide us with an 'investigative consumer report ' which means they will ask others about you. This type of report is described in more detail on the application or related materials given to you with the application. In this case, we will ask the agency to contact you as well. The information collected may be kept by the agency and later given to others, as permitted by law.</p>
+							<h4>You Can See and Correct Your Information:</h4>
+							<p>Generally, we will let you review what we know about you if you ask us in writing. (Because of its legal sensitivity, we will not show you anything that we learned in connection with a claim or lawsuit.) If you tell us that what we know about you is incorrect, we will review it. If we agree with you, we will correct our records. If we do not agree with you, you may tell us in writing, and we will include your statement when we give your information to anyone outside MetLife. It will also be sent to anyone that you designate who may have received such information in the past two years, or as otherwise required by law. (Minnesota residents may also file an appeal with the Insurance Commissioner.)</p>
+							<h4>You Can Get Other Information from Us:</h4>
+							<p>In addition to any other privacy notice we may give you, we must give you a summary of our privacy policy once each year. You may have other rights under the law. If you want to know more about our privacy policy, please contact us through our <a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/privacy-questions/index.html');">Ask a Privacy Policy Question form</a>, or call us at the number indicated in your Customer and Service Claim Directory which you received at the time you purchased or renewed your policy with us.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+						</div>
+						<hr>
+						<div class="privacySection">
+							<h3>
+								<a name="Customer" id="Customer"></a> MetLife Customer Privacy Policy</h3>
+							<p>The companies in the MetLife, Inc. family ("MetLife") strongly believe in protecting the confidentiality and security of information we collect about individuals. The material below describes our privacy policy and describes how we treat the information we receive about you if you become a current or former MetLife customer, or apply for any of our products or services.</p>
+							<p>
+								<a href="#1">Why We Need to Know About You</a>
+							</p>
+							<p>
+								<a href="#2">How We Learn About You</a>
+							</p>
+							<p>
+								<a href="#3">How We Protect What We Know About You</a>
+							</p>
+							<p>
+								<a href="#4">How We Use and Disclose What We Know About You</a>
+							</p>
+							<p>
+								<a href="#5">How You Can See and Correct Your Information</a>
+							</p>
+							<p>
+								<a href="#7">How You Can Get Other Material From Us</a>
+							</p>
+							<p>
+								<a href="#6">You May Have Additional Rights Under Other Privacy Laws</a>
+							</p>
+							<p>
+								<a href="#8">Sources We May Use to Get More Information</a>
+							</p>
+							<p>
+								<a href="#9">Frequently Asked Questions</a>
+							</p>
+							<p>
+								<a href="#10">Online Privacy Policy</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="1" id="1"></a> Why We Need to Know About You</h4>
+							<p>We need to know about you so that we can provide you with the insurance and other products and services you've asked for. We may also need information from you and others to help us verify your identity in order to prevent money laundering and terrorism.</p>
+							<p>What we need to know about you includes your address, age and other basic information. But we may have to know more about you, including your finances, employment, health, hobbies or business you conduct with us, with other MetLife companies (our "affiliates") or with other companies.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="2" id="2"></a> How We Learn About You</h4>
+							<p>What we know about you we get mostly from you. But we may also have to find out more about you from other sources in order to make sure that what we know about you is correct and complete. Those sources may include your adult relatives, employers, consumer reporting agencies, health care providers and others. Some of our sources may give us reports, and they may disclose what they know about you to others.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="3" id="3"></a> How We Protect What We Know About You</h4>
+							<p>We treat what we know about you confidentially. Our employees are told to take care in handling your information. They may get information about you only when there is a good reason to do so. We take steps to make our computer data bases secure and to safeguard the information we have about you.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="4" id="4"></a> How We Use and Disclose What We Know About You</h4>
+							<p>We may use anything we know about you to help us serve you better. We may use it, and disclose it to our affiliates and others, for any purpose allowed by law. For instance, we may use your information, and disclose it to others, in order to:</p>
+							<div>
+								<ul>
+									<li>Help us evaluate your request for a MetLife product or service</li>
+									<li>Help us process claims and other transactions</li>
+									<li>Confirm or correct what we know about you</li>
+									<li>Help us prevent fraud, money laundering, terrorism and other crimes by verifying what we know about you</li>
+									<li>Help us run our business</li>
+									<li>Process data for us</li>
+									<li>Perform research for us</li>
+									<li>Help us comply with the law</li>
+									<li>Audit our business</li>
+								</ul>
+							</div>
+							<p>Other reasons we may disclose what we know about you include:</p>
+							<ul>
+								<li>Doing what a court or government agency requires us to do; for example, complying with a search warrant or subpoena</li>
+								<li>Telling another company what we know about you, if we are or may be selling all or any part of our business or merging with another company</li>
+								<li>Giving information to the government so that it can decide whether you may get benefits that it will have to pay for</li>
+								<li>Telling your health care provider about a medical problem that you have but may not be aware of</li>
+								<li>Giving your information to a peer review organization if you have health insurance with us</li>
+								<li>Giving your information to someone who has a legal interest in your insurance, such as someone who lent you money and holds a lien on your policy</li>
+							</ul>
+							<p>When we disclose information to others to perform business services for us, they are required to take appropriate steps to protect this information. And they may use the information only for the purposes of performing those business services.</p>
+							<p>We may use what we know about you in order to offer you our other products and services. We may share your information with other companies to help us. Here are our other rules on using your information to market products and services:</p>
+							<ul>
+								<li>We will not share information about you with any of our affiliates for use in marketing its products to you, unless we first notify you. You will then have an opportunity to tell us not to share your information by "opting out".</li>
+								<li>Before we share what we know about you with another financial services company to offer you products or services through a joint marketing arrangement, we will let you "opt-out."</li>
+								<li>We will not disclose information to unaffiliated companies for use in selling their products to you, except through such joint marketing arrangements.</li>
+								<li>We will not share your health information with any other company, even one of our affiliates, to permit it to market its products and services to you.</li>
+							</ul>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="5" id="5"></a> How You Can See and Correct Your Information</h4>
+							<p>Generally, we will let you review what we know about you if you ask us in writing. (Because of its legal sensitivity, we will not show you anything that we learned in connection with a claim or lawsuit.) If you tell us that what we know about you is incorrect, we will review it. If we agree with you, we will correct our records. If we do not agree with you, you may tell us in writing, and we will include your statement when we give your information to anyone outside MetLife.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="6" id="6"></a> You May Have Additional Rights Under Other Privacy Laws</h4>
+							<p>In addition to any other privacy notice we may provide, federal law has established privacy standards and requires us to provide a summary of our privacy policy to our customers once each year. Individuals may have additional rights under other applicable laws.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="7" id="7"></a> How You Can Get Other Material From Us</h4>
+							<p>If you want to know more about our privacy policy generally, please contact us through our <a href="javascript:openUrl('https://www.metlife.com/about/privacy-policy/privacy-questions/index.html');">Ask a Privacy Policy Question form</a>, or write to your MetLife insurance company, c/o MetLife Privacy Office, P.O. Box 489, Warwick, Rhode Island 02887-9954.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="8" id="8"></a> Sources We May Use to Get More Information</h4>
+							<p>To learn how and why we collect information regarding Individuals, <a href="javascript:openUrl('http://www.metlife.com/about/privacy-policy/customer-privacy-policy/additional-individual-information.html');">click here</a>.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<hr>
+							<h4>
+								<a name="9" id="9"></a> Frequently Asked Questions</h4>
+							<p>For (FAQs) about our privacy policies, <a href="javascript:openUrl('http://www.metlife.com/about/privacy-policy/customer-privacy-policy/customer-privacy-faq.html');">click here</a>.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<div>
+								<hr>
+							</div>
+							<h4>
+								<a name="10" id="10"></a> Online Privacy Policy</h4>
+							<p>For information about our <span class="fBold">Online Privacy Policy</span>, <a href="javascript:openUrl('https://online.metlife.com/edge/web/public/privacyPolicy?view=loggedIn&amp;type=Retail&amp;fromPhoenix=true#Privacy');">click here</a>.</p>
+							<p>
+								<a href="#">Back to the Top</a>
+							</p>
+							<p>
+								<em>Effective Date: 03/03/2017</em>
+							</p>
+						</div>
+					</div></div> 
+			</div>
+			<div class="clr"></div>
+		</div>
+		</div>
+		<div class="btmGrad_contentContainer"></div>
+		</div>
+		</div>
+
+		<div id="loggedOutFooter" style="display: block;">
+			<div class="loginContentWidth footer">
+				<div class="loginWrapper footerWrapper">
+					<div class="loginInnerMargin">
+						<div class="legalese linkbar">
+							<a href="#">Privacy Policy</a>
+							<span class="spacer">|</span>
+							<a href="#" onclick="javascript:loadTermsOfUse('loggedOut');">Terms of Use</a>
+						</div>
+						<div><!-- <div style="font-size : 12px;position:absolute;top:3px;color: #DA3941 !important;z-index: 929;" id="MaintenanceContent" class="mContentStyle">
+                                                <p style="margin: 0;"><strong>MAINTENANCE ALERT:</strong> Beginning 8:00 PM on Friday, August 25 until 3:00 PM ET on Sunday, August 27, access to this website may be unavailable. We're sorry for the inconvenience.<a href="http://www.metlife.com/landing/notice/" style="color:blue;"/></p>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <p style="margin: 0;"><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;">MetLife has become aware of phishing attacks against some of our customers. Keeping your personal information secure is a top priority.</a>
+                                                        <a href="http://www.metlife.com/landing/notice/" style="color:blue;">Learn how you can help</a>.</p>
+                                        </div>
+                                        <script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function maintenanceContent() {
+                var mcontent = document.getElementById("MaintenanceContent");
+                if(mcontent){
+                        if(document.getElementsByClassName("favorite")){
+                                var d = document.getElementsByClassName("favorite")[0];
+                                d.className = d.className + " maintenanceAlert";
+                        }
+                }
+        }
+        maintenanceContent();
+</script>
+-->
+					<p><strong>Disclaimers</strong></p>
+					<p>The account balances, values and transaction details presented here are derived from our contract administrative system; they are not a legal statement of your account. We permit you to communicate instructions to us here solely for your convenience. Please refer to your confirmations and account statements as records of your account. Investments will fluctuate with changes in the securities markets and, therefore, may be worth more or less when redeemed.</p>
+					<p>All products issued by insurance companies that are affiliates of Metropolitan Life Insurance Company or Brighthouse Life Insurance Company are not included on these web pages. Additional products will be added in the future&nbsp;.</p>
+					<p>Auto and Home insurance is offered by Metropolitan Property and Casualty Insurance Company (Met P&amp;C®) and its affiliates, Warwick, RI. Not available in all states and subject to availability and individual qualifications.</p>
+					<p>Variable insurance products are distributed by MetLife Investors Distribution Company ("MLIDC") (Member FINRA) or Brighthouse Securities, LLC (Member FINRA) and offered through retail broker-dealers with selling agreements with MLIDC, Brighthouse Securities, LLC&nbsp; and/or their affiliates. Met P&amp;C® and MLIDC are MetLife companies.</p>
+					<p>© 2019 MetLife Services and Solutions, LLC</p></div> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loggedInFooter" style="display:none;">
+			<div class="loginContentWidth footer">
+				<div class="loginWrapper footerWrapper">
+					<div class="loginInnerMargin">
+						<div class="legalese linkbar">
+							<a href="#">Privacy Policy</a>
+							<span class="spacer">|</span>
+							<a href="#" onclick="javascript:loadTermsOfUse('loggedIn');">Terms of Use</a>
+						</div>
+						<div><!-- <div style="font-size : 12px;position:absolute;top:3px;color: #DA3941 !important;z-index: 929;" id="MaintenanceContent" class="mContentStyle">
+                                                <p style="margin: 0;"><strong>MAINTENANCE ALERT:</strong> Beginning 8:00 PM on Friday, August 25 until 3:00 PM ET on Sunday, August 27, access to this website may be unavailable. We're sorry for the inconvenience.<a href="http://www.metlife.com/landing/notice/" style="color:blue;"/></p>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <a href="http://www.metlife.com/landing/notice/" style="color:blue;"/>
+                                                <p style="margin: 0;"><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;"/><a href="http://www.metlife.com/landing/notice/" style="color:blue;">MetLife has become aware of phishing attacks against some of our customers. Keeping your personal information secure is a top priority.</a>
+                                                        <a href="http://www.metlife.com/landing/notice/" style="color:blue;">Learn how you can help</a>.</p>
+                                        </div>
+                                        <script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function maintenanceContent() {
+                var mcontent = document.getElementById("MaintenanceContent");
+                if(mcontent){
+                        if(document.getElementsByClassName("favorite")){
+                                var d = document.getElementsByClassName("favorite")[0];
+                                d.className = d.className + " maintenanceAlert";
+                        }
+                }
+        }
+        maintenanceContent();
+</script>
+-->
+					<p><strong>Disclaimers</strong></p>
+					<p>The account balances, values and transaction details presented here are derived from our contract administrative system; they are not a legal statement of your account. We permit you to communicate instructions to us here solely for your convenience. Please refer to your confirmations and account statements as records of your account. Investments will fluctuate with changes in the securities markets and, therefore, may be worth more or less when redeemed.</p>
+					<p>All products issued by insurance companies that are affiliates of Metropolitan Life Insurance Company or Brighthouse Life Insurance Company are not included on these web pages. Additional products will be added in the future&nbsp;.</p>
+					<p>Auto and Home insurance is offered by Metropolitan Property and Casualty Insurance Company (Met P&amp;C®) and its affiliates, Warwick, RI. Not available in all states and subject to availability and individual qualifications.</p>
+					<p>Variable insurance products are distributed by MetLife Investors Distribution Company ("MLIDC") (Member FINRA) or Brighthouse Securities, LLC (Member FINRA) and offered through retail broker-dealers with selling agreements with MLIDC, Brighthouse Securities, LLC&nbsp; and/or their affiliates. Met P&amp;C® and MLIDC are MetLife companies.</p>
+					<p>© 2019 MetLife Services and Solutions, LLC</p></div> 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	
+
+
+
+<iframe style="width: 0px; height: 0px; position: absolute; top: -1000px; left: -1000px; display: none;" tabindex="-1" aria-hidden="true" role="presentation" title="Intentionally blank" name="lpSS_30505150404" id="lpSS_30505150404" src="https://lpcdn.lpsnmedia.net/le_secure_storage/3.9.0.12-release_5021/storage.secure.min.html?loc=https%3A%2F%2Fonline.metlife.com&amp;site=72771772&amp;env=prod"></iframe></body></html>

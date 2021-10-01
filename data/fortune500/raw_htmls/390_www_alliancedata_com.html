@@ -1,0 +1,605 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><title>
+	Alliance Data Systems - Privacy Policy
+</title><meta content="text/html; charset=UTF-8" http-equiv="Content-type"><meta content="RevealTrans(Duration=0,Transition=0)" http-equiv="Page-Enter"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4b6f7f959c","applicationID":"229922501","transactionName":"b1xWMUIDWBdWARFYX1YWdTZgTVIBUQMQXUQWWEcVSA==","queueTime":0,"applicationTime":579,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"4b6f7f959c",applicationID:"229922501"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="Ti2S3wHxwJJh7gwRgRsUN9txvAZvHInrC5dXcLlJ7us" name="google-site-verification"><meta content="nEs8sZCr5Jhd3hfEU-Xm1g9oOVoNgBgLqUIkv0gOBik" name="google-site-verification"><script type="text/javascript">window.mobileRedirect = { mobileEnabled: 0, deepLinkUrl: '/m'}</script>
+    <script type="text/javascript" src="/js/mobileRedirect.js">
+    </script>
+    
+    <!--[if lte IE 8]>
+<link id="respond-proxy" rel="respond-proxy" media="screen" href="//s23.q4cdn.com/525801907/files/js/respond-proxy.html" />
+<link id="respond-redirect" rel="respond-redirect" media="screen" href="https://www.alliancedata.com/js/respond.proxy.gif" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+<link type="image/x-icon" rel="icon" media="" href="//s23.q4cdn.com/525801907/files/favicon.ico">
+<link type="image/x-icon" rel="shortcut icon" media="" href="//s23.q4cdn.com/525801907/files/favicon.ico">
+<link rel="stylesheet" media="print" href="//s23.q4cdn.com/525801907/files/css/print.css">
+<link id="htmlGlobalLinkCss" type="text/css" rel="stylesheet" media="all" href="//s23.q4cdn.com/525801907/files/css/global.css?v=35030"><link id="htmlClientLinkCss" type="text/css" rel="stylesheet" media="all" href="//s23.q4cdn.com/525801907/files/css/client.css?v=33792"><link id="htmlLinkPrintCss" type="text/css" rel="stylesheet" media="print" href="//s23.q4cdn.com/525801907/files/css/print.css"><script type="text/javascript" src="//s23.q4cdn.com/525801907/files/js/q4.core.1.0.5.min.js"></script>
+<script type="text/javascript" src="//s23.q4cdn.com/525801907/files/js/q4.app.1.0.5.min.js"></script>
+<script type="text/javascript" src="https://widgets.q4app.com/widgets/q4.api.1.13.1.min.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://www.alliancedata.com/js/respond.proxy.js"></script>
+<![endif]-->
+
+<script type="text/javascript">(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+var trackingCodes = [{qualifier: 'Q4', trackingCode: 'UA-138334666-34'}, {qualifier: 'Client', trackingCode: 'UA-141045374-1'}];
+
+$.each(trackingCodes, function (i, data) {
+    if (data.qualifier == "Q4") {
+        ga('create', data.trackingCode, 'auto'); // Q4 tracker
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Q4 tracker
+    } else {
+        ga('create', data.trackingCode, 'auto', { 'name': data.qualifier }); // Client tracker
+        ga(data.qualifier + '.set', 'anonymizeIp', true);
+        ga(data.qualifier + '.send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Client tracker
+    }
+});</script></head>
+<body style="margin: 0px" class="BodyBackground">
+    <input type="hidden" id="__RequestVerificationToken">
+    
+    
+    <div id="pageClass" class="Sectionhome PageDefault PagePrivacyPolicy LayoutOneColumnLayout Languageen-US">
+        <div class="PageDefaultInner">
+            <div id="litPageDiv" class="PagePrivacyPolicy SectionPrivacyPolicy ParentSection_home">
+                
+                <form action="default.aspx" method="post" id="fmForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['fmForm1'];
+if (!theForm) {
+    theForm = document.fmForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function GetViewType(){ return '2'; }
+function GetRevisionNumber(){ return '1'; }
+function GetLanguageId(){ return '1'; }
+function GetVersionNumber(){ return '5.28.0.10'; }
+function GetViewDate(){{ return ''; }}
+function GetSignature(){{ return ''; }}
+//]]>
+</script>
+
+                    
+                    
+                    
+<div class="layout layout--one-column">
+    <div class="layout_inner">
+        <div class="layout_header">
+            <div class="pane pane--header grid--no-space grid--no-gutter">
+                <div class="pane_outer pane_outer--header">
+                    <div class="pane_inner"><span class="HeaderPaneDiv"><span class="HeaderPaneDiv1"><div id="_ctrl0_ctl06_divModuleContainer" class="module module-embed module-skip">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a class="module-skip_link" href="#maincontent">Skip to main content</a>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv2"><div id="_ctrl0_ctl09_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script type="text/javascript">
+var Q4ApiKey = 'BF185719B0464B3CB809D23926182246';
+</script>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv3"><div id="_ctrl0_ctl12_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl12_divModuleContainer" class="module module-links module-links--top list--reset dark">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl12_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl12_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/contact-us/default.aspx" id="_ctrl0_ctl12_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self">Contacts</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl12_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://www.alliancedata.com/news/media-library/default.aspx" id="_ctrl0_ctl12_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self">Downloads</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl12_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/supplier-information/default.aspx" id="_ctrl0_ctl12_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_self">Supplier Information</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv4"><div id="_ctrl0_ctl15_divModuleContainer" class="module module-embed layout_toggle">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_menu layout_toggle-icon" tabindex="0"></i>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv5"><div id="_ctrl0_ctl18_divModuleContainer" class="module module-embed module-logo grid_col grid_col--am">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="/" class="module-logo_link"><img src="//s23.q4cdn.com/525801907/files/images/logo.png" class="module-logo_image " alt="Alliance Data Logo"></a>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv6"><nav class="nav nav--main grid_col grid_col--am"><ul class="level1">
+	<li class="has-children"><a href="https://www.alliancedata.com/about-us/default.aspx">About Us</a><ul class="level2">
+		<li><a href="#business">Our Business</a></li><li><a href="#leadership">Leadership</a></li><li><a href="#recognition">Third-Party Recognition</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/news/default.aspx">News</a><ul class="level2">
+		<li><a href="https://www.alliancedata.com/news/press-releases/default.aspx">Press Releases</a></li><li><a href="https://www.alliancedata.com/news/media-library/default.aspx">Media Library</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/overview/default.aspx">Investors</a><ul class="level2">
+		<li class="has-children"><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">Financials &amp; Filings</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">SEC Filings</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/annual-reports/default.aspx">Annual Reports</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/quarterly-reports/default.aspx">Quarterly Reports</a></li>
+		</ul></li><li><a href="https://www.alliancedata.com/investors/events-and-presentations/default.aspx">Events &amp; Presentations</a></li><li class="has-children"><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance Overview</a></li><li><a href="https://www.alliancedata.com/investors/governance/executive-leadership/default.aspx">Executive Leadership</a></li><li><a href="https://www.alliancedata.com/investors/governance/board-of-directors/default.aspx">Board of Directors</a></li><li><a href="https://www.alliancedata.com/investors/governance/committee-composition/default.aspx">Committee Composition</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Quote and Chart</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/historical-price-lookup/default.aspx">Historical Price Lookup</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/dividend-history/default.aspx">Dividend History</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Investor Resources</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Transfer Agent &amp; Registrar</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/investor-email-alerts/default.aspx">Investor Email Alerts</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/forward-looking-information/default.aspx">Forward-looking Information</a></li>
+		</ul></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/sustainability/default.aspx">Sustainability</a><ul class="level2">
+		<li><a href="#practices-that-drive-our-success">Practices That Drive Our Success</a></li><li><a href="#cr-downloads">Downloads</a></li><li><a href="https://www.alliancedata.com/sustainability/report-archive/default.aspx">Report Archive</a></li>
+	</ul></li><li><a href="https://www.alliancedata.com/careers/default.aspx">Careers</a></li>
+</ul></nav></span><span class="HeaderPaneDiv7"><div id="_ctrl0_ctl24_divModuleContainer" class="module module-html module-search-toggle grid_col grid_col--am">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span class="module-search-toggle_icon" tabindex="0"></span>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv8"><div id="_ctrl0_ctl27_divModuleContainer" class="module module-search module-search--desktop" role="search" aria-hidden="true">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl27_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl27$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl27_txtSearchInput" class="module_input module-search_input" aria-label="Search query" placeholder="Search" value="">
+            <input type="submit" name="_ctrl0$ctl27$btnSearch" value="Search" id="_ctrl0_ctl27_btnSearch" class="module_button module-search_button">
+            
+        </div>
+    </div>
+</div></span></span></div>
+                </div>
+            </div>
+            <div class="pane pane--banner grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPane2Div9"><div id="_ctrl0_ctl30_divModuleContainer" class="module module-page-title sr-only">
+    <div class="module_container module_container--outer">
+        <div class="module_container module_container--inner">
+            <h1 class="uppercase">Privacy Policy</h1>
+        </div>
+    </div>
+</div></span><span class="HeaderPane2Div10"><div id="_ctrl0_ctl33_divModuleContainer" class="module module-embed module-stock-header dark">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner"><span class="module-stock-header_description1"> NYSE : ADS</span>&nbsp;<span class="module-stock-header_stock-price">100.50</span><span class="module-stock-header_change module-stock-header_down">Change: -2.33 (-2.27%)</span></div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--navigation">
+                <div class="pane_inner"><span class="NavigationPaneDiv11"><nav class="nav nav--secondary dark"><ul class="level1">
+	<li class="has-children"><a href="https://www.alliancedata.com/about-us/default.aspx">About Us</a><ul class="level2">
+		<li><a href="#business">Our Business</a></li><li><a href="#leadership">Leadership</a></li><li><a href="#recognition">Third-Party Recognition</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/news/default.aspx">News</a><ul class="level2">
+		<li><a href="https://www.alliancedata.com/news/press-releases/default.aspx">Press Releases</a></li><li><a href="https://www.alliancedata.com/news/media-library/default.aspx">Media Library</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/overview/default.aspx">Investors</a><ul class="level2">
+		<li class="has-children"><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">Financials &amp; Filings</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">SEC Filings</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/annual-reports/default.aspx">Annual Reports</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/quarterly-reports/default.aspx">Quarterly Reports</a></li>
+		</ul></li><li><a href="https://www.alliancedata.com/investors/events-and-presentations/default.aspx">Events &amp; Presentations</a></li><li class="has-children"><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance Overview</a></li><li><a href="https://www.alliancedata.com/investors/governance/executive-leadership/default.aspx">Executive Leadership</a></li><li><a href="https://www.alliancedata.com/investors/governance/board-of-directors/default.aspx">Board of Directors</a></li><li><a href="https://www.alliancedata.com/investors/governance/committee-composition/default.aspx">Committee Composition</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Quote and Chart</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/historical-price-lookup/default.aspx">Historical Price Lookup</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/dividend-history/default.aspx">Dividend History</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Investor Resources</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Transfer Agent &amp; Registrar</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/investor-email-alerts/default.aspx">Investor Email Alerts</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/forward-looking-information/default.aspx">Forward-looking Information</a></li>
+		</ul></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/sustainability/default.aspx">Sustainability</a><ul class="level2">
+		<li><a href="#practices-that-drive-our-success">Practices That Drive Our Success</a></li><li><a href="#cr-downloads">Downloads</a></li><li><a href="https://www.alliancedata.com/sustainability/report-archive/default.aspx">Report Archive</a></li>
+	</ul></li><li><a href="https://www.alliancedata.com/careers/default.aspx">Careers</a></li>
+</ul></nav></span><span class="NavigationPaneDiv12"><div id="_ctrl0_ctl39_divModuleContainer" class="module module-search module-search--mobile" role="search">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl39_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl39$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl39_txtSearchInput" class="module_input module-search_input" aria-label="Search query" placeholder="Search" value="">
+            <input type="submit" name="_ctrl0$ctl39$btnSearch" value="Search" id="_ctrl0_ctl39_btnSearch" class="module_button module-search_button">
+            
+        </div>
+    </div>
+</div></span><span class="NavigationPaneDiv13"><div id="_ctrl0_ctl42_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl42_divModuleContainer" class="module module-links module-links--mobile list--reset dark">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl42_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl42_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/contact-us/default.aspx" id="_ctrl0_ctl42_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self">Contacts</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl42_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://www.alliancedata.com/news/media-library/default.aspx" id="_ctrl0_ctl42_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self">Downloads</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl42_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/supplier-information/default.aspx" id="_ctrl0_ctl42_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_self">Supplier Information</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+        <div class="layout_content" id="maincontent">
+            <div class="pane pane--breadcrumb">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--left">
+                <div class="pane_inner"><span class="LeftPaneDiv"></span></div>
+            </div>
+            <div class="pane pane--content">
+                <div class="pane_inner"><span class="ContentPaneDiv"><span class="ContentPaneDiv1"><div id="_ctrl0_ctl63_divModuleContainer" class="module module-html">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <p>AllianceData.com Privacy Policy</p>
+<p>This Privacy Policy (“<strong>Policy</strong>“) applies to all visitors to or users of (“<strong>you</strong>”) the URL <a href="/default.aspx">http://www.alliancedata.com</a> (“<strong>Site</strong>”), and is provided by Alliance Data Systems Corporation (“<strong>we</strong>” or “<strong>Alliance Data</strong>”) to help you understand what information is collected from you online at the Site or through our social media pages, and how we use it. Your visit to and use of the Site signifies that you agree with all terms of this Policy. Please do not visit or use the Site if you disagree with any part of this Policy.</p>
+<p>This Policy is designed to help ensure that visitors to our Site understand what data is collected on our Site and how this data is used or disclosed. This Policy also applies only to information collected on this Site. The Policy does not apply to the treatment of information collected off-line, or to information collected on websites or social media pages operated by entities within our family of companies, which include among others LoyaltyOne®, Alliance Data’s card services business, and Comenity. Please refer to their privacy policies for more information about their privacy practices.</p>
+<h4>1. Personal Information You Provide Directly To Us</h4>
+<p>We collect personal information from you online whenever you provide it directly to us. This includes when you send an email to us, complete our online “Contact Us” form, or submit a resume. Such personal information may include your name, email address, mail address, or telephone number.</p>
+<p>We may also obtain personal information from you regarding any job postings you may apply to, such as name, email address, mailing address, employment history and any other personal information contained in your résumé/CV that you submit through our Site.</p>
+<p>In addition, if you choose to correspond with us through email, we may retain the content of your email messages together with your email address and the resulting correspondence with you.</p>
+<p>You may also disclose certain information about yourself on message boards, chats, profile pages and blogs and other services to which you are able to post information and materials. Please note that any information you post or disclose through these services will become public information, and may be available to visitors to our Site and to the general public. We urge you to be very careful when deciding to disclose your personal information, or any other information, on our Site.</p>
+<p>You must be 18 years of age or older to submit information to our Site. Our Site is not intended for children under 13 years of age, and we do not knowingly collect, use, or maintain personal information from children under the age of 13.</p>
+<h4>2. Information We Automatically Collect About Your Device</h4>
+<p>We use third-party service providers, such as analytics companies, that automatically collect navigational and/or device information like IP address, browser type, and other Site usage information from your device when you visit our Site. We do this for internal business purposes, including to improve our Site and deliver a better and more personalized service.</p>
+<p>We may store browser cookies on your device or use pixel tags on our Site or in our emails so that we can personalize your visit to our Site and improve our Site and emails. You may be able to erase or block browser cookies. Please be aware that some features of our Site may be unavailable to you if your browser cookies are erased or blocked. Pixel tags in emails help us confirm the receipt of and response to our emails, and the time our email is viewed. In addition, we may collect “click-through” information such as where and when you click email links. To learn more about cookies, visit <a href="http://www.allaboutcookies.org/" target="_blank">http://www.allaboutcookies.org/</a>.</p>
+<p>If any information that we automatically collect about your device is ever connected to your personal information, we will use it as described in the “How We Use Your Personal Information” section of this Policy.</p>
+<h4>3. How We Use Your Personal Information</h4>
+<p>We may use personal information collected on our Site for internal business processes or any other purpose permitted by the law. We may share personal information with our service providers to perform any and all of these tasks on our behalf.</p>
+<p>In addition to sharing your information with third party service providers that provide services for us, we may also share your information throughout our family of companies and with unaffiliated third parties: (i) as required for legal or regulatory compliance; (ii) to protect our rights and property or the rights and property of other parties; (iii) in connection with the sale or  transfer of all or a portion of our business assets, provided such information is included in the business assets transferred as part of the transaction; (iv) in connection with a bankruptcy proceeding; (v) for internal business purposes; (vi) for fraud prevention; (vii) for marketing and/or promotion of additional products, services, and special offers, as permitted by law; (ix) for any purpose you may request; or (x) for any other purpose that may be required or permitted by law.</p>
+<h4>4. Social Media Pages</h4>
+<p>From time to time, we may create and manage social media pages. With your consent, personal information including your name, profile picture, gender, networks, user ID, list of friends, birthday, likes, education history, work history, current city, hometown, interests, relationship status, and any other information you have shared on a social media site may be collected by us, and may be used and shared as described in the “How We Use Your Personal Information” section of this Policy. This Policy does not cover the privacy practices of the social media sites on which we may have social media pages. Please review the privacy policies and terms of service on the social media sites if you have any questions about their privacy practices.</p>
+<h4>5. International Users</h4>
+<p>If you are visiting us from a location outside of the United States, please keep in mind that this is a U.S.-based website. This Policy governs the information collected by or on behalf of this Site irrespective of where you are located when you access, browse, or interact with the Site.</p>
+<p>Any personal information you provide to us on the Site are maintained and processed by us on servers and internal systems located in the United States. This means your personal information may be stored outside of the province, state, and/or country in which you reside, and may be processed by us or a third party as described in this Policy. Moreover, governmental bodies that have jurisdiction over us in the United States (e.g., courts and law enforcement agencies) may be entitled to access your personal information.</p>
+<h4>6. How Your Information is Protected</h4>
+<p>We have implemented security measures to safeguard your personal information from unauthorized access, use, alteration, disclosure and destruction. While we strive to protect your data, it may be possible for third parties not under the control of Alliance Data to unlawfully intercept or access transmissions or private communications. Alliance Data cannot ensure or warrant the security of information you transmit to us. The transmission of data over the Internet is not guaranteed to be completely secure. You acknowledge and assume this risk when communicating with us.</p>
+<h4>7. Links to Other Sites</h4>
+<p>We provide links to external websites as a convenience to you, but we are not responsible for the privacy practices of linked websites. Therefore, we encourage you to always read and understand a linked website’s privacy policy before using or visiting such website.</p>
+<h4>8. Changes to this Policy</h4>
+<p>We may modify this Policy from time to time. If there is a material change to our information collection, use, or disclosure practices, it will be applied only to personal information collected on a going-forward basis, and we will update this Policy accordingly.</p>
+<h4>9. Contact Us</h4>
+<p>If you have additional questions about this Policy, please contact us at <a href="mailto:privacy@alliancedata.com">privacy@alliancedata.com</a>.</p>
+<p>Last revised November 2018</p>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--right">
+                <div class="pane_inner"><span class="RightPaneDiv"></span></div>
+            </div>
+        </div>
+        <div class="layout_footer" role="contentinfo">
+            <div class="pane pane--footer">
+                <div class="pane_inner"><span class="FooterPaneDiv"></span></div>
+            </div>
+            <div class="pane pane--footer2 grid--no-gutter">
+                <div class="pane_inner"><span class="FooterPane2Div15"><div id="_ctrl0_ctl45_divModuleContainer" class="module module-html module-contact dark grid_col grid_col--1-of-3 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <p class="module-contact_contacts"> <span class="module-contact_business">Alliance Data</span> <br>
+    <span>3075 Loyalty Circle</span>
+    <br>
+    <span>Columbus, OH 43219</span>
+<br>
+<span>Phone: (614) 729-4000</span>
+</p>
+
+<div class="module-contact_social">
+    <a href="http://www.facebook.com/alliancedata" target="_blank" class="module-contact_social-link q4-icon_facebook"> <span class="sr-only"> Facebook (opens in new window) </span></a>
+    <a href="http://twitter.com/alliancedata" target="_blank" class="module-contact_social-link q4-icon_twitter"> <span class="sr-only"> Twitter (opens in new window) </span></a>
+    <a href="http://www.linkedin.com/companies/3817" target="_blank" class="module-contact_social-link q4-icon_linkedin"> <span class="sr-only"> Linkedin (opens in new window) </span></a>
+    <a href="http://www.youtube.com/alliancedataads" target="_blank" class="module-contact_social-link q4-icon_youtube"> <span class="sr-only"> Youtube (opens in new window) </span></a>
+</div>
+        </div>
+    </div>
+</div></span><span class="FooterPane2Div16"><nav class="nav nav--footer dark grid_col grid_col--2-of-3 grid_col--lc-1-of-1 grid_col--md-1-of-1"><ul class="level1">
+	<li class="has-children"><a href="https://www.alliancedata.com/about-us/default.aspx">About Us</a><ul class="level2">
+		<li><a href="#business">Our Business</a></li><li><a href="#leadership">Leadership</a></li><li><a href="#recognition">Third-Party Recognition</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/news/default.aspx">News</a><ul class="level2">
+		<li><a href="https://www.alliancedata.com/news/press-releases/default.aspx">Press Releases</a></li><li><a href="https://www.alliancedata.com/news/media-library/default.aspx">Media Library</a></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/overview/default.aspx">Investors</a><ul class="level2">
+		<li class="has-children"><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">Financials &amp; Filings</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/financials-and-filings/sec-filings/default.aspx">SEC Filings</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/annual-reports/default.aspx">Annual Reports</a></li><li><a href="https://www.alliancedata.com/investors/financials-and-filings/quarterly-reports/default.aspx">Quarterly Reports</a></li>
+		</ul></li><li><a href="https://www.alliancedata.com/investors/events-and-presentations/default.aspx">Events &amp; Presentations</a></li><li class="has-children"><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/governance/governance-overview/default.aspx">Governance Overview</a></li><li><a href="https://www.alliancedata.com/investors/governance/executive-leadership/default.aspx">Executive Leadership</a></li><li><a href="https://www.alliancedata.com/investors/governance/board-of-directors/default.aspx">Board of Directors</a></li><li><a href="https://www.alliancedata.com/investors/governance/committee-composition/default.aspx">Committee Composition</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/stock-information/stock-quote-and-chart/default.aspx">Stock Quote and Chart</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/historical-price-lookup/default.aspx">Historical Price Lookup</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/dividend-history/default.aspx">Dividend History</a></li><li><a href="https://www.alliancedata.com/investors/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Investor Resources</a><ul class="level3">
+			<li><a href="https://www.alliancedata.com/investors/investor-resources/transfer-agent-and-registrar/default.aspx">Transfer Agent &amp; Registrar</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/investor-email-alerts/default.aspx">Investor Email Alerts</a></li><li><a href="https://www.alliancedata.com/investors/investor-resources/forward-looking-information/default.aspx">Forward-looking Information</a></li>
+		</ul></li>
+	</ul></li><li class="has-children"><a href="https://www.alliancedata.com/sustainability/default.aspx">Sustainability</a><ul class="level2">
+		<li><a href="#practices-that-drive-our-success">Practices That Drive Our Success</a></li><li><a href="#cr-downloads">Downloads</a></li><li><a href="https://www.alliancedata.com/sustainability/report-archive/default.aspx">Report Archive</a></li>
+	</ul></li><li><a href="https://www.alliancedata.com/careers/default.aspx">Careers</a></li>
+</ul></nav></span></div>
+            </div>
+            <div class="pane pane--credits">
+                <div class="pane_inner"><span class="Q4FooterDiv17"><div id="_ctrl0_ctl51_divModuleContainer" class="module module-html copyright">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            ADS Alliance Data Systems, Inc. © <span class="copyright_year">2020</span> All rights reserved.
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv18"><div id="_ctrl0_ctl54_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl54_divModuleContainer" class="module module-links module-links--credits dark list--reset list--arrow">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl54_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl54_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/privacy-policy/default.aspx" id="_ctrl0_ctl54_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self">Privacy Policy</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl54_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://www.alliancedata.com/terms-and-conditions/default.aspx" id="_ctrl0_ctl54_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self">Terms and Conditions</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl54_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.alliancedata.com/legal-information/default.aspx" id="_ctrl0_ctl54_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_self">Legal Information </a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl54_QuickLinkList_ctl03_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://www.alliancedata.com/employment-information/default.aspx" id="_ctrl0_ctl54_QuickLinkList_ctl03_link" class="module-links_list-item-link" target="_self">Employment Information</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv19">
+<div class="module module-q4-credits">
+    <div class="module_container module_container--outer">
+        <div class="module_container module_container--inner">
+            <a href="https://www.q4inc.com/Powered-by-Q4/" id="_ctrl0_ctl57_hrefWebsiteRecording" class="module-q4-credits-link" target="_blank">
+                <span id="_ctrl0_ctl57_lblWebsiteRecording" class="module-q4-credits_powered-text">Powered By Q4 Inc.</span>
+                <span id="_ctrl0_ctl57_lblVersion" class="module-q4-credits_version-text">5.28.0.10</span>
+                <span class="sr-only">(opens in new window)</span>
+            </a>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv20"><div id="_ctrl0_ctl60_divModuleContainer" class="module module-embed hidden">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+    var q4App = $.extend(true, q4Defaults, {
+        options: {
+            headerOffset: $(".pane--header").outerHeight() +
+                ($(".nav--main .level2:visible").outerHeight() ? $(".nav--main .level2:visible").outerHeight() :
+                    0) -
+                ($(".module-links--top:visible").outerHeight() ? $(".module-links--top:visible").outerHeight() :
+                    0),
+        },
+        init: function () {
+            var app = this;
+            app.cleanUp();
+            app.submitOnEnter('.module-unsubscribe');
+            app.submitOnEnter('.module-search');
+            app.validateSubmit('.module-search');
+            app.mobileMenuToggle($('.layout'), '.pane--navigation', '.layout_toggle');
+            app.cleanQuickLinks($('.module-links'));
+            app.copyright($('.copyright_year'));
+            app.docTracking();
+            app.resetDate(['.nav a[href*="s3.q4web.com"]:not([href$=".pdf"])']);
+            app.previewToolbar();
+            app.fancySignup();
+            app.sections(".nav a");
+            app.contrast.init();
+            app.reveal(".pane--header", ".module-search-toggle_icon", ".module-search--desktop", false,
+                "js--search-open");
+            app.sticky_header(".pane--header .pane_outer", ".pane--header", ".layout", ".module-links--top",
+                1024);
+            app.banner_offset(1024);
+        },
+        sticky_header: function (header, container, layout, offsetDefault, breakpoint) {
+            var $header = $(header),
+                $container = $(container),
+                $layout = $(layout),
+                $window = $(window),
+                offset = isNaN(offsetDefault) ? $(offsetDefault).outerHeight() : offsetDefault;
+
+            $window.on("scroll", function () {
+                if ($window.scrollTop() > offset) {
+                    $layout.addClass("js--hide-top");
+                } else {
+                    $layout.removeClass("js--hide-top");
+                }
+            });
+        },
+        sections: function (anchors) {
+            var hash = window.location.hash.length ? window.location.hash.substring(1) : '',
+                pathName = window.location.pathname,
+                origin = window.location.origin
+            if ($('.module-' + hash).length) {
+                setTimeout(function () {
+                    q4App.scrollTo($('.module-' + hash));
+                }, 1000);
+            }
+            $(anchors).filter(function (idx, anchor) {
+                return $(anchor).attr('href').match(/^#/);
+            }).on("click keypress", function (e) {
+                var $linkParent = $(this).closest(".has-children").find("> a").not('[href^="#"]'),
+                    parentLink = $linkParent.attr("href");
+                if ($linkParent.length === 0) return;
+                if (location.href.indexOf(parentLink) !== -1) {
+                    var id = $(this).attr('href').replace("#", '');
+                    if (e.keyCode == 13 || e.type == 'click') {
+                        if ($(".layout.js--mobile").length) {
+                            // close mobile nav
+                            $(".layout_toggle").trigger("click");
+                            setTimeout(function () {
+                                q4App.scrollTo($('.module-' + id));
+                            }, 500);
+                        } else {
+                            q4App.scrollTo($('.module-' + id));
+                        }
+                    }
+                } else {
+                    window.location.href = parentLink + $(this).attr("href");
+                }
+            });
+        },
+        tabs: function ($container, trigger, content, select, useHash, initClosed) {
+            // display specific tab using hash from url
+            var hash = window.location.hash.split('#')[1],
+                hashTargetExists = $(content + '.' + hash).length > 0,
+                changeHash = useHash != undefined ? useHash : true,
+                first,
+                $hiddenContent = function () {
+                    return $(content).addClass('js--hidden').attr('aria-hidden', 'true');
+                };
+
+            if (hash && hashTargetExists) {
+                $hiddenContent().filter('.' + hash).removeClass('js--hidden').attr('aria-hidden', 'false');
+                if (trigger) $(trigger).attr('tabindex', '0').filter('[data-tab=".' + hash + '"]').addClass(
+                    'js--selected');
+                if (select) $(select + ' option[value=".' + hash + '"]').attr('selected', true);
+            } else {
+                $hiddenContent();
+            }
+
+            // if trigger is used/defined
+            if (trigger) {
+                first = $(trigger).first().data('tab');
+
+                if (!hash || !hashTargetExists) {
+                    if (!initClosed) {
+                        $(trigger).attr('tabindex', '0').first().addClass('js--selected');
+                        $(first).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    }
+                    // change hash on load
+                    if (changeHash) window.location.hash = first.split('.')[1];
+                }
+
+                $container.on('click keypress', trigger, function (e) {
+                    if (changeHash) window.location.hash = $(this).data('tab').split('.')[1];
+                    if ($(trigger).is('a, button')) e.preventDefault();
+                    $(this).addClass('js--selected').closest($container).find('.js--selected').not(
+                        this).removeClass('js--selected');
+                    $hiddenContent().filter($(this).data('tab')).removeClass('js--hidden').attr(
+                        'aria-hidden', 'false');
+                    // update select
+                    if (select) {
+                        $(select).val($(this).data('tab'));
+                    }
+                });
+            }
+
+            // if select is used/defined
+            if (select) {
+                first = $(select + ' option:first-child').val();
+
+                if (!hash || !hashTargetExists) {
+                    $(select + ' option:first-child').attr('selected', true);
+                    $(first).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    // change hash on load
+                    if (changeHash) window.location.hash = first.split('.')[1];
+                }
+
+                $container.on('change', select, function () {
+                    var tab = $(this).val();
+                    if (changeHash) window.location.hash = $(this).val().split('.')[1];
+                    $hiddenContent().filter(tab).removeClass('js--hidden').attr('aria-hidden',
+                        'false');
+                    if (trigger) $(trigger).removeClass('js--selected').filter('[data-tab="' + tab +
+                        '"]').addClass('js--selected');
+                });
+            }
+        },
+        banner_offset: function (breakpoint) {
+            var $banner = $(".pane--banner");
+            var $subNav = $(".nav--main .level2:visible");
+
+            $(window).on("resize", function () {
+                if ( $(".nav--main .level2:visible").length && $(window).outerWidth() > 1024) {
+                    $(".layout").addClass('js--level2-visible')
+                } else {
+                    $(".layout").removeClass('js--level2-visible');
+                }
+            }).trigger("resize")
+        }
+    });
+
+    q4App.init();
+</script>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <input type="hidden" name="__antiCSRF" id="__antiCSRF" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/anti-csrf.js">
+    </script>
+
+
+</body></html>
