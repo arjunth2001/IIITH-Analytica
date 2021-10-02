@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=120">
+    <link rel="icon" href="https://www.incred.com/img/icon.png">
+    <title>InCred - Borrow. With Confidence.</title>
+    <link href="InCred_files/bootstrap.css" rel="stylesheet">
+    <link href="InCred_files/menu.css" rel="stylesheet">
+    <link href="InCred_files/font-awesome.css" rel="stylesheet">
+    <link href="InCred_files/incred.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="InCred_files/analytics.asc"></script><script async="" src="InCred_files/analytics.js"></script><script src="InCred_files/451914305324297.js" async=""></script><script src="InCred_files/1351305914995008.js" async=""></script><script src="InCred_files/421371274926588.js" async=""></script><script async="" src="InCred_files/fbevents.js"></script><script type="text/javascript" async="" src="InCred_files/analytics.js"></script><script async="" src="InCred_files/fs.html"></script><script async="" src="InCred_files/gtm.js"></script><script>
+        (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+            new Date().getTime(), event: 'gtm.js'        
+}); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NX8R9BR');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- fullstory integration -->
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'C7168';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+            g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
+            g.consent = function (a) { g("consent", !arguments.length || a) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function () { };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+<script src="InCred_files/a"></script></head>
+
+<body data-new-gr-c-s-check-loaded="8.884.0" data-gr-ext-installed="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX8R9BR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top normal" id="navbar"><div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://www.incred.com/"><img src="InCred_files/logo.png" width="131px; height:45px; "></a>
+    </div>
+    <ul class="list-unstyled list-inline top-menu">
+        <li><button id="apply_now" class="chcke-rate show-btn">Apply Now</button></li>
+        <li><a href="https://www.incred.com/payment/payment.html" type="button" class="chcke-rate big-screen">Pay EMI</a></li>
+        <!-- <li><a href="incred-career/index.html" type="button" class="chcke-rate big-screen">Careers</a></li> -->
+
+        <li><a href="#0" class="menu-trigger" id="menu-button"><i class="fa fa-bars"></i></a></li>
+    </ul>
+    <div id="loan_div" hidden="">
+        <dialog id="loan_dialog" open="" style="margin-right: 16%;width: 160px;font-size: 12px;color: #F47920;border: none;margin-top: 5%;">
+            <form>
+                <input type="radio" required="" data-toggle="modal" data-target="#modal-qbera-loading"> Personal Loans<br>
+                <input type="radio" id="EL" name="test" required="" onclick="radioCheck()"> Education Loans<br>
+                <input type="radio" id="SME" name="test" required="" onclick="radioCheck()"> SME Business Loans<br>
+                <input type="radio" id="TWL" name="test" required="" onclick="radioCheck()"> Two Wheeler Loans<br>
+            </form>
+        </dialog>
+    </div>
+    <div class="flot-menu">
+        <span class="fa fa-close menu-trigger"></span>
+        <ul class="list-unstyled">
+            <!-- <li><a href="home-loan/index.html"><i class="fa fa-home"></i>Home Loans</a></li> -->
+            <li><a href="#" data-toggle="modal" data-target="#modal-qbera-loading"><i class="fa fa-car"></i>Personal Loans</a></li>
+            <li><a href="https://www.incred.com/el"><i class="fa fa-book"></i>Education Loans</a></li>
+            <li><a href="https://www.incred.com/sme-loan/index.html"><i class="fa fa-briefcase"></i>SME Business Loans</a></li>
+            <li><a href="https://www.incred.com/twl/index.html"><i class="fa fa-briefcase"></i>Two Wheeler Loans</a></li>
+            <li><a href="https://www.incred.com/about-us.html"><i class="fa fa-user"></i>About Us</a></li>
+            <li><a href="https://www.incred.com/offices.html"><i class="fa fa-phone"></i>Contact Us</a></li>
+            <li><a href="https://www.incred.com/incred-career/index.html"><i class="fa fa-briefcase"></i>Careers</a></li>
+            <li><a href="https://www.incred.com/team.html"><i class="fa fa-users"></i>Team</a></li>
+            <li><a href="https://www.incred.com/blog"><i class="fa fa-book"></i>Blog</a></li>
+            <!-- <li><a href="board-of-directors.html"><i class="fa fa-users"></i>Board of Directors</a></li> -->
+            <li><a href="https://www.incred.com/incred-in-press.html"><i class="fa fa-newspaper-o"></i>InCred In News</a></li>
+            <li><a href="https://www.incred.com/podcasts/"><i class="fa fa-podcast"></i>Podcasts</a></li>
+            <li><a href="https://www.incred.com/partnership.html"><i class="fa fa-users"></i>Partnerships</a></li>
+            <li><a href="https://www.incred.com/Incred_Zomato/index.html"><i class="fa fa-cutlery"></i>InCred Zomato</a></li> 
+            <li><a href="https://www.incred.com/business-loans/amazon-seller-loan/index.html"><i class="fa  fa-shopping-cart"></i>InCred Amazon</a></li>
+            <li><a href="https://www.incred.com/incredcares/"><i class="fa  fa-female"></i>InCred Cares</a></li>
+            <li class="small-screen"><a href="https://www.incred.com/payment/payment.html"><i class="fa fa-money"></i>Pay EMI</a></li>
+            <li><a class="mailus" href="https://www.incred.com/docs/ECLGS%20Document.pdf"><i class="fa fa-book"></i>ECLGS Scheme</a></li>
+        </ul>
+    </div>
+    <!--/.nav-collapse -->
+</div>
+
+<!-- fullstory integration -->
+<script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = 'C7168';
+    window['_fs_namespace'] = 'FS';
+    (function(m, n, e, t, l, o, g, y) {
+        if (e in m) {
+            if (m.console && m.console.log) {
+                m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+        }
+        g = m[e] = function(a, b) {
+            g.q ? g.q.push([a, b]) : g._api(a, b);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = 'https://' + _fs_host + '/s/fs.js';
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v) {
+            g(l, {
+                uid: i
+            });
+            if (v) g(l, v)
+        };
+        g.setUserVars = function(v) {
+            g(l, v)
+        };
+        g.shutdown = function() {
+            g("rec", !1)
+        };
+        g.restart = function() {
+            g("rec", !0)
+        };
+        g.consent = function(a) {
+            g("consent", !arguments.length || a)
+        };
+        g.identifyAccount = function(i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+        };
+        g.clearUserCookie = function() {};
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').click(function(e) {
+            if ($(e.target).closest('#menu-button').length == 0) {
+                $(".flot-menu").hide();
+            };
+        });
+
+        $('#menu-button').bind('click', function(e) {
+            $(".flot-menu").slideToggle();
+        });
+        if ($(window).width() < 360) {
+            $("#apply_now").text("Apply");
+        }
+    });
+</script>
+<script>
+    $('#apply_now').click(function() {
+        console.log("hello");
+        if ($('#loan_div').is(":hidden"))
+            $('#loan_div').show();
+        else
+            $('#loan_div').hide();
+    });
+
+    function radioCheck() {
+        if (document.getElementById('EL').checked) {
+            window.location.href = "el";
+        } else if (document.getElementById('SME').checked) {
+            window.location.href = "sme-loan/index.html";
+        } else if (document.getElementById('TWL').checked) {
+            window.location.href = "twl/index.html";
+        }
+    }
+</script></nav>
+        <div class="main">
+            <section class="page2 nobanner" id="">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ol class="nav breadcrumb">
+                                    <li><a href="https://www.incred.com/">Home</a></li>
+                                    <li><a class="active" href="#">Privacy Policy</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h1 class="abtpg-title font-weight-h1">Privacy Policy</h1>
+                                <p style="font-size:10px;text-align:right;padding-right:40px">Last updated: 14-JUL-2020</p>
+                                <p>
+                                    THIS WEBSITE WWW.INCRED.COM AND 
+OTHER RELATED INTERNET BASED APPLICATIONS (COLLECTIVELY REFERRED TO AS 
+“WEBSITE” or “SERVICES") OWNED AND OPERATED BY InCred Financial Services
+ Limited, A COMPANY INCORPORATED UNDER THE LAWS OF REPUBLIC OF INDIA 
+HAVING ITS REGISTERED OFFICE OFFICE UNIT NO. 1203, 12th FLOOR, B WING, 
+THE CAPITAL, PLOT NO. C - 70, G BLOCK, BANDRA - KURLA COMPLEX, BANDRA 
+EAST, MUMBAI - 400 051 (HEREINAFTER REFERRED TO AS “WE”, or “US” or OUR 
+or “INCRED”).
+                                </p>
+                                <p>
+                                    THIS PRIVACY POLICY GIVES YOU 
+DETAILS ABOUT OUR DATA COLLECTION METHODS AND USAGE. YOU ARE ADVISED TO 
+READ THIS PRIVACY POLICY ALONG WITH THE TERMS OF USE AND OTHER 
+INFORMATION IN THE WEBSITE/APPLICATIONS.
+                                </p>
+                                <p>
+                                    USERS PLEASE TAKE NOTE THAT ANY 
+STATEMENTS MADE ON INCRED WEBSITE/APPLICATIONS SHALL NOT BE CONSTRUED AS
+ AN OFFER OR PROMISES FOR GRANT OF ANY FINANCIAL SERVICES.<strong></strong>
+                                </p>
+                                <p>
+                                    <strong> </strong>
+                                </p>
+    
+                                <p>
+                                    <strong> </strong>
+                                </p>
+                                <p>
+                                    1. <strong>Use of Our Website or Services: </strong>You will be able to use Our Website or Services as per <a href="https://www.incred.com/android/termsofuse.html" target="_blank">Term of Use.</a><strong></strong>
+                                </p>
+                                <p>
+                                    2. <strong>Information collected by InCred: </strong>
+                                </p>
+                                <p>
+                                    (a) Information provided by users 
+through our Website or Services and at the time of registration, use the
+ facilities and services available, information automatically received 
+and collected will include details required for availing respective 
+Services.
+                                </p>
+                                <p>
+                                    (b) Information from credit bureaus 
+and customer service providers to help InCred with customer verification
+ and diligence required for InCred and partners.
+                                </p>
+                                <p>
+                                    (c) Log information: Domain server 
+through which the User accesses the App Search queries, IP address, 
+crashes, date and time.
+                                </p>
+                                <p>
+                                    (d) Device information: <strong>With your permission</strong>,
+ we may collect and monitor Type of device (including storage, hardware 
+model, operating system and version, installed apps, WiFi, mobile 
+network) used by the User, personal information stored by third parties 
+like social networking sites, information pertaining to your device and 
+your usage thereof, including, inter alia, the names of the other 
+applications on your mobile device and how you use them, list of 
+accounts for credit profile enrichment.
+                                </p>
+                                <p>
+                                    (e) SMS: <strong>With your permission</strong>,
+ we may collect and monitor only financial transactional/promotional 
+messages for description of the transactions and the corresponding 
+amounts for credit risk assessment (Other SMS data is not accessed)
+                                </p>
+                                <p>
+                                    (f) Contacts: <strong>With your permission</strong>, we may collect contact information to automatically detect references information for your customized credit scoring.
+                                </p>
+                                <p>
+                                    (g) Location: <strong>With your permission</strong>,
+ we may receive, collect and analyse your location information which may
+ be accessed through a variety of methods including, inter alia, GPS, IP
+ address, and cell tower location and, your precise location based on 
+GPS data. In the event of IP detection failure, we will collect the last
+ cached location as your current location. We may collect location 
+information for validating your address and to increase the chances of 
+your loan approval, even when the application is closed or not in use.
+                                </p>
+                                <p>
+                                    (h) Local storage: Browser web storage, application data caches.
+                                </p>
+                                <p>
+                                    (i) Cookies and similar technologies.
+                                </p>
+                                <p>
+                                    (j) Details required for administration or services and product improvement.
+                                </p>
+                                <p>
+                                    (k) Record and/or monitor calls if 
+InCred feel necessary for quality checks and staff training. Such 
+recordings may also be used to help InCred combat fraud.
+                                </p>
+                                <p>
+                                    (l) Feedback given by you.
+                                </p>
+                                <p>
+                                    (m) Third-party advertisements: 
+InCred may use third-party advertising companies to serve ads when you 
+visit OUR Website/Application. These companies may use information about
+ your usage preferences (but not your name, address, email address, or 
+telephone number) about your visits to this and other websites in order 
+to provide advertisements about goods and services of interest to you. 
+InCred is not responsible for product and services of such websites and 
+is also not responsible for their privacy practices, which InCred does 
+not own, manage or control.
+                                </p>
+                                <p>
+                                    (n) Termination of account: While 
+you can terminate your account as per terms of use, your information may
+ remain stored in archive on our servers even after the deletion or the 
+termination of your account.
+                                </p>
+                                <p>
+                                    (o) Retention of information 
+collected: The information collected from you will be retained during 
+the (i) validity of your Account and for the purpose of submission of 
+such information, (ii) As consented by you while creating your User 
+Account (iii) As required by any regulatory norms including but not 
+limited to the norms prescribed under Prevention of Money Laundering 
+Act, 2002
+                                </p>
+                                <p>
+                                    (p) We ask visitors to our site to 
+use their social media logins (Facebook, Twitter, GMail) to provide 
+customer reviews and feedback on our site.
+                                </p>
+                                <p>
+                                    3. <strong>Use of information collected by InCred:</strong> The information will be used by InCred for the following:
+                                </p>
+                                <p>
+                                    (a) To provide products or services you have requested.
+                                </p>
+                                <p>
+                                    (b) To provide information to our partners to assist in making credit decisions about you.
+                                </p>
+                                <p>
+                                    (c) To help investigate violations of our terms of use or to defend against legal claims.
+                                </p>
+                                <p>
+                                    (d) To disclose the information 
+under special circumstances such as compliance with the applicable local
+ law, court summons, court orders, requests/order from legal authorities
+ or law enforcement agencies requiring such disclosure.
+                                </p>
+                                <p>
+                                    (e) Search credit bureaus, generate credit reports and fraud prevention agencies.
+                                </p>
+                                <p>
+                                    (f) To get in touch with you when 
+necessary and contact you by email, SMS, letter, telephone or in any 
+other way about our products and services.
+                                </p>
+                                <p>
+                                    (g) To identify, prevent, detect or 
+tackle fraud, money laundering, terrorism and other crimes.
+                                </p>
+                                <p>
+                                    (h) To form a view of you as an 
+individual and to identify, develop or improve products, that may be of 
+interest to you.
+                                </p>
+                                <p>
+                                    (i) Provide information to 
+independent external bodies such as governmental departments and 
+agencies, universities and similar to carry out research.
+                                </p>
+                                <p>
+                                    (j) Perform other administrative and operational purposes including the testing of systems.
+                                </p>
+                                <p>
+                                    (k) Trace your whereabouts.
+                                </p>
+                                <p>
+                                    (l) Recover any payments you owe to InCred or partners.
+                                </p>
+                                <p>
+                                    (m) Recover any payments you owe to InCred or partners.
+                                </p>
+                                <p>
+                                    (n) To show you advertisements.
+                                </p>
+                                <p>
+                                    (0) Contact you as a survey respondent.
+                                </p>
+                                <p>
+                                    (p) To maintain records under 
+applicable law or a may apply to pursuant to agreements executed by 
+InCred.
+                                </p>
+                                <p>
+                                    (q) Carry out, monitor and analyse 
+our business, Carry out market research, business, and statistical 
+analysis and also direct our efforts for product improvement.
+                                </p>
+                                <p>
+                                    (r) Carry out audits.
+                                </p>
+                                <p>
+                                    (s) Location information – for 
+validating your address and to increase the chances of your loan 
+approval.
+                                </p>
+                                <p>
+                                    (t) Contacts information - to 
+automatically detect references information for your customized credit 
+scoring
+                                </p>
+                                <p>
+                                    (u) Information about Apps and Accounts – for credit profile enrichment.
+                                </p>
+                                <p>
+                                    (v) to avail identity verification services
+                                </p>
+                                <p>
+                                    (w) To generate and maintain User 
+profiles, to provide personalized features, to facilitate collection 
+activities, to maintain regular communications with the User
+                                </p>
+                                <p>
+                                    (x) To use/modify/display, 
+distribute and create new material from the information you provide
+                                </p>
+                                <p>
+                                    4. <strong>Specific consent</strong>
+                                </p>
+                                <p>
+                                    (a) You consent and grant us authority to share your information with third parties to <br>
+                                    (i) provide the product or service you have requested;<br>
+                                    (ii) To enable them to contact you 
+or to certain service partners in order to respond to your queries / 
+comments or to resolve service issues and to serve you better and<br>
+                                    (iii) to collect information about 
+you as mentioned in section 2 of this Privacy Policy and use the same 
+for those purpose mentioned in section 3 of this Privacy Policy.
+                                </p>
+                                <p>
+                                    (b) By using the Website/Services 
+you authorize us, our affiliates &amp; our associate partners to contact
+ you via email or phone call or sms and offer you their services/ 
+product, imparting product knowledge, offer promotional offers running 
+on their websites &amp; offers offered by the associated third parties. 
+Irrespective of the fact if also you have registered yourself under DND 
+or DNC or NCPR service, you still authorize to give you a call from 
+InCred &amp; its associates/partners for the above-mentioned purposes.
+                                </p>
+                                <p>
+                                    (c) By providing information, you 
+automatically agree, or promise that the owner of such information has 
+expressly agreed to allow or license, as the case may be, us to use the 
+information in the manner set out in this Privacy Policy, without the 
+payment of any fees, to the extent permitted by law, also use, license, 
+reproduce, distribute disclose, and aggregate, non-personally 
+identifiable information that is derived through your use of the App and
+ you hereby provide consent for the same.
+                                </p>
+                                <p>
+                                    <strong> </strong>
+                                </p>
+                                <p>
+                                    5. <strong>Sharing Of Information</strong>
+ InCred shall not will not rent, sell or share User information and will
+ not disclose any of the User’s personally identifiable information to 
+third parties, except the disclosure is
+                                </p>
+                                <p>
+                                    (a) pursuant to obtaining the User’s permission
+                                </p>
+                                <p>
+                                    (b) in connection with disclosure to financial institutions and banks
+                                </p>
+                                <p>
+                                    (c)  in connection with the services being rendered through the App
+                                </p>
+                                <p>
+                                    (d) help investigate, prevent or take action regarding unlawful and illegal activities
+                                </p>
+                                <p>
+                                    (e) special circumstances such as compliance with court orders.
+                                </p>
+                                <p>
+                                    6. <strong>Security:</strong> Your 
+account information is stored in an access controlled facility and is 
+password-protected for your privacy and security. We do not warrant that
+ such User information may not be misused in the event our safeguards 
+and protocols are breached by a malicious third-party. Your use of the 
+App is at your sole risk and discretion. You shall be the custodian of 
+your password and comply with the applicable terms mentioned in the 
+Website/Application in this regard., We are not liable to actions of 
+other users with whom you may choose to share your information. The 
+collection, usage, and sharing of User information are in compliance 
+with the Information Technology (Reasonable Security Practices and 
+Procedures and Sensitive Personal Data or Information) Rules, 2011 and 
+other applicable laws.
+                                </p>
+                                <p>
+                                    7. <strong>Procedure for removing username from the record</strong>User
+ desirous of having his/her name and other details removed from the 
+records of InCred, on receiving the User’s written request to that 
+effect InCred shall, subject to the terms hereof, remove and/delete all 
+such information, as for as possible. User wishes no longer to receive 
+notifications, may send request to <a href="mailto:care@incred.com"> care@incred.com</a>.
+ InCred reserves the right to close the User account if the User opts 
+out of receiving certain crucial notices that are required to perform 
+the services through its App. Users may not opt-out of receiving 
+notifications about due or past due amounts that the User owes to 
+InCred.
+                                </p>
+                                <p>
+                                    8. <strong>Procedure For Correcting Inaccuracies</strong>Users may correct any mistakes, errors in information online.
+                                </p>
+                                <p>
+                                    9. <strong>Changes in Privacy Policy:</strong>
+ Our Privacy Policy might change from time to time, and InCred will 
+provide notice of it on your email address linked to your Account or can
+ be seen by you in our Website.
+                                </p>
+                                <p>
+                                    10. <strong>Incorporation of Privacy Policy to the Terms of use:</strong> This Privacy Policy is incorporated to the Terms of use (Terms) and other specific terms of this Website/Services/Account.
+                                </p>
+                                <p>
+                                    11. <strong>Contact:</strong>For any information regarding the Privacy Policy, please contact <a href="mailto:care@incred.com">care@incred.com</a>.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <section class="footer page6" id="footer"><div class="container-fluid">
+    <div class="container">
+        <div class="row footer-links" style="margin-top:8%;">
+            <div class="col-sm-3 col-xs-6">
+                <h5>PRODUCTS</h5>
+                <ul class="list-unstyled" style="line-height: 10pt;">
+                    <!-- <li><a href="home-loan/index.html">Home Loans</a></li> -->
+                    <li><a href="https://www.incred.com/personal-loan/index.html">Personal Loans</a></li>
+                    <li><a href="https://www.incred.com/el">Education Loans</a></li>
+                    <li><a href="https://www.incred.com/sme-loan/index.html">SME Business Loans</a></li>
+                    <li><a href="https://www.incred.com/twl/index.html">Two Wheeler Loans</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>Company</h5>
+                <ul class="list-unstyled" style="line-height: 10pt;">
+                    <li><a href="https://www.incred.com/about-us.html">About Us</a></li>
+                    <li><a href="https://www.incred.com/incred-in-press.html">InCred In News</a></li>
+                    <li><a href="https://www.incred.com/team.html">Team</a></li>
+                    <li><a href="https://www.incred.com/partnership.html">Partnerships</a></li>
+                    <li><a href="https://www.incred.com/incredible-customer-stories.html">Testimonials</a></li>
+                    <li><a href="https://www.incred.com/podcasts/">Podcasts</a></li>
+                    <li><a href="https://www.incred.com/digital-partners.html">Digital Partners</a></li>
+                </ul>
+                <h5>SUPPORT</h5>
+                <ul class="list-unstyled" style="line-height: 10pt;">
+                    <li><a href="https://www.incred.com/faq.html">FAQ</a></li>
+                    <li><a href="https://www.incred.com/ombudsman.html">Ombudsman Scheme</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>Regulatory / Corporate Information</h5>
+                <p class="footer-text">InCred Financial Services Limited</p>
+                <ul class="list-unstyled" style="line-height: 10pt;">
+                    <li><a class="mailus" href="https://www.incred.com/board-of-directors.html">Board of Directors</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/visu-regulatory-details.html">Corporate Details</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/fair-practice-code.html">Fair Practice Code</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/KYC.html">List of KYC Documents</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/corp-gov.html">Corporate Governance Guidelines</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/related-party-policy.html">Policy on Related Party Transactions</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Terms%20of%20appointment%20of%20ID.pdf" target="_blank">T&amp;C Of The Appointment Of Independent Directors</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/EGM-notice.html">Notices of General Meetings</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Code%20of%20Insider%20Trading.pdf" target="_blank">Code of Insider Trading</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/grievance.html">Grievance Redressal Policy</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/terms-and-conditions-pl.html">General T&amp;C</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/Auction_Notices.html">Auction Notices</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/List_of_discontinued_collection_agencies.pdf" target="_blank">List of discontinued Collection agencies</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Advisory+Note+-+VISU.pdf">Advisory Note</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/termsofuse.html">Terms of Use</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/privacypolicy.html">Privacy Policy</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/resignation-notice.html">Resignation of Directors</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/VISU-%20NRC%20Policy.pdf">NRC Policy</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/CSR%20Policy.pdf">CSR Policy</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/CSR%20Committee.pdf" target="_blank">CSR Committee</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Whistle%20Blower%20Policy.pdf">Whistle Blower Policy</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Interest%20Rate%20Model.pdf">Policy for Determining Interest Rates, Processing &amp; other Charges</a></li>
+                    <li><a class="mailus" href="https://www.incred.com/docs/Restructuring_Policy_2.0.pdf" target="_blank">Restructuring 2.0</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>EMAIL</h5>
+                <ul class="list-unstyled" style="line-height: 10pt;">
+                    <li><a class="mailus" href="mailto:care@incred.com">care@incred.com</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <a href="https://www.incred.com/offices.html" style="font-size: 16px;font-weight: 600;">Our Addresses and Locations</a>
+                </ul>
+                <div class="phone-number">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel: 18001022192" style="color:#F47920 !important;">1800 102 2192</a>
+                    <ul class="list-unstyled list-inline">
+                        <li class="social"><a href="https://twitter.com/InCredFin" target="_blank"><i class="fa fa-twitter" style="font-size:20px;"></i></a></li>
+                        <li class="social"><a href="https://www.facebook.com/InCredIndia/" target="_blank"><i class="fa fa-facebook" style="font-size:20px;"></i></a></li>
+                        <li class="social"><a href="https://www.linkedin.com/company/incredfinancialservices/" target="_blank"><i class="fa fa-linkedin" style="font-size:20px;"></i></a></li>
+                        <li class="social"><a href="https://www.instagram.com/incredfin" target="_blank"><i class="fa fa-instagram" style="font-size:20px;"></i></a></li>
+                        <li class="social"><a href="https://www.youtube.com/channel/UCWDW_L_2lSaDAL4O5ghj7yg" target="_blank"><i class="fa fa-youtube" style="font-size:20px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copy-right">
+            <div class="col-sm-12 copy-before">
+                <div class="col-md-4">Copyright © 2017 InCred.</div>
+                <div class="col-md-8 text-right">InCred Financial Services Limited is a NBFC registered with the RBI<br> InCred Housing Finance Private Limited is a HFC registered with the NHB
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-93062132-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+        ! function() {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize)
+                if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+                else {
+                    analytics.invoked = !0;
+                    analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                    analytics.factory = function(t) {
+                        return function() {
+                            var e = Array.prototype.slice.call(arguments);
+                            e.unshift(t);
+                            analytics.push(e);
+                            return analytics
+                        }
+                    };
+                    for (var t = 0; t < analytics.methods.length; t++) {
+                        var e = analytics.methods[t];
+                        analytics[e] = analytics.factory(e)
+                    }
+                    analytics.load = function(t) {
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = !0;
+                        e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                        var n = document.getElementsByTagName("script")[0];
+                        n.parentNode.insertBefore(e, n)
+                    };
+                    analytics.SNIPPET_VERSION = "4.0.0";
+                    analytics.load("ZroRCC7NFJNfWPp3hLKDl5CQox64R3sV");
+                    analytics.page();
+                }
+        }();
+    </script>
+
+
+    <!-- Google Code for Remarketing Tag -->
+    <!--
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 845987628;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="InCred_files/conversion.js"></script>
+    <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/845987628/?guid=ON&amp;script=0"
+      />
+    </div>
+  </noscript></div></section>
+        </div>
+    </div>
+    <script src="InCred_files/jquery.js"></script>
+    <script src="InCred_files/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#navbar").load("navbar-section.html");
+            $("#footer").load("footer-section.html");
+        });
+    </script>
+
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","421371274926588");fbq("track","PageView");</script>
+<noscript>
+<img height="1" width="1" src="https://www.facebook.com/tr?id=421371274926588&amp;ev=PageView
+&amp;noscript=1">
+</noscript>
+<script type="text/javascript" id="">function setCookie(a,d,b){var c=new Date;c.setTime(c.getTime()+864E5*b);b="; expires\x3d"+c.toGMTString();document.cookie=a+"\x3d"+d+b+";path\x3d/"}function getParam(a){return(a=RegExp("[?\x26]"+a+"\x3d([^\x26]*)").exec(window.location.search))&&decodeURIComponent(a[1].replace(/\+/g," "))}var gclid=getParam("gclid");if(gclid){var gclsrc=getParam("gclsrc");gclsrc&&-1===gclsrc.indexOf("aw")||setCookie("gclid",gclid,90)};</script> 
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1351305914995008");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1351305914995008&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","451914305324297");fbq("set","agent","tmgoogletagmanager","451914305324297");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=451914305324297&amp;ev=PageView&amp;noscript=1"></noscript>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

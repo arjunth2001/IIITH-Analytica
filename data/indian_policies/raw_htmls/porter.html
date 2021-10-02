@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="porter_files/50bfe79410"></script><script src="porter_files/nr-1210.js"></script><script type="text/javascript" async="" src="porter_files/conversion_async.js"></script><script type="text/javascript" async="" src="porter_files/analytics.js"></script><script type="text/javascript" async="" src="porter_files/js_002.js"></script><script type="text/javascript" async="" src="porter_files/js_003.js"></script><script src="porter_files/764157753777879.js" async=""></script><script async="" src="porter_files/fbevents.js"></script><script async="" src="porter_files/obtp.js" type="text/javascript"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"50bfe79410","applicationID":"64872653","transactionName":"c1gMREYJXllWS0wSUFJEC0RRSUJHWk8CBkxvRw1cXQVL","queueTime":0,"applicationTime":11,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"50bfe79410",applicationID:"64872653"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimum-scale=1.0">
+
+  <title>
+    Privacy policy - Most Trusted  Transport Logistic App
+  </title>
+  <meta name="description" content="Porter - Privacy Policy. Most Downloaded Logistics App . Get Truck for rent and Tempo for shifting">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="" src="porter_files/js.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-64122005-4');
+    </script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script type="text/javascript">
+  gtag('event', 'page_view', {
+    'send_to': 'AW-959440568'
+  });
+</script>
+
+    <script data-obct="" type="text/javascript">
+    /** DO NOT MODIFY THIS CODE**/
+    !function(_window, _document) {
+      var OB_ADV_ID='00b5eebc8d5e859eae7b4ac841d3492fe8';
+      if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
+      var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
+    obApi('track', 'PAGE_VIEW');
+  </script>
+
+      <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '764157753777879');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1"
+           src="https://www.facebook.com/tr?id=764157753777879&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+<script src="porter_files/a"></script></head>
+
+<body data-new-gr-c-s-check-loaded="8.884.0" data-gr-ext-installed="">
+<div class="body_wrapper">
+  <link href="porter_files/desktop_static_reads-8ce90746d44c61f4aeffe2c60e153bc90aa102d.css" media="screen" rel="stylesheet">
+
+<div class="header_wrapper blue_gradient_bg">
+
+<div class="logo_sections_container flex-align-center">
+  <div class="logo_section">
+    <a href="https://porter.in/" class="home_page_link">
+      <img class="porter_logo" src="porter_files/logo_white-d8f19cc9b973937a42b6c6ffadfd1f05256da698ee3ff194a.svg" alt="Porter trucks">
+    </a>
+  </div>
+
+  <div class="header_hooks_section flex-align-center">
+    <h2 class="porter_header_text normal_lightest">India’s Largest Marketplace for Intracity Logistics</h2>
+    <div class="right_container flex-align-center">
+      <a href="https://porter.in/partners" class="btn_link driver_with_us_btn flex-align-center">
+        <div class="text_content">
+          <p class="section_header bold_porter_purple">DRIVE WITH US</p>
+          <p class="content normal_porter_purple">turn kms into money</p>
+        </div>
+        <div class="joins_us bold_yellow">JOIN US</div>
+      </a>
+      <div class="customer_care flex-align-center">
+        <div class="customer_care_icon"></div>
+        <div class="customer_care_number">
+            <div class="support_number bold_lightest">
+              4410-4410
+            </div>
+            <div class="std_code small_text normal_lightest">
+              add your city code
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="offers_header_wrapper" style="width: 100%">
+  <div class="offers_login_section" scroll_target_name="header_track_order_form">
+
+    <div class="left_container">
+      <div class="links_section flex-align-center">
+        <a class="btn_link " href="https://porter.in/" event_value="home">
+          <h2 class="porter_vertical_text semi_bold_darker">CITY TEMPO</h2>
+        </a>
+        <a class="semi_bold_darker btn_link" href="https://porter.in/packers-and-movers" event_value="enterprise">
+          PACKERS &amp; MOVERS
+        </a>
+        <a class="semi_bold_darker btn_link " href="https://porter.in/partners" event_value="partners">
+          <h2 class="porter_vertical_text semi_bold_darker">DRIVER PARTNERS</h2>
+        </a>
+        <a class="btn_link " href="https://porter.in/enterprise" event_value="enterprise">
+          <h2 class="porter_vertical_text semi_bold_darker">FOR ENTERPRISE</h2>
+        </a>
+      </div>
+    </div>
+    <div class="right_container flex-align-center">
+      <div class="support_section section_btn ">
+        <a href="https://porter.in/support" class="btn_link section_btn ">
+          Support
+        </a>
+      </div>
+      <div class="track_order_btn section_btn overlay-dropdown">
+      <span class="overlay-dropdown-btn semi_bold_darker section_text">
+      Track order
+        </span>
+        <div class="float-dropdown-content arrow-top-right">
+
+          <div class="dropdown_wrapper track_order_wrapper point-section-form-wrapper">
+            <form class="track_order_form form-vertical" action="/track_live_order" method="get">
+  
+  <h3 class="section_header bold_darker">
+    <span>Track order</span>
+    <span class="close_trip_estimate_overlay close_overlay">
+    </span>
+  </h3>
+
+  <div class="line" style="margin: 16px 0;"></div>
+  <div class="fields_container">
+    <div class="input_field_container form_fields">
+      <input type="text" name="booking_id" id="booking_id" required="" autocomplete="off">
+      <label>CRN or Docket number</label>
+    </div>
+
+    <div class="input_field_container input_mobile form_fields">
+      <input type="text" name="mobile" class="mobile_number" id="mobile" required="" autocomplete="off">
+      <label>Mobile number</label>
+    </div>
+
+    <div id="track-order-alert" class="text-align-center" style="color: red">
+      
+    </div>
+
+    <button class="submit_btn btn btn_large btn_blue full-width form_field" id="track_order_submit_btn">TRACK
+      ORDER
+    </button>
+  </div>
+</form>
+            <div class="track_order_demo_section normal_dark text-align-center info-text-multi-line">
+              Enter your Booking Number for Spot order (e.g. CRN12345678)
+              and Docket Number for Intercity Parcel order (e.g. 1234567)
+              along with the Mobile number used while booking.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content_wrapper static_page_wrapper">
+  <div class="static_reads_header desktop_start_section">
+  <h1> PRIVACY POLICY </h1>
+</div>
+
+
+<div class="static_reads_content">
+
+  <div class="section">
+    <p class="simple_lines">
+      This privacy policy sets out how Porter uses and protects any information
+      that you give Porter when you use this website.
+    </p>
+
+    <p class="simple_lines">
+      Porter is committed to ensuring that your privacy is protected. Should we
+      ask you to provide certain information by which you can be identified when
+      using this website, then you can be assured that it will only be used in
+      accordance with this privacy statement.
+    </p>
+
+    <p class="simple_lines">
+      Porter may change this policy from time to time by updating this page. You
+      should check this page from time to time to ensure that you are happy with
+      any changes. This policy is effective from 23rd February 2014.
+    </p>
+  </div>
+
+
+  <div class="section">
+    <div class="main_headings">
+      WHAT We COLLECT
+    </div>
+
+    <p class="simple_lines"> We may collect the following information: </p>
+
+    <ul class="bulleted_points with_left_padding_30">
+      <li>
+        Name and job title.
+      </li>
+      <li>
+        Contact information including email address.
+      </li>
+      <li>
+        Demographic information such as postcode, preferences and interests.
+      </li>
+      <li>
+        Other information relevant to customer surveys and/or offers.
+      </li>
+      <li>
+        app install, uninstall and other installed apps information
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="main_headings">
+      WHAT WE DO WITH THE INFORMATION WE GATHER
+    </div>
+
+    <p class="simple_lines">
+      We require this information to understand your needs and provide you with
+      a better service, and in particular for the following reasons:
+    </p>
+
+    <div class="sub_section">
+      <p class="simple_lines bold with_left_padding with_left_bullet">
+        Internal Record Keeping
+      </p>
+
+      <p class="simple_lines with_left_padding">
+        We may use the information to improve our products and services.
+      </p>
+
+      <p class="simple_lines with_left_padding">
+        We may periodically send promotional emails, SMSs and make voice calls
+        about new products, special offers or other information which we think
+        you may find interesting using
+        the email address and mobile number which you have provided.
+      </p>
+
+      <p class="simple_lines with_left_padding">
+        From time to time, we may also use your information to contact you for
+        market research purposes. We may contact you by email, SMS, voice, fax
+        or mail. We may use the
+        information to customize the website according to your interests.
+      </p>
+      <p class="simple_lines with_left_padding">
+        You may specifically opt-out of the above in accordance with the Telecom Commercial
+        Communications Customer Preference Regulations, 2018 or otherwise specified. In case you wish to opt out of the
+        same, please contact us at 4410 4410 (add your city code) or email us at info@porter.in with your request for
+        opting out of such commercial communication from us
+      </p>
+    </div>
+
+
+    <div class="sub_section">
+      <p class="simple_lines bold with_left_padding with_left_bullet">
+        Security
+      </p>
+
+      <p class="simple_lines with_left_padding">
+        We are committed to ensuring that your information is secure. In order
+        to prevent unauthorized access or disclosure we have put in place
+        suitable physical, electronic and managerial procedures to safeguard and
+        secure the information we collect online. We do not retain any
+        information collected from you for any longer than is reasonably
+        required by us for the purpose of our services or such period as may be
+        required by applicable laws in India.
+      </p>
+    </div>
+
+    <div class="sub_section">
+      <p class="simple_lines bold with_left_padding with_left_bullet">
+        Disclosure
+      </p>
+      <p class="simple_lines with_left_padding">
+        We may disclose to third party services certain personally identifiable information listed below:
+      </p>
+      <ul class="bulleted_points with_left_padding_40">
+        <li>
+          Information you provide us such as name, email, mobile phone number.
+        </li>
+        <li>
+          Information we collect as you access and use our service, including device information, location and network carrier.
+        </li>
+      </ul>
+      <p class="simple_lines with_left_padding">
+        This information is shared with third party service providers so that we can:
+      </p>
+      <ul class="bulleted_points with_left_padding_40">
+        <li>
+          Personalize the app for you so you get the smoothest experience.
+        </li>
+        <li>
+          Perform behavioral analytics.
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="section">
+    <div class="main_headings">
+      How we use cookies
+    </div>
+
+    <p class="simple_lines">
+      A cookie is a small file which asks permission to be placed on 
+your computer's hard drive. Once you agree, the file is added and the 
+cookie helps analyze web traffic or lets you know when you visit a 
+particular site. Cookies allow web applications to respond to you as an 
+individual. The web application can tailor its operations to your needs,
+ likes and dislikes by gathering and remembering information about your 
+preferences.
+    </p>
+
+
+    <p class="simple_lines">
+      We use traffic log cookies to identify which pages are being used.
+ This helps us analyze data about webpage traffic and improve our 
+website in order to tailor it to customer needs. We only use this 
+information for statistical analysis purposes and then the data is 
+removed from the system.
+    </p><p>
+
+    </p><p class="simple_lines">
+      Overall, cookies help us provide you with a better website, by 
+enabling us to monitor which pages you find useful and which you do not.
+ A cookie in no way gives us access to your computer or any information 
+about you, other than the data you choose to share with us.
+    </p><p>
+
+    </p><p class="simple_lines">
+      You can choose to accept or decline cookies. Most web browsers 
+automatically accept cookies, but you can usually modify your browser 
+setting to decline cookies if you prefer. This may prevent you from 
+taking full advantage of the website.
+    </p><p>
+
+  </p></div>
+
+
+  <div class="section">
+    <div class="main_headings">
+      Link to other websites
+    </div>
+
+    <p class="simple_lines">
+      Our website may contain links to other websites of interest. 
+However, once you have used these links to leave our site, you should 
+note that we do not have any control over that other website. Therefore,
+ we cannot be responsible for the protection and privacy of any 
+information which you provide whilst visiting such sites and such sites 
+are not governed by this privacy statement. You should exercise caution 
+and look at the privacy statement applicable to the website in question.
+    </p>
+
+
+    <p class="simple_lines">
+      We will not disclose or share your personal information to third 
+parties unless we have your permission or are required by law to do so. 
+We may use your personal information to send you promotional information
+ about third parties which we think you may find interesting if you tell
+ us that you wish this to happen.
+    </p><p>
+
+    </p><p class="simple_lines">
+      You may request details of personal information which we hold 
+about you under the Information Technology (Reasonable security 
+practices and procedures and sensitive personal data or information) 
+Rules, 2011. A small fee will be payable. If you would like a copy of 
+the information held on you please write to info@porter.in
+    </p><p>
+
+    </p><p class="simple_lines">
+      If you believe that any information we are holding on you is 
+incorrect or incomplete, please write to or email us as soon as 
+possible, at the above address. We will promptly correct any information
+ found to be incorrect. You can also withdraw your consent by writing to
+ us at <a href="mailto:info@porter.in?Subject=Information%20Withdrawl%20Request%20under%20DPA" target="_top">info@porter.in</a>. Such withdrawal will result in discontinuance of the services for which such information is required.
+    </p><p>
+
+  </p></div>
+
+  <div class="section">
+    <div class="main_headings">
+      CONTACT US
+    </div>
+
+    <p class="simple_lines">
+      If there are any questions regarding this privacy policy or if you
+ wish to report a breach of the Privacy Policy, you may contact us using
+ the information on the <a href="https://porter.in/support">support</a> page.
+    </p>
+
+  </div>
+
+</div>
+</div>
+
+
+<div class="overlay_mask"></div>
+
+<div id="login_modal" class="modal-p">
+  <div class="modal-content-p">
+    <div class="modal-body-p">
+      <div id="auth_container" class="auth_container">
+        <div class="left_content_auth_form">
+  <div class="each_sign_in_benefit trip_management">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Manage your trips
+    </div>
+  </div>
+
+  <div class="each_sign_in_benefit expenses_track">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Track your expenses
+    </div>
+  </div>
+  <div class="each_sign_in_benefit invoice_generation">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Generate Invoice
+    </div>
+  </div>
+</div>
+
+<form accept-charset="UTF-8" action="/customers/check_for_existing_customer" autocomplete="off" class="auth_form" data-remote="true" id="login_form" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+    <span class="close_auth_form_cross"></span>
+    <h3 class="form_for semi_bold_darker">
+        Customer Login
+    </h3>
+
+    <div class="input_field_container form_fields">
+
+      <input class="input_box" id="email_or_mobile" name="email_or_mobile" required="required" type="text" aria-required="true">
+
+      <label>Email or Mobile</label>
+    </div>
+
+
+    <p class="helper_message_form">
+      Enter email id only if you already have password
+    </p>
+
+
+    <button type="submit" class="btn btn_blue btn_large full-width"> NEXT</button>
+
+    
+
+
+<style>
+  .errors_auth {
+    color: red ;
+  }
+
+  .success_msgs {
+    color: green;
+  }
+</style>
+
+
+
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="template" id="login_initial_template">
+  <div class="left_content_auth_form">
+  <div class="each_sign_in_benefit trip_management">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Manage your trips
+    </div>
+  </div>
+
+  <div class="each_sign_in_benefit expenses_track">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Track your expenses
+    </div>
+  </div>
+  <div class="each_sign_in_benefit invoice_generation">
+    <div class="benefit_icon">
+
+    </div>
+
+    <div class="benefit_description semi_bold_darker">
+      Generate Invoice
+    </div>
+  </div>
+</div>
+
+<form accept-charset="UTF-8" action="/customers/check_for_existing_customer" autocomplete="off" class="auth_form" data-remote="true" id="login_form" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <span class="close_auth_form_cross"></span>
+    <h3 class="form_for semi_bold_darker">
+        Customer Login
+    </h3>
+
+    <div class="input_field_container form_fields">
+
+      <input class="input_box" id="email_or_mobile"
+             name="email_or_mobile" required="required"
+             type="text" aria-required="true" value=>
+
+      <label>Email or Mobile</label>
+    </div>
+
+
+    <p class="helper_message_form">
+      Enter email id only if you already have password
+    </p>
+
+
+    <button type="submit" class="btn btn_blue btn_large full-width"> NEXT</button>
+
+    
+
+
+<style>
+  .errors_auth {
+    color: red ;
+  }
+
+  .success_msgs {
+    color: green;
+  }
+</style>
+
+
+
+</form>
+
+</script>
+
+<div class="desktop_footer_wrapper">
+  <div class="footer_content_wrapper">
+    <div class="footer">
+      <div class="footer_upper">
+        <div class="column1 column">
+          <div class="logo">
+            <a href="https://porter.in/" class="home_page_link"></a>
+          </div>
+          <div class="cin">
+            CIN: U74999MH2014PTC306120
+          </div>
+          <div class="social_media">
+            <div class="text">
+              GET SOCIAL
+            </div>
+            <div class="icon_container">
+              <div class="social_media_icon facebook">
+                <a href="https://www.facebook.com/portertrucks" target="blank" class="social_media_link"></a>
+              </div>
+
+              <div class="social_media_icon linkedin">
+                <a href="https://www.linkedin.com/company/3878180/" target="blank" class="social_media_link"></a>
+              </div>
+
+              <div class="social_media_icon twitter">
+                <a href="https://twitter.com/porter_trucks" target="blank" class="social_media_link"></a>
+              </div>
+
+              <div class="social_media_icon youtube">
+                <a href="https://www.youtube.com/channel/UC6eokjbxNMN2WQNgyZElNeA/feed" target="blank" class="social_media_link"></a>
+              </div>
+
+              <div class="social_media_icon instagram">
+                <a href="https://www.instagram.com/portertrucks" target="blank" class="social_media_link"></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="column2 column track_section">
+          <div class="column_header">COMPANY</div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/about-us" target="blank" class="track_link">About Us</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/offers" target="blank" class="track_link">Offers</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/careers" target="blank" class="track_link">Careers</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/blog" target="blank" class="track_link">Blog</a>
+            </span>
+          </div>
+
+        </div>
+        <div class="column3 column track_section">
+          <div class="column_header">SUPPORT</div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/support" target="blank" class="track_link">Help Centre</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/privacy-policy" target="blank" class="track_link">Privacy Policy</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/terms-of-service" target="blank" class="track_link">Terms of service</a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/insurance-faq" target="blank" class="track_link">Insurance FAQs</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="column4 column porter_cities">
+          <div class="column_header">
+            DISCOVER PORTER
+          </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-bangalore">
+                  <h2>Trucks in Bangalore</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-mumbai">
+                  <h2>Trucks in Mumbai</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-delhi">
+                  <h2>Trucks in Delhi NCR</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-chennai">
+                  <h2>Trucks in Chennai</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-hyderabad">
+                  <h2>Trucks in Hyderabad</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-ahmedabad">
+                  <h2>Trucks in Ahmedabad</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-pune">
+                  <h2>Trucks in Pune</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-surat">
+                  <h2>Trucks in Surat</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-kolkata">
+                  <h2>Trucks in Kolkata</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-jaipur">
+                  <h2>Trucks in Jaipur</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-lucknow">
+                  <h2>Trucks in Lucknow</h2>
+                </a>
+              </span>
+            </div>
+            <div class="column_content">
+              <span>
+                <a href="https://porter.in/rent-mini-trucks-in-coimbatore">
+                  <h2>Trucks in Coimbatore</h2>
+                </a>
+              </span>
+            </div>
+        </div>
+
+        <div class="column5 column porter_verticals">
+          <div class="column_header">
+            BOOK A TRUCK
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/" target="_blank">
+                <h2>City Tempo</h2>
+              </a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/enterprise" target="_blank">
+                <h2>Porter For Enterprise</h2>
+              </a>
+            </span>
+          </div>
+          <div class="column_content">
+            <span>
+              <a href="https://porter.in/packers-and-movers" target="_blank">
+                <h2>Packers &amp; Movers</h2>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_lower_wrapper">
+        <div class="footer_lower_content">
+          <div class="download_app_icon_section flex-align-center">
+            <h2 class="download_app_text normal_lightest"> Download our App </h2>
+            <a class="app_store_link store_link" href="https://porter.in/iphone-app" target="_blank"></a>
+            <a class="play_store_link store_link" href="https://porter.in/android-app" target="_blank"></a>
+          </div>
+          <div class="copy_right_section">
+        <span class="copy_right_content">
+          <span class="copy_right_icon">©</span> 2020 SmartShift Logistics Solutions Pvt. Ltd. All rights reserved
+      </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="porter_files/desktop_static_reads-9e4ab2e369c14005c17cea8abf39bbae2c565478.js"></script>
+</div>
+
+
+
+<script src="porter_files/cachedClickId.js"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
