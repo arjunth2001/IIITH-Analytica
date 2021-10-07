@@ -13,8 +13,8 @@ def main():
         from summarizer import summary
         summary()
     elif selection == "QnA":
-        st.subheader("QnA")
-        st.write("Under Construction")
+        from qna import qna
+        qna()
     st.sidebar.title("About")
     st.sidebar.info(
         """
