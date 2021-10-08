@@ -25,4 +25,4 @@ def explain():
                 html = cls_explainer.visualize()
     if html != None:
         raw_html = html._repr_html_()
-        components.v1.html(raw_html)
+        components.v1.html(raw_html, scrolling=True)
