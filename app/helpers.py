@@ -32,3 +32,16 @@ def sum_clean_text(text):
     text = removePattern(text, "@[\w]*")  # remove handles
     text = removePattern(text, "&[\w]*")  # remove &amp
     return text
+
+
+def clean_text(text):
+    if type(text) != str:
+        return text
+    text = text.lower()  # lower case
+    text = remove_urls(text)
+    text = cleanhtml(text)
+    text = removePattern(text, "@[\w]*")  # remove handles
+    text = removePattern(text, "&[\w]*")  # remove &amp
+    # remove special characters, punctuations
+    text = re.sub('[!@$:);/#,.*$?।&"]', '', text)
+    return text

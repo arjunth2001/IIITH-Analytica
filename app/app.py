@@ -1,18 +1,18 @@
 import streamlit as st
 
-PAGES = ["OPP 115", "Summarize", "QnA"]
+PAGES = ["FTC Paragraph Extractor", "Summarizer", "Question and Answering"]
 
 
 def main():
     st.sidebar.title("Menu")
     selection = st.sidebar.radio("Go to", PAGES)
-    if selection == "OPP 115":
-        st.subheader("OPP 115 Classifaction and Visualisation")
-        st.write("Under Construction")
-    elif selection == "Summarize":
+    if selection == "FTC Paragraph Extractor":
+        from ftc import ftc
+        ftc()
+    elif selection == "Summarizer":
         from summarizer import summary
         summary()
-    elif selection == "QnA":
+    elif selection == "Question and Answering":
         from qna import qna
         qna()
     st.sidebar.title("About")
