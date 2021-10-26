@@ -1,0 +1,26 @@
+{
+    "GDPR": {
+        "First Party Collection/Use": 512,
+        "Third Party Sharing/Collection": 477,
+        "Other": 556,
+        "International and Specific Audiences": 417,
+        "Data Security": 427,
+        "User Choice/Control": 469,
+        "User Access, Edit and Deletion": 342,
+        "Data Retention": 201,
+        "Policy Change": 396,
+        "Do Not Track": 0
+    },
+    "NGDPR": {
+        "First Party Collection/Use": 514,
+        "Third Party Sharing/Collection": 480,
+        "Other": 558,
+        "International and Specific Audiences": 421,
+        "Data Security": 432,
+        "User Choice/Control": 472,
+        "User Access, Edit and Deletion": 345,
+        "Data Retention": 200,
+        "Policy Change": 402,
+        "Do Not Track": 0
+    }
+}
