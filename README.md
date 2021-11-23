@@ -1,6 +1,8 @@
 # Team 6 - IIITH Analytica
 ## CS4.407 Online Privacy Project
-
+<p align="center">
+<img src="./analysis/images/policy2.png" alt="logo" width="200"/>
+</p>
 
 Repository of the Course Project for the course Online Privacy, Monsoon 2021
 
@@ -23,4 +25,7 @@ Repository of the Course Project for the course Online Privacy, Monsoon 2021
 * Privacy Policy Question Answering Model: [priv_qna](https://huggingface.co/arjunth2001/priv_qna)
 * Privacy Policy Summarization Model: [priv_sum](https://huggingface.co/arjunth2001/priv_sum)
 * App Repo: [ policy-park](https://github.com/arjunth2001/policy-park)
+
+### App
+<img src="./analysis/images/ss.png" alt="app" width="900" />
 
