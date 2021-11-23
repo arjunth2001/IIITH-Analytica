@@ -16,3 +16,11 @@ Repository of the Course Project for the course Online Privacy, Monsoon 2021
   *  2019102008 (ECE UG3) 
 * Aditya Kadam
   * 2020121009 (CSD UG3)
+
+### Important Links
+* Dataset: [online_privacy_qna](https://huggingface.co/datasets/arjunth2001/online_privacy_qna)
+* FTC Classifier: [priv_ftc](https://huggingface.co/arjunth2001/priv_ftc)
+* Privacy Policy Question Answering Model: [priv_qna](https://huggingface.co/arjunth2001/priv_qna)
+* Privacy Policy Summarization Model: [priv_sum](https://huggingface.co/arjunth2001/priv_sum)
+* App Repo: [ policy-park](https://github.com/arjunth2001/policy-park)
+
